@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #关于frozen
 - order: 1
 - category: frozen
@@ -43,7 +43,3 @@ ui-round 圆角头像
 //todo：现有各自头像大小
 
 ##如何使用
-=======
-frozenui
-========
->>>>>>> 7fa79140b0657e5b06341be1781073f921345351
