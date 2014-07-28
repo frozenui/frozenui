@@ -1,0 +1,453 @@
+body {
+    color: #666;
+    background: #fdfdfd;
+    font-family: "Marmelad","Lucida Grande",Georgia,sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #7CAE23;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    margin: 15px 0;
+}
+
+.content blockquote {
+    border-left: 0.4em solid #DDDDDD;
+    color: #999;
+    margin: 15px 0;
+    padding: 0 15px;
+}
+
+.content blockquote em {
+    color: #BB6E6E;
+    margin-left: 1em;
+}
+
+.content > p > img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.content > p {
+    margin: 20px 0;
+}
+
+.content code {
+    background-color: #FEE9CC;
+    border-radius: 3px 3px 3px 3px;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 13px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 1px 3px;
+}
+
+.content pre {
+    background-color: #F8F8F9;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    font-size: 13px;
+    line-height: 19px;
+    margin: 7px 0;
+    overflow: auto;
+    padding: 6px 10px;
+    white-space: pre;
+}
+
+.content pre code,
+.content .highlight code {
+    background-color: transparent;
+    color: #5D6A6A;
+    margin: auto;
+    padding: 0;
+}
+
+/* --- */
+
+#body-wrapper {
+    max-width: 100%;    
+    padding-top: 0;
+}
+
+#footer-wrapper {
+    width: 1140px;
+    max-width: 1140px;
+}
+
+/* - - - - - - - */
+
+.head-area {
+    padding-top: 20px;
+    background: #fff;
+}
+
+.title-area {
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 250px;
+    height: 120px;
+    position: relative;
+}
+
+.title-area h1 {
+    font-size: 54px;
+    margin: 0;
+    line-height: 60px;
+}
+
+.title-area h1 a {
+    color: #7CAE23;
+}
+
+.title-area h1 a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.title-area .description {
+    margin: 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.title-area img {
+    height: 120px;
+    position: absolute;
+    right: 28px;
+    top: -4px;
+}
+
+.head-area iframe {
+    position: absolute;
+    top: 68px;
+    right: 50px;
+}
+
+.nav-area {
+    font-size: 16px;
+    height: 60px;
+    color: #888;
+    margin-bottom: 15px;
+    background: #FBFFD7;
+    border-top: 4px solid #9ACD4B;
+    text-align: center;
+    border-bottom: 1px solid #FFF0B5;
+}
+
+.main-nav {
+    list-style-position: inside;
+    line-height: 36px;
+    margin: 12px auto 0;
+    padding: 0;
+    width: 1000px;
+}
+
+.main-nav li {
+    margin: 0 18px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-weight: bold;
+}
+
+.main-nav a {
+    color: #668430;
+}
+
+.main-nav a:hover {
+    opacity: 0.8;
+}
+
+.main-area {
+    width: 1140px;
+    margin: 30px auto 0;
+    position: relative;
+}
+
+.content-area {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 0 29px 20px;
+    width: 840px;
+    margin-left: 240px;
+}
+
+.comment-area {
+    width: 900px;
+    margin-top: 20px;
+    margin-left: 240px;
+}
+
+.side-area {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 220px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.side-area ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: normal;
+}
+
+.side-area ul li ul {
+    display: none;
+}
+
+.side-area .side-highlight a {
+    background: #FBFFD7;
+    text-shadow: none;
+    font-weight: bold;
+    transition: background-color 0.8s ease-out;
+}
+
+.side-area .side-highlight a:hover {
+    background: #FBFFD7;
+}
+
+.side-loading {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.side-area a {
+    font-size: 14px;
+    display: block;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    position: relative;
+    text-shadow: 0 1px 2px #eee;
+    color: #7CAE23;
+}
+
+.side-area a .iconfont {
+    color: #aaa;
+    position: absolute;
+    right: 12px;
+    top: 11px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.side-area a:hover {
+    background: #f8f8f8;
+    text-decoration: none;
+}
+
+.side-area a:hover .iconfont {
+    color: #aaa;
+}
+
+.content-area h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.content-area h1:before, 
+.content-area h1:after {
+    content: '—';
+    color: #eee;
+    margin: 1.5em;
+}
+
+.content-area h2 {
+    font-size: 22px;
+    color: #7CAE23;
+    margin-top: 40px;
+}
+
+.content-area h3 {
+    font-size: 18px;
+}
+
+.content-area h4 {
+    font-size: 14px;
+}
+
+/* responsive */
+@media (max-width: 980px) {
+
+}
+
+/* 清理浮动 */
+.fn-clear:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.fn-clear {
+    zoom:1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn-hide {
+    display:none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+.fn-left,.fn-right {
+    display:inline;
+}
+.fn-left {
+    float:left;
+}
+.fn-right {
+    float:right;
+}
+
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 简单的渐变 */
+.fn-linear {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f1f1f1));
+    background: -moz-linear-gradient(top, #fcfcfc, #f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
+    background:-o-linear-gradient(top, #fcfcfc, #f1f1f1);
+    background: linear-gradient(top, #fcfcfc, #f1f1f1);
+}
+
+/* 浅色的渐变 */
+.fn-linear-light {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f9f9f9));
+    background: -moz-linear-gradient(top, #fcfcfc, #f9f9f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
+    background:-o-linear-gradient(top, #fcfcfc, #f9f9f9);
+    background: linear-gradient(top, #fcfcfc, #f9f9f9);
+}
+
+/* 人民币符号 */
+.fn-rmb {
+    font-family: arial;
+    font-style: normal;
+    padding-right: 4px;
+}
+
+/* chrome 下字体过小的问题 */
+.fn-webkit-adjust {
+    -webkit-text-size-adjust: none;
+}
+
+/* --- */
+
+.content .nico-iframe {
+    position: relative;
+}
+.content .nico-iframe iframe {
+    width: 100%;
+}
+.content .nico-iframe .new-window {
+    position: absolute;
+    top: 30px;
+    right: -40px;
+    font-size: 12px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+.content .highlight {
+    background-color: transparent;
+    padding-top: 1px;
+    position: relative;
+}
+.content .collapse pre {
+    overflow: hidden;
+    height: 60px;
+}
+
+.content .highlight .code-toggle {
+    position: absolute;
+    top: -10px;
+    right: 2px;
+    font-size: 12px;
+    padding: 3px 5px;
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 4px 4px 0 0;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+}
+
+/* responsive */
+@media (max-width: 980px) {
+    .main-area,
+    #footer-wrapper {
+        width: auto;
+    }
+    .nav-area {
+        height: auto;
+        font-size: 16px;
+    }
+    .main-nav {
+        width: auto;
+        margin: 0;
+        line-height: 40px;
+    }
+    .main-nav li {
+        display: block;
+        margin: 0;
+    }
+    .side-area {
+        position: relative!important;
+        top: 0!important;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .content-area,
+    .comment-area {
+        margin-left: 0;
+        width: auto;
+    }
+}
+
+.content-area h1 a.anchor,
+.content-area h2 a.anchor,
+.content-area h3 a.anchor,
+.content-area h4 a.anchor,
+.content-area h5 a.anchor,
+.content-area h6 a.anchor {
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    visibility: hidden;
+}
+.content-area h1:hover a.anchor,
+.content-area h2:hover a.anchor,
+.content-area h3:hover a.anchor,
+.content-area h4:hover a.anchor,
+.content-area h5:hover a.anchor,
+.content-area h6:hover a.anchor {
+    visibility: visible;
+}
+

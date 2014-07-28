@@ -1,0 +1,33 @@
+{
+  "name": "alice.spmjs.org",
+  "version": "0.0.1",
+  "title": "Alice",
+  "family": "alice",
+  "description": "写样式的更好方式",
+  "homepage": "http://aliceui.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aliceui/aliceui.org"
+  },
+  "bugs": {
+    "url": "https://github.com/aliceui/aliceui.org/issues"
+  },
+  "spm": {
+      "alias": {
+        "ui-btn": "frozen/ui-btn/1.0.0/ui-btn.css",
+        "ui-btn-lg": "frozen/ui-btn/1.0.0/ui-btn-lg.css",
+        "atom": "frozen/ui-btn/1.0.0/atom.css",
+        "ui-btn-group": "frozen/ui-btn/1.0.0/ui-btn-group.css",
+        "ui-dialog": "frozen/ui-btn/1.0.0/ui-dialog.css",
+        "ui-list": "frozen/ui-btn/1.0.0/ui-list.css",
+        "ui-loading": "frozen/ui-btn/1.0.0/ui-loading.css",
+        "ui-notice": "frozen/ui-btn/1.0.0/ui-notice.css",
+        "ui-select-user": "frozen/ui-btn/1.0.0/ui-select-user.css",
+        "ui-tab": "frozen/ui-btn/1.0.0/ui-tab.css",
+        "ui-table": "frozen/ui-btn/1.0.0/ui-table.css",
+        "ui-tips": "frozen/ui-btn/1.0.0/ui-tips.css",
+        "ui-icon": "frozen/ui-btn/1.0.0/ui-icon.css",
+        "ui-icon-vip": "frozen/ui-btn/1.0.0/ui-icon-vip.css"
+      }
+  }
+}
