@@ -20,3 +20,4 @@ build
 _site
 sea-modules
 .cache
+_site/
