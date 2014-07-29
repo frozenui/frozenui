@@ -43,3 +43,5 @@ ui-round 圆角头像
 //todo：现有各自头像大小
 
 ##如何使用
+
+spm doc watch
