@@ -44,4 +44,4 @@ ui-round 圆角头像
 
 ##如何使用
 
-spm doc watch
+只需用spm doc watch生成站点和实时更新预览，生成的_site传到frozenui.github.io即可 
