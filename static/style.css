@@ -97,20 +97,28 @@ hr {
 
 .title-area {
     margin: 0 auto;
-    padding-top: 15px;
+    /*padding-top: 15px;
     width: 250px;
-    height: 120px;
+    height: 120px;*/
+    margin-top: 15px;
     position: relative;
+    width: 200px;
+    height: 151px;
 }
 
 .title-area h1 {
-    font-size: 54px;
+    /*font-size: 54px;
     margin: 0;
-    line-height: 60px;
+    line-height: 60px;*/
+    margin: 0;
+    padding-top: 25px;
 }
 
 .title-area h1 a {
-    color: #7CAE23;
+    /*color: #7CAE23;*/
+    font-size: 60px;
+    color: #61d3ee;
+    line-height: 60px;
 }
 
 .title-area h1 a:hover {
@@ -119,16 +127,22 @@ hr {
 }
 
 .title-area .description {
-    margin: 0;
+    /*margin: 0;
     color: #999;
-    font-size: 12px;
+    font-size: 12px;*/
+    font-size: 14px;
+    color: #aaa;
+    line-height: 14px;
 }
 
 .title-area img {
-    height: 120px;
+    /*height: 120px;
     position: absolute;
     right: 28px;
-    top: -4px;
+    top: -4px;*/
+    position: absolute;
+    top: 0;
+    left: -155px;
 }
 
 .head-area iframe {
@@ -142,10 +156,10 @@ hr {
     height: 60px;
     color: #888;
     margin-bottom: 15px;
-    background: #FBFFD7;
-    border-top: 4px solid #9ACD4B;
+    background: #99e8f6;
+    border-top: 4px solid #4cbed3;
     text-align: center;
-    border-bottom: 1px solid #FFF0B5;
+    /*border-bottom: 1px solid #FFF0B5;*/
 }
 
 .main-nav {
@@ -165,11 +179,13 @@ hr {
 }
 
 .main-nav a {
-    color: #668430;
+    /*color: #668430;*/
+    color: #5c5c5c;
 }
 
 .main-nav a:hover {
     opacity: 0.8;
+    text-decoration: none;
 }
 
 .main-area {

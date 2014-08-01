@@ -1,9 +1,9 @@
 {
   "name": "alice.spmjs.org",
   "version": "0.0.1",
-  "title": "Alice",
+  "title": "Frozen",
   "family": "alice",
-  "description": "写样式的更好方式",
+  "description": "mobile apps friendly",
   "homepage": "http://aliceui.org",
   "repository": {
     "type": "git",
