@@ -9,6 +9,8 @@
         {%- endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="{{system.name}} {{system.version}}" />
+        {%- set config.assets_host = 'http://static.alipayobjects.com' %}
+        
         {%- block assets %}
         <link type="image/x-icon" href="{{static_url('favicon.ico')}}" rel="icon">
         <link rel="stylesheet" href="{{static_url('css/normalize.css')}}" />
@@ -25,6 +27,9 @@
         
         	.ui-icon{font-size:30px;}
         	.ui-table{line-height: 40px;} 
+        	body{
+            	-webkit-user-select: inherit;
+        	}
         </style>
         <script src="{{static_url('js/site.js')}}"></script>
         <!--[if lt IE 9]>
