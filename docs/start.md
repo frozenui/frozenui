@@ -1,6 +1,6 @@
 # 开始使用
 
-- order: 5
+- order: 4
 - category: alice
 
 ---

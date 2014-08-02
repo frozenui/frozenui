@@ -1,6 +1,6 @@
 # 通用样式库
 
-- order: 3
+- order: 2
 - category: alice
 
 ---
@@ -56,7 +56,8 @@
     display: inline;
 }
 .alice-module-title a {
-    color: #7CAE23;
+    /*color: #7CAE23;*/
+    color: #00a5e0;
     cursor: pointer;
 }
 .alice-module-link {
