@@ -117,7 +117,7 @@ hr {
 .title-area h1 a {
     /*color: #7CAE23;*/
     font-size: 60px;
-    color: #61d3ee;
+    color: #4cbed3;
     line-height: 60px;
 }
 
@@ -156,7 +156,7 @@ hr {
     height: 60px;
     color: #888;
     margin-bottom: 15px;
-    background: #99e8f6;
+    background: #66dff4;
     border-top: 4px solid #4cbed3;
     text-align: center;
     /*border-bottom: 1px solid #FFF0B5;*/
@@ -255,7 +255,8 @@ hr {
     border-bottom: none;
     position: relative;
     text-shadow: 0 1px 2px #eee;
-    color: #7CAE23;
+    /*color: #7CAE23;*/
+    color: #00a5e0;
 }
 
 .side-area a .iconfont {
@@ -291,7 +292,8 @@ hr {
 
 .content-area h2 {
     font-size: 22px;
-    color: #7CAE23;
+    /*color: #7CAE23;*/
+    color: #00a5e0;
     margin-top: 40px;
 }
 
@@ -467,3 +469,73 @@ body .fn-hide {
     visibility: visible;
 }
 
+/*javascript栏目样式*/
+.js-module{
+    margin-bottom: 30px;
+}
+.js-module-title{
+    font-size: 22px;
+    color: #00a5e0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.js-module-box{
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    padding: 8px 10px;
+    width: 170px;
+    /*height: 60px;*/
+    border: 1px solid #dbdbdb;
+    border-left: 5px solid #b4d0ee;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 2px 2px 0px rgba(0,0,0.05);
+    background-color: #fff;
+}
+.js-module-name{
+    color: #3f9eb3;
+    display: inline-block;
+    font-size: 18px;
+    max-width: 145px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-family: "Marmelad", "Lucida Grande", Georgia, sans-serif;
+}
+.js-module-name:hover{
+    text-decoration: underline;
+}
+.js-module-version{
+    font-size: 12px;
+    color: #aaa;
+    display: inline;
+    font-family: Menlo, Courier;
+}
+.js-module-description {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+    height: 36px;
+}
+.js-module-description:hover {
+    overflow: auto;
+}
+/*border颜色值*/
+.gn{
+    border-left-color: #6bdfcf;
+}
+.pk{
+    border-left-color: #fa8383;
+}
+.yl{
+    border-left-color: #fada8d;
+}
+.pp{
+    border-left-color: #c974ca;
+}
+.og{
+    border-left-color: #fd795a;
+}

@@ -1,17 +1,7 @@
 # 通用样式库
 
-- order: 3
+- order: 2
 - category: alice
-
----
-
-> Life is like a box of chocolate. 
-*「 Forrest Gump 」1994*
-
-这里是一套按照 [Alice 规范](/docs/rule.html) 和支付宝视觉规范搭建的的通用样式模块库。
-找到你需要的模块，复制代码，然后享受生活去吧。
-
-![](https://i.alipayobjects.com/e/201303/2MQNiaBkFJ.png)
 
 ---
 
@@ -56,7 +46,8 @@
     display: inline;
 }
 .alice-module-title a {
-    color: #7CAE23;
+    /*color: #7CAE23;*/
+    color: #00a5e0;
     cursor: pointer;
 }
 .alice-module-link {

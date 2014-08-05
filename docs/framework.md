@@ -1,8 +1,5 @@
 # 基础框架
 
-- order: 2
-- category: alice
-
 ---
 
 > Louis, I think this is the beginning of a beautiful friendship.

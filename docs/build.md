@@ -1,7 +1,5 @@
 # 构建模块和样式库
 
-- order: 6
-- category: alice
 
 ---
 
