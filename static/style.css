@@ -539,3 +539,199 @@ body .fn-hide {
 .og{
     border-left-color: #fd795a;
 }
+
+/*首页*/
+.fr-nav{
+    background-color: #fff;
+    height: 50px;
+}
+.fr-nav ul{
+    width: 1140px;
+    margin: 0 auto;
+}
+.fr-nav li{
+    margin: 0 18px;
+    display: inline-block;
+}
+#fr-nav-index a{
+    color: #4cbed3;
+    font-weight: 500;
+    font-size: 22px;
+}
+.fr-nav li a{
+    color: #5c5c5c;
+    line-height: 50px;
+}
+.fr-nav li a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+/*banner*/
+.fr-banner{
+    height: 575px;
+    background-image:-webkit-linear-gradient(90deg, #52b6ec, #66dff4);
+    background-image:linear-gradient(90deg,#52b6ec,#66dff4);
+}
+.fr-banner-content{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+.fr-banner-ph{
+    position: absolute;
+    right: 0;
+    top: 63px;
+    -webkit-animation:up 1s ease-in;
+}
+@keyframes up{
+    from{
+        opacity: 0;
+        transform:scale(0.8);
+        top: 200px;
+    }
+    to{
+        opacity: 1;
+        transform:scale(1);
+        top: 63px;
+    }
+}
+@-webkit-keyframes up{
+    from{
+        opacity: 0;
+        -webkit-transform:scale(0.8);
+        top: 200px;
+    }
+    to{
+        opacity: 1;
+        -webkit-transform:scale(1);
+        top: 63px;
+    }
+}
+.fr-banner-info{
+    position: absolute;
+    top: 100px;
+}
+.fr-banner-content h2{
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow:2px 2px 2px #ddd;
+}
+.fr-banner-content h3{
+    font-size: 32px;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+}
+.fr-banner-content a{
+    display: block;
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition:background .2s;
+    -webkit-transition:background .2s;
+    -moz-transition:background .2s;
+    -o-transition:background .2s;
+}
+.fr-banner-content a:hover{
+    color: #53b8ec;
+    background: #fff;
+    text-decoration: none;
+}
+/*content*/
+.fr-content{
+    background: #fff;
+    font-family: "Arial","Microsoft Yahei";
+}
+.fr-item{
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 75px 0;
+    border-bottom: 1px solid #eee;
+}
+.fr-item-info{
+    width: 450px;
+}
+.fr-item-info h2{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.fr-item-info p{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.fr-item-info a{
+    display: block;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color: #53b8ec;
+    border-radius: 5px;
+    border: 1px solid #53b8ec;
+    transition:background .2s;
+    -webkit-transition:background .2s;
+    -moz-transition:background .2s;
+    -o-transition:background .2s;
+}
+.fr-item-info a:hover{
+    text-decoration: none;
+    background-color: #52b6ec;
+    color: #fff;
+}
+.fr-frozenui{
+    position: absolute;
+    top: 75px;
+    right: 0;
+}
+.fr-frozenjs-img{
+    position: absolute;
+    top: 75px;
+    right: 0;
+}
+/*footer*/
+.fr-footer{
+    height: 200px;
+    background-color: #7d8eaa;
+    border-top: 5px solid #4cbed3;
+}
+.fr-footer-content{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.fr-footer-content div{
+    display: inline-block;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+.fr-footer-content h6{
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+.fr-footer-content p,
+.fr-footer-content a{
+    color: #696969;
+}
+#fr-footer-us{
+    width: 140px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+#fr-footer-us img{
+   margin-left: 30px;
+}
+
