@@ -160,32 +160,19 @@ seajs.use(['$', 'gallery/underscore/1.4.4/underscore', 'arale/popup/1.1.2/popup'
 
     $.getJSON('../package.json', function(data) {
         var alias;
-        if (data.spm && data.spm.alias) {
-            alias = data.spm.alias;
-        } else {
             alias = data.dependencies;
-        }
         var deps = _.pairs(alias);
         _.each(deps, function(dep) {
-            var reg = /(.*)\/(.*)\/(.*)\/(.*)\.css/i;
-            var match = dep[1].match(reg);
-
-            // 解析 name 和 family
-            var family = match[1];
-            var name = match[2];
-            var version = match[3];
-
             var moduleNode = $($('#alice-module').html());
             moduleNode.find('.alice-module-title a')
-                .attr('href', '/docs/ui/' + dep[0])
-                .attr('id', 'modules-' + dep[0])
-                .html(dep[0]);
-            moduleNode.find('.alice-module-version').html(version);
+                .attr('href', '/docs/ui/' + dep[1])
+                .attr('id', 'modules-' + dep[1])
+                .html(dep[1]);
             moduleNode.appendTo('.alice-modules');
             var list = substractTitle(moduleNode.find('h2'));
 
             $.ajax({
-                url: '/docs/ui/' + dep[0],
+                url: '/docs/ui/' + dep[1],
                 dataType: 'html',
                 success: function(data) {
                     data = $(data);
