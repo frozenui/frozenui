@@ -110,9 +110,7 @@ h3.alice-module-subtitle {
     z-index: 99;
     opacity: 0.8;
 }
-a {
-    color: #08c;
-}
+
 .alice-loading {
     margin-bottom: 20px;
 }

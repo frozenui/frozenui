@@ -3,42 +3,53 @@
 ---
 ###默认
 ````html
-<div class="wrap">
-		<section class="ui-notice">
+	<section class="ui-notice">
           <i></i>
           <p>请检查网络</p>
        </section>
-	</div>
 ````
 
 ###没有内容
 ````html
-<div class="wrap">
 	<section class="ui-notice">
        		<i class="icon-news"></i>
         	<p>暂时没有新消息</p>
       </section>
-</div>
 ````
 
 ###附近位置
 ````html
 
-<div class="wrap">
-		<section class="ui-notice">
+	<section class="ui-notice">
           <i class="icon-nearby"></i>
           <p>分享自己的位置</p>
        </section>
-</div>
 	
 ````
 
 ###加载中
 ````html
-<div class="wrap">
 	<section class="ui-notice">
          <p>加载中...</p>
       </section>
+	
+````
+###加载中
+````html
+<div class="ui-notice-warn">
+	<i class="ui-icon ui-icon-refresh loading"></i><p>请检查网络</p>
 </div>
+	
+````
+
+###带按钮的
+````html
+	<section class="ui-notice">
+          <p>待激活的号码</p>
+          <p>待激活的号码</p>
+          <div class="ui-notice-btn">
+              <button class="ui-btn-primary ui-btn-lg">续费超级会员</button>
+          </div>
+       </section>
 	
 ````

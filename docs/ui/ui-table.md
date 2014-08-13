@@ -3,7 +3,7 @@
 ---
 ###default
 ````html
-<table class="ui-table ui-border-top">
+<table class="ui-table ui-border-t">
         <thead>
             <tr><th>已购买</th><th>状态</th><th>会员到期时间</th></tr>
         </thead>

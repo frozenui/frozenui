@@ -7,21 +7,21 @@
 
 	<button class="ui-btn ui-btn-lg">确定</button>
 	 <button class="ui-btn ui-btn-lg active">确定</button>
-      <button class="ui-btn ui-btn-lg ui-btn-disabled">取消</button>
+      <button class="ui-btn ui-btn-lg disabled">取消</button>
 	
 ````
 
 ### 蓝色
 
 ````html
-	<button class="ui-btn ui-btn-lg ui-btn-blue">确定</button>
-	<button class="ui-btn ui-btn-lg ui-btn-blue active">确定</button>
-	<button class="ui-btn ui-btn-lg ui-btn-disabled">取消</button>````
+	<button class="ui-btn ui-btn-lg ui-btn-primary">确定</button>
+	<button class="ui-btn ui-btn-lg ui-btn-primary active">确定</button>
+	<button class="ui-btn ui-btn-lg disabled">取消</button>````
 
-### 不可用
+### 红色
 
 ````html
-	<button class="ui-btn ui-btn-lg ui-btn-red">确定</button>
-  	<button class="ui-btn ui-btn-lg ui-btn-red active">确定</button>
-  	<button class="ui-btn ui-btn-lg ui-btn-disabled">取消</button>
+	<button class="ui-btn ui-btn-lg ui-btn-danger">确定</button>
+  	<button class="ui-btn ui-btn-lg ui-btn-danger active">确定</button>
+  	<button class="ui-btn ui-btn-lg disabled">取消</button>
 ````

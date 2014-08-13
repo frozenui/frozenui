@@ -35,7 +35,7 @@ class 名称应当尽可能短，并且意义明确。
 
 常用文本颜色 //todo: 黑色是默认颜色，是否根据功能命名
 
-ui-border-top，ui-border-btm，ui-border-left，ui-border-right，ui-border-tb分别是上，下，左，右以及上下两条线的1px解决方案。
+ui-border-t，ui-border-b，ui-border-l，ui-border-r，ui-border-tb分别是上，下，左，右以及上下两条线的1px解决方案。
 
 ui-center 垂直上下居中，需要重置高度
 

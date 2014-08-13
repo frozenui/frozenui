@@ -7,12 +7,12 @@
 
 ````html
 
-<div class="ui-dialog show" id="dialog2">
-        <div class="dialog-container">
-            <div class="dialog-body">
+<div class="ui-dialog show">
+        <div class="ui-dialog-cnt">
+            <div class="ui-dialog-bd">
                 <div>开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！</div>
             </div>
-            <div class="dialog-footer ui-btn-group">
+            <div class="ui-dialog-ft ui-btn-group">
                 <button type="button">取消</button>
                 <button type="button">开通</button>
             </div>
@@ -24,8 +24,8 @@
 
 ````html
 <div class="ui-dialog ui-dialog-notice show">
-        <div class="dialog-notice-content">
-          <i class="ui-loading ui-loading-white"></i>
+        <div class="ui-dialog-cnt">
+          <i class="ui-loading ui-loading-bright"></i>
           <p>加载中...</p>
        </div>
      </div>
