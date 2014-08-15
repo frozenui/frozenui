@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/*图标基类*/
+.ui-icon-vip {
+    display:inline-block;
+    height:1px;
+    position: relative;
+    vertical-align: middle;
+    &:after {
+        overflow:hidden;
+        content:"\0020";
+        display:block;
+        width:100%;
+        background-repeat:no-repeat;
+        position: absolute;
+        line-height:100px;
+    }
+}
+/*超Q图标*/
+.ui-icon-mq {
+    width: 28px;
+    &:after {
+        height: 28px;
+        top: -15px;
+        -webkit-background-size: 28px auto;
+    }
+}
+@each $item in vip, yearvip {
+    .ui-icon-mq#{$item},
+    .ui-icon-mq#{$item}-off {
+        @extend .ui-icon-vip;
+        @extend .ui-icon-mq;
+    }
+    .ui-icon-mq#{$item}:after {
+        background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/mq_#{$item}.png);
+    }
+
+    .ui-icon-mq#{$item}-off:after {
+        background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/off/mq_#{$item}.png);
+    }
+}
+
+/*等级图标*/
+@each $item in vip, svip, yearvip,yearsvip {
+    @each $type in level,level-s {
+        .ui-icon-#{$item}#{$type} {
+            @extend .ui-icon-vip;
+        }
+    }
+}
+
+/*宽度与背景size*/
+.ui-icon-viplevel {
+    width:50px;
+    &:after {
+        -webkit-background-size: 50px auto;
+    }
+}
+.ui-icon-viplevel-s {
+    width:29px;
+    &:after {
+        -webkit-background-size: auto 13px;
+    }
+}
+.ui-icon-yearviplevel{
+    width:59px;
+    &:after {
+        -webkit-background-size: 59px auto;
+    }
+}
+.ui-icon-yearviplevel-s {
+    width:38px;
+    &:after {
+        -webkit-background-size: auto 13px;
+    }
+}
+.ui-icon-sviplevel {
+    width:57px;
+    &:after {
+        -webkit-background-size: 57px auto;
+    }
+}
+.ui-icon-sviplevel-s {
+    width:35px;
+    &:after {
+        -webkit-background-size: auto 13px;
+    }
+}
+.ui-icon-yearsviplevel {
+    width:66px;
+    &:after {
+        -webkit-background-size: 66px auto;
+    }
+}
+.ui-icon-yearsviplevel-s {
+    width:45px;
+    &:after {
+        -webkit-background-size: auto 13px;
+    }
+}
+
+.ui-icon-viplevel:after, .ui-icon-yearviplevel:after {
+    height:24px;
+    top:-15px;
+}
+.ui-icon-sviplevel:after, .ui-icon-yearsviplevel:after {
+    height:26px;
+    top:-17px;
+}
+.ui-icon-viplevel-s:after, .ui-icon-sviplevel-s:after,.ui-icon-yearviplevel-s:after,.ui-icon-yearsviplevel-s:after {
+    height:13px;
+    top:-7px;
+}
+
+
+/*正常状态图标*/
+@for $i from 1 through 7 {
+    //普通会员等级图标
+    .ui-icon-viplevel.level#{$i}:after {background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/vip_#{$i}.png)} 
+    
+    //普通会员铭牌等级图标
+    .ui-icon-viplevel-s.level#{$i}:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/vip_c_#{$i}.png)}
+    
+    //普通年费会员铭牌等级图标
+    .ui-icon-yearviplevel-s.level#{$i}:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/vip_n_c_#{$i}.png)}
+
+
+    
+    //年费会员等级图标
+    .ui-icon-yearviplevel.level#{$i}:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/vip_n_#{$i}.png)}
+
+    //超级会员等级图标
+    .ui-icon-sviplevel.level#{$i}:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/svip_#{$i}.png)}
+
+    //超级会员铭牌等级图标
+    .ui-icon-sviplevel-s.level#{$i}:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/svip_c_#{$i}.png)}
+
+    //年费超级会员等级图标
+    .ui-icon-yearsviplevel.level#{$i}:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/svip_n_#{$i}.png)}
+    
+    //年费超级会员铭牌等级图标
+    .ui-icon-yearsviplevel-s.level#{$i}:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/svip_n_c_#{$i}.png)}
+
+}
+
+/*过期状态图标*/
+@for $i from 1 through 7 {
+    //普通会员等级图标
+    .ui-icon-viplevel.level#{$i}-off:after {background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/off/vip_#{$i}.png)} 
+    
+    //普通会员铭牌等级图标
+    .ui-icon-viplevel-s.level#{$i}-off:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/off/vip_c_#{$i}.png)}
+    
+    //普通年费会员铭牌等级图标
+    .ui-icon-yearviplevel-s.level#{$i}-off:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/off/vip_n_c_#{$i}.png)}
+
+    //年费会员等级图标
+    .ui-icon-yearviplevel.level#{$i}-off:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/off/vip_n_#{$i}.png)}
+
+    //超级会员等级图标
+    .ui-icon-sviplevel.level#{$i}-off:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/off/svip_#{$i}.png)}
+
+    //超级会员铭牌等级图标
+    .ui-icon-sviplevel-s.level#{$i}-off:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/off/svip_c_#{$i}.png)}
+
+    //年费超级会员等级图标
+    .ui-icon-yearsviplevel.level#{$i}-off:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/off/svip_n_#{$i}.png)}
+    
+     //年费超级会员铭牌等级图标
+    .ui-icon-yearsviplevel-s.level#{$i}-off:after { background-image: url(http://imgcache.gtimg.cn/vipstyle/mobile/global/mqqui/v2/img/vip/off/svip_n_c_#{$i}.png)}
+    
+}
+
+
+
+
+
+
+
+
+
+
