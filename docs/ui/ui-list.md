@@ -61,20 +61,20 @@
       <ul class="ui-list ui-border-tb">
         
         <li class="active">
-          <div class="thumb">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+          <div class="ui-list-thumb">
+             <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
           </div>
-          <div class="info ui-border-t">
-            <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
           </div>
         </li>
         <li>
-          <div class="thumb">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+          <div class="ui-list-thumb">
+             <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
           </div>
-          <div class="info ui-border-t">
-            <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
           </div>
         </li>
@@ -87,19 +87,19 @@
       <ul class="ui-list ui-border-tb">
         
         <li class="active">
-          <div class="thumb-s">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?56*56)"></span>
+          <div class="ui-list-thumb-s">
+             <span style="background-image:url(http://icase.tencent.com/vlabs/img/?56*56)"></span>
           </div>
-          <div class="info ui-border-t">
-            <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
           </div>
         </li>
         <li>
-          <div class="thumb-s">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?56*56)"></span>
+          <div class="ui-list-thumb-s">
+             <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?56*56)"></span>
           </div>
-          <div class="info ui-border-t">
-            <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
           </div>
         </li>
       </ul>
@@ -110,20 +110,20 @@
  ````html
       <ul class="ui-list ui-border-tb">
         <li class="ui-border-t active">
-          <div class="thumb">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+          <div class="ui-list-thumb">
+             <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
           </div>
-          <div class="info">
-            <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+          <div class="ui-list-info">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
           </div>
         </li>
         <li class="ui-border-t">
-          <div class="thumb">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+          <div class="ui-list-thumb">
+             <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
           </div>
-          <div class="info">
-            <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+          <div class="ui-list-info">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
           </div>
         </li>
@@ -135,21 +135,21 @@
       
       <ul class="ui-list ui-list-function ui-border-tb">
         <li class="active">
-          <div class="thumb">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+          <div class="ui-list-thumb">
+             <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
           </div>
-          <div class="info ui-border-t">
-            <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
           </div>
           <div class="ui-btn">PK</div>
         </li>
         <li>
-          <div class="thumb">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+          <div class="ui-list-thumb">
+             <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
           </div>
-          <div class="info ui-border-t">
-            <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
           </div>
           <button class="ui-btn">PK</button>
@@ -163,22 +163,22 @@
   
 ````html
       <ul class="ui-list ui-list-link ui-border-tb">
-        <li>
-          <div class="thumb">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+        <li class="ui-border-t">
+          <div class="ui-list-thumb">
+             <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
           </div>
-          <div class="info ui-border-t">
+          <div class="ui-list-info">
             
-              <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+              <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
               <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
           </div>
         </li>
-        <li class="active">
-          <div class="thumb">
-             <span class="img" style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+        <li class="ui-border-t active">
+          <div class="ui-list-thumb">
+             <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
           </div>
-          <div class="info ui-border-t">
-            <h3>标题标题标题标题标题标题标题标题标题标题标题</h3>
+          <div class="ui-list-info">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
           </div>
         </li>

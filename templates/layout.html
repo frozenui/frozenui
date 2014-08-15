@@ -13,15 +13,14 @@
         
         {%- block assets %}
         <link type="image/x-icon" href="{{static_url('favicon.ico')}}" rel="icon">
-        <link rel="stylesheet" href="{{static_url('css/normalize.css')}}" />
-        <link rel="stylesheet" href="{{static_url('css/site.css')}}" />
-        <link rel="stylesheet" href="{{static_url('css/solarized.css')}}" />
+
         <link rel="stylesheet" href="{{static_url('style.css')}}" />
-        <link rel="stylesheet" href="/src/css/global.css" />
+        <link rel="stylesheet" href="{{static_url('solarized.css')}}" />
+        <link rel="stylesheet" href="{{static_url('css/global.css')}}" />
         {%- include "snippet/head.html" %}
         <style>
             .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
-                position: static;
+                position: relative;
                 margin: 0;
             }
         
@@ -32,7 +31,7 @@
             	-webkit-user-select: inherit;
         	}
         </style>
-        <script src="{{static_url('js/site.js')}}"></script>
+        <script src="{{static_url('side.js')}}"></script>
         <!--[if lt IE 9]>
         <script src="{{static_url('js/html5shiv.js')}}"></script>
         <![endif]-->

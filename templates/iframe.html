@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="{{theme.lang}}">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{{config.package.name|title}}{% endblock %}</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    /* alipay iconfont */
+    @font-face {
+        font-family: "rei";
+        src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130502"); /* IE9 */
+        src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130502#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("https://i.alipayobjects.com/common/fonts/rei.woff?20130502") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+        url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130502")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+        url("https://i.alipayobjects.com/common/fonts/rei.svg?20130502#rei") format("svg"); /* iOS 4.1- */
+    }
+    .iconfont {
+        font-family:"rei";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #4d4d4d;
+        cursor: default;
+        -webkit-font-smoothing: antialiased;
+    }
+    </style>
+    {%- include "snippet/head.html" %}
+  </head>
+  <body>
+    {{ iframe.code }}
+    {{ post.html|replace_code }}
+  </body>
+</html>

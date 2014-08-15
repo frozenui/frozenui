@@ -1,8 +1,8 @@
 # atom
 
 ---
+辅助类
 
-<link type="text/css" rel="stylesheet" media="screen" href="src/atom.css">
 
 ###常用文本颜色
 
@@ -51,10 +51,10 @@
 ````html
  
 	 <div class="ui-reddot">内容内容</div>
-	 <div class="ui-reddot ui-reddot-border">内容内容</div>
-	  <div class="ui-reddot ui-reddot-s">内容内容</div>
+	 <div class="ui-reddot-border">内容内容</div>
+	  <div class="ui-reddot-s">内容内容</div>
 	 <div class="ui-badge">123</div>
-	 <div class="ui-badge ui-badge-muted">345</div>
+	 <div class="ui-badge-muted">345</div>
 
   ````
   
@@ -64,25 +64,21 @@
 
 		<p>圆角头像，列表场景</p>
 	
-        	<img src="http://icase.tencent.com/vlabs/img/?100*100" class="ui-avatar">
+        	<div class="ui-avatar"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span></div>
     	
-        	<img src="http://icase.tencent.com/vlabs/img/?108*108" class="ui-avatar-lg">
+        	<div class="ui-avatar-lg"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?108*108)"></span></div>
     	
-        	<img src="http://icase.tencent.com/vlabs/img/?80*80" class="ui-avatar-s">
+        	<div class="ui-avatar-s"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span></div>
    
     		<p>资料场景</p>
     		
-        	<img src="http://icase.tencent.com/vlabs/img/?128*128" class="ui-avatar-one">
+        	<div class="ui-avatar-one"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?128*128)"></span></div>
         	
     	    	<p>平铺头像</p>
-    	
-        	<img src="http://icase.tencent.com/vlabs/img/?60*60"  class="ui-avatar-tiled">
-  
-        	<img src="http://icase.tencent.com/vlabs/img/?60*60" class="ui-avatar-tiled">
-    
-        	<img src="http://icase.tencent.com/vlabs/img/?60*60"  class="ui-avatar-tiled">
-
-        	<img src="http://icase.tencent.com/vlabs/img/?60*60"  class="ui-avatar-tiled">
+    		<span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+        	<span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+        	<span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+        	<span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
  ````
  
 

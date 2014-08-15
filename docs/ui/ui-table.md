@@ -2,6 +2,7 @@
 
 ---
 ###default
+
 ````html
 <table class="ui-table ui-border-t">
         <thead>
@@ -13,6 +14,6 @@
             <tr><td>2014257777</td><td>待付款</td><td><a href="#">付款</a></td></tr>
         </tbody>
     </table>
-   
- ````		
+  ````
+
 
