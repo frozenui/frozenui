@@ -7,13 +7,14 @@ module.exports =function(grunt) {
         pkg : grunt.file.readJSON('package.json'),
         
         meta: {
-            destPath: '1.0.0'
+            destPath: '1.0.0',
+            zipPath:'1.0.0/i.gtimg.cn/vipstyle/frozenui/1.0.0'
         },
         
         cssmin: {
             minify: {
                 expand: true,
-                cwd: 'css-debug/',
+                cwd: '<%=meta.destPath%>/css-debug/',
                 src: ['**/*.css'],       
                 dest:'<%=meta.destPath%>/css/'
             }
@@ -28,31 +29,37 @@ module.exports =function(grunt) {
                     expand: true,
                     cwd: 'img/',
                     src: ['**/*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
-                    dest: 'img/' // 优化后的图片保存位置，覆盖旧图片，并且不作提示
+                    dest: '<%=meta.destPath%>/img/' // 优化后的图片保存位置
                 }]
             }
         },
         copy : {
             img:{
                 expand: true,
-                cwd: 'img/',
+                cwd: '<%=meta.destPath%>/img/',
                 src: '*',
-                dest:'<%=meta.destPath%>/zip/img/',
+                dest:'<%=meta.zipPath%>/img/',
                 filter: 'isFile'
             },
             css:{
                 src: '<%=meta.destPath%>/css/basic.css',
-                dest:'<%=meta.destPath%>/zip/css/basic.css'
+                dest:'<%=meta.zipPath%>/css/basic.css'
+            },
+            doc:{
+                expand: true,
+                cwd: '<%=meta.destPath%>/css-debug/',
+                src: '*',
+                dest:'static/css/'
             }
         },
         compress: {
           main: {
             options: {
-              archive: '<%=meta.destPath%>/offline.zip'
+              archive: '<%=meta.destPath%>/i.gtimg.cn.zip'
             },
             expand: true,
-            cwd: '<%=meta.destPath%>/zip/', 
-            src: ['**/*']
+            cwd: '<%=meta.destPath%>', 
+            src: ['i.gtimg.cn/**']
           }
         },
         sass: {
@@ -60,7 +67,7 @@ module.exports =function(grunt) {
                 expand: true,
                 cwd : "sass",
                 src: ['**/*.scss'],
-                dest:'css-debug/',
+                dest:'<%=meta.destPath%>/css-debug/',
                 ext:'.css'
             }
         },

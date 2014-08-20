@@ -1,21 +1,4 @@
 /* Reset */
-@import "base/reset";
-@import "base/atom";
-
-@import "basic/ui-btn";
-
-@import "basic/ui-dialog";
-@import "basic/ui-tips";
-@import "basic/ui-tips-news";
-@import "basic/ui-tab";
-@import "basic/ui-table";
-@import "basic/ui-list";
-@import "basic/ui-loading";
-@import "basic/ui-btn-group";
-@import "basic/ui-notice";
-@import "basic/ui-icon";
-@import "basic/ui-select-user";
-
-@import "vip/ui-icon-qqlevel";
-@import "vip/ui-icon-viplevel";
+@import "basic";
+@import "vip";
 

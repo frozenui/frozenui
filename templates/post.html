@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{%- block title -%}{{config.package.family}}/{{config.package.name}} - {{post.title}}{%- endblock -%}
+
+{% block content %}
+<article class="hentry">
+  <h1 class="entry-title">{{post.title}}</h1>
+  <div class="entry-content">
+    {{ post.html|replace_code|fixlink|add_anchor }}
+  </div>
+</article>
+{% endblock %}
+
+{%- block subsidebar %}
+{%- set items = resource.pages|find_category(post.meta.category) %}
+{%- if items|length > 1 %}
+<ol id="sidenav">
+  {%- for item in items %}
+  <li><a href="{{permalink_url(item)}}">{{item.title}}</a></li>
+  {%- endfor %}
+</ol>
+{%- endif %}
+
+{%- set output = config.package.spm.output %}
+<ul id="module-output">
+  <li class="module-multiable" title="本组件共有{{output|length}}个子模块">文件</li>
+    {%- for value in output %}
+    <li><a data-file="{{value}}" target="_blank" href="http://assets.spmjs.org/{{config.package.family}}/{{config.package.name}}/{{config.package.version}}/{{value}}">■</a></li>
+    {%- endfor %}
+</ul>
+<div id="output-card">
+    <h3>{{config.package.family}}/{{config.package.name}}/{{config.package.version}}/<a target="_blank" id="output-file"></a></h3>
+    <p>这是本模块的输出文件，请复制以上 ID 进行使用。</p>
+</div>
+
+{%- if config.package.family == 'arale' || config.package.family == 'alice' || config.package.family == 'alipay' %}
+{%- if config.package.maintainers|length > 0 %}
+<div id="maintainers">
+    {%- for value in config.package.maintainers %}
+    <a target="_blank" href="http://www.taobao.com/webww/ww.php?ver=3&touid={{value|getNickName}}&siteid=cntaobao&status=2&charset=utf-8">
+        <img border="0" src="http://amos.alicdn.com/online.aw?v=2&uid={{value|getNickName}}&site=cntaobao&s=2&charset=utf-8" alt="点这里给我发消息" />
+        {{value|getNickName}}
+    </a>
+    {%- endfor %}
+</div>
+{%- endif %}
+{%- endif %}
+{%- endblock %}

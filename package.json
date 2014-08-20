@@ -1,6 +1,7 @@
 {
   "name": "frozenui",
   "version": "0.1.0",
+  "family": "alice",
   "devDependencies": {
     "grunt": "~0.4.0",
     "grunt-contrib-compress": "*",
@@ -12,7 +13,9 @@
   },
   "description": "手Q公用web ui库",
   "main": "Gruntfile.js",
-  "dependencies": {},
+  "ui": [
+        "atom","ui-btn","ui-btn-lg","ui-btn-group","ui-dialog","ui-list","ui-loading","ui-notice","ui-select-user","ui-tab","ui-table","ui-tips","ui-tips-news","ui-icon","ui-icon-tag","ui-icon-viplevel","ui-icon-qqlevel"
+        ],
   "author": "jeakeyliang",
   "license": "ISC"
 }
