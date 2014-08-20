@@ -11,19 +11,19 @@
 
 ###没有内容
 ````html
-	<section class="ui-notice">
-       		<i class="icon-news"></i>
-        	<p>暂时没有新消息</p>
-      </section>
+ <section class="ui-notice ui-notice-news">
+	<i></i>
+	<p>暂时没有新消息</p>
+</section>
 ````
 
 ###附近位置
 ````html
 
-	<section class="ui-notice">
-          <i class="icon-nearby"></i>
-          <p>分享自己的位置</p>
-       </section>
+<section class="ui-notice ui-notice-nearby">
+	<i></i>
+	<p>分享自己的位置</p>
+</section>
 	
 ````
 

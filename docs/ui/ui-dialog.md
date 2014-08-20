@@ -25,7 +25,7 @@
 ````html
 <div class="ui-dialog ui-dialog-notice show">
         <div class="ui-dialog-cnt">
-          <i class="ui-loading ui-loading-bright"></i>
+          <i class="ui-loading-bright"></i>
           <p>加载中...</p>
        </div>
      </div>

@@ -1,24 +1,11 @@
 {
-  "name": "alice.spmjs.org",
+  "name": "frozenui",
   "version": "0.0.1",
   "title": "Frozen",
   "family": "alice",
   "description": "mobile apps friendly",
-  "homepage": "http://aliceui.org",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aliceui/aliceui.org"
-  },
-  "bugs": {
-    "url": "https://github.com/aliceui/aliceui.org/issues"
-  },
-  "spm": {
-      "alias": {
-      },
-      "output":["frozen.css"]
-  },
   "dependencies":[
-        "atom","ui-btn","ui-btn-lg","ui-btn-group","ui-dialog","ui-list","ui-loading","ui-notice","ui-select-user","ui-tab","ui-table","ui-tips","ui-tips-news","ui-icon","ui-icon-viplevel","ui-icon-qqlevel"
+        "atom","ui-btn","ui-btn-lg","ui-btn-group","ui-dialog","ui-list","ui-loading","ui-notice","ui-select-user","ui-tab","ui-table","ui-tips","ui-tips-news","ui-icon","ui-icon-tag","ui-icon-viplevel","ui-icon-qqlevel"
         ]
 
 }

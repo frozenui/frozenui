@@ -5,7 +5,7 @@ exports.package = pkg;
 // {{ settings for nico
 exports.theme = __dirname
 exports.source = process.cwd()
-exports.output = path.join(process.cwd(), '_site')
+exports.output = path.join(process.cwd(), '../frozenui.github.io')
 exports.permalink = '{{directory}}/{{filename}}.html'
 if (pkg.family === 'arale') {
   exports.google = 'UA-36247332-1'
