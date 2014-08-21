@@ -24,7 +24,7 @@
   },
   "description": "手Q公用web ui库",
   "main": "Gruntfile.js",
-  "ui": [
+  "widgets": [
         "atom","ui-btn","ui-btn-lg","ui-btn-group","ui-dialog","ui-list","ui-loading","ui-notice","ui-select-user","ui-tab","ui-table","ui-tips","ui-tips-news","ui-icon","ui-icon-tag","ui-icon-viplevel","ui-icon-qqlevel"
         ],
   "author": "jeakeyliang",
