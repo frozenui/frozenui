@@ -1,0 +1,369 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title> - ui-list</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico 0.5.1" />
+        <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
+
+        <link rel="stylesheet" href="../static/style.css" />
+        <link rel="stylesheet" href="../static/solarized.css" />
+        <link rel="stylesheet" href="../static/css/global.css" />
+<style>
+/* alipay iconfont */
+@font-face {
+  font-family: "rei";
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+  url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"rei";
+  font-style: normal;
+  font-weight: normal;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39169474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    if (location.port) {
+       return;
+    }
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script src="http://static.alipayobjects.com/??
+seajs/seajs/2.2.0/sea.js,
+seajs/seajs-combo/1.0.1/seajs-combo.js,
+seajs/seajs-style/1.0.2/seajs-style.js,
+seajs/seajs-health/0.1.0/seajs-health.js,
+jquery/jquery/1.7.2/jquery.js"></script>
+<script>
+  (function() {
+
+  var query = location.search.substring(1).split('&');
+  var srcdir = 'src';
+
+  if (contain(query, 'dist')) {
+    srcdir = 'dist';
+    
+  } else if (contain(query, 'cov')) {
+    srcdir = 'src-cov';
+  }
+
+  seajs.config({
+    alias: {
+      "$": 'jquery/jquery/1.7.2/jquery',
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      "jquery": 'jquery/jquery/1.7.2/jquery',
+      "jquery-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      expect: "gallery/expect/0.2.0/expect",
+      puerh: "popomore/puerh/0.1.0/puerh",
+      handlebars: "gallery/handlebars/1.0.2/handlebars",
+      sinon: "gallery/sinon/1.6.0/sinon"
+    },
+    map: [function(uri) {
+      // resolve id
+      var m = uri.match(/alice\/frozenui\/0.1.0\/(.*)/);
+      if (m) {
+        return resolve(m[1]);
+      }
+      return uri;
+    }, function(uri) {
+      var m = uri.match(/([A-Za-z\-]+)\/[A-Za-z\-]+\/[\.0-9]+\/.+/);
+      if (m && /^alipay|anima$/.test(m[1])) {
+        return 'http://yuan.alipay.im/assets/' + m[0];
+      }
+      return uri;
+    }],
+    comboExcludes: {test: function(uri) {
+      return uri.indexOf('http://static.alipayobjects.com') === -1;
+    }}
+  });
+
+  function resolve(file) {
+    if (contain(query, 'debug')) {
+      if (file.indexOf('-debug') === -1) {
+        file = file.replace(/\.(\w+)$/, '-debug.$1');
+      }
+    }
+    return seajs.resolve("../" + srcdir + "/" + file + '#');
+  }
+
+  function contain(arr, value) {
+    for (var i in arr) {
+      if (arr[i] === value) {
+        return true;
+      }
+    }
+    return false;
+  }
+  })();
+</script>
+        <style>
+            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+                position: relative;
+                margin: 0;
+            }
+        
+        	.ui-icon{font-size:30px;}
+        	.ui-table{line-height: 40px;} 
+        	.ui-dialog{height:320px;}
+        	body{
+            	-webkit-user-select: inherit;
+        	}
+        </style>
+        <script src="../static/side.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../static/js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <script>
+        seajs.use(['arale/fixed/1.0.1/fixed', '/static/side'], function(Fixed, side) {
+            Fixed('.side-area', 20);
+            side.init();
+        });
+        </script>
+    </head>
+    <body>
+        <div id="body-wrapper">
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#文字普通列表">文字普通列表</a></li><li><a href="#带选中态">带选中态</a></li><li><a href="#文字通栏列表">文字通栏列表</a></li><li><a href="#文字连接列表">文字连接列表</a></li><li><a href="#图文普通列表">图文普通列表</a></li><li><a href="#小图图文列表">小图图文列表</a></li><li><a href="#图文列表">图文列表</a></li><li><a href="#功能列表">功能列表</a></li><li><a href="#图文链接列表">图文链接列表</a></li></ul></div>
+                
+                <script type="text/template" id="list-template">
+                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>ui-list</h1>
+                    <div class="content"><h3 id="文字普通列表">文字普通列表<a href="#文字普通列表" class="anchor">¶</a></h3><div class="nico-insert-code">
+      <ul class="ui-list ui-list-text ui-border-tb">
+        <li class="ui-border-t ui-list-item-link">
+          标题标题标题标题标题标题标题标题标题标题标题
+        </li>
+        <li class="ui-border-t">
+            标题标题标题标题标题标题标题标题标题标题标题
+        </li>
+      </ul></div><div class="highlight"><pre><code class="xml">
+      <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-text ui-border-tb"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t ui-list-item-link"</span>&gt;</span>
+          标题标题标题标题标题标题标题标题标题标题标题
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
+            标题标题标题标题标题标题标题标题标题标题标题
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="带选中态">带选中态<a href="#带选中态" class="anchor">¶</a></h3><div class="nico-insert-code">      <ul class="ui-list ui-list-text ui-border-tb">
+        <li class="ui-border-t selected">
+          标题标题
+        </li>
+        <li class="ui-border-t">
+            标题标题标题标题标题标题标题标题标题标题标题
+        </li>
+      </ul></div><div class="highlight"><pre><code class="xml">      <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-text ui-border-tb"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t selected"</span>&gt;</span>
+          标题标题
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
+            标题标题标题标题标题标题标题标题标题标题标题
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="文字通栏列表">文字通栏列表<a href="#文字通栏列表" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml">      <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-text list-cover ui-border-tb"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t active"</span>&gt;</span>
+          标题标题标题标题标题标题标题标题标题标题标题
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
+            标题标题标题标题标题标题标题标题标题标题标题
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="文字连接列表">文字连接列表<a href="#文字连接列表" class="anchor">¶</a></h3><div class="nico-insert-code">      <ul class="ui-list ui-list-text ui-list-link ui-border-tb">
+        <li class="active ui-border-t">
+          标题标题标题标题标题标题标题标题标题标题标题
+        </li>
+        <li class="ui-border-t">
+            标题标题标题标题标题标题标题标题标题标题标题
+        </li>
+      </ul></div><div class="highlight"><pre><code class="xml">      <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-text ui-list-link ui-border-tb"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active ui-border-t"</span>&gt;</span>
+          标题标题标题标题标题标题标题标题标题标题标题
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
+            标题标题标题标题标题标题标题标题标题标题标题
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="图文普通列表">图文普通列表<a href="#图文普通列表" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml">      <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-border-tb"</span>&gt;</span>
+
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb ui-avatar-s"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb ui-avatar-s"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="小图图文列表">小图图文列表<a href="#小图图文列表" class="anchor">¶</a></h3><div class="nico-insert-code">      <ul class="ui-list ui-border-tb">
+
+        <li class="active">
+          <div class="ui-list-thumb-s">
+             <span style="background-image:url(http://icase.tencent.com/vlabs/img/?56*56)"></span>
+          </div>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+          </div>
+        </li>
+        <li>
+          <div class="ui-list-thumb-s">
+             <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?56*56)"></span>
+          </div>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+          </div>
+        </li>
+      </ul></div><div class="highlight"><pre><code class="xml">      <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-border-tb"</span>&gt;</span>
+
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb-s"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?56*56)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb-s"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?56*56)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="图文列表">图文列表<a href="#图文列表" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml">      <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-border-tb"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t active"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="功能列表">功能列表<a href="#功能列表" class="anchor">¶</a></h3><div class="nico-insert-code">
+      <ul class="ui-list ui-list-function ui-border-tb">
+        <li class="active">
+          <div class="ui-avatar-s">
+             <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span>
+          </div>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+          </div>
+          <div class="ui-btn">PK</div>
+        </li>
+        <li>
+          <div class="ui-avatar-s">
+             <span style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span>
+          </div>
+          <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+          </div>
+          <button class="ui-btn">PK</button>
+        </li>
+      </ul></div><div class="highlight"><pre><code class="xml">
+      <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-function ui-border-tb"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-s"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-btn"</span>&gt;</span>PK<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-s"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ui-btn"</span>&gt;</span>PK<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="图文链接列表">图文链接列表<a href="#图文链接列表" class="anchor">¶</a></h3><div class="nico-insert-code">      <ul class="ui-list ui-list-link ui-border-tb">
+        <li class="ui-border-t">
+          <div class="ui-list-thumb">
+             <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+          </div>
+          <div class="ui-list-info">
+
+              <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+              <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+          </div>
+        </li>
+        <li class="ui-border-t active">
+          <div class="ui-list-thumb">
+             <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+          </div>
+          <div class="ui-list-info">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+          </div>
+        </li>
+
+      </ul></div><div class="highlight"><pre><code class="xml">      <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-link ui-border-tb"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info"</span>&gt;</span>
+
+              <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+              <span class="tag">&lt;<span class="title">p</span>&gt;</span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t active"</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb"</span>&gt;</span>
+             <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+          <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+
+      <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div></div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <footer>
+            </footer>
+        </div>
+    </body>
+</html>

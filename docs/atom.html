@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title> - atom</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico 0.5.1" />
+        <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
+
+        <link rel="stylesheet" href="../static/style.css" />
+        <link rel="stylesheet" href="../static/solarized.css" />
+        <link rel="stylesheet" href="../static/css/global.css" />
+<style>
+/* alipay iconfont */
+@font-face {
+  font-family: "rei";
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+  url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"rei";
+  font-style: normal;
+  font-weight: normal;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39169474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    if (location.port) {
+       return;
+    }
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script src="http://static.alipayobjects.com/??
+seajs/seajs/2.2.0/sea.js,
+seajs/seajs-combo/1.0.1/seajs-combo.js,
+seajs/seajs-style/1.0.2/seajs-style.js,
+seajs/seajs-health/0.1.0/seajs-health.js,
+jquery/jquery/1.7.2/jquery.js"></script>
+<script>
+  (function() {
+
+  var query = location.search.substring(1).split('&');
+  var srcdir = 'src';
+
+  if (contain(query, 'dist')) {
+    srcdir = 'dist';
+    
+  } else if (contain(query, 'cov')) {
+    srcdir = 'src-cov';
+  }
+
+  seajs.config({
+    alias: {
+      "$": 'jquery/jquery/1.7.2/jquery',
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      "jquery": 'jquery/jquery/1.7.2/jquery',
+      "jquery-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      expect: "gallery/expect/0.2.0/expect",
+      puerh: "popomore/puerh/0.1.0/puerh",
+      handlebars: "gallery/handlebars/1.0.2/handlebars",
+      sinon: "gallery/sinon/1.6.0/sinon"
+    },
+    map: [function(uri) {
+      // resolve id
+      var m = uri.match(/alice\/frozenui\/0.1.0\/(.*)/);
+      if (m) {
+        return resolve(m[1]);
+      }
+      return uri;
+    }, function(uri) {
+      var m = uri.match(/([A-Za-z\-]+)\/[A-Za-z\-]+\/[\.0-9]+\/.+/);
+      if (m && /^alipay|anima$/.test(m[1])) {
+        return 'http://yuan.alipay.im/assets/' + m[0];
+      }
+      return uri;
+    }],
+    comboExcludes: {test: function(uri) {
+      return uri.indexOf('http://static.alipayobjects.com') === -1;
+    }}
+  });
+
+  function resolve(file) {
+    if (contain(query, 'debug')) {
+      if (file.indexOf('-debug') === -1) {
+        file = file.replace(/\.(\w+)$/, '-debug.$1');
+      }
+    }
+    return seajs.resolve("../" + srcdir + "/" + file + '#');
+  }
+
+  function contain(arr, value) {
+    for (var i in arr) {
+      if (arr[i] === value) {
+        return true;
+      }
+    }
+    return false;
+  }
+  })();
+</script>
+        <style>
+            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+                position: relative;
+                margin: 0;
+            }
+        
+        	.ui-icon{font-size:30px;}
+        	.ui-table{line-height: 40px;} 
+        	.ui-dialog{height:320px;}
+        	body{
+            	-webkit-user-select: inherit;
+        	}
+        </style>
+        <script src="../static/side.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../static/js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <script>
+        seajs.use(['arale/fixed/1.0.1/fixed', '/static/side'], function(Fixed, side) {
+            Fixed('.side-area', 20);
+            side.init();
+        });
+        </script>
+    </head>
+    <body>
+        <div id="body-wrapper">
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#常用文本颜色">常用文本颜色</a></li><li><a href="#1px边框">1px边框</a></li><li><a href="#垂直上下居中">垂直上下居中</a></li><li><a href="#红点和未读数通知">红点和未读数通知</a></li><li><a href="#圆角头像">圆角头像</a></li></ul></div>
+                
+                <script type="text/template" id="list-template">
+                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>atom</h1>
+                    <div class="content"><p>辅助类</p>
+<h3 id="常用文本颜色">常用文本颜色<a href="#常用文本颜色" class="anchor">¶</a></h3><div class="nico-insert-code">    <span class="ui-txt-default">ui-txt-default</span><br>
+    <span class="ui-txt-info">ui-txt-info</span><br>
+    <span class="ui-txt-muted">ui-txt-muted</span><br>
+    <span class="ui-txt-warning">ui-txt-warning</span><br>
+    <span class="ui-txt-highlight">ui-txt-highlight</span><br></div><div class="highlight"><pre><code class="xml">    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-default"</span>&gt;</span>ui-txt-default<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-info"</span>&gt;</span>ui-txt-info<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-muted"</span>&gt;</span>ui-txt-muted<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-warning"</span>&gt;</span>ui-txt-warning<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-highlight"</span>&gt;</span>ui-txt-highlight<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span></code></pre></div><h3 id="1px边框">1px边框<a href="#1px边框" class="anchor">¶</a></h3><div class="nico-insert-code"><style>
+.ui-border-t,.ui-border-b,.ui-border-tb,.ui-border-l,.ui-border-r{
+    margin: 10px;
+    width: 50%;
+}
+</style>
+    <h4>上边框</h4>
+    <div class="ui-border-t">test.......</div>
+    <div class="ui-border-t">test.......</div>
+    <div class="ui-border-t">test.......</div>
+    <h4>下边框</h4>
+    <div class="ui-border-b">test.......</div>
+    <div class="ui-border-b">test.......</div>
+    <div class="ui-border-b">test.......</div>
+    <h4>上下边框</h4>
+    <div class="ui-border-tb">test.......</div>
+    <div class="ui-border-tb">test.......</div>
+    <div class="ui-border-tb">test.......</div>
+    <h4>左边框</h4>
+    <div class="ui-border-l">test.......</div>
+    <div class="ui-border-l">test.......</div>
+    <div class="ui-border-l">test.......</div>
+    <h4>右边框</h4>
+    <div class="ui-border-r">test.......</div>
+    <div class="ui-border-r">test.......</div>
+    <div class="ui-border-r">test.......</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+<span class="class">.ui-border-t</span>,<span class="class">.ui-border-b</span>,<span class="class">.ui-border-tb</span>,<span class="class">.ui-border-l</span>,<span class="class">.ui-border-r</span><span class="rules">{
+    <span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">10</span>px</span></span>;
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">50</span>%</span></span>;
+<span class="rule">}</span></span>
+</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h4</span>&gt;</span>上边框<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h4</span>&gt;</span>下边框<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-b"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-b"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-b"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h4</span>&gt;</span>上下边框<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-tb"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-tb"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-tb"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h4</span>&gt;</span>左边框<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-l"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-l"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-l"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h4</span>&gt;</span>右边框<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-r"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-r"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-border-r"</span>&gt;</span>test.......<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="垂直上下居中">垂直上下居中<a href="#垂直上下居中" class="anchor">¶</a></h3><div class="nico-insert-code">    <div class="ui-center" style="height:100px;">
+        <p>居中</p>
+    </div></div><div class="highlight"><pre><code class="xml">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-center"</span> <span class="attribute">style</span>=<span class="value">"height:100px;"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>居中<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="红点和未读数通知">红点和未读数通知<a href="#红点和未读数通知" class="anchor">¶</a></h3><div class="nico-insert-code">
+     <div class="ui-reddot">内容内容</div>
+     <div class="ui-reddot-border">内容内容</div>
+      <div class="ui-reddot-s">内容内容</div>
+     <div class="ui-badge">123</div>
+     <div class="ui-badge-muted">345</div></div><div class="highlight"><pre><code class="xml">
+     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot-border"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot-s"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge"</span>&gt;</span>123<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge-muted"</span>&gt;</span>345<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="圆角头像">圆角头像<a href="#圆角头像" class="anchor">¶</a></h3><div class="nico-insert-code">
+        <p>圆角头像，列表场景</p>
+
+            <div class="ui-avatar"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span></div>
+
+            <div class="ui-avatar-lg"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?108*108)"></span></div>
+
+            <div class="ui-avatar-s"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span></div>
+
+            <p>资料场景</p>
+
+            <div class="ui-avatar-one"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?128*128)"></span></div>
+
+                <p>平铺头像</p>
+            <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+            <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+            <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+            <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span></div><div class="highlight"><pre><code class="xml">
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>圆角头像，列表场景<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-lg"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?108*108)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-s"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>资料场景<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-one"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?128*128)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+                <span class="tag">&lt;<span class="title">p</span>&gt;</span>平铺头像<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div></div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <footer>
+            </footer>
+        </div>
+    </body>
+</html>
