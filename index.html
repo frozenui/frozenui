@@ -297,7 +297,7 @@ seajs.use(['$', 'gallery/underscore/1.4.4/underscore', 'arale/popup/1.1.2/popup'
 
     $.getJSON('../package.json', function(data) {
         var alias;
-            alias = data.widget;
+            alias = data.widgets;
         var deps = _.pairs(alias);
         _.each(deps, function(dep) {
             var moduleNode = $($('#alice-module').html());
