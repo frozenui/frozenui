@@ -9,7 +9,14 @@
 
 
 ````html
-<ul>
+<style>
+.img-list li{
+	position:relative;
+	width: 33.3%;
+}
+.img-list li img{width:100%}
+</style>
+<ul class="img-list">
 
         <li>
             <img src="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png">

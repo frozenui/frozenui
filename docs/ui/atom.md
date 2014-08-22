@@ -15,6 +15,12 @@
 ````
 ###1px边框
 ````html
+<style>
+.ui-border-t,.ui-border-b,.ui-border-tb,.ui-border-l,.ui-border-r{
+	margin: 10px;
+	width: 50%;
+}
+</style>
 	<h4>上边框</h4>
 	<div class="ui-border-t">test.......</div>
 	<div class="ui-border-t">test.......</div>
