@@ -5,7 +5,8 @@
 .ui-tab {
   width: 100%;
   overflow: scroll;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff; }
 
 ::-webkit-scrollbar {
   height: 0;

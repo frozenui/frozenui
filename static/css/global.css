@@ -194,7 +194,7 @@ em {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   text-align: center;
-  height: 40px;
+  height: 200px;
   /* 需要重置 */ }
 
 /**
@@ -578,7 +578,8 @@ em {
 .ui-tab {
   width: 100%;
   overflow: scroll;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff; }
 
 ::-webkit-scrollbar {
   height: 0;
@@ -1083,7 +1084,7 @@ em {
 .ui-notice p {
   font-size: 16px;
   line-height: 20px;
-  color: #ababab;
+  color: #a6a6a6;
   text-align: center;
   padding: 0 15px; }
 

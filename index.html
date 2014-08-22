@@ -172,11 +172,8 @@ jquery/jquery/1.7.2/jquery.js"></script>
                     <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
                 </script>
                 <div class="content-area">
-                    <h1>通用样式</h1>
-                    <div class="content"><div class="nico-insert-code">
-
-
-<script type="text/template" id="alice-module">
+                    <h1>通用样式库</h1>
+                    <div class="content"><div class="nico-insert-code"><script type="text/template" id="alice-module">
     <div class="alice-module">
         <div class="alice-module-head">
             <h2 class="alice-module-title">
@@ -328,19 +325,19 @@ seajs.use(['$', 'gallery/underscore/1.4.4/underscore', 'arale/popup/1.1.2/popup'
 
     $.getJSON('../package.json', function(data) {
         var alias;
-            alias = data.widgets;
+            alias = data.ui;
         var deps = _.pairs(alias);
         _.each(deps, function(dep) {
             var moduleNode = $($('#alice-module').html());
             moduleNode.find('.alice-module-title a')
-                .attr('href', 'docs/' + dep[1])
+                .attr('href', '/docs/' + dep[1])
                 .attr('id', 'modules-' + dep[1])
                 .html(dep[1]);
             moduleNode.appendTo('.alice-modules');
             var list = substractTitle(moduleNode.find('h2'));
 
             $.ajax({
-                url: 'docs/' + dep[1],
+                url: '/docs/' + dep[1],
                 dataType: 'html',
                 success: function(data) {
                     data = $(data);
