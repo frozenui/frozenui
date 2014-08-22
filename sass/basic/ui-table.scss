@@ -10,7 +10,9 @@
     border-bottom: 1px solid #dedfe0;
     border-right: 1px solid #dedfe0;
 }
-
+.ui-table td{
+  padding-left: 20px;
+}
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
 	.ui-table td,.ui-table th{
 		position: relative;

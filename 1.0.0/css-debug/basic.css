@@ -193,69 +193,93 @@ em {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   text-align: center;
-  height: 40px;
+  height: 200px;
   /* 需要重置 */ }
 
 /**
  * 圆角头像，列表场景，默认用100px的
  */
-.ui-avatar, .ui-avatar span, .ui-avatar span {
-  -webkit-border-radius: 25px;
+.ui-avatar {
   width: 50px;
   height: 50px;
-  overflow: hidden; }
-
-/*超Q图标*/
-.ui-avatar, .ui-avatar span {
-  -webkit-border-radius: 25px;
-  width: 50px;
-  height: 50px;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar span {
-    background-size: 100% 100%;
-    display: inline-block; }
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    background-size: 100% 100%; }
 
-.ui-avatar-lg, .ui-avatar-lg span {
+.ui-avatar-lg {
   width: 54px;
   height: 54px;
-  -webkit-border-radius: 27px;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  .ui-avatar-lg span {
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    background-size: 100% 100%; }
 
-.ui-avatar-s, .ui-avatar-s span {
+.ui-avatar-s {
   width: 40px;
   height: 40px;
-  -webkit-border-radius: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  .ui-avatar-s span {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    background-size: 100% 100%; }
 
 /* 资料场景 */
-.ui-avatar-one, .ui-avatar-one span {
+.ui-avatar-one {
   width: 64px;
   height: 64px;
-  -webkit-border-radius: 32px;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  .ui-avatar-one span {
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    background-size: 100% 100%; }
 
 /* 平铺场景 */
-.ui-avatar-tiled, .ui-avatar-tiled span {
+.ui-avatar-tiled {
   width: 30px;
   height: 30px;
-  -webkit-border-radius: 15px;
-  overflow: hidden; }
-
-.ui-avatar-lg span {
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  display: inline-block;
   background-size: 100% 100%;
-  display: inline-block; }
-
-.ui-avatar-s span {
-  background-size: 100% 100%;
-  display: inline-block; }
-
-.ui-avatar-one span {
-  background-size: 100% 100%;
-  display: inline-block; }
-
-.ui-avatar-tiled span {
-  background-size: 100% 100%;
-  display: inline-block; }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  .ui-avatar-tiled span {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    background-size: 100% 100%; }
 
 /**
 * 红点提醒
@@ -553,7 +577,8 @@ em {
 .ui-tab {
   width: 100%;
   overflow: scroll;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff; }
 
 ::-webkit-scrollbar {
   height: 0;
@@ -593,6 +618,9 @@ em {
 .ui-table td, .ui-table th {
   border-bottom: 1px solid #dedfe0;
   border-right: 1px solid #dedfe0; }
+
+.ui-table td {
+  padding-left: 20px; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .ui-table td, .ui-table th {
@@ -639,7 +667,6 @@ em {
 
 .ui-list li {
   position: relative;
-  line-height: 40px;
   display: -webkit-box;
   display: box;
   margin-left: 15px; }
@@ -671,6 +698,10 @@ em {
   position: relative;
   -webkit-background-size: 50px auto;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+
+/*列表头像*/
+.ui-list .ui-avatar-s {
+  margin: 7px 15px 7px 0px; }
 
 .ui-list-thumb-s {
   position: relative;

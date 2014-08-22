@@ -38,65 +38,65 @@
 
 /*宽度与背景size*/
 .ui-icon-viplevel {
-    width:50px;
+    width:45px;
     span {
-        -webkit-background-size: 50px auto;
+        -webkit-background-size: 45px auto;
     }
 }
 .ui-icon-viplevel-s {
     width:31px;
     span {
-        -webkit-background-size: auto 13px;
+        -webkit-background-size: 31px auto;
     }
 }
 .ui-icon-yearviplevel{
-    width:59px;
+    width:55px;
     span {
-        -webkit-background-size: 59px auto;
+        -webkit-background-size: auto 19px;
     }
 }
 .ui-icon-yearviplevel-s {
-    width:38px;
+    width:40px;
     span {
-        -webkit-background-size: auto 13px;
+        -webkit-background-size: auto 12px;
     }
 }
 .ui-icon-sviplevel {
-    width:57px;
+    width:49px;
     span {
-        -webkit-background-size: 57px auto;
+        -webkit-background-size: auto 22px;
     }
 }
 .ui-icon-sviplevel-s {
-    width:37px;
+    width:36px;
     span {
-        -webkit-background-size: auto 13px;
+        -webkit-background-size: auto 12px;
     }
 }
 .ui-icon-yearsviplevel {
-    width:66px;
+    width:58px;
     span {
-        -webkit-background-size: 66px auto;
+        -webkit-background-size: auto 20px;
     }
 }
 .ui-icon-yearsviplevel-s {
     width:45px;
     span {
-        -webkit-background-size: auto 13px;
+        -webkit-background-size: auto 12px;
     }
 }
 
 .ui-icon-viplevel span, .ui-icon-yearviplevel span {
-    height:24px;
-    top:-16px;
+    height:22px;
+    top:-12px;
 }
 .ui-icon-sviplevel span, .ui-icon-yearsviplevel span {
-    height:26px;
-    top:-18px;
+    height:22px;
+    top:-16px;
 }
 .ui-icon-viplevel-s span, .ui-icon-sviplevel-s span,.ui-icon-yearviplevel-s span,.ui-icon-yearsviplevel-s span {
-    height:13px;
-    top:-11px;
+    height:20px;
+    top:-7px;
 }
 
 

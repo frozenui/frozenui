@@ -158,19 +158,19 @@ seajs.use(['$', 'gallery/underscore/1.4.4/underscore', 'arale/popup/1.1.2/popup'
 
     $.getJSON('../package.json', function(data) {
         var alias;
-            alias = data.dependencies;
+            alias = data.widgets;
         var deps = _.pairs(alias);
         _.each(deps, function(dep) {
             var moduleNode = $($('#alice-module').html());
             moduleNode.find('.alice-module-title a')
-                .attr('href', '/docs/' + dep[1])
+                .attr('href', 'docs/' + dep[1])
                 .attr('id', 'modules-' + dep[1])
                 .html(dep[1]);
             moduleNode.appendTo('.alice-modules');
             var list = substractTitle(moduleNode.find('h2'));
 
             $.ajax({
-                url: '/docs/' + dep[1],
+                url: 'docs/' + dep[1],
                 dataType: 'html',
                 success: function(data) {
                     data = $(data);

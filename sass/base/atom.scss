@@ -93,69 +93,63 @@
 	-webkit-box-pack: center;
 	-webkit-box-align: center;
 	text-align: center;
-	height: 40px; /* 需要重置 */
+	height: 200px; /* 需要重置 */
 }
 
 /**
  * 圆角头像，列表场景，默认用100px的
  */
-
-.ui-avatar,.ui-avatar span{
-    -webkit-border-radius: 25px;
-    width: 50px;
-    height: 50px;
+@mixin avatar($size: 50px) {
+    width: $size;
+    height: $size;
     overflow: hidden;
-    
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    background-size: 100% 100%;
 }
-/*超Q图标*/
+
 .ui-avatar {
-    -webkit-border-radius: 25px;
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
+    @include avatar;
+    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
     span {
-        @extend .ui-avatar;
-        background-size: 100% 100%;
-        display: inline-block;
+        @include avatar;
     }
 }
 
 .ui-avatar-lg{
-    width: 54px;
-    height: 54px;
-    -webkit-border-radius: 27px;
-    overflow: hidden;
+    @include avatar(54px);
+    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+    span {
+        @include avatar(54px);
+    }
 }
 
 .ui-avatar-s{
-    width: 40px;
-    height: 40px;
-    -webkit-border-radius: 20px;
-    overflow: hidden;
+    @include avatar(40px);
+    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+    span {
+        @include avatar(40px);
+    }
 }
 
 /* 资料场景 */
 .ui-avatar-one{
-    width: 64px;
-    height: 64px;
-    -webkit-border-radius: 32px;
-    overflow: hidden;
+    @include avatar(64px);
+    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+    span {
+        @include avatar(64px);
+    }
 }
 
 /* 平铺场景 */
 .ui-avatar-tiled{
-    width: 30px;
-    height: 30px;
-    -webkit-border-radius: 15px;
-    overflow: hidden;
-}
-@each $item in lg, s, one, tiled {
-    .ui-avatar-#{$item} span{
-        @extend .ui-avatar-#{$item};
-        background-size: 100% 100%;
-        display: inline-block;
+    @include avatar(30px);
+    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+    span {
+        @include avatar(30px);
     }
 }
+
  /**
  * 红点提醒
  */

@@ -4,7 +4,6 @@
 
 .ui-list li {
   position: relative;
-  line-height: 40px;
   display: -webkit-box;
   display: box;
   margin-left: 15px; }
@@ -36,6 +35,10 @@
   position: relative;
   -webkit-background-size: 50px auto;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+
+/*列表头像*/
+.ui-list .ui-avatar-s {
+  margin: 7px 15px 7px 0px; }
 
 .ui-list-thumb-s {
   position: relative;
