@@ -154,12 +154,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                			<li><a href="/baseui">通用样式库</a></li>
-                			<li><a href="/docs/javascript.html">JavaScript</a></li>
-                			<li><a href="/docs/start.html">开始使用</a></li>
-                			<li><a href="/docs/rule.html">关于Frozen</a></li>
-                			<li><a href="/docs/tool.html">工具</a></li>
-                		</ul>                
+                    <li><a href="/baseui">通用样式库</a></li>
+                    
+
                 </ol>
             </div>
             <div class="main-area">
@@ -325,19 +322,19 @@ seajs.use(['$', 'gallery/underscore/1.4.4/underscore', 'arale/popup/1.1.2/popup'
 
     $.getJSON('../package.json', function(data) {
         var alias;
-            alias = data.ui;
+            alias = data.widgets;
         var deps = _.pairs(alias);
         _.each(deps, function(dep) {
             var moduleNode = $($('#alice-module').html());
             moduleNode.find('.alice-module-title a')
-                .attr('href', '/docs/' + dep[1])
+                .attr('href', 'docs/' + dep[1])
                 .attr('id', 'modules-' + dep[1])
                 .html(dep[1]);
             moduleNode.appendTo('.alice-modules');
             var list = substractTitle(moduleNode.find('h2'));
 
             $.ajax({
-                url: '/docs/' + dep[1],
+                url: 'docs/' + dep[1],
                 dataType: 'html',
                 success: function(data) {
                     data = $(data);
