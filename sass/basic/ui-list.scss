@@ -128,12 +128,12 @@
 /*连接列表*/
 
 .ui-list-link li:after,li.ui-list-item-link:after {
-	background:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -125px -50px;
-	background-size:200px auto;
+	background:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -75px 0;
+	background-size: 150px auto;
 	content:"";
 	display:block;
 	width:8px;
-	height:13px;
+	height:14px;
 	position:absolute;
 	right:15px;
 	top:50%;
@@ -151,8 +151,8 @@
     display: block;
     width: 14px;
     height: 12px;
-    background:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat 0 -75px;
-	background-size: 200px auto;
+    background:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -100px 0;
+	background-size: 150px auto;
     position: absolute;
     right: 15px;
     top: 50%;
