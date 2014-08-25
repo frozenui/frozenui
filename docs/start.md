@@ -17,7 +17,7 @@
 还有一种引用方式，非手Q的页面可以引用[http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css](http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css) 文件，
 这个css打包了所有模块。
 
-具体模块的代码引用可以访问[http://frozenui.github.io/docs/widget.html](http://frozenui.github.io/docs/widget.html)
+具体模块的代码可以访问[http://frozenui.github.io/docs/widget.html](http://frozenui.github.io/docs/widget.html)
 
 
 ## 引用和下载
@@ -33,8 +33,10 @@
 
 ####3. 也可以利用 cdn 和 combo 服务，因为手Q有离线包不建议这样使用。
 
-    ```html
+ ```html
+ 
     <link media="all" href="http://i.gtimg.cn/c/=/vipstyle/frozenui/1.0.0/css/base/reset.css,/vipstyle/frozenui/1.0.0/css/base/atom.css,/vipstyle/frozenui/1.0.0/css/basic/ui-notice.css" rel="stylesheet">
-    ```
+    
+ ```
 
 
