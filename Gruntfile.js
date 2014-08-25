@@ -44,12 +44,6 @@ module.exports =function(grunt) {
             css:{
                 src: '<%=meta.destPath%>/css/basic.css',
                 dest:'<%=meta.zipPath%>/css/basic.css'
-            },
-            doc:{
-                expand: true,
-                cwd: '<%=meta.destPath%>/css-debug/',
-                src: '*',
-                dest:'static/css/'
             }
         },
         compress: {
