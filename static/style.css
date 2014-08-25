@@ -136,10 +136,6 @@ hr {
 }
 
 .title-area img {
-    /*height: 120px;
-    position: absolute;
-    right: 28px;
-    top: -4px;*/
     position: absolute;
     top: 0;
     left: -155px;
@@ -156,10 +152,10 @@ hr {
     height: 60px;
     color: #888;
     margin-bottom: 15px;
-    background: #66dff4;
-    border-top: 4px solid #4cbed3;
+    /*background: #66dff4;*/
+    background: #4cbed3;
+    border-top: 4px solid #66dff4;
     text-align: center;
-    /*border-bottom: 1px solid #FFF0B5;*/
 }
 
 .main-nav {
@@ -179,8 +175,7 @@ hr {
 }
 
 .main-nav a {
-    /*color: #668430;*/
-    color: #5c5c5c;
+    color: #fff;
 }
 
 .main-nav a:hover {
