@@ -1,3 +1,4 @@
+html,body { padding: 0; margin: 0;}
 body {
     color: #666;
     background: #fdfdfd;
@@ -194,13 +195,13 @@ hr {
     border: 1px solid #ddd;
     padding: 0 29px 20px;
     width: 840px;
-    margin-left: 240px;
+    margin: 0 0 20px 240px;
 }
 
 .comment-area {
     width: 900px;
     margin-top: 20px;
-    margin-left: 240px;
+    margin: 0 0 20px 240px;
 }
 
 .side-area {

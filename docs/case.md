@@ -13,7 +13,7 @@
 </style>
 <section class="js-main">
     <section class="js-module">
-        <h3 class="js-module-title">UI 组件</h3>
+        <h3 class="js-module-title">CSS3动效汇萃</h3>
         <div class="jsmodule-content">
             <ul class="fn-clear">
                 <li class="js-module-box">
@@ -60,7 +60,7 @@
         </div>
     </section>
     <section class="js-module module2">
-        <h3 class="js-module-title">JS 插件</h3>
+        <h3 class="js-module-title">硬件传感器api汇萃</h3>
         <div class="js-module-content">
             <ul class="fn-clear">
                 <li class="js-module-box">
