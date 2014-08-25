@@ -60,14 +60,14 @@
 /*等级图标*/
 /*宽度与背景size*/
 .ui-icon-viplevel {
-  width: 45px; }
+  width: 46px; }
   .ui-icon-viplevel span {
-    -webkit-background-size: 45px auto; }
+    -webkit-background-size: auto 20px; }
 
 .ui-icon-viplevel-s {
   width: 31px; }
   .ui-icon-viplevel-s span {
-    -webkit-background-size: 31px auto; }
+    -webkit-background-size: auto 12px; }
 
 .ui-icon-yearviplevel {
   width: 55px; }
@@ -80,7 +80,7 @@
     -webkit-background-size: auto 12px; }
 
 .ui-icon-sviplevel {
-  width: 49px; }
+  width: 52px; }
   .ui-icon-sviplevel span {
     -webkit-background-size: auto 22px; }
 

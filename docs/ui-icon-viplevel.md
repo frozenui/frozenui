@@ -144,7 +144,7 @@
 ###普通超级会员铭牌图标
 ````html
 测试
-<span class="ui-icon-viplevel-s">
+<span class="ui-icon-sviplevel-s">
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip_s.png)"></span>
 </span>
 <span class="ui-icon-sviplevel-s">

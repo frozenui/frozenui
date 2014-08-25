@@ -38,15 +38,15 @@
 
 /*宽度与背景size*/
 .ui-icon-viplevel {
-    width:45px;
+    width:46px;
     span {
-        -webkit-background-size: 45px auto;
+        -webkit-background-size: auto 20px;
     }
 }
 .ui-icon-viplevel-s {
     width:31px;
     span {
-        -webkit-background-size: 31px auto;
+        -webkit-background-size: auto 12px;
     }
 }
 .ui-icon-yearviplevel{
@@ -62,7 +62,7 @@
     }
 }
 .ui-icon-sviplevel {
-    width:49px;
+    width:52px;
     span {
         -webkit-background-size: auto 22px;
     }
