@@ -6,11 +6,78 @@
 ---
 
 ## 一个简单的例子
+<link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css">
 
-<script src="https://gist.github.com/fayching/120062fa6fadfdace1d4.js"></script>
+````html
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="ISUX">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<title>好友选择器</title>
+	<link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256">
+	
+</head>
+<body>
+	<div class="wrapper">
+		<!-- list1 start -->
+		<ul class="ui-select-user">
+			<li class="ui-select-user-item active">
+				<h3 class="ui-border-b"><i class="arrow"></i>最近在玩的好友</h3>
+				<div class="ui-notice-warn"><i class="ui-icon ui-icon-refresh"></i><p>请检查网络</p></div>
+				<ul class="ui-list ui-border-b">
+					<li class="active">
+						<div class="ui-list-thumb	ui-avatar">
+							<span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+						</div>
+						<div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+					</li>
+					<li>
+						<div class="ui-list-thumb ui-avatar">
+							<span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+						</div>
+						<div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+					</li>
+					<li>
+						<div class="ui-list-thumb ui-avatar">
+							<span	 style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+						</div>
+						<div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+					</li>
+				</ul>
+			</li>
+			<!-- list1 end -->
+			<!-- list2 start -->	
+			<li class="ui-select-user-item">
+				<h3 class="ui-userselect-top ui-border-b"><i class="arrow"></i>鹅厂工友们</h3>
+				<ul class="ui-list ui-border-b">
+					<li>
+						<div class="ui-list-thumb ui-avatar">
+							<span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+						</div>
+						<div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+					</li>
+					<li>
+						<div class="ui-list-thumb ui-avatar">
+							<span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+						</div>
+						<div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+					</li>
+				</ul>
+			</li>
+			<!-- list2 end -->	
+		</ul>
+		
+	</div>
+</body>
+</html>
+````
 
-
-粘贴到页面中你会看到一个好友选择的页面，页面效果[http://frozenui.github.io/test/ui-select-user.html](http://frozenui.github.io/test/ui-select-user.html)。引用了[http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256)，这是打包了除了vip图标的基础css文件，使用手Q离线包需要加上bid的参数。
+你会看到一个[好友选择的页面](http://frozenui.github.io/test/ui-select-user.html)，引用了[http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256)，这是打包了除了vip图标的基础css文件，使用手Q离线包需要加上bid的参数。
 
 如果要使用[ui-icon-viplevel](http://frozenui.github.io/docs/ui/ui-icon-viplevel) 和[ui-icon-qqlevel](http://frozenui.github.io/docs/ui/ui-icon-qqlevel)则需另外引用[http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/vip.css](http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/vip.css) ,你也可以选择将vip.css打包到你页面的css中。
 
