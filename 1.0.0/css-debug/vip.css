@@ -8,7 +8,6 @@
   vertical-align: middle; }
 
 .ui-icon-qqlevel:after {
-  overflow: hidden;
   content: "\0020";
   display: block;
   width: 16px;
