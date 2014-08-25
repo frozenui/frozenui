@@ -9,7 +9,7 @@
     .side-area{display: none;}
     .content-area{
         margin-left: 0;
-        width: 1140px;
+        width: 1080px;
     }
 </style>
 <section class="js-main">

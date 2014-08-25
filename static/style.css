@@ -315,6 +315,7 @@ hr {
     height:0;
 }
 .fn-clear {
+    padding: 0;
     zoom:1; /* for IE6 IE7 */
 }
 
