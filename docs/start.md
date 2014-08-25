@@ -10,7 +10,7 @@
 <script src="https://gist.github.com/fayching/120062fa6fadfdace1d4.js"></script>
 
 
-粘贴到页面中你会看到一个好友选择的页面，引用了[http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256)，这是打包了除了vip图标的基础css文件，使用手Q离线包需要加上bid的参数。
+粘贴到页面中你会看到一个好友选择的页面，页面效果[http://frozenui.github.io/test/ui-select-user.html](http://frozenui.github.io/test/ui-select-user.html)。引用了[http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256)，这是打包了除了vip图标的基础css文件，使用手Q离线包需要加上bid的参数。
 
 如果要使用[ui-icon-viplevel](http://frozenui.github.io/docs/ui/ui-icon-viplevel) 和[ui-icon-qqlevel](http://frozenui.github.io/docs/ui/ui-icon-qqlevel)则需另外引用[http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/vip.css](http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/vip.css) ,你也可以选择将vip.css打包到你页面的css中。
 
