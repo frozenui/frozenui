@@ -2,22 +2,14 @@
 - category: frozen
 
 ---
-<style type="text/css">
-	.side-area,.head-area,.nav-area,.comment-area,.content-area>h1,#footer-wrapper{
-		display: none;
-	}
-	.main-area{
-		width: 100%;
-		margin: 0;
-	}
-	.content-area{display:block;width: 100%;border: none;margin-left: 0;padding: 0;}
-</style>
+<link rel="stylesheet" type="text/css" href="/static/index.css">
 
 <div class="fr-nav">
 		<ul>
 			<li id="fr-nav-index"><a href="">Frozen</a></li>
 			<li><a href="/baseui">通用样式库</a></li>
 			<li><a href="docs/javascript.html">JavaScript</a></li>
+			<li><a href="docs/case.html">案例秀</a></li>
 			<li><a href="docs/start.html">开始使用</a></li>
 			<li><a href="docs/rule.html">关于Frozen</a></li>
 			<li><a href="docs/tool.html">工具</a></li>
