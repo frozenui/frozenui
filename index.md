@@ -2,17 +2,7 @@
 - category: frozen
 
 ---
-
-<style type="text/css">
-	.side-area,.head-area,.nav-area,.comment-area,.content-area>h1,#footer-wrapper{
-		display: none;
-	}
-	.main-area{
-		width: 100%;
-		margin: 0;
-	}
-	.content-area{display:block;width: 100%;border: none;margin-left: 0;padding: 0;}
-</style>
+<link rel="stylesheet" href="/static/index.css">
 
 <div class="fr-nav">
 		<ul>
