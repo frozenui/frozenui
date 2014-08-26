@@ -19,7 +19,7 @@
   vertical-align: top;
   color: rgb(0,165,224);
   text-shadow: 0 1px 0 rgba( 0, 0, 0 ,.1 );
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 .ui-btn:active,.ui-btn.active{
   background: #f2f2f2;

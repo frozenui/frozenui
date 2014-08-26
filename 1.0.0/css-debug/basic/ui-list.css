@@ -62,8 +62,6 @@
 .ui-list-info {
   -webkit-box-flex: 1;
   box-flex: 1;
-  padding-top: 12px;
-  padding-bottom: 12px;
   padding-right: 20px;
   display: box;
   display: -webkit-box;
@@ -113,7 +111,7 @@
   border-top: 0px; }
 
 /*功能列表*/
-.ui-list-function .info {
+.ui-list-function .ui-list-info {
   padding-right: 70px; }
 
 /*通栏列表*/
@@ -134,7 +132,7 @@
   top: 50%;
   margin-top: -8px; }
 
-.ui-list-link .info, .ui-list-link li {
+.ui-list-link .ui-list-info {
   padding-right: 35px; }
 
 /*选中态*/

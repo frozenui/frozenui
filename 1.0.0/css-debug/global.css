@@ -205,7 +205,7 @@ em {
   height: 50px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar span {
@@ -213,7 +213,7 @@ em {
     height: 50px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 .ui-avatar-lg {
@@ -221,7 +221,7 @@ em {
   height: 54px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar-lg span {
@@ -229,7 +229,7 @@ em {
     height: 54px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 .ui-avatar-s {
@@ -237,7 +237,7 @@ em {
   height: 40px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar-s span {
@@ -245,7 +245,7 @@ em {
     height: 40px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 /* 资料场景 */
@@ -254,7 +254,7 @@ em {
   height: 64px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar-one span {
@@ -262,7 +262,7 @@ em {
     height: 64px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 /* 平铺场景 */
@@ -271,7 +271,7 @@ em {
   height: 30px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar-tiled span {
@@ -279,7 +279,7 @@ em {
     height: 30px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 /**
@@ -349,7 +349,7 @@ em {
   vertical-align: top;
   color: #00a5e0;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box; }
 
 .ui-btn:active, .ui-btn-lg:active, .ui-btn.active, .active.ui-btn-lg {
   background: #f2f2f2;
@@ -726,8 +726,6 @@ em {
 .ui-list-info {
   -webkit-box-flex: 1;
   box-flex: 1;
-  padding-top: 12px;
-  padding-bottom: 12px;
   padding-right: 20px;
   display: box;
   display: -webkit-box;
@@ -777,7 +775,7 @@ em {
   border-top: 0px; }
 
 /*功能列表*/
-.ui-list-function .info {
+.ui-list-function .ui-list-info {
   padding-right: 70px; }
 
 /*通栏列表*/
@@ -798,7 +796,7 @@ em {
   top: 50%;
   margin-top: -8px; }
 
-.ui-list-link .info, .ui-list-link li {
+.ui-list-link .ui-list-info {
   padding-right: 35px; }
 
 /*选中态*/
@@ -865,7 +863,8 @@ em {
 
 .ui-btn-bottom {
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 10; }
 
 .ui-btn-group button {
   color: #00a5e0;
@@ -1128,11 +1127,10 @@ em {
   vertical-align: middle; }
 
 .ui-icon-qqlevel:after {
-  overflow: hidden;
   content: "\0020";
   display: block;
   width: 16px;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/icon_qqlevel_sprite.png?_bid=256) no-repeat;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon_qqlevel_sprite.png?_bid=256) no-repeat;
   background-repeat: no-repeat;
   position: absolute;
   line-height: 100px;

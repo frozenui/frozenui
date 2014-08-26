@@ -110,7 +110,7 @@
   height: 50px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar span {
@@ -118,7 +118,7 @@
     height: 50px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 .ui-avatar-lg {
@@ -126,7 +126,7 @@
   height: 54px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar-lg span {
@@ -134,7 +134,7 @@
     height: 54px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 .ui-avatar-s {
@@ -142,7 +142,7 @@
   height: 40px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar-s span {
@@ -150,7 +150,7 @@
     height: 40px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 /* 资料场景 */
@@ -159,7 +159,7 @@
   height: 64px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar-one span {
@@ -167,7 +167,7 @@
     height: 64px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 /* 平铺场景 */
@@ -176,7 +176,7 @@
   height: 30px;
   overflow: hidden;
   -webkit-border-radius: 50%;
-  display: inline-block;
+  display: block;
   background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
   .ui-avatar-tiled span {
@@ -184,7 +184,7 @@
     height: 30px;
     overflow: hidden;
     -webkit-border-radius: 50%;
-    display: inline-block;
+    display: block;
     background-size: 100% 100%; }
 
 /**

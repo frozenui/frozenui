@@ -20,7 +20,7 @@
   vertical-align: top;
   color: #00a5e0;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box; }
 
 .ui-btn:active, .ui-btn-lg:active, .ui-btn.active, .active.ui-btn-lg {
   background: #f2f2f2;

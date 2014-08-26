@@ -3,15 +3,16 @@
   "version": "0.0.1",
   "title": "Frozen",
   "family": "alice",
-  "homepage": "http://frozenui.github.io/baseui",
+  "homepage": "https://github.com/frozenui/baseui",
+  "author": "faycheng",
   "repository": {
     "type": "git",
     "url": "https://github.com/frozenui/baseui.git"
   },
   "licenses": "MIT",
-  "description": "mobile apps friendly",
+  "description": "为移动端web而生",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/frozenui/baseui/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.0",
@@ -20,13 +21,28 @@
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-watch": "0.4.3",
     "grunt-contrib-sass": "0.7.0",
-    "grunt-contrib-imagemin": "0.7.1"
+    "grunt-contrib-imagemin": "0.7.1",
+    "grunt-ftp-deploy": "^0.1.4",
+    "grunt-ftpush": "^0.3.3"
   },
-  "description": "手Q公用web ui库",
   "main": "Gruntfile.js",
   "widgets": [
-        "atom","ui-btn","ui-btn-lg","ui-btn-group","ui-dialog","ui-list","ui-loading","ui-notice","ui-select-user","ui-tab","ui-table","ui-tips","ui-tips-news","ui-icon","ui-icon-tag","ui-icon-viplevel","ui-icon-qqlevel"
-        ],
-  "author": "jeakeyliang",
-  "license": "ISC"
+    "atom",
+    "ui-btn",
+    "ui-btn-lg",
+    "ui-btn-group",
+    "ui-dialog",
+    "ui-list",
+    "ui-loading",
+    "ui-notice",
+    "ui-select-user",
+    "ui-tab",
+    "ui-table",
+    "ui-tips",
+    "ui-tips-news",
+    "ui-icon",
+    "ui-icon-tag",
+    "ui-icon-viplevel",
+    "ui-icon-qqlevel"
+  ]
 }
