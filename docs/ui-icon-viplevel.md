@@ -6,7 +6,9 @@
 
 ````html
 测试
-
+<span class="ui-icon-viplevel">
+	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip.png)"></span>
+</span>
 <span class="ui-icon-viplevel">
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip1.png)"></span>
 </span>
@@ -118,6 +120,9 @@
 ###普通超级会员图标
 ````html
 测试
+<span class="ui-icon-sviplevel">
+	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip.png)"></span>
+</span>
 <span class="ui-icon-sviplevel">
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip1.png)"></span>
 </span>
@@ -235,6 +240,8 @@
 ###普通会员图标
 ````html	
 <span class="ui-icon-viplevel">
+	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip.png)"></span>
+<span class="ui-icon-viplevel">
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip1.png)"></span>
 </span>
 <span class="ui-icon-viplevel">
@@ -337,6 +344,9 @@
 ````		
 ###普通超级会员图标
 ````html
+<span class="ui-icon-sviplevel">
+	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip.png)"></span>
+</span>
 <span class="ui-icon-sviplevel">
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip1.png)"></span>
 </span>

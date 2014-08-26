@@ -72,6 +72,19 @@ module.exports =function(grunt) {
                 ],
                 tasks: ['sass','cssmin','copy','compress']
             }
+        },
+        ftpush: {
+          build: {
+            auth: {
+              host: '119.147.200.113',
+              port: 21000,
+              authKey: 'key'
+            },
+            src: '',
+            dest: '/frozenui',
+            exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
+            simple: true
+          }
         }
     });
 
@@ -82,9 +95,10 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-ftpush');
     
 
     // 默认任务
-    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress']);
+    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush']);
 
 };
