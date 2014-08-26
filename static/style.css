@@ -2,8 +2,8 @@ html,body { padding: 0; margin: 0;}
 body {
     color: #666;
     background: #fdfdfd;
-    font-family: "Marmelad","Lucida Grande",Georgia,sans-serif;
-    line-height: 1.5;
+    font: 400 18px/1.62 "Georgia", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+
 }
 
 a {
@@ -609,12 +609,14 @@ body .fn-hide {
     top: 100px;
 }
 .fr-banner-content h2{
+    font-weight: 400;
     font-size: 60px;
     color: #fff;
     font-weight: bold;
     text-shadow:2px 2px 2px #ddd;
 }
 .fr-banner-content h3{
+    font-weight: 400;
     font-size: 32px;
     color: #fff;
     font-family: "Microsoft Yahei";
