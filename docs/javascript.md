@@ -1,10 +1,12 @@
-# JavaScript
+# Js组件库
 
 - order: 3
 - category: alice
 
 
 ---
+Frozen提供的一系列JavaScript插件，更优雅地在移动端上呈现更灵动的动画效果。
+
 <style type="text/css">
     .side-area{display: none;}
     .content-area{

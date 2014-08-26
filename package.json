@@ -1,6 +1,6 @@
 {
   "name": "frozenui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Frozen",
   "family": "alice",
   "homepage": "http://frozenui.github.io",
@@ -10,9 +10,9 @@
     "url": "https://github.com/frozenui/frozenui.git"
   },
   "licenses": "MIT",
-  "description": "mobile apps friendly",
+  "description": "为移动端web而生",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/frozenui/frozenui/issues"
   },
   "spm": {
     "output": [
@@ -23,7 +23,22 @@
     "engines": {}
   },
   "widgets": [
-        "atom","ui-btn","ui-btn-lg","ui-btn-group","ui-dialog","ui-list","ui-loading","ui-notice","ui-select-user","ui-tab","ui-table","ui-tips","ui-tips-news","ui-icon","ui-icon-tag","ui-icon-viplevel","ui-icon-qqlevel"
-        ]
-
+    "atom",
+    "ui-btn",
+    "ui-btn-lg",
+    "ui-btn-group",
+    "ui-dialog",
+    "ui-list",
+    "ui-loading",
+    "ui-notice",
+    "ui-select-user",
+    "ui-tab",
+    "ui-table",
+    "ui-tips",
+    "ui-tips-news",
+    "ui-icon",
+    "ui-icon-tag",
+    "ui-icon-viplevel",
+    "ui-icon-qqlevel"
+  ]
 }

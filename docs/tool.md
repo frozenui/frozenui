@@ -10,6 +10,6 @@ Nico 是一个 JavaScript 的静态文档生成工具，在 CMD 生态圈中被�
 
 [nico 主页](http://lab.lepture.com/nico/)
 
-在 Arale & Alice 整体方案中我们封装了 nico 作为一个 spm 的插件，安装 [spm-doc](https://github.com/spmjs/spm-doc) 就后可以调用各种文档调试命令了。
+## grunt  - 任务运行工具
 
-
+[http://www.gruntjs.org/](http://www.gruntjs.org/)

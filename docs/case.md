@@ -4,6 +4,9 @@
 
 
 ---
+
+已经实现但还未组件化的效果集合。
+
 <style type="text/css">
     .side-area{display: none;}
     .content-area{
@@ -13,7 +16,7 @@
 </style>
 <section class="js-main">
     <section class="js-module">
-        <h3 class="js-module-title">CSS3动效汇萃</h3>
+        <h3 class="js-module-title">CSS3动效</h3>
         <div class="jsmodule-content">
             <ul class="fn-clear">
                 <li class="js-module-box">
@@ -60,7 +63,7 @@
         </div>
     </section>
     <section class="js-module module2">
-        <h3 class="js-module-title">硬件传感器api汇萃</h3>
+        <h3 class="js-module-title">使用硬件传感器api</h3>
         <div class="js-module-content">
             <ul class="fn-clear">
                 <li class="js-module-box">

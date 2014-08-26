@@ -16,11 +16,11 @@
 <div class="fr-nav">
 		<ul>
 			<li id="fr-nav-index"><a href="">Frozen</a></li>
-			<li><a href="/baseui">通用样式库</a></li>
-			<li><a href="docs/javascript.html">JavaScript</a></li>
+			<li><a href="/baseui">css组件库</a></li>
+			<li><a href="docs/javascript.html">js组件库</a></li>
+			<li><a href="docs/case.html">案例秀</a></li>
 			<li><a href="docs/start.html">开始使用</a></li>
 			<li><a href="docs/rule.html">关于Frozen</a></li>
-			<li><a href="docs/tool.html">工具</a></li>
 		</ul>
 	</div>
 	<div class="fr-banner">
@@ -28,7 +28,7 @@
 			<div class="fr-banner-info">
 				<h2>Frozen</h2>
 				<h3>简单易用，轻量快捷，<br/>为移动端服务的前端框架。</h3>
-				<a href="#">下 载</a>
+				<a href="docs/start.html">开始使用</a>
 			</div>
 			<img src="static/phone.png" class="fr-banner-ph">
 		</div>
@@ -38,8 +38,8 @@
 			<img src="static/ui.png" alt="frozenui">
 			<div class="fr-item-info fr-frozenui">
 				<h2>随心所用的UI组件</h2>
-				<p>Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。提供友好的手机QQ接入规范。</p>
-				<a href="docs/widget.html">查 看</a>
+				<p>Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。遵循手Q样式规范，基本样式使用离线包的方式减少请求，并提供快速接入的方案。</p>
+				<a href="/baseui">查 看</a>
 			</div>
 		</div>
 		<div class="fr-item">
@@ -60,7 +60,7 @@
 			</div>
 			<div>
 				<h6>Support</h6>
-				<p><a href="">Quick start</a></p>
+				<p><a href="docs/start.html">Quick start</a></p>
 				<p><a href="">Join us</a></p>
 			</div>
 			<div id="fr-footer-us">
