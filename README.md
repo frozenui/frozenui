@@ -47,12 +47,12 @@
 			<div>
 				<h6>About us</h6>
 				<p><a href="https://github.com/frozenui">Github</a></p>
-				<p><a href="">Contact us</a></p>
+				<p><a href="https://github.com/frozenui/frozenui/issues">Contact us</a></p>
 			</div>
 			<div>
 				<h6>Support</h6>
 				<p><a href="docs/start.html">Quick start</a></p>
-				<p><a href="">Join us</a></p>
+				<p><a href="http://isux.tencent.com/jobs">Join us</a></p>
 			</div>
 			<div id="fr-footer-us">
 				<img src="static/logo.png">
