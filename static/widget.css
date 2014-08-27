@@ -1,0 +1,103 @@
+.alice-module {
+    border-bottom: 1px solid #eee;    
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font:12px/1.5 tahoma,arial,Hiragino Sans GB,"Microsoft Yahei",\5b8b\4f53;
+}
+.alice-module-head {
+    overflow: hidden;
+}
+.alice-module-title {
+    margin: 0;
+    font-size: 28px;
+    font-family: Trebuchet MS;
+    display: inline;
+}
+.alice-module-title a {
+    /*color: #7CAE23;*/
+    color: #00a5e0;
+    cursor: pointer;
+}
+.alice-module-link {
+    font-size: 14px;
+}
+.alice-module-version {
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 0.5em;
+    color: #888;
+    font-family: Menlo,Monaco,"Courier New",monospace;
+}
+p.alice-module-description {
+    font-size: 14px;
+    color: #888;
+    margin: 10px 0 20px;
+}
+.alice-module-demo {
+    border: 1px solid #eee;
+    border-bottom: none;
+    padding: 20px 130px 20px 20px;
+    position: relative;
+}
+.alice-module-demo:hover {
+    background: #fdfdfd;
+}
+.alice-module-dom {
+    margin-bottom: 8px;
+}
+.alice-module-code {
+    display: none;
+    margin: 0!important;
+}
+h3.alice-module-subtitle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 3px;
+    margin: 0;
+    color: #777;
+    font-size: 12px;
+    background: #F8F8F8;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    display: block;
+    font-size: 12px;
+    width: 100px;
+    padding: 5px 10px;
+    opacity: 0.8;
+}
+.alice-module-sourcecode {
+    position: absolute;
+    right: 125px;
+    top: 0;
+    font-size: 12px;
+    padding: 5px 10px;
+    background: #EFFFE4;
+    border-radius: 3px;
+    display: none;
+    z-index: 99;
+    opacity: 0.8;
+}
+
+.alice-loading {
+    margin-bottom: 20px;
+}
+.black {
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+}
+ .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+    position: relative;
+    margin: 0;
+}
+
+.ui-icon{font-size:30px;}
+.ui-table{line-height: 40px;} 
+.ui-dialog{height:320px;}
+body{
+	-webkit-user-select: inherit;
+}

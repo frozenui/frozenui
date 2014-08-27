@@ -13,23 +13,13 @@
         
         {%- block assets %}
         <link type="image/x-icon" href="{{static_url('favicon.ico')}}" rel="icon">
-
+        <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css" />
         <link rel="stylesheet" href="{{static_url('style.css')}}" />
         <link rel="stylesheet" href="{{static_url('solarized.css')}}" />
         
         {%- include "snippet/head.html" %}
         <style>
-            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
-                position: relative;
-                margin: 0;
-            }
-        
-        	.ui-icon{font-size:30px;}
-        	.ui-table{line-height: 40px;} 
-        	.ui-dialog{height:320px;}
-        	body{
-            	-webkit-user-select: inherit;
-        	}
+           
         </style>
         <script src="{{static_url('side.js')}}"></script>
         <!--[if lt IE 9]>
@@ -60,7 +50,8 @@
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                    <li><a href="/baseui">css组件库</a></li>
+                    <li><a href="/baseui"> css组件库 </a></li>
+                    
                     {%- for item in resource.pages|find_category('alice') %}
                     <li><a href="{{permalink_url(item)}}">{{item.title}}</a></li>
                     {%- endfor %}
