@@ -1,12 +1,12 @@
-# 通用样式库
+# css组件库
 
 - order: 2
 - category: alice
 
 ---
-Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。遵循手Q样式规范，基本样式使用离线包的方式减少请求，并提供快速接入的方案。
 
-`````html
+Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。遵循[手Q样式规范](http://isux.oa.com/guide/mqq/vd#545)，基本样式使用离线包的方式减少请求，并提供快速接入的方案。
+
 <script type="text/template" id="alice-module">
     <div class="alice-module">
         <div class="alice-module-head">
@@ -224,4 +224,4 @@ seajs.use(['$', 'gallery/underscore/1.4.4/underscore', 'arale/popup/1.1.2/popup'
 
 });
 </script>
-`````
+

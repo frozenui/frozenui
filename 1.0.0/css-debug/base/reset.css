@@ -46,7 +46,7 @@ body {
   background-color: #f8f9fa;
   -webkit-user-select: none;
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
@@ -75,13 +75,17 @@ input {
   border: none;
   background: none;
   -webkit-appearance: none;
-  outline: none; }
+  outline: 0; }
 
 a {
   -webkit-touch-callout: none;
   text-decoration: none;
   color: #00a5e0;
-  outline: none; }
+  outline: 0; }
+
+:active {
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
 em, i {
   font-style: normal; }
