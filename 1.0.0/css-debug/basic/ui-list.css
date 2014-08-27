@@ -97,16 +97,16 @@
   margin-top: -15px; }
 
 /*列表按压态*/
-.ui-list li.active {
+.ui-list-link li:active, li.ui-list-item-link:active {
   background: #f8f9fa;
   padding-left: 15px;
   margin-left: 0px; }
 
-.ui-list li.active .ui-border-top {
+.ui-list-link li:active .ui-border-t, li.ui-list-item-link:active .ui-border-t {
   background-image: none;
   border-top: 0px; }
 
-.ui-list li.active + li .ui-border-top, .ui-list li.active + .ui-border-top {
+.ui-list-link li:active + li .ui-border-t, .ui-list-link li:active + .ui-border-t, li.ui-list-item-link:active + li .ui-border-t, li.ui-list-item-link:active + .ui-border-t {
   background-image: none;
   border-top: 0px; }
 
