@@ -63,15 +63,7 @@
                 </ol>
             </div>
             <div class="main-area">
-                {%- if post.toc %}
-                <div class="side-area">{{post.toc}}</div>
-                {% else %}
-                <div class="side-area">
-                    <ul>
-                        <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
-                    </ul>
-                </div>                
-                {%- endif %}
+                
                 <script type="text/template" id="list-template">
                     <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
                 </script>
@@ -81,10 +73,6 @@
                 </div>
                 
             </div>
-        </div>
-        <div id="footer-wrapper">
-            <footer>
-            </footer>
         </div>
     </body>
 </html>

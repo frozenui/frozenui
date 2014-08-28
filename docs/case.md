@@ -7,13 +7,6 @@
 
 已经实现但还未组件化的效果集合。
 
-<style type="text/css">
-    .side-area{display: none;}
-    .content-area{
-        margin-left: 0;
-        width: 1080px;
-    }
-</style>
 <section class="js-main">
     <section class="js-module">
         <h3 class="js-module-title">CSS3动效</h3>
