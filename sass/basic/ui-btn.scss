@@ -2,42 +2,43 @@
  * 按钮
  */
 .ui-btn{
-  height: 30px;
-  line-height: 28px;
-  padding: 0 13px;
-  min-width: 56px;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  border: 0 none;
-  color: #0079ff;
-  font-size: 14px;
-  background-color: rgb(253,253,253);
-  background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.38, rgb(255,255,255)), to(rgb(250,250,250)));
-  border: 1px solid #cacccd;
-  border-radius: 3px;
-  vertical-align: top;
-  color: rgb(0,165,224);
-  text-shadow: 0 1px 0 rgba( 0, 0, 0 ,.1 );
-  -webkit-box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 13px;
+    min-width: 56px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border: 0 none;
+    color: #0079ff;
+    font-size: 14px;
+    background-color: rgb(253,253,253);
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.38, rgb(255,255,255)), to(rgb(250,250,250)));
+    border-radius: 3px;
+    vertical-align: top;
+    color: rgb(0,165,224);
+    text-shadow: 0 1px 0 rgba( 0, 0, 0 ,.1 );
+    -webkit-box-sizing: border-box;
+    border: 1px solid #c8c7cc;
 }
 .ui-btn:active,.ui-btn.active{
-  background: #f2f2f2;
-  color: rgba(0,165,224,.5);
+    background: #f2f2f2;
+    color: rgba(0,165,224,.5);
 }
 .ui-btn:after{
-  content: "";
-  position: absolute;
-  top: -12px;
-  bottom: -12px;
-  left: 0;
-  right: 0;
+    content: "";
+    position: absolute;
+    top: -12px;
+    bottom: -12px;
+    left: 0;
+    right: 0;
 }
+
 .ui-btn-primary{
-  background-color: rgb(24,180,237);
-  border-color: rgb( 11, 170, 228 );
-  background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.49, rgb(31,186,243)), to(rgb(24,180,237)));
-  color: #fff;
+    background-color: rgb(24,180,237);
+    border-color: rgb( 11, 170, 228 );
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.49, rgb(31,186,243)), to(rgb(24,180,237)));
+    color: #fff;
 }
 .ui-btn-primary:active,.ui-btn-primary.active{
     background: #1ca7da;
@@ -73,4 +74,25 @@
 
 .ui-btn-wrap{
     padding: 20px 15px 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-btn{border-width: 0;}
+    .ui-btn:before{
+        content:"";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #c8c7cc;
+        border-radius: 8px;
+        -webkit-transform:scale(.5);
+        -webkit-transform-origin: -50% -50%;
+    }
+    .ui-btn-primary,.ui-btn-danger{
+        border-width: 1px;
+    }
+    .ui-btn-primary:before,.ui-btn-danger:before,.ui-btn.disabled:before{
+        display:none;
+    }
 }

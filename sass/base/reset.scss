@@ -48,6 +48,7 @@ body {
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(255,255,255,0);
+    outline: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,10 +93,7 @@ a {
     outline: 0;
     
 }
-:active{
-    outline: 0;
-    -webkit-tap-highlight-color: rgba(255,255,255,0);
-}
+
 em,i {
     font-style: normal;
     

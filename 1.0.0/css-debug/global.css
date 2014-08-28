@@ -48,7 +48,8 @@ body {
   background-color: #f8f9fa;
   -webkit-user-select: none;
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  outline: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
@@ -84,10 +85,6 @@ a {
   text-decoration: none;
   color: #00a5e0;
   outline: 0; }
-
-:active {
-  outline: 0;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
 em, i {
   font-style: normal; }
@@ -337,7 +334,7 @@ em {
  */
 .ui-btn, .ui-btn-lg {
   height: 30px;
-  line-height: 28px;
+  line-height: 30px;
   padding: 0 13px;
   min-width: 56px;
   display: inline-block;
@@ -348,12 +345,12 @@ em {
   font-size: 14px;
   background-color: #fdfdfd;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.38, white), to(#fafafa));
-  border: 1px solid #cacccd;
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  -webkit-box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+  border: 1px solid #c8c7cc; }
 
 .ui-btn:active, .ui-btn-lg:active, .ui-btn.active, .active.ui-btn-lg {
   background: #f2f2f2;
@@ -406,6 +403,27 @@ em {
 .ui-btn-wrap {
   padding: 20px 15px 0; }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-btn, .ui-btn-lg {
+    border-width: 0; }
+
+  .ui-btn:before, .ui-btn-lg:before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #c8c7cc;
+    border-radius: 8px;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: -50% -50%; }
+
+  .ui-btn-primary, .ui-btn-danger {
+    border-width: 1px; }
+
+  .ui-btn-primary:before, .ui-btn-danger:before, .ui-btn.disabled:before, .disabled.ui-btn-lg:before {
+    display: none; } }
 /**
  * 弹窗类
  */
