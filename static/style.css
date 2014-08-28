@@ -852,7 +852,7 @@ body .fn-hide {
 .cwf-list .cwfqr a { display: block; line-height: 0; overflow: hidden;}
 .cwf-list .pic img { min-height: 40px; line-height: 0; overflow: hidden; padding-bottom: 40px;}
 .cwf-list .pic { min-height: 170px; line-height: 0; overflow: hidden;}
-.cwf-list .desc { height: 36px; background:rgba(255,255,255,.8); padding: 2px 10px; z-index: 2; position: absolute; left: 0; bottom: 0; width: 100%;}
+.cwf-list .desc { height: 36px; background:rgba(255,255,255,1); padding: 2px 10px; z-index: 2; position: absolute; left: 0; bottom: 0; width: 100%;}
 .cwf-list .tit { font-size: 14px; height: 20px; line-height: 20px; font-family: "microsoft yahei";}
 .cwf-list .author { font-size: 12px; height: 16px; line-height: 16px; color: #808080;}
 
