@@ -5,7 +5,7 @@
 
 ---
 
-已经实现但还未组件化的效果集合。
+未组件化的动画效果集合。
 
 <section class="js-main">
     <section class="js-module">
@@ -178,6 +178,20 @@
                 <div class="desc">
                   <div class="tit">账号资料卡特权PK</div>
                   <div class="author">来自ethanlai</div>
+                </div>
+              </li>
+               <li>
+                <div class="pic">
+                    <img alt="" src="../static/pic/faycheng1.png" width="160" />
+                </div>
+                <div class="cwfqr" data-url="http://zhijie.me/cover/index.html">
+                  <a href="http://zhijie.me/cover/index.html" target="_blank">
+                  <div class="qr"></div>
+                  </a>
+                </div>
+                <div class="desc">
+                  <div class="tit">cover陀螺仪效果</div>
+                  <div class="author">来自faycheng</div>
                 </div>
               </li>
             </ul>        
@@ -358,6 +372,7 @@
             </ul>        
         </div>
     </section>
+    
 </section>
 <script type="text/javascript">
   jQuery(".cwfqr").each(function(index,el){
