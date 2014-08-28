@@ -845,9 +845,9 @@ body .fn-hide {
    margin-bottom: 15px;
 }
 
-.cwf-list { -webkit-column-count: 6; -webkit-column-gap: 10px; /*-webkit-column-rule: 5px solid #333;*/ -webkit-column-width: 164px;}
-.cwf-list li { display: block; width: 160px; padding: 1px; border:1px solid #eee; margin-bottom: 10px; position: relative; overflow: hidden;}
-.cwf-list .cwfqr { position: absolute; left: 50%; top: 50%; margin: -65px 0 0 -65px; width: 120px; height: 125px; padding: 5px 5px 0; background: rgba(255,255,255,.8); opacity: 0;/* pointer-events:none; -webkit-transition:all ease-in .4s;*/}
+.cwf-list { -webkit-column-count: 5; -webkit-column-gap: 10px; /*-webkit-column-rule: 5px solid #333;*/ -webkit-column-width: 168px;}
+.cwf-list li { display: block; width: 160px; padding: 3px; border:1px solid #eee; margin-bottom: 10px; position: relative; overflow: hidden;}
+.cwf-list .cwfqr { position: absolute; left: 50%; top: 50%; margin: -85px 0 0 -65px; width: 120px; height: 125px; padding: 5px 5px 0; background: rgba(255,255,255,.8); opacity: 0;/* pointer-events:none; -webkit-transition:all ease-in .4s;*/}
 .cwf-list li:hover .cwfqr { opacity: 1;}
 .cwf-list .cwfqr a { display: block; line-height: 0; overflow: hidden;}
 .cwf-list .pic img { min-height: 40px; line-height: 0; overflow: hidden; padding-bottom: 40px;}

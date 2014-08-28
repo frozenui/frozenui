@@ -180,20 +180,6 @@
                   <div class="author">来自ethanlai</div>
                 </div>
               </li>
-               <li>
-                <div class="pic">
-                    <img alt="" src="../static/pic/faycheng1.png" width="160" />
-                </div>
-                <div class="cwfqr" data-url="http://zhijie.me/cover/index.html">
-                  <a href="http://zhijie.me/cover/index.html" target="_blank">
-                  <div class="qr"></div>
-                  </a>
-                </div>
-                <div class="desc">
-                  <div class="tit">cover陀螺仪效果</div>
-                  <div class="author">来自faycheng</div>
-                </div>
-              </li>
             </ul>        
         </div>
     </section>
@@ -257,6 +243,20 @@
                   <div class="author">来自jundabei</div>
                 </div>
               </li>
+               <li>
+                <div class="pic">
+                    <img alt="" src="../static/pic/faycheng1.png" width="160" />
+                </div>
+                <div class="cwfqr" data-url="http://zhijie.me/cover/index.html">
+                  <a href="http://zhijie.me/cover/index.html" target="_blank">
+                  <div class="qr"></div>
+                  </a>
+                </div>
+                <div class="desc">
+                  <div class="tit">cover陀螺仪效果</div>
+                  <div class="author">来自faycheng</div>
+                </div>
+              </li>
               <li>
                 <div class="pic">
                     <img alt="" src="../static/pic/fly001.png" width="160" />
@@ -296,6 +296,20 @@
                 </div>
                 <div class="desc">
                   <div class="tit">位置信息用户关怀</div>
+                  <div class="author">来自jundabei</div>
+                </div>
+              </li>
+              <li>
+                <div class="pic">
+                    <img alt="" src="../static/pic/grav001.jpg" width="160" />
+                </div>
+                <div class="cwfqr" data-url="http://gamecentertest.cs0309.3g.qq.com/front/demo/mqqh5/brithday_chui/a_index2.html">
+                  <a href="http://gamecentertest.cs0309.3g.qq.com/front/demo/mqqh5/brithday_chui/a_index2.html" target="_blank">
+                  <div class="qr"></div>
+                  </a>
+                </div>
+                <div class="desc">
+                  <div class="tit">摇晃的热气球</div>
                   <div class="author">来自jundabei</div>
                 </div>
               </li>
