@@ -8,6 +8,9 @@
 ## 一个简单的例子
 <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css">
 
+<style>
+iframe{height: 450px;}
+</style>
 ````iframe
 <!DOCTYPE HTML>
 <html>
@@ -84,7 +87,7 @@
 还有一种引用方式，非手Q的页面可以引用[http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css](http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css) 文件，
 这个css打包了所有模块。
 
-具体模块的代码可以访问[http://frozenui.github.io/docs/widget.html](http://frozenui.github.io/docs/widget.html)
+具体模块的代码可以访问[http://frozenui.github.io/baseui/](http://frozenui.github.io/baseui/)
 
 
 ## 引用和下载

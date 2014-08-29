@@ -5,7 +5,7 @@
 ---
 ##frozen是什么
 
-frozen是使用`手Q规范`的移动端web框架，css包括基本样式和组件，js包括基本组件和动效库。
+frozen是使用最新的[手Q规范](http://isux.oa.com/guide/mqq/vd#545)的移动端web框架，css包括基本样式和组件，js包括基本组件和动效库。
 
 css使用模块化的样式命名和组织规范，参考了前人的成果：支付宝团队的[alice](http://aliceui.org/)，[bootstrap](http://getbootstrap.com/)等，实现了最简的手Q web组件效果，并不断完善中。
 

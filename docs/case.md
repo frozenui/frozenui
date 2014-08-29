@@ -70,20 +70,6 @@
               </li>
               <li>
                 <div class="pic">
-                    <img alt="" src="../static/pic/wallet2.png" width="160" />
-                </div>
-                <div class="cwfqr" data-url="http://wevas.info/vipstyle/special/wallet/v2/html/index.html">
-                  <a href="http://wevas.info/vipstyle/special/wallet/v2/html/index.html" target="_blank">
-                  <div class="qr"></div>
-                  </a>
-                </div>
-                <div class="desc">
-                  <div class="tit">QQ钱包首页展示(1)</div>
-                  <div class="author">来自hahnzhu</div>
-                </div>
-              </li>
-              <li>
-                <div class="pic">
                     <img alt="" src="../static/pic/wallet.gif" width="160" />
                 </div>
                 <div class="cwfqr" data-url="http://wevas.info/vipstyle/special/wallet/v2/html/index2.html">
@@ -92,7 +78,7 @@
                   </a>
                 </div>
                 <div class="desc">
-                  <div class="tit">QQ钱包首页展示(2)</div>
+                  <div class="tit">QQ钱包首页展示</div>
                   <div class="author">来自hahnzhu</div>
                 </div>
               </li>
