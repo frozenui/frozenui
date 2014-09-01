@@ -85,7 +85,19 @@ module.exports =function(grunt) {
             exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
             simple: true
           }
-        }
+        },
+        push_svn: {
+            options: {
+              remove: false, 
+              pushIgnore: ['**/*.tmp'],
+              removeIgnore: ['**/*.gif']
+            },
+            main: {
+              src: '/path to your local directory',
+              dest: 'https://svn.example.com/path/to/your/repo',
+              tmp: './.build'
+            },
+          }
     });
 
     // 载入concat和css插件，分别对于合并和压缩
