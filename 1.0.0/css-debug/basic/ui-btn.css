@@ -71,7 +71,7 @@
   border-radius: 5px; }
 
 .ui-btn-wrap {
-  padding: 20px 15px 0; }
+  padding: 20px 15px; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .ui-btn, .ui-btn-lg {
