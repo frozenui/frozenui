@@ -47,14 +47,14 @@ module.exports =function(grunt) {
             }
         },
         compress: {
-          main: {
-            options: {
-              archive: '<%=meta.destPath%>/i.gtimg.cn.zip'
-            },
-            expand: true,
-            cwd: '<%=meta.destPath%>', 
-            src: ['i.gtimg.cn/**']
-          }
+            main: {
+                options: {
+                    archive: '<%=meta.destPath%>/i.gtimg.cn.zip'
+                },
+                expand: true,
+                cwd: '<%=meta.destPath%>', 
+                src: ['i.gtimg.cn/**']
+            }
         },
         sass: {
             dist: {

@@ -10,9 +10,13 @@
 
 ````html
 <style>
+.img-list{overflow:hidden;}
 .img-list li{
 	position:relative;
-	width: 33.3%;
+	width: 25%;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
 }
 .img-list li img{width:100%}
 </style>
