@@ -11,17 +11,29 @@
   line-height: 40px;
   height: 40px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   overflow: hidden; }
 
-.ui-tips .ui-tips-cnt i {
+.ui-tips-cnt-info i:before {
+  background-position: 0 -50px; }
+
+.ui-tips-cnt-success i:before {
+  background-position: -25px -50px; }
+
+.ui-tips-cnt-warn i:before {
+  background-position: -50px -50px; }
+
+.ui-tips-cnt i {
   margin-right: 8px;
   margin-left: 0px; }
 
-.ui-tips .ui-icon {
+.ui-tips-cnt i:before {
+  top: -16px; }
+
+.ui-tips i {
   font-size: 20px; }
 
 .ui-tips-warn .ui-tips-cnt {

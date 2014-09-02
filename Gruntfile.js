@@ -89,12 +89,14 @@ module.exports =function(grunt) {
         push_svn: {
             options: {
               remove: false, 
-              pushIgnore: ['**/*.tmp'],
-              removeIgnore: ['**/*.gif']
+              pushIgnore: ['.*'],
+              username: 'faycheng',
+              password: 'fly@1234',
+              message: 'grunt ci'
             },
             main: {
-              src: '/path to your local directory',
-              dest: 'https://svn.example.com/path/to/your/repo',
+              src: '1.0.0',
+              dest: 'http://tc-svn.tencent.com/isd/isd_webrebuild_rep/vipstyle_proj/trunk/frozenui/1.0.0',
               tmp: './.build'
             },
           }
@@ -108,6 +110,7 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-ftpush');
+    grunt.loadNpmTasks('grunt-push-svn');
     
 
     // 默认任务

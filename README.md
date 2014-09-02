@@ -30,22 +30,7 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
 </script>
 
 <style>
-.ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
-       position: relative;
-       margin: 0;
-   }
 
-.ui-icon{font-size:30px;}
-.ui-table{line-height: 40px;} 
-.ui-dialog{height:320px;}
-body{
-   	-webkit-user-select: inherit;
-}
-.content-area{margin-left: 240px;width: 840px}
-.ui-border-t,.ui-border-b,.ui-border-tb,.ui-border-l,.ui-border-r{
-	margin:10px 0;
-	width:200px;
-}
 .alice-module {
     border-bottom: 1px solid #eee;    
     padding: 0;

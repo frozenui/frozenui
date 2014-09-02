@@ -288,7 +288,9 @@ em {
 */
 .ui-reddot, .ui-reddot-border, .ui-reddot-s {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  line-height: 22px;
+  padding: 0 6px; }
   .ui-reddot:after, .ui-reddot-border:after, .ui-reddot-s:after {
     content: '';
     position: absolute;
@@ -524,17 +526,29 @@ em {
   line-height: 40px;
   height: 40px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   overflow: hidden; }
 
-.ui-tips .ui-tips-cnt i {
+.ui-tips-cnt-info i:before {
+  background-position: 0 -50px; }
+
+.ui-tips-cnt-success i:before {
+  background-position: -25px -50px; }
+
+.ui-tips-cnt-warn i:before {
+  background-position: -50px -50px; }
+
+.ui-tips-cnt i {
   margin-right: 8px;
   margin-left: 0px; }
 
-.ui-tips .ui-icon {
+.ui-tips-cnt i:before {
+  top: -16px; }
+
+.ui-tips i {
   font-size: 20px; }
 
 .ui-tips-warn .ui-tips-cnt {
@@ -964,7 +978,7 @@ em {
   top: -11px; }
 
 .ui-icon-info:before {
-  background-position: -25px 0; }
+  background-position: 0 -50px; }
 
 .ui-icon-warn:before {
   background-position: -50px 0;
@@ -986,7 +1000,7 @@ em {
   background-position: -100px 0; }
 
 .ui-icon-tips:before {
-  background-position: -125px 0;
+  background-position: -25px 0;
   top: -16px; }
 
 .ui-icon-tag, .ui-icon-tag-svip, .ui-icon-tag-vip, .ui-icon-tag-freelimit, .ui-icon-tag-free, .ui-icon-tag-hot, .ui-icon-tag-new, .ui-icon-tag-selected {

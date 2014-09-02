@@ -192,7 +192,9 @@
 */
 .ui-reddot, .ui-reddot-border, .ui-reddot-s {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  line-height: 22px;
+  padding: 0 6px; }
   .ui-reddot:after, .ui-reddot-border:after, .ui-reddot-s:after {
     content: '';
     position: absolute;
