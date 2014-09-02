@@ -2,7 +2,7 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>Frozen - ui-tips</title>
+        <title>Frozen - null</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
         <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
@@ -113,7 +113,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
         file = file.replace(/\.(\w+)$/, '-debug.$1');
       }
     }
-    return seajs.resolve("../" + srcdir + "/" + file + '#');
+    return seajs.resolve("./" + srcdir + "/" + file + '#');
   }
 
   function contain(arr, value) {
@@ -143,7 +143,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 <div class="title-area">
                     <img src="http://frozenui.github.io/static/frozen-top.png" alt="alice" />
                     <h1>
-                        <a href="../">Frozen</a>
+                        <a href="./">Frozen</a>
                     </h1>
                     <p class="description">为移动端web而生</p>                    
                 </div>
@@ -161,56 +161,17 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </ol>
             </div>
             <div class="main-area">
-                <div class="side-area"><ul><li><a href="#default">default</a></li><li><a href="#黄色">黄色</a></li></ul></div>
-                
+                <div class="side-area">
+                    <ul>
+                        <li class="side-loading"><img width="160" alt="加载中..." src="http://frozenui.github.io/static/loading.gif"></li>
+                    </ul>
+                </div>
                 <script type="text/template" id="list-template">
                     <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
                 </script>
                 <div class="content-area">
-                    <h1>ui-tips</h1>
-                    <div class="content"><h3 id="default">default<a href="#default" class="anchor">¶</a></h3><div class="nico-insert-code"><style>
-    .ui-tips{margin:10px 0;}
-</style>
-<div class="ui-tips">
-    <div class="ui-tips-cnt ui-tips-cnt-info">
-        <i class="ui-icon"></i>提供相关的信息或建议
-    </div>
-</div>
-<div class="ui-tips">
-    <div class="ui-tips-cnt ui-tips-cnt-warn">
-        <i class="ui-icon"></i>警示已经发生或可能在未来发生的问题
-    </div>
-</div>
- <div class="ui-tips">
-    <div class="ui-tips-cnt ui-tips-cnt-success">
-        <i class="ui-icon"></i>提示操作成功或流程成功
-    </div>
-</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
-    <span class="class">.ui-tips</span><span class="rules">{<span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">10</span>px <span class="number">0</span></span></span>;<span class="rule">}</span></span>
-</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
-<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips-cnt ui-tips-cnt-info"</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>提供相关的信息或建议
-    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips-cnt ui-tips-cnt-warn"</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>警示已经发生或可能在未来发生的问题
-    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
- <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips-cnt ui-tips-cnt-success"</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>提示操作成功或流程成功
-    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="黄色">黄色<a href="#黄色" class="anchor">¶</a></h3><div class="nico-insert-code"><div class="ui-tips ui-tips-warn">
-      <div class="ui-tips-cnt ui-tips-cnt-cover ui-border-b">
-        <i class="ui-icon ui-icon-warn"></i>当前网路不可用，请检查你的网路设置。
-      </div>
-    </div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips ui-tips-warn"</span>&gt;</span>
-      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips-cnt ui-tips-cnt-cover ui-border-b"</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-warn"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>当前网路不可用，请检查你的网路设置。
-      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div></div>
+                    <h1>null</h1>
+                    <div class="content"></div>
                 </div>
                 
             </div>

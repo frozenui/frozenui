@@ -156,6 +156,8 @@
 .ui-reddot{
      position: relative;
      display: inline-block;
+     line-height: 22px;
+     padding: 0 6px;
      &:after{
         content: '';
         position: absolute;

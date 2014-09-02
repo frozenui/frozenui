@@ -36,7 +36,6 @@ module.exports = function(nico) {
       post.template = post.meta.template = (post.meta.template || 'post');
     }
     if (filename === 'readme.md') {
-      post.filename = post.meta.filename = 'index';
       post.meta.category = 'docs';
     }
     if (!post.meta.category) {
