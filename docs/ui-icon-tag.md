@@ -13,7 +13,7 @@
 .img-list{overflow:hidden;}
 .img-list li{
 	position:relative;
-	width: 25%;
+	width: 30%;
 	float: left;
 	margin-bottom: 10px;
 	margin-right: 10px;
