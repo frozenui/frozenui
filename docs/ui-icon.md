@@ -9,11 +9,7 @@
         <li>
             <i class="ui-icon ui-icon-refresh"></i>
             <div class="name">ui-icon-refresh</div>    
-        </li>
-        <li>
-            <i class="ui-icon ui-icon-info"></i>
-            <div class="name">ui-icon-info</div>    
-        </li>    
+        </li>   
         <li>
             <i class="ui-icon ui-icon-warn"></i>
             <div class="name">ui-icon-warn</div>    
