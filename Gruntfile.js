@@ -87,13 +87,22 @@ module.exports =function(grunt) {
           }
         },
         shell: {
-            multiple: {
+            git: {
                 command: [
                     'git add -A',
                     'git commit -m "ci"',
                     'git push origin master'
                 ].join('&&')
+            },
+            gitsite:{
+                command: [
+                    'cd _site',
+                    'git add -A',
+                    'git commit -m "ci"',
+                    'git push origin master'
+                ].join('&&')
             }
+            
         }
     });
 
