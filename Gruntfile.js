@@ -10,7 +10,7 @@ module.exports =function(grunt) {
             destPath: '1.0.0',
             zipPath:'1.0.0/i.gtimg.cn/vipstyle/frozenui/1.0.0'
         },
-        
+               
         cssmin: {
             minify: {
                 expand: true,
@@ -86,20 +86,24 @@ module.exports =function(grunt) {
             simple: true
           }
         },
-        push_svn: {
-            options: {
-              remove: false, 
-              pushIgnore: ['.*'],
-              username: 'faycheng',
-              password: 'fly@1234',
-              message: 'grunt ci'
+        shell: {
+            git: {
+                command: [
+                    'git add -A',
+                    'git commit -m "ci"',
+                    'git push origin master'
+                ].join('&&')
             },
-            main: {
-              src: '1.0.0',
-              dest: 'http://tc-svn.tencent.com/isd/isd_webrebuild_rep/vipstyle_proj/trunk/frozenui/1.0.0',
-              tmp: './.build'
-            },
-          }
+            gitsite:{
+                command: [
+                    'cd _site',
+                    'git add -A',
+                    'git commit -m "ci"',
+                    'git push origin gh-pages'
+                ].join('&&')
+            }
+            
+        }
     });
 
     // 载入concat和css插件，分别对于合并和压缩
@@ -110,10 +114,10 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-ftpush');
-    grunt.loadNpmTasks('grunt-push-svn');
+    grunt.loadNpmTasks('grunt-shell');
     
 
     // 默认任务
-    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush']);
+    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
 
 };
