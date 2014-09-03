@@ -10,7 +10,15 @@ module.exports =function(grunt) {
             destPath: '1.0.0',
             zipPath:'1.0.0/i.gtimg.cn/vipstyle/frozenui/1.0.0'
         },
-        
+         shell: {
+            multiple: {
+                command: [
+                    'git add -A',
+                    'cd test',
+                    'ls'
+                ].join('&&')
+            }
+        },        
         cssmin: {
             minify: {
                 expand: true,
@@ -85,21 +93,7 @@ module.exports =function(grunt) {
             exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
             simple: true
           }
-        },
-        push_svn: {
-            options: {
-              remove: false, 
-              pushIgnore: ['.*'],
-              username: 'faycheng',
-              password: 'fly@1234',
-              message: 'grunt ci'
-            },
-            main: {
-              src: '1.0.0',
-              dest: 'http://tc-svn.tencent.com/isd/isd_webrebuild_rep/vipstyle_proj/trunk/frozenui/1.0.0',
-              tmp: './.build'
-            },
-          }
+        }
     });
 
     // 载入concat和css插件，分别对于合并和压缩
@@ -110,7 +104,7 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-ftpush');
-    grunt.loadNpmTasks('grunt-push-svn');
+    grunt.loadNpmTasks('grunt-exec');
     
 
     // 默认任务
