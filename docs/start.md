@@ -9,8 +9,9 @@
 <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css">
 
 <style>
-iframe{height: 450px;}
+.nico-iframe iframe{height: 450px;}
 </style>
+
 ````iframe
 <!DOCTYPE HTML>
 <html>
