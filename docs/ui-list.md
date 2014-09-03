@@ -160,6 +160,7 @@
 ### 图文链接列表
   
 ````html
+
       <ul class="ui-list ui-list-link ui-border-tb">
         <li class="ui-border-t">
           <div class="ui-list-thumb">
@@ -180,6 +181,5 @@
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
           </div>
         </li>
-        
       </ul>
 ````
