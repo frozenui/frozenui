@@ -14,8 +14,8 @@ module.exports =function(grunt) {
             multiple: {
                 command: [
                     'git add -A',
-                    'cd test',
-                    'ls'
+                    'git commit -m "ci"',
+                    'git push origin master'
                 ].join('&&')
             }
         },        
