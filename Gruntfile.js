@@ -10,15 +10,7 @@ module.exports =function(grunt) {
             destPath: '1.0.0',
             zipPath:'1.0.0/i.gtimg.cn/vipstyle/frozenui/1.0.0'
         },
-         shell: {
-            multiple: {
-                command: [
-                    'git add -A',
-                    'git commit -m "ci"',
-                    'git push origin master'
-                ].join('&&')
-            }
-        },        
+               
         cssmin: {
             minify: {
                 expand: true,
@@ -93,6 +85,15 @@ module.exports =function(grunt) {
             exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
             simple: true
           }
+        },
+        shell: {
+            multiple: {
+                command: [
+                    'git add -A',
+                    'git commit -m "ci"',
+                    'git push origin master'
+                ].join('&&')
+            }
         }
     });
 
@@ -104,10 +105,10 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-ftpush');
-    grunt.loadNpmTasks('grunt-exec');
+    grunt.loadNpmTasks('grunt-shell');
     
 
     // 默认任务
-    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush']);
+    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
 
 };
