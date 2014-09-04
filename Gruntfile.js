@@ -94,6 +94,7 @@ module.exports =function(grunt) {
             }
         },
         shell: {
+            
             svn:{
                command: [
                     'svn up',
@@ -107,6 +108,7 @@ module.exports =function(grunt) {
                     'git add -A',
                     'git commit -m "ci"',
                     'git pull origin master',
+                    'nico build',
                     'git push origin master'
                 ].join('&&')
             },
@@ -118,6 +120,12 @@ module.exports =function(grunt) {
                     'git pull origin gh-pages',
                     'git push origin gh-pages'
                 ].join('&&')
+            },
+            nico:{
+              command: [
+                    'nico build',
+                    'nico server'
+                ].join('&&')   
             }
             
         }
@@ -135,7 +143,7 @@ module.exports =function(grunt) {
     
 
     // 默认任务
-    grunt.registerTask('default', ['sass','copy']);
-    grunt.registerTask('commit', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
+    grunt.registerTask('test', ['sass','copy','shell:nico']);
+    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
 
 };
