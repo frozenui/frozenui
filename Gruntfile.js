@@ -29,12 +29,19 @@ module.exports =function(grunt) {
                     expand: true,
                     cwd: 'img/',
                     src: ['**/*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
-                    dest: '<%=meta.destPath%>/img/' // 优化后的图片保存位置
+                    dest: 'img/' // 优化后的图片保存位置
                 }]
             }
         },
         copy : {
             img:{
+                expand: true,
+                cwd: 'img/',
+                src: ['**/*'],
+                dest:'<%=meta.destPath%>/img/'
+            },
+
+            imgzip:{
                 expand: true,
                 cwd: '<%=meta.destPath%>/img/',
                 src: '*',
@@ -74,17 +81,17 @@ module.exports =function(grunt) {
             }
         },
         ftpush: {
-          build: {
-            auth: {
-              host: '119.147.200.113',
-              port: 21000,
-              authKey: 'key'
-            },
-            src: '',
-            dest: '/frozenui',
-            exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
-            simple: true
-          }
+            build: {
+                auth: {
+                    host: '119.147.200.113',
+                    port: 21000,
+                    authKey: 'key'
+                },
+                src: '',
+                dest: '/frozenui',
+                exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
+                simple: true
+            }
         },
         shell: {
             svn:{
@@ -127,6 +134,7 @@ module.exports =function(grunt) {
     
 
     // 默认任务
-    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
+    grunt.registerTask('default', ['sass','copy']);
+    grunt.registerTask('commit', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
 
 };
