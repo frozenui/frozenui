@@ -98,7 +98,6 @@ module.exports =function(grunt) {
             svn:{
                command: [
                     'svn up',
-                    'nico build',
                     'svn add * --force',
                     'svn commit -m "ci"'
                 ].join('&&') 
@@ -108,7 +107,6 @@ module.exports =function(grunt) {
                     'git add -A',
                     'git commit -m "ci"',
                     'git pull origin master',
-                    'nico build',
                     'git push origin master'
                 ].join('&&')
             },
@@ -123,6 +121,8 @@ module.exports =function(grunt) {
             },
             nico:{
               command: [
+                    'svn up',
+                    'git pull origin master',
                     'nico build',
                     'nico server'
                 ].join('&&')   
