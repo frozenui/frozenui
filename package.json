@@ -38,6 +38,7 @@
     "ui-loading",
     "ui-notice",
     "ui-select-user",
+    "ui-form",
     "ui-tab",
     "ui-table",
     "ui-tips",
@@ -46,5 +47,6 @@
     "ui-icon-tag",
     "ui-icon-viplevel",
     "ui-icon-qqlevel"
+    
   ]
 }
