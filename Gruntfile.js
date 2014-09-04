@@ -9,8 +9,7 @@ module.exports =function(grunt) {
         meta: {
             destPath: '1.0.0',
             zipPath:'1.0.0/i.gtimg.cn/vipstyle/frozenui/1.0.0'
-        },
-               
+        }, 
         cssmin: {
             minify: {
                 expand: true,
@@ -94,18 +93,17 @@ module.exports =function(grunt) {
             }
         },
         shell: {
-            
             svn:{
                command: [
                     'svn up',
                     'svn add * --force',
-                    'svn commit -m "ci"'
+                    'svn commit -m "<%=log%>"'
                 ].join('&&') 
             },
             git: {
                 command: [
                     'git add -A',
-                    'git commit -m "ci"',
+                    'git commit -m "<%=log%>"',
                     'git pull origin master',
                     'git push origin master'
                 ].join('&&')
@@ -114,7 +112,7 @@ module.exports =function(grunt) {
                 command: [
                     'cd _site',
                     'git add -A',
-                    'git commit -m "ci"',
+                    'git commit -m <%=log%>',
                     'git pull origin gh-pages',
                     'git push origin gh-pages'
                 ].join('&&')
@@ -128,7 +126,8 @@ module.exports =function(grunt) {
                 ].join('&&')   
             }
             
-        }
+        },
+        log: 'dev'
     });
 
     // 载入concat和css插件，分别对于合并和压缩
@@ -140,10 +139,10 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-ftpush');
     grunt.loadNpmTasks('grunt-shell');
+    var log = grunt.config.log ;
     
-
     // 默认任务
     grunt.registerTask('test', ['sass','copy','shell:nico']);
-    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
+    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell:' + log]);
 
 };
