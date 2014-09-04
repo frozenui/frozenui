@@ -97,6 +97,7 @@ module.exports =function(grunt) {
             svn:{
                command: [
                     'svn up',
+                    'nico build',
                     'svn add * --force',
                     'svn commit -m "ci"'
                 ].join('&&') 
