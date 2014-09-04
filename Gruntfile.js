@@ -1,7 +1,6 @@
 module.exports =function(grunt) {
 
     // 配置
-
     grunt.initConfig({
 
         pkg : grunt.file.readJSON('package.json'),
@@ -97,13 +96,13 @@ module.exports =function(grunt) {
                command: [
                     'svn up',
                     'svn add * --force',
-                    'svn commit -m "<%=log%>"'
+                    'svn commit -m <%=grunt.option("log")%>'
                 ].join('&&') 
             },
             git: {
                 command: [
                     'git add -A',
-                    'git commit -m "<%=log%>"',
+                    'git commit -m <%=grunt.option("log")%>',
                     'git pull origin master',
                     'git push origin master'
                 ].join('&&')
@@ -112,7 +111,7 @@ module.exports =function(grunt) {
                 command: [
                     'cd _site',
                     'git add -A',
-                    'git commit -m <%=log%>',
+                    'git commit -m <%=grunt.option("log")%>',
                     'git pull origin gh-pages',
                     'git push origin gh-pages'
                 ].join('&&')
@@ -126,8 +125,7 @@ module.exports =function(grunt) {
                 ].join('&&')   
             }
             
-        },
-        log: 'dev'
+        }
     });
 
     // 载入concat和css插件，分别对于合并和压缩
@@ -138,11 +136,9 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-ftpush');
-    grunt.loadNpmTasks('grunt-shell');
-    var log = grunt.config.log ;
-    
+    grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
     grunt.registerTask('test', ['sass','copy','shell:nico']);
-    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell:' + log]);
+    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
 
 };
