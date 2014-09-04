@@ -16,7 +16,7 @@ i.gtimg.cn.zip需要发布到离线包
 
 ### nico 
 
-用[nico](lab.lepture.com/nico/zh/)生成文档以及调试，`nico build `命令生成文档，`nico server `命令调试
+需要安装[nico](lab.lepture.com/nico/zh/)生成文档以及调试，`nico build `命令生成文档，`nico server `命令调试
 
 ### git
 
