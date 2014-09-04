@@ -87,10 +87,18 @@ module.exports =function(grunt) {
           }
         },
         shell: {
+            svn:{
+               command: [
+                    'svn up',
+                    'svn add * --force',
+                    'svn commit -m "ci"'
+                ].join('&&') 
+            },
             git: {
                 command: [
                     'git add -A',
                     'git commit -m "ci"',
+                    'git pull origin master',
                     'git push origin master'
                 ].join('&&')
             },
@@ -99,6 +107,7 @@ module.exports =function(grunt) {
                     'cd _site',
                     'git add -A',
                     'git commit -m "ci"',
+                    'git pull origin gh-pages',
                     'git push origin gh-pages'
                 ].join('&&')
             }
