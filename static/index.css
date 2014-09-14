@@ -1,4 +1,4 @@
-.side-area,.head-area,.nav-area,.comment-area,.content-area>h1,#footer-wrapper{
+.content-area>h1{
     display: none;
 }
 .main-area{
