@@ -765,12 +765,12 @@ body .fn-hide {
     right: 0;
 }
 /*footer*/
-.footer{
+.footer-area{
     height: 220px;
     background-color: #337784;
     color: #fff;
 }
-.footer a{color: #fff;}
+.footer-area a{color: #fff;}
 .footer-content{
     width: 960px;
     margin: 0 auto;
