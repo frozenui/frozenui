@@ -298,8 +298,6 @@ hr {
     position: absolute;
     top: 0;
     width: 220px;
-    background: #fff;
-    border-bottom: 1px solid #ddd;
 }
 
 .side-area ul {
@@ -336,11 +334,9 @@ hr {
     font-size: 14px;
     display: block;
     padding: 8px 15px;
-    border: 1px solid #ddd;
-    border-bottom: none;
+    border-right: 1px solid #ddd;
     position: relative;
     text-shadow: 0 1px 2px #eee;
-    /*color: #7CAE23;*/
     color: #00a5e0;
 }
 
