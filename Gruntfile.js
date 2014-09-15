@@ -85,8 +85,8 @@ module.exports =function(grunt) {
                     port: 21000,
                     authKey: 'key'
                 },
-                src: '',
-                dest: '/frozenui',
+                src: '1.0.0',
+                dest: '/frozenui/1.0.0',
                 exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
                 simple: true
             }
