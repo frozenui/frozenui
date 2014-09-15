@@ -69,7 +69,7 @@ p.alice-module-description {
 .alice-module-demo {
     border: 1px solid #eee;
     border-bottom: none;
-    padding: 20px 130px 20px 20px;
+    padding: 20px 10px 20px 20px;
     position: relative;
 }
 .alice-module-demo:hover {
@@ -77,31 +77,23 @@ p.alice-module-description {
 }
 .alice-module-dom {
     margin-bottom: 8px;
+    font-size:14px;
 }
 .alice-module-code {
     display: none;
     margin: 0!important;
 }
 h3.alice-module-subtitle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 3px;
     margin: 0;
     color: #777;
-    font-size: 12px;
-    background: #F8F8F8;
-    border-bottom: 1px solid #ddd;
-    border-left: 1px solid #ddd;
     display: block;
-    font-size: 12px;
-    width: 100px;
-    padding: 5px 10px;
+    padding: 5px 0;
     opacity: 0.8;
+    font-size:20px;
 }
 .alice-module-sourcecode {
     position: absolute;
-    right: 125px;
+    right: 5px;
     top: 0;
     font-size: 12px;
     padding: 5px 10px;
