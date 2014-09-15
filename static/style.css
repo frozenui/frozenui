@@ -282,9 +282,9 @@ hr {
 }
 
 .content-area {
-    padding: 20px 29px;
+    padding: 0 29px 20px;
     width: 1080px;
-    margin: 0 0 20px 0;
+    margin: 20px 0;
 }
 
 .comment-area {
