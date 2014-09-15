@@ -31,6 +31,12 @@
             }
             .content-area{margin-left: 240px;width: 840px}
             .side-area{top: 20px;}
+            @media (max-width: 980px){
+                .content-area{
+                    margin-left: 0;
+                    width: auto;
+                }
+            }
         </style>
         {%- include "snippet/head.html" %}
         <!--[if lt IE 9]>
@@ -52,7 +58,7 @@
                     <div class="title-area">
                         <img src="http://frozenui.github.io/static/frozen-top.png" alt="frozen" />
                         <h1>
-                            <a href="{{content_url('index.html')}}">{{config.package.title|title}}</a>
+                            <a href="/index.html">{{config.package.title|title}}</a>
                         </h1>                  
                     </div>
                     <div class="nav-area">
