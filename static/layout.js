@@ -1,5 +1,5 @@
-function write_head(){
-    var template_head='<div class="head-content">'+
+function write_header(){
+    var template_header = '<div class="head-content">'+
         '<div class="title-area">'+
             '<img src="http://frozenui.github.io/static/frozen-top.png" alt="frozen" />'+
             '<h1>'+
@@ -18,24 +18,14 @@ function write_head(){
       '</div>'+
     '</div>';
   
-    document.write(template_head);
+    document.write(template_header);
 }
-function write_foot(){
-    var template_foot = '<div class="footer-content">'+
-    	'<div>'+
-    		'<h3>About us</h3>'+
-    		'<p><a href="https://github.com/frozenui">Github</a></p>'+
-    		'<p><a href="https://github.com/frozenui/frozenui/issues">Contact us</a></p>'+
-    	'</div>'+
-    	'<div>'+
-    		'<h3>Support</h3>'+
-    		'<p><a href="/docs/start.html">Quick start</a></p>'+
-    		'<p><a href="http://isux.tencent.com/jobs">Join us</a></p>'+
-    	'</div>'+
+function write_footer(){
+    var template_footer = '<div class="footer-content">'+
     	'<div id="footer-us">'+
-    		'<img src="http://frozenui.github.io/static/logo.png">'+
+    		'<a href="https://github.com/frozenui"><img src="http://frozenui.github.io/static/logo.png"></a>'+
     		'<p>© QQ会员前端开发组<br/>All rights reserved.</p>'+
     	'</div>'+
     '</div>';
-    document.write(template_foot);
+    document.write(template_footer);
 }

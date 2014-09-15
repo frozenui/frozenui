@@ -768,25 +768,12 @@ body .fn-hide {
 /*footer*/
 .footer-area{
     height: 220px;
-    background-color: #337784;
-    color: #fff;
 }
-.footer-area a{color: #fff;}
 .footer-content{
-    width: 960px;
+    width: 1140px;
     margin: 0 auto;
     position: relative;
     font-size: 14px;
-}
-.footer-content div{
-    display: inline-block;
-    margin-right: 200px;
-    margin-top: 50px;
-}
-.footer-content h3{
-    margin-bottom: 15px;
-    color: #fff;
-    font-size: 16px;
 }
 #footer-us{
     width: 140px;
