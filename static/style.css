@@ -308,7 +308,7 @@ hr {
     
 }
 .side-area ul li{
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #eee;
 }
 
 .side-area .side-highlight{
@@ -628,31 +628,7 @@ body .fn-hide {
 }
 
 /*首页*/
-.fr-nav{
-    background-color: #fff;
-    height: 50px;
-}
-.fr-nav ul{
-    width: 1140px;
-    margin: 0 auto;
-}
-.fr-nav li{
-    margin: 0 18px;
-    display: inline-block;
-}
-#fr-nav-index a{
-    color: #4cbed3;
-    font-weight: 500;
-    font-size: 22px;
-}
-.fr-nav li a{
-    color: #5c5c5c;
-    line-height: 50px;
-}
-.fr-nav li a:hover{
-    opacity: 0.8;
-    text-decoration: none;
-}
+
 /*banner*/
 .fr-banner{
     height: 575px;
@@ -789,36 +765,36 @@ body .fn-hide {
     right: 0;
 }
 /*footer*/
-.fr-footer{
+.footer{
     height: 220px;
     background-color: #337784;
     color: #fff;
 }
-.fr-footer a{color: #fff;}
-.fr-footer-content{
+.footer a{color: #fff;}
+.footer-content{
     width: 960px;
     margin: 0 auto;
     position: relative;
     font-size: 14px;
 }
-.fr-footer-content div{
+.footer-content div{
     display: inline-block;
     margin-right: 200px;
     margin-top: 50px;
 }
-.fr-footer-content h6{
+.footer-content h3{
     margin-bottom: 15px;
     color: #fff;
     font-size: 16px;
 }
-#fr-footer-us{
+#footer-us{
     width: 140px;
     margin: 0;
     position: absolute;
     right: 0;
     top: 50px;
 }
-#fr-footer-us img{
+#footer-us img{
    margin-left: 25px;
    margin-bottom: 15px;
 }

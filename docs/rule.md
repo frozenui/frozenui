@@ -11,7 +11,7 @@ css使用模块化的样式命名和组织规范，参考了前人的成果：�
 
 兼容android 2.3 +，ios 4.0 + 。
 	
-使用`离线包`快速请求。
+使用`离线包`减少网络请求。
 
 [github主页](https://github.com/frozenui/frozenui)
 

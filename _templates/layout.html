@@ -25,6 +25,7 @@
         </style>
         <script src="{{static_url('side.js')}}"></script>
         <script src="{{static_url('qrcode.js')}}"></script>
+        <script src="{{static_url('layout.js')}}"></script>
         <!--[if lt IE 9]>
         <script src="{{static_url('js/html5shiv.js')}}"></script>
         <![endif]-->
@@ -40,26 +41,9 @@
     <body>
         <div id="body-wrapper">
             <div class="head-area">
-                <div class="head-content">
-                    <div class="title-area">
-                        <img src="/static/frozen-top.png" alt="frozen" />
-                        <h1>
-                            <a href="{{content_url('index.html')}}">{{config.package.title|title}}</a>
-                        </h1>                  
-                    </div>
-                
-                    <div class="nav-area">
-                        <ol class="main-nav">
-                            <li><a href="/baseui"> css组件库 </a></li>
-                            
-                            {%- for item in resource.pages|find_category('alice') %}
-                            <li><a href="{{permalink_url(item)}}">{{item.title}}</a></li>
-                            {%- endfor %}
-                            
-        
-                        </ol>
-                    </div>
-                </div>
+                <script type="text/javascript">
+                    write_head();
+                </script>
             </div>
             <div class="main-area">
                 
@@ -72,23 +56,10 @@
                 </div>
                 
             </div>
-            <div class="fr-footer">
-        		<div class="fr-footer-content">
-        			<div>
-        				<h6>About us</h6>
-        				<p><a href="https://github.com/frozenui">Github</a></p>
-        				<p><a href="https://github.com/frozenui/frozenui/issues">Contact us</a></p>
-        			</div>
-        			<div>
-        				<h6>Support</h6>
-        				<p><a href="/docs/start.html">Quick start</a></p>
-        				<p><a href="http://isux.tencent.com/jobs">Join us</a></p>
-        			</div>
-        			<div id="fr-footer-us">
-        				<img src="{{static_url('logo.png')}}">
-        				<p>© QQ会员前端开发组<br/>All rights reserved.</p>
-        			</div>
-        		</div>
+            <div class="footer">
+                <script type="text/javascript">
+                    write_foot();
+                </script>
             </div>
 
         </div>
