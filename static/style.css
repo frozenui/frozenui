@@ -305,17 +305,22 @@ hr {
     margin: 0;
     list-style: none;
     line-height: normal;
+    
+}
+.side-area ul li{
+    border-right: 1px solid #ccc;
 }
 
-.side-area ul li ul {
-    display: none;
+.side-area .side-highlight{
+    border-right: 1px solid #025775;
+    
 }
-
 .side-area .side-highlight a {
     background: #F5F9F9;
     text-shadow: none;
     font-weight: bold;
     transition: background-color 0.8s ease-out;
+    color: #025775;
 }
 
 .side-area .side-highlight a:hover {
@@ -334,7 +339,7 @@ hr {
     font-size: 14px;
     display: block;
     padding: 8px 15px;
-    border-right: 1px solid #ddd;
+    
     position: relative;
     text-shadow: 0 1px 2px #eee;
     color: #00a5e0;
