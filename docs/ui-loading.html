@@ -23,6 +23,13 @@
                	-webkit-user-select: inherit;
             }
             .content-area{margin-left: 240px;width: 840px}
+            .side-area{top: 20px;}
+            @media (max-width: 980px){
+                .content-area{
+                    margin-left: 0;
+                    width: auto;
+                }
+            }
         </style>
 <style>
 /* alipay iconfont */
@@ -141,25 +148,23 @@ jquery/jquery/1.7.2/jquery.js"></script>
     <body>
         <div id="body-wrapper">
             <div class="head-area">
-                <div class="title-area">
-                    <img src="http://frozenui.github.io/static/frozen-top.png" alt="alice" />
-                    <h1>
-                        <a href="../">Frozen</a>
-                    </h1>
-                    <p class="description">为移动端web而生</p>                    
+                <div class="head-content">
+                    <div class="title-area">
+                        <img src="http://frozenui.github.io/static/frozen-top.png" alt="frozen" />
+                        <h1>
+                            <a href="/index.html">Frozen</a>
+                        </h1>                  
+                    </div>
+                    <div class="nav-area">
+                        <ol class="main-nav">
+                            <li><a href="/baseui">css组件库</a></li>
+                            <li><a href="/docs/javascript.html">js组件库</a></li>
+                            <li><a href="/docs/case.html">案例秀</a></li>
+                            <li><a href="/docs/start.html">开始使用</a></li>
+                            <li><a href="/docs/rule.html">关于Frozen</a></li>
+                        </ol>
+                    </div>
                 </div>
-                <!-- <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
-                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
-            </div>
-            <div class="nav-area">
-                <ol class="main-nav">
-                    <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                    <li><a href="/baseui">css组件库</a></li>
-                    <li><a href="/docs/javascript.html">js组件库</a></li>
-                    <li><a href="/docs/case.html">案例秀</a></li>
-                    <li><a href="/docs/start.html">开始使用</a></li>
-                    <li><a href="/docs/rule.html">关于Frozen</a></li>
-                </ol>
             </div>
             <div class="main-area">
                 <div class="side-area"><ul><li><a href="#default">Default</a></li></ul></div>

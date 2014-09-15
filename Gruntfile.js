@@ -1,7 +1,6 @@
 module.exports =function(grunt) {
 
     // 配置
-
     grunt.initConfig({
 
         pkg : grunt.file.readJSON('package.json'),
@@ -9,8 +8,7 @@ module.exports =function(grunt) {
         meta: {
             destPath: '1.0.0',
             zipPath:'1.0.0/i.gtimg.cn/vipstyle/frozenui/1.0.0'
-        },
-               
+        }, 
         cssmin: {
             minify: {
                 expand: true,
@@ -87,25 +85,24 @@ module.exports =function(grunt) {
                     port: 21000,
                     authKey: 'key'
                 },
-                src: '',
-                dest: '/frozenui',
+                src: '1.0.0',
+                dest: '/frozenui/1.0.0',
                 exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
                 simple: true
             }
         },
         shell: {
-            
             svn:{
                command: [
                     'svn up',
                     'svn add * --force',
-                    'svn commit -m "ci"'
+                    'svn commit -m <%=grunt.option("log")%>'
                 ].join('&&') 
             },
             git: {
                 command: [
                     'git add -A',
-                    'git commit -m "ci"',
+                    'git commit -m <%=grunt.option("log")%>',
                     'git pull origin master',
                     'git push origin master'
                 ].join('&&')
@@ -114,7 +111,7 @@ module.exports =function(grunt) {
                 command: [
                     'cd _site',
                     'git add -A',
-                    'git commit -m "ci"',
+                    'git commit -m <%=grunt.option("log")%>',
                     'git pull origin gh-pages',
                     'git push origin gh-pages'
                 ].join('&&')
@@ -139,9 +136,7 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-ftpush');
-    grunt.loadNpmTasks('grunt-shell');
-    
-
+    grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
     grunt.registerTask('test', ['sass','copy','shell:nico']);
     grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
