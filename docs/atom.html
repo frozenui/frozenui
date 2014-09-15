@@ -134,37 +134,22 @@ jquery/jquery/1.7.2/jquery.js"></script>
   }
   })();
 </script>
-        <!--[if lt IE 9]>
-        <script src="http://frozenui.github.io/static/js/html5shiv.js"></script>
-        <![endif]-->
-        
+ 
         <script>
         seajs.use(['arale/fixed/1.0.1/fixed', '/static/side'], function(Fixed, side) {
             Fixed('.side-area', 20);
             side.init();
         });
         </script>
+        <script src="http://frozenui.github.io/static/layout.js"></script>
     </head>
     <body>
         <div id="body-wrapper">
             <div class="head-area">
-                <div class="head-content">
-                    <div class="title-area">
-                        <img src="http://frozenui.github.io/static/frozen-top.png" alt="frozen" />
-                        <h1>
-                            <a href="/index.html">Frozen</a>
-                        </h1>                  
-                    </div>
-                    <div class="nav-area">
-                        <ol class="main-nav">
-                            <li><a href="/baseui">css组件库</a></li>
-                            <li><a href="/docs/javascript.html">js组件库</a></li>
-                            <li><a href="/docs/case.html">案例秀</a></li>
-                            <li><a href="/docs/start.html">开始使用</a></li>
-                            <li><a href="/docs/rule.html">关于Frozen</a></li>
-                        </ol>
-                    </div>
-                </div>
+                <script type="text/javascript">
+                    write_head();
+                </script>
+
             </div>
             <div class="main-area">
                 <div class="side-area"><ul><li><a href="#常用文本颜色">常用文本颜色</a></li><li><a href="#1px边框">1px边框</a></li><li><a href="#垂直上下居中">垂直上下居中</a></li><li><a href="#红点和未读数通知">红点和未读数通知</a></li><li><a href="#圆角头像">圆角头像</a></li></ul></div>
@@ -275,10 +260,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </div>
                 
             </div>
+            <div class="footer-area">
+                <script type="text/javascript">
+                    write_foot();
+                </script>
+            </div>
         </div>
-        <div id="footer-wrapper">
-            <footer>
-            </footer>
-        </div>
+        
     </body>
 </html>
