@@ -2,6 +2,7 @@ body {
     color: #666;
     background: #fdfdfd;
     font: 400 16px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+    -webkit-user-select: inherit;
 }
 /* alice.base 样式模块 */
 
