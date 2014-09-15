@@ -39,9 +39,6 @@
             }
         </style>
         {%- include "snippet/head.html" %}
-        <!--[if lt IE 9]>
-        <script src="http://frozenui.github.io/static/js/html5shiv.js"></script>
-        <![endif]-->
         {%- endblock %}
         {%- block afterstyle %}{% endblock %}
         <script>
@@ -50,27 +47,15 @@
             side.init();
         });
         </script>
+        <script src="http://frozenui.github.io/static/layout.js"></script>
     </head>
     <body>
         <div id="body-wrapper">
             <div class="head-area">
-                <div class="head-content">
-                    <div class="title-area">
-                        <img src="http://frozenui.github.io/static/frozen-top.png" alt="frozen" />
-                        <h1>
-                            <a href="/index.html">{{config.package.title|title}}</a>
-                        </h1>                  
-                    </div>
-                    <div class="nav-area">
-                        <ol class="main-nav">
-                            <li><a href="/baseui">css组件库</a></li>
-                            <li><a href="/docs/javascript.html">js组件库</a></li>
-                            <li><a href="/docs/case.html">案例秀</a></li>
-                            <li><a href="/docs/start.html">开始使用</a></li>
-                            <li><a href="/docs/rule.html">关于Frozen</a></li>
-                        </ol>
-                    </div>
-                </div>
+                <script type="text/javascript">
+                    write_head();
+                </script>
+
             </div>
             <div class="main-area">
                 {%- if post.toc %}
@@ -83,7 +68,7 @@
                 </div>                
                 {%- endif %}
                 <script type="text/template" id="list-template">
-                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                    <li><a href="#"></a></li>
                 </script>
                 <div class="content-area">
                     <h1>{{post.title}}</h1>
@@ -91,11 +76,13 @@
                 </div>
                 
             </div>
+            <div class="footer-area">
+                <script type="text/javascript">
+                    write_foot();
+                </script>
+            </div>
         </div>
-        <div id="footer-wrapper">
-            <footer>
-            </footer>
-        </div>
+        
     </body>
 </html>
 
