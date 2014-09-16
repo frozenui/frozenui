@@ -22,8 +22,7 @@
             </ul>        
         </div>
     </section>
-    
-</section>    
+</section>
 
 <script id="csscase-template" type="text/x-handlebars-template">
   {{#each csscase}}
@@ -64,6 +63,7 @@
 </script>
 
 <script type="text/javascript">
+  window.jQuery = window.$ = jQuery;
   $(document).ready(function() {
 
     var casedata ={ 
@@ -77,10 +77,8 @@
         casedata.apicase = data.apicase;
         cssTemplate = Handlebars.compile($("#csscase-template").html());
         apiTemplate = Handlebars.compile($("#apicase-template").html());
-        // alert("first success");
     })
     .success(function() {
-        // alert("second success"); 
         $('#cssCase').html(cssTemplate(casedata));
         $('#apiCase').html(apiTemplate(casedata));
     })
@@ -90,10 +88,6 @@
           var url=$(el).attr("data-url");
           $(this).find(".qr").qrcode(url);
         });
-     // alert("complete"); 
-    });
-
-    
-    
+    });   
   });
 </script>
