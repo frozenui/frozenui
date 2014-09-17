@@ -3,7 +3,7 @@ function write_header(){
         '<div class="title-area">'+
             '<img src="http://frozenui.github.io/static/frozen-top.png" alt="frozen" />'+
             '<h1>'+
-                '<a href="./">Frozen</a>'+
+                '<a href="/">Frozen</a>'+
             '</h1>'+                 
         '</div>'+
       
