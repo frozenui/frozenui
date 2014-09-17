@@ -1,7 +1,7 @@
 body {
     color: #666;
     background: #fdfdfd;
-    font: 400 16px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+    font: 400 16px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei",  "Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-user-select: inherit;
 }
 /* alice.base 样式模块 */
@@ -218,9 +218,8 @@ hr {
 .title-area h1 a{
     color: #4cbed3;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 48px;
     line-height: 60px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 
@@ -673,31 +672,23 @@ body .fn-hide {
 }
 .fr-banner-info{
     position: absolute;
-    top: 100px;
-}
-.fr-banner-content h2{
-    font-weight: 400;
-    font-size: 60px;
-    color: #fff;
-    font-weight: bold;
-    text-shadow:2px 2px 2px #ddd;
+    top: 300px;
 }
 .fr-banner-content h3{
     font-weight: 400;
     font-size: 32px;
     color: #fff;
-    font-family: "Microsoft Yahei";
 }
 .fr-banner-content a{
-    display: block;
+    display: inline-block;
     margin-top: 50px;
+    margin-right: 14px;
     width: 200px;
     height: 50px;
     line-height: 50px;
     text-align: center;
     font-size: 24px;
     color: #fff;
-    font-family: "Microsoft Yahei";
     border: 1px solid #fff;
     border-radius: 5px;
     transition:background .2s;
@@ -767,7 +758,7 @@ body .fn-hide {
 }
 /*footer*/
 .footer-area{
-    height: 220px;
+    height: 170px;
 }
 .footer-content{
     width: 1140px;
@@ -795,7 +786,7 @@ body .fn-hide {
 .cwf-list .pic img { min-height: 40px; line-height: 0; overflow: hidden; padding-bottom: 40px;}
 .cwf-list .pic { min-height: 170px; line-height: 0; overflow: hidden;}
 .cwf-list .desc { height: 36px; background:rgba(255,255,255,1); padding: 2px 10px; z-index: 2; position: absolute; left: 0; bottom: 0; width: 100%;}
-.cwf-list .tit { font-size: 14px; height: 20px; line-height: 20px; font-family: "microsoft yahei";}
+.cwf-list .tit { font-size: 14px; height: 20px; line-height: 20px; }
 .cwf-list .author { font-size: 12px; height: 16px; line-height: 16px; color: #808080;}
 
 
