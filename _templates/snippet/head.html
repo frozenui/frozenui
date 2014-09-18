@@ -1,42 +1,4 @@
-{%- if !config.package.spm.noIconfont %}
-<style>
-/* alipay iconfont */
-@font-face {
-  font-family: "rei";
-  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
-  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
-  url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
-    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
-}
-.iconfont {
-  font-family:"rei";
-  font-style: normal;
-  font-weight: normal;
-  cursor: default;
-  -webkit-font-smoothing: antialiased;
-}
-</style>
-{%- endif %}
 
-{%- if config.google %}
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', '{{config.google}}']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    if (location.port) {
-       return;
-    }
-    ga.src = 'https://ssl.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-{%- endif %}
 
 {%- set enginefiles = engines %}
 {%- set pkg = config.package %}
@@ -109,54 +71,10 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }}
   });
 
-  function resolve(file) {
-    if (contain(query, 'debug')) {
-      if (file.indexOf('-debug') === -1) {
-        file = file.replace(/\.(\w+)$/, '-debug.$1');
-      }
-    }
-    return seajs.resolve("{{content_url('')}}" + srcdir + "/" + file + '#');
-  }
+ 
 
-  function contain(arr, value) {
-    for (var i in arr) {
-      if (arr[i] === value) {
-        return true;
-      }
-    }
-    return false;
-  }
+ 
 
-  {%- if pkg.spm -%}
-
-    {%- if pkg.spm.alias %}
-      seajs.config({ alias: {{pkg.spm.alias|clean_alias|json_encode}}});
-    {%- endif %}
-    seajs.use({{pkg.spm.alias|css_alias|json_encode}});
-
-    {%- if pkg.spm.devAlias %}
-      seajs.config({ alias: {{pkg.spm.devAlias|clean_alias|json_encode}}});
-    {%- endif %}
-
-    seajs.config({alias: {
-      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
-      {%- for value in src.alias %}
-        ,"{{loop.key}}": resolve("{{value}}")
-      {%- endfor %}
-    }});
-
-    // 加载依赖的 css 文件
-    var cssArray = [];
-    {%- for value in pkg.spm.alias %}
-    cssArray.push('{{value}}');
-    {%- endfor %}
-    for (var i=0; i<cssArray.length; i++) {
-      if (cssArray[i].indexOf('.css') < 0) {
-        cssArray.splice(i, 1);
-      }
-    }
-    seajs.use(cssArray);
-
-  {%- endif %}
+ 
   })();
 </script>

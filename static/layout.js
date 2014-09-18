@@ -9,11 +9,11 @@ function write_header(){
       
       '<div class="nav-area">'+
           '<ol class="main-nav">'+
-              '<li><a href="/baseui">css组件库</a></li>'+
-              '<li><a href="/docs/javascript.html">js组件库</a></li>'+
-              '<li><a href="/docs/case.html">案例秀</a></li>'+
-              '<li><a href="/docs/start.html">开始使用</a></li>'+
-              '<li><a href="/docs/rule.html">关于Frozen</a></li>'+
+              '<li><a href="/baseui">Css</a></li>'+
+              '<li><a href="/docs/javascript.html">Javascript</a></li>'+
+              '<li><a href="/docs/case.html">Animation case</a></li>'+
+              '<li><a href="/docs/start.html">Getting started</a></li>'+
+              '<li><a href="/docs/rule.html">About</a></li>'+
           '</ol>'+
       '</div>'+
     '</div>';

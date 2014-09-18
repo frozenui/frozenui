@@ -1,7 +1,7 @@
 body {
     color: #666;
     background: #fdfdfd;
-    font: 400 16px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei",  "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 400 14px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei",  "Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-user-select: inherit;
 }
 /* alice.base 样式模块 */
@@ -256,7 +256,7 @@ hr {
     margin: auto 0;
     padding: 0;
     float: right;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .main-nav li {

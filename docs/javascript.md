@@ -1,4 +1,4 @@
-# Js组件库
+# Javascript
 
 - order: 3
 - category: alice

@@ -1,11 +1,11 @@
-#案例秀
+#动效集
 - order: 4
-- category: alice
+- category: frozen
 
 
 ---
 
-未组件化的动画效果集合。
+css3和硬件传感器动画效果集合。
 
 <section class="js-main">
     <section class="js-module">
