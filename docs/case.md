@@ -1,4 +1,4 @@
-#动效集
+#Animation case
 - order: 4
 - category: frozen
 
