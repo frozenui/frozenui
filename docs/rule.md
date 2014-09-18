@@ -3,9 +3,13 @@
 - category: alice
 
 ---
-##frozen是什么
 
-frozen是使用最新的[手Q规范](http://isux.oa.com/guide/mqq/vd#545)的移动端web框架，css包括基本样式和组件，js包括基本组件和动效库。
+
+##frozen是什么<img src="http://frozenui.github.io/static/frozen-top.png">
+
+frozen是我们团队根据最新的[手Q规范]()的制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。
+
+为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把女王alsa作为我们的卡通代言人，相信大多数看过这部动画的人都会喜欢女王的形象吧。
 
 css使用模块化的样式命名和组织规范，参考了前人的成果：支付宝团队的[alice](http://aliceui.org/)，[bootstrap](http://getbootstrap.com/)等，实现了最简的手Q web组件效果，并不断完善中。
 
@@ -25,13 +29,11 @@ css使用模块化的样式命名和组织规范，参考了前人的成果：�
 
 统一使用ui为前缀作为命名空间。
 
-class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如，`.ui-btn` 和 `.ui-btn-danger`）。
+class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如`.ui-btn` 和 `.ui-btn-danger`）。
 
 避免过度任意的简写。`.btn` 代表 `button`，但是 `.b` 不能表达任何意思。
 
-class 名称应当尽可能短，并且意义明确。
-
-使用有意义的名称。使用有组织的或目的明确的名称，不要使用表现形式（presentational）的名称。
+class 名称应当尽可能短，并且意义明确，不要使用表现形式（presentational）的名称。
 
 基于最近的父 class 或基本（base） class 作为新 class 的前缀。
 
