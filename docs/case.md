@@ -1,6 +1,4 @@
-#Animation case
-- order: 4
-- category: frozen
+#动画效果集
 
 
 ---

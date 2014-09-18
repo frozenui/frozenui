@@ -13,7 +13,7 @@ function write_header(){
               '<li><a href="/docs/javascript.html">Javascript</a></li>'+
               '<li><a href="/docs/case.html">Animation case</a></li>'+
               '<li><a href="/docs/start.html">Getting started</a></li>'+
-              '<li><a href="/docs/rule.html">About</a></li>'+
+              '<li><a href="/docs/about.html">About</a></li>'+
           '</ol>'+
       '</div>'+
     '</div>';
@@ -23,7 +23,6 @@ function write_header(){
 function write_footer(){
     var template_footer = '<div class="footer-content">'+
     	'<div id="footer-us">'+
-    		'<a href="https://github.com/frozenui"><img src="http://frozenui.github.io/static/logo.png"></a>'+
     		'<p>© QQ会员前端开发组<br/>All rights reserved.</p>'+
     	'</div>'+
     '</div>';

@@ -1,6 +1,4 @@
 #关于frozen
-- order: 6
-- category: alice
 
 ---
 

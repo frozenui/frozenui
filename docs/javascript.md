@@ -1,7 +1,4 @@
-# Javascript
-
-- order: 3
-- category: alice
+# Javascript插件
 
 
 ---

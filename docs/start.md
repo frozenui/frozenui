@@ -1,8 +1,9 @@
 # 开始使用
 
-
+---
 
 ## 一个简单的例子
+
 <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css">
 
 <style>
