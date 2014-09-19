@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'arale/fixed' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'arale/fixed', null ]
+6 verbose cache add name=undefined spec="arale/fixed" args=["arale/fixed",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'arale/fixed',
+7 verbose parsed url   path: 'arale/fixed',
+7 verbose parsed url   href: 'arale/fixed' }
+8 silly lockFile ef195abc-arale-fixed arale/fixed
+9 verbose lock arale/fixed /Users/chengfeng/.npm/ef195abc-arale-fixed.lock
+10 info maybeGithub Attempting arale/fixed from git://github.com/arale/fixed
+11 silly lockFile 26c83d9d-git-github-com-arale-fixed git://github.com/arale/fixed
+12 verbose lock git://github.com/arale/fixed /Users/chengfeng/.npm/26c83d9d-git-github-com-arale-fixed.lock
+13 verbose addRemoteGit [ 'git://github.com/arale/fixed', 'master' ]
+14 verbose git clone git://github.com/arale/fixed Cloning into bare repository '/Users/chengfeng/.npm/_git-remotes/git-github-com-arale-fixed-26c83d9d'...
+14 verbose git clone git://github.com/arale/fixed fatal: remote error:
+14 verbose git clone git://github.com/arale/fixed   Repository not found.
+15 silly lockFile 26c83d9d-git-github-com-arale-fixed git://github.com/arale/fixed
+16 silly lockFile 26c83d9d-git-github-com-arale-fixed git://github.com/arale/fixed
+17 info maybeGithub Attempting arale/fixed from git+ssh://git@github.com:arale/fixed
+18 silly lockFile aea1304b-git-github-com-arale-fixed git@github.com:arale/fixed
+19 verbose lock git@github.com:arale/fixed /Users/chengfeng/.npm/aea1304b-git-github-com-arale-fixed.lock
+20 verbose addRemoteGit [ 'git@github.com:arale/fixed', 'master' ]
+21 error git clone git@github.com:arale/fixed Cloning into bare repository '/Users/chengfeng/.npm/_git-remotes/git-github-com-arale-fixed-aea1304b'...
+21 error git clone git@github.com:arale/fixed ERROR: Repository not found.
+21 error git clone git@github.com:arale/fixed fatal: Could not read from remote repository.
+21 error git clone git@github.com:arale/fixed
+21 error git clone git@github.com:arale/fixed Please make sure you have the correct access rights
+21 error git clone git@github.com:arale/fixed and the repository exists.
+22 silly lockFile aea1304b-git-github-com-arale-fixed git@github.com:arale/fixed
+23 silly lockFile aea1304b-git-github-com-arale-fixed git@github.com:arale/fixed
+24 silly lockFile ef195abc-arale-fixed arale/fixed
+25 silly lockFile ef195abc-arale-fixed arale/fixed
+26 error addLocal Could not install arale/fixed
+27 error Error: ENOENT, stat 'arale/fixed'
+28 error If you need help, you may report this *entire* log,
+28 error including the npm and node versions, at:
+28 error     <http://github.com/npm/npm/issues>
+29 error System Darwin 14.0.0
+30 error command "node" "/usr/local/bin/npm" "install" "arale/fixed"
+31 error cwd /Users/chengfeng/frozenui/static
+32 error node -v v0.10.26
+33 error npm -v 1.4.3
+34 error path arale/fixed
+35 error code ENOENT
+36 error errno 34
+37 verbose exit [ 34, true ]

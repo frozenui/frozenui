@@ -5,22 +5,19 @@
 
 css3和硬件传感器动画效果集合。
 
-<section class="js-main">
-    <section class="js-module">
-        <h3 class="js-module-title">CSS3动效</h3>
-        <div class="jsmodule-content">
-            <ul id="cssCase" class="cwf-list">
-            </ul>        
-        </div>
-    </section>
-    <section class="js-module module2">
-        <h3 class="js-module-title">使用硬件传感器api</h3>
-        <div class="js-module-content">
-            <ul id="apiCase" class="cwf-list">              
-            </ul>        
-        </div>
-    </section>
-</section>
+##CSS3动效
+  
+  <div class="jsmodule-content">
+      <ul id="cssCase" class="cwf-list">
+      </ul>        
+  </div>
+  
+##使用硬件传感器api
+
+  <div class="js-module-content">
+      <ul id="apiCase" class="cwf-list">              
+      </ul>        
+  </div>
 
 <script id="csscase-template" type="text/x-handlebars-template">
   {{#each csscase}}
