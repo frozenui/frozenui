@@ -10,7 +10,7 @@ function write_header(){
       '<div class="nav-area">'+
           '<ol class="main-nav">'+
               '<li><a href="/baseui">Css</a></li>'+
-              '<li><a href="/docs/javascript.html">Javascript</a></li>'+
+              '<li><a href="/frozenjs">Javascript</a></li>'+
               '<li><a href="/docs/case.html">Animation case</a></li>'+
               '<li><a href="/docs/start.html">Getting started</a></li>'+
               '<li><a href="/docs/about.html">About</a></li>'+
