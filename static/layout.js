@@ -1,7 +1,6 @@
 function write_header(){
     var template_header = '<div class="head-content">'+
         '<div class="title-area">'+
-            '<img src="http://frozenui.github.io/static/frozen-top.png" alt="frozen" />'+
             '<h1>'+
                 '<a href="/">Frozen</a>'+
             '</h1>'+                 

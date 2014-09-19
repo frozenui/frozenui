@@ -4,7 +4,7 @@
 
 
 ##frozen是什么
-<img src="http://frozenui.github.io/static/frozen-top.png">
+<img src="../static/elsa.jpg">
 
 frozen是我们团队根据最新的[手Q设计规范]()制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。
 
@@ -22,7 +22,7 @@ css使用模块化的样式命名和组织规范，参考了前人的成果：�
 
 [css仓库](https://github.com/frozenui/baseui)
 
-欢迎提[issue](https://github.com/frozenui/frozenui/issues)给我们帮助我们完善frozen。
+欢迎提 [issue](https://github.com/frozenui/frozenui/issues) 给我们帮助我们完善frozen。
 
 ##css规范
 

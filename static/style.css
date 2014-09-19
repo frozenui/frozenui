@@ -205,25 +205,23 @@ hr {
 
 .head-area {
     overflow: hidden;
-    border-bottom: 2px solid #53ABF5;
-    padding-top: 30px;
+    border-bottom: 1px solid #eee;
 }
 .head-content{max-width: 1140px;margin: auto;}
 .title-area {
-    width: 200px;
     float: left;
     position: relative;
 }
-.title-area h1{margin-left: 100px;}
 .title-area h1 a{
     font-weight: 300;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 60px;
+    color: #777;
 }
 
 
 .title-area h1 a:hover {
-    opacity: 0.8;
+    color: #333;
     text-decoration: none;
 }
 
@@ -362,30 +360,24 @@ hr {
 
 .content-area h1 {
     font-size: 22px;
-    text-align: center;
-    margin: 30px 0;
+    border-bottom: 1px #eee solid;
+    padding: 20px 0;
 }
 
-.content-area h1:before, 
-.content-area h1:after {
-    content: '—';
-    color: #eee;
-    margin: 1.5em;
-}
 
 .content-area h2 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     color: #00a5e0;
     margin: 20px 0;
 }
 
 .content-area h3 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .content-area h4 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* responsive */
