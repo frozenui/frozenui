@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Frozen - ui-tips</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico 0.5.1" />
+        <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="../1.0.0/css-debug/global.css" />
+        <link rel="stylesheet" href="1.0.0/css-debug/global.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/style.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
+        <style>
+            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+                   position: relative;
+                   margin: 0;
+               }
+            
+            .ui-icon{font-size:30px;}
+            .ui-table{line-height: 40px;} 
+            .ui-dialog{height:320px;}
+            body{
+               	-webkit-user-select: inherit;
+            }
+            .content-area{margin-left: 240px;width: 840px}
+            .side-area{top: 20px;}
+            @media (max-width: 980px){
+                .content-area{
+                    margin-left: 0;
+                    width: auto;
+                }
+            }
+        </style>
+<style>
+/* alipay iconfont */
+@font-face {
+  font-family: "rei";
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+  url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"rei";
+  font-style: normal;
+  font-weight: normal;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39169474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    if (location.port) {
+       return;
+    }
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script src="http://static.alipayobjects.com/??
+seajs/seajs/2.2.0/sea.js,
+seajs/seajs-combo/1.0.1/seajs-combo.js,
+seajs/seajs-style/1.0.2/seajs-style.js,
+seajs/seajs-health/0.1.0/seajs-health.js,
+jquery/jquery/1.7.2/jquery.js"></script>
+<script>
+  (function() {
+
+  var query = location.search.substring(1).split('&');
+  var srcdir = 'src';
+
+  if (contain(query, 'dist')) {
+    srcdir = 'dist';
+    
+  } else if (contain(query, 'cov')) {
+    srcdir = 'src-cov';
+  }
+
+  seajs.config({
+    alias: {
+      "$": 'jquery/jquery/1.7.2/jquery',
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      "jquery": 'jquery/jquery/1.7.2/jquery',
+      "jquery-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      expect: "gallery/expect/0.2.0/expect",
+      puerh: "popomore/puerh/0.1.0/puerh",
+      handlebars: "gallery/handlebars/1.0.2/handlebars",
+      sinon: "gallery/sinon/1.6.0/sinon"
+    },
+    map: [function(uri) {
+      // resolve id
+      var m = uri.match(/alice\/frozenui\/0.0.1\/(.*)/);
+      if (m) {
+        return resolve(m[1]);
+      }
+      return uri;
+    }, function(uri) {
+      var m = uri.match(/([A-Za-z\-]+)\/[A-Za-z\-]+\/[\.0-9]+\/.+/);
+      if (m && /^alipay|anima$/.test(m[1])) {
+        return 'http://yuan.alipay.im/assets/' + m[0];
+      }
+      return uri;
+    }],
+    comboExcludes: {test: function(uri) {
+      return uri.indexOf('http://static.alipayobjects.com') === -1;
+    }}
+  });
+
+  function resolve(file) {
+    if (contain(query, 'debug')) {
+      if (file.indexOf('-debug') === -1) {
+        file = file.replace(/\.(\w+)$/, '-debug.$1');
+      }
+    }
+    return seajs.resolve("../" + srcdir + "/" + file + '#');
+  }
+
+  function contain(arr, value) {
+    for (var i in arr) {
+      if (arr[i] === value) {
+        return true;
+      }
+    }
+    return false;
+  }
+  })();
+</script>
+ 
+        <script>
+        seajs.use(['arale/fixed/1.0.1/fixed', '/static/side'], function(Fixed, side) {
+            Fixed('.side-area', 20);
+            side.init();
+        });
+        </script>
+        <script src="http://frozenui.github.io/static/layout.js"></script>
+    </head>
+    <body>
+        <div id="body-wrapper">
+            <div class="head-area">
+                <script type="text/javascript">
+                    write_header();
+                </script>
+
+            </div>
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#default">default</a></li><li><a href="#黄色">黄色</a></li></ul></div>
+                
+                <script type="text/template" id="list-template">
+                    <li><a href="#"></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>ui-tips</h1>
+                    <div class="content"><h3 id="default">default<a href="#default" class="anchor">¶</a></h3><div class="nico-insert-code"><style>
+    .ui-tips{margin:10px 0;}
+</style>
+<div class="ui-tips">
+    <div class="ui-tips-cnt ui-tips-cnt-info">
+        <i class="ui-icon"></i>提供相关的信息或建议
+    </div>
+</div>
+<div class="ui-tips">
+    <div class="ui-tips-cnt ui-tips-cnt-warn">
+        <i class="ui-icon"></i>警示已经发生或可能在未来发生的问题
+    </div>
+</div>
+ <div class="ui-tips">
+    <div class="ui-tips-cnt ui-tips-cnt-success">
+        <i class="ui-icon"></i>提示操作成功或流程成功
+    </div>
+</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+    <span class="class">.ui-tips</span><span class="rules">{<span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">10</span>px <span class="number">0</span></span></span>;<span class="rule">}</span></span>
+</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips-cnt ui-tips-cnt-info"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>提供相关的信息或建议
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips-cnt ui-tips-cnt-warn"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>警示已经发生或可能在未来发生的问题
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+ <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips-cnt ui-tips-cnt-success"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>提示操作成功或流程成功
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="黄色">黄色<a href="#黄色" class="anchor">¶</a></h3><div class="nico-insert-code"><div class="ui-tips ui-tips-warn">
+      <div class="ui-tips-cnt ui-tips-cnt-cover ui-border-b">
+        <i class="ui-icon ui-icon-warn"></i>当前网路不可用，请检查你的网路设置。
+      </div>
+    </div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips ui-tips-warn"</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-tips-cnt ui-tips-cnt-cover ui-border-b"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-warn"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>当前网路不可用，请检查你的网路设置。
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div></div>
+                </div>
+                
+            </div>
+            <div class="footer-area">
+                <script type="text/javascript">
+                    write_footer();
+                </script>
+            </div>
+        </div>
+        
+    </body>
+</html>
