@@ -39,6 +39,7 @@
         <script src="http://frozenui.github.io/static/layout.js"></script>
 
         <script>
+        
         seajs.config({
           base: "http://frozenui.github.io/static/sea-modules/",
           alias: {
@@ -62,11 +63,15 @@
 
             </div>
             <div class="main-area">
+                {%- if post.toc %}
+                <div class="side-area">{{post.toc}}</div>
+                {% else %}
                 <div class="side-area">
                     <ul>
-                        <li class="side-loading"><img width="160" alt="加载中..." src="http://frozenui.github.io/static/loading.gif"></li>
+                        <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
                     </ul>
-                </div>     
+                </div>                
+                {%- endif %}    
                 <script type="text/template" id="list-template">
                     <li><a href="#"></a></li>
                 </script>
