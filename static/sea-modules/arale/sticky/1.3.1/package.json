@@ -1,0 +1,28 @@
+{
+    "family": "arale",
+    "name": "sticky",
+    "version": "1.3.1",
+    "keywords": ["utility"],
+    "description": "实现元素跟随滚动的效果。",
+    "homepage": "http://aralejs.org/sticky/",
+    "author": "乔花 <shengyan1985@gmail.com>",
+    "maintainers": [
+        "乔花 <shengyan1985@gmail.com>",
+        "偏右 <afc163@gmail.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aralejs/sticky"
+    },
+    "bugs": {
+        "url": "https://github.com/aralejs/sticky/issues"
+    },
+    "license": "MIT",
+    "spm": {
+        "alias": {
+            "$": "$"
+        },
+        "output": ["sticky.js"]
+    },
+    "tests": ["sticky"]
+}

@@ -57,10 +57,11 @@ css3和硬件传感器动画效果集合。
   {{/each}}
 </script>
 
-<script type="text/javascript">
-  window.jQuery = window.$ = jQuery;
-  $(document).ready(function() {
+<script src="http://frozenui.github.io/static/qrcode.js"></script>
 
+<script type="text/javascript">
+
+  seajs.use(['handlebars'], function(Handlebars) {
     var casedata ={ 
         csscase: [], 
         apicase: []
@@ -85,4 +86,5 @@ css3和硬件传感器动画效果集合。
         });
     });   
   });
+  
 </script>

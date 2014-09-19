@@ -2,7 +2,7 @@
 
 ---
 
-## 一个简单的例子
+## 例子
 
 <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css">
 
@@ -89,7 +89,7 @@
 具体模块的代码可以访问[http://frozenui.github.io/baseui/](http://frozenui.github.io/baseui/)
 
 
-## 引用和下载
+## 如何引用
 
 
 #### 1. 可以直接使用上面的 css 文件，这里提供一个未压缩的版本。
@@ -107,5 +107,6 @@
     <link media="all" href="http://i.gtimg.cn/c/=/vipstyle/frozenui/1.0.0/css/base/reset.css,/vipstyle/frozenui/1.0.0/css/base/atom.css,/vipstyle/frozenui/1.0.0/css/basic/ui-notice.css" rel="stylesheet">
     
  ```
+
 
 

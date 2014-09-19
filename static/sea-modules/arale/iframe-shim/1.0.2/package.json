@@ -1,0 +1,32 @@
+{
+  "family": "arale",
+  "name": "iframe-shim",
+  "version": "1.0.2",
+  "keywords": ["utility", "ie6", "shim", "dom"],
+  "homepage": "http://aralejs.org/iframe-shim/",
+  "description": "工具类，在 IE6 下生成 iframe 遮挡 select 和 object。此组件对开发者透明，开发者无需再判断浏览器版本。",
+  "author": "贯高 <sakura9515@gmail.com>",
+  "maintainers": [
+    "贯高 <sakura9515@gmail.com>",
+    "偏右 <afc163@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aralejs/iframe-shim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aralejs/iframe-shim/issues"
+  },
+  "spm": {
+    "output": ["iframe-shim.js"],
+    "alias": {
+      "$": "$",
+      "position": "arale/position/1.0.1/position"
+    },
+    "devAlias": {
+      "mocha": "gallery/mocha/1.9.0/mocha",
+      "expect": "gallery/expect/0.2.0/expect"
+    },
+    "engines": {}
+  }
+}

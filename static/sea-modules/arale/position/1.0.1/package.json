@@ -1,0 +1,29 @@
+{
+    "name": "position",
+    "family": "arale",
+    "version": "1.0.1",
+    "keywords": ["utility"],
+    "homepage": "http://aralejs.org/position/",
+    "description": "简单实用的定位工具，将一个 DOM 节点相对于另一个 DOM 节点进行定位操作。",
+    "author": "偏右 <afc163@gmail.com>",
+    "maintainers": [
+        "偏右 <afc163@gmail.com>",
+        "贯高 <sakura9515@gmail.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aralejs/position.git"
+    },
+    "bugs": {
+        "url": "https://github.com/aralejs/position/issues"
+    },
+    "spm": {
+        "alias": {
+            "$": "$"
+        },
+        "devAlias": {
+            "$": "jquery/jquery/1.7.2/jquery"
+        },
+        "output": ["position.js"]
+    }
+}

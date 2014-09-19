@@ -282,23 +282,21 @@ hr {
 
 .content-area {
     padding: 0 29px 20px;
-    width: 1080px;
-    margin: 20px 0;
-}
-
-.comment-area {
-    width: 900px;
-    margin-top: 20px;
-    margin: 0 0 20px 240px;
-}
-
+    width: 840px;
+    margin: 20px 0 20px 240px;
+}         
 .side-area {
     overflow: hidden;
     position: absolute;
-    top: 0;
+    top: 20px;
     width: 220px;
 }
-
+@media (max-width: 980px){
+    .content-area{
+        margin-left: 0;
+        width: auto;
+    }
+}
 .side-area ul {
     padding: 0;
     margin: 0;

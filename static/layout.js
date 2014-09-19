@@ -9,8 +9,8 @@ function write_header(){
       
       '<div class="nav-area">'+
           '<ol class="main-nav">'+
-              '<li><a href="/baseui">Css</a></li>'+
-              '<li><a href="/frozenjs">Javascript</a></li>'+
+              '<li><a href="/baseui">CSS</a></li>'+
+              '<li><a href="/frozenjs">JavaScript</a></li>'+
               '<li><a href="/docs/case.html">Animation case</a></li>'+
               '<li><a href="/docs/start.html">Getting started</a></li>'+
               '<li><a href="/docs/about.html">About</a></li>'+
@@ -23,7 +23,7 @@ function write_header(){
 function write_footer(){
     var template_footer = '<div class="footer-content">'+
     	'<div id="footer-us">'+
-    		'<p>© QQ会员前端开发组<br/>All rights reserved.</p>'+
+    		'<a href="https://github.com/frozenui">GitHub</a>• <a href="http://lab.lepture.com/nico/">nico</a>'+
     	'</div>'+
     '</div>';
     document.write(template_footer);

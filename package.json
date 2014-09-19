@@ -1,6 +1,6 @@
 {
   "name": "frozenui",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "title": "Frozen",
   "family": "alice",
   "homepage": "http://frozenui.github.io",
@@ -14,14 +14,7 @@
   "bugs": {
     "url": "https://github.com/frozenui/frozenui/issues"
   },
-  "spm": {
-    "output": [
-      "frozen.css"
-    ],
-    "alias": {},
-    "devAlias": {},
-    "engines": {}
-  },
+  
   "widgets": [
     "atom",
     "ui-btn",

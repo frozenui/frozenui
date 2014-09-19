@@ -3,7 +3,8 @@
 ---
 
 
-##frozen是什么<img src="http://frozenui.github.io/static/frozen-top.png">
+##frozen是什么
+<img src="http://frozenui.github.io/static/frozen-top.png">
 
 frozen是我们团队根据最新的[手Q规范]()的制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。
 
