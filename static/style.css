@@ -1,7 +1,7 @@
 body {
     color: #666;
     background: #fdfdfd;
-    font: 400 14px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei",  "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 400 14px/1.5 "Helvetica Neue",Helvetica,Arial,"WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
     -webkit-user-select: inherit;
 }
 /* alice.base 样式模块 */
@@ -205,7 +205,7 @@ hr {
 
 .head-area {
     overflow: hidden;
-    border-bottom: 4px solid #66dff4;
+    border-bottom: 2px solid #53ABF5;
     padding-top: 30px;
 }
 .head-content{max-width: 1140px;margin: auto;}
@@ -216,7 +216,6 @@ hr {
 }
 .title-area h1{margin-left: 100px;}
 .title-area h1 a{
-    color: #4cbed3;
     font-weight: 300;
     font-size: 48px;
     line-height: 60px;
@@ -377,10 +376,10 @@ hr {
 }
 
 .content-area h2 {
-    font-size: 22px;
-    /*color: #7CAE23;*/
+    font-size: 20px;
+    line-height: 30px;
     color: #00a5e0;
-    margin-top: 40px;
+    margin: 20px 0;
 }
 
 .content-area h3 {
@@ -564,7 +563,7 @@ body .fn-hide {
     font-size: 22px;
     color: #00a5e0;
     margin-bottom: 20px;
-    font-weight: bold;
+    
 }
 .js-module-box{
     float: left;
@@ -788,5 +787,4 @@ body .fn-hide {
 .cwf-list .desc { height: 36px; background:rgba(255,255,255,1); padding: 2px 10px; z-index: 2; position: absolute; left: 0; bottom: 0; width: 100%;}
 .cwf-list .tit { font-size: 14px; height: 20px; line-height: 20px; }
 .cwf-list .author { font-size: 12px; height: 16px; line-height: 16px; color: #808080;}
-
 
