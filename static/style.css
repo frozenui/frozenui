@@ -216,12 +216,11 @@ hr {
     font-weight: 300;
     font-size: 30px;
     line-height: 60px;
-    color: #777;
 }
 
 
 .title-area h1 a:hover {
-    color: #333;
+    opacity: .8;
     text-decoration: none;
 }
 
@@ -264,11 +263,11 @@ hr {
 }
 
 .main-nav a {
-    color: #777;
+    color: #5899d0;
 }
 
 .main-nav a:hover {
-    color: #333;
+    opacity: .8;
     text-decoration: none;
 }
 
@@ -334,7 +333,6 @@ hr {
     font-size: 14px;
     display: block;
     padding: 8px 15px;
-    
     position: relative;
     text-shadow: 0 1px 2px #eee;
     color: #00a5e0;
@@ -359,25 +357,25 @@ hr {
 }
 
 .content-area h1 {
-    font-size: 22px;
+    font-size: 24px;
     border-bottom: 1px #eee solid;
     padding: 20px 0;
 }
 
 
 .content-area h2 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     color: #00a5e0;
     margin: 20px 0;
 }
 
 .content-area h3 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .content-area h4 {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* responsive */
