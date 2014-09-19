@@ -88,7 +88,7 @@ h3.alice-module-subtitle {
     display: block;
     padding: 5px 0;
     opacity: 0.8;
-    font-size:20px;
+    font-size:16px;
 }
 .alice-module-sourcecode {
     position: absolute;
