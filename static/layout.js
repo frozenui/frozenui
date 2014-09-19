@@ -22,9 +22,10 @@ function write_header(){
 }
 function write_footer(){
     var template_footer = '<div class="footer-content">'+
-    	'<div id="footer-us">'+
-    		'<a href="https://github.com/frozenui">GitHub</a>• <a href="http://lab.lepture.com/nico/">nico</a>'+
-    	'</div>'+
+		'<a href="https://github.com/frozenui">GitHub</a> • '+
+        '<a href="http://lab.lepture.com/nico/">nico</a> • '+
+        '<a href="https://github.com/frozenui/frozenui/issues">Issues</a> • '+
+        '<a href="https://github.com/QQVIPTeam">QQVIP FD Team</a>'
     '</div>';
     document.write(template_footer);
 }

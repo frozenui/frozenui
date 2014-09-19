@@ -754,26 +754,14 @@ body .fn-hide {
     right: 0;
 }
 /*footer*/
-.footer-area{
-    height: 170px;
-}
 .footer-content{
     width: 1140px;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
     font-size: 14px;
+    text-align: right;
 }
-#footer-us{
-    width: 140px;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    top: 50px;
-}
-#footer-us img{
-   margin-left: 25px;
-   margin-bottom: 15px;
-}
+
 
 .cwf-list { -webkit-column-count: 5; -webkit-column-gap: 10px; /*-webkit-column-rule: 5px solid #333;*/ -webkit-column-width: 168px;}
 .cwf-list li { display: block; width: 160px; padding: 3px; border:1px solid #eee; margin-bottom: 10px; position: relative; overflow: hidden;}
