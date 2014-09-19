@@ -6,9 +6,9 @@
 ##frozen是什么
 <img src="http://frozenui.github.io/static/frozen-top.png">
 
-frozen是我们团队根据最新的[手Q规范]()的制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。
+frozen是我们团队根据最新的[手Q设计规范]()制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。
 
-为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把女王alsa作为我们的卡通代言人，相信大多数看过这部动画的人都会喜欢女王的形象吧。
+为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把Elsa女王作为我们的卡通代言人，相信大多数看过这部动画的人都会喜欢女王的形象吧。
 
 css使用模块化的样式命名和组织规范，参考了前人的成果：支付宝团队的[alice](http://aliceui.org/)，[bootstrap](http://getbootstrap.com/)等，实现了最简的手Q web组件效果，并不断完善中。
 
