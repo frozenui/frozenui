@@ -1,10 +1,10 @@
 {
-  "name": "frozenui",
+  "name": "FrozenUI",
   "version": "1.0.0",
-  "title": "Frozen",
+  "title": "FrozenUI",
   "family": "alice",
   "homepage": "http://frozenui.github.io",
-  "author": "faycheng",
+  "author": "fayching",
   "repository": {
     "type": "git",
     "url": "https://github.com/frozenui/frozenui.git"
