@@ -619,6 +619,7 @@ body .fn-hide {
 /*banner*/
 .fr-banner{
     height: 575px;
+    overflow: hidden;
     background-image:-webkit-linear-gradient(90deg, #52b6ec, #66dff4);
     background-image:linear-gradient(90deg,#52b6ec,#66dff4);
 }

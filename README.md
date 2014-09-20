@@ -32,6 +32,14 @@
 		</div>
 		<img src="static/js.png" alt="frozenjs" class="fr-frozenjs-img">
 	</div>
+	<div class="fr-item">
+		<img src="static/ui.png" alt="frozenui">
+		<div class="fr-item-info fr-frozenui">
+			<h2>酷炫好玩的案例秀</h2>
+			<p>Frozen提供的Animation case，把业务上有趣好玩的案例沉淀下来，帮助日后能更快速找到设计灵感。</p>
+			<a href="/docs/case.html">查 看</a>
+		</div>
+	</div>
 </div>
 
 
