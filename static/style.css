@@ -765,3 +765,32 @@ body .fn-hide {
 .cwf-list .tit { font-size: 14px; height: 20px; line-height: 20px; }
 .cwf-list .author { font-size: 12px; height: 16px; line-height: 16px; color: #808080;}
 
+/*首页 应用业务*/
+.fr-yewu h2.fr-yewu-title{
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(0, 165, 224);
+    text-align: center;
+}
+.fr-yewu p{
+    text-align: center;
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.fr-yewu{
+    width: 1140px;
+    margin: 0 auto;
+}
+.fr-yewu ul{
+    width: 1013px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.fr-yewu li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.fr-yewu li.fr-yewu4{
+    margin-right: 0;
+}
