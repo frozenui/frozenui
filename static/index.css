@@ -2,7 +2,7 @@
     display: none;
 }
 .main-area{
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 .side-area{display: none;}

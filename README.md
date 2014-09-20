@@ -25,12 +25,12 @@
 		</div>
 	</div>
 	<div class="fr-item">
+		<img src="static/js.png" alt="frozenjs" class="fr-frozenjs-img">
 		<div class="fr-item-info fr-frozenjs">
 			<h2>更显灵动的JS插件</h2>
 			<p>Frozen提供的一系列JavaScript插件，更优雅地在移动端上呈现更灵动的动画效果。</p>
 			<a href="/frozenjs">查 看</a>
 		</div>
-		<img src="static/js.png" alt="frozenjs" class="fr-frozenjs-img">
 	</div>
 	<div class="fr-item">
 		<img src="static/case.png" alt="animation case">

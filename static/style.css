@@ -272,7 +272,7 @@ hr {
 }
 
 .main-area {
-    width: 1140px;
+    max-width: 1140px;
     margin: auto;
     position: relative;
 }
@@ -496,6 +496,7 @@ body .fn-hide {
     .main-area,
     #footer-wrapper {
         width: auto;
+        max-width: 100%;
     }
     .nav-area {
         height: auto;
@@ -505,10 +506,12 @@ body .fn-hide {
         width: auto;
         margin: 0;
         line-height: 40px;
+        margin-right:15px;
     }
     .main-nav li {
         display: block;
         margin: 0;
+        text-align: right;
     }
     .side-area {
         position: relative!important;
@@ -521,6 +524,7 @@ body .fn-hide {
         margin-left: 0;
         width: auto;
     }
+
 }
 
 .content-area h1 a.anchor,
@@ -624,7 +628,7 @@ body .fn-hide {
     background-image:linear-gradient(90deg,#52b6ec,#66dff4);
 }
 .fr-banner-content{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     position: relative;
 }
@@ -696,13 +700,13 @@ body .fn-hide {
 }
 .fr-item{
     position: relative;
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 75px 0;
     border-bottom: 1px solid #eee;
 }
 .fr-item-info{
-    width: 450px;
+    max-width: 450px;
 }
 .fr-item-info h2{
     font-size: 32px;
@@ -746,14 +750,19 @@ body .fn-hide {
 }
 /*footer*/
 .footer-content{
-    width: 1140px;
+    max-width: 1140px;
     margin: 20px auto;
     position: relative;
     font-size: 14px;
     text-align: right;
 }
 
-
+@media (max-width: 980px) {
+    .fr-banner{display: none;}
+    .fr-frozenui,.fr-frozenjs-img{position: static;}
+    .fr-yewu li{margin:30px;}
+    .fr-item{padding:15px;}
+}
 .cwf-list { -webkit-column-count: 5; -webkit-column-gap: 10px; /*-webkit-column-rule: 5px solid #333;*/ -webkit-column-width: 168px;}
 .cwf-list li { display: block; width: 160px; padding: 3px; border:1px solid #eee; margin-bottom: 10px; position: relative; overflow: hidden;}
 .cwf-list .cwfqr { position: absolute; left: 50%; top: 50%; margin: -85px 0 0 -65px; width: 120px; height: 125px; padding: 5px 5px 0; background: rgba(255,255,255,.8); opacity: 0;/* pointer-events:none; -webkit-transition:all ease-in .4s;*/}
@@ -780,11 +789,11 @@ body .fn-hide {
     margin-bottom: 25px;
 }
 .fr-yewu{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .fr-yewu ul{
-    width: 1013px;
+    max-width: 1013px;
     margin: 0 auto;
     font-size: 0;
 }
