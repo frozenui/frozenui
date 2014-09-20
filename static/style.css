@@ -96,7 +96,7 @@ sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
 /* 正常链接 未访问 */
-a:link {
+a,a:link {
     color: #5899d0;
 }
 
@@ -278,9 +278,9 @@ hr {
 }
 
 .content-area {
-    padding: 0 29px 20px;
-    width: 840px;
-    margin: 20px 0 20px 240px;
+    padding: 0 0 20px;
+    width: 880px;
+    margin: 20px 0 20px 260px;
 }         
 .side-area {
     overflow: hidden;
