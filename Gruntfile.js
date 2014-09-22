@@ -8,11 +8,16 @@ module.exports =function(grunt) {
         meta: {
 <<<<<<< HEAD
             destPath: '1.1.0',
+            zipPath:'i.gtimg.cn/vipstyle/frozenui/1.1.0'
+=======
+<<<<<<< HEAD
+            destPath: '1.1.0',
             zipPath:'1.1.0/i.gtimg.cn/vipstyle/frozenui/1.1.0'
 =======
             destPath: '1.0.0',
             zipPath:'1.0.0/i.gtimg.cn/vipstyle/frozenui/1.0.0'
 >>>>>>> 48b4e7d99271f06c0819a8de60492ec89e7d384b
+>>>>>>> e2659d9d3c084538ffc2aa2cf1f190df063274dc
         }, 
         cssmin: {
             minify: {
@@ -37,6 +42,7 @@ module.exports =function(grunt) {
             }
         },
         copy : {
+            //图片没修改的情况不用处理
             img:{
                 expand: true,
                 cwd: 'img/',
@@ -59,10 +65,9 @@ module.exports =function(grunt) {
         compress: {
             main: {
                 options: {
-                    archive: '<%=meta.destPath%>/i.gtimg.cn.zip'
+                    archive: 'i.gtimg.cn.zip'
                 },
                 expand: true,
-                cwd: '<%=meta.destPath%>', 
                 src: ['i.gtimg.cn/**']
             }
         },
@@ -97,13 +102,13 @@ module.exports =function(grunt) {
             }
         },
         shell: {
-            svn:{
-               command: [
-                    'svn up',
-                    'svn add * --force',
-                    'svn commit -m <%=grunt.option("log")%>'
-                ].join('&&') 
-            },
+            // svn:{
+            //    command: [
+            //         'svn up',
+            //         'svn add * --force',
+            //         'svn commit -m <%=grunt.option("log")%>'
+            //     ].join('&&') 
+            // },
             git: {
                 command: [
                     'git add -A',
@@ -144,6 +149,8 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
     grunt.registerTask('test', ['sass','copy','shell:nico']);
-    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
+
+    grunt.registerTask('default', ['sass','cssmin','copy:css','compress']);
+    grunt.registerTask('ci',['ftpush','shell']);
 
 };

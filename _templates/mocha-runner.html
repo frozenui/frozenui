@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>{% block title %}{{config.package.name|title}} Mocha Runner{% endblock %}</title>
+    <link href="{{static_url('css/mocha.css')}}" type="text/css" rel="stylesheet" charset="utf-8">
+  </head>
+  <body>
+    {%- include "snippet/head.html" %}
+    <script src="{{config.assets_host}}/gallery/mocha/1.9.0/mocha.js"></script>
+    <script src="{{config.assets_host}}/gallery/sinon/1.6.0/sinon.js"></script>
+    <!--[if lte IE 8]>
+    <script src="{{config.assets_host}}/gallery/sinon/1.6.0/sinon-ie.js"></script>
+    <![endif]--> 
+    <div id="mocha"></div>
+    <script>
+      (function() {
+        mocha.setup('bdd');
+
+        {%- set specs = spec_files %}
+        var tests = {{specs|json_encode}};
+
+        var specs = [];
+        for (var i = 0; i < tests.length; i++) {
+          specs[i] = './' + tests[i];
+        }
+
+        seajs.use(specs, function() {
+          if (window.mochaPhantomJS) {
+            mochaPhantomJS.run()
+          } else {
+            mocha.run()
+          }
+        })
+      })();
+    </script>
+  </body>
+</html>
