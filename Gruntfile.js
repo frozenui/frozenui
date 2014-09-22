@@ -6,8 +6,8 @@ module.exports =function(grunt) {
         pkg : grunt.file.readJSON('package.json'),
         
         meta: {
-            destPath: '1.0.0',
-            zipPath:'1.0.0/i.gtimg.cn/vipstyle/frozenui/1.0.0'
+            destPath: '1.1.0',
+            zipPath:'1.1.0/i.gtimg.cn/vipstyle/frozenui/1.1.0'
         }, 
         cssmin: {
             minify: {
@@ -92,13 +92,13 @@ module.exports =function(grunt) {
             }
         },
         shell: {
-            svn:{
-               command: [
-                    'svn up',
-                    'svn add * --force',
-                    'svn commit -m <%=grunt.option("log")%>'
-                ].join('&&') 
-            },
+            // svn:{
+            //    command: [
+            //         'svn up',
+            //         'svn add * --force',
+            //         'svn commit -m <%=grunt.option("log")%>'
+            //     ].join('&&') 
+            // },
             git: {
                 command: [
                     'git add -A',
