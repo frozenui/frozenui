@@ -73,17 +73,19 @@ li {
 input,
 textarea,
 select {
-    font-family:inherit;
-    font-size:inherit;
-    font-weight:inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 button,
-input{
+html input[type="button"], 
+input[type="reset"],
+input[type="submit"]{
     border: none;
     background: none;
-    -webkit-appearance:none;
-    outline: 0;
+    -webkit-appearance: none;
+    outline: none;
 }
 
 a {

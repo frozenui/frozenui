@@ -25,7 +25,8 @@
     "grunt-ftp-deploy": "^0.1.4",
     "grunt-ftpush": "^0.3.3",
     "grunt-push-svn": "^0.2.1",
-    "grunt-shell": "^0.7.0"
+    "grunt-shell": "^0.7.0",
+    "grunt-contrib-imagemin":"^0.8.1"
   },
   "main": "Gruntfile.js",
   "widgets": [
@@ -44,7 +45,7 @@
     "ui-tips",
     "ui-tips-news",
     "ui-icon",
-    "ui-icon-tag",
+    "ui-tag",
     "ui-icon-viplevel",
     "ui-icon-qqlevel"
     
