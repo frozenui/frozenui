@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
-<html lang="{{theme.lang}}">
+<html lang="zh">
     <head>
         <meta charset="UTF-8">
-        {%- if post.filename == 'index' %}        
-        <title>{{config.package.title|title}} - {{config.package.description}}</title>
-        {%- else %}
-        <title>{{config.package.title|title}} - {{post.title}}</title>
-        {%- endif %}
+        <title>Frozen - History</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="{{system.name}} {{system.version}}" />
+        <meta name="generator" content="nico 0.5.1" />
        
         <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
-        <link rel="stylesheet" href="1.0.0/css-debug/global.css" />
+<<<<<<< HEAD
+        <link rel="stylesheet" href="1.1.0/css-debug/global.css" />
+=======
+        <link rel="stylesheet" href="http://frozenui.github.io/baseui/1.0.0/css-debug/global.css" />
+>>>>>>> 48b4e7d99271f06c0819a8de60492ec89e7d384b
         <link rel="stylesheet" href="http://frozenui.github.io/static/style.css" />
         <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
         <style>
@@ -24,7 +24,7 @@
             .ui-table{line-height: 40px;} 
             .ui-dialog{height:320px;}
             body{
-                -webkit-user-select: inherit;
+               	-webkit-user-select: inherit;
             }
             
         </style>
@@ -57,21 +57,22 @@
 
             </div>
             <div class="main-area">
-                {%- if post.toc %}
-                <div class="side-area">{{post.toc}}</div>
-                {% else %}
-                <div class="side-area">
-                    <ul>
-                        <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
-                    </ul>
-                </div>                
-                {%- endif %}    
+                <div class="side-area"><ul><li><a href="#1-0-0">1.0.0</a></li><li><a href="#1-0-1">1.0.1</a></li></ul></div>
+                    
                 <script type="text/template" id="list-template">
                     <li><a href="#"></a></li>
                 </script>
                 <div class="content-area">
-                    <h1>{{post.title}}</h1>
-                    <div class="content">{{ post.html|replace_code|add_anchor }}</div>
+                    <h1>History</h1>
+                    <div class="content"><h2 id="1-0-0">1.0.0<a href="#1-0-0" class="anchor">¶</a></h2><p>发布新版本</p>
+<p>test</p>
+<h2 id="1-0-1">1.0.1<a href="#1-0-1" class="anchor">¶</a></h2><ol>
+<li><p>增加form</p>
+</li>
+<li><p>input的样式重置</p>
+</li>
+</ol>
+</div>
                 </div>
                 
             </div>
@@ -84,4 +85,3 @@
         
     </body>
 </html>
-
