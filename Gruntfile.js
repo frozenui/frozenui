@@ -7,7 +7,7 @@ module.exports =function(grunt) {
         
         meta: {
             destPath: '1.1.0',
-            zipPath:'1.1.0/i.gtimg.cn/vipstyle/frozenui/1.1.0'
+            zipPath:'i.gtimg.cn/vipstyle/frozenui/1.1.0'
         }, 
         cssmin: {
             minify: {
@@ -32,6 +32,7 @@ module.exports =function(grunt) {
             }
         },
         copy : {
+            //图片没修改的情况不用处理
             img:{
                 expand: true,
                 cwd: 'img/',
@@ -54,10 +55,9 @@ module.exports =function(grunt) {
         compress: {
             main: {
                 options: {
-                    archive: '<%=meta.destPath%>/i.gtimg.cn.zip'
+                    archive: 'i.gtimg.cn.zip'
                 },
                 expand: true,
-                cwd: '<%=meta.destPath%>', 
                 src: ['i.gtimg.cn/**']
             }
         },
@@ -139,6 +139,8 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
     grunt.registerTask('test', ['sass','copy','shell:nico']);
-    grunt.registerTask('default', ['sass','imagemin','cssmin','copy','compress','ftpush','shell']);
+
+    grunt.registerTask('default', ['sass','cssmin','copy:css','compress']);
+    grunt.registerTask('ci',['ftpush','shell']);
 
 };
