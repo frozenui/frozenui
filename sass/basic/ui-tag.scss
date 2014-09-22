@@ -1,41 +1,46 @@
-.ui-icon-tag{
+.ui-tag{
     display: block;
-    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon_tag.png?_bid=256);
+    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/icon_tag.png?_bid=256);
     -webkit-background-size: 30px auto;
     position:absolute;
     z-index: 9; 
 }
-.ui-icon-tag-svip,.ui-icon-tag-vip,.ui-icon-tag-freelimit,.ui-icon-tag-free{
-    @extend .ui-icon-tag;
+.ui-tag-svip,.ui-tag-vip,.ui-tag-freelimit,.ui-tag-free{
+    @extend .ui-tag;
     width: 28px;
     height: 14px;
     right: 0;
     bottom: 0;
 }
-.ui-icon-tag-vip{
+.ui-tag-vip{
     background-position: 0 -14px;
 }
-.ui-icon-tag-freelimit{
+.ui-tag-freelimit{
     background-position: 0 -28px;
 }
-.ui-icon-tag-free{
+.ui-tag-free{
     background-position: 0 -42px;
 }
-.ui-icon-tag-hot,.ui-icon-tag-new{
-    @extend .ui-icon-tag;
+.ui-tag-hot:before,.ui-tag-new:before{
+    @extend .ui-tag;
+    content: '';
     width: 30px;
     height: 30px;
-    left: 0;
-    top: 0;
+    left: -1px;
+    top: -1px;
 }
-.ui-icon-tag-hot{
+.ui-tag-hot:before{
     background-position: 0 -60px;
 }
-.ui-icon-tag-new{
+.ui-tag-new:before{
     background-position: 0 -90px;
 }
-.ui-icon-tag-selected{
-    @extend .ui-icon-tag;
+.ui-tag-selected{
+    border: 1px solid #0079ff;
+}
+.ui-tag-selected:after{
+    @extend .ui-tag;
+    content: '';
     width: 24px;
     height: 24px;
     background-position: 0 -120px;

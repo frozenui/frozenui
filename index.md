@@ -88,7 +88,7 @@ h3.alice-module-subtitle {
     display: block;
     padding: 5px 0;
     opacity: 0.8;
-    font-size:20px;
+    font-size:16px;
 }
 .alice-module-sourcecode {
     position: absolute;
@@ -118,7 +118,7 @@ h3.alice-module-subtitle {
 <div class="alice-modules"></div>
 
 <script type="text/javascript">
-seajs.use([ 'underscore', 'popup'], function(_, Popup) {
+seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'], function($, _, Popup) {
 
     $('.alice-modules').on('mouseenter', '.alice-module-demo', function() {
         $(this).find('.alice-module-sourcecode').fadeIn(200);
