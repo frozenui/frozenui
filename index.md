@@ -78,6 +78,11 @@ p.alice-module-description {
 .alice-module-code {
     margin: 0!important;
 }
+@media (max-width: 640px){
+    .alice-module-code{
+    	display:none;
+    }
+}
 h3.alice-module-subtitle {
     margin: 0;
     color: #333;
