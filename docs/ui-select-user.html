@@ -60,169 +60,91 @@
                 </script>
                 <div class="content-area">
                     <h1>ui-select-user</h1>
-                    <div class="content"><h3 id="default">default<a href="#default" class="anchor">¶</a></h3><div class="nico-insert-code">    <!-- list1 start -->
-    <ul class="ui-select-user">
-            <li class="ui-select-user-item active">
-                <h3 class="ui-border-b"><i class="arrow"></i>最近在玩的好友</h3>
-                <div class="ui-notice-warn"><i class="ui-icon ui-icon-refresh"></i><p>请检查网络</p></div>
-                <ul class="ui-list ui-border-b">
-                    <li class="active">
-                        <div class="ui-list-thumb  ui-avatar">
-                            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
-                        </div>
-                        <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
-                    </li>
-                    <li>
-                        <div class="ui-list-thumb ui-avatar">
-                            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
-                        </div>
-                        <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
-                    </li>
-                    <li>
-                        <div class="ui-list-thumb  ui-avatar">
-                            <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
-                        </div>
-                        <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
-                    </li>
-                </ul>
-
-            <!-- list1 end -->
-            <!-- list2 start -->    </li>
-            <li class="ui-select-user-item">
-                <h3 class="ui-userselect-top ui-border-b"><i class="arrow"></i>鹅厂工友们</h3>
-                <ul class="ui-list ui-border-b">
-                    <li>
-                        <div class="ui-list-thumb  ui-avatar">
-                            <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
-                        </div>
-                        <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
-                    </li>
-                    <li>
-                        <div class="ui-list-thumb  ui-avatar">
-                            <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
-                        </div>
-                        <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
-                    </li>
-                </ul>
-
-            <!-- list2 end -->    </li>
+                    <div class="content"><h3 id="default">default<a href="#default" class="anchor">¶</a></h3><div class="nico-insert-code"><ul class="ui-select-user">
+    <li class="ui-select-user-item active">
+        <h3 class="ui-border-b"><i class="arrow"></i>最近在玩的好友</h3>
+        <div class="ui-notice-warn"><i class="ui-icon ui-icon-refresh"></i><p>请检查网络</p></div>
+        <ul class="ui-list ui-border-b">
+            <li class="active">
+                <div class="ui-list-thumb  ui-avatar">
+                    <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+            </li>
+            <li>
+                <div class="ui-list-thumb ui-avatar">
+                    <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+            </li>
+            <li>
+                <div class="ui-list-thumb  ui-avatar">
+                    <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+            </li>
         </ul>
-        <section class="ui-notice" style="display: none;">
-            <p>加载中...</p>
-        </section>
-        <section class="ui-notice" style="display: none;">
-            <p>加载失败，请点击页面刷新</p>
-        </section>
-    <section class="ui-loading-wrap" style="display: none;">
-            <p>加载中</p>
-            <i class="ui-loading"></i>
-        </section>
-        <section class="ui-dialog ui-dialog-notice show" style="display: none;">
-            <div class="dialog-notice-cnt">
-              <i class="ui-loading ui-loading-bright"></i>
-              <p>加载中...</p>
-           </div>
-         </section>
-    <!--    
-    <script src="../js/zepto.min.js"></script>
-    <script src="../js/touch.js"></script>
-    <script src="http://pub.idqqimg.com/qqmobile/qqapi.js"></script> 
-
-    <script type="text/javascript">
-          $(".ui-select-user h3").click(function(){
-            var group=$(this).closest(".ui-select-user-item");
-            if(!group.hasClass("active")){
-              group.addClass("active")
-        }else{
-              group.removeClass("active");
-        }
-          })
-          $('.ui-dialog button').click(function(){
-              $('.ui-dialog').removeClass('show');
-          })
-    </script>
-    --></div><div class="highlight"><pre><code class="xml">    <span class="comment">&lt;!-- list1 start --&gt;</span>
-    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-select-user"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-select-user-item active"</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"ui-border-b"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>最近在玩的好友<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-notice-warn"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-refresh"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span><span class="tag">&lt;<span class="title">p</span>&gt;</span>请检查网络<span class="tag">&lt;/<span class="title">p</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-border-b"</span>&gt;</span>
-                    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb  ui-avatar"</span>&gt;</span>
-                            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-                        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-                    <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb ui-avatar"</span>&gt;</span>
-                            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-                        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-                    <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb  ui-avatar"</span>&gt;</span>
-                            <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-                        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-                <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-
-            <span class="comment">&lt;!-- list1 end --&gt;</span>
-            <span class="comment">&lt;!-- list2 start --&gt;</span>    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-select-user-item"</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"ui-userselect-top ui-border-b"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>鹅厂工友们<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
-                <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-border-b"</span>&gt;</span>
-                    <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb  ui-avatar"</span>&gt;</span>
-                            <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-                        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-                    <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb  ui-avatar"</span>&gt;</span>
-                            <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
-                        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-                    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-                <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-
-            <span class="comment">&lt;!-- list2 end --&gt;</span>    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    </li>
+    <li class="ui-select-user-item">
+        <h3 class="ui-userselect-top ui-border-b"><i class="arrow"></i>鹅厂工友们</h3>
+        <ul class="ui-list ui-border-b">
+            <li>
+                <div class="ui-list-thumb  ui-avatar">
+                    <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+            </li>
+            <li>
+                <div class="ui-list-thumb  ui-avatar">
+                    <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
+                </div>
+                <div class="ui-list-info ui-border-t">飞翔的企鹅</div>
+            </li>
+        </ul>
+    </li>
+</ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-select-user"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-select-user-item active"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"ui-border-b"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>最近在玩的好友<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-notice-warn"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-refresh"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span><span class="tag">&lt;<span class="title">p</span>&gt;</span>请检查网络<span class="tag">&lt;/<span class="title">p</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-border-b"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb  ui-avatar"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb ui-avatar"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb  ui-avatar"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
         <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-notice"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载中...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-        <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-notice"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载失败，请点击页面刷新<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-        <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-loading-wrap"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载中<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-loading"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-        <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-dialog ui-dialog-notice show"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"dialog-notice-cnt"</span>&gt;</span>
-              <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-loading ui-loading-bright"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-              <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载中...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-           <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-         <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
-    <span class="comment">&lt;!--    
-    &lt;script src="../js/zepto.min.js"&gt;&lt;/script&gt;
-    &lt;script src="../js/touch.js"&gt;&lt;/script&gt;
-    &lt;script src="http://pub.idqqimg.com/qqmobile/qqapi.js"&gt;&lt;/script&gt; 
-
-    &lt;script type="text/javascript"&gt;
-          $(".ui-select-user h3").click(function(){
-            var group=$(this).closest(".ui-select-user-item");
-            if(!group.hasClass("active")){
-              group.addClass("active")
-        }else{
-              group.removeClass("active");
-        }
-          })
-          $('.ui-dialog button').click(function(){
-              $('.ui-dialog').removeClass('show');
-          })
-    &lt;/script&gt;
-    --&gt;</span></code></pre></div></div>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-select-user-item"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"ui-userselect-top ui-border-b"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>鹅厂工友们<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-border-b"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb  ui-avatar"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-thumb  ui-avatar"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">span</span>  <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div></div>
                 </div>
                 
             </div>
