@@ -2,7 +2,9 @@
 
 ---
 
-
+<style>
+.nico-insert-code{display:none}
+</style>
 ##frozenUI是什么
 <img src="../static/elsa.jpg">
 
