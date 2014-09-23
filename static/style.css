@@ -469,7 +469,7 @@ body .fn-hide {
         max-width: 100%;
     }
     .title-area{left: 15px;}
-    .head-area{border-bottom: none;}
+    .head-area{border-bottom: none;background: #f5f5f5}
     .nav-area{
         height: auto;
         width: 100%;
@@ -478,7 +478,7 @@ body .fn-hide {
         display: block;
         width: 20px;
         height: 12px;
-        padding: 14px 15px;
+        padding: 19px 15px;
         float: right;
     }
     .nav-toggle:before{
