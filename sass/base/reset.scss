@@ -81,7 +81,9 @@ select {
 button,
 html input[type="button"], 
 input[type="reset"],
-input[type="submit"]{
+input[type="submit"],
+input[type="text"],
+input[type="password"]{
     border: none;
     background: none;
     -webkit-appearance: none;

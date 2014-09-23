@@ -6,18 +6,8 @@ module.exports =function(grunt) {
         pkg : grunt.file.readJSON('package.json'),
         
         meta: {
-<<<<<<< HEAD
             destPath: '1.1.0',
             zipPath:'i.gtimg.cn/vipstyle/frozenui/1.1.0'
-=======
-<<<<<<< HEAD
-            destPath: '1.1.0',
-            zipPath:'1.1.0/i.gtimg.cn/vipstyle/frozenui/1.1.0'
-=======
-            destPath: '1.0.0',
-            zipPath:'1.0.0/i.gtimg.cn/vipstyle/frozenui/1.0.0'
->>>>>>> 48b4e7d99271f06c0819a8de60492ec89e7d384b
->>>>>>> e2659d9d3c084538ffc2aa2cf1f190df063274dc
         }, 
         cssmin: {
             minify: {

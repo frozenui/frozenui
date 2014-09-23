@@ -39,6 +39,7 @@
     "ui-loading",
     "ui-notice",
     "ui-select-user",
+    "ui-form",
     "ui-tab",
     "ui-table",
     "ui-tips",
