@@ -6,11 +6,6 @@
 
 需要安装[nico](lab.lepture.com/nico/zh/)生成文档以及调试，`nico build `命令生成文档，`nico server `命令调试
 
-### git
-
-生成好的文档会在_site目录, 目录下的内容放在gh-pages分支，参考[文档](https://help.github.com/articles/user-organization-and-project-pages)
-
-页面会显示在frozen的css组件菜单项中[http://frozenui.github.io/baseui/](http://frozenui.github.io/baseui/)
 
 ### grunt
 
@@ -24,9 +19,17 @@ css ，css-debug和img目录是需要发布到线上，_css-debug_是未压缩�
 
 i.gtimg.cn.zip需要发布到离线包
 
+
+### git
+
+使用nico生成好的文档会在_site目录, 目录下的内容放在gh-pages分支，参考[文档](https://help.github.com/articles/user-organization-and-project-pages)
+
+页面会显示在frozen的css组件菜单项中[http://frozenui.github.io/baseui/](http://frozenui.github.io/baseui/)
+
+
 ### 版本管理
 
-分为小版本和大版本
+分为小版本和大版本，目前grunt的功能还不完善，只支持升小版本，后续会优化
 
 小版本控制发布频率在一月一次，不新增离线包，仅在当前的离线包中增加一个新版本的文件夹，图片未修改和新增的不用copy过来
 
