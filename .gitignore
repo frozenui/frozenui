@@ -26,4 +26,3 @@ _site/
 *.build
 *.grunt
 .ftppass
-*.zip
