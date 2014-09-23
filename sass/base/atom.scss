@@ -148,6 +148,7 @@
     span {
         @include avatar(30px);
     }
+    display: inline-block;
 }
 
  /**
