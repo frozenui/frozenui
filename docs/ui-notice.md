@@ -3,10 +3,10 @@
 ---
 ###默认
 ````html
-	<section class="ui-notice">
-          <i></i>
-          <p>请检查网络</p>
-       </section>
+<section class="ui-notice">
+  	<i></i>
+  	<p>请检查网络</p>
+</section>
 ````
 
 ###没有内容
@@ -29,9 +29,9 @@
 
 ###加载中
 ````html
-	<section class="ui-notice">
-         <p>加载中...</p>
-      </section>
+<section class="ui-notice">
+ 	<p>加载中...</p>
+</section>
 	
 ````
 ###加载中
@@ -44,12 +44,12 @@
 
 ###带按钮的
 ````html
-	<section class="ui-notice">
-          <p>待激活的号码</p>
-          <p>待激活的号码</p>
-          <div class="ui-notice-btn">
-              <button class="ui-btn-primary ui-btn-lg">续费超级会员</button>
-          </div>
-       </section>
+<section class="ui-notice">
+  	<p>待激活的号码</p>
+  	<p>待激活的号码</p>
+  	<div class="ui-notice-btn">
+      	<button class="ui-btn-primary ui-btn-lg">续费超级会员</button>
+  	</div>
+</section>
 	
 ````
