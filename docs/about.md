@@ -1,12 +1,12 @@
-#关于frozen
+#关于frozenUI
 
 ---
 
 
-##frozen是什么
+##frozenUI是什么
 <img src="../static/elsa.jpg">
 
-frozen是我们团队根据最新的[手Q设计规范]()制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。
+frozenUI是我们团队根据最新的[手Q设计规范]()制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。
 
 为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把Elsa女王作为我们的卡通代言人，相信大多数看过这部动画的人都会喜欢女王的形象吧。
 

@@ -2,7 +2,7 @@ function write_header(){
     var template_header = '<div class="head-content">'+
         '<div class="title-area">'+
             '<h1>'+
-                '<a href="/">Frozen</a>'+
+                '<a href="/">Frozen UI</a>'+
             '</h1>'+                 
         '</div>'+
       
