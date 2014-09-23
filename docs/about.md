@@ -28,6 +28,7 @@ css使用模块化的样式命名和组织规范，参考了前人的成果：�
 
 统一使用ui为前缀作为命名空间。
 
+
 class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如`.ui-btn` 和 `.ui-btn-danger`）。
 
 避免过度任意的简写。`.btn` 代表 `button`，但是 `.b` 不能表达任何意思。
@@ -40,11 +41,61 @@ class 名称应当尽可能短，并且意义明确，不要使用表现形式�
 
 {命名空间}-{模块}-{实例}-{实例属性}.{状态}
 
+`.ui-dialog-cnt` 
+
+
+{命名空间}-{模块}-{子模块}
+
 常用状态有：`hover`, `current`, `selected`, `disabled`, `focus`, `blur`, `checked`, `success`, `error`，`active` 等。
 
-`.ui-dialog-cnt`   (对应： 命名空间-模块-子模块)
+
+除了常用状态的class，不能直接使用其他不带前缀的class，如
+
+````html
+	<div class="ui-btn primary">确认</div>
+````
+应该写为
+
+````html
+	<div class="ui-btn ui-btn-primary">确认</div>
+````
+不强制所有class都必须带父class，简单的组件可以直接使用子class，如
+
+
+````html
+	<span class="ui-txt-highlight">ui-txt-highlight</span>
+````
+	
+而不是
+
+````html
+	<span class="ui-txt ui-txt-highlight">ui-txt-highlight</span>
+````
+
+因为是在移动端使用，dom结构并不会太复杂，因此不建议过多使用class嵌套，可以直接使用标签名的直接使用标签名。
+如建议使用
+
+````html
+	<ul class="ui-list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+````
+	
+而不使用
+
+````html
+	<ul class="ui-list">
+		<li class="ui-list-item">1</li>
+		<li class="ui-list-item">2</li>
+		<li class="ui-list-item">3</li>
+	</ul>
+````
 
 常用模块名有：`cnt(content)`，`hd(header)`，`bd(body)`，`ft(footer)`，`txt(text)`，`img(images/pic)`，`title`，`item`等， 只要词义表达了组件要实现的功能或者要表现出来的的外观就可以了。
+
+
 
 ##常用功能类
 

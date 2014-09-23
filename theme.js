@@ -11,19 +11,7 @@ module.exports = function(nico) {
   var file = nico.sdk.file;
   var BaseWriter = nico.BaseWriter;
 
-  function MochaWriter() {}
-  util.inherits(MochaWriter, BaseWriter);
-
-  MochaWriter.prototype.run = function() {
-    var option = nico.sdk.option;
-    var dest = path.join(option.get('outputdir'), 'tests', 'runner.html');
-    this.render({
-      destination: dest,
-      template: 'mocha-runner.html'
-    });
-  }
-  nico.MochaWriter = MochaWriter;
-
+  
   exports.name = 'cmd';
   exports.version = '1.0';
   exports.lang = 'zh';
@@ -48,15 +36,7 @@ module.exports = function(nico) {
   var pkg = require(path.join(process.cwd(), 'package.json'))
 
   exports.filters = {
-    debug: function(args) {
-      return args.indexOf('debug') != -1;
-    },
-    debug_file: function(val) {
-      if (/\-debug\.(js|css)$/.test(val)) {
-        return val;
-      }
-      return val.replace(/\.(js|css)$/, '-debug.$1');
-    },
+    
     find: function(pages, cat) {
       var ret = findCategory(pages, cat);
       if (ret.length) return ret[0];
@@ -80,35 +60,7 @@ module.exports = function(nico) {
       });
       return content;
     },
-    clean_alias: function(alias) {
-      Object.keys(alias).forEach(function(key) {
-        if (key === alias[key]) {
-          delete alias[key];
-        }
-      });
-      return alias;
-    },
-    css_alias: function(alias) {
-      return Object.keys(alias || {}).map(function(key) {
-        return alias[key];
-      }).filter(function(val) {
-        return /\.css$/.test(val);
-      });
-    },
-    render_src: function(writer) {
-      var base = path.relative(path.dirname(writer.filepath), '');
-      var ret = findSrc(base);
-      return JSON.stringify(ret);
-    },
-    is_runtime_handlebars: function(pkg) {
-      var src = findSrc();
-      for (var key in src) {
-        if (/\.handlebars$/.test(src[key])) {
-          return true;
-        }
-      }
-      return false;
-    },
+    
     // 有 .tpl 的要插入 plugin-text
     is_plugin_text: function(pkg) {
       var src = findSrc();
@@ -162,26 +114,7 @@ module.exports = function(nico) {
   };
 
   exports.functions = {
-    dist_files: function() {
-      var distdir = path.join(process.cwd(), 'dist');
-      var ret = {
-        js: [],
-        css: []
-      };
-      if (!file.exists(distdir)) {
-        return ret;
-      }
-      file.recurse(distdir, function(fpath) {
-        var fname = path.relative(distdir, fpath).replace(/\\/g, '/');
-        if (fname.indexOf('-debug') !== -1) return;
-        if (/\.js$/.test(fname)) {
-          ret.js.push(fname);
-        } else if (/\.css$/.test(fname)) {
-          ret.css.push(fname);
-        }
-      });
-      return ret;
-    },
+    
 
     src_files: function() {
       var srcdir = path.join(process.cwd(), 'src');
@@ -209,20 +142,6 @@ module.exports = function(nico) {
       return ret;
     },
 
-    spec_files: function() {
-      var specdir = path.join(process.cwd(), 'tests');
-      var ret = [];
-      if (!file.exists(specdir)) {
-        return ret;
-      }
-      file.recurse(specdir, function(fpath) {
-        var fname = path.relative(specdir, fpath).replace(/\\/g, '/');
-        if (fname.indexOf('-spec') !== -1) {
-          ret.push(fname);
-        }
-      });
-      return ret;
-    },
 
     engines: function() {
       var ret = [];

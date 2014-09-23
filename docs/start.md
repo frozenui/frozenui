@@ -4,7 +4,6 @@
 
 ## 例子
 
-<link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css">
 
 <style>
 .nico-iframe iframe{height: 450px;}
