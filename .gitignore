@@ -25,3 +25,5 @@ node_modules/
 _site/
 *.build
 *.grunt
+.ftppass
+*.zip
