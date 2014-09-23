@@ -243,7 +243,7 @@ hr {
     *display: inline;
     *zoom: 1;
 }
-
+.main-nav li a{display: block;}
 
 .main-area {
     max-width: 1140px;
