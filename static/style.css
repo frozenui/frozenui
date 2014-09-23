@@ -497,10 +497,11 @@ body .fn-hide {
         margin-top: 5px;
     }
     .main-nav {
-        display: none;
+        height: 0;
         float: none;
         padding-left: 15px;
         margin-top: 50px;
+        line-height: 36px;
     }
     .main-nav li {
         display: block;
@@ -520,7 +521,18 @@ body .fn-hide {
     }
 
 }
-
+.slideDown{
+    height: auto;
+    -webkit-animation: 1s slideDown;
+}
+@-webkit-keyframes slideDown{
+    from{
+        height: 0;
+    }
+    to{
+        height: auto;
+    }
+}
 .content-area h1 a.anchor,
 .content-area h2 a.anchor,
 .content-area h3 a.anchor,

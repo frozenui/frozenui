@@ -26,8 +26,6 @@ $(function() {
       '</div>';
   $('.footer-area').html(template_footer); 
   $('.nav-toggle').click(function(e){
-    $('.main-nav').animate({
-      height:'toggle'
-    });
+    $('.main-nav').toggleClass('slideDown');
   });
 });
