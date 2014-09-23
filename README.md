@@ -22,9 +22,9 @@ i.gtimg.cn.zip需要发布到离线包
 
 ### git
 
-使用nico生成好的文档会在_site目录, 目录下的内容放在gh-pages分支，参考[文档](https://help.github.com/articles/user-organization-and-project-pages)
-
-页面会显示在frozen的css组件菜单项中[http://frozenui.github.io/baseui/](http://frozenui.github.io/baseui/)
+使用nico生成好的文档会在_site目录，提交当前目录到https://github.com/frozenui/baseui.git
+_site目录下的内容提交到gh-pages分支，参考https://github.com/frozenui/baseui/issues/，
+页面会显示在frozen的css组件菜单项中http://frozenui.github.io/baseui/
 
 
 ### 版本管理
