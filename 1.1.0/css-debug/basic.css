@@ -75,7 +75,9 @@ select {
 button,
 html input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+input[type="text"],
+input[type="password"] {
   border: none;
   background: none;
   -webkit-appearance: none;
@@ -563,12 +565,12 @@ em {
   padding-left: 10px; }
 
 .ui-tips-warn .ui-tips-cnt-cover:after {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -125px -50px;
-  background-size: 200px auto;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -75px 0;
+  background-size: 150px auto;
   content: "";
   display: block;
   width: 8px;
-  height: 13px;
+  height: 14px;
   position: absolute;
   right: 10px;
   top: 50%;
@@ -1004,47 +1006,41 @@ em {
   background-position: -25px 0;
   top: -16px; }
 
-.ui-tag, .ui-tag-svip, .ui-tag-vip, .ui-tag-freelimit, .ui-tag-free, .ui-tag-hot:before, .ui-tag-new:before, .ui-tag-selected:after {
+.ui-tag, .ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-freelimit:before, .ui-tag-free:before, .ui-tag-hot:before, .ui-tag-new:before, .ui-tag-selected:after {
   display: block;
-<<<<<<< HEAD
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/icon_tag.png?_bid=256);
-=======
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img_tag.png?_bid=256);
->>>>>>> e2659d9d3c084538ffc2aa2cf1f190df063274dc
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon_tag.png?_bid=256);
   -webkit-background-size: 30px auto;
   position: absolute;
   z-index: 9; }
 
-.ui-tag-svip, .ui-tag-vip, .ui-tag-freelimit, .ui-tag-free {
+.ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-freelimit:before, .ui-tag-free:before {
   width: 28px;
   height: 14px;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  content: ''; }
 
-.ui-tag-vip {
+.ui-tag-vip:before {
   background-position: 0 -14px; }
 
-.ui-tag-freelimit {
+.ui-tag-freelimit:before {
   background-position: 0 -28px; }
 
-.ui-tag-free {
+.ui-tag-free:before {
   background-position: 0 -42px; }
 
 .ui-tag-hot:before, .ui-tag-new:before {
   content: '';
   width: 30px;
   height: 30px;
-  left: -1px;
-  top: -1px; }
+  left: 0;
+  top: 0; }
 
 .ui-tag-hot:before {
   background-position: 0 -60px; }
 
 .ui-tag-new:before {
   background-position: 0 -90px; }
-
-.ui-tag-selected {
-  border: 1px solid #0079ff; }
 
 .ui-tag-selected:after {
   content: '';

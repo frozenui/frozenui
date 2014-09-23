@@ -3,6 +3,7 @@
 ---
 
 ###表单命令项
+
 ````html
 	<div class="ui-form">
 		<ul class="ui-form-order ui-border-tb">
@@ -19,7 +20,7 @@
 	<div class="ui-form">
 		<form action="#" class="ui-border-t">
 
-			<div class="ui-item ui-border-b">
+			<div class="ui-from-item ui-border-b">
 				<label for="#">身份证号码</label>
 				<input type="text" placeholder="18位身份证号码">
 			</div>
@@ -56,7 +57,7 @@
 ````html
 	<div class="ui-form">
 
-		<div class="ui-item left ui-border-tb">
+		<div class="ui-item ui-form-item-l ui-border-tb">
 			<label class="ui-border-r">中国 +86</label>
 			<input type="text" placeholder="请输入手机号码">
 		</div>
