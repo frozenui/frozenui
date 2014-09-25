@@ -21,12 +21,15 @@
                    position: relative;
                    margin: 0;
                }
-            
+            .ui-reddot-border:after{ background-clip: padding-box;}
             .ui-icon{font-size:30px;}
             .ui-table{line-height: 40px;} 
             .ui-dialog{height:320px;}
             body{
                 -webkit-user-select: inherit;
+            }
+            .ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn.disabled:active, .disabled.ui-btn-lg:active, .ui-btn.disabled.active, .disabled.active.ui-btn-lg {
+                background-clip: padding-box;
             }
             
         </style>

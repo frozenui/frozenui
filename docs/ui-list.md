@@ -53,13 +53,12 @@
         标题标题标题标题标题标题标题标题标题标题标题
     </li>
 </ul>
- ````
+````
 
 ### 图文普通列表
      
- ````html
-<ul class="ui-list ui-border-tb">
-  
+````html
+<ul class="ui-list ui-border-tb">  
     <li class="active">
         <div class="ui-list-thumb ui-avatar-s">
            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
@@ -106,7 +105,7 @@
   
 ### 图文列表
 
- ````html
+````html
 <ul class="ui-list ui-border-tb">
     <li class="ui-border-t active">
         <div class="ui-list-thumb">
@@ -127,38 +126,11 @@
         </div>
     </li>
 </ul>    
-```` 
- 
-### 功能列表
-````html  
-<ul class="ui-list ui-list-function ui-border-tb">
-    <li class="active">
-        <div class="ui-avatar-s">
-            <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span>
-        </div>
-        <div class="ui-list-info ui-border-t">
-            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
-        </div>
-        <div class="ui-btn">PK</div>
-    </li>
-    <li>
-        <div class="ui-avatar-s">
-            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span>
-        </div>
-        <div class="ui-list-info ui-border-t">
-            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
-        </div>
-        <button class="ui-btn">PK</button>
-    </li>
-</ul>
- ````
-   
-   
-   
+````
+     
 ### 图文链接列表
-  
-````html
 
+````html
 <ul class="ui-list ui-list-link ui-border-tb">
     <li class="ui-border-t">
         <div class="ui-list-thumb">
@@ -177,6 +149,29 @@
             <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
         </div>
+    </li>
+</ul>
+````
+### 功能列表
+````html
+<ul class="ui-list ui-list-function ui-border-tb">
+    <li>
+        <div class="ui-avatar-s">
+            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+        </div>
+        <div class="ui-btn">PK</div>
+    </li>
+    <li>
+        <div class="ui-avatar-s">
+            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+        </div>
+        <div class="ui-btn">PK</div>
     </li>
 </ul>
 ````

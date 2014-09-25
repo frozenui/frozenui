@@ -3,7 +3,7 @@
  */
 .ui-btn-group{
 	display: -webkit-box;
-	/*background-color: #f0f0f1;*/
+	background-color: #f0f0f1;
 	width: 100%;
 }
 .ui-btn-bottom{
@@ -18,7 +18,6 @@
 	line-height: 50px;
 	height: 48px;
 	-webkit-box-flex:1;
-	background-color: #fff;
 	text-align: center;
 	font-size: 16px;
 	border-right: 1px #c8c7cc solid;
@@ -27,6 +26,11 @@
 }
 .ui-btn-group button:active {
 	background: rgba(0,0,0,.1);
+}
+.ui-btn-bottom button:active {
+  opacity: .6;
+
+  
 }
 .ui-btn-group button:last-child{
 	border-right: none;
