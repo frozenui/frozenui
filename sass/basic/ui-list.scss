@@ -1,4 +1,4 @@
-.ui-list {
+	.ui-list {
 	background-color:#fff;
 }
 .ui-list li {
@@ -103,7 +103,6 @@
 	padding-left:15px;
 	margin-left:0px;
 }
-
 .ui-list-link li:active .ui-border-t,li.ui-list-item-link:active .ui-border-t {
 	background-image:none;
 	border-top:0px;
@@ -112,6 +111,7 @@
 	background-image:none;
 	border-top:0px;
 }
+
 
 /*功能列表*/
 .ui-list-function .ui-list-info {
