@@ -17,19 +17,15 @@
                    position: relative;
                    margin: 0;
                }
-            .ui-reddot-border:after{overflow: hidden;}
+            .ui-reddot-border:after{background-clip: padding-box;}
             .ui-icon{font-size:30px;}
             .ui-table{line-height: 40px;} 
             .ui-dialog{height:320px;}
             body{
                 -webkit-user-select: inherit;
             }
-            .ui-btn, .ui-btn-lg{
-            border-top-left-radius: 3px;
-              border-top-right-radius: 3px;
-              border-bottom-right-radius: 3px;
-              border-bottom-left-radius: 3px;
-              background-clip: padding-box;
+            .ui-btn-primary:active, .ui-btn-primary.active{
+                border-color: transparent;
             }
             
         </style>
