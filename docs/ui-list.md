@@ -7,12 +7,12 @@
 ````html
 
 <ul class="ui-list ui-list-text ui-border-tb">
-  <li class="ui-border-t ui-list-item-link">
-      标题标题标题标题标题标题标题标题标题标题标题
-  </li>
-  <li class="ui-border-t">
-      标题标题标题标题标题标题标题标题标题标题标题
-  </li>
+    <li class="ui-border-t ui-list-item-link">
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
+    </li>
+    <li class="ui-border-t">
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
+    </li>
 </ul>
 ````
   
@@ -21,10 +21,10 @@
 ````html
 <ul class="ui-list ui-list-text ui-border-tb">
     <li class="ui-border-t selected">
-        标题标题
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
     <li class="ui-border-t">
-        标题标题标题标题标题标题标题标题标题标题标题
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
 </ul>
  ````
@@ -33,10 +33,10 @@
 ````html      
 <ul class="ui-list ui-list-text list-cover ui-border-tb">
     <li class="ui-border-t active">
-        标题标题标题标题标题标题标题标题标题标题标题
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
     <li class="ui-border-t">
-        标题标题标题标题标题标题标题标题标题标题标题
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
 </ul>
       
@@ -47,10 +47,10 @@
 ````html
 <ul class="ui-list ui-list-text ui-list-link ui-border-tb">
     <li class="active ui-border-t">
-        标题标题标题标题标题标题标题标题标题标题标题
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
     <li class="ui-border-t">
-        标题标题标题标题标题标题标题标题标题标题标题
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
 </ul>
 ````
