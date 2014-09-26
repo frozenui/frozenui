@@ -103,7 +103,10 @@
 </ul>
 ````
 
+<<<<<<< HEAD
 ### 图文列表
+=======
+>>>>>>> cbdde2e6e99501e18ad183db8074a316182c096c
 ````html
 <ul class="ui-list ui-border-tb">
     <li class="ui-border-t active">
@@ -151,7 +154,10 @@
     </li>
 </ul>
 ````
+<<<<<<< HEAD
 
+=======
+>>>>>>> cbdde2e6e99501e18ad183db8074a316182c096c
 ### 功能列表
 ````html
 <ul class="ui-list ui-list-function ui-border-tb">

@@ -1,4 +1,4 @@
-.ui-list {
+	.ui-list {
 	background-color:#fff;
 }
 .ui-list li {
@@ -110,7 +110,9 @@
 	padding-left:15px;
 	margin-left:0px;
 }
+
 .ui-list-link li:active,li.ui-list-item-link:active,.ui-list-link li:active .ui-border-t,li.ui-list-item-link:active .ui-border-t,.ui-list-link li:active + li.ui-border-t,.ui-list-link li:active + .ui-border-t,li.ui-list-item-link:active + li.ui-border-t,li.ui-list-item-link:active + .ui-border-t{
+
 	background-image:none;
 	border-top-color:#f8f9fa;
 }
@@ -119,6 +121,7 @@
 		background-image:none;
 	}
 }
+
 /*功能列表*/
 .ui-list-function .ui-list-info {
 	padding-right:70px;
