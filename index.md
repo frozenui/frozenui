@@ -120,7 +120,7 @@ h3.alice-module-subtitle {
 seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'], function($, _, Popup) {
 
 
-    $.getJSON('../package.json', function(data) {
+    $.getJSON('package.json', function(data) {
         var alias;
             alias = data.widgets;
         var deps = _.pairs(alias);

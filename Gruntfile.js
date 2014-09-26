@@ -25,9 +25,9 @@ module.exports =function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'img/',
+                    cwd: 'img/<%=meta.destPath%>/',
                     src: ['**/*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
-                    dest: 'img/' // 优化后的图片保存位置
+                    dest: 'img/<%=meta.destPath%>/' // 优化后的图片保存位置
                 }]
             }
         },
@@ -35,12 +35,12 @@ module.exports =function(grunt) {
             //图片没修改的情况不用处理
             img:{
                 expand: true,
-                cwd: 'img/',
+                cwd: 'img/<%=meta.destPath%>/',
                 src: ['**/*'],
                 dest:'<%=meta.destPath%>/img/'
             },
 
-            imgzip:{
+            zipimg:{
                 expand: true,
                 cwd: '<%=meta.destPath%>/img/',
                 src: '*',
@@ -85,8 +85,8 @@ module.exports =function(grunt) {
                     port: 21000,
                     authKey: 'key'
                 },
-                src: '1.0.0',
-                dest: '/frozenui/1.0.0',
+                src: '<%=meta.destPath%>',
+                dest: '/frozenui/<%=meta.destPath%>',
                 exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
                 simple: true
             }
@@ -118,8 +118,6 @@ module.exports =function(grunt) {
             },
             nico:{
               command: [
-                    'svn up',
-                    'git pull origin master',
                     'nico build',
                     'nico server'
                 ].join('&&')   
@@ -138,9 +136,8 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-ftpush');
     grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
-    grunt.registerTask('test', ['sass','copy','shell:nico']);
-
-    grunt.registerTask('default', ['sass','cssmin','copy:css','compress']);
+    grunt.registerTask('default', ['sass','cssmin','imagemin','copy','compress']);
+    grunt.registerTask('docs',['sass','cssmin','copy','compress','shell:nico']);
     grunt.registerTask('ci',['ftpush','shell']);
 
 };

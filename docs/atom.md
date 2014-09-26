@@ -17,9 +17,6 @@
 
 
 ````html
-<style>
-.border-list li{width:100px;height:50px;margin-bottom:20px;text-align: center;line-height: 50px;}
-</style>
 <ul class="border-list">
 	<li class="ui-border-t">上边框</li>
 	<li class="ui-border-b">下边框</li>

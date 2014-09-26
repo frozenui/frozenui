@@ -15,3 +15,7 @@
 2. input的样式重置
 
 3. ui-icon-tag改成ui-tag
+
+4. ui-list-text的文字长度截断问题
+
+5. ui-btn 圆角bug

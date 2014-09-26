@@ -20,10 +20,12 @@
     text-shadow: 0 1px 0 rgba( 0, 0, 0 ,.1 );
     -webkit-box-sizing: border-box;
     border: 1px solid #c8c7cc;
+    background-clip: padding-box;
 }
 .ui-btn:active,.ui-btn.active{
     background: #f2f2f2;
     color: rgba(0,165,224,.5);
+    background-clip: padding-box;
 }
 .ui-btn:after{
     content: "";
@@ -39,28 +41,33 @@
     border-color: rgb( 11, 170, 228 );
     background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.49, rgb(31,186,243)), to(rgb(24,180,237)));
     color: #fff;
+    background-clip: padding-box;
 }
 .ui-btn-primary:active,.ui-btn-primary.active{
     background: #1ca7da;
     border-color: #1ca7da;
     color: rgba(255,255,255,.5);
+    background-clip: padding-box;
 }
 .ui-btn-danger{
     background-color: rgb(247,85,73);
     background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.49, rgb(254,89,77)), to(rgb(247,85,73)));
     color: #fff;
     border-color: rgb(244, 61, 48);
+    background-clip: padding-box;
 }
 .ui-btn-danger:active,.ui-btn-danger.active{
     background: #df5045;
     border-color: #df5045;
     color: rgba(255,255,255,.5);
+    background-clip: padding-box;
 }
 .ui-btn.disabled,.ui-btn.disabled:active,.ui-btn.disabled.active{
     border:1px solid #e9ebec;
     color: #ccc;
     background: #e9ebec;
     text-shadow: none;
+    background-clip: padding-box;
 }
 .ui-btn-lg{
     @extend .ui-btn;

@@ -74,7 +74,7 @@ select {
   font-weight: inherit; }
 
 button,
-html input[type="button"],
+input[type="button"],
 input[type="reset"],
 input[type="submit"],
 input[type="text"],
@@ -278,7 +278,8 @@ em {
   -webkit-border-radius: 50%;
   display: block;
   background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+  display: inline-block; }
   .ui-avatar-tiled span {
     width: 30px;
     height: 30px;
@@ -299,12 +300,13 @@ em {
     content: '';
     position: absolute;
     display: block;
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
     background-color: #f76249;
     border-radius: 5px;
     right: -3px;
-    top: -3px; }
+    top: -3px;
+    background-clip: padding-box; }
 
 /* 带白边的 */
 .ui-reddot-border:after {
@@ -335,6 +337,58 @@ em {
 .ui-badge-muted {
   background: #b6cae0; }
 
+.ui-icon {
+  display: inline-block;
+  width: 25px;
+  height: 0px;
+  position: relative;
+  overflow: visible; }
+
+.ui-icon:before {
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat 0px 0px;
+  background-size: 150px auto;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0px;
+  top: -14px; }
+
+.ui-icon-refresh {
+  width: 22px; }
+
+.ui-icon-refresh:before {
+  width: 22px;
+  height: 22px;
+  top: -11px; }
+
+.ui-icon-info:before {
+  background-position: 0 -50px; }
+
+.ui-icon-warn:before {
+  background-position: -50px 0;
+  top: -17px; }
+
+.ui-icon-praise:before {
+  background-position: 0 -25px; }
+
+.ui-icon-praise.active:before, .ui-icon-praise:active:before {
+  background-position: -25px -25px; }
+
+.ui-icon-praise-s:before {
+  background-position: -50px -25px; }
+
+.ui-icon-praise-s.active:before, .ui-icon-praise-s:active:before {
+  background-position: -75px -25px; }
+
+.ui-icon-success:before {
+  background-position: -100px 0; }
+
+.ui-icon-tips:before {
+  background-position: -25px 0;
+  top: -16px; }
+
 /**
  * 按钮
  */
@@ -356,11 +410,13 @@ em {
   color: #00a5e0;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
-  border: 1px solid #c8c7cc; }
+  border: 1px solid #c8c7cc;
+  background-clip: padding-box; }
 
 .ui-btn:active, .ui-btn-lg:active, .ui-btn.active, .active.ui-btn-lg {
   background: #f2f2f2;
-  color: rgba(0, 165, 224, 0.5); }
+  color: rgba(0, 165, 224, 0.5);
+  background-clip: padding-box; }
 
 .ui-btn:after, .ui-btn-lg:after {
   content: "";
@@ -374,29 +430,34 @@ em {
   background-color: #18b4ed;
   border-color: #0baae4;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.49, #1fbaf3), to(#18b4ed));
-  color: #fff; }
+  color: #fff;
+  background-clip: padding-box; }
 
 .ui-btn-primary:active, .ui-btn-primary.active {
   background: #1ca7da;
   border-color: #1ca7da;
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box; }
 
 .ui-btn-danger {
   background-color: #f75549;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.49, #fe594d), to(#f75549));
   color: #fff;
-  border-color: #f43d30; }
+  border-color: #f43d30;
+  background-clip: padding-box; }
 
 .ui-btn-danger:active, .ui-btn-danger.active {
   background: #df5045;
   border-color: #df5045;
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box; }
 
 .ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn.disabled:active, .disabled.ui-btn-lg:active, .ui-btn.disabled.active, .disabled.active.ui-btn-lg {
   border: 1px solid #e9ebec;
   color: #ccc;
   background: #e9ebec;
-  text-shadow: none; }
+  text-shadow: none;
+  background-clip: padding-box; }
 
 .ui-btn-lg {
   font-size: 18px;
@@ -518,13 +579,49 @@ em {
   color: #fff; }
 
 .ui-tips {
+  padding: 20px 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #808080; }
+
+.ui-tips i {
+  display: inline-block;
+  width: 23px;
+  height: 0px;
+  position: relative;
+  overflow: visible;
+  margin-right: 8px;
+  margin-left: 0px;
+  font-size: 20px; }
+
+.ui-tips i:before {
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -25px 0px;
+  background-size: 150px auto;
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 0px;
+  top: -16px; }
+
+.ui-tips-success i:before {
+  background-position: 0 -25px; }
+
+.ui-tips-warn i:before {
+  background-position: -50px 0; }
+
+.ui-tips-success {
+  color: #000; }
+
+.ui-poptips {
   width: 100%;
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 10; }
 
-.ui-tips .ui-tips-cnt {
+.ui-poptips .ui-poptips-cnt {
   margin: 0px 10px;
   background-color: rgba(0, 0, 0, 0.6);
   line-height: 40px;
@@ -536,36 +633,62 @@ em {
   border-bottom-right-radius: 3px;
   overflow: hidden; }
 
-.ui-tips-cnt-info i:before {
-  background-position: 0 -50px; }
-
-.ui-tips-cnt-success i:before {
-  background-position: -25px -50px; }
-
-.ui-tips-cnt-warn i:before {
-  background-position: -50px -50px; }
-
-.ui-tips-cnt i {
+.ui-poptips i {
+  display: inline-block;
+  width: 20px;
+  height: 0px;
+  position: relative;
+  overflow: visible;
   margin-right: 8px;
-  margin-left: 0px; }
-
-.ui-tips-cnt i:before {
-  top: -16px; }
-
-.ui-tips i {
+  margin-left: 0px;
   font-size: 20px; }
 
-.ui-tips-warn .ui-tips-cnt {
-  background-color: rgba(255, 242, 183, 0.95);
+.ui-poptips i:before {
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat 0px 0px;
+  background-size: 150px auto;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  top: -16px; }
+
+.ui-poptips-info i:before {
+  background-position: 0 -50px; }
+
+.ui-poptips-success i:before {
+  background-position: -25px -50px; }
+
+.ui-poptips-warn i:before {
+  background-position: -50px -50px; }
+
+.ui-tooltips {
+  width: 100%;
+  position: relative;
+  z-index: 10; }
+
+.ui-tooltips-cnt {
   margin: 0;
-  border-radius: none;
-  color: #000;
+  color: #00a5e0;
   line-height: 45px;
   height: 45px;
   text-align: left;
-  padding-left: 10px; }
+  padding-left: 10px;
+  font-size: 16px;
+  overflow: hidden; }
 
-.ui-tips-warn .ui-tips-cnt-cover:after {
+.ui-tooltips-warn .ui-tooltips-cnt {
+  background-color: rgba(255, 242, 183, 0.95);
+  color: #000; }
+
+.ui-tooltips-guide .ui-tooltips-cnt {
+  background-color: rgba(255, 255, 255, 0.95); }
+
+.ui-tooltips-state .ui-tooltips-cnt {
+  background-color: rgba(205, 242, 255, 0.95); }
+
+.ui-tooltips-cnt-cover:after {
   background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -75px 0;
   background-size: 150px auto;
   content: "";
@@ -576,6 +699,31 @@ em {
   right: 10px;
   top: 50%;
   margin-top: -8px; }
+
+.ui-tooltips-warn i {
+  display: inline-block;
+  width: 23px;
+  height: 0px;
+  position: relative;
+  overflow: visible;
+  margin-right: 8px; }
+
+.ui-tooltips-warn i:before {
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -50px 0px;
+  background-size: 150px auto;
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 0px;
+  top: -18px; }
+
+.ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -15px; }
 
 /**
  * 页面消息提示
@@ -597,17 +745,16 @@ em {
 
 .ui-tips-news:before {
   content: "";
+  width: 19px;
   height: 18px;
   overflow: hidden;
   display: block;
   position: absolute;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAkCAMAAADSK7iXAAAA5FBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9MSBpRAAAAS3RSTlMAG97tA0gP8PwMNgaf85nS+eQ/w3XbfpyELVHJ9rdyxhIVVHtLjYdCIdiitGC9Ca6lgV2x1ZbhwCdXPOo5WmbnJM+6HhhOqEWQKmm2hIS3AAABZ0lEQVR4Xo3U13KbUABF0Q2iXFDvsrolWe6Ja2rv5fz//2QmE+4AMkL7eb2eQ0ERh+Q/UN6zE4WUdtRUOWPekmUdCnK+SGokrHlR5anGFantk7CZriN2imqSnh9jWbDQpUeu2JXC92AZRF1tyeTdGmnmYNnAA5yKiUl1NpGmc7CM8GUAXKmLjau6NHlFmg11CbBQBxpKaq09MowLrYHvugGrzmPIsahfD8CrhFWkU2w5xko94IdiJIpZtfIZ6OnPfsa9qcJKtyXsUd/gp36VsKGOYaOTEraYenCn9X7mmGtgqzskv5iN9Bro6jdG/5s5O+yo9cKDpXGhpqTKOMfOXOMDPW0zM1EtyrC+BsCy3fqKrToykvsuzcIBQE0N0sXnkhl5ltEB2OjtcmfF0uSTZQBv6mZDvo4r1T+k2OlUPXaLGv+mZVlTc57Mb0sf/YR1VxQUDCUpLP8vv23Z3oKbgxiM+xxUQKa/fZ5Aq77KffcAAAAASUVORK5CYII=);
-  width: 19px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -100px -50px;
+  background-size: 150px auto;
   left: 25px;
   top: 9px;
-  z-index: 1;
-  background-size: 19px 18px;
-  -webkit-background-size: 19px 18px; }
+  z-index: 1; }
 
 .ui-tips-news:active {
   opacity: .7; }
@@ -715,13 +862,14 @@ em {
 /*文字列表*/
 .ui-list-text li {
   line-height: 20px;
-  padding: 12px 0px;
+  padding: 12px 25px 12px 0;
+  font-size: 16px; }
+
+.ui-list-text li p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width: 100%;
-  padding-right: 15px;
-  font-size: 16px; }
+  max-width: 100%; }
 
 .ui-list li:first-child {
   border: none;
@@ -798,20 +946,29 @@ em {
   right: 15px;
   margin-top: -15px; }
 
+/*列表checkbox*/
+.ui-list-checkbox .ui-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -13px; }
+
+.ui-list-checkbox li {
+  padding-left: 40px; }
+
 /*列表按压态*/
 .ui-list-link li:active, li.ui-list-item-link:active {
-  background: #f8f9fa;
+  background-color: #f8f9fa;
   padding-left: 15px;
   margin-left: 0px; }
 
-.ui-list-link li:active .ui-border-t, li.ui-list-item-link:active .ui-border-t {
+.ui-list-link li:active, li.ui-list-item-link:active, .ui-list-link li:active .ui-border-t, li.ui-list-item-link:active .ui-border-t, .ui-list-link li:active + li.ui-border-t, .ui-list-link li:active + .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
   background-image: none;
-  border-top: 0px; }
+  border-top-color: #f8f9fa; }
 
-.ui-list-link li:active + li .ui-border-t, .ui-list-link li:active + .ui-border-t, li.ui-list-item-link:active + li .ui-border-t, li.ui-list-item-link:active + .ui-border-t {
-  background-image: none;
-  border-top: 0px; }
-
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-list-link li:active, li.ui-list-item-link:active, .ui-list-link li:active .ui-border-t, li.ui-list-item-link:active .ui-border-t, .ui-list-link li:active + li.ui-border-t, .ui-list-link li:active + .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
+    background-image: none; } }
 /*功能列表*/
 .ui-list-function .ui-list-info {
   padding-right: 70px; }
@@ -955,58 +1112,6 @@ em {
   .ui-btn-group button:last-child:before {
     border-right: none;
     background-image: none; } }
-.ui-icon {
-  display: inline-block;
-  width: 25px;
-  height: 0px;
-  position: relative;
-  overflow: visible; }
-
-.ui-icon:before {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat 0px 0px;
-  background-size: 150px auto;
-  content: "";
-  display: block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  left: 0px;
-  top: -14px; }
-
-.ui-icon-refresh {
-  width: 22px; }
-
-.ui-icon-refresh:before {
-  width: 22px;
-  height: 22px;
-  top: -11px; }
-
-.ui-icon-info:before {
-  background-position: 0 -50px; }
-
-.ui-icon-warn:before {
-  background-position: -50px 0;
-  top: -17px; }
-
-.ui-icon-praise:before {
-  background-position: 0 -25px; }
-
-.ui-icon-praise.active:before, .ui-icon-praise:active:before {
-  background-position: -25px -25px; }
-
-.ui-icon-praise-s:before {
-  background-position: -50px -25px; }
-
-.ui-icon-praise-s.active:before, .ui-icon-praise-s:active:before {
-  background-position: -75px -25px; }
-
-.ui-icon-success:before {
-  background-position: -100px 0; }
-
-.ui-icon-tips:before {
-  background-position: -25px 0;
-  top: -16px; }
-
 .ui-tag, .ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-freelimit:before, .ui-tag-free:before, .ui-tag-hot:before, .ui-tag-new:before, .ui-tag-selected:after {
   display: block;
   background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon_tag.png?_bid=256);
@@ -1161,93 +1266,145 @@ em {
     -webkit-transform: rotate(360deg); } }
 .ui-form {
   background-color: #fff; }
+  .ui-form {
+    /* 表单命令项 */
+    /* 表单输入项 */
+    /* 表单展示项 */ }
+    .ui-form .ui-form-order {
+      background-color: #fff; }
+    .ui-form .ui-form-order:active {
+      background-color: #e5e6e7; }
+    .ui-form .ui-form-order a {
+      color: #00a5e0;
+      display: block;
+      height: 44px;
+      font-size: 16px;
+      line-height: 44px;
+      margin-left: 15px; }
+    .ui-form .ui-form-item {
+      height: 44px;
+      font-size: 16px;
+      line-height: 44px;
+      vertical-align: middle;
+      padding-right: 40px;
+      position: relative; }
+      .ui-form .ui-form-item {
+        /* 公用图标 */ }
+        .ui-form .ui-form-item label,
+        .ui-form .ui-form-item span {
+          width: 110px;
+          position: absolute;
+          text-align: center; }
+        .ui-form .ui-form-item label {
+          text-align: left;
+          padding-left: 15px;
+          box-sizing: border-box; }
+        .ui-form .ui-form-item input,
+        .ui-form .ui-form-item textarea {
+          width: 100%;
+          padding-left: 110px;
+          box-sizing: border-box; }
+        .ui-form .ui-form-item .ui-form-icon-close {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          right: 15px;
+          top: 14px;
+          background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png) no-repeat -78px -53px;
+          -webkit-background-size: 150px auto;
+          background-size: 150px auto;
+          z-index: 10; }
+    .ui-form ::-webkit-input-placeholder {
+      color: #a6a6a6; }
+    .ui-form .ui-form-textarea {
+      height: 65px; }
+    .ui-form .ui-form-textarea label {
+      vertical-align: top; }
+    .ui-form .ui-form-textarea textarea {
+      margin-top: 15px;
+      border: none; }
+    .ui-form .ui-form-textarea textarea:focus {
+      outline: none; }
+    .ui-form .ui-form-l span,
+    .ui-form .ui-form-r button {
+      color: #00a5e0;
+      text-align: center; }
+    .ui-form .ui-form-r .ui-form-icon-close {
+      right: 125px; }
+    .ui-form .ui-form-l input {
+      padding-left: 130px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .ui-form .ui-form-r {
+      padding-right: 0; }
+    .ui-form .ui-form-r input {
+      padding: 0 150px 0 15px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .ui-form .ui-form-r button {
+      width: 110px;
+      height: 44px;
+      font-size: 16px;
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .ui-form .ui-form-r button.disabled {
+      color: #a6a6a6; }
+    .ui-form .ui-form-r button:not(.disabled):active {
+      background-color: #e5e6e7; }
+    .ui-form .ui-form-pure input {
+      padding-left: 15px; }
+    .ui-form .ui-form-show label {
+      color: #808080; }
+    .ui-form .ui-form-show:active {
+      background-color: #e5e6e7; }
+    .ui-form .ui-form-item-link:after {
+      background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -75px 0;
+      background-size: 150px auto;
+      content: "";
+      display: block;
+      width: 8px;
+      height: 14px;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin-top: -8px; }
 
-/* 表单命令项 */
-.ui-form-order {
-  background-color: #fff; }
-
-.ui-form-order li:active {
-  background-color: #e5e6e7; }
-
-.ui-form-order a {
-  color: #00a5e0;
-  display: block;
-  height: 44px;
-  font-size: 16px;
-  line-height: 44px;
-  margin-left: 15px; }
-
-/* 表单输入项 */
-.ui-form .ui-item {
-  height: 44px;
-  font-size: 16px;
-  line-height: 44px;
-  vertical-align: middle;
-  padding-right: 15px;
-  position: relative; }
-
-.ui-form ::-webkit-input-placeholder {
-  color: #a6a6a6; }
-
-.ui-form .ui-item label {
-  width: 102px;
-  position: absolute;
-  text-align: center; }
-
-.ui-form .ui-item input,
-.ui-form .ui-item textarea {
-  width: 100%;
-  padding-left: 105px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.ui-form .textarea {
-  height: 65px; }
-
-.ui-form .textarea label {
-  vertical-align: top; }
-
-.ui-form .textarea textarea {
-  margin-top: 15px;
-  border: none; }
-
-.ui-form .textarea textarea:focus {
+.ui-checkbox input {
+  display: inline-block;
+  width: 25px;
+  height: 0px;
+  position: relative;
+  overflow: visible;
+  border: none;
+  background: none;
+  -webkit-appearance: none;
   outline: none; }
 
-.ui-form .left label,
-.ui-form .right button {
-  color: #00a5e0;
-  text-align: center; }
-
-.ui-form .left input {
-  padding-left: 117px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.ui-form .right {
-  padding-right: 0; }
-
-.ui-form .right input {
-  padding: 0 117px 0 15px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.ui-form .right button {
-  width: 102px;
-  height: 44px;
-  font-size: 16px;
+.ui-checkbox input:before {
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -50px -25px;
+  background-size: 150px auto;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  top: 0;
-  right: 0; }
+  left: 0px;
+  top: -14px; }
 
-.ui-form .right button.disabled {
-  color: #a6a6a6; }
+.ui-checkbox input:checked:before {
+  background-position: -25px -25px; }
 
-.ui-form .right button:not(.disabled):active {
-  background-color: #e5e6e7; }
+.ui-checkbox-s {
+  width: 19px; }
 
-.ui-form .pure input {
-  padding-left: 15px; }
+.ui-checkbox-s input:before {
+  width: 19px;
+  height: 19px;
+  background-position: -100px -25px; }
+
+.ui-checkbox-s input:checked:before {
+  background-position: -75px -25px; }
 
 /*QQ等级图标*/
 .ui-icon-qqlevel {

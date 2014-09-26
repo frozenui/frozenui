@@ -163,12 +163,13 @@
         content: '';
         position: absolute;
         display: block;
-        width: 9px;
-        height: 9px;
+        width: 8px;
+        height: 8px;
         background-color: #f76249;
         border-radius: 5px;
         right: -3px;
         top: -3px;
+        background-clip: padding-box;
     }
 }
  /* 带白边的 */

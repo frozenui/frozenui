@@ -178,7 +178,8 @@
   -webkit-border-radius: 50%;
   display: block;
   background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+  display: inline-block; }
   .ui-avatar-tiled span {
     width: 30px;
     height: 30px;
@@ -199,12 +200,13 @@
     content: '';
     position: absolute;
     display: block;
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
     background-color: #f76249;
     border-radius: 5px;
     right: -3px;
-    top: -3px; }
+    top: -3px;
+    background-clip: padding-box; }
 
 /* 带白边的 */
 .ui-reddot-border:after {
