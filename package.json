@@ -41,6 +41,8 @@
     "ui-notice",
     "ui-form",
     "ui-checkbox",
+    "ui-switch",
+    "ui-radio",
     "ui-tab",
     "ui-table",
     "ui-tips",

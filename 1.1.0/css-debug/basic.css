@@ -344,7 +344,7 @@ em {
   overflow: visible; }
 
 .ui-icon:before {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat 0px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat 0px 0px;
   background-size: 150px auto;
   content: "";
   display: block;
@@ -361,32 +361,6 @@ em {
   width: 22px;
   height: 22px;
   top: -11px; }
-
-.ui-icon-info:before {
-  background-position: 0 -50px; }
-
-.ui-icon-warn:before {
-  background-position: -50px 0;
-  top: -17px; }
-
-.ui-icon-praise:before {
-  background-position: 0 -25px; }
-
-.ui-icon-praise.active:before, .ui-icon-praise:active:before {
-  background-position: -25px -25px; }
-
-.ui-icon-praise-s:before {
-  background-position: -50px -25px; }
-
-.ui-icon-praise-s.active:before, .ui-icon-praise-s:active:before {
-  background-position: -75px -25px; }
-
-.ui-icon-success:before {
-  background-position: -100px 0; }
-
-.ui-icon-tips:before {
-  background-position: -25px 0;
-  top: -16px; }
 
 /**
  * 按钮
@@ -688,7 +662,7 @@ em {
   background-color: rgba(205, 242, 255, 0.95); }
 
 .ui-tooltips-cnt-cover:after {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -75px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -75px 0;
   background-size: 150px auto;
   content: "";
   display: block;
@@ -708,7 +682,7 @@ em {
   margin-right: 8px; }
 
 .ui-tooltips-warn i:before {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -50px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -50px 0px;
   background-size: 150px auto;
   content: "";
   display: block;
@@ -723,6 +697,9 @@ em {
   top: 50%;
   right: 15px;
   margin-top: -15px; }
+
+.ui-tooltips-state .ui-tooltips-cnt-cover:after {
+  background-position: -125px 0; }
 
 /**
  * 页面消息提示
@@ -1021,44 +998,24 @@ em {
   height: 20px;
   display: block;
   background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/loading_sprite.png?_bid=256);
-  background-size: auto 20px;
-  -webkit-animation: rotate 1s steps(12) infinite; }
+  background-size: auto 20px; }
 
 .ui-loading-bright {
   width: 37px;
   height: 37px;
   display: block;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/loading_sprite_white.png?_bid=256);
-  background-size: auto 37px;
-  -webkit-animation: rotate2 1s steps(12) infinite; }
+  background-size: auto 37px; }
 
 .ui-loading-wrap .ui-loading {
   margin: 10px; }
 
-@-webkit-keyframes rotate {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: -240px 0; } }
-@-webkit-keyframes rotate2 {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: -444px 0; } }
 /**
  * 底部操作区
  */
 .ui-btn-group {
   display: -webkit-box;
-  background-color: #f0f0f1;
   width: 100%; }
-
-.ui-btn-bottom {
-  position: fixed;
-  bottom: 0;
-  z-index: 10; }
 
 .ui-btn-group button {
   color: #00a5e0;
@@ -1082,6 +1039,17 @@ em {
 .ui-btn-group button:last-child {
   border-right: none;
   background-image: none; }
+
+.ui-btn-group.ui-btn-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10; }
+  .ui-btn-group.ui-btn-bottom button {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0)); }
+  .ui-btn-group.ui-btn-bottom button:active {
+    background-color: none;
+    color: rgba(0, 165, 224, 0.4); }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .ui-btn-group button {
@@ -1248,9 +1216,6 @@ em {
 .ui-notice-warn i {
   margin-bottom: 10px; }
 
-.ui-notice-warn i.ui-icon-refresh {
-  -webkit-animation: rotate3 1s infinite linear; }
-
 .ui-notice-btn {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -1259,12 +1224,6 @@ em {
 .ui-notice-btn button {
   margin: 10px 0px; }
 
-@-webkit-keyframes rotate3 {
-  0% {
-    -webkit-transform: rotate(0); }
-
-  100% {
-    -webkit-transform: rotate(360deg); } }
 .ui-form {
   background-color: #fff; }
   .ui-form {
@@ -1291,12 +1250,9 @@ em {
       position: relative; }
       .ui-form .ui-form-item {
         /* 公用图标 */ }
-        .ui-form .ui-form-item label,
-        .ui-form .ui-form-item span {
+        .ui-form .ui-form-item label {
           width: 110px;
           position: absolute;
-          text-align: center; }
-        .ui-form .ui-form-item label {
           text-align: left;
           padding-left: 15px;
           box-sizing: border-box; }
@@ -1311,7 +1267,7 @@ em {
           height: 15px;
           right: 15px;
           top: 14px;
-          background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png) no-repeat -78px -53px;
+          background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png) no-repeat -78px -53px;
           -webkit-background-size: 150px auto;
           background-size: 150px auto;
           z-index: 10; }
@@ -1326,38 +1282,38 @@ em {
       border: none; }
     .ui-form .ui-form-textarea textarea:focus {
       outline: none; }
-    .ui-form .ui-form-l span,
-    .ui-form .ui-form-r button {
+    .ui-form .ui-form-item-l label,
+    .ui-form .ui-form-item-r button {
       color: #00a5e0;
       text-align: center; }
-    .ui-form .ui-form-r .ui-form-icon-close {
+    .ui-form .ui-form-item-r .ui-form-icon-close {
       right: 125px; }
-    .ui-form .ui-form-l input {
+    .ui-form .ui-form-item-l input {
       padding-left: 130px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
-    .ui-form .ui-form-r {
+    .ui-form .ui-form-item-r {
       padding-right: 0; }
-    .ui-form .ui-form-r input {
+    .ui-form .ui-form-item-r input {
       padding: 0 150px 0 15px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
-    .ui-form .ui-form-r button {
+    .ui-form .ui-form-item-r button {
       width: 110px;
       height: 44px;
       font-size: 16px;
       position: absolute;
       top: 0;
       right: 0; }
-    .ui-form .ui-form-r button.disabled {
+    .ui-form .ui-form-item-r button.disabled {
       color: #a6a6a6; }
-    .ui-form .ui-form-r button:not(.disabled):active {
+    .ui-form .ui-form-item-r button:not(.disabled):active {
       background-color: #e5e6e7; }
-    .ui-form .ui-form-pure input {
+    .ui-form .ui-form-item-pure input {
       padding-left: 15px; }
-    .ui-form .ui-form-show label {
+    .ui-form .ui-form-item-show label {
       color: #808080; }
-    .ui-form .ui-form-show:active {
+    .ui-form .ui-form-item-link:active {
       background-color: #e5e6e7; }
     .ui-form .ui-form-item-link:after {
       background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -75px 0;
@@ -1406,3 +1362,136 @@ em {
 
 .ui-checkbox-s input:checked:before {
   background-position: -75px -25px; }
+
+.ui-form-switch > div {
+  height: 45px;
+  line-height: 45px;
+  position: relative; }
+
+.ui-switch {
+  position: absolute;
+  font-size: 16px;
+  right: 15px;
+  top: 6px;
+  width: 52px;
+  height: 32px;
+  line-height: 1em; }
+  .ui-switch input {
+    width: 52px;
+    height: 32px;
+    position: absolute;
+    z-index: 10;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    outline: none; }
+    .ui-switch input:before {
+      content: '';
+      width: 50px;
+      height: 30px;
+      border: 1px solid #dfdfdf;
+      background-color: #fdfdfd;
+      border-radius: 20px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      border-color: #dfdfdf;
+      box-shadow: #dfdfdf 0px 0px 0px 0px inset;
+      -webkit-transition: border 0.4s, box-shadow 0.4s;
+      transition: border 0.4s, box-shadow 0.4s;
+      -webkit-background-clip: content-box;
+      background-clip: content-box; }
+    .ui-switch input:checked:before {
+      border-color: #64bd63;
+      box-shadow: #64bd63 0px 0px 0px 16px inset;
+      background-color: #64bd63;
+      transition: border 0.4s, box-shadow 0.4s,  background-color 1.2s;
+      -webkit-transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+      background-color: #64bd63; }
+    .ui-switch input:checked:after {
+      left: 20px; }
+    .ui-switch input:after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 100%;
+      background-color: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      -webkit-transition: left 0.2s;
+      transition: left 0.2s; }
+
+.ui-radio {
+  line-height: 26px;
+  display: inline-block;
+  margin: 5px 0; }
+
+.ui-radio input {
+  display: inline-block;
+  width: 24px;
+  height: 0px;
+  position: relative;
+  overflow: visible;
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+  margin-right: 8px; }
+
+.ui-radio input:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #dfe0e1;
+  border-radius: 13px;
+  background-clip: padding-box;
+  position: absolute;
+  left: 0px;
+  top: -16px; }
+
+.ui-radio input:checked:after {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #1cb7f0;
+  border-radius: 7px;
+  position: absolute;
+  left: 6px;
+  top: -10px; }
+
+.ui-loading {
+  -webkit-animation: rotate 1s steps(12) infinite; }
+
+.ui-loading-bright {
+  -webkit-animation: rotate2 1s steps(12) infinite; }
+
+.ui-icon-refresh.loading {
+  -webkit-animation: rotate3 1s infinite linear; }
+
+@-webkit-keyframes rotate {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: -240px 0; } }
+@-webkit-keyframes rotate2 {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: -444px 0; } }
+@-webkit-keyframes rotate3 {
+  0% {
+    -webkit-transform: rotate(0); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }

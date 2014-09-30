@@ -21,7 +21,7 @@
 ````html
 <div class="ui-tooltips ui-tooltips-guide">
     <div class="ui-tooltips-cnt ui-border-b">
-        <i></i>新手引导、功能引导
+        新手引导、功能引导
         <button class="ui-btn">加入</button>
     </div>
 </div>
@@ -30,7 +30,7 @@
 ````html
 <div class="ui-tooltips ui-tooltips-state">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-cover ui-border-b">
-        <i></i>状态
+        状态
     </div>
 </div>
 ````
@@ -38,7 +38,7 @@
 ````html
 <div class="ui-tooltips ui-tooltips-state">
     <div class="ui-tooltips-cnt ui-border-b">
-        <i></i>状态
+        状态
         <button class="ui-btn ui-btn-primary">加入</button>
     </div>
 </div>

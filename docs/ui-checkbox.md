@@ -26,15 +26,14 @@
 
 ````html
 <p>
-	我已阅读并同意
+	
 	<label class="ui-checkbox ui-checkbox-s">
-   		<input type="checkbox" checked>
+   		我已阅读并同意<input type="checkbox" checked>
 	</label>
 </p>
 <p>
-	我已阅读并同意
 	<label class="ui-checkbox ui-checkbox-s">
-   		<input type="checkbox">
+   		我已阅读并同意<input type="checkbox">
 	</label>
 </p>
 

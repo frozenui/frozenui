@@ -48,9 +48,6 @@
 .ui-notice-warn i {
   margin-bottom: 10px; }
 
-.ui-notice-warn i.ui-icon-refresh {
-  -webkit-animation: rotate3 1s infinite linear; }
-
 .ui-notice-btn {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -58,10 +55,3 @@
 
 .ui-notice-btn button {
   margin: 10px 0px; }
-
-@-webkit-keyframes rotate3 {
-  0% {
-    -webkit-transform: rotate(0); }
-
-  100% {
-    -webkit-transform: rotate(360deg); } }

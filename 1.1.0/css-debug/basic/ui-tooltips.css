@@ -24,7 +24,7 @@
   background-color: rgba(205, 242, 255, 0.95); }
 
 .ui-tooltips-cnt-cover:after {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -75px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -75px 0;
   background-size: 150px auto;
   content: "";
   display: block;
@@ -44,7 +44,7 @@
   margin-right: 8px; }
 
 .ui-tooltips-warn i:before {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -50px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -50px 0px;
   background-size: 150px auto;
   content: "";
   display: block;
@@ -59,3 +59,6 @@
   top: 50%;
   right: 15px;
   margin-top: -15px; }
+
+.ui-tooltips-state .ui-tooltips-cnt-cover:after {
+  background-position: -125px 0; }

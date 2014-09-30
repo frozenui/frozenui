@@ -25,12 +25,9 @@
       position: relative; }
       .ui-form .ui-form-item {
         /* 公用图标 */ }
-        .ui-form .ui-form-item label,
-        .ui-form .ui-form-item span {
+        .ui-form .ui-form-item label {
           width: 110px;
           position: absolute;
-          text-align: center; }
-        .ui-form .ui-form-item label {
           text-align: left;
           padding-left: 15px;
           box-sizing: border-box; }
@@ -45,7 +42,7 @@
           height: 15px;
           right: 15px;
           top: 14px;
-          background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png) no-repeat -78px -53px;
+          background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png) no-repeat -78px -53px;
           -webkit-background-size: 150px auto;
           background-size: 150px auto;
           z-index: 10; }
@@ -60,38 +57,38 @@
       border: none; }
     .ui-form .ui-form-textarea textarea:focus {
       outline: none; }
-    .ui-form .ui-form-l span,
-    .ui-form .ui-form-r button {
+    .ui-form .ui-form-item-l label,
+    .ui-form .ui-form-item-r button {
       color: #00a5e0;
       text-align: center; }
-    .ui-form .ui-form-r .ui-form-icon-close {
+    .ui-form .ui-form-item-r .ui-form-icon-close {
       right: 125px; }
-    .ui-form .ui-form-l input {
+    .ui-form .ui-form-item-l input {
       padding-left: 130px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
-    .ui-form .ui-form-r {
+    .ui-form .ui-form-item-r {
       padding-right: 0; }
-    .ui-form .ui-form-r input {
+    .ui-form .ui-form-item-r input {
       padding: 0 150px 0 15px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
-    .ui-form .ui-form-r button {
+    .ui-form .ui-form-item-r button {
       width: 110px;
       height: 44px;
       font-size: 16px;
       position: absolute;
       top: 0;
       right: 0; }
-    .ui-form .ui-form-r button.disabled {
+    .ui-form .ui-form-item-r button.disabled {
       color: #a6a6a6; }
-    .ui-form .ui-form-r button:not(.disabled):active {
+    .ui-form .ui-form-item-r button:not(.disabled):active {
       background-color: #e5e6e7; }
-    .ui-form .ui-form-pure input {
+    .ui-form .ui-form-item-pure input {
       padding-left: 15px; }
-    .ui-form .ui-form-show label {
+    .ui-form .ui-form-item-show label {
       color: #808080; }
-    .ui-form .ui-form-show:active {
+    .ui-form .ui-form-item-link:active {
       background-color: #e5e6e7; }
     .ui-form .ui-form-item-link:after {
       background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -75px 0;
