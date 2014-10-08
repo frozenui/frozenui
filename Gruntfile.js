@@ -48,8 +48,8 @@ module.exports =function(grunt) {
                 filter: 'isFile'
             },
             css:{
-                src: '<%=meta.destPath%>/css/basic.css',
-                dest:'<%=meta.zipPath%>/css/basic.css'
+                src: '<%=meta.destPath%>/css/frozen.css',
+                dest:'<%=meta.zipPath%>/css/frozen.css'
             }
         },
         compress: {
