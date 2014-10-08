@@ -16,7 +16,21 @@
 </ul>
 ````
   
-### 带选中态
+###  文字通栏列表
+
+````html
+<ul class="ui-list ui-list-text ui-list-cover ui-border-tb">
+    <li class="ui-border-t">
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
+    </li>
+    <li class="ui-border-t">
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
+    </li>
+</ul>
+ ````
+ 
+
+###  带选中态
 
 ````html
 <ul class="ui-list ui-list-text ui-border-tb">
@@ -28,25 +42,12 @@
     </li>
 </ul>
  ````
-### 文字通栏列表
 
-````html      
-<ul class="ui-list ui-list-text list-cover ui-border-tb">
-    <li class="ui-border-t active">
-        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
-    </li>
-    <li class="ui-border-t">
-        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
-    </li>
-</ul>
-      
-  ````
-  
 ### 文字连接列表
 
 ````html
 <ul class="ui-list ui-list-text ui-list-link ui-border-tb">
-    <li class="active ui-border-t">
+    <li class="ui-border-t">
         <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
     <li class="ui-border-t">
@@ -55,11 +56,11 @@
 </ul>
 ````
 
-### 图文普通列表
+### 圆图文列表
      
 ````html
 <ul class="ui-list ui-border-tb">  
-    <li class="active">
+    <li>
         <div class="ui-list-thumb ui-avatar-s">
            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
         </div>
@@ -84,7 +85,7 @@
 
 ````html
 <ul class="ui-list ui-border-tb">
-    <li class="active">
+    <li>
         <div class="ui-list-thumb-s">
            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?56*56)"></span>
         </div>
@@ -103,13 +104,11 @@
 </ul>
 ````
 
-<<<<<<< HEAD
 ### 图文列表
-=======
->>>>>>> cbdde2e6e99501e18ad183db8074a316182c096c
+
 ````html
 <ul class="ui-list ui-border-tb">
-    <li class="ui-border-t active">
+    <li class="ui-border-t">
         <div class="ui-list-thumb">
            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
         </div>
@@ -143,7 +142,7 @@
             <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
         </div>
     </li>
-    <li class="ui-border-t active">
+    <li class="ui-border-t">
         <div class="ui-list-thumb">
            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
         </div>
@@ -154,10 +153,7 @@
     </li>
 </ul>
 ````
-<<<<<<< HEAD
 
-=======
->>>>>>> cbdde2e6e99501e18ad183db8074a316182c096c
 ### 功能列表
 ````html
 <ul class="ui-list ui-list-function ui-border-tb">
