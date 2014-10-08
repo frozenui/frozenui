@@ -1234,32 +1234,25 @@ em {
       background-color: #fff; }
     .ui-form .ui-form-order:active {
       background-color: #e5e6e7; }
-    .ui-form .ui-form-order a {
-      color: #00a5e0;
-      display: block;
-      height: 44px;
-      font-size: 16px;
-      line-height: 44px;
-      margin-left: 15px; }
     .ui-form .ui-form-item {
       height: 44px;
       font-size: 16px;
       line-height: 44px;
       vertical-align: middle;
       padding-right: 40px;
-      position: relative; }
+      position: relative;
+      padding-left: 15px; }
       .ui-form .ui-form-item {
         /* 公用图标 */ }
         .ui-form .ui-form-item label {
-          width: 110px;
+          width: 95px;
           position: absolute;
           text-align: left;
-          padding-left: 15px;
           box-sizing: border-box; }
         .ui-form .ui-form-item input,
         .ui-form .ui-form-item textarea {
           width: 100%;
-          padding-left: 110px;
+          padding-left: 95px;
           box-sizing: border-box; }
         .ui-form .ui-form-item .ui-form-icon-close {
           position: absolute;
@@ -1273,14 +1266,14 @@ em {
           z-index: 10; }
     .ui-form ::-webkit-input-placeholder {
       color: #a6a6a6; }
-    .ui-form .ui-form-textarea {
+    .ui-form .ui-form-item-textarea {
       height: 65px; }
-    .ui-form .ui-form-textarea label {
+    .ui-form .ui-form-item-textarea label {
       vertical-align: top; }
-    .ui-form .ui-form-textarea textarea {
+    .ui-form .ui-form-item-textarea textarea {
       margin-top: 15px;
       border: none; }
-    .ui-form .ui-form-textarea textarea:focus {
+    .ui-form .ui-form-item-textarea textarea:focus {
       outline: none; }
     .ui-form .ui-form-item-l label,
     .ui-form .ui-form-item-r button {
@@ -1289,13 +1282,13 @@ em {
     .ui-form .ui-form-item-r .ui-form-icon-close {
       right: 125px; }
     .ui-form .ui-form-item-l input {
-      padding-left: 130px;
+      padding-left: 115px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
     .ui-form .ui-form-item-r {
       padding-right: 0; }
     .ui-form .ui-form-item-r input {
-      padding: 0 150px 0 15px;
+      padding: 0 150px 0 0;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
     .ui-form .ui-form-item-r button {
@@ -1310,7 +1303,7 @@ em {
     .ui-form .ui-form-item-r button:not(.disabled):active {
       background-color: #e5e6e7; }
     .ui-form .ui-form-item-pure input {
-      padding-left: 15px; }
+      padding-left: 0; }
     .ui-form .ui-form-item-show label {
       color: #808080; }
     .ui-form .ui-form-item-link:active {

@@ -12,14 +12,6 @@
 		.ui-form-order:active {
 			background-color: #e5e6e7;
 		}
-		.ui-form-order a {
-			color: #00a5e0;
-			display: block;
-			height: 44px;
-			font-size: 16px;
-			line-height: 44px;
-			margin-left: 15px;
-		}
 
 		/* 表单输入项 */
 		.ui-form-item {
@@ -29,20 +21,20 @@
 			vertical-align: middle;
 			padding-right: 40px;
 			position: relative;
+			padding-left: 15px;
 
 			& {
 				label{
-					width: 110px;
+					width: 95px;
 					position: absolute;
 					text-align: left;
-					padding-left: 15px;
 					box-sizing: border-box;
 				}
 
 				input,
 				textarea {
 					width: 100%;
-					padding-left: 110px;
+					padding-left: 95px;
 					box-sizing: border-box;
 				}
 
@@ -65,20 +57,20 @@
 			color: #a6a6a6;
 		}
 
-		.ui-form-textarea {
+		.ui-form-item-textarea {
 			height: 65px;
 		}
 
-		.ui-form-textarea label {
+		.ui-form-item-textarea label {
 			vertical-align: top;
 		}
 
-		.ui-form-textarea textarea {
+		.ui-form-item-textarea textarea {
 			margin-top: 15px;
 			border: none;
 		}
 
-		.ui-form-textarea textarea:focus {
+		.ui-form-item-textarea textarea:focus {
 			outline: none;
 		}
 
@@ -93,7 +85,7 @@
 		}
 
 		.ui-form-item-l input {
-			padding-left: 130px;
+			padding-left: 115px;
 			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 		}
@@ -103,7 +95,7 @@
 		}
 
 		.ui-form-item-r input {
-			padding: 0 150px 0 15px;
+			padding: 0 150px 0 0;
 			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 		}
@@ -125,7 +117,7 @@
 		}
 
 		.ui-form-item-pure input {
-			padding-left: 15px;
+			padding-left: 0;
 		}
 
 

@@ -31,7 +31,6 @@
   "main": "Gruntfile.js",
   "widgets": [
     "atom",
-    "ui-form",
     "ui-btn",
     "ui-btn-lg",
     "ui-btn-group",
