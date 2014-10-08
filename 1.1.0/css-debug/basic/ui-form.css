@@ -35,7 +35,7 @@
           height: 15px;
           right: 15px;
           top: 14px;
-          background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png) no-repeat -78px -53px;
+          background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -78px -53px;
           -webkit-background-size: 150px auto;
           background-size: 150px auto;
           z-index: 10; }
@@ -84,7 +84,7 @@
     .ui-form .ui-form-item-link:active {
       background-color: #e5e6e7; }
     .ui-form .ui-form-item-link:after {
-      background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon.png?_bid=256) no-repeat -75px 0;
+      background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -75px 0;
       background-size: 150px auto;
       content: "";
       display: block;
