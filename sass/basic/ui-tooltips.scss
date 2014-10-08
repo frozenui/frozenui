@@ -24,7 +24,7 @@
 .ui-tooltips-state .ui-tooltips-cnt{
     background-color: rgba( 205, 242, 255 ,.95);
 }
-.ui-tooltips-cnt-cover:after{
+.ui-tooltips-cnt-link:after{
     background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -75px 0;
     background-size: 150px auto;
     content: "";
@@ -61,6 +61,6 @@
     right: 15px;
     margin-top: -15px;
 }
-.ui-tooltips-state .ui-tooltips-cnt-cover:after{
+.ui-tooltips-state .ui-tooltips-cnt-link:after{
     background-position: -125px 0;
 }
