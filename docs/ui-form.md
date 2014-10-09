@@ -7,13 +7,13 @@
 ````html
 <div class="ui-form ui-border-t">
 	<form action="#" >
-		<div class="ui-form-item ui-border-b">
+		<div class="ui-form-item ui-form-item-order ui-border-b">
 			<a href="#">清空消息列表</a>
 		</div>
-		<div class="ui-form-item ui-border-b">
+		<div class="ui-form-item ui-form-item-order ui-border-b">
 			<a href="#">清空所有聊天记录</a>
 		</div>
-		<div class="ui-form-item ui-border-b">
+		<div class="ui-form-item ui-form-item-order ui-border-b">
 			<a href="#">清空缓存数据</a>
 		</div>
 	</form>

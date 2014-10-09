@@ -1,6 +1,6 @@
-.ui-form-switch > div {
-  height: 45px;
-  line-height: 45px;
+.ui-form-item-switch {
+  height: 44px;
+  line-height: 44px;
   position: relative; }
 
 .ui-switch {
@@ -49,13 +49,13 @@
       -webkit-transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
       background-color: #64bd63; }
     .ui-switch input:checked:after {
-      left: 20px; }
+      left: 21px; }
     .ui-switch input:after {
       content: '';
       width: 30px;
       height: 30px;
       position: absolute;
-      top: 0;
+      top: 1px;
       left: 0;
       border-radius: 100%;
       background-color: #fff;

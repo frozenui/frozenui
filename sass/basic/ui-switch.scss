@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-.ui-form-switch > div{
-    height: 45px;
-    line-height: 45px;
+.ui-form-item-switch{
+    height: 44px;
+    line-height: 44px;
     position: relative;
 }  
 .ui-switch {
@@ -66,7 +66,7 @@
                                     background-color: rgb(100, 189, 99);
             }
             &:after{
-                left: 20px;
+                left: 21px;
             }
                  
         } 
@@ -75,7 +75,8 @@
             width: 30px;
             height: 30px;
             position: absolute;
-            top: 0; left: 0;
+            top: 1px;
+            left: 0;
             border-radius: 100%;
             background-color: #fff;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
