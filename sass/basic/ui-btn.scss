@@ -22,7 +22,7 @@
     border: 1px solid #c8c7cc;
     background-clip: padding-box;
 }
-.ui-btn:active,.ui-btn.active{
+.ui-btn:not(.disabled):active,.ui-btn.active{
     background: #f2f2f2;
     color: rgba(0,165,224,.5);
     background-clip: padding-box;
@@ -43,7 +43,7 @@
     color: #fff;
     background-clip: padding-box;
 }
-.ui-btn-primary:active,.ui-btn-primary.active{
+.ui-btn-primary:not(.disabled):active,.ui-btn-primary.active{
     background: #1ca7da;
     border-color: #1ca7da;
     color: rgba(255,255,255,.5);
@@ -56,13 +56,13 @@
     border-color: rgb(244, 61, 48);
     background-clip: padding-box;
 }
-.ui-btn-danger:active,.ui-btn-danger.active{
+.ui-btn-danger:not(.disabled):active,.ui-btn-danger.active{
     background: #df5045;
     border-color: #df5045;
     color: rgba(255,255,255,.5);
     background-clip: padding-box;
 }
-.ui-btn.disabled,.ui-btn.disabled:active,.ui-btn.disabled.active{
+.ui-btn.disabled{
     border:1px solid #e9ebec;
     color: #ccc;
     background: #e9ebec;

@@ -386,7 +386,7 @@ em {
   border: 1px solid #c8c7cc;
   background-clip: padding-box; }
 
-.ui-btn:active, .ui-btn-lg:active, .ui-btn.active, .active.ui-btn-lg {
+.ui-btn:not(.disabled):active, .ui-btn-lg:not(.disabled):active, .ui-btn.active, .active.ui-btn-lg {
   background: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
   background-clip: padding-box; }
@@ -406,7 +406,7 @@ em {
   color: #fff;
   background-clip: padding-box; }
 
-.ui-btn-primary:active, .ui-btn-primary.active {
+.ui-btn-primary:not(.disabled):active, .ui-btn-primary.active {
   background: #1ca7da;
   border-color: #1ca7da;
   color: rgba(255, 255, 255, 0.5);
@@ -419,13 +419,13 @@ em {
   border-color: #f43d30;
   background-clip: padding-box; }
 
-.ui-btn-danger:active, .ui-btn-danger.active {
+.ui-btn-danger:not(.disabled):active, .ui-btn-danger.active {
   background: #df5045;
   border-color: #df5045;
   color: rgba(255, 255, 255, 0.5);
   background-clip: padding-box; }
 
-.ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn.disabled:active, .disabled.ui-btn-lg:active, .ui-btn.disabled.active, .disabled.active.ui-btn-lg {
+.ui-btn.disabled, .disabled.ui-btn-lg {
   border: 1px solid #e9ebec;
   color: #ccc;
   background: #e9ebec;
