@@ -51,13 +51,11 @@
           alias: {
             
             "$": "jquery/jquery/2.1.0/jquery.js",
-            "sticky":"arale/sticky/1.3.1/sticky",
-            "side":"http://frozenui.github.io/baseui/static/side"
+            "sticky":"arale/sticky/1.3.1/sticky"
           }
         })
-        seajs.use(['sticky', 'side'], function(Sticky, side) {
+        seajs.use(['sticky'], function(Sticky) {
             Sticky('.side-area', 20);
-            side.init();
         });
         </script>
     </head>

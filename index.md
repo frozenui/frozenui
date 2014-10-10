@@ -121,8 +121,7 @@ seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'
 
 
     $.getJSON('package.json', function(data) {
-        var alias;
-            alias = data.widgets;
+        
         var deps = $('.side-area li[data-id]');
         _.each(deps, function(dep) {
             var moduleNode = $($('#alice-module').html());
@@ -170,7 +169,7 @@ seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'
                 }
             });
         });
-        seajs.use('side', function(side) {
+        seajs.use('static/side', function(side) {
             side.init();        
         });        
     });
