@@ -71,16 +71,15 @@ select {
   font-size: inherit;
   font-weight: inherit; }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-input[type="text"],
-input[type="password"] {
+button, input {
   border: none;
   background: none;
   -webkit-appearance: none;
   outline: none; }
+
+button:focus, input:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent; }
 
 a {
   -webkit-touch-callout: none;

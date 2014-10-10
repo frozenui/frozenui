@@ -72,16 +72,15 @@ select {
   font-size: inherit;
   font-weight: inherit; }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-input[type="text"],
-input[type="password"] {
+button, input {
   border: none;
   background: none;
   -webkit-appearance: none;
   outline: none; }
+
+button:focus, input:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent; }
 
 a {
   -webkit-touch-callout: none;
@@ -336,23 +335,19 @@ em {
 .ui-badge-muted {
   background: #b6cae0; }
 
-.ui-icon {
+.ui-icon, .ui-icon-refresh, .ui-icon-close, .ui-icon-search {
   display: inline-block;
-  width: 25px;
   height: 0px;
   position: relative;
   overflow: visible; }
 
-.ui-icon:before {
+.ui-icon:before, .ui-icon-refresh:before, .ui-icon-close:before, .ui-icon-search:before {
   background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat 0px 0px;
   background-size: 150px auto;
   content: "";
   display: block;
-  width: 25px;
-  height: 25px;
   position: absolute;
-  left: 0px;
-  top: -14px; }
+  left: 0px; }
 
 .ui-icon-refresh {
   width: 22px; }
@@ -361,6 +356,30 @@ em {
   width: 22px;
   height: 22px;
   top: -11px; }
+
+.ui-icon-close {
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.ui-icon-close:before {
+  background-position: -75px -50px;
+  width: 15px;
+  height: 15px;
+  margin: 8px;
+  position: static; }
+
+.ui-icon-search {
+  width: 16px;
+  margin: 4px; }
+
+.ui-icon-search:before {
+  width: 16px;
+  height: 16px;
+  background-position: -125px -54px;
+  top: -7px; }
 
 /**
  * 按钮
@@ -1142,6 +1161,9 @@ em {
   background-color: #fff; }
   .ui-form ::-webkit-input-placeholder {
     color: #a6a6a6; }
+  .ui-form .ui-icon-close {
+    top: 7px;
+    right: 7px; }
 
 .ui-form-item-order:active {
   background-color: #e5e6e7; }
@@ -1154,8 +1176,7 @@ em {
   vertical-align: middle;
   padding-right: 40px;
   position: relative;
-  padding-left: 15px;
-  /* 公用图标 */ }
+  padding-left: 15px; }
   .ui-form-item label {
     width: 95px;
     position: absolute;
@@ -1166,16 +1187,6 @@ em {
     width: 100%;
     padding-left: 95px;
     box-sizing: border-box; }
-  .ui-form-item .ui-form-icon-close {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    right: 15px;
-    top: 14px;
-    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -78px -53px;
-    -webkit-background-size: 150px auto;
-    background-size: 150px auto;
-    z-index: 10; }
 
 .ui-form-item-textarea {
   height: 65px; }
@@ -1387,6 +1398,46 @@ em {
   position: absolute;
   left: 6px;
   top: -10px; }
+
+.ui-searchbox-wrap {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background: #f8f9fa; }
+  .ui-searchbox-wrap button {
+    margin-right: 10px; }
+  .ui-searchbox-wrap .ui-searchbox-cancel {
+    color: #808080;
+    font-size: 16px;
+    padding: 4px 8px; }
+
+.ui-searchbox {
+  border-radius: 4px;
+  height: 30px;
+  margin: 7px 10px;
+  background: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  padding-left: 4px;
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  color: #808080;
+  width: 100%; }
+  .ui-searchbox input {
+    -webkit-appearance: none;
+    font-size: 14px;
+    color: #000;
+    border: none;
+    width: 100%;
+    padding: 7px 0; }
+  .ui-searchbox.focus {
+    -webkit-box-pack: start; }
+
+.ui-searchbox-input {
+  -webkit-box-flex: 1; }
 
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }

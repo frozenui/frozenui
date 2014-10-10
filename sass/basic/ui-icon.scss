@@ -1,6 +1,5 @@
 .ui-icon {
 	display: inline-block;
-	width: 25px;
 	height:0px;
 	position: relative;
 	overflow: visible;
@@ -10,13 +9,11 @@
 	background-size: 150px auto;
 	content:"";
 	display: block;
-	width: 25px;
-	height:25px;
 	position: absolute;
-	left:0px;
-	top:-14px;
+	left:0px; 
 }
 .ui-icon-refresh{
+	@extend .ui-icon;
     width: 22px;
 }
 .ui-icon-refresh:before{
@@ -25,3 +22,30 @@
     top:-11px;
 }
 
+.ui-icon-close {
+	@extend .ui-icon;
+	width:31px;
+	height: 31px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+}
+.ui-icon-close:before{
+	background-position: -75px -50px;
+	width: 15px;
+	height: 15px;
+	margin: 8px;
+	position: static;
+}
+.ui-icon-search{
+    @extend .ui-icon;
+    width: 16px;
+    margin: 4px;
+}
+.ui-icon-search:before{
+	width: 16px;
+	height: 16px;
+	background-position: -125px -54px;
+	top: -7px;
+}

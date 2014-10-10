@@ -28,7 +28,7 @@
 		<div class="ui-form-item ui-border-b">
 			<label for="#">身份证号码</label>
 			<input type="text" placeholder="18位身份证号码">
-			<a href="#" class="ui-form-icon-close"></a>
+			<a href="#" class="ui-icon-close"></a>
 		</div>
 		<div class="ui-form-item ui-form-item-textarea ui-border-b">
 			<label for="#">详细地址</label>

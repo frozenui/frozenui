@@ -78,18 +78,16 @@ select {
     font-weight: inherit;
 }
 
-button,
-input[type="button"], 
-input[type="reset"],
-input[type="submit"],
-input[type="text"],
-input[type="password"]{
+button,input{
     border: none;
     background: none;
     -webkit-appearance: none;
     outline: none;
 }
-
+button:focus,input:focus{
+    outline:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
 a {
     -webkit-touch-callout:none;
     text-decoration: none;

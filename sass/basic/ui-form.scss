@@ -6,6 +6,10 @@
 	::-webkit-input-placeholder {
 		color: #a6a6a6;
 	}
+	.ui-icon-close{
+    	top: 7px;
+    	right: 7px;
+	}
 }
 
 .ui-form-item-order:active {
@@ -34,18 +38,6 @@
 		width: 100%;
 		padding-left: 95px;
 		box-sizing: border-box;
-	}
-
-	/* 公用图标 */
-	.ui-form-icon-close {
-		position: absolute;
-		width: 15px;
-		height: 15px;
-		right: 15px; top: 14px;
-		background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -78px -53px;
-		-webkit-background-size: 150px auto;
-		background-size: 150px auto;
-		z-index: 10;
 	}
 
 }
