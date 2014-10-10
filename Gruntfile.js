@@ -136,7 +136,7 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-ftpush');
     grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
-    grunt.registerTask('default', ['sass','cssmin','imagemin','copy','compress','ftpush','shell']);
+    grunt.registerTask('default', ['sass','cssmin','imagemin','copy','compress','ftpush']);
     grunt.registerTask('docs',['sass','cssmin','copy','compress','shell:nico']);
 
 };

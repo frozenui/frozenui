@@ -123,18 +123,18 @@ seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'
     $.getJSON('package.json', function(data) {
         var alias;
             alias = data.widgets;
-        var deps = _.pairs(alias);
+        var deps = $('.side-area li[data-id]');
         _.each(deps, function(dep) {
             var moduleNode = $($('#alice-module').html());
             moduleNode.find('.alice-module-title a')
-                .attr('href', 'docs/' + dep[1])
-                .attr('id', 'modules-' + dep[1])
-                .html(dep[1]);
+                .attr('href', 'docs/' + $(dep).data('id'))
+                .attr('id', 'modules-' + $(dep).data('id'))
+                .html($(dep).data('id'));
             moduleNode.appendTo('.alice-modules');
             var list = substractTitle(moduleNode.find('h2'));
 
             $.ajax({
-                url: 'docs/' + dep[1],
+                url: 'docs/' + $(dep).data('id'),
                 dataType: 'html',
                 success: function(data) {
                     data = $(data);
@@ -176,12 +176,11 @@ seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'
     });
     
     function substractTitle(item) {
-        $('.side-loading').remove();
         item = item.find('a');
         var list = $($('#list-template').html());
         list.find('a').html(item.html() + list.find('a').html());
         list.find('a').attr('href', '#' + item.attr('id'));
-        list.appendTo('.side-area ul');
+        //list.appendTo('.side-area ul');
         return list;
     }
 
