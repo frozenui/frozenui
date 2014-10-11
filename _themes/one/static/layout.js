@@ -11,9 +11,9 @@ $(function() {
           '<ol class="main-nav">'+
               '<li><a href="/baseui">CSS</a></li>'+
               '<li><a href="/frozenjs">JavaScript</a></li>'+
-              '<li><a href="case.html">Animation Case</a></li>'+
-              '<li><a href="start.html">Getting started</a></li>'+
-              '<li><a href="about.html">About</a></li>'+
+              '<li><a href="/case.html">Animation Case</a></li>'+
+              '<li><a href="/start.html">Getting started</a></li>'+
+              '<li><a href="/about.html">About</a></li>'+
           '</ol>'+
       '</div>'+
     '</div>';
