@@ -86,7 +86,7 @@
 </html>
 ````
 
-你会看到一个[好友选择的页面](http://frozenui.github.io/test/ui-select-user.html)，引用了[http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256 
+你会看到一个[demo页面](http://frozenui.github.io/test/demo.html)，引用了[http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256 
 ](http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256 
 )，这是打包了除了会员相关的基础css文件，使用手Q离线包需要加上bid的参数。
 
