@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <title>FrozenUI - ui-icon-tag</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" content="专注于移动web的UI框架，基于手机QQ规范" />
+        <meta name="Keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js" />
+        <meta name="author" content="fayching" />
+        <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css-debug/global.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/style.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
+        <style>
+            .ui-btn-group.ui-btn-bottom, .ui-dialog,.ui-poptips,.ui-notice{
+               position: relative;
+               margin: 0;
+            }
+            .ui-poptips{margin:10px 0;}
+            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+               position: relative;
+               margin: 0;
+           }
+            .ui-icon{font-size:30px;}
+            .ui-table{line-height: 40px;} 
+            .ui-dialog{height:320px;}
+            body{
+                -webkit-user-select: inherit;
+            }
+            .border-list li{width:100px;height:50px;margin-bottom:20px;text-align: center;line-height: 50px;}
+      .side-area ul li{padding-left: 20px;}
+      .nav{display: none}
+      .side-highlight .nav{display: block}
+      .side-area .side-highlight{border: none}
+      .side-area .side-highlight a{background: none}
+      .side-area .side-highlight > a{border-right: 1px solid #025775;}
+        </style>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+        <script src="http://frozenui.github.io/static/jquery.js"></script>
+        
+        <script>
+        var $ = jQuery;
+        seajs.config({
+          base: "http://frozenui.github.io/static/sea-modules/",
+          alias: {
+            
+            "$": "jquery/jquery/2.1.0/jquery.js",
+            "sticky":"arale/sticky/1.3.1/sticky"
+          }
+        })
+        seajs.use(['sticky'], function(Sticky) {
+            Sticky('.side-area', 20);
+        });
+        </script>
+    </head>
+    <body>
+        <div id="body-wrapper">
+            <div class="head-area">
+
+            </div>
+            <div class="main-area">
+                <div class="side-area">
+                    <ul>
+                      <li  data-id="atom"><a href="#modules-atom">辅助类 atom</a></li>
+                      <li><a href="#modules-ui-btn">按钮 button</a>
+                        <ul class="nav">
+                          <li data-id="ui-btn"><a href="#modules-ui-btn">ui-btn</a></li>
+                          <li data-id="ui-btn-lg"><a href="#modules-ui-btn-lg" >ui-btn-lg</a></li>
+                          <li data-id="ui-btn-group"><a href="#modules-ui-btn-group" >ui-btn-group</a></li>
+                        </ul>
+                      </li>
+                      <li  data-id="ui-searchbox"><a href="#modules-ui-searchbox">搜索框 searchbox</a></li>
+                      <li data-id="ui-tab"><a href="#modules-ui-tab">选项卡 tab</a></li>
+                      <li data-id="ui-list"><a href="#modules-ui-list" >列表 list</a></li>
+                      <li><a href="#modules-ui-form">表单 form</a>
+                        <ul class="nav">
+                          <li data-id="ui-form"><a href="#modules-ui-form" >ui-form</a></li>
+                          <li data-id="ui-checkbox"><a href="#modules-ui-checkbox" >ui-checkbox</a></li>
+                          <li data-id="ui-switch"><a href="#modules-ui-switch">ui-switch</a></li>
+                <li data-id="ui-radio"><a href="#modules-ui-radio">ui-radio</a></li>
+                        </ul>
+                      </li>
+                      <li data-id="ui-table"><a href="#modules-ui-table">表格 table</a></li>
+                      <li  data-id="ui-dialog"><a href="#modules-ui-dialog">弹窗 dialog</a></li>
+                      <li><a href="#modules-ui-notice">提示 notice</a>
+                        <ul class="nav">
+                          <li data-id="ui-notice"><a href="#modules-ui-notice">ui-notice</a></li>
+                          <li data-id="ui-loading"><a href="#modules-ui-loading">ui-loading</a></li>
+                          <li data-id="ui-tips"><a href="#modules-ui-tips">ui-tips</a></li>
+                          <li data-id="ui-poptips"><a href="#modules-ui-poptips" >ui-poptips</a></li>
+                          <li data-id="ui-tooltips"><a href="#modules-ui-tooltips">ui-tooltips</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#modules-ui-tag">会员角标等 vip</a>
+                        <ul class="nav">
+                          <li data-id="ui-tag"><a href="#modules-ui-tag">ui-tag</a></li>
+                          <li data-id="ui-select-user"><a href="#modules-ui-select-user">ui-select-user</a></li>
+                          <li data-id="ui-icon-viplevel"><a href="#modules-ui-icon-viplevel">ui-icon-viplevel</a></li>
+                          <li data-id="ui-icon-qqlevel"><a href="#modules-ui-icon-qqlevel" >ui-icon-qqlevel</a></li>
+              </ul>
+                      </li>
+                    </ul>
+                </div>          
+                <script type="text/template" id="list-template">
+                    <li><a href="#"></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>ui-icon-tag</h1>
+                    <div class="content"><h3 id="角标">角标</h3><div class="nico-insert-code"><style>
+.img-list{overflow:hidden;}
+.img-list li{
+    position:relative;
+    width: 30%;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.img-list li img{width:100%}
+</style>
+<ul class="img-list">
+
+   <li>
+       <img src="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png">
+           <i class="ui-icon-tag-svip"></i>
+           <div class="name">ui-icon-tag-svip</div>
+   </li>
+   <li>
+       <img src="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png">
+           <i class="ui-icon-tag-vip"></i>
+           <div class="name">ui-icon-tag-vip</div>
+   </li>
+   <li>
+          <img src="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png">
+           <i class="ui-icon-tag-freelimit"></i>
+           <div class="name">ui-icon-tag-freelimit</div>
+   </li>
+   <li>
+       <img src="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png">
+           <i class="ui-icon-tag-free"></i>
+           <div class="name">ui-icon-tag-free</div>
+   </li>
+   <li>
+       <img src="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png">
+           <i class="ui-icon-tag-hot"></i>
+           <div class="name">ui-icon-tag-hot</div>
+   </li>
+   <li>
+       <img src="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png">
+           <i class="ui-icon-tag-new"></i>
+           <div class="name">ui-icon-tag-new</div>
+   </li>
+    <li>
+        <img src="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png">
+           <i class="ui-icon-tag-selected"></i>
+           <div class="name">ui-icon-tag-selected</div>
+   </li>
+</ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+<span class="class">.img-list</span><span class="rules">{<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;<span class="rule">}</span></span>
+<span class="class">.img-list</span> <span class="tag">li</span><span class="rules">{
+    <span class="rule"><span class="attribute">position</span>:<span class="value">relative</span></span>;
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">30</span>%</span></span>;
+    <span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;
+    <span class="rule"><span class="attribute">margin-bottom</span>:<span class="value"> <span class="number">10</span>px</span></span>;
+    <span class="rule"><span class="attribute">margin-right</span>:<span class="value"> <span class="number">10</span>px</span></span>;
+<span class="rule">}</span></span>
+<span class="class">.img-list</span> <span class="tag">li</span> <span class="tag">img</span><span class="rules">{<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>%</span></span></span>}
+</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"img-list"</span>&gt;</span>
+
+   <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+       <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png"</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-tag-svip"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-tag-svip<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+   <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+       <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png"</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-tag-vip"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-tag-vip<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+   <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+          <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png"</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-tag-freelimit"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-tag-freelimit<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+   <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+       <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png"</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-tag-free"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-tag-free<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+   <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+       <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png"</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-tag-hot"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-tag-hot<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+   <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+   <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+       <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png"</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-tag-new"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-tag-new<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+   <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png"</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-tag-selected"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-tag-selected<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+   <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div></div>
+                </div>
+                
+            </div>
+            <div class="footer-area">
+            </div>
+        </div>
+        <script src="http://frozenui.github.io/static/layout.js"></script>
+    </body>
+</html>
