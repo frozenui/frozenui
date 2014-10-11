@@ -11,7 +11,7 @@
 
 [参考](https://github.com/QQVIPTeam/team/issues/5)
 
-使用`grunt test`会编译代码以及开启nico测试，访问[127.0.0.1:8000](127.0.0.1:8000)调试页面
+使用`grunt docs`会编译代码以及开启nico测试，访问[127.0.0.1:8000](127.0.0.1:8000)调试页面
 
 使用`grunt --log=logtest` 命令会打包当前版本所需的包,生成如1.0.0的文件夹, 生成_site站点以及svn提交，ftp同步，git提交
 
