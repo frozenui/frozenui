@@ -6,7 +6,7 @@
 <ul class="ui-select-user">
 	<li class="ui-select-user-item active">
 		<h3 class="ui-border-b"><i class="arrow"></i>最近在玩的好友</h3>
-		<div class="ui-notice-warn"><i class="ui-icon ui-icon-refresh"></i><p>请检查网络</p></div>
+		<div class="ui-notice-warn"><i class="ui-icon ui-icon-refresh loading"></i><p>请检查网络</p></div>
 		<ul class="ui-list ui-border-b">
 			<li class="active">
 				<div class="ui-list-thumb  ui-avatar">
