@@ -1,0 +1,11 @@
+{
+    "source": "docs",
+    "output": "_site",
+    "permalink": "{{filename}}.html",
+    "theme": "_themes/one",
+    "writers": [
+        "nico.PageWriter",
+        "nico.StaticWriter",
+        "nico.FileWriter"
+    ]
+}
