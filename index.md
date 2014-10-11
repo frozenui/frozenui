@@ -169,7 +169,7 @@ seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'
                 }
             });
         });
-        seajs.use('static/side', function(side) {
+        seajs.use('/baseui/static/side', function(side) {
             side.init();        
         });        
     });

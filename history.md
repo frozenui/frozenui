@@ -1,7 +1,13 @@
 # History
 
 ---
-
+<style>
+.content ol li {
+	list-style-type: decimal;
+	margin-left: 22px;
+	line-height: 30px;
+}
+</style>
 
 ## 1.0.0
 
@@ -10,18 +16,24 @@
 
 ## 1.1.0
 
-1. 增加form,checkbox,radio,switch
+1. 增加`ui-form`,`ui-checkbox`,`ui-radio`,`ui-switch`
 
-2. input的样式重置
+2. 增加搜索框`ui-searchbox`
 
-3. ui-list-text的文字长度截断问题，加上p标签
+3. input的样式重置
 
-4. 解决ui-btn和ui-reddot 圆角bug
+4. `ui-list-text`的文字长度截断问题，加上p标签
 
-5. ui-btn-group修改背景
+5. 解决`ui-list`点击态问题
 
-6. 现有的ui-tips改为ui-poptips，dom结构简化，另外新增ui-tips，ui-tooltips
+6. 解决`ui-btn`和`ui-reddot` 圆角bug
 
-7. 去掉ui-icon，图标样式写在对应的组件里
+7. `ui-btn-group`修改背景
 
-8. basic.css 改成frozen.css，ui-icon-tag改成ui-tag，并和ui-select-user一起移到vip目录下，不再包含在frozen.css里
+8. 现有的`ui-tips`改为`ui-poptips`，dom结构简化，另外新增`ui-tips`，`ui-tooltips`
+
+9. 删减`ui-icon`，非共用图标样式写在对应的组件里
+
+10. _basic.css_ 改成 _frozen.css_，`ui-icon-tag`改成`ui-tag`，并和`ui-select-user`一起移到vip目录下，不再包含在_frozen.css_里
+
+11. 引用地址[http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256 )
