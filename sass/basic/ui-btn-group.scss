@@ -1,15 +1,11 @@
+@charset "utf-8";
+
 /**
  * 底部操作区
  */
 .ui-btn-group{
 	display: -webkit-box;
-	background-color: #f0f0f1;
 	width: 100%;
-}
-.ui-btn-bottom{
-	position: fixed;
-	bottom: 0;
-	z-index: 10;
 }
 .ui-btn-group button{
   color: #00a5e0;
@@ -35,6 +31,22 @@
 .ui-btn-group button:last-child{
 	border-right: none;
 	background-image: none;
+} 
+
+.ui-btn-group.ui-btn-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+
+  button {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0));
+  }
+
+  button:active {
+    background-color: none;
+    color: rgba(0,165,224,0.4)
+  }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:2.0){

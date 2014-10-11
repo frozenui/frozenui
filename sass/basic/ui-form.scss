@@ -2,110 +2,131 @@
 
 .ui-form {
 	background-color: #fff;
+
+	::-webkit-input-placeholder {
+		color: #a6a6a6;
+	}
+	.ui-icon-close{
+    	top: 7px;
+    	right: 7px;
+	}
 }
 
-/* 表单命令项 */
-.ui-form-order {
-	background-color: #fff;
-}
-
-.ui-form-order li:active {
+.ui-form-item-order:active {
 	background-color: #e5e6e7;
 }
 
-.ui-form-order a {
-	color: #00a5e0;
-	display: block;
-	height: 44px;
-	font-size: 16px;
-	line-height: 44px;
-	margin-left: 15px;
-}
-
-
 /* 表单输入项 */
-.ui-form .ui-item {
+.ui-form-item {
 	height: 44px;
 	font-size: 16px;
 	line-height: 44px;
 	vertical-align: middle;
-	padding-right: 15px;
+	padding-right: 40px;
 	position: relative;
+	padding-left: 15px;
+
+	label{
+		width: 95px;
+		position: absolute;
+		text-align: left;
+		box-sizing: border-box;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding-left: 95px;
+		box-sizing: border-box;
+	}
+
 }
 
-.ui-form ::-webkit-input-placeholder {
-	color: #a6a6a6;
-}
 
-.ui-form .ui-item label {
-	width: 102px;
-	position: absolute;
-	text-align: center;
-}
 
-.ui-form .ui-item input,
-.ui-form .ui-item textarea {
-	width: 100%;
-	padding-left: 105px;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.ui-form .textarea {
+.ui-form-item-textarea {
 	height: 65px;
 }
 
-.ui-form .textarea label {
+.ui-form-item-textarea label {
 	vertical-align: top;
 }
 
-.ui-form .textarea textarea {
+.ui-form-item-textarea textarea {
 	margin-top: 15px;
 	border: none;
 }
 
-.ui-form .textarea textarea:focus {
+.ui-form-item-textarea textarea:focus {
 	outline: none;
 }
 
-.ui-form .left label,
-.ui-form .right button {
+.ui-form-item-l label,
+.ui-form-item-r button {
 	color: #00a5e0;
 	text-align: center;
 }
 
-.ui-form .left input {
-	padding-left: 117px;
+.ui-form-item-r .ui-form-icon-close {
+	right: 125px;
+}
+
+.ui-form-item-l input {
+	padding-left: 115px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-.ui-form .right {
+.ui-form-item-r {
 	padding-right: 0;
 }
 
-.ui-form .right input {
-	padding: 0 117px 0 15px;
+.ui-form-item-r input {
+	padding: 0 150px 0 0;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-.ui-form .right button {
-	width: 102px;
+.ui-form-item-r button {
+	width: 110px;
 	height: 44px;
 	font-size: 16px;
 	position: absolute;
 	top: 0; right: 0;
 }
 
-.ui-form .right button.disabled {
+.ui-form-item-r button.disabled {
 	color: #a6a6a6;
 }
 
-.ui-form .right button:not(.disabled):active {
+.ui-form-item-r button:not(.disabled):active {
 	background-color: #e5e6e7;
 }
 
-.ui-form .pure input {
-	padding-left: 15px;
+.ui-form-item-pure input {
+	padding-left: 0;
 }
+
+/* 表单展示项 */
+.ui-form-item-show label {
+	color: #808080;
+}
+
+.ui-form-item-link:active {
+	background-color: #e5e6e7;
+}
+
+.ui-form-item-link:after {
+	background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -75px 0;
+	background-size: 150px auto;
+	content: "";
+	display: block;
+	width: 8px;
+	height: 14px;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -8px;
+}
+
+	
