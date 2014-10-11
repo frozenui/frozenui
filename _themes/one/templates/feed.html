@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ config.sitename }}</title>
+    <link href="{{content_url(config.siteurl, feed.filepath)}}" rel="self" />
+    <link href="{{config.siteurl}}" />
+    <id>{{ content_url(config.siteurl, feed.filepath) }}</id>
+    {% for post in feed.posts -%}
+    <entry>
+        <title type="html"><![CDATA[{{ post.title }}]]></title>
+        {%- set permalink = permalink_url(post) %}
+        <link href="{{ content_url(config.siteurl, permalink) }}"/>
+        <published>{{ post.pubdate|xmldatetime }}</published>
+        <updated>{{ post.pubdate|xmldatetime }}</updated>
+        <id>{{ content_url(config.siteurl, permalink) }}</id>
+        <content type="html" xml:base="{{ config.siteurl }}" xml:lang="en">
+            <![CDATA[ {{ post.html }}]]>
+        </content>
+    </entry>
+    {%- endfor %}
+</feed>

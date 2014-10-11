@@ -1,0 +1,41 @@
+{%- extends "layout.html" -%}
+{%- block title %}{{pagination.title}}{% endblock %}
+
+{%- block document %}
+<h1 class="entry-title">{{pagination.title}}</h1>
+<div class="entry-list">
+  {%- set year = 0 %}
+
+  {%- for item in pagination.items %}
+
+  {%- if config.writers|enabled('YearWriter') %}
+  {%- if year != item.pubdate.year %}
+  {%- set year = item.pubdate.year %}
+  <a class="item-year" href="{{ index_url(year) }}">{{ year }}</a>
+  {%- endif %}
+  {%- endif %}
+
+  <div class="item" itemscope itemtype="http://schema.org/Article">
+    <h2 class="item-title">
+      <time datetime="{{item.pubdate|xmldatetime}}" itemprop="dateModified">{{item.pubdate|date('Y-m-d')}}</time>
+      <a itemprop="name" href="{{permalink_url(item)}}">{{item.title}}</a>
+    </h2>
+    {% if item.meta.description %}
+    <div class="item-description" itemprop="description">
+      {{ item.meta.description }}
+    </div>
+    {% endif %}
+  </div>
+  {%- endfor %}
+
+  <div class="pagination">
+    {%- if pagination.has_prev %}
+    <a class="newer" href="{{ pagination_url(pagination.prev_num) }}">Newer</a>
+    {%- endif %}
+
+    {%- if pagination.has_next %}
+    <a class="older" href="{{ pagination_url(pagination.next_num) }}">Older</a>
+    {%- endif %}
+  </div>
+</div>
+{% endblock -%}

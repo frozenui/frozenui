@@ -1,7 +1,7 @@
 # css组件库
 
 - order: 2
-- category: alice
+- category: frozenui
 
 ---
 
@@ -119,60 +119,57 @@ h3.alice-module-subtitle {
 <script type="text/javascript">
 seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'], function($, _, Popup) {
 
+ 
+    var deps = $('.side-area li[data-id]');
+    _.each(deps, function(dep) {
+        var moduleNode = $($('#alice-module').html());
+        moduleNode.find('.alice-module-title a')
+            .attr('href', $(dep).data('id'))
+            .attr('id', 'modules-' + $(dep).data('id'))
+            .html($(dep).data('id'));
+        moduleNode.appendTo('.alice-modules');
+        var list = substractTitle(moduleNode.find('h2'));
 
-    $.getJSON('package.json', function(data) {
-        
-        var deps = $('.side-area li[data-id]');
-        _.each(deps, function(dep) {
-            var moduleNode = $($('#alice-module').html());
-            moduleNode.find('.alice-module-title a')
-                .attr('href', 'docs/' + $(dep).data('id'))
-                .attr('id', 'modules-' + $(dep).data('id'))
-                .html($(dep).data('id'));
-            moduleNode.appendTo('.alice-modules');
-            var list = substractTitle(moduleNode.find('h2'));
+        $.ajax({
+            url:  $(dep).data('id'),
+            dataType: 'html',
+            success: function(data) {
+                data = $(data);
+                moduleNode.find('.alice-module-description')
+                    .html(data.find('.entry-content > p:first-child').html());
 
-            $.ajax({
-                url: 'docs/' + $(dep).data('id'),
-                dataType: 'html',
-                success: function(data) {
-                    data = $(data);
-                    moduleNode.find('.alice-module-description')
-                        .html(data.find('.entry-content > p:first-child').html());
-
-                    data.find('.nico-insert-code').each(function(index, item) {
-                        var demoNode = $($('#alice-module-demo').html());
-                        item = $(item);
-                        var subtitle = item.prev().html();
-                        if (item.prev()[0].tagName !== 'H3' || !subtitle) {
-                            subtitle = '默认';
-                        }
-                        
-                        demoNode.find('.alice-module-subtitle').html(subtitle);
-                        demoNode.find('.alice-module-dom').html(item.html());
-                        
-                        // 直接使用目标页面生成的高亮代码，不再动态渲染
-                        var codeHtml = item.next('.highlight').find('pre').html();
-                        demoNode.find('.alice-module-code').html(codeHtml);
-
-                        moduleNode.find('.alice-loading').remove();
-                        demoNode.appendTo(moduleNode);
-                    });
-
-                    // 中文关键词，一般放在 keywords 数组的第一个
-                    // 在这里写到左边索引栏中
-                    moduleNode.find('.alice-module-version')
-                    var keywords = data.find('#sidebar-wrapper .keywords').html();
-                    if (keywords) {
-                        list.find('i').html(keywords);
+                data.find('.nico-insert-code').each(function(index, item) {
+                    var demoNode = $($('#alice-module-demo').html());
+                    item = $(item);
+                    var subtitle = item.prev().html();
+                    if (item.prev()[0].tagName !== 'H3' || !subtitle) {
+                        subtitle = '默认';
                     }
+                    
+                    demoNode.find('.alice-module-subtitle').html(subtitle);
+                    demoNode.find('.alice-module-dom').html(item.html());
+                    
+                    // 直接使用目标页面生成的高亮代码，不再动态渲染
+                    var codeHtml = item.next('.highlight').find('pre').html();
+                    demoNode.find('.alice-module-code').html(codeHtml);
+
+                    moduleNode.find('.alice-loading').remove();
+                    demoNode.appendTo(moduleNode);
+                });
+
+                // 中文关键词，一般放在 keywords 数组的第一个
+                // 在这里写到左边索引栏中
+                moduleNode.find('.alice-module-version')
+                var keywords = data.find('#sidebar-wrapper .keywords').html();
+                if (keywords) {
+                    list.find('i').html(keywords);
                 }
-            });
+            }
         });
-        seajs.use('/baseui/static/side', function(side) {
-            side.init();        
-        });        
     });
+    seajs.use('/static/side', function(side) {
+        side.init();        
+    }); 
     
     function substractTitle(item) {
         item = item.find('a');

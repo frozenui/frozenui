@@ -2,7 +2,6 @@
   "name": "frozenui",
   "version": "0.0.1",
   "title": "Frozen",
-  "family": "alice",
   "homepage": "https://github.com/frozenui/baseui",
   "author": "faycheng",
   "repository": {
@@ -28,30 +27,5 @@
     "grunt-shell": "^0.7.0",
     "grunt-contrib-imagemin":"^0.8.1"
   },
-  "main": "Gruntfile.js",
-  "widgets": [
-    "atom",
-    "ui-btn",
-    "ui-btn-lg",
-    "ui-btn-group",
-    "ui-list",
-    "ui-dialog",
-    "ui-loading",
-    "ui-notice",
-    "ui-form",
-    "ui-checkbox",
-    "ui-switch",
-    "ui-radio",
-    "ui-searchbox",
-    "ui-tab",
-    "ui-table",
-    "ui-tips",
-    "ui-poptips",
-    "ui-tooltips",
-    "ui-select-user",
-    "ui-tag",
-    "ui-icon-viplevel",
-    "ui-icon-qqlevel"
-    
-  ]
+  "main": "Gruntfile.js"
 }
