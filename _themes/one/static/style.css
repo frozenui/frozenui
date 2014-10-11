@@ -329,7 +329,12 @@ hr {
 .side-area a:hover .iconfont {
     color: #aaa;
 }
-
+.side-area ul li{padding-left: 20px;}
+.nav{display: none}
+.side-highlight .nav{display: block}
+.side-area .side-highlight{border: none}
+.side-area .side-highlight a{background: none}
+.side-area .side-highlight > a{border-right: 1px solid #025775;}
 .content-area h1 {
     font-size: 24px;
     border-bottom: 1px #eee solid;

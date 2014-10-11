@@ -23,7 +23,8 @@ define(function(require, exports, module) {
                 i = (i<0) ? 0 : i;
             }
             $('.side-area .side-highlight').removeClass('side-highlight');
-            $('.side-area > ul > li').eq(i).addClass('side-highlight');
+            $('.side-area li[data-id]').eq(i).addClass('side-highlight');
+            $('.side-area li[data-id]').eq(i).parent().parent("li").addClass('side-highlight');
         });
     };
 
