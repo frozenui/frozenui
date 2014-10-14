@@ -16,7 +16,7 @@
 
 .ui-tips i:before {
   background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -25px 0px;
-  background-size: 150px auto;
+  -webkit-background-size: 150px auto;
   content: "";
   display: block;
   width: 23px;

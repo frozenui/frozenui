@@ -90,7 +90,7 @@
 
 .ui-form-item-link:after {
   background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat -75px 0;
-  background-size: 150px auto;
+  -webkit-background-size: 150px auto;
   content: "";
   display: block;
   width: 8px;

@@ -21,6 +21,9 @@
 /**
  * 1px border hack
  */
+.ui-border{
+    border: 1px solid #dedfe0;  
+}
 .ui-border-t {border-top: 1px solid #dedfe0;}
 .ui-border-b {border-bottom: 1px solid #dedfe0}
 .ui-border-tb{
@@ -33,10 +36,20 @@
 
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-border {position: relative; border: none;}
     .ui-border-t {border-top: none;}
     .ui-border-b {border-bottom: none;}
-
-    /*方法1*/
+    .ui-border:before{
+        content:"";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 1px solid #dedfe0;
+        -webkit-transform:scale(.5);
+        -webkit-transform-origin: -50% -50%;
+    }
     .ui-border-t{
         background-position: left top; 
         background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, #dedfe0), to(#dedfe0));
@@ -48,7 +61,7 @@
     .ui-border-t,
     .ui-border-b{
         background-repeat: repeat-x;
-        background-size: 100% 1px;
+        -webkit-background-size: 100% 1px;
     }
     .ui-border-tb{
         background: -webkit-gradient(linear, left bottom, left top, color-stop(.50, transparent), color-stop(.50, #dedfe0), to(#dedfe0)) left top repeat-x,-webkit-gradient(linear, left top, left bottom, color-stop(.5, transparent), color-stop(.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
@@ -56,8 +69,7 @@
         border-bottom:0;
     }
     .ui-border-tb{
-        background-size: 100% 1px;
-        -wekit-background-size: 100% 1px;
+        -webkit-background-size: 100% 1px;
     }
     .ui-border-l,.ui-border-r{
 		position: relative;
@@ -105,7 +117,7 @@
     overflow: hidden;
     -webkit-border-radius: 50%;
     display: block;
-    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 
 .ui-avatar {
