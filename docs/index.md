@@ -7,7 +7,7 @@
 	<div class="fr-banner-content">
 		<div class="fr-banner-info">
 			<h3>简单易用，轻量快捷，<br/>为移动端服务的前端框架。</h3>
-			<a href="docs/start.html">开始使用</a>
+			<a href="/start.html">开始使用</a>
 			<a href="https://github.com/frozenui/" target="_blank">Github地址</a>
 		</div>
 		<img src="static/phone.png" class="fr-banner-ph">
