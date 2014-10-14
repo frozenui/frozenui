@@ -6,7 +6,7 @@
 
 .ui-icon:before, .ui-icon-refresh:before, .ui-icon-close:before, .ui-icon-search:before {
   background: url(http://i.gtimg.cn/vipstyle/frozenui/1.1.0/img/icon.png?_bid=256) no-repeat 0px 0px;
-  background-size: 150px auto;
+  -webkit-background-size: 150px auto;
   content: "";
   display: block;
   position: absolute;

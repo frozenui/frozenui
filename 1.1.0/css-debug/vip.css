@@ -8,7 +8,7 @@
   vertical-align: middle; }
 
 .ui-icon-qqlevel:after {
-  content: "\0020";
+  content: "";
   display: block;
   width: 16px;
   background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon_qqlevel_sprite.png?_bid=256) no-repeat;
@@ -104,7 +104,7 @@
 
 .ui-icon-sviplevel span, .ui-icon-yearsviplevel span {
   height: 22px;
-  top: -16px; }
+  top: -14px; }
 
 .ui-icon-viplevel-s span, .ui-icon-sviplevel-s span, .ui-icon-yearviplevel-s span, .ui-icon-yearsviplevel-s span {
   height: 20px;
