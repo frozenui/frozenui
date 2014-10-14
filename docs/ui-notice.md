@@ -37,7 +37,7 @@
 ###加载中
 ````html
 <div class="ui-notice-warn">
-	<i class="ui-icon ui-icon-refresh loading"></i><p>请检查网络</p>
+	<i class="ui-icon ui-icon-refresh"></i><p>请检查网络</p>
 </div>
 	
 ````
