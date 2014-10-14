@@ -120,6 +120,9 @@ em {
 /**
  * 1px border hack
  */
+.ui-border {
+  border: 1px solid #dedfe0; }
+
 .ui-border-t {
   border-top: 1px solid #dedfe0; }
 
@@ -138,13 +141,27 @@ em {
   border-right: 1px solid #dedfe0; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-border {
+    position: relative;
+    border: none; }
+
   .ui-border-t {
     border-top: none; }
 
   .ui-border-b {
     border-bottom: none; }
 
-  /*方法1*/
+  .ui-border:before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #dedfe0;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: -50% -50%; }
+
   .ui-border-t {
     background-position: left top;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)); }
@@ -156,7 +173,7 @@ em {
   .ui-border-t,
   .ui-border-b {
     background-repeat: repeat-x;
-    -wekit-background-size: 100% 1px; }
+    -webkit-background-size: 100% 1px; }
 
   .ui-border-tb {
     background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
@@ -164,7 +181,7 @@ em {
     border-bottom: 0; }
 
   .ui-border-tb {
-    -wekit-background-size: 100% 1px; }
+    -webkit-background-size: 100% 1px; }
 
   .ui-border-l, .ui-border-r {
     position: relative;
