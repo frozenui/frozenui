@@ -50,7 +50,9 @@
           }
         })
         seajs.use(['sticky'], function(Sticky) {
-            Sticky('.side-area', 20);
+            if(document.body.clientWidth>980){
+            	Sticky('.side-area', 20);
+            }
         });
         </script>
     </head>
