@@ -20,3 +20,7 @@
 .ui-reddot,.ui-reddot-border,.ui-reddot-s{
   background-clip: padding-box;
 }
+
+.ui-btn-group{
+	background-color: #fff;
+}

@@ -50,6 +50,10 @@ module.exports =function(grunt) {
             css:{
                 src: '<%=meta.destPath%>/css/frozen.css',
                 dest:'<%=meta.zipPath%>/css/frozen.css'
+            },
+            staticcss:{
+                src: '<%=meta.destPath%>/css-debug/global.css',
+                dest:'_themes/one/static/global.css'
             }
         },
         compress: {
