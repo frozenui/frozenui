@@ -35,7 +35,9 @@
           }
         });
         seajs.use(['sticky', 'side'], function(Sticky, side) {
-            Sticky('.side-area', 20);
+            if(document.body.clientWidth>980){
+            	Sticky('.side-area', 20);
+            }
             side.init();
         });
         </script>

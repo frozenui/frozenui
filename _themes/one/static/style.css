@@ -695,6 +695,7 @@ body .fn-hide {
     position: relative;
     font-size: 14px;
     text-align: right;
+    padding: 0 15px;
 }
 
 @media (max-width: 980px) {
@@ -731,6 +732,7 @@ body .fn-hide {
 .fr-yewu{
     max-width: 1140px;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 .fr-yewu ul{
     max-width: 1013px;
