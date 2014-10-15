@@ -22,7 +22,8 @@
   height: 24px;
   border: 1px solid #dfe0e1;
   border-radius: 13px;
-  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
   position: absolute;
   left: 0px;
   top: -16px; }

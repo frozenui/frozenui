@@ -23,12 +23,14 @@
     width: 95px;
     position: absolute;
     text-align: left;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .ui-form-item input,
   .ui-form-item textarea {
     width: 100%;
     padding-left: 95px;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
 
 .ui-form-item-textarea {
   height: 65px; }

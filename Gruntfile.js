@@ -74,6 +74,19 @@ module.exports =function(grunt) {
                 ext:'.css'
             }
         },
+        autoprefixer: {
+
+            options: {
+                diff: true,
+                browsers: ['ios 5','android 2.3']
+            },
+
+            // prefix all files
+            multiple_files: {
+                expand: true,
+                src: ['1.1.0/css-debug/*.css','1.1.0/css-debug/**/*.css']// -> src/css/file1.css, src/css/file2.css
+            }
+        },
         watch: {
             scripts: {
                 files: [
@@ -137,10 +150,11 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-ftpush');
     grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
-    grunt.registerTask('default', ['sass','cssmin','imagemin','copy','compress','ftpush']);
-    grunt.registerTask('docs',['sass','cssmin','copy','compress','shell:nico']);
+    grunt.registerTask('default', ['sass','autoprefixer','cssmin','imagemin','copy','compress','ftpush']);
+    grunt.registerTask('docs',['sass','autoprefixer','cssmin','copy','compress','shell:nico']);
 
 };

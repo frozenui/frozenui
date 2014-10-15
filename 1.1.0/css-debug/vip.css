@@ -175,7 +175,8 @@
   width: 8px;
   height: 10px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOtJREFUeNpibGpq2sDAwJAHxI8YyABMQOwPxNeAuByI2cgxAAS4gbgDiM8DsT05BsCAFhDvB+JFQCxGjgEgwAjEsUB8E4gzcKjBawAMCADxdCA+AcTG5BgAA6ZAfAqIJ0MNJdkAmLocIL4OxDHkGAADEkC8GIj3ArEGSICFgTzgBMQXgbiXiYF8ANLLSa4LjgNxFhBfINUFb4E4DYhtQJpJCYP/QDwfml/eIEsQY8AlqHOPkpqQvgBxCTQVHsWlCJcL1gBxIRA/IeQ8dAPuAHEuEO8gNTv/AOJGINYjRTPMBbuhgXSHnAQBEGAAskkmlXEGsU0AAAAASUVORK5CYII=) no-repeat center left;
-  background-size: 8px auto;
+  -webkit-background-size: 8px auto;
+          background-size: 8px auto;
   position: absolute;
   left: 15px;
   top: 15px;
