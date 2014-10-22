@@ -35,7 +35,7 @@
 		<div class="fr-item-info fr-frozenui">
 			<h2>酷炫好玩的案例秀</h2>
 			<p>FrozenUI提供的Animation case，把业务上有趣好玩的案例沉淀下来，帮助日后能更快速找到设计灵感。</p>
-			<a href="/docs/case.html">查 看</a>
+			<a href="/case.html">查 看</a>
 		</div>
 	</div>
 </div>
