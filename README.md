@@ -4,7 +4,7 @@
 
 ### nico 
 
-需要安装[nico](lab.lepture.com/nico/zh/)生成文档以及调试，`nico build `命令生成文档，`nico server `命令调试
+需要安装[nico](http://lab.lepture.com/nico/zh/)生成文档以及调试，`nico build `命令生成文档，`nico server `命令调试
 
 
 ### grunt
