@@ -84,7 +84,7 @@ module.exports =function(grunt) {
             // prefix all files
             multiple_files: {
                 expand: true,
-                src: ['1.1.0/css-debug/*.css','1.1.0/css-debug/**/*.css']// -> src/css/file1.css, src/css/file2.css
+                src: ['<%=meta.destPath%>/css-debug/*.css','<%=meta.destPath%>/css-debug/**/*.css']// -> src/css/file1.css, src/css/file2.css
             }
         },
         watch: {
