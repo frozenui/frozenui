@@ -1,6 +1,24 @@
 {
     "csscase": [
         {
+            "tit": "账号资料卡特权PK",
+            "author": "faycheng",
+            "pic": "../static/pic/pk.gif",
+            "url": "http://wevas.info/vipstyle/mobile/client/profile/v2/html/pk.html"
+        },
+        {
+            "tit": "曲线轨迹动画",
+            "author": "faycheng",
+            "pic": "../static/pic/move.gif",
+            "url": "http://wevas.info/vipstyle/mobile/client/profile/v2/html/index.html"
+        },
+        {
+            "tit": "圆环百分比动画",
+            "author": "faycheng",
+            "pic": "../static/pic/circle.gif",
+            "url": "http://faycheng.com/vipstyle/mobile/client/profile/v2/html/growup.html"
+        },
+        {
             "tit": "3D分牌进场效果",
             "author": "jundabei",
             "pic": "../static/pic/p1.png",
@@ -59,12 +77,6 @@
             "author": "jeakeyliang",
             "pic": "../static/pic/gamecenter2.jpg",
             "url": "http://gamecentertest.cs0309.3g.qq.com/front/demo/html/gain-pk2.html"
-        },
-        {
-            "tit": "账号资料卡特权PK",
-            "author": "ethanlai",
-            "pic": "../static/pic/zhanghao1.jpg",
-            "url": "http://icase.tencent.com/vlabs/demo/profile/html/guest2.html"
         }
     ],
     "apicase": [
