@@ -223,7 +223,7 @@ em {
   width: 50px;
   height: 50px;
   overflow: hidden;
-  -webkit-border-radius: 25px;
+  -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
@@ -231,7 +231,7 @@ em {
     width: 50px;
     height: 50px;
     overflow: hidden;
-    -webkit-border-radius: 25px;
+    -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
 
@@ -239,7 +239,7 @@ em {
   width: 54px;
   height: 54px;
   overflow: hidden;
-  -webkit-border-radius: 27px;
+  -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
@@ -247,7 +247,7 @@ em {
     width: 54px;
     height: 54px;
     overflow: hidden;
-    -webkit-border-radius: 27px;
+    -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
 
@@ -255,7 +255,7 @@ em {
   width: 40px;
   height: 40px;
   overflow: hidden;
-  -webkit-border-radius: 20px;
+  -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
@@ -263,7 +263,7 @@ em {
     width: 40px;
     height: 40px;
     overflow: hidden;
-    -webkit-border-radius: 20px;
+    -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
 
@@ -272,7 +272,7 @@ em {
   width: 64px;
   height: 64px;
   overflow: hidden;
-  -webkit-border-radius: 32px;
+  -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
@@ -280,7 +280,7 @@ em {
     width: 64px;
     height: 64px;
     overflow: hidden;
-    -webkit-border-radius: 32px;
+    -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
 
@@ -289,7 +289,7 @@ em {
   width: 30px;
   height: 30px;
   overflow: hidden;
-  -webkit-border-radius: 15px;
+  -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
@@ -298,7 +298,7 @@ em {
     width: 30px;
     height: 30px;
     overflow: hidden;
-    -webkit-border-radius: 15px;
+    -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
 
