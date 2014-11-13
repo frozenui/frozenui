@@ -9,7 +9,8 @@
   background-color: #fff;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 100; }
 
 .ui-tab-content {
   margin-top: 44px; }

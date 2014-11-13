@@ -791,7 +791,8 @@ em {
   background-color: #fff;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 100; }
 
 .ui-tab-content {
   margin-top: 44px; }
@@ -1445,6 +1446,14 @@ em {
     color: #808080;
     font-size: 16px;
     padding: 4px 8px; }
+  .ui-searchbox-wrap .ui-searchbox-input, .ui-searchbox-wrap button, .ui-searchbox-wrap .ui-icon-close {
+    display: none; }
+  .ui-searchbox-wrap.focus {
+    -webkit-box-pack: start; }
+    .ui-searchbox-wrap.focus .ui-searchbox-input, .ui-searchbox-wrap.focus button, .ui-searchbox-wrap.focus .ui-icon-close {
+      display: block; }
+    .ui-searchbox-wrap.focus .ui-searchbox-text {
+      display: none; }
 
 .ui-searchbox {
   border-radius: 4px;
@@ -1468,8 +1477,6 @@ em {
     border: none;
     width: 100%;
     padding: 7px 0; }
-  .ui-searchbox.focus {
-    -webkit-box-pack: start; }
 
 .ui-searchbox-input {
   -webkit-box-flex: 1; }
