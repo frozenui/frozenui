@@ -47,9 +47,13 @@ module.exports =function(grunt) {
                 dest:'<%=meta.zipPath%>/img/',
                 filter: 'isFile'
             },
-            css:{
+            frozencss:{
                 src: '<%=meta.destPath%>/css/frozen.css',
-                dest:'<%=meta.zipPath%>/css/frozen.css'
+                dest: '<%=meta.zipPath%>/css/frozen.css'
+            },
+            vipcss:{
+                src: '<%=meta.destPath%>/css/vip.css',
+                dest: '<%=meta.zipPath%>/css/vip.css'
             },
             staticcss:{
                 src: '<%=meta.destPath%>/css-debug/global.css',

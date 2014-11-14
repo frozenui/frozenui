@@ -39,7 +39,7 @@
 10. _basic.css_ 改成 _frozen.css_，`ui-icon-tag`改成`ui-tag`，并和`ui-select-user`一起移到vip目录下，不再包含在_frozen.css_里
 
 
-## 1.2.0
+## 1.2.0（1.1.1只发布了vip.css，废弃）
 
 
 1. 修改ui-list和ui-form的箭头图标
