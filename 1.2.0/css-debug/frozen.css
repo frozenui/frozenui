@@ -118,6 +118,7 @@ em {
 /**
  * 1px border hack
  */
+　
 .ui-border {
   border: 1px solid #dedfe0; }
 
@@ -143,11 +144,8 @@ em {
     position: relative;
     border: 0; }
 
-  .ui-border-t {
-    border-top: none; }
-
-  .ui-border-b {
-    border-bottom: none; }
+  .ui-border-t, .ui-border-b, .ui-border-l, .ui-border-r, .ui-border-tb {
+    border: 0; }
 
   .ui-border:before {
     content: "";
@@ -174,34 +172,23 @@ em {
     -webkit-background-size: 100% 1px; }
 
   .ui-border-tb {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x;
-    border-top: 0;
-    border-bottom: 0; }
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left top repeat-x, -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)) left bottom repeat-x; }
 
   .ui-border-tb {
     -webkit-background-size: 100% 1px; }
 
-  .ui-border-l, .ui-border-r {
-    position: relative;
-    border: 0; }
+  .ui-border-l {
+    background-position: left top;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)); }
 
-  .ui-border-l:before, .ui-border-r:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    top: 0;
-    bottom: 0;
-    -webkit-transform: scaleX(0.5); }
+  .ui-border-r {
+    background-position: right top;
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.5, #dedfe0), to(#dedfe0)); }
 
-  .ui-border-l:before {
-    -webkit-transform-origin: left top;
-    border-left: 1px solid #dedfe0;
-    left: 0; }
-
-  .ui-border-r:before {
-    -webkit-transform-origin: right top;
-    border-right: 1px solid #dedfe0;
-    right: 0; } }
+  .ui-border-l,
+  .ui-border-r {
+    background-repeat: repeat-y;
+    -webkit-background-size: 1px 100%; } }
 /**
  * 垂直上下居中
  */
@@ -502,7 +489,7 @@ em {
     -webkit-transform-origin: -50% -50%; }
 
   .ui-btn.disabled:before, .disabled.ui-btn-lg:before {
-    display: none; }
+    border: 1px solid #e9ebec; }
 
   .ui-btn-primary:before {
     border: 1px solid #1ca7da; }

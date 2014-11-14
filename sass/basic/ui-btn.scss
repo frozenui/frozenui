@@ -97,7 +97,7 @@
         -webkit-transform-origin: -50% -50%;
     }
     .ui-btn.disabled:before{
-        display:none;
+        border: 1px solid #e9ebec;
     }
     .ui-btn-primary:before{
         border: 1px solid #1ca7da;
