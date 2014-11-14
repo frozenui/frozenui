@@ -72,7 +72,7 @@ module.exports =function(grunt) {
                     archive: '_themes/one/static/frozenui.zip'
                 },
                 expand: true,
-                src: ['<%=pkg.version%>/css/**','<%=pkg.version%>/css-debug/**'],
+                src: ['<%=pkg.version%>/css/**','<%=pkg.version%>/css-debug/**','img/*/*'],
                 dest:'frozenui'
             }
         },
