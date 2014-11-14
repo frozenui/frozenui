@@ -37,3 +37,6 @@ _site目录下的内容提交到gh-pages分支，参考https://github.com/frozen
 
 大版本则需新增离线包，修改bid，需要打包一个全新的文件夹，并且图片也要copy进来（vip的图片不用）。
 
+### 维护
+
+原则是有问题提issue，代码修改提pr
