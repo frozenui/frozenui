@@ -115,7 +115,7 @@ module.exports =function(grunt) {
                 },
                 src: '<%=pkg.version%>',
                 dest: '/frozenui/<%=pkg.version%>',
-                exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
+                exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn','_site'],
                 simple: true
             }
         },
@@ -144,11 +144,11 @@ module.exports =function(grunt) {
                     'git push origin gh-pages'
                 ].join('&&')
             },
-            nico:{
-              command: [
-                    'nico build',
-                    'nico server'
-                ].join('&&')   
+            build:{
+              command: 'nico build'
+            },
+            server:{
+              command: 'nico server'  
             }
             
         }
@@ -166,6 +166,8 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
     grunt.registerTask('default', ['sass','autoprefixer','cssmin','imagemin','copy','compress','ftpush']);
-    grunt.registerTask('docs',['sass','autoprefixer','cssmin','copy','compress','shell:nico']);
+    grunt.registerTask('docs',['sass','autoprefixer','cssmin','copy','compress','shell:build','shell:server']);
+    grunt.registerTask('commit',['sass','autoprefixer','cssmin','imagemin','copy','compress','ftpush','shell:build','shell:git','shell:gitsite']);
+    
 
 };
