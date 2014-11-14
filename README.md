@@ -13,7 +13,9 @@
 
 使用`grunt docs`会编译代码以及开启nico测试，访问[127.0.0.1:8000](127.0.0.1:8000)调试页面
 
-使用`grunt --log=logtest` 命令会打包当前版本所需的包,生成如1.0.0的文件夹, 生成_site站点以及svn提交，ftp同步，git提交
+使用`grunt commit --log=logtest` 命令会做好打包压缩部署ftp等操作, 以及生成_site站点,git 提交
+
+没有shell操作的可以使用`grunt`命令打包压缩部署ftp，然后使用nico命令生成站点和git命令提交
 
 css ，css-debug和img目录是需要发布到线上，_css-debug_是未压缩的版本，为调试使用
 
