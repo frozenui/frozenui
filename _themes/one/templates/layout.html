@@ -12,6 +12,7 @@
         <meta name="Keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js" />
         <meta name="author" content="fayching" />
         <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="/static/global.css" />
         <link rel="stylesheet" href="static/global.css" />
         <link rel="stylesheet" href="http://frozenui.github.io/static/style.css" />
         <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
@@ -32,12 +33,17 @@
                 -webkit-user-select: inherit;
             }
             .border-list li{width:100px;height:50px;margin-bottom:20px;text-align: center;line-height: 50px;}
-      .side-area ul li{padding-left: 20px;}
-      .nav{display: none}
-      .side-highlight .nav{display: block}
-      .side-area .side-highlight{border: none}
-      .side-area .side-highlight a{background: none}
-      .side-area .side-highlight > a{border-right: 1px solid #025775;}
+            .ui-searchbox-wrap,.ui-selector-title,.ui-tab-nav{position: static;}
+            ..ui-tab-content{margin-top: 0;}
+            .ui-selector-content{padding-top: 0;}
+            .ui-selector-title h3{font-size: 14px;}
+            .ui-select-user h3{font-size: 16px;}
+            .side-area ul li{padding-left: 20px;}
+            .nav{display: none}
+            .side-highlight .nav{display: block}
+            .side-area .side-highlight{border: none}
+            .side-area .side-highlight a{background: none}
+            .side-area .side-highlight > a{border-right: 1px solid #025775;}
         </style>
         <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
         <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
@@ -68,7 +74,6 @@
             <div class="main-area">
                 <div class="side-area">
                     <ul>
-                      <li  data-id="atom"><a href="#modules-atom">辅助类 atom</a></li>
                       <li><a href="#modules-ui-btn">按钮 button</a>
                         <ul class="nav">
                           <li data-id="ui-btn"><a href="#modules-ui-btn">ui-btn</a></li>
@@ -76,32 +81,33 @@
                           <li data-id="ui-btn-group"><a href="#modules-ui-btn-group" >ui-btn-group</a></li>
                         </ul>
                       </li>
+                      <li data-id="atom"><a href="#modules-atom">辅助类 atom</a></li>
                       <li  data-id="ui-searchbox"><a href="#modules-ui-searchbox">搜索框 searchbox</a></li>
                       <li data-id="ui-tab"><a href="#modules-ui-tab">选项卡 tab</a></li>
                       <li data-id="ui-list"><a href="#modules-ui-list" >列表 list</a></li>
-                      <li><a href="#modules-ui-form">表单 form</a>
+                      <li><a href="#modules-ui-form">表单项 form</a>
                         <ul class="nav">
                           <li data-id="ui-form"><a href="#modules-ui-form" >ui-form</a></li>
                           <li data-id="ui-checkbox"><a href="#modules-ui-checkbox" >ui-checkbox</a></li>
                           <li data-id="ui-switch"><a href="#modules-ui-switch">ui-switch</a></li>
-                <li data-id="ui-radio"><a href="#modules-ui-radio">ui-radio</a></li>
                         </ul>
                       </li>
                       <li data-id="ui-table"><a href="#modules-ui-table">表格 table</a></li>
                       <li  data-id="ui-dialog"><a href="#modules-ui-dialog">弹窗 dialog</a></li>
-                      <li><a href="#modules-ui-notice">提示 notice</a>
+                      <li data-id="ui-notice"><a href="#modules-ui-notice">通知 notice</a></li>
+                      <li><a href="#modules-ui-tips">提示 tips</a>
                         <ul class="nav">
-                          <li data-id="ui-notice"><a href="#modules-ui-notice">ui-notice</a></li>
-                          <li data-id="ui-loading"><a href="#modules-ui-loading">ui-loading</a></li>
                           <li data-id="ui-tips"><a href="#modules-ui-tips">ui-tips</a></li>
                           <li data-id="ui-poptips"><a href="#modules-ui-poptips" >ui-poptips</a></li>
                           <li data-id="ui-tooltips"><a href="#modules-ui-tooltips">ui-tooltips</a></li>
                         </ul>
                       </li>
-                      <li><a href="#modules-ui-tag">会员角标等 vip</a>
+                      <li data-id="ui-loading"><a href="#modules-ui-loading">加载中 loading</a></li>
+                      <li><a href="#modules-ui-tag">会员业务 icon等</a>
                         <ul class="nav">
                           <li data-id="ui-tag"><a href="#modules-ui-tag">ui-tag</a></li>
-                          <li data-id="ui-select-user"><a href="#modules-ui-select-user">ui-select-user</a></li>
+                          <li data-id="ui-selector"><a href="#modules-ui-selector">ui-selector</a></li>
+                          <li data-id="ui-icon-qq"><a href="#modules-ui-icon-qq" >ui-icon-qq</a></li>
                           <li data-id="ui-icon-viplevel"><a href="#modules-ui-icon-viplevel">ui-icon-viplevel</a></li>
                           <li data-id="ui-icon-qqlevel"><a href="#modules-ui-icon-qqlevel" >ui-icon-qqlevel</a></li>
               </ul>

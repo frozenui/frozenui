@@ -28,7 +28,6 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
 </script>
 
 <style>
-.content{padding: 15px;}
 .ui-avatar-tiled{display:inline-block;}
 .alice-module {
     border-bottom: 1px solid #eee;    

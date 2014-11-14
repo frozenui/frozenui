@@ -6,15 +6,14 @@ module.exports =function(grunt) {
         pkg : grunt.file.readJSON('package.json'),
         
         meta: {
-            destPath: '1.1.0',
-            zipPath:'i.gtimg.cn/vipstyle/frozenui/1.1.0'
+            zipPath:'i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
         }, 
         cssmin: {
             minify: {
                 expand: true,
-                cwd: '<%=meta.destPath%>/css-debug/',
+                cwd: '<%=pkg.version%>/css-debug/',
                 src: ['**/*.css'],       
-                dest:'<%=meta.destPath%>/css/'
+                dest:'<%=pkg.version%>/css/'
             }
         },
         imagemin: {
@@ -25,9 +24,9 @@ module.exports =function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: 'img/<%=meta.destPath%>/',
+                    cwd: 'img/<%=pkg.version%>/',
                     src: ['**/*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
-                    dest: 'img/<%=meta.destPath%>/' // 优化后的图片保存位置
+                    dest: 'img/<%=pkg.version%>/' // 优化后的图片保存位置
                 }]
             }
         },
@@ -35,26 +34,30 @@ module.exports =function(grunt) {
             //图片没修改的情况不用处理
             img:{
                 expand: true,
-                cwd: 'img/<%=meta.destPath%>/',
+                cwd: 'img/<%=pkg.version%>/',
                 src: ['**/*'],
-                dest:'<%=meta.destPath%>/img/'
+                dest:'<%=pkg.version%>/img/'
             },
-
             zipimg:{
                 expand: true,
-                cwd: '<%=meta.destPath%>/img/',
+                cwd: '<%=pkg.version%>/img/',
                 src: '*',
                 dest:'<%=meta.zipPath%>/img/',
                 filter: 'isFile'
             },
-            css:{
-                src: '<%=meta.destPath%>/css/frozen.css',
-                dest:'<%=meta.zipPath%>/css/frozen.css'
+            frozencss:{
+                src: '<%=pkg.version%>/css/frozen.css',
+                dest: '<%=meta.zipPath%>/css/frozen.css'
+            },
+            vipcss:{
+                src: '<%=pkg.version%>/css/vip.css',
+                dest: '<%=meta.zipPath%>/css/vip.css'
             },
             staticcss:{
-                src: '<%=meta.destPath%>/css-debug/global.css',
+                src: '<%=pkg.version%>/css-debug/global.css',
                 dest:'_themes/one/static/global.css'
             }
+
         },
         compress: {
             main: {
@@ -63,6 +66,14 @@ module.exports =function(grunt) {
                 },
                 expand: true,
                 src: ['i.gtimg.cn/**']
+            },
+            download:{
+                options: {
+                    archive: '_themes/one/static/frozenui.zip'
+                },
+                expand: true,
+                src: ['<%=pkg.version%>/css/**','<%=pkg.version%>/css-debug/**','img/*/*'],
+                dest:'frozenui'
             }
         },
         sass: {
@@ -70,21 +81,21 @@ module.exports =function(grunt) {
                 expand: true,
                 cwd : "sass",
                 src: ['**/*.scss'],
-                dest:'<%=meta.destPath%>/css-debug/',
+                dest:'<%=pkg.version%>/css-debug/',
                 ext:'.css'
             }
         },
         autoprefixer: {
 
             options: {
-                diff: true,
+                diff: false,
                 browsers: ['ios 5','android 2.3']
             },
 
             // prefix all files
             multiple_files: {
                 expand: true,
-                src: ['<%=meta.destPath%>/css-debug/*.css','<%=meta.destPath%>/css-debug/**/*.css']// -> src/css/file1.css, src/css/file2.css
+                src: ['<%=pkg.version%>/css-debug/*.css','<%=pkg.version%>/css-debug/**/*.css']// -> src/css/file1.css, src/css/file2.css
             }
         },
         watch: {
@@ -102,8 +113,8 @@ module.exports =function(grunt) {
                     port: 21000,
                     authKey: 'key'
                 },
-                src: '<%=meta.destPath%>',
-                dest: '/frozenui/<%=meta.destPath%>',
+                src: '<%=pkg.version%>',
+                dest: '/frozenui/<%=pkg.version%>',
                 exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn'],
                 simple: true
             }

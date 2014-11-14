@@ -38,3 +38,27 @@
 
 10. _basic.css_ 改成 _frozen.css_，`ui-icon-tag`改成`ui-tag`，并和`ui-select-user`一起移到vip目录下，不再包含在_frozen.css_里
 
+
+## 1.2.0（1.1.1只发布了vip.css，废弃）
+
+
+1. 修改ui-list和ui-form的箭头图标
+
+2. 去掉ui-select-user,增加ui-selector
+
+3. 增加ui-icon-qq
+
+4. selec标签重写
+
+5. 修改ui-avatar[有些android2.3的机器不支持 border-radius %单位](https://github.com/frozenui/baseui/issues/9)的问题
+
+6. 修改ui-btn的行高不一致的问题
+
+7. 1px左右边框改用与上下边框同样的方法实现
+
+8. searchbox 增加focus时控制内部元素隐藏和显示的代码，减少js需要的操作
+
+9. ui-tab的dom结构修改
+
+
+

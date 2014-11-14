@@ -9,7 +9,6 @@
 }
 .ui-btn-group button{
   color: #00a5e0;
-	border: none;
 	display: block;
 	line-height: 50px;
 	height: 48px;
@@ -22,6 +21,9 @@
 }
 .ui-btn-group button:active {
 	background: rgba(0,0,0,.1);
+}
+.ui-btn-bottom button:active {
+  color: rgba(0,165,224,.6);
 }
 .ui-btn-group button:last-child{
 	border-right: none;
@@ -47,7 +49,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:2.0){
   .ui-btn-group button{
     position: relative;
-    border: none;
+    border: 0;
   }
   .ui-btn-group button:before {
     content: "";

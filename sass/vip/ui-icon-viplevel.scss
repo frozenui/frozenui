@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*图标基类*/
-.ui-icon-vip {
+.ui-icon-viplevel {
     display:inline-block;
     height:1px;
     position: relative;
@@ -15,23 +15,14 @@
         line-height:100px;
     }
 }
-/*超Q图标*/
-.ui-icon-mq {
-    @extend .ui-icon-vip;
-    width: 28px;
-    span {
-        height: 28px;
-        top: -15px;
-        -webkit-background-size: 28px auto;
-    }
-}
+
 
 
 /*等级图标*/
 @each $item in vip, svip, yearvip,yearsvip {
     @each $type in level,level-s {
         .ui-icon-#{$item}#{$type} {
-            @extend .ui-icon-vip;
+            @extend .ui-icon-viplevel;
         }
     }
 }
@@ -99,7 +90,16 @@
     top:-7px;
 }
 
-
+/*超Q图标*/
+.ui-icon-mq {
+    @extend .ui-icon-viplevel;
+    width: 28px;
+    span {
+        height: 28px;
+        top: -15px;
+        -webkit-background-size: 28px auto;
+    }
+}
 
 
 

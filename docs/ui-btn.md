@@ -6,7 +6,6 @@
 ### 默认
 
 ````html
-
 <button class="ui-btn">确定</button>
 <button class="ui-btn active">确定</button>
 <button class="ui-btn disabled">取消</button>

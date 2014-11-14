@@ -199,6 +199,7 @@
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearsvip7.png)"></span>
 </span>
 ````	
+
 ###超级年费会员铭牌图标
 ````html	
 测试
@@ -224,6 +225,7 @@
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearsvip_s7.png)"></span>
 </span>
 ````	
+
 ###超Q图标
 ````html	
 测试
@@ -263,6 +265,7 @@
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip7.png)"></span>
 </span>
 ````		
+
 ###普通会员铭牌图标
 ````html		
 <span class="ui-icon-viplevel-s">
@@ -292,7 +295,6 @@
 ````		
 ###年费会员图标
 
-	
 ````html
 <span class="ui-icon-yearviplevel">
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/yearvip1.png)"></span>
@@ -314,8 +316,7 @@
 </span>
 <span class="ui-icon-yearviplevel">
 	<span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/yearvip7.png)"></span>
-</span>
-		
+</span>		
 ````	
 
 ###年费会员铭牌图标
