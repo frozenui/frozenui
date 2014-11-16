@@ -69,7 +69,7 @@ module.exports =function(grunt) {
             },
             download:{
                 options: {
-                    archive: '_themes/one/static/frozenui-<%=pkg.version%>.zip'
+                    archive: '_themes/one/static/frozenui.zip'
                 },
                 expand: true,
                 src: ['<%=pkg.version%>/**']
