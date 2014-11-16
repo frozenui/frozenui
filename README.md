@@ -42,3 +42,4 @@ _site目录下的内容提交到gh-pages分支，参考https://github.com/frozen
 ### 维护
 
 原则是有问题提issue，代码修改提pr，由faycheng合并以及内部发布
+下载地址 http://frozenui.github.io/baseui/static/frozenui.zip
