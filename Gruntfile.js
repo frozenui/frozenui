@@ -69,10 +69,10 @@ module.exports =function(grunt) {
             },
             download:{
                 options: {
-                    archive: '_themes/one/static/frozenui.zip'
+                    archive: '_themes/one/static/frozenui-<%=pkg.version%>.zip'
                 },
                 expand: true,
-                src: ['<%=pkg.version%>/css/**','<%=pkg.version%>/css-debug/**','img/*/*'],
+                src: ['<%=pkg.version%>/**'],
                 dest:'frozenui'
             }
         },
@@ -80,7 +80,7 @@ module.exports =function(grunt) {
             dist: {
                 expand: true,
                 cwd : "sass",
-                src: ['**/*.scss'],
+                src: ['*.scss'],
                 dest:'<%=pkg.version%>/css-debug/',
                 ext:'.css'
             }
@@ -95,7 +95,7 @@ module.exports =function(grunt) {
             // prefix all files
             multiple_files: {
                 expand: true,
-                src: ['<%=pkg.version%>/css-debug/*.css','<%=pkg.version%>/css-debug/**/*.css']// -> src/css/file1.css, src/css/file2.css
+                src: ['<%=pkg.version%>/css-debug/*.css','<%=pkg.version%>/css-debug/**/*.css']
             }
         },
         watch: {

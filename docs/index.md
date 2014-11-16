@@ -13,8 +13,6 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
             <h2 class="alice-module-title">
                 <a href="#"></a>
             </h2>
-            <span class="alice-module-version"></span>
-            <p class="alice-module-description"></p>
         </div>
     </div>
 </script>
@@ -86,7 +84,7 @@ h3.alice-module-subtitle {
     margin: 0;
     color: #333;
     display: block;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .alice-module-sourcecode {
     position: absolute;
