@@ -66,7 +66,7 @@ $bordercolor : #dedfe0;　
         -webkit-background-size: 100% 1px;
     }
     .ui-border-tb{
-        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.50, transparent), color-stop(.50, $bordercolor), to($bordercolor)) left top repeat-x,-webkit-gradient(linear, left top, left bottom, color-stop(.5, transparent), color-stop(.5, $bordercolor), to($bordercolor)) left bottom repeat-x;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(.50, transparent), color-stop(.50, $bordercolor), to($bordercolor)) left top repeat-x,-webkit-gradient(linear, left top, left bottom, color-stop(.5, transparent), color-stop(.5, $bordercolor), to($bordercolor)) left bottom repeat-x;
     }
     .ui-border-tb{
         -webkit-background-size: 100% 1px;
