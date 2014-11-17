@@ -856,13 +856,13 @@ em {
   margin-top: 44px; }
 
 .ui-tab-nav {
-  height: 44px;
-  line-height: 44px;
   display: box;
   display: -webkit-box;
   font-size: 16px; }
 
 .ui-tab-nav li {
+  height: 44px;
+  line-height: 44px;
   min-width: 70px;
   box-flex: 1;
   -webkit-box-flex: 1;
