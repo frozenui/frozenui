@@ -98,6 +98,7 @@
 
 具体模块的代码可以访问[http://frozenui.github.io/baseui/](http://frozenui.github.io/baseui/)
 
+[这里](http://frozenui.github.io/baseui/history.html) 查看历史版本修改记录。
 
 ## 如何引用
 
