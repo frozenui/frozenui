@@ -844,8 +844,6 @@ em {
  */
 .ui-tab-nav {
   width: 100%;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -862,8 +860,8 @@ em {
   margin-top: 45px; }
 
 .ui-tab-nav li {
-  height: 44px;
-  line-height: 44px;
+  height: 45px;
+  line-height: 45px;
   min-width: 70px;
   box-flex: 1;
   -webkit-box-flex: 1;

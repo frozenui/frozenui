@@ -9,12 +9,12 @@
 }
 </style>
 
-## 1.0.0
+##[1.0.0](https://github.com/frozenui/baseui/tree/master/1.0.0)
 
 发布新版本
 
 
-## 1.1.0
+## [1.1.0](https://github.com/frozenui/baseui/tree/master/1.1.0)
 
 引用地址[http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256 )
 
@@ -39,14 +39,14 @@
 10. _basic.css_ 改成 _frozen.css_，`ui-icon-tag`改成`ui-tag`，并和`ui-select-user`一起移到vip目录下，不再包含在_frozen.css_里
 
 
-## 1.2.0（1.1.1只发布了vip.css，废弃）
+## [1.2.0](https://github.com/frozenui/baseui/tree/master/1.2.0)（1.1.1只发布了vip.css，废弃）
 
 
 引用地址: 
 
 [http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=256 )
 
-[http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/vip.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=256 )
+[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=256 )
 
 1. 修改`ui-list`和`ui-form`的箭头图标
 
