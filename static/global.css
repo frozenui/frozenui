@@ -307,8 +307,7 @@ em {
     border-radius: 4px;
     right: -3px;
     top: -3px;
-    -webkit-background-clip: padding-box;
-            background-clip: padding-box; }
+    background-clip: padding-box; }
 
 /* 带白边的 */
 .ui-reddot-border:after {
@@ -407,14 +406,12 @@ em {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
   border: 1px solid #c8c7cc;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn:not(.disabled):active, .ui-btn-lg:not(.disabled):active, .ui-btn.active, .active.ui-btn-lg {
   background: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn:after, .ui-btn-lg:after {
   content: "";
@@ -429,38 +426,33 @@ em {
   border-color: #0baae4;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.49, #1fbaf3), to(#18b4ed));
   color: #fff;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-primary:not(.disabled):active, .ui-btn-primary.active {
   background: #1ca7da;
   border-color: #1ca7da;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-danger {
   background-color: #f75549;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.49, #fe594d), to(#f75549));
   color: #fff;
   border-color: #f43d30;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-danger:not(.disabled):active, .ui-btn-danger.active {
   background: #df5045;
   border-color: #df5045;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn.disabled, .disabled.ui-btn-lg {
   border: 1px solid #e9ebec;
   color: #ccc;
   background: #e9ebec;
   text-shadow: none;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-lg {
   font-size: 18px;
@@ -1198,14 +1190,12 @@ em {
     width: 95px;
     position: absolute;
     text-align: left;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+    box-sizing: border-box; }
   .ui-form-item input,
   .ui-form-item textarea {
     width: 100%;
     padding-left: 95px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+    box-sizing: border-box; }
 
 .ui-form-item-textarea {
   height: 65px; }
@@ -1351,19 +1341,17 @@ em {
       -webkit-box-sizing: content-box;
       box-sizing: content-box;
       border-color: #dfdfdf;
-      -webkit-box-shadow: #dfdfdf 0px 0px 0px 0px inset;
-              box-shadow: #dfdfdf 0px 0px 0px 0px inset;
-      -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s;
+      box-shadow: #dfdfdf 0px 0px 0px 0px inset;
+      -webkit-transition: border 0.4s, box-shadow 0.4s;
       transition: border 0.4s, box-shadow 0.4s;
       -webkit-background-clip: content-box;
       background-clip: content-box; }
     .ui-switch input:checked:before {
       border-color: #64bd63;
-      -webkit-box-shadow: #64bd63 0px 0px 0px 16px inset;
-              box-shadow: #64bd63 0px 0px 0px 16px inset;
+      box-shadow: #64bd63 0px 0px 0px 16px inset;
       background-color: #64bd63;
       transition: border 0.4s, box-shadow 0.4s,  background-color 1.2s;
-      -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s, background-color 1.2s;
+      -webkit-transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
       background-color: #64bd63; }
     .ui-switch input:checked:after {
       left: 21px; }
@@ -1376,8 +1364,7 @@ em {
       left: 0;
       border-radius: 100%;
       background-color: #fff;
-      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
       -webkit-transition: left 0.2s;
       transition: left 0.2s; }
 
@@ -1405,8 +1392,7 @@ em {
   height: 24px;
   border: 1px solid #dfe0e1;
   border-radius: 13px;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   position: absolute;
   left: 0px;
   top: -16px; }
@@ -1729,8 +1715,7 @@ em {
   width: 8px;
   height: 10px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOtJREFUeNpibGpq2sDAwJAHxI8YyABMQOwPxNeAuByI2cgxAAS4gbgDiM8DsT05BsCAFhDvB+JFQCxGjgEgwAjEsUB8E4gzcKjBawAMCADxdCA+AcTG5BgAA6ZAfAqIJ0MNJdkAmLocIL4OxDHkGAADEkC8GIj3ArEGSICFgTzgBMQXgbiXiYF8ANLLSa4LjgNxFhBfINUFb4E4DYhtQJpJCYP/QDwfml/eIEsQY8AlqHOPkpqQvgBxCTQVHsWlCJcL1gBxIRA/IeQ8dAPuAHEuEO8gNTv/AOJGINYjRTPMBbuhgXSHnAQBEGAAskkmlXEGsU0AAAAASUVORK5CYII=) no-repeat center left;
-  -webkit-background-size: 8px auto;
-          background-size: 8px auto;
+  background-size: 8px auto;
   position: absolute;
   left: 15px;
   top: 15px;
