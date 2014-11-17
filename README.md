@@ -15,7 +15,7 @@
 
 使用`grunt commit --log=logtest` 命令会做好打包压缩部署ftp等操作, 以及生成_site站点,git 提交
 
-没有shell操作的可以使用`grunt`命令打包压缩部署ftp，然后使用nico命令生成站点和git命令提交
+也可以使用`grunt`命令打包压缩部署ftp，然后使用nico命令生成站点和git命令提交
 
 css ，css-debug和img目录是需要发布到线上，_css-debug_是未压缩的版本，为调试使用
 
