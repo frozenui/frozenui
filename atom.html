@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <title>FrozenUI - atom</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" content="专注于移动web的UI框架，基于手机QQ规范" />
+        <meta name="Keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js" />
+        <meta name="author" content="fayching" />
+        <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="/static/frozenui/1.2.0/global.css" />
+        <link rel="stylesheet" href="static/frozenui/1.2.0/global.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/style.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
+        <style>
+            .ui-btn-group.ui-btn-bottom, .ui-dialog,.ui-poptips,.ui-notice{
+               position: relative;
+               margin: 0;
+            }
+            .ui-poptips{margin:10px 0;}
+            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+               position: relative;
+               margin: 0;
+           }
+            .ui-icon{font-size:30px;}
+            .ui-table{line-height: 40px;} 
+            .ui-dialog{height:320px;}
+            body{
+                -webkit-user-select: inherit;
+            }
+            .border-list li{width:100px;height:50px;margin-bottom:20px;text-align: center;line-height: 50px;}
+            .ui-searchbox-wrap,.ui-selector-title,.ui-tab-nav{position: static;}
+            ..ui-tab-content{margin-top: 0;}
+            .ui-selector-content{padding-top: 0;}
+            .ui-selector-title h3{font-size: 14px;}
+            .ui-select-user h3{font-size: 16px;}
+            .side-area ul li{padding-left: 20px;}
+            .nav{display: none}
+            .side-highlight .nav{display: block}
+            .side-area .side-highlight{border: none}
+            .side-area .side-highlight a{background: none}
+            .side-area .side-highlight > a{border-right: 1px solid #025775;}
+        </style>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+        <script src="http://frozenui.github.io/static/jquery.js"></script>
+        
+        <script>
+        var $ = jQuery;
+        seajs.config({
+          base: "http://frozenui.github.io/static/sea-modules/",
+          alias: {
+            
+            "$": "jquery/jquery/2.1.0/jquery.js",
+            "sticky":"arale/sticky/1.3.1/sticky"
+          }
+        })
+        seajs.use(['sticky'], function(Sticky) {
+            if(document.body.clientWidth>980){
+            	Sticky('.side-area', 20);
+            }
+        });
+        </script>
+    </head>
+    <body>
+        <div id="body-wrapper">
+            <div class="head-area">
+
+            </div>
+            <div class="main-area">
+                <div class="side-area">
+                    <ul>
+                      <li><a href="#modules-ui-btn">按钮 button</a>
+                        <ul class="nav">
+                          <li data-id="ui-btn"><a href="#modules-ui-btn">ui-btn</a></li>
+                          <li data-id="ui-btn-lg"><a href="#modules-ui-btn-lg" >ui-btn-lg</a></li>
+                          <li data-id="ui-btn-group"><a href="#modules-ui-btn-group" >ui-btn-group</a></li>
+                        </ul>
+                      </li>
+                      <li data-id="atom"><a href="#modules-atom">辅助类 atom</a></li>
+                      <li  data-id="ui-searchbox"><a href="#modules-ui-searchbox">搜索框 searchbox</a></li>
+                      <li data-id="ui-tab"><a href="#modules-ui-tab">选项卡 tab</a></li>
+                      <li data-id="ui-list"><a href="#modules-ui-list" >列表 list</a></li>
+                      <li><a href="#modules-ui-form">表单项 form</a>
+                        <ul class="nav">
+                          <li data-id="ui-form"><a href="#modules-ui-form" >ui-form</a></li>
+                          <li data-id="ui-checkbox"><a href="#modules-ui-checkbox" >ui-checkbox</a></li>
+                          <li data-id="ui-switch"><a href="#modules-ui-switch">ui-switch</a></li>
+                          <li data-id="ui-radio"><a href="#modules-ui-radio">ui-radio</a></li>
+                        </ul>
+                      </li>
+                      <li data-id="ui-table"><a href="#modules-ui-table">表格 table</a></li>
+                      <li  data-id="ui-dialog"><a href="#modules-ui-dialog">弹窗 dialog</a></li>
+                      <li data-id="ui-notice"><a href="#modules-ui-notice">通知 notice</a></li>
+                      <li><a href="#modules-ui-tips">提示 tips</a>
+                        <ul class="nav">
+                          <li data-id="ui-tips"><a href="#modules-ui-tips">ui-tips</a></li>
+                          <li data-id="ui-poptips"><a href="#modules-ui-poptips" >ui-poptips</a></li>
+                          <li data-id="ui-tooltips"><a href="#modules-ui-tooltips">ui-tooltips</a></li>
+                        </ul>
+                      </li>
+                      <li data-id="ui-loading"><a href="#modules-ui-loading">加载中 loading</a></li>
+                      <li><a href="#modules-ui-tag">会员业务 icon等</a>
+                        <ul class="nav">
+                          <li data-id="ui-tag"><a href="#modules-ui-tag">ui-tag</a></li>
+                          <li data-id="ui-selector"><a href="#modules-ui-selector">ui-selector</a></li>
+                          <li data-id="ui-icon-qq"><a href="#modules-ui-icon-qq" >ui-icon-qq</a></li>
+                          <li data-id="ui-icon-viplevel"><a href="#modules-ui-icon-viplevel">ui-icon-viplevel</a></li>
+                          <li data-id="ui-icon-qqlevel"><a href="#modules-ui-icon-qqlevel" >ui-icon-qqlevel</a></li>
+              </ul>
+                      </li>
+                    </ul>
+                </div>          
+                <script type="text/template" id="list-template">
+                    <li><a href="#"></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>atom</h1>
+                    <div class="content"><p>辅助类</p>
+<h3 id="常用文本颜色">常用文本颜色</h3><div class="nico-insert-code"><span class="ui-txt-default">ui-txt-default</span><br>
+<span class="ui-txt-info">ui-txt-info</span><br>
+<span class="ui-txt-muted">ui-txt-muted</span><br>
+<span class="ui-txt-warning">ui-txt-warning</span><br>
+<span class="ui-txt-highlight">ui-txt-highlight</span><br></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-default"</span>&gt;</span>ui-txt-default<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-info"</span>&gt;</span>ui-txt-info<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-muted"</span>&gt;</span>ui-txt-muted<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-warning"</span>&gt;</span>ui-txt-warning<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-highlight"</span>&gt;</span>ui-txt-highlight<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span></code></pre></div><h3 id="1px边框">1px边框</h3><div class="nico-insert-code"><ul class="border-list">
+    <li class="ui-border">边框</li>
+    <li class="ui-border-t">上边框</li>
+    <li class="ui-border-b">下边框</li>
+    <li class="ui-border-tb">上下边框</li>
+    <li class="ui-border-l">左边框</li>
+    <li class="ui-border-r">右边框</li>
+</ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"border-list"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border"</span>&gt;</span>边框<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>上边框<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-b"</span>&gt;</span>下边框<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-tb"</span>&gt;</span>上下边框<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-l"</span>&gt;</span>左边框<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-r"</span>&gt;</span>右边框<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="垂直上下居中">垂直上下居中</h3><div class="nico-insert-code"><div class="ui-center" style="height:100px;">
+    <p>居中</p>
+</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-center"</span> <span class="attribute">style</span>=<span class="value">"height:100px;"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>居中<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="红点和未读数通知">红点和未读数通知</h3><div class="nico-insert-code"><div class="ui-reddot">内容内容</div>
+<div class="ui-reddot-border">内容内容</div>
+<div class="ui-reddot-s">内容内容</div>
+<div class="ui-badge">123</div>
+<div class="ui-badge-muted">345</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot-border"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot-s"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge"</span>&gt;</span>123<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge-muted"</span>&gt;</span>345<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="圆角头像">圆角头像</h3><div class="nico-insert-code"><p>资料场景</p>    
+<div class="ui-avatar-one"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?128*128)"></span></div>
+<p>圆角头像，列表场景</p>
+<div class="ui-avatar-lg"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?108*108)"></span></div>
+<div class="ui-avatar"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span></div>
+<div class="ui-avatar-s"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span></div>
+<p>平铺头像</p>
+<span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+<span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+<span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+<span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">p</span>&gt;</span>资料场景<span class="tag">&lt;/<span class="title">p</span>&gt;</span>    
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-one"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?128*128)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>圆角头像，列表场景<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-lg"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?108*108)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-s"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>平铺头像<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div></div>
+                </div>
+                
+            </div>
+            <div class="footer-area">
+            </div>
+        </div>
+        <script src="http://frozenui.github.io/static/layout.js"></script>
+    </body>
+</html>
