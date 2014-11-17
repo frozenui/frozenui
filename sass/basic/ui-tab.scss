@@ -14,10 +14,12 @@
     display: box;
     display: -webkit-box;
     font-size: 16px;
+    height: 45px;
+    box-sizing: border-box;
 
  }
 .ui-tab-content{
-    margin-top: 44px;
+    margin-top: 45px;
 }
 .ui-tab-nav li{
     height: 44px;
