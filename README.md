@@ -15,7 +15,7 @@
 
 使用`grunt commit --log=logtest` 命令会做好打包压缩部署ftp等操作, 以及生成_site站点,git 提交
 
-没有shell操作的可以使用`grunt`命令打包压缩部署ftp，然后使用nico命令生成站点和git命令提交
+也可以使用`grunt`命令打包压缩部署ftp，然后使用nico命令生成站点和git命令提交
 
 css ，css-debug和img目录是需要发布到线上，_css-debug_是未压缩的版本，为调试使用
 
@@ -35,11 +35,12 @@ _site目录下的内容提交到gh-pages分支，参考https://github.com/frozen
 
 分为小版本和大版本，目前grunt的功能还不完善，只支持升小版本，后续会优化
 
-小版本控制发布频率在一月一次，不新增离线包，仅在当前的离线包中增加一个新版本的文件夹，图片未修改和新增的不用copy过来
+小版本控制发布频率在一月一次，不新增离线包，仅在当前的离线包中增加一个新版本的文件夹
 
-大版本则需新增离线包，修改bid，需要打包一个全新的文件夹，并且图片也要copy进来（vip的图片不用）。
+大版本则需新增离线包，修改bid，需要打包一个全新的文件夹。
 
 ### 维护
 
 原则是有问题提issue，代码修改提pr，由faycheng合并以及内部发布
+
 下载地址 http://frozenui.github.io/baseui/static/frozenui.zip
