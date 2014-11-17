@@ -7,7 +7,6 @@
 
 Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。遵循[手Q样式规范](http://isux.oa.com/guide/mqq/vd#545)，基本样式使用离线包的方式减少请求，并提供快速接入的方案。
 
-查看
 
 <script type="text/template" id="alice-module">
     <div class="alice-module">
