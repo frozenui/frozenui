@@ -672,6 +672,8 @@ body .fn-hide {
     -webkit-transition:background .2s;
     -moz-transition:background .2s;
     -o-transition:background .2s;
+    float: left;
+    margin-right: 20px;
 }
 .fr-item-info a:hover{
     text-decoration: none;
@@ -736,7 +738,7 @@ body .fn-hide {
 }
 .fr-yewu ul{
     max-width: 1013px;
-    margin: 0 auto;
+    margin: 20px auto;
     font-size: 0;
 }
 .fr-yewu li{
