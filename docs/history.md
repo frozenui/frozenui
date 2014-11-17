@@ -58,7 +58,9 @@
 
 8. searchbox 增加focus时控制内部元素隐藏和显示的代码，减少js需要的操作
 
-9. ui-tab的dom结构修改
+9. ui-tab的dom结构修改，高度的bug修改
+
+10. 图片使用相对路径，只发布frozen.css，vip.css，global.css 三个css，不再提供单个组件css
 
 
 

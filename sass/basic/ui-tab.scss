@@ -11,15 +11,13 @@
     top: 0;
     left: 0;
     z-index: 100;
+    display: box;
+    display: -webkit-box;
+    font-size: 16px;
 
  }
 .ui-tab-content{
     margin-top: 44px;
-}
-.ui-tab-nav{
-	display: box;
-	display: -webkit-box;
-	font-size: 16px;
 }
 .ui-tab-nav li{
     height: 44px;
@@ -29,10 +27,11 @@
 	-webkit-box-flex: 1;
 	text-align: center;
 	color: #808080;
+    box-sizing: border-box;
 }
 .ui-tab-nav li.current{
     color: #00a5e0;
-    border-bottom: 3px #00a5e0 solid;
+    border-bottom: 2px #00a5e0 solid;
 }
 .ui-tab-nav li:active{
     opacity: .8;

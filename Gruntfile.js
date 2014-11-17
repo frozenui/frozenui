@@ -54,8 +54,8 @@ module.exports =function(grunt) {
                 dest: '<%=meta.zipPath%>/css/vip.css'
             },
             staticcss:{
-                src: '<%=pkg.version%>/css-debug/global.css',
-                dest:'_themes/one/static/global.css'
+                src: '<%=pkg.version%>/**/*',
+                dest:'_themes/one/static/'
             }
 
         },

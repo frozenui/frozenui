@@ -113,7 +113,7 @@ $bordercolor : #dedfe0;　
 
 .ui-avatar {
     @include avatar;
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=256);
     span {
         @include avatar;
     }
@@ -121,7 +121,7 @@ $bordercolor : #dedfe0;　
 
 .ui-avatar-lg{
     @include avatar(54);
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=256);
     span {
         @include avatar(54);
     }
@@ -129,7 +129,7 @@ $bordercolor : #dedfe0;　
 
 .ui-avatar-s{
     @include avatar(40);
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=256);
     span {
         @include avatar(40);
     }
@@ -138,7 +138,7 @@ $bordercolor : #dedfe0;　
 /* 资料场景 */
 .ui-avatar-one{
     @include avatar(64);
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=256);
     span {
         @include avatar(64);
     }
@@ -147,7 +147,7 @@ $bordercolor : #dedfe0;　
 /* 平铺场景 */
 .ui-avatar-tiled{
     @include avatar(30);
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=256);
     span {
         @include avatar(30);
     }
