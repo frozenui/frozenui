@@ -41,6 +41,7 @@
 
 ## 1.2.0（1.1.1只发布了vip.css，废弃）
 
+
 引用地址: 
 
 [http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=256 )
@@ -66,6 +67,5 @@
 9. `ui-tab`的dom结构修改，高度的bug修改
 
 10. 图片使用相对路径，只发布_frozen.css_，_vip.css_，_global.css_ 三个css，不再提供单个组件css
-
 
 
