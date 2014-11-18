@@ -18,15 +18,10 @@
     color: #f28c48;
 }
 
-/**
- * 1px border hack
- */
+/* 1px hack */
 
-$bordercolor : #dedfe0;　 
+$bordercolor : #dedfe0;
 
-.ui-border{
-    border: 1px solid $bordercolor;  
-}
 .ui-border-t {border-top: 1px solid $bordercolor;}
 .ui-border-b {border-bottom: 1px solid $bordercolor}
 .ui-border-tb{
@@ -36,7 +31,9 @@ $bordercolor : #dedfe0;　
 }
 .ui-border-l{border-left: 1px solid $bordercolor;}
 .ui-border-r{border-right: 1px solid $bordercolor;}
-
+.ui-border{
+    border: 1px solid $bordercolor;
+}
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .ui-border {position: relative; border: 0;}

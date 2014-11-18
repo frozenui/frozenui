@@ -46,11 +46,11 @@
 	<form action="#" >
 		<div class="ui-form-item ui-form-item-pure ui-border-b">
 			<input type="text" placeholder="QQ号/手机号/邮箱">
-			<a href="#" class="ui-form-icon-close"></a>
+			<a href="#" class="ui-icon-close"></a>
 		</div>
 		<div class="ui-form-item ui-form-item-pure ui-border-b">
 			<input type="password" placeholder="密码">
-			<a href="#" class="ui-form-icon-close"></a>
+			<a href="#" class="ui-icon-close"></a>
 		</div>
 	</form>
 </div>
@@ -65,7 +65,7 @@
 		<div class="ui-form-item ui-form-item-l ui-border-b">
 			<label class="ui-border-r">中国 +86</label>
 			<input type="text" placeholder="请输入手机号码">
-			<a href="#" class="ui-form-icon-close"></a>
+			<a href="#" class="ui-icon-close"></a>
 		</div>
 	</form>
 </div>
@@ -81,7 +81,7 @@
 			<input type="text" placeholder="请输入验证码">
 			<!-- 若按钮不可点击则添加 disabled 类 -->
 			<button type="button" class="ui-border-l">重新发送</button>
-			<a href="#" class="ui-form-icon-close"></a>
+			<a href="#" class="ui-icon-close"></a>
 		</div>
 	</form>
 </div>

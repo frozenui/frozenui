@@ -18,8 +18,8 @@
 
 ````html
 <ul class="border-list">
-	<li class="ui-border">边框</li>
 	<li class="ui-border-t">上边框</li>
+	<li class="ui-border">边框</li>
 	<li class="ui-border-b">下边框</li>
 	<li class="ui-border-tb">上下边框</li>
 	<li class="ui-border-l">左边框</li>
