@@ -116,13 +116,7 @@ em {
 .ui-txt-highlight {
   color: #f28c48; }
 
-/**
- * 1px border hack
- */
-　
-.ui-border {
-  border: 1px solid #dedfe0; }
-
+/* 1px hack */
 .ui-border-t {
   border-top: 1px solid #dedfe0; }
 
@@ -139,6 +133,9 @@ em {
 
 .ui-border-r {
   border-right: 1px solid #dedfe0; }
+
+.ui-border {
+  border: 1px solid #dedfe0; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .ui-border {
