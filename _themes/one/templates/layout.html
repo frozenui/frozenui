@@ -12,8 +12,8 @@
         <meta name="Keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js" />
         <meta name="author" content="fayching" />
         <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
-        <link rel="stylesheet" href="/static/global.css" />
-        <link rel="stylesheet" href="static/global.css" />
+        <!-- <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/{{config.package.version}}/css-debug/global.css" /> -->
+        <link rel="stylesheet" href="static/{{config.package.version}}/css-debug/global.css" />
         <link rel="stylesheet" href="http://frozenui.github.io/static/style.css" />
         <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
         <style>
@@ -48,7 +48,6 @@
         <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
         <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
         <script src="http://frozenui.github.io/static/jquery.js"></script>
-        
         <script>
         var $ = jQuery;
         seajs.config({
@@ -58,7 +57,7 @@
             "$": "jquery/jquery/2.1.0/jquery.js",
             "sticky":"arale/sticky/1.3.1/sticky"
           }
-        })
+        });
         seajs.use(['sticky'], function(Sticky) {
             if(document.body.clientWidth>980){
             	Sticky('.side-area', 20);
@@ -67,6 +66,7 @@
         </script>
     </head>
     <body>
+       
         <div id="body-wrapper">
             <div class="head-area">
 
@@ -90,6 +90,7 @@
                           <li data-id="ui-form"><a href="#modules-ui-form" >ui-form</a></li>
                           <li data-id="ui-checkbox"><a href="#modules-ui-checkbox" >ui-checkbox</a></li>
                           <li data-id="ui-switch"><a href="#modules-ui-switch">ui-switch</a></li>
+                          <li data-id="ui-radio"><a href="#modules-ui-radio">ui-radio</a></li>
                         </ul>
                       </li>
                       <li data-id="ui-table"><a href="#modules-ui-table">表格 table</a></li>

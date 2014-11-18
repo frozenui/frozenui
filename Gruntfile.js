@@ -54,8 +54,8 @@ module.exports =function(grunt) {
                 dest: '<%=meta.zipPath%>/css/vip.css'
             },
             staticcss:{
-                src: '<%=pkg.version%>/css-debug/global.css',
-                dest:'_themes/one/static/global.css'
+                src: '<%=pkg.version%>/**/*',
+                dest:'_themes/one/static/'
             }
 
         },
@@ -72,15 +72,14 @@ module.exports =function(grunt) {
                     archive: '_themes/one/static/frozenui.zip'
                 },
                 expand: true,
-                src: ['<%=pkg.version%>/css/**','<%=pkg.version%>/css-debug/**','img/*/*'],
-                dest:'frozenui'
+                src: ['<%=pkg.version%>/**']
             }
         },
         sass: {
             dist: {
                 expand: true,
                 cwd : "sass",
-                src: ['**/*.scss'],
+                src: ['*.scss'],
                 dest:'<%=pkg.version%>/css-debug/',
                 ext:'.css'
             }
@@ -95,7 +94,7 @@ module.exports =function(grunt) {
             // prefix all files
             multiple_files: {
                 expand: true,
-                src: ['<%=pkg.version%>/css-debug/*.css','<%=pkg.version%>/css-debug/**/*.css']// -> src/css/file1.css, src/css/file2.css
+                src: ['<%=pkg.version%>/css-debug/*.css','<%=pkg.version%>/css-debug/**/*.css']
             }
         },
         watch: {

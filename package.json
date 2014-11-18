@@ -1,9 +1,9 @@
 {
-  "name": "frozenui",
+  "name": "FrozenUI",
   "version": "1.2.0",
-  "title": "Frozen",
+  "title": "FrozenUI CSS",
   "homepage": "https://github.com/frozenui/baseui",
-  "author": "faycheng",
+  "author": "fayching",
   "repository": {
     "type": "git",
     "url": "https://github.com/frozenui/baseui.git"

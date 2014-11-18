@@ -213,7 +213,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  background-image: url(../img/default.png?_bid=256); }
   .ui-avatar span {
     width: 50px;
     height: 50px;
@@ -229,7 +229,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  background-image: url(../img/default.png?_bid=256); }
   .ui-avatar-lg span {
     width: 54px;
     height: 54px;
@@ -245,7 +245,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  background-image: url(../img/default.png?_bid=256); }
   .ui-avatar-s span {
     width: 40px;
     height: 40px;
@@ -262,7 +262,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  background-image: url(../img/default.png?_bid=256); }
   .ui-avatar-one span {
     width: 64px;
     height: 64px;
@@ -279,7 +279,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256);
+  background-image: url(../img/default.png?_bid=256);
   display: inline-block; }
   .ui-avatar-tiled span {
     width: 30px;
@@ -346,7 +346,7 @@ em {
   overflow: visible; }
 
 .ui-icon:before, .ui-icon-refresh:before, .ui-icon-close:before, .ui-icon-search:before {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat 0px 0px;
+  background: url(../img/icon.png?_bid=256) no-repeat 0px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -672,7 +672,7 @@ em {
   font-size: 20px; }
 
 .ui-tips i:before {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat -25px 0px;
+  background: url(../img/icon.png?_bid=256) no-repeat -25px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -721,7 +721,7 @@ em {
   font-size: 20px; }
 
 .ui-poptips i:before {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat 0px 0px;
+  background: url(../img/icon.png?_bid=256) no-repeat 0px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -766,7 +766,7 @@ em {
   background-color: rgba(205, 242, 255, 0.95); }
 
 .ui-tooltips-cnt-link:after {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat -75px 0;
+  background: url(../img/icon.png?_bid=256) no-repeat -75px 0;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -786,7 +786,7 @@ em {
   margin-right: 8px; }
 
 .ui-tooltips-warn i:before {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat -50px 0px;
+  background: url(../img/icon.png?_bid=256) no-repeat -50px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -830,7 +830,7 @@ em {
   overflow: hidden;
   display: block;
   position: absolute;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat -100px -50px;
+  background: url(../img/icon.png?_bid=256) no-repeat -100px -50px;
   -webkit-background-size: 150px auto;
   left: 25px;
   top: 9px;
@@ -850,28 +850,28 @@ em {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100; }
-
-.ui-tab-content {
-  margin-top: 44px; }
-
-.ui-tab-nav {
-  height: 44px;
-  line-height: 44px;
+  z-index: 100;
   display: box;
   display: -webkit-box;
   font-size: 16px; }
 
+.ui-tab-content {
+  margin-top: 44px; }
+
 .ui-tab-nav li {
+  height: 44px;
+  line-height: 44px;
   min-width: 70px;
   box-flex: 1;
   -webkit-box-flex: 1;
   text-align: center;
-  color: #808080; }
+  color: #808080;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .ui-tab-nav li.current {
   color: #00a5e0;
-  border-bottom: 3px #00a5e0 solid; }
+  border-bottom: 2px #00a5e0 solid; }
 
 .ui-tab-nav li:active {
   opacity: .8; }
@@ -979,7 +979,7 @@ em {
   height: 28px;
   -webkit-background-size: 28px auto;
   margin: 11px 15px 11px 0px;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png?_bid=256); }
+  background-image: url(../img/default.png?_bid=256); }
 
 .ui-list-thumb span, .ui-list-thumb-s span {
   width: 100%;
@@ -1063,7 +1063,7 @@ em {
 
 /*连接列表*/
 .ui-list-link li:after, li.ui-list-item-link:after {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat 0 -75px;
+  background: url(../img/icon.png?_bid=256) no-repeat 0 -75px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -1086,7 +1086,7 @@ em {
   display: block;
   width: 14px;
   height: 12px;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat -100px 0;
+  background: url(../img/icon.png?_bid=256) no-repeat -100px 0;
   -webkit-background-size: 150px auto;
   position: absolute;
   right: 15px;
@@ -1104,14 +1104,14 @@ em {
   width: 20px;
   height: 20px;
   display: block;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/loading_sprite.png?_bid=256);
+  background: url(../img/loading_sprite.png?_bid=256);
   -webkit-background-size: auto 20px; }
 
 .ui-loading-bright {
   width: 37px;
   height: 37px;
   display: block;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/loading_sprite_white.png?_bid=256);
+  background-image: url(../img/loading_sprite_white.png?_bid=256);
   -webkit-background-size: auto 37px; }
 
 .ui-loading-wrap .ui-loading {
@@ -1137,13 +1137,13 @@ em {
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon_warn.png?_bid=256); }
+  background-image: url(../img/icon_warn.png?_bid=256); }
 
 .ui-notice-news i {
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon_warn_news.png?_bid=256); }
+  background-image: url(../img/icon_warn_news.png?_bid=256); }
 
 .ui-notice-nearby i {
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon_warn_nearby.png?_bid=256); }
+  background-image: url(../img/icon_warn_nearby.png?_bid=256); }
 
 .ui-notice p {
   font-size: 16px;
@@ -1266,7 +1266,7 @@ em {
   background-color: #e5e6e7; }
 
 .ui-form-item-link:after {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat 0 -75px;
+  background: url(../img/icon.png?_bid=256) no-repeat 0 -75px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -1289,7 +1289,7 @@ em {
   outline: none; }
 
 .ui-checkbox input:before {
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=256) no-repeat -50px -25px;
+  background: url(../img/icon.png?_bid=256) no-repeat -50px -25px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -1507,7 +1507,7 @@ em {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_vip.png?_bid=256);
+  background-image: url(../img/icon_vip.png?_bid=256);
   -webkit-background-size: 24px auto;
   position: absolute;
   line-height: 100px;
@@ -1537,7 +1537,7 @@ em {
   content: "";
   display: block;
   width: 16px;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/icon_qqlevel_sprite.png?_bid=256) no-repeat;
+  background: url(../img/icon_qqlevel_sprite.png?_bid=256) no-repeat;
   background-repeat: no-repeat;
   position: absolute;
   line-height: 100px;
@@ -1638,7 +1638,7 @@ em {
 
 .ui-tag, .ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-freelimit:before, .ui-tag-free:before, .ui-tag-hot:before, .ui-tag-new:before, .ui-tag-selected:after {
   display: block;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_tag.png?_bid=256);
+  background: url(../img/icon_tag.png?_bid=256);
   -webkit-background-size: 36px auto;
   position: absolute;
   z-index: 9; }
