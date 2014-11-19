@@ -1,6 +1,6 @@
 body {
     color: #666;
-    background: #fdfdfd;
+    background: #fff;
     font: 400 14px/1.5 "Helvetica Neue",Helvetica,Arial,"WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
     -webkit-user-select: inherit;
 }
@@ -487,20 +487,22 @@ body .fn-hide {
 
 /*banner*/
 .fr-banner{
-    height: 575px;
     overflow: hidden;
     background-image:-webkit-linear-gradient(90deg, #52b6ec, #66dff4);
     background-image:linear-gradient(90deg,#52b6ec,#66dff4);
 }
 .fr-banner-content{
+    height: 500px;
     max-width: 1140px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 .fr-banner-ph{
+    width: 640px;
     position: absolute;
-    right: 0;
-    top: 63px;
+    top: 60px;
+    left: 200px;
     -webkit-animation:up 1s ease-in;
 }
 @keyframes up{
@@ -527,18 +529,16 @@ body .fn-hide {
         top: 63px;
     }
 }
-.fr-banner-info{
-    position: absolute;
-    top: 300px;
-}
+
 .fr-banner-content h3{
     font-weight: 400;
     font-size: 32px;
     color: #fff;
+    position: absolute;
+    top: 40px;
 }
 .fr-banner-content a{
     display: inline-block;
-    margin-top: 50px;
     margin-right: 14px;
     width: 200px;
     height: 50px;
@@ -557,6 +557,11 @@ body .fn-hide {
     color: #53b8ec;
     background: #fff;
     text-decoration: none;
+}
+.fr-banner-btn{
+    position: absolute;
+    right: 0;
+    bottom: 40px;
 }
 /*content*/
 .fr-content{
