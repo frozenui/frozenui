@@ -34,7 +34,7 @@
 		    </ul>
 		    <ul class="ui-tab-content">
 		        <li>
-		        	<ul class="ui-list ui-border-b">  
+		        	<ul class="ui-list ui-list-link ui-border-b">  
 					    <li>
 					        <div class="ui-list-thumb ui-avatar-s">
 					           <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
@@ -86,12 +86,12 @@
 </html>
 ````
 
-你会看到一个[demo页面](http://frozenui.github.io/test/demo.html)，引用了[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=256 
-](http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256 
+你会看到一个[demo页面](http://frozenui.github.io/test/demo.html)，引用了[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306 
+](http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=306 
 )，这是打包了除了会员相关的基础css文件，使用手Q离线包需要加上bid的参数。
 
 
-如果要使用 [vip等级图标](http://frozenui.github.io/baseui/ui-icon-viplevel) ，[qq等级图标](http://frozenui.github.io/baseui/ui-icon-qqlevel)，[角标](http://frozenui.github.io/baseui/ui-tag)，[好友选择器](http://frozenui.github.io/baseui/ui-selector)，则需另外引用打包了这几个组件的[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=256)。
+如果要使用 [vip等级图标](http://frozenui.github.io/baseui/ui-icon-viplevel) ，[qq等级图标](http://frozenui.github.io/baseui/ui-icon-qqlevel)，[角标](http://frozenui.github.io/baseui/ui-tag)，[好友选择器](http://frozenui.github.io/baseui/ui-selector)，则需另外引用打包了这几个组件的[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306)。
 
 
 还有一种引用方式，非手Q的页面可以引用[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/global.css](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/global.css) 文件，这个css打包了所有模块。
@@ -103,7 +103,13 @@
 ## 如何引用
 
 
-#### 1. 可以直接使用上面的 css 文件，这里提供一个未压缩的版本。
+#### 1. 可以直接使用上面的 css 文件，注意1.2.0之后的bid改为306:
+
+[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306](http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=306) 
+
+[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306)
+
+这里提供一个未压缩的版本。
 
    [http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css)
 
@@ -121,5 +127,5 @@
 
 ####4. 下载地址
 
-另外提供下载地址，主要供非腾讯公司用户使用：[http://frozenui.github.io/baseui/static/frozenui.zip](http://frozenui.github.io/baseui/static/frozenui-1.2.0.zip)
+另外提供下载地址，主要供非腾讯公司用户使用：[http://frozenui.github.io/baseui/static/frozenui-1.2.0.zip](http://frozenui.github.io/baseui/static/frozenui-1.2.0.zip)
 
