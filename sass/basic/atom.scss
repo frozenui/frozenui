@@ -110,7 +110,7 @@ $bordercolor : #dedfe0;
 
 .ui-avatar {
     @include avatar;
-    background-image:url(../img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=306);
     span {
         @include avatar;
     }
@@ -118,7 +118,7 @@ $bordercolor : #dedfe0;
 
 .ui-avatar-lg{
     @include avatar(54);
-    background-image:url(../img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=306);
     span {
         @include avatar(54);
     }
@@ -126,7 +126,7 @@ $bordercolor : #dedfe0;
 
 .ui-avatar-s{
     @include avatar(40);
-    background-image:url(../img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=306);
     span {
         @include avatar(40);
     }
@@ -135,7 +135,7 @@ $bordercolor : #dedfe0;
 /* 资料场景 */
 .ui-avatar-one{
     @include avatar(64);
-    background-image:url(../img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=306);
     span {
         @include avatar(64);
     }
@@ -144,7 +144,7 @@ $bordercolor : #dedfe0;
 /* 平铺场景 */
 .ui-avatar-tiled{
     @include avatar(30);
-    background-image:url(../img/default.png?_bid=256);
+    background-image:url(../img/default.png?_bid=306);
     span {
         @include avatar(30);
     }
@@ -166,7 +166,7 @@ $bordercolor : #dedfe0;
         width: 8px;
         height: 8px;
         background-color: #f76249;
-        border-radius: 4px;
+        border-radius: 5px;
         right: -3px;
         top: -3px;
         background-clip: padding-box;

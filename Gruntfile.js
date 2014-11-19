@@ -6,7 +6,7 @@ module.exports =function(grunt) {
         pkg : grunt.file.readJSON('package.json'),
         
         meta: {
-            zipPath:'i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
+            zipPath:'<%=pkg.version%>/i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
         }, 
         cssmin: {
             minify: {
@@ -62,10 +62,10 @@ module.exports =function(grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'i.gtimg.cn.zip'
+                    archive: '<%=pkg.version%>/i.gtimg.cn.zip'
                 },
                 expand: true,
-                src: ['i.gtimg.cn/**']
+                src: ['<%=pkg.version%>/i.gtimg.cn/**']
             },
             download:{
                 options: {
@@ -78,11 +78,26 @@ module.exports =function(grunt) {
         sass: {
             dist: {
                 expand: true,
-                cwd : "sass",
+                cwd : 'sass',
+                src: ['*.scss'],
+                dest:'<%=pkg.version%>/css-debug/',
+                ext:'.css'
+            },
+            dist2: {
+                expand: true,
+                cwd : 'sass/basic',
+                src: ['*.scss'],
+                dest:'<%=pkg.version%>/css-debug/',
+                ext:'.css'
+            },
+            dist3: {
+                expand: true,
+                cwd : 'sass/vip',
                 src: ['*.scss'],
                 dest:'<%=pkg.version%>/css-debug/',
                 ext:'.css'
             }
+
         },
         autoprefixer: {
 
