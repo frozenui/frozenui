@@ -20,7 +20,7 @@
 			<h2>随心所用的样式组件</h2>
 			<p>FrozenUI提供的CSS组件是目前QQ会员前端开发组所用的通用样式库。遵循手Q样式规范，基本样式使用离线包的方式减少请求，并提供快速接入的方案。</p>
 			<a href="/baseui">查 看</a> 
-			<a href="/baseui/static/frozenui.zip">下载</a>
+			<a href="/baseui/static/frozenui-1.2.0.zip">下载</a>
 		</div>
 	</div>
 	<div class="fr-item">

@@ -9,11 +9,12 @@ $(function() {
       '<div class="nav-area">'+
           '<a class="nav-toggle"></a>'+
           '<ol class="main-nav">'+
-              '<li><a href="/baseui">CSS</a></li>'+
+              '<li><a href="/baseui">CSS组件库</a></li>'+
               '<li><a href="/frozenjs">JavaScript</a></li>'+
-              '<li><a href="/case.html">Animation Case</a></li>'+
-              '<li><a href="/start.html">Getting started</a></li>'+
-              '<li><a href="/about.html">About</a></li>'+
+              '<li><a href="/case.html">动效库</a></li>'+
+              '<li><a href="/start.html">开始使用</a></li>'+
+              '<li><a href="/about.html">关于</a></li>'+
+              '<li><a href="https://github.com/frozenui">GitHub</a></li>'+
           '</ol>'+
       '</div>'+
     '</div>';

@@ -1,0 +1,11 @@
+{
+    "source": "docs",
+    "output": "../frozenui.github.io",
+    "permalink": "{{filename}}.html",
+    "theme": "_themes/one",
+    "writers": [
+        "nico.PageWriter",
+        "nico.StaticWriter",
+        "nico.FileWriter"
+    ]
+}

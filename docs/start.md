@@ -108,10 +108,18 @@
    [http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css)
 
 ####2.访问我们的github仓库
+
  [https://github.com/frozenui/baseui](https://github.com/frozenui/baseui)，自行 clone 到本地。
 
+####3. 使用cdn 和 combo 服务按需加载
 
-####3. 下载地址
+````
+ <link media="all" href="http://i.gtimg.cn/c/=/vipstyle/frozenui/1.2.0/css/reset.css,/vipstyle/frozenui/1.2.0/css/ui-notice.css" rel="stylesheet">
 
-另外提供下载地址，主要供非腾讯公司用户使用：[http://frozenui.github.io/baseui/static/frozenui.zip](http://frozenui.github.io/baseui/static/frozenui.zip)
+````
+手Q有离线包，不推荐这种方式
+
+####4. 下载地址
+
+另外提供下载地址，主要供非腾讯公司用户使用：[http://frozenui.github.io/baseui/static/frozenui.zip](http://frozenui.github.io/baseui/static/frozenui-1.2.0.zip)
 
