@@ -54,7 +54,7 @@ module.exports =function(grunt) {
                 dest: '<%=meta.zipPath%>/css/vip.css'
             },
             staticcss:{
-                src: '<%=pkg.version%>/**/*',
+                src: ['<%=pkg.version%>/css/**','<%=pkg.version%>/css-debug/**','<%=pkg.version%>/img/**'],
                 dest:'_themes/one/static/'
             }
 
@@ -69,10 +69,11 @@ module.exports =function(grunt) {
             },
             download:{
                 options: {
-                    archive: '_themes/one/static/frozenui.zip'
+                    archive: '_themes/one/static/frozenui-<%=pkg.version%>.zip'
                 },
+                cwd: '_themes/one/static/<%=pkg.version%>',
                 expand: true,
-                src: ['<%=pkg.version%>/**']
+                src: ['**']
             }
         },
         sass: {

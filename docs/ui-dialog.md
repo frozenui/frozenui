@@ -10,6 +10,7 @@
 <div class="ui-dialog show">
     <div class="ui-dialog-cnt">
         <div class="ui-dialog-bd">
+        	<h4>标题标题</h4>
             <div>开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！</div>
         </div>
         <div class="ui-dialog-ft ui-btn-group">
