@@ -28,6 +28,11 @@
             body{
                 -webkit-user-select: inherit;
             }
+            @media (max-width: 980px){
+                body{
+                    -webkit-user-select: none;
+                }
+            }
             .border-list li{width:100px;height:50px;margin-bottom:20px;text-align: center;line-height: 50px;}
             .ui-searchbox-wrap,.ui-selector-title,.ui-tab-nav{position: static;}
             ..ui-tab-content{margin-top: 0;}
@@ -68,52 +73,7 @@
 
             </div>
             <div class="main-area">
-                <div class="side-area">
-                    <ul>
-                      <li><a href="#modules-ui-btn">按钮 button</a>
-                        <ul class="nav">
-                          <li data-id="ui-btn"><a href="#modules-ui-btn">ui-btn</a></li>
-                          <li data-id="ui-btn-lg"><a href="#modules-ui-btn-lg" >ui-btn-lg</a></li>
-                          <li data-id="ui-btn-group"><a href="#modules-ui-btn-group" >ui-btn-group</a></li>
-                        </ul>
-                      </li>
-                      <li data-id="atom"><a href="#modules-atom">辅助类 atom</a></li>
-                      <li  data-id="ui-searchbox"><a href="#modules-ui-searchbox">搜索框 searchbox</a></li>
-                      <li data-id="ui-tab"><a href="#modules-ui-tab">选项卡 tab</a></li>
-                      <li data-id="ui-list"><a href="#modules-ui-list" >列表 list</a></li>
-                      <li><a href="#modules-ui-form">表单项 form</a>
-                        <ul class="nav">
-                          <li data-id="ui-form"><a href="#modules-ui-form" >ui-form</a></li>
-                          <li data-id="ui-checkbox"><a href="#modules-ui-checkbox" >ui-checkbox</a></li>
-                          <li data-id="ui-switch"><a href="#modules-ui-switch">ui-switch</a></li>
-                          <li data-id="ui-radio"><a href="#modules-ui-radio">ui-radio</a></li>
-                        </ul>
-                      </li>
-                      <li data-id="ui-table"><a href="#modules-ui-table">表格 table</a></li>
-                      <li  data-id="ui-dialog"><a href="#modules-ui-dialog">弹窗 dialog</a></li>
-                      <li data-id="ui-notice"><a href="#modules-ui-notice">通知 notice</a></li>
-                      <li><a href="#modules-ui-tips">提示 tips</a>
-                        <ul class="nav">
-                          <li data-id="ui-tips"><a href="#modules-ui-tips">ui-tips</a></li>
-                          <li data-id="ui-poptips"><a href="#modules-ui-poptips" >ui-poptips</a></li>
-                          <li data-id="ui-tooltips"><a href="#modules-ui-tooltips">ui-tooltips</a></li>
-                        </ul>
-                      </li>
-                      <li data-id="ui-loading"><a href="#modules-ui-loading">加载中 loading</a></li>
-                      <li><a href="#modules-ui-tag">会员业务 icon等</a>
-                        <ul class="nav">
-                          <li data-id="ui-tag"><a href="#modules-ui-tag">ui-tag</a></li>
-                          <li data-id="ui-selector"><a href="#modules-ui-selector">ui-selector</a></li>
-                          <li data-id="ui-icon-qq"><a href="#modules-ui-icon-qq" >ui-icon-qq</a></li>
-                          <li data-id="ui-icon-viplevel"><a href="#modules-ui-icon-viplevel">ui-icon-viplevel</a></li>
-                          <li data-id="ui-icon-qqlevel"><a href="#modules-ui-icon-qqlevel" >ui-icon-qqlevel</a></li>
-              </ul>
-                      </li>
-                    </ul>
-                </div>          
-                <script type="text/template" id="list-template">
-                    <li><a href="#"></a></li>
-                </script>
+                <style>.content-area{margin: auto;}</style>
                 <div class="content-area">
                     <h1>History</h1>
                     <div class="content"><style>
@@ -174,8 +134,7 @@
 </li>
 </ol>
 </div>
-                </div>
-                
+                </div>   
             </div>
             <div class="footer-area">
             </div>
