@@ -209,7 +209,11 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
+<<<<<<< HEAD
   background-image: url(../img/default.png?_bid=256); }
+=======
+  background-image: url(../img/default.png?_bid=306); }
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   .ui-avatar span {
     width: 50px;
     height: 50px;
@@ -225,7 +229,11 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
+<<<<<<< HEAD
   background-image: url(../img/default.png?_bid=256); }
+=======
+  background-image: url(../img/default.png?_bid=306); }
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   .ui-avatar-lg span {
     width: 54px;
     height: 54px;
@@ -241,7 +249,11 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
+<<<<<<< HEAD
   background-image: url(../img/default.png?_bid=256); }
+=======
+  background-image: url(../img/default.png?_bid=306); }
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   .ui-avatar-s span {
     width: 40px;
     height: 40px;
@@ -258,7 +270,11 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
+<<<<<<< HEAD
   background-image: url(../img/default.png?_bid=256); }
+=======
+  background-image: url(../img/default.png?_bid=306); }
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   .ui-avatar-one span {
     width: 64px;
     height: 64px;
@@ -275,7 +291,11 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
+<<<<<<< HEAD
   background-image: url(../img/default.png?_bid=256);
+=======
+  background-image: url(../img/default.png?_bid=306);
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   display: inline-block; }
   .ui-avatar-tiled span {
     width: 30px;
@@ -300,7 +320,11 @@ em {
     width: 8px;
     height: 8px;
     background-color: #f76249;
+<<<<<<< HEAD
     border-radius: 4px;
+=======
+    border-radius: 5px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
     right: -3px;
     top: -3px;
     -webkit-background-clip: padding-box;
@@ -342,7 +366,11 @@ em {
   overflow: visible; }
 
 .ui-icon:before, .ui-icon-refresh:before, .ui-icon-close:before, .ui-icon-search:before {
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat 0px 0px;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat 0px 0px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -485,6 +513,12 @@ em {
     -webkit-transform: scale(0.5);
     -webkit-transform-origin: -50% -50%; }
 
+<<<<<<< HEAD
+=======
+  .ui-btn-lg:before {
+    border-radius: 12px; }
+
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   .ui-btn.disabled:before, .disabled.ui-btn-lg:before {
     border: 1px solid #e9ebec; }
 
@@ -668,7 +702,11 @@ em {
   font-size: 20px; }
 
 .ui-tips i:before {
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat -25px 0px;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat -25px 0px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -717,7 +755,11 @@ em {
   font-size: 20px; }
 
 .ui-poptips i:before {
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat 0px 0px;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat 0px 0px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -762,7 +804,11 @@ em {
   background-color: rgba(205, 242, 255, 0.95); }
 
 .ui-tooltips-cnt-link:after {
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat -75px 0;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat -75px 0;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -782,7 +828,11 @@ em {
   margin-right: 8px; }
 
 .ui-tooltips-warn i:before {
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat -50px 0px;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat -50px 0px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -826,7 +876,11 @@ em {
   overflow: hidden;
   display: block;
   position: absolute;
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat -100px -50px;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat -100px -50px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 150px auto;
   left: 25px;
   top: 9px;
@@ -980,7 +1034,11 @@ em {
   height: 28px;
   -webkit-background-size: 28px auto;
   margin: 11px 15px 11px 0px;
+<<<<<<< HEAD
   background-image: url(../img/default.png?_bid=256); }
+=======
+  background-image: url(../img/default.png?_bid=306); }
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
 
 .ui-list-thumb span, .ui-list-thumb-s span {
   width: 100%;
@@ -1064,12 +1122,20 @@ em {
 
 /*连接列表*/
 .ui-list-link li:after, li.ui-list-item-link:after {
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat 0 -75px;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat 0 -75px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
   width: 9px;
+<<<<<<< HEAD
   height: 14px;
+=======
+  height: 15px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   position: absolute;
   right: 15px;
   top: 50%;
@@ -1087,7 +1153,11 @@ em {
   display: block;
   width: 14px;
   height: 12px;
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat -100px 0;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat -100px 0;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 150px auto;
   position: absolute;
   right: 15px;
@@ -1105,14 +1175,22 @@ em {
   width: 20px;
   height: 20px;
   display: block;
+<<<<<<< HEAD
   background: url(../img/loading_sprite.png?_bid=256);
+=======
+  background: url(../img/loading_sprite.png?_bid=306);
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: auto 20px; }
 
 .ui-loading-bright {
   width: 37px;
   height: 37px;
   display: block;
+<<<<<<< HEAD
   background-image: url(../img/loading_sprite_white.png?_bid=256);
+=======
+  background-image: url(../img/loading_sprite_white.png?_bid=306);
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: auto 37px; }
 
 .ui-loading-wrap .ui-loading {
@@ -1138,6 +1216,7 @@ em {
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
+<<<<<<< HEAD
   background-image: url(../img/icon_warn.png?_bid=256); }
 
 .ui-notice-news i {
@@ -1145,6 +1224,15 @@ em {
 
 .ui-notice-nearby i {
   background-image: url(../img/icon_warn_nearby.png?_bid=256); }
+=======
+  background-image: url(../img/icon_warn.png?_bid=306); }
+
+.ui-notice-news i {
+  background-image: url(../img/icon_warn_news.png?_bid=306); }
+
+.ui-notice-nearby i {
+  background-image: url(../img/icon_warn_nearby.png?_bid=306); }
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
 
 .ui-notice p {
   font-size: 16px;
@@ -1226,7 +1314,11 @@ em {
   color: #00a5e0;
   text-align: center; }
 
+<<<<<<< HEAD
 .ui-form-item-r .ui-form-icon-close {
+=======
+.ui-form-item-r .ui-icon-close {
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   right: 125px; }
 
 .ui-form-item-l input {
@@ -1267,12 +1359,21 @@ em {
   background-color: #e5e6e7; }
 
 .ui-form-item-link:after {
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat 0 -75px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
   width: 8px;
   height: 14px;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat 0 -75px;
+  -webkit-background-size: 150px auto;
+  content: "";
+  display: block;
+  width: 9px;
+  height: 15px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   position: absolute;
   right: 15px;
   top: 50%;
@@ -1290,7 +1391,11 @@ em {
   outline: none; }
 
 .ui-checkbox input:before {
+<<<<<<< HEAD
   background: url(../img/icon.png?_bid=256) no-repeat -50px -25px;
+=======
+  background: url(../img/icon.png?_bid=306) no-repeat -50px -25px;
+>>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
