@@ -1,13 +1,14 @@
 .ui-checkbox input {
   display: inline-block;
   width: 25px;
-  height: 0px;
+  height: 1px;
   position: relative;
   overflow: visible;
   border: none;
   background: none;
   -webkit-appearance: none;
-  outline: none; }
+  outline: none;
+  vertical-align: middle; }
 
 .ui-checkbox input:before {
   background: url(../img/icon.png?_bid=306) no-repeat -50px -25px;
@@ -18,7 +19,7 @@
   height: 25px;
   position: absolute;
   left: 0px;
-  top: -14px; }
+  top: -10px; }
 
 .ui-checkbox input:checked:before {
   background-position: -25px -25px; }

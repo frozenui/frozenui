@@ -39,10 +39,11 @@
 .ui-tooltips-warn i{
     display: inline-block;
     width: 23px;
-    height:0px;
+    height: 1px;
     position: relative;
     overflow: visible;
     margin-right: 8px;
+    vertical-align: middle;
 }
 .ui-tooltips-warn i:before{
     background:url(../img/icon.png?_bid=306) no-repeat -50px 0px;
@@ -53,7 +54,8 @@
     height:23px;
     position: absolute;
     left:0px;
-    top: -18px;
+    top: -14px;
+
 }
 .ui-tooltips .ui-btn{
     position: absolute;

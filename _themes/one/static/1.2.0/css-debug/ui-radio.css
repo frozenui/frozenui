@@ -6,14 +6,15 @@
 .ui-radio input {
   display: inline-block;
   width: 24px;
-  height: 0px;
+  height: 1px;
   position: relative;
   overflow: visible;
   border: none;
   background: none;
   -webkit-appearance: none;
   outline: none;
-  margin-right: 8px; }
+  margin-right: 8px;
+  vertical-align: middle; }
 
 .ui-radio input:before {
   content: '';
@@ -26,7 +27,7 @@
           background-clip: padding-box;
   position: absolute;
   left: 0px;
-  top: -16px; }
+  top: -14px; }
 
 .ui-radio input:checked:after {
   content: '';
@@ -37,4 +38,4 @@
   border-radius: 7px;
   position: absolute;
   left: 6px;
-  top: -10px; }
+  top: -8px; }

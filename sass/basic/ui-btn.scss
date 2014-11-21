@@ -12,14 +12,14 @@
     border: none;
     color: #0079ff;
     font-size: 14px;
-    background-color: rgb(253,253,253);
-    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.38, rgb(255,255,255)), to(rgb(250,250,250)));
+    background-color: #fdfdfd;
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
     border-radius: 3px;
     vertical-align: top;
-    color: rgb(0,165,224);
+    color: #00a5e0;
     text-shadow: 0 1px 0 rgba( 0, 0, 0 ,.1 );
     -webkit-box-sizing: border-box;
-    border: 1px solid #c8c7cc;
+    border: 1px solid #cacccd;
     background-clip: padding-box;
 }
 .ui-btn:not(.disabled):active,.ui-btn.active{
@@ -37,9 +37,9 @@
 }
 
 .ui-btn-primary{
-    background-color: rgb(24,180,237);
-    border-color: rgb( 11, 170, 228 );
-    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.49, rgb(31,186,243)), to(rgb(24,180,237)));
+    background-color: #18b4ed;
+    border-color: #0baae4;
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
     color: #fff;
     background-clip: padding-box;
 }
@@ -50,15 +50,15 @@
     background-clip: padding-box;
 }
 .ui-btn-danger{
-    background-color: rgb(247,85,73);
-    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.49, rgb(254,89,77)), to(rgb(247,85,73)));
+    background-color: #f75549;
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #fc6156), to(#f75549));
     color: #fff;
-    border-color: rgb(244, 61, 48);
+    border-color: #f43d30;
     background-clip: padding-box;
 }
 .ui-btn-danger:not(.disabled):active,.ui-btn-danger.active{
-    background: #df5045;
-    border-color: #df5045;
+    background: #e2574d;
+    border-color: #e2574d;
     color: rgba(255,255,255,.5);
     background-clip: padding-box;
 }
@@ -91,19 +91,19 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        border: 1px solid #c8c7cc;
+        border: 1px solid #cacccd;
         border-radius: 8px;
         -webkit-transform:scale(.5);
         -webkit-transform-origin: -50% -50%;
     }
     .ui-btn-lg:before{border-radius: 12px;}
-    .ui-btn.disabled:before{
-        border: 1px solid #e9ebec;
-    }
     .ui-btn-primary:before{
-        border: 1px solid #1ca7da;
+        border: 1px solid #0baae4;
     }
     .ui-btn-danger:before{
-        border: 1px solid #df5045;
+        border: 1px solid #f43d30;
+    }
+    .ui-btn.disabled:before{
+        border: 1px solid #e9ebec;
     }
 }

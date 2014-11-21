@@ -30,32 +30,32 @@
 <ul class="img-list">
 
     <li>
-        <span style="background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png)"></span>
+        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
         <i class="ui-tag-svip"></i>
     </li>
     <li>
-        <span style="background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png)"></span>
+        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
         <i class="ui-tag-vip"></i>
     </li>
     <li>
-        <span style="background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png)"></span>
+        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
         <i class="ui-tag-free"></i>
     </li>
     <li>
-        <span style="background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png)"></span>
+        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
         <i class="ui-tag-freelimit"></i>
     </li>
     <li>
-        <span style="background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png)" class="ui-tag-hot"></span>
+        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)" class="ui-tag-hot"></span>
     </li>
     <li>
-        <span style="background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png)" class="ui-tag-new"></span>
+        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)" class="ui-tag-new"></span>
     </li>
     <li class="ui-tag-selected">
-        <span style="background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png)" class="ui-tag-new"></span>
+        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)" class="ui-tag-new"></span>
     </li>
     <li class="ui-tag-selected">
-        <span style="background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png)"></span>
+        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
         <i class="ui-tag-vip"></i>
     </li>
 </ul>
