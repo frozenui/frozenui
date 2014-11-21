@@ -1,6 +1,7 @@
 # History
 
 ---
+
 <style>
 .content ol li {
 	list-style-type: decimal;
@@ -9,12 +10,12 @@
 }
 </style>
 
-##[1.0.0](https://github.com/frozenui/baseui/tree/master/1.0.0)
+##1.0.0
 
 发布新版本
 
 
-## [1.1.0](https://github.com/frozenui/baseui/tree/master/1.1.0)
+##1.1.0
 
 引用地址[http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256 )
 
@@ -32,25 +33,27 @@
 
 7. `ui-btn-group`修改背景
 
-8. 现有的`ui-tips`改为`ui-poptips`，dom结构简化，另外新增`ui-tips`，`ui-tooltips`
+8. _dom修改_ 现有的`ui-tips`改为`ui-poptips`，dom结构简化，另外新增`ui-tips`，`ui-tooltips`
 
 9. 删减`ui-icon`，非共用图标样式写在对应的组件里
 
 10. _basic.css_ 改成 _frozen.css_，`ui-icon-tag`改成`ui-tag`，并和`ui-select-user`一起移到vip目录下，不再包含在_frozen.css_里
 
 
-## [1.2.0](https://github.com/frozenui/baseui/tree/master/1.2.0)（1.1.1只发布了vip.css，废弃）
+## 1.2.0（1.1.1只发布了vip.css，废弃）
 
 
 引用地址: 
 
-[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=256 )
+[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306 )
 
-[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=256](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=256 )
+[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306](http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306 )
+
+
 
 1. 修改`ui-list`和`ui-form`的箭头图标
 
-2. 去掉`ui-select-user`,增加`ui-selector`
+2. _dom修改_ 去掉`ui-select-user`, 增加`ui-selector`
 
 3. 增加`ui-icon-qq`
 
@@ -62,10 +65,21 @@
 
 7. 1px左右边框改用与上下边框同样的方法实现
 
-8. `ui-searchbox` 增加focus时控制内部元素隐藏和显示的代码，减少js需要的操作
+8. _dom修改_ `ui-searchbox`改成`ui-searchbar` ,增加focus时控制内部元素隐藏和显示的代码，减少js需要的操作
 
-9. `ui-tab`的dom结构修改，高度的bug修改
+9. _dom修改_ `ui-tab`内部增加`ui-tab-nav`，高度的bug修改
 
-10. 图片使用相对路径，只发布_frozen.css_，_vip.css_，_global.css_ 三个css，不再提供单个组件css
+10. 修改`ui-form`关闭图标位置不对，另外箭头缺一个像素
+
+11. 修改`ui-reddot`带白边的红点半径不对
+
+12. _dom修改_ 增加平铺按钮组`ui-btn-group-tiled`,`ui-btn-bottom`改成`ui-btn-group-bottom`
+
+13. 增加`ui-badge-corner`，以及`ui-list ui-badge`样式
+
+14. 图片使用相对路径，单个组件css发布时去掉basic和vip文件夹，与frozen.css同一目录
+
+15. bid修改为_306_
+
 
 

@@ -1,24 +1,24 @@
-.ui-searchbox-wrap {
+.ui-searchbar-wrap {
   display: -webkit-box;
   -webkit-box-pack: center;
   -webkit-box-align: center;
   background: #f8f9fa; }
-  .ui-searchbox-wrap button {
+  .ui-searchbar-wrap button {
     margin-right: 10px; }
-  .ui-searchbox-wrap .ui-searchbox-cancel {
+  .ui-searchbar-wrap .ui-searchbar-cancel {
     color: #808080;
     font-size: 16px;
     padding: 4px 8px; }
-  .ui-searchbox-wrap .ui-searchbox-input, .ui-searchbox-wrap button, .ui-searchbox-wrap .ui-icon-close {
+  .ui-searchbar-wrap .ui-searchbar-input, .ui-searchbar-wrap button, .ui-searchbar-wrap .ui-icon-close {
     display: none; }
-  .ui-searchbox-wrap.focus {
+  .ui-searchbar-wrap.focus {
     -webkit-box-pack: start; }
-    .ui-searchbox-wrap.focus .ui-searchbox-input, .ui-searchbox-wrap.focus button, .ui-searchbox-wrap.focus .ui-icon-close {
+    .ui-searchbar-wrap.focus .ui-searchbar-input, .ui-searchbar-wrap.focus button, .ui-searchbar-wrap.focus .ui-icon-close {
       display: block; }
-    .ui-searchbox-wrap.focus .ui-searchbox-text {
+    .ui-searchbar-wrap.focus .ui-searchbar-text {
       display: none; }
 
-.ui-searchbox {
+.ui-searchbar {
   border-radius: 4px;
   height: 30px;
   margin: 7px 10px;
@@ -33,7 +33,7 @@
   -webkit-box-align: center;
   color: #808080;
   width: 100%; }
-  .ui-searchbox input {
+  .ui-searchbar input {
     -webkit-appearance: none;
     font-size: 14px;
     color: #000;
@@ -41,5 +41,5 @@
     width: 100%;
     padding: 7px 0; }
 
-.ui-searchbox-input {
+.ui-searchbar-input {
   -webkit-box-flex: 1; }

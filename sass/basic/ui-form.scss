@@ -26,14 +26,14 @@
 	position: relative;
 	padding-left: 15px;
 
-	label{
+	label:not(.ui-switch):not(.ui-checkout):not(.ui-radio){
 		width: 95px;
 		position: absolute;
 		text-align: left;
 		box-sizing: border-box;
 	}
 
-	input,
+	input:not([type="checkbox"]),
 	textarea {
 		width: 100%;
 		padding-left: 95px;
@@ -71,7 +71,7 @@
 	right: 125px;
 }
 
-.ui-form-item-l input {
+.ui-form .ui-form-item-l input {
 	padding-left: 115px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -81,7 +81,7 @@
 	padding-right: 0;
 }
 
-.ui-form-item-r input {
+.ui-form .ui-form-item-r input {
 	padding: 0 150px 0 0;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -103,17 +103,13 @@
 	background-color: #e5e6e7;
 }
 
-.ui-form-item-pure input {
+.ui-form .ui-form-item-pure input {
 	padding-left: 0;
 }
 
 /* 表单展示项 */
-.ui-form-item-show label {
+.ui-form .ui-form-item-show label {
 	color: #808080;
-}
-
-.ui-form-item-link:active {
-	background-color: #e5e6e7;
 }
 
 .ui-form-item-link:after {
@@ -126,7 +122,7 @@
 	position: absolute;
 	right: 15px;
 	top: 50%;
-	margin-top: -8px;
+	margin-top: -7px;
 }
 
 	

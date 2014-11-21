@@ -9,12 +9,13 @@
 .ui-tips i{
     display: inline-block;
     width: 23px;
-    height:0px;
+    height:1px;
     position: relative;
     overflow: visible;
     margin-right: 8px;
     margin-left:0px;
     font-size: 20px;
+    vertical-align: middle;
 }
 .ui-tips i:before{
     background:url(../img/icon.png?_bid=306) no-repeat -25px 0px;
@@ -25,7 +26,7 @@
     height:23px;
     position: absolute;
     left:0px;
-    top: -16px;
+    top: -13px;
 }
 .ui-tips-success i:before{
   background-position: 0 -25px;

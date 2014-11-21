@@ -88,14 +88,14 @@
   max-width: 100%;
   color: #808080; }
 
-/*列表按钮*/
+/* 列表按钮 */
 .ui-list .ui-btn {
   position: absolute;
   top: 50%;
   right: 15px;
   margin-top: -15px; }
 
-/*列表checkbox*/
+/* 列表checkbox */
 .ui-list-checkbox .ui-checkbox {
   position: absolute;
   top: 50%;
@@ -104,6 +104,16 @@
 
 .ui-list-checkbox li {
   padding-left: 40px; }
+
+/* 列表未读数 */
+.ui-list .ui-badge {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -11px; }
+
+.ui-list-link .ui-badge, .ui-list-item-link .ui-badge {
+  right: 30px; }
 
 /*列表按压态*/
 .ui-list-link li:active, li.ui-list-item-link:active {
@@ -138,7 +148,7 @@
   position: absolute;
   right: 15px;
   top: 50%;
-  margin-top: -8px; }
+  margin-top: -7px; }
 
 .ui-list-link .ui-list-info {
   padding-right: 35px; }

@@ -42,6 +42,7 @@
 <div class="ui-reddot-s">内容内容</div>
 <div class="ui-badge">123</div>
 <div class="ui-badge-muted">345</div>
+<div class="ui-badge-wrap" style="width: 50px;line-height: 50px;">内容<div class="ui-badge-corner">123</div></div>
 ````
   
 ###圆角头像

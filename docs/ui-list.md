@@ -26,6 +26,9 @@
     <li class="ui-border-t">
         <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
+    <li class="ui-border-t">
+        <a href="#">跳转链接</a>
+    </li>
 </ul>
  ````
  
@@ -33,7 +36,7 @@
 ###  带选中态
 
 ````html
-<ul class="ui-list ui-list-text ui-border-tb">
+<ul class="ui-list ui-list-text ui-list-active ui-border-tb">
     <li class="ui-border-t selected">
         <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
@@ -52,6 +55,32 @@
     </li>
     <li class="ui-border-t">
         <p>标题标题标题标题标题标题标题标题标题标题标题</p>
+    </li>
+
+</ul>
+````
+### 文字连接列表
+
+````html
+<ul class="ui-list ui-list-text ui-border-tb">
+    <li class="ui-border-t ui-list-item-link">
+        <div class="ui-list-info">
+            <h4>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断</h4>
+            <p>内容内容内容内容内容内容内容内容内容内容内容</p>
+        </div>
+        <div class="ui-badge">123</div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+            <h4>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断</h4>
+        </div>
+        <div class="ui-badge-muted">123</div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+           <h4>标题标题标题标题标题标题标</h4>
+        </div>
+        <div class="ui-list-action">使用中</div>
     </li>
 </ul>
 ````
@@ -173,7 +202,6 @@
         <div class="ui-list-info ui-border-t">
             <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
         </div>
-        <div class="ui-btn">PK</div>
     </li>
 </ul>
 ````

@@ -3,7 +3,7 @@ define(function(require, exports, module) {
     var $ = require('$');
     
     exports.init = function() {
-        var titles = $('.content-area > .content > h2, h2.alice-module-title');
+        var titles = $('.content-area > .content > h2, h2.frozen-module-title');
         var doc = $(document);
         if (titles.length <= 0) {
             return;
