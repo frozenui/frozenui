@@ -26,9 +26,6 @@
     <li class="ui-border-t">
         <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
-    <li class="ui-border-t">
-        <a href="#">跳转链接</a>
-    </li>
 </ul>
  ````
  
