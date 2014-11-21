@@ -6,19 +6,22 @@
 .nico-insert-code{display:none}
 </style>
 ##frozenUI是什么
-<img src="../static/elsa.jpg">
 
-Frozen UI是一个开源的简单易用，轻量快捷的移动端UI框架。基于手Q样式规范，选取最常用的组件，做成公用离线包减少请求，升级方式友好，文档完善，目前全面应用在腾讯手Q增值业务中。包括css基础样式和组件，javascript基础组件和一些动画效果库。
 
-为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把Elsa女王作为我们的卡通代言人。
+Frozen UI是一个开源的简单易用，轻量快捷的移动端UI框架。基于手Q样式规范，选取最常用的组件，做成公用离线包减少请求，升级方式友好，文档完善，目前全面应用在腾讯手Q增值业务中。
 
-css使用模块化的样式命名和组织规范，参考了前人的成果：支付宝团队的[alice](http://aliceui.org/)，[bootstrap](http://getbootstrap.com/)等，实现了最简的手Q web组件效果，并不断完善中。
+CSS组件包括按钮，列表，表单，通知，提示条，弹出框，选项卡，等级图标，角标，红点，1px解决方案等。
+
+CSS使用模块化的样式命名和组织规范，使用sass编写css代码。
+
+FrozenJS 是针对移动端开发的 js 组件库，其依赖 zepto.js 和 FrozenUI。
+
+FrozenJS 包括： basic：FrozenJS 的一些基础功能，包括模板引擎、tap 支持等。 ui：主要是一些触屏常用的 UI 组件，包括 dialog 等。 effect：非常用的特效库，特殊场景使用到是可以单独调用。
+
 
 兼容android 2.3 +，ios 4.0 + 。
 	
 使用`离线包`实现0k网络请求。
-
-[css历史版本修改记录](http://frozenui.github.io/baseui/history.html)
 
 [github主页](https://github.com/frozenui/frozenui)
 
@@ -26,96 +29,17 @@ css使用模块化的样式命名和组织规范，参考了前人的成果：�
 
 [css仓库](https://github.com/frozenui/baseui)
 
-欢迎提 [issue](https://github.com/frozenui/frozenui/issues) 给我们帮助我们完善frozen。
-
-##css规范
-
-统一使用ui为前缀作为命名空间。
-
-class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如`.ui-btn` 和 `.ui-btn-danger`）。
-
-避免过度任意的简写。`.btn` 代表 `button`，但是 `.b` 不能表达任何意思。
-
-class 名称应当尽可能短，并且意义明确，不要使用表现形式（presentational）的名称。
-
-基于最近的父 class 或基本（base） class 作为新 class 的前缀。
-
-`.ui-btn-lg.disabled `
-
-{命名空间}-{模块}-{属性}.{状态}
-
-`.ui-dialog-cnt` 
-
-{命名空间}-{模块}-{子模块}
-
-描述属性的class应该基于当前的class
-
-`.ui-form-item ui-form-item-link`
-
-{命名空间}-{模块}-{属性}.{状态}
-
-常用状态有：`hover`, `current`, `selected`, `disabled`, `focus`, `blur`, `checked`, `success`, `error`，`active` 等。
+[js仓库](https://github.com/frozenui/frozenjs)
 
 
-除了常用状态的class，不能直接使用其他不带前缀的class，如
+[css规范](http://frozenui.github.io/cssguide.html)
 
-````html
-	<div class="ui-btn primary">确认</div>
-````
-应该写为
+[css历史版本修改记录](http://frozenui.github.io/baseui/history.html)
 
-````html
-	<div class="ui-btn ui-btn-primary">确认</div>
-````
-不强制所有class都必须带父class，简单的组件可以直接使用子class，如
+欢迎提 [issue](https://github.com/frozenui/frozenui/issues) 给我们帮助我们完善FrozenUI。
 
+ps: 为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把Elsa女王作为我们的卡通代言人。
 
-````html
-	<span class="ui-txt-highlight">ui-txt-highlight</span>
-````
-	
-而不是
-
-````html
-	<span class="ui-txt ui-txt-highlight">ui-txt-highlight</span>
-````
-
-因为是在移动端使用，dom结构并不会太复杂，因此不建议过多使用class嵌套，可以直接使用标签名的直接使用标签名。
-如建议使用
-
-````html
-	<ul class="ui-list">
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-	</ul>
-````
-	
-而不使用
-
-````html
-	<ul class="ui-list">
-		<li class="ui-list-item">1</li>
-		<li class="ui-list-item">2</li>
-		<li class="ui-list-item">3</li>
-	</ul>
-````
-
-
-
-| 约定的一些简写      |        | 
-| ------------- |:-------------:|
-| -s     | -small | 
-|-lg  | -large | 
-|-l| -left  | 
-|-r|-right|
-|-t|-top|
-|-b|-bottom|
-
-
-常用模块名有：`cnt(content)`，`hd(header)`，`bd(body)`，`ft(footer)`，`txt(text)`，`img(images/pic)`，`title`，`item`等， 只要词义表达了组件要实现的功能或者要表现出来的的外观就可以了。
-
-
-
+<img src="../static/elsa.jpg">
 
 

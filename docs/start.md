@@ -21,7 +21,19 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 	<title>demo</title>
 	<link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306">
-	
+	<style>
+    .ui-tabs { width: 100%; overflow: hidden;}
+    .ui-tab-content{
+        display: -webkit-box;
+        width: 300%;
+     }
+    .ui-tab-content > li {
+    -webkit-box-flex: 1;
+width: 100%;
+height:500px;
+font-size: 14px;
+}
+</style>
 </head>
 <body>
 	<div class="wrapper">
@@ -77,16 +89,33 @@
 					    <i class="ui-loading"></i>
 					</div>
 		        </li>
-		        <li></li>
-		        <li></li>
+		        <li>内容二</li>
+		        <li>内容三</li>
 		    </ul>
 		</div>
 	</div>
+	 <script src="http://i.gtimg.cn/vipstyle/frozenjs/lib/zepto.min.js?_bid=304"></script>
+    <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.0/frozen.js?_bid=304"></script>
+	<script>
+	   var tab = new Slide('.ui-tab', {
+	       role: 'tab',
+	       autoplay: true,
+	       interval: 3000
+	   });
+	
+	   tab.on('slideStart', function() {
+	       console.log('start')
+	   });
+	
+	   tab.on('slideEnd', function() {
+	       console.log('end')
+	   });
+	</script>
 </body>
 </html>
 ````
 
-你会看到一个[demo页面](http://frozenui.github.io/test/demo.html)，引用了[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306 
+你会看到一个[demo页面](http://frozenui.github.io/iframe-start-1.html)，引用了[http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306 
 ](http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=306 
 )，这是打包了除了会员相关的基础css文件，使用手Q离线包需要加上bid的参数。
 
