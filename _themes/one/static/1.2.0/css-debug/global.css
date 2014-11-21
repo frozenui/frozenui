@@ -417,7 +417,7 @@ em {
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn:not(.disabled):active, .ui-btn-lg:not(.disabled):active, .ui-btn.active, .active.ui-btn-lg {
+.ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg {
   background: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
   -webkit-background-clip: padding-box;
@@ -439,7 +439,7 @@ em {
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn-primary:not(.disabled):active, .ui-btn-primary.active {
+.ui-btn-primary:not(.disabled):not(:disabled):active, .ui-btn-primary.active {
   background: #1ca7da;
   border-color: #1ca7da;
   color: rgba(255, 255, 255, 0.5);
@@ -461,7 +461,7 @@ em {
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn.disabled, .disabled.ui-btn-lg {
+.ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn:disabled, .ui-btn-lg:disabled {
   border: 1px solid #e9ebec;
   color: #ccc;
   background: #e9ebec;
@@ -481,7 +481,7 @@ em {
   padding: 20px 15px; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-btn, .ui-btn-lg {
+  .ui-btn, .ui-btn-lg, .ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn:disabled, .ui-btn-lg:disabled {
     border: 0; }
 
   .ui-btn:before, .ui-btn-lg:before {
@@ -505,7 +505,7 @@ em {
   .ui-btn-danger:before {
     border: 1px solid #f43d30; }
 
-  .ui-btn.disabled:before, .disabled.ui-btn-lg:before {
+  .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before {
     border: 1px solid #e9ebec; } }
 /**
  * 底部操作区
@@ -1606,7 +1606,7 @@ em {
 /*等级图标*/
 /*宽度与背景size*/
 .ui-icon-viplevel, .ui-icon-viplevel-s, .ui-icon-sviplevel, .ui-icon-sviplevel-s, .ui-icon-yearviplevel, .ui-icon-yearviplevel-s, .ui-icon-yearsviplevel, .ui-icon-yearsviplevel-s, .ui-icon-mq {
-  width: 46px; }
+  width: 48px; }
   .ui-icon-viplevel span, .ui-icon-viplevel-s span, .ui-icon-sviplevel span, .ui-icon-sviplevel-s span, .ui-icon-yearviplevel span, .ui-icon-yearviplevel-s span, .ui-icon-yearsviplevel span, .ui-icon-yearsviplevel-s span, .ui-icon-mq span {
     -webkit-background-size: auto 20px; }
 

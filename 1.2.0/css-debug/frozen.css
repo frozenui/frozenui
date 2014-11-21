@@ -416,7 +416,7 @@ em {
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn:not(.disabled):active, .ui-btn-lg:not(.disabled):active, .ui-btn.active, .active.ui-btn-lg {
+.ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg {
   background: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
   -webkit-background-clip: padding-box;
@@ -438,7 +438,7 @@ em {
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn-primary:not(.disabled):active, .ui-btn-primary.active {
+.ui-btn-primary:not(.disabled):not(:disabled):active, .ui-btn-primary.active {
   background: #1ca7da;
   border-color: #1ca7da;
   color: rgba(255, 255, 255, 0.5);
@@ -460,7 +460,7 @@ em {
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn.disabled, .disabled.ui-btn-lg {
+.ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn:disabled, .ui-btn-lg:disabled {
   border: 1px solid #e9ebec;
   color: #ccc;
   background: #e9ebec;
@@ -480,7 +480,7 @@ em {
   padding: 20px 15px; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-btn, .ui-btn-lg {
+  .ui-btn, .ui-btn-lg, .ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn:disabled, .ui-btn-lg:disabled {
     border: 0; }
 
   .ui-btn:before, .ui-btn-lg:before {
@@ -504,7 +504,7 @@ em {
   .ui-btn-danger:before {
     border: 1px solid #f43d30; }
 
-  .ui-btn.disabled:before, .disabled.ui-btn-lg:before {
+  .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before {
     border: 1px solid #e9ebec; } }
 /**
  * 底部操作区

@@ -14,6 +14,9 @@
 </div>
 <div class="ui-btn-wrap">	
 	<button class="ui-btn-lg disabled">取消</button>
+</div>
+<div class="ui-btn-wrap">	
+	<button class="ui-btn-lg" disabled>取消</button>
 </div>	
 ````
 
