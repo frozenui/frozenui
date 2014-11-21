@@ -6,7 +6,7 @@ module.exports =function(grunt) {
         pkg : grunt.file.readJSON('package.json'),
         
         meta: {
-            zipPath:'i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
+            zipPath:'<%=pkg.version%>/i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
         }, 
         cssmin: {
             minify: {
@@ -54,7 +54,7 @@ module.exports =function(grunt) {
                 dest: '<%=meta.zipPath%>/css/vip.css'
             },
             staticcss:{
-                src: '<%=pkg.version%>/**/*',
+                src: ['<%=pkg.version%>/css/**','<%=pkg.version%>/css-debug/**','<%=pkg.version%>/img/**'],
                 dest:'_themes/one/static/'
             }
 
@@ -62,27 +62,43 @@ module.exports =function(grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'i.gtimg.cn.zip'
+                    archive: '<%=pkg.version%>/i.gtimg.cn.zip'
                 },
                 expand: true,
-                src: ['i.gtimg.cn/**']
+                src: ['<%=pkg.version%>/i.gtimg.cn/**']
             },
             download:{
                 options: {
-                    archive: '_themes/one/static/frozenui.zip'
+                    archive: '_themes/one/static/frozenui-<%=pkg.version%>.zip'
                 },
+                cwd: '_themes/one/static/<%=pkg.version%>',
                 expand: true,
-                src: ['<%=pkg.version%>/**']
+                src: ['**']
             }
         },
         sass: {
             dist: {
                 expand: true,
-                cwd : "sass",
+                cwd : 'sass',
+                src: ['*.scss'],
+                dest:'<%=pkg.version%>/css-debug/',
+                ext:'.css'
+            },
+            dist2: {
+                expand: true,
+                cwd : 'sass/basic',
+                src: ['*.scss'],
+                dest:'<%=pkg.version%>/css-debug/',
+                ext:'.css'
+            },
+            dist3: {
+                expand: true,
+                cwd : 'sass/vip',
                 src: ['*.scss'],
                 dest:'<%=pkg.version%>/css-debug/',
                 ext:'.css'
             }
+
         },
         autoprefixer: {
 

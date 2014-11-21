@@ -96,6 +96,7 @@
         -webkit-transform:scale(.5);
         -webkit-transform-origin: -50% -50%;
     }
+    .ui-btn-lg:before{border-radius: 12px;}
     .ui-btn.disabled:before{
         border: 1px solid #e9ebec;
     }
