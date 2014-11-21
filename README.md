@@ -31,15 +31,6 @@ css ，css-debug和img目录是需要发布到线上，_css-debug_是未压缩�
 i.gtimg.cn.zip需要发布到离线包
 
 
-### git
-
-使用nico生成好的文档会在_site目录，提交当前目录到https://github.com/frozenui/baseui.git
-
-_site目录下的内容提交到gh-pages分支，参考https://github.com/frozenui/baseui/issues/
-
-页面会显示在frozen的css组件菜单项中http://frozenui.github.io/baseui/
-
-
 ### 版本管理
 
 分为小版本和大版本，目前grunt的功能还不完善，只支持升小版本，后续会优化
