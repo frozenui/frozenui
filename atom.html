@@ -56,13 +56,16 @@
           alias: {
             
             "$": "jquery/jquery/2.1.0/jquery.js",
-            "sticky":"arale/sticky/1.3.1/sticky"
+            "sticky":"arale/sticky/1.3.1/sticky",
+            "side":"/static/side"
           }
         });
-        seajs.use(['sticky'], function(Sticky) {
+        seajs.use(['sticky','side'], function(Sticky,Side) {
+            Side.init();
             if(document.body.clientWidth>980){
             	Sticky('.side-area', 20);
             }
+            
         });
         </script>
     </head>
@@ -73,6 +76,13 @@
 
             </div>
             <div class="main-area">
+                <div class="side-area">
+                    <ul>
+                    </ul>
+                </div>    
+                <script type="text/template" id="list-template">
+                    <li><a href="#"></a></li>
+                </script>
                 <style>.content-area{margin: auto;}</style>
                 <div class="content-area">
                     <h1>atom</h1>
@@ -107,11 +117,13 @@
 <div class="ui-reddot-border">内容内容</div>
 <div class="ui-reddot-s">内容内容</div>
 <div class="ui-badge">123</div>
-<div class="ui-badge-muted">345</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<div class="ui-badge-muted">345</div>
+<div class="ui-badge-wrap" style="width: 50px;line-height: 50px;">内容<div class="ui-badge-corner">123</div></div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot-border"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot-s"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge"</span>&gt;</span>123<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge-muted"</span>&gt;</span>345<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="圆角头像">圆角头像</h3><div class="nico-insert-code"><p>资料场景</p>    
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge-muted"</span>&gt;</span>345<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge-wrap"</span> <span class="attribute">style</span>=<span class="value">"width: 50px;line-height: 50px;"</span>&gt;</span>内容<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge-corner"</span>&gt;</span>123<span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="圆角头像">圆角头像</h3><div class="nico-insert-code"><p>资料场景</p>    
 <div class="ui-avatar-one"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?128*128)"></span></div>
 <p>圆角头像，列表场景</p>
 <div class="ui-avatar-lg"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?108*108)"></span></div>

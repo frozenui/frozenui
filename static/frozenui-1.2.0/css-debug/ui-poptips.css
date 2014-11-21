@@ -20,12 +20,13 @@
 .ui-poptips i {
   display: inline-block;
   width: 20px;
-  height: 0px;
+  height: 1px;
   position: relative;
   overflow: visible;
   margin-right: 8px;
   margin-left: 0px;
-  font-size: 20px; }
+  font-size: 20px;
+  vertical-align: middle; }
 
 .ui-poptips i:before {
   background: url(../img/icon.png?_bid=306) no-repeat 0px 0px;
@@ -36,7 +37,7 @@
   height: 20px;
   position: absolute;
   left: 0px;
-  top: -16px; }
+  top: -11px; }
 
 .ui-poptips-info i:before {
   background-position: 0 -50px; }

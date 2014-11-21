@@ -56,13 +56,16 @@
           alias: {
             
             "$": "jquery/jquery/2.1.0/jquery.js",
-            "sticky":"arale/sticky/1.3.1/sticky"
+            "sticky":"arale/sticky/1.3.1/sticky",
+            "side":"/static/side"
           }
         });
-        seajs.use(['sticky'], function(Sticky) {
+        seajs.use(['sticky','side'], function(Sticky,Side) {
+            Side.init();
             if(document.body.clientWidth>980){
             	Sticky('.side-area', 20);
             }
+            
         });
         </script>
     </head>
@@ -83,7 +86,7 @@
             </ul>
           </li>
           <li data-id="atom"><a href="#modules-atom">辅助类 atom</a></li>
-          <li  data-id="ui-searchbox"><a href="#modules-ui-searchbox">搜索框 searchbox</a></li>
+          <li  data-id="ui-searchbar"><a href="#modules-ui-searchbar">搜索框 searchbar</a></li>
           <li data-id="ui-tab"><a href="#modules-ui-tab">选项卡 tab</a></li>
           <li data-id="ui-list"><a href="#modules-ui-list" >列表 list</a></li>
           <li><a href="#modules-ui-form">表单项 form</a>
@@ -271,8 +274,8 @@ seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'
             }
         });
     });
-    seajs.use('/static/side', function(side) {
-        side.init();        
+    seajs.use('/static/side', function(Side) {
+        Side.init();        
     });     
     function substractTitle(item) {
         item = item.find('a');

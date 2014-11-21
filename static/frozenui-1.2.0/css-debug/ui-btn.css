@@ -14,13 +14,13 @@
   color: #0079ff;
   font-size: 14px;
   background-color: #fdfdfd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.38, white), to(#fafafa));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
-  border: 1px solid #c8c7cc;
+  border: 1px solid #cacccd;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
@@ -41,7 +41,7 @@
 .ui-btn-primary {
   background-color: #18b4ed;
   border-color: #0baae4;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.49, #1fbaf3), to(#18b4ed));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
   color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
@@ -55,15 +55,15 @@
 
 .ui-btn-danger {
   background-color: #f75549;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.49, #fe594d), to(#f75549));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fc6156), to(#f75549));
   color: #fff;
   border-color: #f43d30;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
 .ui-btn-danger:not(.disabled):active, .ui-btn-danger.active {
-  background: #df5045;
-  border-color: #df5045;
+  background: #e2574d;
+  border-color: #e2574d;
   color: rgba(255, 255, 255, 0.5);
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
@@ -98,7 +98,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    border: 1px solid #c8c7cc;
+    border: 1px solid #cacccd;
     border-radius: 8px;
     -webkit-transform: scale(0.5);
     -webkit-transform-origin: -50% -50%; }
@@ -106,11 +106,11 @@
   .ui-btn-lg:before {
     border-radius: 12px; }
 
-  .ui-btn.disabled:before, .disabled.ui-btn-lg:before {
-    border: 1px solid #e9ebec; }
-
   .ui-btn-primary:before {
-    border: 1px solid #1ca7da; }
+    border: 1px solid #0baae4; }
 
   .ui-btn-danger:before {
-    border: 1px solid #df5045; } }
+    border: 1px solid #f43d30; }
+
+  .ui-btn.disabled:before, .disabled.ui-btn-lg:before {
+    border: 1px solid #e9ebec; } }

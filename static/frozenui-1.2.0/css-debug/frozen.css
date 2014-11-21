@@ -320,7 +320,7 @@ em {
 /**
  * 未读数通知
  */
-.ui-badge, .ui-badge-muted {
+.ui-badge, .ui-badge-muted, .ui-badge-corner {
   display: inline-block;
   text-align: center;
   background: #f74c31;
@@ -328,12 +328,22 @@ em {
   font-size: 12px;
   height: 22px;
   line-height: 22px;
-  -webkit-border-radius: 10px;
+  -webkit-border-radius: 12px;
   padding: 0 7px; }
 
 /* 浅色的 */
 .ui-badge-muted {
   background: #b6cae0; }
+
+.ui-badge-wrap {
+  position: relative;
+  text-align: center; }
+
+.ui-badge-corner {
+  position: absolute;
+  border: 2px #fff solid;
+  top: -2px;
+  left: 50%; }
 
 .ui-icon, .ui-icon-refresh, .ui-icon-close, .ui-icon-search {
   display: inline-block;
@@ -396,13 +406,13 @@ em {
   color: #0079ff;
   font-size: 14px;
   background-color: #fdfdfd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.38, white), to(#fafafa));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
-  border: 1px solid #c8c7cc;
+  border: 1px solid #cacccd;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
@@ -423,7 +433,7 @@ em {
 .ui-btn-primary {
   background-color: #18b4ed;
   border-color: #0baae4;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.49, #1fbaf3), to(#18b4ed));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
   color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
@@ -437,15 +447,15 @@ em {
 
 .ui-btn-danger {
   background-color: #f75549;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.49, #fe594d), to(#f75549));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fc6156), to(#f75549));
   color: #fff;
   border-color: #f43d30;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
 .ui-btn-danger:not(.disabled):active, .ui-btn-danger.active {
-  background: #df5045;
-  border-color: #df5045;
+  background: #e2574d;
+  border-color: #e2574d;
   color: rgba(255, 255, 255, 0.5);
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
@@ -480,7 +490,7 @@ em {
     position: absolute;
     top: 50%;
     left: 50%;
-    border: 1px solid #c8c7cc;
+    border: 1px solid #cacccd;
     border-radius: 8px;
     -webkit-transform: scale(0.5);
     -webkit-transform-origin: -50% -50%; }
@@ -488,54 +498,56 @@ em {
   .ui-btn-lg:before {
     border-radius: 12px; }
 
-  .ui-btn.disabled:before, .disabled.ui-btn-lg:before {
-    border: 1px solid #e9ebec; }
-
   .ui-btn-primary:before {
-    border: 1px solid #1ca7da; }
+    border: 1px solid #0baae4; }
 
   .ui-btn-danger:before {
-    border: 1px solid #df5045; } }
+    border: 1px solid #f43d30; }
+
+  .ui-btn.disabled:before, .disabled.ui-btn-lg:before {
+    border: 1px solid #e9ebec; } }
 /**
  * 底部操作区
  */
-.ui-btn-group {
+.ui-btn-group, .ui-btn-group-tiled {
   display: -webkit-box;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.ui-btn-group button, .ui-btn-group-tiled button {
+  display: block;
+  -webkit-box-flex: 1; }
+
+.ui-btn-group-tiled .ui-btn:first-child, .ui-btn-group-tiled .ui-btn-lg:first-child {
+  margin-right: 15px; }
 
 .ui-btn-group button {
   color: #00a5e0;
-  display: block;
   line-height: 50px;
   height: 48px;
-  -webkit-box-flex: 1;
   text-align: center;
   font-size: 16px;
   border-right: 1px #c8c7cc solid;
   width: 100%;
   border-top: 1px solid #c8c7cc; }
+  .ui-btn-group button:active {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .ui-btn-group button:last-child {
+    border-right: none; }
 
-.ui-btn-group button:active {
-  background: rgba(0, 0, 0, 0.1); }
-
-.ui-btn-bottom button:active {
-  color: rgba(0, 165, 224, 0.6); }
-
-.ui-btn-group button:last-child {
-  border-right: none;
-  background-image: none; }
-
-.ui-btn-group.ui-btn-bottom {
+.ui-btn-group-bottom {
   position: fixed;
   left: 0;
   bottom: 0;
   z-index: 10;
   background-color: #fff; }
-  .ui-btn-group.ui-btn-bottom button {
+  .ui-btn-group-bottom button {
+    color: #00a5e0;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0)); }
-  .ui-btn-group.ui-btn-bottom button:active {
-    background-color: none;
-    color: rgba(0, 165, 224, 0.4); }
+    .ui-btn-group-bottom button:active {
+      background-color: none;
+      color: rgba(0, 165, 224, 0.4); }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .ui-btn-group button {
@@ -565,8 +577,7 @@ em {
     -webkit-transform: scaleY(0.5); }
 
   .ui-btn-group button:last-child:before {
-    border-right: none;
-    background-image: none; } }
+    border-right: none; } }
 /**
  * 弹窗类
  */
@@ -663,12 +674,13 @@ em {
 .ui-tips i {
   display: inline-block;
   width: 23px;
-  height: 0px;
+  height: 1px;
   position: relative;
   overflow: visible;
   margin-right: 8px;
   margin-left: 0px;
-  font-size: 20px; }
+  font-size: 20px;
+  vertical-align: middle; }
 
 .ui-tips i:before {
   background: url(../img/icon.png?_bid=306) no-repeat -25px 0px;
@@ -679,7 +691,7 @@ em {
   height: 23px;
   position: absolute;
   left: 0px;
-  top: -16px; }
+  top: -13px; }
 
 .ui-tips-success i:before {
   background-position: 0 -25px; }
@@ -712,12 +724,13 @@ em {
 .ui-poptips i {
   display: inline-block;
   width: 20px;
-  height: 0px;
+  height: 1px;
   position: relative;
   overflow: visible;
   margin-right: 8px;
   margin-left: 0px;
-  font-size: 20px; }
+  font-size: 20px;
+  vertical-align: middle; }
 
 .ui-poptips i:before {
   background: url(../img/icon.png?_bid=306) no-repeat 0px 0px;
@@ -728,7 +741,7 @@ em {
   height: 20px;
   position: absolute;
   left: 0px;
-  top: -16px; }
+  top: -11px; }
 
 .ui-poptips-info i:before {
   background-position: 0 -50px; }
@@ -779,10 +792,11 @@ em {
 .ui-tooltips-warn i {
   display: inline-block;
   width: 23px;
-  height: 0px;
+  height: 1px;
   position: relative;
   overflow: visible;
-  margin-right: 8px; }
+  margin-right: 8px;
+  vertical-align: middle; }
 
 .ui-tooltips-warn i:before {
   background: url(../img/icon.png?_bid=306) no-repeat -50px 0px;
@@ -793,7 +807,7 @@ em {
   height: 23px;
   position: absolute;
   left: 0px;
-  top: -18px; }
+  top: -14px; }
 
 .ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg {
   position: absolute;
@@ -824,7 +838,7 @@ em {
 
 .ui-tips-news:before {
   content: "";
-  width: 19px;
+  width: 20px;
   height: 18px;
   overflow: hidden;
   display: block;
@@ -1026,14 +1040,14 @@ em {
   max-width: 100%;
   color: #808080; }
 
-/*列表按钮*/
+/* 列表按钮 */
 .ui-list .ui-btn, .ui-list .ui-btn-lg {
   position: absolute;
   top: 50%;
   right: 15px;
   margin-top: -15px; }
 
-/*列表checkbox*/
+/* 列表checkbox */
 .ui-list-checkbox .ui-checkbox {
   position: absolute;
   top: 50%;
@@ -1042,6 +1056,16 @@ em {
 
 .ui-list-checkbox li {
   padding-left: 40px; }
+
+/* 列表未读数 */
+.ui-list .ui-badge, .ui-list .ui-badge-muted, .ui-list .ui-badge-corner {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -11px; }
+
+.ui-list-link .ui-badge, .ui-list-link .ui-badge-muted, .ui-list-link .ui-badge-corner, .ui-list-item-link .ui-badge, .ui-list-item-link .ui-badge-muted, .ui-list-item-link .ui-badge-corner {
+  right: 30px; }
 
 /*列表按压态*/
 .ui-list-link li:active, li.ui-list-item-link:active {
@@ -1076,7 +1100,7 @@ em {
   position: absolute;
   right: 15px;
   top: 50%;
-  margin-top: -8px; }
+  margin-top: -7px; }
 
 .ui-list-link .ui-list-info {
   padding-right: 35px; }
@@ -1279,18 +1303,19 @@ em {
   position: absolute;
   right: 15px;
   top: 50%;
-  margin-top: -8px; }
+  margin-top: -7px; }
 
 .ui-checkbox input {
   display: inline-block;
   width: 25px;
-  height: 0px;
+  height: 1px;
   position: relative;
   overflow: visible;
   border: none;
   background: none;
   -webkit-appearance: none;
-  outline: none; }
+  outline: none;
+  vertical-align: middle; }
 
 .ui-checkbox input:before {
   background: url(../img/icon.png?_bid=306) no-repeat -50px -25px;
@@ -1301,7 +1326,7 @@ em {
   height: 25px;
   position: absolute;
   left: 0px;
-  top: -14px; }
+  top: -10px; }
 
 .ui-checkbox input:checked:before {
   background-position: -25px -25px; }
@@ -1393,14 +1418,15 @@ em {
 .ui-radio input {
   display: inline-block;
   width: 24px;
-  height: 0px;
+  height: 1px;
   position: relative;
   overflow: visible;
   border: none;
   background: none;
   -webkit-appearance: none;
   outline: none;
-  margin-right: 8px; }
+  margin-right: 8px;
+  vertical-align: middle; }
 
 .ui-radio input:before {
   content: '';
@@ -1413,7 +1439,7 @@ em {
           background-clip: padding-box;
   position: absolute;
   left: 0px;
-  top: -16px; }
+  top: -14px; }
 
 .ui-radio input:checked:after {
   content: '';
@@ -1424,29 +1450,29 @@ em {
   border-radius: 7px;
   position: absolute;
   left: 6px;
-  top: -10px; }
+  top: -8px; }
 
-.ui-searchbox-wrap {
+.ui-searchbar-wrap {
   display: -webkit-box;
   -webkit-box-pack: center;
   -webkit-box-align: center;
   background: #f8f9fa; }
-  .ui-searchbox-wrap button {
+  .ui-searchbar-wrap button {
     margin-right: 10px; }
-  .ui-searchbox-wrap .ui-searchbox-cancel {
+  .ui-searchbar-wrap .ui-searchbar-cancel {
     color: #808080;
     font-size: 16px;
     padding: 4px 8px; }
-  .ui-searchbox-wrap .ui-searchbox-input, .ui-searchbox-wrap button, .ui-searchbox-wrap .ui-icon-close {
+  .ui-searchbar-wrap .ui-searchbar-input, .ui-searchbar-wrap button, .ui-searchbar-wrap .ui-icon-close {
     display: none; }
-  .ui-searchbox-wrap.focus {
+  .ui-searchbar-wrap.focus {
     -webkit-box-pack: start; }
-    .ui-searchbox-wrap.focus .ui-searchbox-input, .ui-searchbox-wrap.focus button, .ui-searchbox-wrap.focus .ui-icon-close {
+    .ui-searchbar-wrap.focus .ui-searchbar-input, .ui-searchbar-wrap.focus button, .ui-searchbar-wrap.focus .ui-icon-close {
       display: block; }
-    .ui-searchbox-wrap.focus .ui-searchbox-text {
+    .ui-searchbar-wrap.focus .ui-searchbar-text {
       display: none; }
 
-.ui-searchbox {
+.ui-searchbar {
   border-radius: 4px;
   height: 30px;
   margin: 7px 10px;
@@ -1461,7 +1487,7 @@ em {
   -webkit-box-align: center;
   color: #808080;
   width: 100%; }
-  .ui-searchbox input {
+  .ui-searchbar input {
     -webkit-appearance: none;
     font-size: 14px;
     color: #000;
@@ -1469,7 +1495,7 @@ em {
     width: 100%;
     padding: 7px 0; }
 
-.ui-searchbox-input {
+.ui-searchbar-input {
   -webkit-box-flex: 1; }
 
 .ui-loading {

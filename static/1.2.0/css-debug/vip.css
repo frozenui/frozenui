@@ -11,11 +11,7 @@
   display: block;
   width: 24px;
   height: 24px;
-<<<<<<< HEAD
-  background-image: url(../img/icon_vip.png?_bid=256);
-=======
   background-image: url(../img/icon_vip.png?_bid=306);
->>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 24px auto;
   position: absolute;
   line-height: 100px;
@@ -45,11 +41,7 @@
   content: "";
   display: block;
   width: 16px;
-<<<<<<< HEAD
-  background: url(../img/icon_qqlevel_sprite.png?_bid=256) no-repeat;
-=======
   background: url(../img/icon_qqlevel_sprite.png?_bid=306) no-repeat;
->>>>>>> a72366359d19a07097f740327e346853502a3f23
   background-repeat: no-repeat;
   position: absolute;
   line-height: 100px;
@@ -89,7 +81,7 @@
 /*等级图标*/
 /*宽度与背景size*/
 .ui-icon-viplevel, .ui-icon-viplevel-s, .ui-icon-sviplevel, .ui-icon-sviplevel-s, .ui-icon-yearviplevel, .ui-icon-yearviplevel-s, .ui-icon-yearsviplevel, .ui-icon-yearsviplevel-s, .ui-icon-mq {
-  width: 46px; }
+  width: 48px; }
   .ui-icon-viplevel span, .ui-icon-viplevel-s span, .ui-icon-sviplevel span, .ui-icon-sviplevel-s span, .ui-icon-yearviplevel span, .ui-icon-yearviplevel-s span, .ui-icon-yearsviplevel span, .ui-icon-yearsviplevel-s span, .ui-icon-mq span {
     -webkit-background-size: auto 20px; }
 
@@ -150,11 +142,7 @@
 
 .ui-tag, .ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-freelimit:before, .ui-tag-free:before, .ui-tag-hot:before, .ui-tag-new:before, .ui-tag-selected:after {
   display: block;
-<<<<<<< HEAD
-  background: url(../img/icon_tag.png?_bid=256);
-=======
   background: url(../img/icon_tag.png?_bid=306);
->>>>>>> a72366359d19a07097f740327e346853502a3f23
   -webkit-background-size: 36px auto;
   position: absolute;
   z-index: 9; }

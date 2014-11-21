@@ -56,13 +56,16 @@
           alias: {
             
             "$": "jquery/jquery/2.1.0/jquery.js",
-            "sticky":"arale/sticky/1.3.1/sticky"
+            "sticky":"arale/sticky/1.3.1/sticky",
+            "side":"/static/side"
           }
         });
-        seajs.use(['sticky'], function(Sticky) {
+        seajs.use(['sticky','side'], function(Sticky,Side) {
+            Side.init();
             if(document.body.clientWidth>980){
             	Sticky('.side-area', 20);
             }
+            
         });
         </script>
     </head>
@@ -73,6 +76,13 @@
 
             </div>
             <div class="main-area">
+                <div class="side-area">
+                    <ul>
+                    </ul>
+                </div>    
+                <script type="text/template" id="list-template">
+                    <li><a href="#"></a></li>
+                </script>
                 <style>.content-area{margin: auto;}</style>
                 <div class="content-area">
                     <h1>ui-list</h1>
@@ -106,14 +116,14 @@
     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
         <span class="tag">&lt;<span class="title">p</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="带选中态">带选中态</h3><div class="nico-insert-code"><ul class="ui-list ui-list-text ui-border-tb">
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="带选中态">带选中态</h3><div class="nico-insert-code"><ul class="ui-list ui-list-text ui-list-active ui-border-tb">
     <li class="ui-border-t selected">
         <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
     <li class="ui-border-t">
         <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
-</ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-text ui-border-tb"</span>&gt;</span>
+</ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-text ui-list-active ui-border-tb"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t selected"</span>&gt;</span>
         <span class="tag">&lt;<span class="title">p</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
@@ -127,12 +137,54 @@
     <li class="ui-border-t">
         <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
+
 </ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-text ui-list-link ui-border-tb"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
         <span class="tag">&lt;<span class="title">p</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
     <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
         <span class="tag">&lt;<span class="title">p</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="文字连接列表">文字连接列表</h3><div class="nico-insert-code"><ul class="ui-list ui-list-text ui-border-tb">
+    <li class="ui-border-t ui-list-item-link">
+        <div class="ui-list-info">
+            <h4>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断</h4>
+            <p>内容内容内容内容内容内容内容内容内容内容内容</p>
+        </div>
+        <div class="ui-badge">123</div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+            <h4>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断</h4>
+        </div>
+        <div class="ui-badge-muted">123</div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+           <h4>标题标题标题标题标题标题标</h4>
+        </div>
+        <div class="ui-list-action">使用中</div>
+    </li>
+</ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-text ui-border-tb"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t ui-list-item-link"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>内容内容内容内容内容内容内容内容内容内容内容<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge"</span>&gt;</span>123<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h4</span>&gt;</span>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge-muted"</span>&gt;</span>123<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-border-t"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info"</span>&gt;</span>
+           <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-action"</span>&gt;</span>使用中<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><h3 id="圆图文列表">圆图文列表</h3><div class="nico-insert-code"><ul class="ui-list ui-border-tb">  
     <li>
@@ -299,7 +351,6 @@
         <div class="ui-list-info ui-border-t">
             <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
         </div>
-        <div class="ui-btn">PK</div>
     </li>
 </ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-list-function ui-border-tb"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">li</span>&gt;</span>
@@ -318,7 +369,6 @@
         <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-list-info ui-border-t"</span>&gt;</span>
             <span class="tag">&lt;<span class="title">h4</span>&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
         <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-btn"</span>&gt;</span>PK<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div></div>
                 </div>   

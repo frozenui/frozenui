@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <title>FrozenUI - 关于frozenUI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" content="专注于移动web的UI框架，基于手机QQ规范" />
+        <meta name="Keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js" />
+        <meta name="author" content="fayching" />
+        <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
+        <!-- <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/global.css" /> -->
+        <link rel="stylesheet" href="static/1.2.0/css-debug/global.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/style.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
+        <style>
+            .ui-btn-group.ui-btn-bottom, .ui-dialog,.ui-poptips,.ui-notice{
+               position: relative;
+               margin: 0;
+            }
+            .ui-poptips{margin:10px 0;}
+            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+               position: relative;
+               margin: 0;
+           }
+            .ui-icon{font-size:30px;}
+            .ui-table{line-height: 40px;} 
+            .ui-dialog{height:320px;}
+            body{
+                -webkit-user-select: inherit;
+            }
+            @media (max-width: 980px){
+                body{
+                    -webkit-user-select: none;
+                }
+            }
+            .border-list li{width:100px;height:50px;margin-bottom:20px;text-align: center;line-height: 50px;}
+            .ui-searchbox-wrap,.ui-selector-title,.ui-tab-nav{position: static;}
+            ..ui-tab-content{margin-top: 0;}
+            .ui-selector-content{padding-top: 0;}
+            .ui-selector-title h3{font-size: 14px;}
+            .ui-select-user h3{font-size: 16px;}
+            .side-area ul li{padding-left: 20px;}
+            .nav{display: none}
+            .side-highlight .nav{display: block}
+            .side-area .side-highlight{border: none}
+            .side-area .side-highlight a{background: none}
+            .side-area .side-highlight > a{border-right: 1px solid #025775;}
+        </style>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+        <script src="http://frozenui.github.io/static/jquery.js"></script>
+        <script>
+        var $ = jQuery;
+        seajs.config({
+          base: "http://frozenui.github.io/static/sea-modules/",
+          alias: {
+            
+            "$": "jquery/jquery/2.1.0/jquery.js",
+            "sticky":"arale/sticky/1.3.1/sticky",
+            "side":"/static/side"
+          }
+        });
+        seajs.use(['sticky','side'], function(Sticky,Side) {
+            Side.init();
+            if(document.body.clientWidth>980){
+            	Sticky('.side-area', 20);
+            }
+            
+        });
+        </script>
+    </head>
+    <body>
+       
+        <div id="body-wrapper">
+            <div class="head-area">
+
+            </div>
+            <div class="main-area">
+                <div class="side-area">
+                    <ul>
+                    </ul>
+                </div>    
+                <script type="text/template" id="list-template">
+                    <li><a href="#"></a></li>
+                </script>
+                <style>.content-area{margin: auto;}</style>
+                <div class="content-area">
+                    <h1>关于frozenUI</h1>
+                    <div class="content"><p><style>
+.nico-insert-code{display:none}
+</style></p>
+<h2 id="frozenui是什么">frozenUI是什么</h2><p><img src="../static/elsa.jpg"></p>
+<p>frozenUI是我们团队根据最新的<a href="">手Q设计规范</a>制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。</p>
+<p>为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把Elsa女王作为我们的卡通代言人，相信大多数看过这部动画的人都会喜欢女王的形象吧。</p>
+<p>css使用模块化的样式命名和组织规范，参考了前人的成果：支付宝团队的<a href="http://aliceui.org/">alice</a>，<a href="http://getbootstrap.com/">bootstrap</a>等，实现了最简的手Q web组件效果，并不断完善中。</p>
+<p>兼容android 2.3 +，ios 4.0 + 。</p>
+<p>使用<code>离线包</code>实现0k网络请求。</p>
+<p><a href="http://frozenui.github.io/baseui/history.html">css历史版本修改记录</a></p>
+<p><a href="https://github.com/frozenui/frozenui">github主页</a></p>
+<p><a href="https://github.com/frozenui">github组织</a></p>
+<p><a href="https://github.com/frozenui/baseui">css仓库</a></p>
+<p>欢迎提 <a href="https://github.com/frozenui/frozenui/issues">issue</a> 给我们帮助我们完善frozen。</p>
+<h2 id="css规范">css规范</h2><p>统一使用ui为前缀作为命名空间。</p>
+<p>class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如<code>.ui-btn</code> 和 <code>.ui-btn-danger</code>）。</p>
+<p>避免过度任意的简写。<code>.btn</code> 代表 <code>button</code>，但是 <code>.b</code> 不能表达任何意思。</p>
+<p>class 名称应当尽可能短，并且意义明确，不要使用表现形式（presentational）的名称。</p>
+<p>基于最近的父 class 或基本（base） class 作为新 class 的前缀。</p>
+<p><code>.ui-btn-lg.disabled</code></p>
+<p>{命名空间}-{模块}-{属性}.{状态}</p>
+<p><code>.ui-dialog-cnt</code> </p>
+<p>{命名空间}-{模块}-{子模块}</p>
+<p>描述属性的class应该基于当前的class</p>
+<p><code>.ui-form-item ui-form-item-link</code></p>
+<p>{命名空间}-{模块}-{属性}.{状态}</p>
+<p>常用状态有：<code>hover</code>, <code>current</code>, <code>selected</code>, <code>disabled</code>, <code>focus</code>, <code>blur</code>, <code>checked</code>, <code>success</code>, <code>error</code>，<code>active</code> 等。</p>
+<p>除了常用状态的class，不能直接使用其他不带前缀的class，如</p>
+<div class="nico-insert-code">    <div class="ui-btn primary">确认</div></div><div class="highlight"><pre><code class="xml">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-btn primary"</span>&gt;</span>确认<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><p>应该写为</p>
+<div class="nico-insert-code">    <div class="ui-btn ui-btn-primary">确认</div></div><div class="highlight"><pre><code class="xml">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-btn ui-btn-primary"</span>&gt;</span>确认<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><p>不强制所有class都必须带父class，简单的组件可以直接使用子class，如</p>
+<div class="nico-insert-code">    <span class="ui-txt-highlight">ui-txt-highlight</span></div><div class="highlight"><pre><code class="xml">    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt-highlight"</span>&gt;</span>ui-txt-highlight<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><p>而不是</p>
+<div class="nico-insert-code">    <span class="ui-txt ui-txt-highlight">ui-txt-highlight</span></div><div class="highlight"><pre><code class="xml">    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-txt ui-txt-highlight"</span>&gt;</span>ui-txt-highlight<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><p>因为是在移动端使用，dom结构并不会太复杂，因此不建议过多使用class嵌套，可以直接使用标签名的直接使用标签名。
+如建议使用</p>
+<div class="nico-insert-code">    <ul class="ui-list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul></div><div class="highlight"><pre><code class="xml">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span>1<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span>2<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span>3<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><p>而不使用</p>
+<div class="nico-insert-code">    <ul class="ui-list">
+        <li class="ui-list-item">1</li>
+        <li class="ui-list-item">2</li>
+        <li class="ui-list-item">3</li>
+    </ul></div><div class="highlight"><pre><code class="xml">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-list-item"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-list-item"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-list-item"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div><table>
+<thead>
+<tr>
+<th>约定的一些简写</th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-s</td>
+<td align="center">-small</td>
+</tr>
+<tr>
+<td>-lg</td>
+<td align="center">-large</td>
+</tr>
+<tr>
+<td>-l</td>
+<td align="center">-left</td>
+</tr>
+<tr>
+<td>-r</td>
+<td align="center">-right</td>
+</tr>
+<tr>
+<td>-t</td>
+<td align="center">-top</td>
+</tr>
+<tr>
+<td>-b</td>
+<td align="center">-bottom</td>
+</tr>
+</tbody>
+</table>
+<p>常用模块名有：<code>cnt(content)</code>，<code>hd(header)</code>，<code>bd(body)</code>，<code>ft(footer)</code>，<code>txt(text)</code>，<code>img(images/pic)</code>，<code>title</code>，<code>item</code>等， 只要词义表达了组件要实现的功能或者要表现出来的的外观就可以了。</p>
+<h2 id="常用功能类">常用功能类</h2><p>提供常用文本颜色，1px解决方案，不同尺寸的头像，红点和未读数通知等功能类。</p>
+</div>
+                </div>   
+            </div>
+            <div class="footer-area">
+            </div>
+        </div>
+        <script src="http://frozenui.github.io/static/layout.js"></script>
+    </body>
+</html>

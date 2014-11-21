@@ -16,7 +16,7 @@
 /*等级图标*/
 /*宽度与背景size*/
 .ui-icon-viplevel, .ui-icon-viplevel-s, .ui-icon-sviplevel, .ui-icon-sviplevel-s, .ui-icon-yearviplevel, .ui-icon-yearviplevel-s, .ui-icon-yearsviplevel, .ui-icon-yearsviplevel-s, .ui-icon-mq {
-  width: 46px; }
+  width: 48px; }
   .ui-icon-viplevel span, .ui-icon-viplevel-s span, .ui-icon-sviplevel span, .ui-icon-sviplevel-s span, .ui-icon-yearviplevel span, .ui-icon-yearviplevel-s span, .ui-icon-yearsviplevel span, .ui-icon-yearsviplevel-s span, .ui-icon-mq span {
     -webkit-background-size: auto 20px; }
 
