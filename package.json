@@ -1,16 +1,31 @@
 {
   "name": "FrozenUI",
-  "version": "1.0.0",
-  "title": "FrozenUI",
-  "homepage": "http://frozenui.github.io",
+  "version": "1.2.0",
+  "title": "FrozenUI CSS",
+  "homepage": "https://github.com/frozenui/baseui",
   "author": "fayching",
   "repository": {
     "type": "git",
-    "url": "https://github.com/frozenui/frozenui.git"
+    "url": "https://github.com/frozenui/baseui.git"
   },
   "licenses": "MIT",
-  "description": "专注于移动web的UI框架",
+  "description": "为移动端web而生",
   "bugs": {
-    "url": "https://github.com/frozenui/frozenui/issues"
-  }
+    "url": "https://github.com/frozenui/baseui/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-compress": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-watch": "0.4.3",
+    "grunt-contrib-sass": "0.7.0",
+    "grunt-ftp-deploy": "^0.1.4",
+    "grunt-ftpush": "^0.3.3",
+    "grunt-push-svn": "^0.2.1",
+    "grunt-autoprefixer": "^1.0.1",
+    "grunt-shell": "^0.7.0",
+    "grunt-contrib-imagemin":"^0.8.1"
+  },
+  "main": "Gruntfile.js"
 }

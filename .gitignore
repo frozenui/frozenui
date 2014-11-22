@@ -18,5 +18,11 @@ Thumbs.db
 *.pyo
 build
 _site
+sea-modules
+node_modules/
 .cache
+.sass-cache
 _site/
+*.build
+*.grunt
+.ftppass

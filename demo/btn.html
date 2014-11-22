@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="ISUX">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>组件库</title>
+ <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css?_bid=306">
+
+<style >
+.title {
+  padding-left: 15px;
+  line-height: 48px;
+  font-size: 20px;
+  color: #00A5E3;
+  margin-bottom: 10px;
+}
+.ui-btn-wrap{
+  padding: 5px 15px;
+}
+
+</style>
+</head>
+<body>
+	<h2 class="title ui-border-b">按钮</h2>
+  <div class="ui-btn-wrap">
+	<button class="ui-btn">确定</button>
+  <button class="ui-btn active">确定</button>
+  <button class="ui-btn disabled">取消</button>
+  </div>
+  <div class="ui-btn-wrap">
+  <button class="ui-btn ui-btn-primary">确定</button>
+<button class="ui-btn ui-btn-primary active">确定</button>
+<button class="ui-btn disabled">取消</button>
+ </div>
+  <div class="ui-btn-wrap">
+<button class="ui-btn ui-btn-danger">确定</button>
+<button class="ui-btn ui-btn-danger active">确定</button>
+<button class="ui-btn disabled">取消</button>
+ </div>
+<div class="ui-btn-wrap">
+    <button class="ui-btn-lg">确定</button>
+</div>
+<div class="ui-btn-wrap">
+    <button class="ui-btn-lg active">确定</button>
+</div>
+<div class="ui-btn-wrap">    
+    <button class="ui-btn-lg disabled">取消</button>
+</div>
+<div class="ui-btn-wrap">
+    <button class="ui-btn-lg ui-btn-primary">确定</button>
+    </div>
+<div class="ui-btn-wrap">
+    <button class="ui-btn-lg ui-btn-primary active">确定</button>
+    </div>
+<div class="ui-btn-wrap">
+    <button class="ui-btn-lg disabled">取消</button>
+</div>
+<div class="ui-btn-wrap">
+    <button class="ui-btn-lg ui-btn-danger">确定</button>
+    </div>
+<div class="ui-btn-wrap">
+      <button class="ui-btn-lg ui-btn-danger active">确定</button>
+      </div>
+<div class="ui-btn-wrap">
+      <button class="ui-btn-lg disabled">取消</button>
+</div>
+
+    <script src="http://imgcache.gtimg.cn/c/=/club/mobile_web/zepto.min.js"></script>
+    <script>
+      $('.ui-list-text li').click(function(){
+        location.href= $(this).data('href');
+      });
+    </script>
+</body>
+
+</html>
+  

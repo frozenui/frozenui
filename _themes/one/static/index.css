@@ -1,9 +1,0 @@
-.content-area>h1{
-    display: none;
-}
-.main-area{
-    max-width: 100%;
-    margin: 0;
-}
-.side-area{display: none;}
-.content-area{display:block;width: 100%;border: none;margin:0;padding: 0;}
