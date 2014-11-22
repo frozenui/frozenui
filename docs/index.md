@@ -50,8 +50,8 @@
         <h1>css组件库</h1>
         <div class="content">      
         <p>Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。遵循[手Q样式规范](http://isux.oa.com/guide/mqq/vd#545)，基本样式使用离线包的方式减少请求，并提供快速接入的方案。</p>
-        查看[历史版本修改记录](http://frozenui.github.io/baseui/history.html) 
-        <script type="text/template" id="frozen-module">
+        <p>查看[历史版本修改记录](http://frozenui.github.io/frozenui/history.html) ,查看[css规范](http://frozenui.github.io/frozenui/cssguide.html)</p>，引用方式参看[http://frozenui.github.io/start.html#正确使用css的方式](http://frozenui.github.io/start.html#正确使用css的方式).
+         <script type="text/template" id="frozen-module">
             <div class="frozen-module">
                 <div class="frozen-module-head">
                     <h2 class="frozen-module-title">
