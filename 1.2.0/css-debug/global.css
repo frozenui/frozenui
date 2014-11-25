@@ -1069,7 +1069,7 @@ em {
   right: 35px; }
 
 /*列表按压态*/
-.ui-list-active > li:active, .ui-list-link > li, li.ui-list-item-link {
+.ui-list-active > li:active, .ui-list-link > li:active, li.ui-list-item-link:active {
   background-color: #f8f9fa;
   padding-left: 15px;
   margin-left: 0px; }
