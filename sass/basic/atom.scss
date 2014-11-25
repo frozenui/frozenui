@@ -193,8 +193,7 @@ $bordercolor : #dedfe0;
 /**
  * 未读数通知
  */
-
-.ui-badge{  
+%badge{
     display: inline-block;
     text-align: center;
     background: #f74c31;
@@ -205,7 +204,11 @@ $bordercolor : #dedfe0;
     -webkit-border-radius: 12px;
     padding: 0 7px;
 }
+.ui-badge{  
+    @extend %badge;
+}
 /* 浅色的 */
+
 .ui-badge-muted{
     @extend .ui-badge;
     background: #b6cae0;
@@ -215,7 +218,7 @@ $bordercolor : #dedfe0;
     text-align: center;
 }
 .ui-badge-corner{
-    @extend .ui-badge;
+    @extend %badge;
     position: absolute;
     border: 2px #fff solid;
     top: -2px;
