@@ -327,7 +327,7 @@ h3.frozen-module-subtitle {
         };
         //匹配json内容
         $('.side-area').html(template(context));
-        Side.init();   
+
         var deps = $('.side-area li[data-id]');
         _.each(deps, function(dep) {
             var moduleNode = $($('#frozen-module').html());
@@ -363,6 +363,7 @@ h3.frozen-module-subtitle {
                 }
             });
         }); 
+        Side.init();
     });
 
 </script>
