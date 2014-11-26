@@ -115,8 +115,8 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
 [https://github.com/frozenui/frozenui](https://github.com/frozenui/frozenui)，自行 clone 到本地。 
         <script id="list-tpl" type="text/x-handlebars-template"> 
             {{#each list}}
-            <li>
-                <a href="#modules-{{name}}">{{title}}</a>
+            <li {{#unless child}} data-id="{{name}}" {{/unless}}>
+                <a href="#modules-{{name}}" >{{title}}</a>
                 {{#if child}}
                 <ul class="nav">
                 {{#each child}}
