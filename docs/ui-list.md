@@ -87,7 +87,7 @@
 ````html
 <ul class="ui-list ui-border-tb">  
     <li>
-        <div class="ui-list-thumb ui-avatar-s">
+        <div class="ui-avatar-s">
            <span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
         </div>
         <div class="ui-list-info ui-border-t">
@@ -96,7 +96,7 @@
         </div>
     </li>
     <li>
-        <div class="ui-list-thumb ui-avatar-s">
+        <div class="ui-avatar-s">
             <span  style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span>
         </div>
         <div class="ui-list-info ui-border-t">
