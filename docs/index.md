@@ -90,9 +90,11 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
 
 查看[历史版本修改记录](http://frozenui.github.io/frozenui/history.html),查看[css规范](http://frozenui.github.io/frozenui/cssguide.html)
 
+查看手机上的效果[demo](http://frozenui.github.io/frozenui/demo/index.html)
+
 ####最新引用方式
 
-1.可以直接使用下面的 css 文件，注意1.2.0之后的bid改为306:
+1.可以直接使用下面的 css 文件，注意1.2.0之后的bid改为_306_:
 ````
  <link media="all" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306" rel="stylesheet">
   <link media="all" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306" rel="stylesheet">
