@@ -261,7 +261,7 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
         };
         //匹配json内容
         $('.side-area').html(template(context));
-        Side.init();   
+           
         var deps = $('.side-area li[data-id]');
         _.each(deps, function(dep) {
             var moduleNode = $($('#frozen-module').html());
@@ -297,6 +297,7 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
                 }
             });
         }); 
+        Side.init();
     });
     
 </script>
