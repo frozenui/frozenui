@@ -57,7 +57,8 @@
             
             "$": "jquery/jquery/2.1.0/jquery.js",
             "sticky":"arale/sticky/1.3.1/sticky",
-            "side":"/static/side"
+            "side":"/static/side",
+            "handlebars": "gallery/handlebars/1.0.2/handlebars"
           }
         });
         seajs.use(['sticky','side'], function(Sticky,Side) {
@@ -75,56 +76,121 @@
             <div class="head-area">
 
             </div>
-            <div class="main-area"> 
-                    <p><div class="side-area">
-        <ul>
-          <li><a href="#modules-ui-btn">按钮 button</a>
-            <ul class="nav">
-              <li data-id="ui-btn"><a href="#modules-ui-btn">ui-btn</a></li>
-              <li data-id="ui-btn-lg"><a href="#modules-ui-btn-lg" >ui-btn-lg</a></li>
-              <li data-id="ui-btn-group"><a href="#modules-ui-btn-group" >ui-btn-group</a></li>
-            </ul>
-          </li>
-          <li data-id="atom"><a href="#modules-atom">辅助类 atom</a></li>
-          <li  data-id="ui-searchbar"><a href="#modules-ui-searchbar">搜索框 searchbar</a></li>
-          <li data-id="ui-tab"><a href="#modules-ui-tab">选项卡 tab</a></li>
-          <li data-id="ui-list"><a href="#modules-ui-list" >列表 list</a></li>
-          <li><a href="#modules-ui-form">表单项 form</a>
-            <ul class="nav">
-              <li data-id="ui-form"><a href="#modules-ui-form" >ui-form</a></li>
-              <li data-id="ui-checkbox"><a href="#modules-ui-checkbox" >ui-checkbox</a></li>
-              <li data-id="ui-switch"><a href="#modules-ui-switch">ui-switch</a></li>
-              <li data-id="ui-radio"><a href="#modules-ui-radio">ui-radio</a></li>
-            </ul>
-          </li>
-          <li data-id="ui-table"><a href="#modules-ui-table">表格 table</a></li>
-          <li  data-id="ui-dialog"><a href="#modules-ui-dialog">弹窗 dialog</a></li>
-          <li data-id="ui-notice"><a href="#modules-ui-notice">通知 notice</a></li>
-          <li><a href="#modules-ui-tips">提示 tips</a>
-            <ul class="nav">
-              <li data-id="ui-tips"><a href="#modules-ui-tips">ui-tips</a></li>
-              <li data-id="ui-poptips"><a href="#modules-ui-poptips" >ui-poptips</a></li>
-              <li data-id="ui-tooltips"><a href="#modules-ui-tooltips">ui-tooltips</a></li>
-            </ul>
-          </li>
-          <li data-id="ui-loading"><a href="#modules-ui-loading">加载中 loading</a></li>
-          <li><a href="#modules-ui-tag">会员业务 icon等</a>
-            <ul class="nav">
-              <li data-id="ui-tag"><a href="#modules-ui-tag">ui-tag</a></li>
-              <li data-id="ui-selector"><a href="#modules-ui-selector">ui-selector</a></li>
-              <li data-id="ui-icon-qq"><a href="#modules-ui-icon-qq" >ui-icon-qq</a></li>
-              <li data-id="ui-icon-viplevel"><a href="#modules-ui-icon-viplevel">ui-icon-viplevel</a></li>
-              <li data-id="ui-icon-qqlevel"><a href="#modules-ui-icon-qqlevel" >ui-icon-qqlevel</a></li>
-            </ul>
-          </li>
-        </ul>
-    </div><br>    <script type="text/template" id="list-template">
-        <li><a href="#"></a></li>
-    </script>
-    <div class="content-area">
-        <h1>css组件库</h1>
-        <div class="content"><br>        <p>Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。遵循<a href="http://isux.oa.com/guide/mqq/vd#545">手Q样式规范</a>，基本样式使用离线包的方式减少请求，并提供快速接入的方案。</p>
-        <p>查看<a href="http://frozenui.github.io/frozenui/history.html">历史版本修改记录</a> ,查看<a href="http://frozenui.github.io/frozenui/cssguide.html">css规范</a>，引用方式参看<a href="http://frozenui.github.io/start.html#正确使用css的方式"><a href="http://frozenui.github.io/start.html#正确使用css的方式">http://frozenui.github.io/start.html#正确使用css的方式</a></a>。</p>
+            <div class="main-area">
+                <div class="side-area"></div>
+                  
+                <div class="content-area">
+                    <h1>css组件库</h1>
+                    <div class="content"><style>
+.ui-avatar-tiled{display:inline-block;}
+.frozen-module {
+    border-bottom: 1px solid #eee;    
+    padding: 10;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.frozen-module-head {
+    overflow: hidden;
+}
+.frozen-module-title {
+    margin: 0;
+    font-size: 28px;
+    font-family: Trebuchet MS;
+    display: inline;
+}
+.frozen-module-title a {
+    color: #00a5e0;
+    cursor: pointer;
+}
+.frozen-module-link {
+    font-size: 14px;
+}
+.frozen-module-version {
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 0.5em;
+    color: #888;
+    font-family: Menlo,Monaco,"Courier New",monospace;
+}
+p.frozen-module-description {
+    font-size: 14px;
+    color: #888;
+    margin: 10px 0 20px;
+}
+.frozen-module-demo {
+    position: relative;
+}
+.frozen-module-demo:hover {
+    background: #fdfdfd;
+}
+.frozen-module-dom {
+    margin-bottom: 8px;
+    font-size:14px;
+}
+.frozen-module-code {
+    margin: 0!important;
+}
+@media (max-width: 640px){
+    .frozen-module-code{
+        display:none;
+    }
+}
+h3.frozen-module-subtitle {
+    margin: 0;
+    color: #333;
+    display: block;
+    padding: 10px 0;
+}
+.frozen-module-sourcecode {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 12px;
+    padding: 5px 10px;
+    background: #EFFFE4;
+    border-radius: 3px;
+    display: none;
+    z-index: 99;
+    opacity: 0.8;
+}
+.frozen-loading {
+    margin-bottom: 20px;
+}
+.black {
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+}
+</style>  
+
+<p>Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。遵循<a href="http://isux.oa.com/guide/mqq/vd#545">手Q样式规范</a>，基本样式使用离线包的方式减少请求，并提供快速接入的方案。</p>
+<p>查看<a href="http://frozenui.github.io/frozenui/history.html">历史版本修改记录</a>,查看<a href="http://frozenui.github.io/frozenui/cssguide.html">css规范</a></p>
+<h4 id="最新引用方式">最新引用方式</h4><p>1.可以直接使用下面的 css 文件，注意1.2.0之后的bid改为306:</p>
+<pre> &lt;link media=&quot;all&quot; href=&quot;http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;link media=&quot;all&quot; href=&quot;http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306&quot; rel=&quot;stylesheet&quot;&gt;</pre><p>前者是打包了除了会员相关的基础css文件，后者包括vip等级图标 ，qq等级图标，角标，好友选择器等会员相关的css组件，使用手Q离线包需要加上bid的参数。
+将两个css打包到一起的css地址是<a href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/global.css，">http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/global.css，</a> 手Q中不提供离线包。
+调试时可使用未压缩版，把css目录换成css-debug，如<a href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css">http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css</a></p>
+<p>2.针对非手Q用户可以使用cdn 和 combo 服务按需加载</p>
+<pre> &lt;link media=&quot;all&quot; href=&quot;http://i.gtimg.cn/c/=/vipstyle/frozenui/1.2.0/css/reset.css,/vipstyle/frozenui/1.2.0/css/ui-notice.css&quot; rel=&quot;stylesheet&quot;&gt;</pre><p>3.直接下载</p>
+<p>另外提供下载地址：<a href="http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip"><a href="http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip">http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip</a></a></p>
+<p>4.访问我们的github仓库
+<a href="https://github.com/frozenui/frozenui"><a href="https://github.com/frozenui/frozenui">https://github.com/frozenui/frozenui</a></a>，自行 clone 到本地。 
+        <script id="list-tpl" type="text/x-handlebars-template"> 
+            {{#each list}}
+            <li>
+                <a href="#modules-{{name}}">{{title}}</a>
+                {{#if child}}
+                <ul class="nav">
+                {{#each child}}
+                    <li data-id="{{name}}"><a href="#modules-{{name}}">{{name}}</a></li>
+                {{/each}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </script>
          <script type="text/template" id="frozen-module">
             <div class="frozen-module">
                 <div class="frozen-module-head">
@@ -141,153 +207,167 @@
                 <pre class="frozen-module-code"></pre>
             </div>
         </script>
-        <style>
-        .ui-avatar-tiled{display:inline-block;}
-        .frozen-module {
-            border-bottom: 1px solid #eee;<br>            padding: 10;
-            margin-top: 20px;
-            margin-bottom: 50px;
-        }
-        .frozen-module-head {
-            overflow: hidden;
-        }
-        .frozen-module-title {
-            margin: 0;
-            font-size: 28px;
-            font-family: Trebuchet MS;
-            display: inline;
-        }
-        .frozen-module-title a {
-            /<em>color: #7CAE23;</em>/
-            color: #00a5e0;
-            cursor: pointer;
-        }
-        .frozen-module-link {
-            font-size: 14px;
-        }
-        .frozen-module-version {
-            font-size: 12px;
-            font-weight: normal;
-            margin-left: 0.5em;
-            color: #888;
-            font-family: Menlo,Monaco,&quot;Courier New&quot;,monospace;
-        }
-        p.frozen-module-description {
-            font-size: 14px;
-            color: #888;
-            margin: 10px 0 20px;
-        }
-        .frozen-module-demo {
-            position: relative;
-        }
-        .frozen-module-demo:hover {
-            background: #fdfdfd;
-        }
-        .frozen-module-dom {
-            margin-bottom: 8px;
-            font-size:14px;
-        }
-        .frozen-module-code {
-            margin: 0!important;
-        }
-        @media (max-width: 640px){
-            .frozen-module-code{
-                display:none;
-            }
-        }
-        h3.frozen-module-subtitle {
-            margin: 0;
-            color: #333;
-            display: block;
-            padding: 10px 0;
-        }
-        .frozen-module-sourcecode {
-            position: absolute;
-            right: 5px;
-            top: 0;
-            font-size: 12px;
-            padding: 5px 10px;
-            background: #EFFFE4;
-            border-radius: 3px;
-            display: none;
-            z-index: 99;
-            opacity: 0.8;
-        }
-        .frozen-loading {
-            margin-bottom: 20px;
-        }
-        .black {
-            font-size: 12px;
-            padding: 2px;
-            border-radius: 2px;
-            background: rgba(0, 0, 0, 0.55);
-            color: #fff;
-        }
-        </style> 
-        <div class="frozen-modules"></div>
-      </div>
-    </div>
-    </div></p>
+        <div class="frozen-modules"></div></p>
 <script type="text/javascript">
-seajs.use(['$', 'gallery/underscore/1.6.0/underscore', 'arale/popup/1.1.6/popup'], function($, _, Popup) {
-    var deps = $('.side-area li[data-id]');
-    _.each(deps, function(dep) {
-        var moduleNode = $($('#frozen-module').html());
-        moduleNode.find('.frozen-module-title a')
-            .attr('href', $(dep).data('id'))
-            .attr('id', 'modules-' + $(dep).data('id'))
-            .html($(dep).data('id'));
-        moduleNode.appendTo('.frozen-modules');
-        var list = substractTitle(moduleNode.find('h2'));
-        $.ajax({
-            url:  $(dep).data('id'),
-            dataType: 'html',
-            success: function(data) {
-                data = $(data);
-                moduleNode.find('.frozen-module-description')
-                    .html(data.find('.entry-content > p:first-child').html());
-                data.find('.nico-insert-code').each(function(index, item) {
-                    var demoNode = $($('#frozen-module-demo').html());
-                    item = $(item);
-                    var subtitle = item.prev().html();
-                    if (item.prev()[0].tagName !== 'H3' || !subtitle) {
-                        subtitle = '默认';
-                    }
-                    demoNode.find('.frozen-module-subtitle').html(subtitle);
-                    demoNode.find('.frozen-module-dom').html(item.html());
 
-                    // 直接使用目标页面生成的高亮代码，不再动态渲染
-                    var codeHtml = item.next('.highlight').find('pre').html();
-                    demoNode.find('.frozen-module-code').html(codeHtml);
-
-                    moduleNode.find('.frozen-loading').remove();
-                    demoNode.appendTo(moduleNode);
-                });
-
-                // 中文关键词，一般放在 keywords 数组的第一个
-                // 在这里写到左边索引栏中
-                moduleNode.find('.frozen-module-version')
-                var keywords = data.find('#sidebar-wrapper .keywords').html();
-                if (keywords) {
-                    list.find('i').html(keywords);
+    seajs.use(['$','handlebars','/static/side','gallery/underscore/1.6.0/underscore'], function($,Handlebars, Side, _) {
+        //用jquery获取模板
+        var tpl   =  $("#list-tpl").html();
+        //预编译模板
+        var template = Handlebars.compile(tpl);
+        //模拟json数据
+        var context = { 
+            list:[
+                {
+                    name: "ui-btn",
+                    title: "按钮 button",
+                    child:[
+                        {
+                            name: "ui-btn"
+                        },
+                        {
+                            name: "ui-btn-lg" 
+                        },
+                        {
+                            name: "ui-btn-group" 
+                        }
+                    ]
+                },
+                {
+                    name: "atom",
+                    title: "辅助类 atom"
+                },
+                {
+                    name: "ui-searchbar",
+                    title: "搜索框 searchbar"
+                },
+                {
+                    name: "ui-tab",
+                    title: "选项卡 tab"
+                },
+                {
+                    name:"ui-list",
+                    title: "列表 list"
+                },
+                {
+                    name:"ui-form",
+                    title: "表单项 form",
+                    child: [
+                        {
+                            name: "ui-form"
+                        },
+                        {
+                            name: "ui-checkbox" 
+                        },
+                        {
+                            name: "ui-switch" 
+                        },
+                        {
+                            name: "ui-radio"
+                        }
+                    ]
+                },
+                {
+                    name:"ui-table",
+                    title: "表格 table"
+                },
+                {
+                    name:"ui-dialog",
+                    title: "弹窗 dialog"
+                },
+                {
+                    name:"ui-notice",
+                    title: "通知 notice"
+                },
+                {
+                    name:"ui-list",
+                    title: "列表 list"
+                },
+                {
+                    name:"ui-tips",
+                    title: "提示 tips",
+                    child: [
+                        {
+                            name: "ui-tips"
+                        },
+                        {
+                            name: "ui-poptips" 
+                        },
+                        {
+                            name: "ui-tooltips" 
+                        }
+                    ]
+                },
+                {
+                    name:"ui-loading",
+                    title: "加载中 loading"
+                },
+                {
+                    name:"ui-tag",
+                    title: "会员业务 icon角标等",
+                    child: [
+                        {
+                            name: "ui-tag"
+                        },
+                        {
+                            name: "ui-selector" 
+                        },
+                        {
+                            name: "ui-icon-qq" 
+                        },
+                        {
+                            name: "ui-icon-viplevel" 
+                        },
+                        {
+                            name: "ui-icon-qqlevel" 
+                        }
+                    ]
                 }
-            }
-        });
+            ]
+        };
+        //匹配json内容
+        $('.side-area').html(template(context));
+        Side.init();   
+        var deps = $('.side-area li[data-id]');
+        _.each(deps, function(dep) {
+            var moduleNode = $($('#frozen-module').html());
+            moduleNode.find('.frozen-module-title a')
+                .attr('href', $(dep).data('id'))
+                .attr('id', 'modules-' + $(dep).data('id'))
+                .html($(dep).data('id'));
+            moduleNode.appendTo('.frozen-modules');
+            $.ajax({
+                url:  $(dep).data('id'),
+                dataType: 'html',
+                success: function(data) {
+                    data = $(data);
+                    moduleNode.find('.frozen-module-description')
+                        .html(data.find('.entry-content > p:first-child').html());
+                    data.find('.nico-insert-code').each(function(index, item) {
+                        var demoNode = $($('#frozen-module-demo').html());
+                        item = $(item);
+                        var subtitle = item.prev().html();
+                        if (item.prev()[0].tagName !== 'H3' || !subtitle) {
+                            subtitle = '默认';
+                        }
+                        demoNode.find('.frozen-module-subtitle').html(subtitle);
+                        demoNode.find('.frozen-module-dom').html(item.html());
+
+                        // 直接使用目标页面生成的高亮代码，不再动态渲染
+                        var codeHtml = item.next('.highlight').find('pre').html();
+                        demoNode.find('.frozen-module-code').html(codeHtml);
+
+                        moduleNode.find('.frozen-loading').remove();
+                        demoNode.appendTo(moduleNode);
+                    });
+                }
+            });
+        }); 
     });
-    seajs.use('/static/side', function(Side) {
-        Side.init();        
-    });     
-    function substractTitle(item) {
-        item = item.find('a');
-        var list = $($('#list-template').html());
-        list.find('a').html(item.html() + list.find('a').html());
-        list.find('a').attr('href', '#' + item.attr('id'));
-        //list.appendTo('.side-area ul');
-        return list;
-    }
-});
+
 </script>
-   
+</div>
+                </div>  
             </div>
             <div class="footer-area">
             </div>

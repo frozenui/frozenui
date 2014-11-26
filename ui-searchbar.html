@@ -57,7 +57,8 @@
             
             "$": "jquery/jquery/2.1.0/jquery.js",
             "sticky":"arale/sticky/1.3.1/sticky",
-            "side":"/static/side"
+            "side":"/static/side",
+            "handlebars": "gallery/handlebars/1.0.2/handlebars"
           }
         });
         seajs.use(['sticky','side'], function(Sticky,Side) {
@@ -79,11 +80,10 @@
                 <div class="side-area">
                     <ul>
                     </ul>
-                </div>    
+                </div> 
                 <script type="text/template" id="list-template">
                     <li><a href="#"></a></li>
-                </script>
-                <style>.content-area{margin: auto;}</style>
+                </script>  
                 <div class="content-area">
                     <h1>ui-searchbar</h1>
                     <div class="content"><h3 id="初始态">初始态</h3><div class="nico-insert-code"><div  class="ui-searchbar-wrap">
@@ -93,7 +93,7 @@
         <div class="ui-searchbar-input"><input value="" type="tel" placeholder="搜索号码（2-10位）" autocapitalize="off"></div>
         <i class="ui-icon-close"></i>
     </div>
-     <button class="ui-searchbar-cancel">搜索</button>
+     <button class="ui-searchbar-cancel">取消</button>
 </div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span>  <span class="attribute">class</span>=<span class="value">"ui-searchbar-wrap"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-searchbar"</span>&gt;</span>
         <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-search"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
@@ -101,7 +101,7 @@
         <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-searchbar-input"</span>&gt;</span><span class="tag">&lt;<span class="title">input</span> <span class="attribute">value</span>=<span class="value">""</span> <span class="attribute">type</span>=<span class="value">"tel"</span> <span class="attribute">placeholder</span>=<span class="value">"搜索号码（2-10位）"</span> <span class="attribute">autocapitalize</span>=<span class="value">"off"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
         <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-close"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-     <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ui-searchbar-cancel"</span>&gt;</span>搜索<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+     <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ui-searchbar-cancel"</span>&gt;</span>取消<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="点击态">点击态</h3><div class="nico-insert-code"><div  class="ui-searchbar-wrap focus">
     <div class="ui-searchbar">
         <i class="ui-icon-search"></i>
@@ -109,7 +109,7 @@
         <div class="ui-searchbar-input"><input value="" type="tel" placeholder="搜索号码（2-10位）" autocapitalize="off"></div>
         <i class="ui-icon-close"></i>
     </div>
-     <button class="ui-searchbar-cancel">搜索</button>
+     <button class="ui-searchbar-cancel">取消</button>
 </div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span>  <span class="attribute">class</span>=<span class="value">"ui-searchbar-wrap focus"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-searchbar"</span>&gt;</span>
         <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-search"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
@@ -117,7 +117,7 @@
         <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-searchbar-input"</span>&gt;</span><span class="tag">&lt;<span class="title">input</span> <span class="attribute">value</span>=<span class="value">""</span> <span class="attribute">type</span>=<span class="value">"tel"</span> <span class="attribute">placeholder</span>=<span class="value">"搜索号码（2-10位）"</span> <span class="attribute">autocapitalize</span>=<span class="value">"off"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
         <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon-close"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-     <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ui-searchbar-cancel"</span>&gt;</span>搜索<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+     <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ui-searchbar-cancel"</span>&gt;</span>取消<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="带按钮">带按钮</h3><div class="nico-insert-code"><div  class="ui-searchbar-wrap focus">
     <div class="ui-searchbar">
         <i class="ui-icon-search"></i>
@@ -135,7 +135,7 @@
     <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
      <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ui-btn ui-btn-primary"</span>&gt;</span>搜索<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div></div>
-                </div>   
+                </div>  
             </div>
             <div class="footer-area">
             </div>

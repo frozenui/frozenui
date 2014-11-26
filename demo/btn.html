@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <title>组件库</title>
- <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css?_bid=306">
+ <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306">
 
 <style >
 .title {
@@ -21,7 +21,7 @@
 .ui-btn-wrap{
   padding: 5px 15px;
 }
-
+.ui-btn-group-tiled{margin-bottom: 80px;}
 </style>
 </head>
 <body>
@@ -68,7 +68,13 @@
     <div class="ui-btn-wrap">
           <button class="ui-btn-lg disabled">取消</button>
     </div>
-
+    <div class="ui-btn-group-tiled ui-btn-wrap">
+        <button class="ui-btn-lg">拒绝</button> <button class="ui-btn-lg ui-btn-primary">同意</button>
+    </div>
+    <div class="ui-btn-group ui-btn-group-bottom">
+        <button type="button">加为好友</button>
+        <button type="button">发消息</button>
+    </div>
     <script src="http://imgcache.gtimg.cn/c/=/club/mobile_web/zepto.min.js"></script>
     <script>
       $('.ui-list-text li').click(function(){
