@@ -90,7 +90,7 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
 
 查看[历史版本修改记录](http://frozenui.github.io/frozenui/history.html),查看[css规范](http://frozenui.github.io/frozenui/cssguide.html)
 
-查看手机上的效果[demo](http://frozenui.github.io/frozenui/demo/index.html)
+查看手机上的效果[demo](http://frozenui.github.io/demo/index.html)
 
 ####最新引用方式
 
