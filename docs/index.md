@@ -182,6 +182,10 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
                     title: "选项卡 tab"
                 },
                 {
+                    name: "ui-slider",
+                    title: "图片轮播 slider"
+                },
+                {
                     name:"ui-list",
                     title: "列表 list"
                 },

@@ -71,7 +71,7 @@ select {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  border: none;
+  border: 0;
   background: none;
   -webkit-appearance: none;
   outline: none; }

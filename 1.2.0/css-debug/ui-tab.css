@@ -17,7 +17,12 @@
           box-sizing: border-box; }
 
 .ui-tab-content {
-  margin-top: 45px; }
+  margin-top: 45px;
+  display: -webkit-box; }
+
+.ui-tab-content > li {
+  -webkit-box-flex: 1;
+  width: 100%; }
 
 .ui-tab-nav li {
   height: 45px;

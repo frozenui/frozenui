@@ -12,8 +12,10 @@
         <meta name="Keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js" />
         <meta name="author" content="fayching" />
         <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
-        <!-- <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/{{config.package.version}}/css-debug/global.css" /> -->
-        <link rel="stylesheet" href="static/{{config.package.version}}/css-debug/global.css" />
+       <!--  <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/{{config.package.version}}/css-debug/frozen.css" />
+        <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/{{config.package.version}}/css-debug/vip.css" />  -->
+        <link rel="stylesheet" href="static/{{config.package.version}}/css-debug/frozen.css" />
+        <link rel="stylesheet" href="static/{{config.package.version}}/css-debug/vip.css" />
         <link rel="stylesheet" href="http://frozenui.github.io/static/style.css" />
         <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
         
@@ -52,8 +54,14 @@
             .side-area .side-highlight > a{border-right: 1px solid #025775;}
         </style>
         <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3c5e509616a8353ee908823c8b29510c' type='text/javascript'%3E%3C/script%3E"));
+        </script>
         <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
         <script src="http://frozenui.github.io/static/jquery.js"></script>
+        <script src="http://i.gtimg.cn/vipstyle/frozenjs/lib/zepto.min.js?_bid=304"></script>
+        <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.0/frozen.js?_bid=304"></script>
         <script>
         var $ = jQuery;
         seajs.config({
@@ -78,7 +86,7 @@
     <body>
        <script>
         if(document.documentElement.clientWidth < 640){
-            window.location.href ="http://frozenui.github.io/frozenui/demo/index.html";
+            window.location.href ="http://frozenui.github.io/demo/index.html";
         }
         </script>
         <div id="body-wrapper">
@@ -106,6 +114,7 @@
             </div>
         </div>
         <script src="http://frozenui.github.io/static/layout.js"></script>
+
     </body>
 </html>
 

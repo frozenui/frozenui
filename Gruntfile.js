@@ -6,7 +6,7 @@ module.exports =function(grunt) {
         pkg : grunt.file.readJSON('package.json'),
         
         meta: {
-            zipPath:'<%=pkg.version%>/i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
+            zipPath:'<%=pkg.version%>/i.gtimg.cn/vipstyle/frozenui'
         }, 
         cssmin: {
             minify: {
@@ -38,42 +38,25 @@ module.exports =function(grunt) {
                 src: ['**/*'],
                 dest:'<%=pkg.version%>/img/'
             },
-            zipimg:{
-                expand: true,
-                cwd: '<%=pkg.version%>/img/',
-                src: '*',
-                dest:'<%=meta.zipPath%>/img/',
-                filter: 'isFile'
-            },
             frozencss:{
-                src: '<%=pkg.version%>/css/frozen.css',
-                dest: '<%=meta.zipPath%>/css/frozen.css'
-            },
-            vipcss:{
-                src: '<%=pkg.version%>/css/vip.css',
-                dest: '<%=meta.zipPath%>/css/vip.css'
-            },
-            staticcss:{
-                src: ['<%=pkg.version%>/css/**','<%=pkg.version%>/css-debug/**','<%=pkg.version%>/img/**'],
-                dest:'_themes/one/static/'
-            }
+                src: ['<%=pkg.version%>/css/vip.css','<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/img/**'],
 
+                dest: '<%=meta.zipPath%>/'
+            },
+            downloadcss:{
+                src: ['<%=pkg.version%>/css/vip.css','<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css','<%=pkg.version%>/css-debug/vip.css',
+                    '<%=pkg.version%>/css-debug/frozen.css','<%=pkg.version%>/img/**'],
+                dest:'../frozenui.github.io/demo/frozenui/'
+            }
         },
         compress: {
             main: {
+            	cwd: '<%=pkg.version%>/',
                 options: {
-                    archive: '<%=pkg.version%>/i.gtimg.cn.zip'
+                    archive: 'i.gtimg.cn.zip'
                 },
                 expand: true,
-                src: ['<%=pkg.version%>/i.gtimg.cn/**']
-            },
-            download:{
-                options: {
-                    archive: '_themes/one/static/frozenui-<%=pkg.version%>.zip'
-                },
-                cwd: '_themes/one/static/<%=pkg.version%>',
-                expand: true,
-                src: ['**']
+                src: ['i.gtimg.cn/**']
             }
         },
         sass: {

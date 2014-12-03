@@ -43,11 +43,13 @@ $bordercolor : #dedfe0;
         width: 200%;
         height: 200%;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 0;
+        left: 0;
         border: 1px solid $bordercolor;
         -webkit-transform:scale(.5);
-        -webkit-transform-origin: -50% -50%;
+        -webkit-transform-origin: 0 0;
+        padding: 1px;
+        -webkit-box-sizing: border-box;
     }
     .ui-border-t{
         background-position: left top; 
