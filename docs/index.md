@@ -220,10 +220,6 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
                     title: "通知 notice"
                 },
                 {
-                    name:"ui-list",
-                    title: "列表 list"
-                },
-                {
                     name:"ui-tips",
                     title: "提示 tips",
                     child: [
