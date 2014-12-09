@@ -2,7 +2,7 @@
 <html lang="">
     <head>
         <meta charset="UTF-8">
-        <title>FrozenUI - ui-btn-group</title>
+        <title>FrozenUI - ui-slider</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Description" content="专注于移动web的UI框架，基于手机QQ规范" />
         <meta name="Keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js" />
@@ -98,23 +98,29 @@
                     <li><a href="#"></a></li>
                 </script>  
                 <div class="content-area">
-                    <h1>ui-btn-group</h1>
-                    <div class="content"><h3 id="底部操作区">底部操作区</h3><div class="nico-insert-code"><div class="ui-btn-group ui-btn-group-bottom">
-    <button type="button">加为好友</button>
-    <button type="button">发消息</button>
-</div>    
-<div class="ui-btn-group ui-btn-group-bottom">
-    <button type="button">加为好友</button>
-</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-btn-group ui-btn-group-bottom"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span>&gt;</span>加为好友<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span>&gt;</span>发消息<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>    
-<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-btn-group ui-btn-group-bottom"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span>&gt;</span>加为好友<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="并排按钮">并排按钮</h3><div class="nico-insert-code"><div class="ui-btn-group-tiled ui-btn-wrap">
-    <button class="ui-btn-lg">拒绝</button> <button class="ui-btn-lg ui-btn-primary">同意</button>
-</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-btn-group-tiled ui-btn-wrap"</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ui-btn-lg"</span>&gt;</span>拒绝<span class="tag">&lt;/<span class="title">button</span>&gt;</span> <span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"ui-btn-lg ui-btn-primary"</span>&gt;</span>同意<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+                    <h1>ui-slider</h1>
+                    <div class="content"><h3 id="default">default</h3><div class="nico-insert-code"><div class="ui-slider">
+    <ul class="ui-slider-content">
+        <li><img src="http://i.gtimg.cn/aoi/sola/20141201154940_fXIQIADwLo.jpg"></li>
+        <li><img src="http://i.gtimg.cn/aoi/sola/20141201154941_GhAN4FCMIF.jpg"></li>      
+        <li><img src="http://i.gtimg.cn/aoi/sola/20141201154939_LZJZBbo7ET.jpg"></li>
+    </ul>
+    <ul class="ui-slider-indicators">
+        <li class="current">1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-slider"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-slider-content"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/aoi/sola/20141201154940_fXIQIADwLo.jpg"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/aoi/sola/20141201154941_GhAN4FCMIF.jpg"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>      
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/aoi/sola/20141201154939_LZJZBbo7ET.jpg"</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-slider-indicators"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"current"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span>2<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span>3<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div></div>
                 </div>  
             </div>
