@@ -6,6 +6,9 @@ Frozen UI是一个开源的简单易用，轻量快捷的移动端UI框架。基
 css组件包括按钮，列表，表单，通知，提示条，弹出框，选项卡，等级图标，角标，红点，1px解决方案等。
 
 css使用模块化的样式命名和组织规范，使用sass编写css。
+
+js访问https://github.com/frozenui/frozenjs
+
 ###支持
 
 android 2.3 +，ios 4.0 + 。
