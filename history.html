@@ -107,8 +107,18 @@
 }
 </style>
 
-<h2 id="1-0-0">1.0.0</h2><p>发布新版本</p>
-<h2 id="1-1-0">1.1.0</h2><p>引用地址<a href="http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256">http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256</a></a></p>
+<h2 id="版本管理">版本管理</h2><p>版本格式：主版本号.次版本号.修订号，版本号递增规则：</p>
+<p>主版本号：整体改版</p>
+<p>次版本号：功能性新增，bug修复</p>
+<p>修订号：bug或新功能的调试版本，只作为开发版本，不做正式发布</p>
+<p>当前版本在第一个使用的业务发布后不再修改，新增版本会新增一个离线包。</p>
+<p><em>业务上使用时升级版本需要通知到开发，以及是否有dom修改，会不会影响到js</em></p>
+<h2 id="1-0-0">1.0.0</h2><p>发布新版本
+引用地址：</p>
+<p><a href="http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/basic.css?_bid=256"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256">http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256</a></a></p>
+<h2 id="1-1-0">1.1.0</h2><p>引用地址：</p>
+<p><a href="http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256">http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/frozen.css?_bid=256</a></a></p>
+<p><a href="http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/vip.css?_bid=256"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/vip.css?_bid=256">http://i.gtimg.cn/vipstyle/frozenui/1.1.0/css/vip.css?_bid=256</a></a></p>
 <ol>
 <li><p>增加<code>ui-form</code>,<code>ui-checkbox</code>,<code>ui-radio</code>,<code>ui-switch</code></p>
 </li>
@@ -124,20 +134,20 @@
 </li>
 <li><p><code>ui-btn-group</code>修改背景</p>
 </li>
-<li><p><em>dom修改</em> 现有的<code>ui-tips</code>改为<code>ui-poptips</code>，dom结构简化，另外新增<code>ui-tips</code>，<code>ui-tooltips</code></p>
-</li>
 <li><p>删减<code>ui-icon</code>，非共用图标样式写在对应的组件里</p>
+</li>
+<li><p><em>dom修改</em> 现有的<code>ui-tips</code>改为<code>ui-poptips</code>，dom结构简化，另外新增<code>ui-tips</code>，<code>ui-tooltips</code></p>
 </li>
 <li><p><em>basic.css</em> 改成 <em>frozen.css</em>，<code>ui-icon-tag</code>改成<code>ui-tag</code>，并和<code>ui-select-user</code>一起移到vip目录下，不再包含在<em>frozen.css</em>里</p>
 </li>
 </ol>
-<h2 id="1-2-0（1-1-1只发布了vip-css，废弃）">1.2.0（1.1.1只发布了vip.css，废弃）</h2><p>引用地址: </p>
+<h2 id="1-2-0">1.2.0</h2><p>引用地址: </p>
 <p><a href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306">http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306</a></a></p>
+<p><a href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/global.css?_bid=306"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/global.css?_bid=306">http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/global.css?_bid=306</a></a></p>
 <p><a href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306">http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306</a></a></p>
+<p><em>1.2.0之后的版本的离线包中不再提供单独的vip.css</em></p>
 <ol>
 <li><p>修改<code>ui-list</code>和<code>ui-form</code>的箭头图标</p>
-</li>
-<li><p><em>dom修改</em> 去掉<code>ui-select-user</code>, 增加<code>ui-selector</code></p>
 </li>
 <li><p>增加<code>ui-icon-qq</code></p>
 </li>
@@ -149,27 +159,27 @@
 </li>
 <li><p>1px左右边框改用与上下边框同样的方法实现</p>
 </li>
-<li><p><em>dom修改</em> <code>ui-searchbox</code>改成<code>ui-searchbar</code> ,增加focus时控制内部元素隐藏和显示的代码，减少js需要的操作</p>
-</li>
-<li><p><em>dom修改</em> <code>ui-tab</code>内部增加<code>ui-tab-nav</code>，高度的bug修改</p>
-</li>
 <li><p>修改<code>ui-form</code>关闭图标位置不对，另外箭头缺一个像素</p>
 </li>
 <li><p>修改<code>ui-reddot</code>带白边的红点半径不对</p>
 </li>
-<li><p><em>dom修改</em> 增加平铺按钮组<code>ui-btn-group-tiled</code>,<code>ui-btn-bottom</code>改成<code>ui-btn-group-bottom</code></p>
-</li>
 <li><p>增加<code>ui-badge-corner</code>，以及<code>ui-list ui-badge</code>样式</p>
 </li>
-<li><p>图片使用相对路径，单个组件css发布时去掉basic和vip文件夹，与frozen.css同一目录</p>
+<li><p>图片使用相对路径，单个组件css去掉basic和vip目录，与frozen.css同一目录</p>
 </li>
 <li><p>按钮颜色跟规范对齐</p>
 </li>
 <li><p>tips的图标位置细调</p>
 </li>
-<li><p>图片使用相对路径，单个组件css发布时去掉basic和vip文件夹，与frozen.css同一目录</p>
+<li><p>bid修改为<em>306</em>，global.css也放到离线包里</p>
 </li>
-<li><p>bid修改为306</p>
+<li><p><em>dom修改</em> 去掉<code>ui-select-user</code>，增加<code>ui-selector</code></p>
+</li>
+<li><p><em>dom修改</em> <code>ui-searchbox</code>改成<code>ui-searchbar</code> ，增加focus时控制内部元素隐藏和显示的代码，减少js需要的操作</p>
+</li>
+<li><p><em>dom修改</em> 原来的<code>ui-tab</code>替换成<code>ui-tab-nav</code>，外层再使用<code>ui-tab</code>，并增加<code>ui-tab-content</code>，高度的bug修改</p>
+</li>
+<li><p><em>dom修改</em> <code>ui-btn-bottom</code>改成<code>ui-btn-group-bottom</code>，增加平铺按钮组<code>ui-btn-group-tiled</code></p>
 </li>
 </ol>
 </div>
