@@ -43,10 +43,16 @@ module.exports =function(grunt) {
 
                 dest: '<%=meta.zipPath%>/'
             },
+            staticcss:{
+                src: ['<%=pkg.version%>/css/vip.css','<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css','<%=pkg.version%>/css-debug/vip.css',
+                    '<%=pkg.version%>/css-debug/frozen.css','<%=pkg.version%>/img/**'],
+                dest: '_themes/one/static/'
+            },
+            
             downloadcss:{
                 src: ['<%=pkg.version%>/css/vip.css','<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css','<%=pkg.version%>/css-debug/vip.css',
                     '<%=pkg.version%>/css-debug/frozen.css','<%=pkg.version%>/img/**'],
-                dest:'../frozenui.github.io/demo/frozenui/'
+                dest: '../frozenui.github.io/demo/frozenui/'
             }
         },
         compress: {
