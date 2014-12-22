@@ -28,34 +28,33 @@
 }
 </style>
 <ul class="img-list">
-
     <li>
-        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
+        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
         <i class="ui-tag-svip"></i>
     </li>
     <li>
-        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
+        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
         <i class="ui-tag-vip"></i>
     </li>
     <li>
-        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
+        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
         <i class="ui-tag-free"></i>
     </li>
     <li>
-        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
+        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
         <i class="ui-tag-freelimit"></i>
     </li>
     <li>
-        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)" class="ui-tag-hot"></span>
+        <span style="background-image:url(http://wevas.info/img/?150*100)" class="ui-tag-hot"></span>
     </li>
     <li>
-        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)" class="ui-tag-new"></span>
+        <span style="background-image:url(http://wevas.info/img/?150*100)" class="ui-tag-new"></span>
     </li>
     <li class="ui-tag-selected">
-        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)" class="ui-tag-new"></span>
+        <span style="background-image:url(http://wevas.info/img/?150*100)" class="ui-tag-new"></span>
     </li>
     <li class="ui-tag-selected">
-        <span style="background-image:url(http://icase.tencent.com/vlabs/img/?150*200)"></span>
+        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
         <i class="ui-tag-vip"></i>
     </li>
 </ul>
