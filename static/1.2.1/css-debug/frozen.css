@@ -504,10 +504,10 @@ em {
   .ui-btn-lg:before {
     border-radius: 12px; }
 
-  .ui-btn-primary:before {
+  .ui-btn-primary:not(.ui-btn-lg):before {
     border: 1px solid #0baae4; }
 
-  .ui-btn-danger:before {
+  .ui-btn-danger:not(.ui-btn-lg):before {
     border: 1px solid #f43d30; }
 
   .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before {
@@ -818,11 +818,17 @@ em {
 .ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 10px;
   margin-top: -15px; }
 
 .ui-tooltips-state .ui-tooltips-cnt-link:after {
   background-position: -125px 0; }
+
+.ui-tooltips-vip .ui-tooltips-cnt {
+  background-color: rgba(248, 248, 248, 0.95);
+  color: #000;
+  line-height: 46px;
+  height: 46px; }
 
 /**
  * 页面消息提示
