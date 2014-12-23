@@ -58,8 +58,14 @@
 .ui-tooltips .ui-btn {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 10px;
   margin-top: -15px; }
 
 .ui-tooltips-state .ui-tooltips-cnt-link:after {
   background-position: -125px 0; }
+
+.ui-tooltips-vip .ui-tooltips-cnt {
+  background-color: rgba(248, 248, 248, 0.95);
+  color: #000;
+  line-height: 46px;
+  height: 46px; }

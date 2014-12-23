@@ -819,7 +819,7 @@ em {
 .ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 10px;
   margin-top: -15px; }
 
 .ui-tooltips-state .ui-tooltips-cnt-link:after {

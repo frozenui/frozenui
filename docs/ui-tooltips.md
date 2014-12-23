@@ -43,3 +43,13 @@
     </div>
 </div>
 ````
+### 个性装扮
+````html
+<div class="ui-tooltips ui-tooltips-vip">
+    <div class="ui-tooltips-cnt">
+        <span class="ui-icon-vip"></span>
+        <span>QQ会员xxxx</span>
+        <button class="ui-btn ui-btn-primary">开通</button>
+    </div>
+</div>
+````
