@@ -504,10 +504,10 @@ em {
   .ui-btn-lg:before {
     border-radius: 12px; }
 
-  .ui-btn-primary:not(.ui-btn-lg):before {
+  .ui-btn-primary:before {
     border: 1px solid #0baae4; }
 
-  .ui-btn-danger:not(.ui-btn-lg):before {
+  .ui-btn-danger:before {
     border: 1px solid #f43d30; }
 
   .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before {
