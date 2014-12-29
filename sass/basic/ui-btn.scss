@@ -56,7 +56,7 @@
     border-color: #f43d30;
     background-clip: padding-box;
 }
-.ui-btn-danger:not(.disabled):active,.ui-btn-danger.active{
+.ui-btn-danger:not(.disabled):not(:disabled):active,.ui-btn-danger.active{
     background: #e2574d;
     border-color: #e2574d;
     color: rgba(255,255,255,.5);

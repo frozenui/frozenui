@@ -65,8 +65,7 @@
   display: box;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-box-pack: center;
-  margin: 7px 0; }
+  -webkit-box-pack: center; }
 
 .ui-list-info > h4 {
   font-size: 16px;
