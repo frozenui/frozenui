@@ -346,8 +346,8 @@ em {
 .ui-badge-corner {
   position: absolute;
   border: 2px #fff solid;
-  top: -2px;
-  left: 50%; }
+  top: -4px;
+  right: -9px; }
 
 .ui-icon, .ui-icon-refresh, .ui-icon-close, .ui-icon-search {
   display: inline-block;
@@ -867,6 +867,10 @@ em {
 /**
  * 选项卡
  */
+.ui-tab {
+  width: 100%;
+  overflow: hidden; }
+
 .ui-tab-nav {
   width: 100%;
   background-color: #fff;
@@ -1035,7 +1039,7 @@ em {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
-  margin: 7px 0; }
+  padding: 7px 0; }
 
 .ui-list-info > h4 {
   font-size: 16px;
@@ -1525,11 +1529,10 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding-top: 62.5%; }
+  padding-top: 31.25%; }
 
 .ui-slider-content {
   display: -webkit-box;
-  width: 300%;
   position: absolute;
   left: 0;
   top: 0; }
@@ -1543,21 +1546,25 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 
 .ui-slider-indicators {
   position: absolute;
-  bottom: 0;
-  right: 10px; }
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  width: 100%;
+  bottom: 5px;
+  right: 5px; }
 
 .ui-slider-indicators li {
-  display: inline-block;
+  display: block;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   width: 8px;
   height: 8px;
   background-color: #a6a6a6;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-right: 5px; }
 
 .ui-slider-indicators li.current {
-  background-color: #ff4040; }
+  background-color: #18b4ed; }
 
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }
