@@ -40,6 +40,9 @@
     <li class="ui-border-t">
         <p>标题标题标题标题标题标题标题标题标题标题标题</p>
     </li>
+    <li class="ui-border-t">
+        <p>标题标题标题标题标题标题标题标题标题标题标题</p>
+    </li>
 </ul>
  ````
 
@@ -179,7 +182,30 @@
     </li>
 </ul>
 ````
+     
+### 普通图片链接列表
 
+````html
+<ul class="ui-list ui-list-link ui-border-tb">
+    <li class="ui-border-t">
+        <div class="ui-list-img">
+            <span style="background-image:url(http://placehold.sinaapp.com/?200*136)"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+        </div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-img">
+           <span style="background-image:url(http://placehold.sinaapp.com/?200*136)"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+        </div>
+    </li>
+</ul>
+````
 ### 功能列表
 ````html
 <ul class="ui-list ui-list-function ui-border-tb">

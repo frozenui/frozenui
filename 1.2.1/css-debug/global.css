@@ -329,8 +329,8 @@ em {
   background: #f74c31;
   color: #fff;
   font-size: 12px;
-  height: 22px;
-  line-height: 22px;
+  height: 20px;
+  line-height: 20px;
   -webkit-border-radius: 12px;
   padding: 0 7px;
   -webkit-background-clip: padding-box;
@@ -347,8 +347,10 @@ em {
 .ui-badge-corner {
   position: absolute;
   border: 2px #fff solid;
-  top: -2px;
-  left: 50%; }
+  top: -4px;
+  right: -9px;
+  height: 16px;
+  line-height: 16px; }
 
 .ui-icon, .ui-icon-refresh, .ui-icon-close, .ui-icon-search {
   display: inline-block;
@@ -868,6 +870,10 @@ em {
 /**
  * 选项卡
  */
+.ui-tab {
+  width: 100%;
+  overflow: hidden; }
+
 .ui-tab-nav {
   width: 100%;
   background-color: #fff;
@@ -1002,7 +1008,14 @@ em {
 .ui-list-thumb {
   width: 50px;
   height: 50px;
-  margin: 7px 15px 7px 0px;
+  margin: 7px 10px 7px 0px;
+  position: relative; }
+
+/*列表缩略图*/
+.ui-list-img {
+  width: 100px;
+  height: 78px;
+  margin: 10px 10px 10px 0px;
   position: relative; }
 
 /*列表头像*/
@@ -1014,10 +1027,10 @@ em {
   width: 28px;
   height: 28px;
   -webkit-background-size: 28px auto;
-  margin: 11px 15px 11px 0px;
+  margin: 11px 10px 11px 0px;
   background-image: url(../img/default.png?_bid=306); }
 
-.ui-list-thumb span, .ui-list-thumb-s span {
+.ui-list-thumb span, .ui-list-thumb-s span, .ui-list-img span {
   width: 100%;
   height: 100%;
   -webkit-background-size: 100% auto;
@@ -1036,7 +1049,7 @@ em {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
-  margin: 7px 0; }
+  padding: 7px 0; }
 
 .ui-list-info > h4 {
   font-size: 16px;
@@ -1526,11 +1539,10 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding-top: 62.5%; }
+  padding-top: 31.25%; }
 
 .ui-slider-content {
   display: -webkit-box;
-  width: 300%;
   position: absolute;
   left: 0;
   top: 0; }
@@ -1544,21 +1556,25 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 
 .ui-slider-indicators {
   position: absolute;
-  bottom: 0;
-  right: 10px; }
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  width: 100%;
+  bottom: 5px;
+  right: 5px; }
 
 .ui-slider-indicators li {
-  display: inline-block;
+  display: block;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   width: 8px;
   height: 8px;
   background-color: #a6a6a6;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-right: 5px; }
 
 .ui-slider-indicators li.current {
-  background-color: #ff4040; }
+  background-color: #18b4ed; }
 
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }

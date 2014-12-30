@@ -231,8 +231,8 @@
   background: #f74c31;
   color: #fff;
   font-size: 12px;
-  height: 22px;
-  line-height: 22px;
+  height: 20px;
+  line-height: 20px;
   -webkit-border-radius: 12px;
   padding: 0 7px;
   -webkit-background-clip: padding-box;
@@ -249,5 +249,7 @@
 .ui-badge-corner {
   position: absolute;
   border: 2px #fff solid;
-  top: -2px;
-  left: 50%; }
+  top: -4px;
+  right: -9px;
+  height: 16px;
+  line-height: 16px; }
