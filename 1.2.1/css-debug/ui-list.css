@@ -72,8 +72,12 @@
   display: box;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+<<<<<<< HEAD
   -webkit-box-pack: center;
   padding: 7px 0; }
+=======
+  -webkit-box-pack: center; }
+>>>>>>> be78497d7827d9e7f567b81efbe6289ef1c1727a
 
 .ui-list-info > h4 {
   font-size: 16px;

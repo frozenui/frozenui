@@ -56,7 +56,7 @@
     border-color: #f43d30;
     background-clip: padding-box;
 }
-.ui-btn-danger:not(.disabled):active,.ui-btn-danger.active{
+.ui-btn-danger:not(.disabled):not(:disabled):active,.ui-btn-danger.active{
     background: #e2574d;
     border-color: #e2574d;
     color: rgba(255,255,255,.5);
@@ -82,6 +82,7 @@
 .ui-btn-wrap{
     padding: 20px 15px;
 }
+
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .ui-btn,.ui-btn.disabled,.ui-btn:disabled{border: 0;}
     .ui-btn:before{

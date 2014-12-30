@@ -459,7 +459,7 @@ em {
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn-danger:not(.disabled):active, .ui-btn-danger.active {
+.ui-btn-danger:not(.disabled):not(:disabled):active, .ui-btn-danger.active {
   background: #e2574d;
   border-color: #e2574d;
   color: rgba(255, 255, 255, 0.5);
@@ -848,6 +848,7 @@ em {
 .ui-tooltips-state .ui-tooltips-cnt-link:after {
   background-position: -125px 0; }
 
+<<<<<<< HEAD
 .ui-tooltips-vip .ui-tooltips-cnt {
   background-color: rgba(248, 248, 248, 0.95);
   color: #000;
@@ -857,6 +858,8 @@ em {
 .ui-tooltips .ui-btn-vip {
   margin-top: -13px; }
 
+=======
+>>>>>>> be78497d7827d9e7f567b81efbe6289ef1c1727a
 /**
  * 页面消息提示
  */
@@ -1072,8 +1075,12 @@ em {
   display: box;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+<<<<<<< HEAD
   -webkit-box-pack: center;
   padding: 7px 0; }
+=======
+  -webkit-box-pack: center; }
+>>>>>>> be78497d7827d9e7f567b81efbe6289ef1c1727a
 
 .ui-list-info > h4 {
   font-size: 16px;
