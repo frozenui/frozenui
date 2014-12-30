@@ -50,7 +50,7 @@
     <div class="ui-tooltips-cnt">
         <i class="ui-icon-vip"></i>
         <span>QQ会员xxxx</span>
-        <button class="ui-btn ui-btn-primary">开通</button>
+        <button class="ui-btn-vip">开通</button>
     </div>
 </div>
 <p></p>

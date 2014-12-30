@@ -109,3 +109,23 @@
         border: 1px solid #e9ebec;
     }
 }
+.ui-btn-vip{
+    height: 26px;
+    line-height: 26px;
+    padding: 0 13px;
+    min-width: 56px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    background-color: #1fbaf3;
+    border-radius: 3px;
+    vertical-align: top;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    background-clip: padding-box;
+}
+.ui-btn-vip:not(.disabled):not(:disabled):active,.ui-btn-vip.active{
+    background: #1ca7da;
+    background-clip: padding-box;
+}

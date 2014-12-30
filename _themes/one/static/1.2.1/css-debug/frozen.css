@@ -514,6 +514,28 @@ em {
 
   .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before {
     border: 1px solid #e9ebec; } }
+.ui-btn-vip {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 13px;
+  min-width: 56px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  background-color: #1fbaf3;
+  border-radius: 3px;
+  vertical-align: top;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+
+.ui-btn-vip:not(.disabled):not(:disabled):active, .ui-btn-vip.active {
+  background: #1ca7da;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+
 /**
  * 底部操作区
  */
@@ -817,7 +839,7 @@ em {
   left: 0px;
   top: -14px; }
 
-.ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg {
+.ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg, .ui-tooltips .ui-btn-vip {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -829,8 +851,11 @@ em {
 .ui-tooltips-vip .ui-tooltips-cnt {
   background-color: rgba(248, 248, 248, 0.95);
   color: #000;
-  line-height: 46px;
-  height: 46px; }
+  line-height: 44px;
+  height: 44px; }
+
+.ui-tooltips .ui-btn-vip {
+  margin-top: -13px; }
 
 /**
  * 页面消息提示
