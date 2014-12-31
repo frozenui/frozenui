@@ -352,6 +352,21 @@ em {
   height: 16px;
   line-height: 16px; }
 
+/* 箭头链接 */
+.ui-arrowlink {
+  position: relative; }
+  .ui-arrowlink:before {
+    background: url(../img/icon.png?_bid=306) no-repeat 0 -75px;
+    -webkit-background-size: 150px auto;
+    content: "";
+    display: block;
+    width: 9px;
+    height: 15px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -7px; }
+
 .ui-icon, .ui-icon-refresh, .ui-icon-close, .ui-icon-search {
   display: inline-block;
   height: 0px;

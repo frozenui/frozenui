@@ -33,7 +33,13 @@
 	<p>居中</p>
 </div>
   ````
-  
+###带箭头的链接
+
+````html
+<div class="ui-arrowlink" style="height:40px;line-height:40px">
+    内容
+</div>
+  ````
 ###红点和未读数通知
 
 ````html
