@@ -36,7 +36,7 @@
 ###带箭头的链接
 
 ````html
-<div class="ui-arrowlink" style="height:40px;line-height:40px">
+<div class="ui-arrowlink">
     内容
 </div>
   ````
