@@ -230,7 +230,7 @@
   text-align: center;
   background: #f74c31;
   color: #fff;
-  font-size: 12px;
+  font-size: 11px;
   height: 20px;
   line-height: 20px;
   -webkit-border-radius: 12px;
@@ -265,6 +265,6 @@
     width: 9px;
     height: 15px;
     position: absolute;
-    right: 15px;
+    right: 10px;
     top: 50%;
     margin-top: -7px; }

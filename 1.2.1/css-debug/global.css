@@ -328,7 +328,7 @@ em {
   text-align: center;
   background: #f74c31;
   color: #fff;
-  font-size: 12px;
+  font-size: 11px;
   height: 20px;
   line-height: 20px;
   -webkit-border-radius: 12px;
@@ -363,7 +363,7 @@ em {
     width: 9px;
     height: 15px;
     position: absolute;
-    right: 15px;
+    right: 10px;
     top: 50%;
     margin-top: -7px; }
 
@@ -426,13 +426,12 @@ em {
   text-align: center;
   border: none;
   color: #0079ff;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #fdfdfd;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
   border: 1px solid #cacccd;
   -webkit-background-clip: padding-box;
@@ -486,7 +485,6 @@ em {
   border: 1px solid #e9ebec;
   color: #ccc;
   background: #e9ebec;
-  text-shadow: none;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
@@ -538,7 +536,7 @@ em {
   display: inline-block;
   position: relative;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   background-color: #1fbaf3;
   border-radius: 3px;
   vertical-align: top;
