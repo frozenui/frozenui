@@ -38,7 +38,7 @@
 /*列表缩略图*/
 .ui-list-img {
   width: 100px;
-  height: 78px;
+  height: 68px;
   margin: 10px 10px 10px 0px;
   position: relative; }
 
@@ -85,7 +85,7 @@
   height: 20px; }
 
 .ui-list-info > p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   overflow: hidden;
   white-space: nowrap;
