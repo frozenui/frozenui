@@ -9,53 +9,53 @@
 
 
 ````html
-<style>
-.img-list{overflow:hidden;}
-.img-list li{
-	position:relative;
-	width: 150px;
-    height: 200px;
-	float: left;
-	margin-bottom: 10px;
-	margin-right: 10px;
-}
-.img-list li span{
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-</style>
-<ul class="img-list">
+
+<ul class="ui-grid-halve">
     <li>
-        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
-        <i class="ui-tag-svip"></i>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)"></span>
+            <i class="ui-tag-svip"></i>
+        </div>
     </li>
     <li>
-        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
-        <i class="ui-tag-vip"></i>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)"></span>
+            <i class="ui-tag-vip"></i>
+        </div>
     </li>
     <li>
-        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
-        <i class="ui-tag-free"></i>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)"></span>
+            <i class="ui-tag-free"></i>
+        </div>
+        
     </li>
     <li>
-        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
-        <i class="ui-tag-freelimit"></i>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)"></span>
+            <i class="ui-tag-freelimit"></i>
+        </div>
     </li>
     <li>
-        <span style="background-image:url(http://wevas.info/img/?150*100)" class="ui-tag-hot"></span>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)" class="ui-tag-hot"></span>
+        </div>
     </li>
     <li>
-        <span style="background-image:url(http://wevas.info/img/?150*100)" class="ui-tag-new"></span>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)" class="ui-tag-new"></span>
+        </div>
     </li>
     <li class="ui-tag-selected">
-        <span style="background-image:url(http://wevas.info/img/?150*100)" class="ui-tag-new"></span>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)" class="ui-tag-new"></span>
+        </div>
     </li>
     <li class="ui-tag-selected">
-        <span style="background-image:url(http://wevas.info/img/?150*100)"></span>
-        <i class="ui-tag-vip"></i>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)"></span>
+            <i class="ui-tag-vip"></i>
+        </div>
     </li>
 </ul>
 		

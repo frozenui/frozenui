@@ -125,7 +125,9 @@
     top: 0;
     height: 100%;
     overflow: hidden;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed)); }
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
     .ui-btn-progress .ui-btn-inner span {
       display: inline-block;
       color: #fff;

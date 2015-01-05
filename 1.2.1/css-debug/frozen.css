@@ -542,7 +542,9 @@ em {
     top: 0;
     height: 100%;
     overflow: hidden;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed)); }
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
     .ui-btn-progress .ui-btn-inner span {
       display: inline-block;
       color: #fff;
@@ -1685,6 +1687,30 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   color: #808080; }
 
 /* 二等分 */
+.ui-grid-halve {
+  overflow: hidden;
+  margin: 5px 0; }
+
+.ui-grid-halve > li {
+  width: 50%;
+  padding: 5px;
+  float: left;
+  position: relative; }
+
+.ui-grid-halve-img {
+  width: 100%;
+  padding-top: 55.17%;
+  position: relative; }
+  .ui-grid-halve-img span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%; }
+
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }
 

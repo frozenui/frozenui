@@ -48,6 +48,7 @@ p.frozen-module-description {
 .frozen-module-dom {
     margin-bottom: 8px;
     font-size:14px;
+    width: 420px;
 }
 .frozen-module-code {
     margin: 0!important;

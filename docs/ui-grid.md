@@ -1,12 +1,10 @@
-# ui-tag
+# ui-grid
 
 
 
 ---
 
-###角标
-
-
+###三列
 
 ````html
 
@@ -70,4 +68,30 @@
 </ul>
 		
 ````
+###两列
 
+````html
+<ul class="ui-grid-halve">
+    <li>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)"></span>
+        </div>
+    </li>
+    <li>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)"></span>
+        </div>
+    </li>
+    <li>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)"></span>
+        </div>
+    </li>
+    <li>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://wevas.info/img/?290*160)"></span>
+        </div>
+    </li>
+</ul>
+        
+````

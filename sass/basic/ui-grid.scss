@@ -37,5 +37,27 @@
 }
 /* 二等分 */
 .ui-grid-halve{
-
+    overflow: hidden;
+    margin: 5px 0;
+}
+.ui-grid-halve>li{
+    width: 50%;
+    padding: 5px;
+    float: left;
+    position: relative;
+}
+.ui-grid-halve-img{
+    width: 100%;
+    padding-top: 55.17%;
+    position: relative;
+    span{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+    }
 }
