@@ -150,8 +150,8 @@
 .ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-freelimit:before, .ui-tag-free:before {
   width: 28px;
   height: 14px;
-  bottom: 6px;
-  right: 3px;
+  bottom: 0;
+  right: 0;
   content: ''; }
 
 .ui-tag-vip:before {

@@ -37,7 +37,11 @@ figcaption,
 menu,
 button {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-sizing: border-box; }
+
+:before, :after {
+  -webkit-box-sizing: border-box; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
@@ -1606,14 +1610,17 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   display: -webkit-box;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  height: 100%; }
 
 .ui-slider-content > li {
   -webkit-box-flex: 1;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .ui-slider-content > li img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .ui-slider-indicators {
   position: absolute;
@@ -1641,6 +1648,43 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   background-color: #fff;
   border: 1px #999 solid; }
 
+/* 三等分 */
+.ui-grid-trisect {
+  margin-left: 7px;
+  margin-right: 6px;
+  overflow: hidden; }
+
+.ui-grid-trisect > li {
+  width: 33.33333333%;
+  padding: 0 4px 10px 3px;
+  float: left;
+  position: relative; }
+
+.ui-grid-trisect-img {
+  width: 100%;
+  padding-top: 149.47%;
+  position: relative; }
+  .ui-grid-trisect-img span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%; }
+
+.ui-grid-trisect h4 {
+  font-size: 12px;
+  position: relative;
+  margin: 7px 0 5px; }
+
+.ui-grid-trisect h4 span {
+  display: inline-block;
+  margin-left: 12px;
+  color: #808080; }
+
+/* 二等分 */
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }
 

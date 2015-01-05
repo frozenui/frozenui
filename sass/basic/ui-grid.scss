@@ -1,0 +1,41 @@
+/* 三等分 */
+.ui-grid-trisect{
+    margin-left: 7px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+.ui-grid-trisect>li{
+    width: 33.33333333%;
+    padding: 0 4px 10px 3px;
+    float: left;
+    position: relative;
+}
+.ui-grid-trisect-img{
+    width: 100%;
+    padding-top: 149.47%;
+    position: relative;
+    span{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+    }
+}
+.ui-grid-trisect h4{
+    font-size: 12px;
+    position: relative;
+    margin: 7px 0 5px
+}
+.ui-grid-trisect h4 span{
+    display: inline-block;
+    margin-left: 12px;
+    color: #808080;
+}
+/* 二等分 */
+.ui-grid-halve{
+
+}

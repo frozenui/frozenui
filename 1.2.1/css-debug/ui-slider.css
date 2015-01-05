@@ -12,14 +12,17 @@
   display: -webkit-box;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  height: 100%; }
 
 .ui-slider-content > li {
   -webkit-box-flex: 1;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .ui-slider-content > li img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .ui-slider-indicators {
   position: absolute;
