@@ -328,7 +328,7 @@ em {
   text-align: center;
   background: #f74c31;
   color: #fff;
-  font-size: 12px;
+  font-size: 11px;
   height: 20px;
   line-height: 20px;
   -webkit-border-radius: 12px;
@@ -363,7 +363,7 @@ em {
     width: 9px;
     height: 15px;
     position: absolute;
-    right: 15px;
+    right: 10px;
     top: 50%;
     margin-top: -7px; }
 
@@ -416,35 +416,34 @@ em {
 /**
  * 按钮
  */
-.ui-btn, .ui-btn-lg {
+.ui-btn, .ui-btn-lg, .ui-btn-s {
   height: 30px;
   line-height: 30px;
   padding: 0 13px;
-  min-width: 56px;
+  min-width: 55px;
   display: inline-block;
   position: relative;
   text-align: center;
   border: none;
   color: #0079ff;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #fdfdfd;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
   border: 1px solid #cacccd;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg {
+.ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
   background: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn:after, .ui-btn-lg:after {
+.ui-btn:after, .ui-btn-lg:after, .ui-btn-s:after {
   content: "";
   position: absolute;
   top: -12px;
@@ -482,11 +481,11 @@ em {
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn:disabled, .ui-btn-lg:disabled {
-  border: 1px solid #e9ebec;
+.ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
+  border: 1px solid #cacccd;
   color: #ccc;
-  background: #e9ebec;
-  text-shadow: none;
+  background-color: #fefefe;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
@@ -502,10 +501,10 @@ em {
   padding: 20px 15px; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-btn, .ui-btn-lg, .ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn:disabled, .ui-btn-lg:disabled {
+  .ui-btn, .ui-btn-lg, .ui-btn-s, .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
     border: 0; }
 
-  .ui-btn:before, .ui-btn-lg:before {
+  .ui-btn:before, .ui-btn-lg:before, .ui-btn-s:before {
     content: "";
     width: 200%;
     height: 200%;
@@ -528,17 +527,40 @@ em {
   .ui-btn-danger:before {
     border: 1px solid #f43d30; }
 
-  .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before {
-    border: 1px solid #e9ebec; } }
+  .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .disabled.ui-btn-s:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before, .ui-btn-s:disabled:before {
+    border: 1px solid #cacccd; } }
+.ui-btn-progress {
+  width: 55px;
+  padding: 0;
+  overflow: hidden; }
+  .ui-btn-progress .ui-btn-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed)); }
+    .ui-btn-progress .ui-btn-inner span {
+      display: inline-block;
+      color: #fff;
+      position: absolute;
+      width: 55px;
+      left: 0; }
+
+.ui-btn-s {
+  padding: 0;
+  width: 55px;
+  height: 25px;
+  line-height: 25px; }
+
 .ui-btn-vip {
   height: 26px;
   line-height: 26px;
-  padding: 0 13px;
-  min-width: 56px;
+  width: 51px;
   display: inline-block;
   position: relative;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   background-color: #1fbaf3;
   border-radius: 3px;
   vertical-align: top;
@@ -548,7 +570,8 @@ em {
           background-clip: padding-box; }
 
 .ui-btn-vip:not(.disabled):not(:disabled):active, .ui-btn-vip.active {
-  background: #1ca7da;
+  background-color: #1ba6d9;
+  color: rgba(255, 255, 255, 0.5);
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
@@ -565,7 +588,7 @@ em {
   display: block;
   -webkit-box-flex: 1; }
 
-.ui-btn-group-tiled .ui-btn:first-child, .ui-btn-group-tiled .ui-btn-lg:first-child {
+.ui-btn-group-tiled .ui-btn:first-child, .ui-btn-group-tiled .ui-btn-lg:first-child, .ui-btn-group-tiled .ui-btn-s:first-child {
   margin-right: 15px; }
 
 .ui-btn-group button {
@@ -855,7 +878,7 @@ em {
   left: 0px;
   top: -14px; }
 
-.ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg, .ui-tooltips .ui-btn-vip {
+.ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg, .ui-tooltips .ui-btn-s, .ui-tooltips .ui-btn-vip {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -1048,7 +1071,7 @@ em {
 .ui-list-thumb {
   width: 50px;
   height: 50px;
-  margin: 7px 10px 7px 0px;
+  margin: 10px 10px 10px 0px;
   position: relative; }
 
 /*列表缩略图*/
@@ -1060,14 +1083,14 @@ em {
 
 /*列表头像*/
 .ui-list .ui-avatar, .ui-list .ui-avatar-s, .ui-list .ui-avatar-lg {
-  margin: 7px 15px 7px 0px; }
+  margin: 10px 10px 10px 0px; }
 
 .ui-list-thumb-s {
   position: relative;
   width: 28px;
   height: 28px;
   -webkit-background-size: 28px auto;
-  margin: 11px 10px 11px 0px;
+  margin: 10px 10px 10px 0px;
   background-image: url(../img/default.png?_bid=306); }
 
 .ui-list-thumb span, .ui-list-thumb-s span, .ui-list-img span {
@@ -1092,17 +1115,17 @@ em {
 
 .ui-list-info > h4 {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 400;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
-  height: 20px; }
+  height: 24px; }
 
 .ui-list-info > p {
   font-size: 13px;
-  line-height: 20px;
+  line-height: 22px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1110,7 +1133,7 @@ em {
   color: #808080; }
 
 /* 列表按钮 */
-.ui-list .ui-btn, .ui-list .ui-btn-lg {
+.ui-list .ui-btn, .ui-list .ui-btn-lg, .ui-list .ui-btn-s {
   position: absolute;
   top: 50%;
   right: 15px;
@@ -1608,12 +1631,16 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   overflow: hidden;
   width: 8px;
   height: 8px;
-  background-color: #a6a6a6;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  margin-right: 5px; }
+  margin-right: 5px;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
 
 .ui-slider-indicators li.current {
-  background-color: #18b4ed; }
+  background-color: #fff;
+  border: 1px #999 solid; }
 
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }
