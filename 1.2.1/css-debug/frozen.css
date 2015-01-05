@@ -1070,7 +1070,7 @@ em {
 .ui-list-thumb {
   width: 50px;
   height: 50px;
-  margin: 7px 10px 7px 0px;
+  margin: 10px 10px 10px 0px;
   position: relative; }
 
 /*列表缩略图*/
@@ -1082,14 +1082,14 @@ em {
 
 /*列表头像*/
 .ui-list .ui-avatar, .ui-list .ui-avatar-s, .ui-list .ui-avatar-lg {
-  margin: 7px 15px 7px 0px; }
+  margin: 10px 10px 10px 0px; }
 
 .ui-list-thumb-s {
   position: relative;
   width: 28px;
   height: 28px;
   -webkit-background-size: 28px auto;
-  margin: 11px 10px 11px 0px;
+  margin: 10px 10px 10px 0px;
   background-image: url(../img/default.png?_bid=306); }
 
 .ui-list-thumb span, .ui-list-thumb-s span, .ui-list-img span {
@@ -1114,17 +1114,17 @@ em {
 
 .ui-list-info > h4 {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 400;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
-  height: 20px; }
+  height: 24px; }
 
 .ui-list-info > p {
   font-size: 13px;
-  line-height: 20px;
+  line-height: 22px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1630,12 +1630,16 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   overflow: hidden;
   width: 8px;
   height: 8px;
-  background-color: #a6a6a6;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  margin-right: 5px; }
+  margin-right: 5px;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
 
 .ui-slider-indicators li.current {
-  background-color: #18b4ed; }
+  background-color: #fff;
+  border: 1px #999 solid; }
 
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }

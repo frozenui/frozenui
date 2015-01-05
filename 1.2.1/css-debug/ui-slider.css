@@ -36,9 +36,13 @@
   overflow: hidden;
   width: 8px;
   height: 8px;
-  background-color: #a6a6a6;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  margin-right: 5px; }
+  margin-right: 5px;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
 
 .ui-slider-indicators li.current {
-  background-color: #18b4ed; }
+  background-color: #fff;
+  border: 1px #999 solid; }
