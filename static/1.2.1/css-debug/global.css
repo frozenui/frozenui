@@ -38,11 +38,7 @@ figcaption,
 menu,
 button {
   margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box; }
-
-:before, :after {
-  -webkit-box-sizing: border-box; }
+  padding: 0; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
@@ -216,7 +212,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
   .ui-avatar span {
     width: 50px;
     height: 50px;
@@ -232,7 +228,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
   .ui-avatar-lg span {
     width: 54px;
     height: 54px;
@@ -248,7 +244,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
   .ui-avatar-s span {
     width: 40px;
     height: 40px;
@@ -265,7 +261,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
   .ui-avatar-one span {
     width: 64px;
     height: 64px;
@@ -282,7 +278,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306);
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
   display: inline-block; }
   .ui-avatar-tiled span {
     width: 30px;
@@ -327,18 +323,19 @@ em {
 /**
  * 未读数通知
  */
-.ui-badge, .ui-badge-muted, .ui-badge-corner {
+.ui-badge, .ui-badge-muted, .ui-badge-corner, .ui-badge-cornernum {
   display: inline-block;
   text-align: center;
   background: #f74c31;
   color: #fff;
   font-size: 11px;
-  height: 20px;
-  line-height: 20px;
-  -webkit-border-radius: 12px;
-  padding: 0 7px;
+  height: 16px;
+  line-height: 16px;
+  -webkit-border-radius: 8px;
+  padding: 0 6px;
   -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+          background-clip: padding-box;
+  -webkit-box-sizing: border-box; }
 
 /* 浅色的 */
 .ui-badge-muted {
@@ -351,16 +348,27 @@ em {
 .ui-badge-corner {
   position: absolute;
   border: 2px #fff solid;
+  height: 20px;
+  top: -4px;
+  right: -9px; }
+
+.ui-badge-cornernum {
+  position: absolute;
   top: -4px;
   right: -9px;
-  height: 16px;
-  line-height: 16px; }
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  min-width: 19px;
+  -webkit-border-radius: 10px;
+  top: -5px;
+  right: -5px; }
 
 /* 箭头链接 */
 .ui-arrowlink {
   position: relative; }
   .ui-arrowlink:before {
-    background: url(../img/icon.png?_bid=306) no-repeat 0 -75px;
+    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0 -75px;
     -webkit-background-size: 150px auto;
     content: "";
     display: block;
@@ -378,7 +386,7 @@ em {
   overflow: visible; }
 
 .ui-icon:before, .ui-icon-refresh:before, .ui-icon-close:before, .ui-icon-search:before {
-  background: url(../img/icon.png?_bid=306) no-repeat 0px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -758,7 +766,7 @@ em {
   vertical-align: middle; }
 
 .ui-tips i:before {
-  background: url(../img/icon.png?_bid=306) no-repeat -25px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -25px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -808,7 +816,7 @@ em {
   vertical-align: middle; }
 
 .ui-poptips i:before {
-  background: url(../img/icon.png?_bid=306) no-repeat 0px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -853,7 +861,7 @@ em {
   background-color: rgba(205, 242, 255, 0.95); }
 
 .ui-tooltips-cnt-link:after {
-  background: url(../img/icon.png?_bid=306) no-repeat -75px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -75px 0;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -874,7 +882,7 @@ em {
   vertical-align: middle; }
 
 .ui-tooltips-warn i:before {
-  background: url(../img/icon.png?_bid=306) no-repeat -50px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -50px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -927,7 +935,7 @@ em {
   overflow: hidden;
   display: block;
   position: absolute;
-  background: url(../img/icon.png?_bid=306) no-repeat -100px -50px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -100px -50px;
   -webkit-background-size: 150px auto;
   left: 25px;
   top: 9px;
@@ -1097,7 +1105,7 @@ em {
   height: 28px;
   -webkit-background-size: 28px auto;
   margin: 10px 10px 10px 0px;
-  background-image: url(../img/default.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
 
 .ui-list-thumb span, .ui-list-thumb-s span, .ui-list-img span {
   width: 100%;
@@ -1193,7 +1201,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 
 /*连接列表*/
 .ui-list-link li:after, li.ui-list-item-link:after {
-  background: url(../img/icon.png?_bid=306) no-repeat 0 -75px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0 -75px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -1219,7 +1227,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   display: block;
   width: 14px;
   height: 12px;
-  background: url(../img/icon.png?_bid=306) no-repeat -100px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -100px 0;
   -webkit-background-size: 150px auto;
   position: absolute;
   right: 15px;
@@ -1237,14 +1245,14 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   width: 20px;
   height: 20px;
   display: block;
-  background: url(../img/loading_sprite.png?_bid=306);
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/loading_sprite.png?_bid=306);
   -webkit-background-size: auto 20px; }
 
 .ui-loading-bright {
   width: 37px;
   height: 37px;
   display: block;
-  background-image: url(../img/loading_sprite_white.png?_bid=306);
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/loading_sprite_white.png?_bid=306);
   -webkit-background-size: auto 37px; }
 
 .ui-loading-wrap .ui-loading {
@@ -1270,13 +1278,13 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
-  background-image: url(../img/icon_warn.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_warn.png?_bid=306); }
 
 .ui-notice-news i {
-  background-image: url(../img/icon_warn_news.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_warn_news.png?_bid=306); }
 
 .ui-notice-nearby i {
-  background-image: url(../img/icon_warn_nearby.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_warn_nearby.png?_bid=306); }
 
 .ui-notice p {
   font-size: 16px;
@@ -1396,7 +1404,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   color: #808080; }
 
 .ui-form-item-link:after {
-  background: url(../img/icon.png?_bid=306) no-repeat 0 -75px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0 -75px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -1420,7 +1428,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   vertical-align: middle; }
 
 .ui-checkbox input:before {
-  background: url(../img/icon.png?_bid=306) no-repeat -50px -25px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -50px -25px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -1625,43 +1633,63 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   width: 100%;
   height: 100%; }
 
+.ui-slider-content > li span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%; }
+
+.ui-slider-content > li:active {
+  opacity: .7; }
+
 .ui-slider-indicators {
   position: absolute;
   display: -webkit-box;
-  -webkit-box-pack: center;
+  -webkit-box-pack: end;
   width: 100%;
-  bottom: 5px;
-  right: 5px; }
+  bottom: 5px; }
 
 .ui-slider-indicators li {
   display: block;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 8px;
-  height: 8px;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 7px;
+  height: 7px;
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  margin-right: 5px;
+  margin-right: 6px;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  position: relative; }
+
+.ui-slider-indicators li.current:before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  left: 1px;
+  top: 1px;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
   -webkit-box-sizing: border-box;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-slider-indicators li.current {
-  background-color: #fff;
-  border: 1px #999 solid; }
-
 /* 三等分 */
 .ui-grid-trisect {
-  margin-left: 7px;
-  margin-right: 6px;
+  margin-left: 10px;
+  margin-right: 3px;
   overflow: hidden; }
 
 .ui-grid-trisect > li {
   width: 33.33333333%;
-  padding: 0 4px 10px 3px;
+  padding: 0 7px 10px 0;
   float: left;
-  position: relative; }
+  position: relative;
+  -webkit-box-sizing: border-box; }
 
 .ui-grid-trisect-img {
   width: 100%;
@@ -1676,6 +1704,11 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
     z-index: 2;
     background-repeat: no-repeat;
     -webkit-background-size: 100% 100%; }
+  .ui-grid-trisect-img img {
+    width: 100%;
+    height: 100%; }
+  .ui-grid-trisect-img:active {
+    opacity: .7; }
 
 .ui-grid-trisect h4 {
   font-size: 12px;
@@ -1690,13 +1723,14 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 /* 二等分 */
 .ui-grid-halve {
   overflow: hidden;
-  margin: 5px 0; }
+  margin: 10px 0 0 10px; }
 
 .ui-grid-halve > li {
   width: 50%;
-  padding: 5px;
+  padding: 0 10px 10px 0;
   float: left;
-  position: relative; }
+  position: relative;
+  -webkit-box-sizing: border-box; }
 
 .ui-grid-halve-img {
   width: 100%;
@@ -1711,6 +1745,11 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
     z-index: 2;
     background-repeat: no-repeat;
     -webkit-background-size: 100% 100%; }
+  .ui-grid-halve-img img {
+    width: 100%;
+    height: 100%; }
+  .ui-grid-halve-img:active {
+    opacity: .7; }
 
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }
@@ -1751,7 +1790,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url(../img/icon_vip.png?_bid=306);
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_vip.png?_bid=306);
   -webkit-background-size: 24px auto;
   position: absolute;
   line-height: 100px;
@@ -1781,7 +1820,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   content: "";
   display: block;
   width: 16px;
-  background: url(../img/icon_qqlevel_sprite.png?_bid=306) no-repeat;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_qqlevel_sprite.png?_bid=306) no-repeat;
   background-repeat: no-repeat;
   position: absolute;
   line-height: 100px;
@@ -1882,7 +1921,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 
 .ui-tag, .ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-freelimit:before, .ui-tag-free:before, .ui-tag-hot:before, .ui-tag-new:before, .ui-tag-selected:after {
   display: block;
-  background: url(../img/icon_tag.png?_bid=306);
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_tag.png?_bid=306);
   -webkit-background-size: 36px auto;
   position: absolute;
   z-index: 9; }
@@ -1916,22 +1955,13 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 .ui-tag-new:before {
   background-position: 0 -90px; }
 
-.ui-tag-selected:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  z-index: 8; }
-
 .ui-tag-selected:after {
   content: '';
   width: 25px;
   height: 25px;
   background-position: 0 -120px;
-  right: 8px;
-  top: 8px; }
+  right: -5px;
+  top: -5px; }
 
 .ui-selector header {
   padding: 6px 10px;
