@@ -36,11 +36,7 @@ figcaption,
 menu,
 button {
   margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box; }
-
-:before, :after {
-  -webkit-box-sizing: border-box; }
+  padding: 0; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;

@@ -1,14 +1,15 @@
 /* 三等分 */
 .ui-grid-trisect{
-    margin-left: 7px;
-    margin-right: 6px;
+    margin-left: 10px;
+    margin-right: 3px;
     overflow: hidden;
 }
 .ui-grid-trisect>li{
     width: 33.33333333%;
-    padding: 0 4px 10px 3px;
+    padding: 0 7px 10px 0;
     float: left;
     position: relative;
+    -webkit-box-sizing: border-box; 
 }
 .ui-grid-trisect-img{
     width: 100%;
@@ -24,6 +25,10 @@
         background-repeat: no-repeat;
         -webkit-background-size: 100% 100%;
     }
+    img{width: 100%;height: 100%}
+    &:active{
+        opacity: .7;
+    }
 }
 .ui-grid-trisect h4{
     font-size: 12px;
@@ -38,13 +43,14 @@
 /* 二等分 */
 .ui-grid-halve{
     overflow: hidden;
-    margin: 5px 0;
+    margin: 10px 0 0 10px;
 }
 .ui-grid-halve>li{
     width: 50%;
-    padding: 5px;
+    padding: 0 10px 10px 0;
     float: left;
     position: relative;
+    -webkit-box-sizing: border-box; 
 }
 .ui-grid-halve-img{
     width: 100%;
@@ -59,5 +65,9 @@
         z-index: 2;
         background-repeat: no-repeat;
         -webkit-background-size: 100% 100%;
+    }
+    img{width: 100%;height: 100%}
+    &:active{
+        opacity: .7;
     }
 }

@@ -46,9 +46,12 @@
 <div class="ui-reddot">内容内容</div>
 <div class="ui-reddot-border">内容内容</div>
 <div class="ui-reddot-s">内容内容</div>
-<div class="ui-badge">123</div>
-<div class="ui-badge-muted">345</div>
-<div class="ui-badge-wrap" style="width: 50px;line-height: 50px;border:1px #ccc solid">内容<div class="ui-badge-corner">123</div></div>
+<div class="ui-badge">new</div>
+<div class="ui-badge-muted">new</div>
+<div class="ui-badge-num">1</div>
+<div class="ui-badge-num">122</div>
+<div class="ui-badge-wrap" style="width: 50px;line-height: 50px;border:1px #ccc solid">内容<div class="ui-badge-corner">new</div></div>
+<div class="ui-badge-wrap" style="width: 50px;line-height: 50px;border:1px #ccc solid">内容<div class="ui-badge-cornernum">123</div></div>
 ````
   
 ###圆角头像
