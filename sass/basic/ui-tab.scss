@@ -1,7 +1,10 @@
 /**
  * 选项卡
  */
-
+.ui-tab{
+    width: 100%;
+    overflow: hidden;
+}
 .ui-tab-nav{
     width: 100%;
     background-color: #fff;

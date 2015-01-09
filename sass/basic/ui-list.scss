@@ -11,7 +11,7 @@
 .ui-list-text > li {
 	line-height:20px;
 	padding: 12px 25px 12px 0;
-	font-size:16px;
+	font-size: 16px;
 }
 .ui-list-text > li > p{
 	overflow:hidden;
@@ -31,23 +31,31 @@
 .ui-list-thumb {
 	width: 50px;
 	height: 50px;
-	margin: 7px 15px 7px 0px;
+	margin: 10px 10px 10px 0px;
+	position: relative;
+	
+}
+/*列表缩略图*/
+.ui-list-img {
+	width: 100px;
+	height: 68px;
+	margin: 10px 10px 10px 0px;
 	position: relative;
 	
 }
 /*列表头像*/
 .ui-list .ui-avatar,.ui-list .ui-avatar-s,.ui-list .ui-avatar-lg{
-  margin: 7px 15px 7px 0px;
+  	margin: 10px 10px 10px 0px;
 }
 .ui-list-thumb-s {
 	position:relative;
 	width:28px;
 	height:28px;
 	-webkit-background-size:28px auto;
-	margin:11px 15px 11px 0px;
-	background-image:url(../img/default.png?_bid=306);
+	margin: 10px 10px 10px 0px;
+	background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
 }
-.ui-list-thumb span,.ui-list-thumb-s span {
+.ui-list-thumb span,.ui-list-thumb-s span,.ui-list-img span {
 	width:100%;
 	height:100%;
 	-webkit-background-size:100% auto;
@@ -68,19 +76,19 @@
 	-webkit-box-pack:center;
 }
 .ui-list-info > h4 {
-	font-size:16px;
-	line-height:20px;
-	font-weight:400;
-	overflow:hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
-	max-width:100%;
-	height:20px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	height: 24px;
 }
 
 .ui-list-info > p {
-	font-size:12px;
-	line-height:20px;
+	font-size: 13px;
+	line-height: 22px;
 	overflow:hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
@@ -148,7 +156,7 @@ li.ui-list-item-link:active,li.ui-list-item-link:active .ui-border-t,li.ui-list-
 /*连接列表*/
 
 .ui-list-link li:after,li.ui-list-item-link:after {
-	background:url(../img/icon.png?_bid=306) no-repeat 0 -75px;
+	background:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0 -75px;
 	-webkit-background-size: 150px auto;
 	content: "";
 	display: block;
@@ -175,7 +183,7 @@ li.ui-list-item-link:active,li.ui-list-item-link:active .ui-border-t,li.ui-list-
     display: block;
     width: 14px;
     height: 12px;
-    background:url(../img/icon.png?_bid=306) no-repeat -100px 0;
+    background:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -100px 0;
 	-webkit-background-size: 150px auto;
     position: absolute;
     right: 15px;

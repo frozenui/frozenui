@@ -11,7 +11,7 @@
   vertical-align: middle; }
 
 .ui-checkbox input:before {
-  background: url(../img/icon.png?_bid=306) no-repeat -50px -25px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -50px -25px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;

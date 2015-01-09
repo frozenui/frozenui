@@ -5,19 +5,18 @@
     height: 30px;
     line-height: 30px;
     padding: 0 13px;
-    min-width: 56px;
+    min-width: 55px;
     display: inline-block;
     position: relative;
     text-align: center;
     border: none;
     color: #0079ff;
-    font-size: 14px;
+    font-size: 15px;
     background-color: #fdfdfd;
     background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
     border-radius: 3px;
     vertical-align: top;
     color: #00a5e0;
-    text-shadow: 0 1px 0 rgba( 0, 0, 0 ,.1 );
     -webkit-box-sizing: border-box;
     border: 1px solid #cacccd;
     background-clip: padding-box;
@@ -63,10 +62,10 @@
     background-clip: padding-box;
 }
 .ui-btn.disabled,.ui-btn:disabled{
-    border:1px solid #e9ebec;
+    border:1px solid #cacccd;
     color: #ccc;
-    background: #e9ebec;
-    text-shadow: none;
+    background-color: #fefefe;
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.5, rgb(255,255,255)), to(rgb(250,250,250)));
     background-clip: padding-box;
 }
 .ui-btn-lg{
@@ -82,7 +81,6 @@
 .ui-btn-wrap{
     padding: 20px 15px;
 }
-
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .ui-btn,.ui-btn.disabled,.ui-btn:disabled{border: 0;}
     .ui-btn:before{
@@ -107,6 +105,55 @@
         border: 1px solid #f43d30;
     }
     .ui-btn.disabled:before,.ui-btn:disabled:before{
-        border: 1px solid #e9ebec;
+        border: 1px solid #cacccd;
     }
+}
+.ui-btn-progress{
+    width: 55px;
+    padding: 0;
+    overflow: hidden;
+    .ui-btn-inner{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+        background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        span{
+            display: inline-block;
+            color: #fff;
+            position: absolute;
+            width: 55px;
+            left: 0;
+        }
+    }
+}
+.ui-btn-s{
+    @extend .ui-btn;
+    padding: 0;
+    width: 55px;
+    height: 25px;
+    line-height: 25px;
+}
+.ui-btn-vip{
+    height: 26px;
+    line-height: 26px;
+    width: 51px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    background-color: #1fbaf3;
+    border-radius: 3px;
+    vertical-align: top;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    background-clip: padding-box;
+}
+.ui-btn-vip:not(.disabled):not(:disabled):active,.ui-btn-vip.active{
+    background-color: #1ba6d9;
+    color: rgba(255,255,255,.5);
+    background-clip: padding-box;
 }

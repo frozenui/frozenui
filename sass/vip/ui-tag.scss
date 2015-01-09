@@ -1,6 +1,6 @@
 .ui-tag{
     display: block;
-    background: url(../img/icon_tag.png?_bid=306);
+    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_tag.png?_bid=306);
     -webkit-background-size: 36px auto;
     position:absolute;
     z-index: 9; 
@@ -9,8 +9,8 @@
     @extend .ui-tag;
     width: 28px;
     height: 14px;
-    bottom: 6px;
-    right: 3px;
+    bottom: 0;
+    right: 0;
     content: '';
 }
 .ui-tag-vip:before{
@@ -36,21 +36,12 @@
 .ui-tag-new:before{
     background-position: 0 -90px;
 }
-.ui-tag-selected:before{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,.5);
-    position: absolute;
-    z-index: 8;
-}
 .ui-tag-selected:after{
     @extend .ui-tag;
     content: '';
     width: 25px;
     height: 25px;
     background-position: 0 -120px;
-    right: 8px;
-	top: 8px;
+    right: -5px;
+	top: -5px;
 }

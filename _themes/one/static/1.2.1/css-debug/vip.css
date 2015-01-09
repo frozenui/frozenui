@@ -11,7 +11,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url(../img/icon_vip.png?_bid=306);
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_vip.png?_bid=306);
   -webkit-background-size: 24px auto;
   position: absolute;
   line-height: 100px;
@@ -41,7 +41,7 @@
   content: "";
   display: block;
   width: 16px;
-  background: url(../img/icon_qqlevel_sprite.png?_bid=306) no-repeat;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_qqlevel_sprite.png?_bid=306) no-repeat;
   background-repeat: no-repeat;
   position: absolute;
   line-height: 100px;
@@ -142,7 +142,7 @@
 
 .ui-tag, .ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-freelimit:before, .ui-tag-free:before, .ui-tag-hot:before, .ui-tag-new:before, .ui-tag-selected:after {
   display: block;
-  background: url(../img/icon_tag.png?_bid=306);
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_tag.png?_bid=306);
   -webkit-background-size: 36px auto;
   position: absolute;
   z-index: 9; }
@@ -150,8 +150,8 @@
 .ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-freelimit:before, .ui-tag-free:before {
   width: 28px;
   height: 14px;
-  bottom: 6px;
-  right: 3px;
+  bottom: 0;
+  right: 0;
   content: ''; }
 
 .ui-tag-vip:before {

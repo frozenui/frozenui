@@ -211,7 +211,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
   .ui-avatar span {
     width: 50px;
     height: 50px;
@@ -227,7 +227,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
   .ui-avatar-lg span {
     width: 54px;
     height: 54px;
@@ -243,7 +243,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
   .ui-avatar-s span {
     width: 40px;
     height: 40px;
@@ -260,7 +260,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
   .ui-avatar-one span {
     width: 64px;
     height: 64px;
@@ -277,7 +277,7 @@ em {
   -webkit-border-radius: 200px;
   display: block;
   -webkit-background-size: 100% 100%;
-  background-image: url(../img/default.png?_bid=306);
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
   display: inline-block; }
   .ui-avatar-tiled span {
     width: 30px;
@@ -322,18 +322,19 @@ em {
 /**
  * 未读数通知
  */
-.ui-badge, .ui-badge-muted, .ui-badge-corner {
+.ui-badge, .ui-badge-muted, .ui-badge-corner, .ui-badge-cornernum {
   display: inline-block;
   text-align: center;
   background: #f74c31;
   color: #fff;
-  font-size: 12px;
-  height: 22px;
-  line-height: 22px;
-  -webkit-border-radius: 12px;
-  padding: 0 7px;
+  font-size: 11px;
+  height: 16px;
+  line-height: 16px;
+  -webkit-border-radius: 8px;
+  padding: 0 6px;
   -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+          background-clip: padding-box;
+  -webkit-box-sizing: border-box; }
 
 /* 浅色的 */
 .ui-badge-muted {
@@ -346,8 +347,36 @@ em {
 .ui-badge-corner {
   position: absolute;
   border: 2px #fff solid;
-  top: -2px;
-  left: 50%; }
+  height: 20px;
+  top: -4px;
+  right: -9px; }
+
+.ui-badge-cornernum {
+  position: absolute;
+  top: -4px;
+  right: -9px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  min-width: 19px;
+  -webkit-border-radius: 10px;
+  top: -5px;
+  right: -5px; }
+
+/* 箭头链接 */
+.ui-arrowlink {
+  position: relative; }
+  .ui-arrowlink:before {
+    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0 -75px;
+    -webkit-background-size: 150px auto;
+    content: "";
+    display: block;
+    width: 9px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px; }
 
 .ui-icon, .ui-icon-refresh, .ui-icon-close, .ui-icon-search {
   display: inline-block;
@@ -356,7 +385,7 @@ em {
   overflow: visible; }
 
 .ui-icon:before, .ui-icon-refresh:before, .ui-icon-close:before, .ui-icon-search:before {
-  background: url(../img/icon.png?_bid=306) no-repeat 0px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -398,35 +427,34 @@ em {
 /**
  * 按钮
  */
-.ui-btn, .ui-btn-lg {
+.ui-btn, .ui-btn-lg, .ui-btn-s {
   height: 30px;
   line-height: 30px;
   padding: 0 13px;
-  min-width: 56px;
+  min-width: 55px;
   display: inline-block;
   position: relative;
   text-align: center;
   border: none;
   color: #0079ff;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #fdfdfd;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
   border: 1px solid #cacccd;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg {
+.ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
   background: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn:after, .ui-btn-lg:after {
+.ui-btn:after, .ui-btn-lg:after, .ui-btn-s:after {
   content: "";
   position: absolute;
   top: -12px;
@@ -464,11 +492,11 @@ em {
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
-.ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn:disabled, .ui-btn-lg:disabled {
-  border: 1px solid #e9ebec;
+.ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
+  border: 1px solid #cacccd;
   color: #ccc;
-  background: #e9ebec;
-  text-shadow: none;
+  background-color: #fefefe;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
 
@@ -484,10 +512,10 @@ em {
   padding: 20px 15px; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-btn, .ui-btn-lg, .ui-btn.disabled, .disabled.ui-btn-lg, .ui-btn:disabled, .ui-btn-lg:disabled {
+  .ui-btn, .ui-btn-lg, .ui-btn-s, .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
     border: 0; }
 
-  .ui-btn:before, .ui-btn-lg:before {
+  .ui-btn:before, .ui-btn-lg:before, .ui-btn-s:before {
     content: "";
     width: 200%;
     height: 200%;
@@ -510,8 +538,56 @@ em {
   .ui-btn-danger:before {
     border: 1px solid #f43d30; }
 
-  .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before {
-    border: 1px solid #e9ebec; } }
+  .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .disabled.ui-btn-s:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before, .ui-btn-s:disabled:before {
+    border: 1px solid #cacccd; } }
+.ui-btn-progress {
+  width: 55px;
+  padding: 0;
+  overflow: hidden; }
+  .ui-btn-progress .ui-btn-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
+    .ui-btn-progress .ui-btn-inner span {
+      display: inline-block;
+      color: #fff;
+      position: absolute;
+      width: 55px;
+      left: 0; }
+
+.ui-btn-s {
+  padding: 0;
+  width: 55px;
+  height: 25px;
+  line-height: 25px; }
+
+.ui-btn-vip {
+  height: 26px;
+  line-height: 26px;
+  width: 51px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 13px;
+  background-color: #1fbaf3;
+  border-radius: 3px;
+  vertical-align: top;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+
+.ui-btn-vip:not(.disabled):not(:disabled):active, .ui-btn-vip.active {
+  background-color: #1ba6d9;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+
 /**
  * 底部操作区
  */
@@ -525,7 +601,7 @@ em {
   display: block;
   -webkit-box-flex: 1; }
 
-.ui-btn-group-tiled .ui-btn:first-child, .ui-btn-group-tiled .ui-btn-lg:first-child {
+.ui-btn-group-tiled .ui-btn:first-child, .ui-btn-group-tiled .ui-btn-lg:first-child, .ui-btn-group-tiled .ui-btn-s:first-child {
   margin-right: 15px; }
 
 .ui-btn-group button {
@@ -689,7 +765,7 @@ em {
   vertical-align: middle; }
 
 .ui-tips i:before {
-  background: url(../img/icon.png?_bid=306) no-repeat -25px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -25px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -739,7 +815,7 @@ em {
   vertical-align: middle; }
 
 .ui-poptips i:before {
-  background: url(../img/icon.png?_bid=306) no-repeat 0px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -784,7 +860,7 @@ em {
   background-color: rgba(205, 242, 255, 0.95); }
 
 .ui-tooltips-cnt-link:after {
-  background: url(../img/icon.png?_bid=306) no-repeat -75px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -75px 0;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -805,7 +881,7 @@ em {
   vertical-align: middle; }
 
 .ui-tooltips-warn i:before {
-  background: url(../img/icon.png?_bid=306) no-repeat -50px 0px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -50px 0px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -815,7 +891,7 @@ em {
   left: 0px;
   top: -14px; }
 
-.ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg {
+.ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg, .ui-tooltips .ui-btn-s, .ui-tooltips .ui-btn-vip {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -823,6 +899,15 @@ em {
 
 .ui-tooltips-state .ui-tooltips-cnt-link:after {
   background-position: -125px 0; }
+
+.ui-tooltips-vip .ui-tooltips-cnt {
+  background-color: rgba(248, 248, 248, 0.95);
+  color: #000;
+  line-height: 44px;
+  height: 44px; }
+
+.ui-tooltips .ui-btn-vip {
+  margin-top: -13px; }
 
 /**
  * 页面消息提示
@@ -849,7 +934,7 @@ em {
   overflow: hidden;
   display: block;
   position: absolute;
-  background: url(../img/icon.png?_bid=306) no-repeat -100px -50px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -100px -50px;
   -webkit-background-size: 150px auto;
   left: 25px;
   top: 9px;
@@ -861,6 +946,10 @@ em {
 /**
  * 选项卡
  */
+.ui-tab {
+  width: 100%;
+  overflow: hidden; }
+
 .ui-tab-nav {
   width: 100%;
   background-color: #fff;
@@ -995,22 +1084,29 @@ em {
 .ui-list-thumb {
   width: 50px;
   height: 50px;
-  margin: 7px 15px 7px 0px;
+  margin: 10px 10px 10px 0px;
+  position: relative; }
+
+/*列表缩略图*/
+.ui-list-img {
+  width: 100px;
+  height: 68px;
+  margin: 10px 10px 10px 0px;
   position: relative; }
 
 /*列表头像*/
 .ui-list .ui-avatar, .ui-list .ui-avatar-s, .ui-list .ui-avatar-lg {
-  margin: 7px 15px 7px 0px; }
+  margin: 10px 10px 10px 0px; }
 
 .ui-list-thumb-s {
   position: relative;
   width: 28px;
   height: 28px;
   -webkit-background-size: 28px auto;
-  margin: 11px 15px 11px 0px;
-  background-image: url(../img/default.png?_bid=306); }
+  margin: 10px 10px 10px 0px;
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
 
-.ui-list-thumb span, .ui-list-thumb-s span {
+.ui-list-thumb span, .ui-list-thumb-s span, .ui-list-img span {
   width: 100%;
   height: 100%;
   -webkit-background-size: 100% auto;
@@ -1032,17 +1128,17 @@ em {
 
 .ui-list-info > h4 {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 400;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
-  height: 20px; }
+  height: 24px; }
 
 .ui-list-info > p {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 22px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -1050,7 +1146,7 @@ em {
   color: #808080; }
 
 /* 列表按钮 */
-.ui-list .ui-btn, .ui-list .ui-btn-lg {
+.ui-list .ui-btn, .ui-list .ui-btn-lg, .ui-list .ui-btn-s {
   position: absolute;
   top: 50%;
   right: 15px;
@@ -1104,7 +1200,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 
 /*连接列表*/
 .ui-list-link li:after, li.ui-list-item-link:after {
-  background: url(../img/icon.png?_bid=306) no-repeat 0 -75px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0 -75px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -1130,7 +1226,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   display: block;
   width: 14px;
   height: 12px;
-  background: url(../img/icon.png?_bid=306) no-repeat -100px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -100px 0;
   -webkit-background-size: 150px auto;
   position: absolute;
   right: 15px;
@@ -1148,14 +1244,14 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   width: 20px;
   height: 20px;
   display: block;
-  background: url(../img/loading_sprite.png?_bid=306);
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/loading_sprite.png?_bid=306);
   -webkit-background-size: auto 20px; }
 
 .ui-loading-bright {
   width: 37px;
   height: 37px;
   display: block;
-  background-image: url(../img/loading_sprite_white.png?_bid=306);
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/loading_sprite_white.png?_bid=306);
   -webkit-background-size: auto 37px; }
 
 .ui-loading-wrap .ui-loading {
@@ -1181,13 +1277,13 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
-  background-image: url(../img/icon_warn.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_warn.png?_bid=306); }
 
 .ui-notice-news i {
-  background-image: url(../img/icon_warn_news.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_warn_news.png?_bid=306); }
 
 .ui-notice-nearby i {
-  background-image: url(../img/icon_warn_nearby.png?_bid=306); }
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_warn_nearby.png?_bid=306); }
 
 .ui-notice p {
   font-size: 16px;
@@ -1307,7 +1403,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   color: #808080; }
 
 .ui-form-item-link:after {
-  background: url(../img/icon.png?_bid=306) no-repeat 0 -75px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat 0 -75px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -1331,7 +1427,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   vertical-align: middle; }
 
 .ui-checkbox input:before {
-  background: url(../img/icon.png?_bid=306) no-repeat -50px -25px;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -50px -25px;
   -webkit-background-size: 150px auto;
   content: "";
   display: block;
@@ -1518,39 +1614,142 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding-top: 62.5%; }
+  padding-top: 31.25%; }
 
 .ui-slider-content {
   display: -webkit-box;
-  width: 300%;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  height: 100%; }
 
 .ui-slider-content > li {
   -webkit-box-flex: 1;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .ui-slider-content > li img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
+
+.ui-slider-content > li span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%; }
+
+.ui-slider-content > li:active {
+  opacity: .7; }
 
 .ui-slider-indicators {
   position: absolute;
-  bottom: 0;
-  right: 10px; }
+  display: -webkit-box;
+  -webkit-box-pack: end;
+  width: 100%;
+  bottom: 10px;
+  right: 3px; }
 
 .ui-slider-indicators li {
-  display: inline-block;
+  display: block;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  width: 8px;
-  height: 8px;
-  background-color: #a6a6a6;
-  border-radius: 10px; }
+  width: 7px;
+  height: 7px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-right: 6px;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  position: relative; }
 
-.ui-slider-indicators li.current {
-  background-color: #ff4040; }
+.ui-slider-indicators li.current:before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  left: 1px;
+  top: 1px;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+
+/* 三等分 */
+.ui-grid-trisect {
+  margin-left: 10px;
+  margin-right: 3px;
+  overflow: hidden; }
+
+.ui-grid-trisect > li {
+  width: 33.33333333%;
+  padding: 0 7px 10px 0;
+  float: left;
+  position: relative;
+  -webkit-box-sizing: border-box; }
+
+.ui-grid-trisect-img {
+  width: 100%;
+  padding-top: 149.47%;
+  position: relative; }
+  .ui-grid-trisect-img span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%; }
+  .ui-grid-trisect-img img {
+    width: 100%;
+    height: 100%; }
+  .ui-grid-trisect-img:active {
+    opacity: .7; }
+
+.ui-grid-trisect h4 {
+  font-size: 12px;
+  position: relative;
+  margin: 7px 0 5px; }
+
+.ui-grid-trisect h4 span {
+  display: inline-block;
+  margin-left: 12px;
+  color: #808080; }
+
+/* 二等分 */
+.ui-grid-halve {
+  overflow: hidden;
+  margin: 10px 0 0 10px; }
+
+.ui-grid-halve > li {
+  width: 50%;
+  padding: 0 10px 10px 0;
+  float: left;
+  position: relative;
+  -webkit-box-sizing: border-box; }
+
+.ui-grid-halve-img {
+  width: 100%;
+  padding-top: 55.17%;
+  position: relative; }
+  .ui-grid-halve-img span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%; }
+  .ui-grid-halve-img img {
+    width: 100%;
+    height: 100%; }
+  .ui-grid-halve-img:active {
+    opacity: .7; }
 
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }

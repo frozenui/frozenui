@@ -9,14 +9,14 @@
   width: 20px;
   height: 20px;
   display: block;
-  background: url(../img/loading_sprite.png?_bid=306);
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/loading_sprite.png?_bid=306);
   -webkit-background-size: auto 20px; }
 
 .ui-loading-bright {
   width: 37px;
   height: 37px;
   display: block;
-  background-image: url(../img/loading_sprite_white.png?_bid=306);
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/loading_sprite_white.png?_bid=306);
   -webkit-background-size: auto 37px; }
 
 .ui-loading-wrap .ui-loading {

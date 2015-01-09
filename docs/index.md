@@ -3,6 +3,7 @@
 
 ---
 <style>
+.content-area h4{font-size: inherit;}
 .ui-avatar-tiled{display:inline-block;}
 .frozen-module {
     border-bottom: 1px solid #eee;    
@@ -47,6 +48,7 @@ p.frozen-module-description {
 .frozen-module-dom {
     margin-bottom: 8px;
     font-size:14px;
+    width: 420px;
 }
 .frozen-module-code {
     margin: 0!important;
@@ -237,6 +239,10 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
                 {
                     name:"ui-loading",
                     title: "加载中 loading"
+                },
+                {
+                    name:"ui-grid",
+                    title: "网格 grid"
                 },
                 {
                     name:"ui-tag",

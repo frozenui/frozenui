@@ -25,7 +25,7 @@
     background-color: rgba( 205, 242, 255 ,.95);
 }
 .ui-tooltips-cnt-link:after{
-    background: url(../img/icon.png?_bid=306) no-repeat -75px 0;
+    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -75px 0;
     -webkit-background-size: 150px auto;
     content: "";
     display: block;
@@ -46,7 +46,7 @@
     vertical-align: middle;
 }
 .ui-tooltips-warn i:before{
-    background:url(../img/icon.png?_bid=306) no-repeat -50px 0px;
+    background:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -50px 0px;
     -webkit-background-size: 150px auto;
     content:"";
     display: block;
@@ -57,7 +57,7 @@
     top: -14px;
 
 }
-.ui-tooltips .ui-btn{
+.ui-tooltips .ui-btn,.ui-tooltips .ui-btn-vip{
     position: absolute;
     top: 50%;
     right: 10px;
@@ -65,5 +65,14 @@
 }
 .ui-tooltips-state .ui-tooltips-cnt-link:after{
     background-position: -125px 0;
+}
+.ui-tooltips-vip .ui-tooltips-cnt {
+    background-color: rgba(248, 248, 248, 0.95);
+    color: #000;
+    line-height: 44px;
+    height: 44px;
+}
+.ui-tooltips .ui-btn-vip{
+    margin-top: -13px;
 }
 

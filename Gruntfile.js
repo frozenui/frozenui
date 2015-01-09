@@ -6,7 +6,7 @@ module.exports =function(grunt) {
         pkg : grunt.file.readJSON('package.json'),
         
         meta: {
-            zipPath:'<%=pkg.version%>/i.gtimg.cn/vipstyle/frozenui'
+            zipPath:'i.gtimg.cn/vipstyle/frozenui'
         }, 
         cssmin: {
             minify: {
@@ -39,25 +39,24 @@ module.exports =function(grunt) {
                 dest:'<%=pkg.version%>/img/'
             },
             frozencss:{
-                src: ['<%=pkg.version%>/css/vip.css','<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/img/**'],
+                src: ['<%=pkg.version%>/css/global.css'],
 
                 dest: '<%=meta.zipPath%>/'
             },
             staticcss:{
-                src: ['<%=pkg.version%>/css/vip.css','<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css','<%=pkg.version%>/css-debug/vip.css',
+                src: ['<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css',
                     '<%=pkg.version%>/css-debug/frozen.css','<%=pkg.version%>/img/**'],
                 dest: '_themes/one/static/'
             },
             
             downloadcss:{
-                src: ['<%=pkg.version%>/css/vip.css','<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css','<%=pkg.version%>/css-debug/vip.css',
+                src: ['<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css',
                     '<%=pkg.version%>/css-debug/frozen.css','<%=pkg.version%>/img/**'],
                 dest: '../frozenui.github.io/demo/frozenui/'
             }
         },
         compress: {
             main: {
-            	cwd: '<%=pkg.version%>/',
                 options: {
                     archive: 'i.gtimg.cn.zip'
                 },
