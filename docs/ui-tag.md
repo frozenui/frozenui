@@ -1,12 +1,8 @@
 # ui-tag
 
-
-
 ---
 
 ###角标
-
-
 
 ````html
 
@@ -28,17 +24,33 @@
         
     </li>
     <li>
+        <div class="ui-grid-halve-img ui-tag-xy">
+            <span style="background-image:url(http://placehold.sinaapp.com//?290*160)"></span>
+        </div>
+    </li>
+    <li>
+        <div class="ui-grid-halve-img ui-tag-act">
+            <span style="background-image:url(http://placehold.sinaapp.com//?290*160)"></span>
+        </div>
+    </li>
+    <li>
+        <div class="ui-grid-halve-img ui-tag-free">
+            <span style="background-image:url(http://placehold.sinaapp.com//?290*160)"></span>
+        </div>
+        
+    </li>
+    <li>
         <div class="ui-grid-halve-img ui-tag-freelimit">
             <span style="background-image:url(http://placehold.sinaapp.com//?290*160)"></span>
         </div>
     </li>
     <li>
-        <div class="ui-grid-halve-img">
+        <div class="ui-grid-halve-img ui-tag-limit">
             <span style="background-image:url(http://placehold.sinaapp.com//?290*160)" class="ui-tag-hot"></span>
         </div>
     </li>
     <li>
-        <div class="ui-grid-halve-img">
+        <div class="ui-grid-halve-img ui-tag-last">
             <span style="background-image:url(http://placehold.sinaapp.com//?290*160)" class="ui-tag-new"></span>
         </div>
     </li>

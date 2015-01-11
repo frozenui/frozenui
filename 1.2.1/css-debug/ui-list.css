@@ -20,7 +20,7 @@
   text-overflow: ellipsis;
   max-width: 100%; }
 
-.ui-list > li:first-child {
+.ui-list > li.ui-border-t:first-child {
   border: none;
   background-image: none; }
 
@@ -63,6 +63,10 @@
   left: 0px;
   top: 0px;
   z-index: 1; }
+
+.ui-list-thumb img, .ui-list-thumb-s img, .ui-list-img img {
+  width: 100%;
+  height: 100%; }
 
 /*列表主要信息*/
 .ui-list-info {
@@ -122,7 +126,7 @@
 
 /*列表按压态*/
 .ui-list-active > li:active, .ui-list-link > li:active, li.ui-list-item-link:active {
-  background-color: #f8f9fa;
+  background-color: #e5e6e7;
   padding-left: 15px;
   margin-left: 0px; }
 
@@ -130,7 +134,7 @@
 .ui-list-link > li:active, .ui-list-link > li:active .ui-border-t, .ui-list-link > li:active + li.ui-border-t, .ui-list-link > li:active + .ui-border-t,
 li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
   background-image: none;
-  border-top-color: #f8f9fa; }
+  border-top-color: #e5e6e7; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .ui-list-active > li:active, .ui-list-active > li:active .ui-border-t, .ui-list-active > li:active + li.ui-border-t, .ui-list-active > li:active + .ui-border-t,

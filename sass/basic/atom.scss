@@ -116,6 +116,10 @@ $bordercolor : #dedfe0;
     span {
         @include avatar;
     }
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .ui-avatar-lg{
@@ -124,6 +128,10 @@ $bordercolor : #dedfe0;
     span {
         @include avatar(54);
     }
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .ui-avatar-s{
@@ -131,6 +139,10 @@ $bordercolor : #dedfe0;
     background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
     span {
         @include avatar(40);
+    }
+    img{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -141,6 +153,10 @@ $bordercolor : #dedfe0;
     span {
         @include avatar(64);
     }
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* 平铺场景 */
@@ -149,6 +165,10 @@ $bordercolor : #dedfe0;
     background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
     span {
         @include avatar(30);
+    }
+    img{
+        width: 100%;
+        height: 100%;
     }
     display: inline-block;
 }

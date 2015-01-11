@@ -122,6 +122,9 @@
     -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
+  .ui-avatar img {
+    width: 100%;
+    height: 100%; }
 
 .ui-avatar-lg {
   width: 54px;
@@ -138,6 +141,9 @@
     -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
+  .ui-avatar-lg img {
+    width: 100%;
+    height: 100%; }
 
 .ui-avatar-s {
   width: 40px;
@@ -154,6 +160,9 @@
     -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
+  .ui-avatar-s img {
+    width: 100%;
+    height: 100%; }
 
 /* 资料场景 */
 .ui-avatar-one {
@@ -171,6 +180,9 @@
     -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
+  .ui-avatar-one img {
+    width: 100%;
+    height: 100%; }
 
 /* 平铺场景 */
 .ui-avatar-tiled {
@@ -189,6 +201,9 @@
     -webkit-border-radius: 200px;
     display: block;
     -webkit-background-size: 100% 100%; }
+  .ui-avatar-tiled img {
+    width: 100%;
+    height: 100%; }
 
 /**
 * 红点提醒
