@@ -10,7 +10,7 @@
   height: 45px;
   text-align: left;
   padding-left: 10px;
-  font-size: 16px;
+  font-size: 14px;
   overflow: hidden; }
 
 .ui-tooltips-warn .ui-tooltips-cnt {
@@ -41,7 +41,7 @@
   height: 1px;
   position: relative;
   overflow: visible;
-  margin-right: 8px;
+  margin-right: 4px;
   vertical-align: middle; }
 
 .ui-tooltips-warn i:before {
@@ -68,7 +68,14 @@
   background-color: rgba(248, 248, 248, 0.95);
   color: #000;
   line-height: 44px;
-  height: 44px; }
+  height: 44px;
+  font-size: 0; }
+
+.ui-tooltips-vip .ui-tooltips-cnt span {
+  font-size: 14px; }
+
+.ui-tooltips-vip .ui-tooltips-cnt i {
+  margin-right: 6px; }
 
 .ui-tooltips .ui-btn-vip {
   margin-top: -13px; }

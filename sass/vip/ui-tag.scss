@@ -14,7 +14,7 @@
     -webkit-background-size: 36px auto;
 }
 .ui-tag-vip:before{
-    background-position: 0 -14px;
+    background-position: 0 -15px;
 }
 .ui-tag-freelimit:before,.ui-tag-free:before,.ui-tag-last:before,.ui-tag-limit:before,
 .ui-tag-act:before,.ui-tag-xy:before{
@@ -91,6 +91,7 @@
     position: relative;
     padding-right: 32px;
     .ui-tag-svip:before,.ui-tag-vip:before,.ui-tag-freelimit:before,.ui-tag-free:before{
-        bottom: 2px;
+        top: 50%;
+        margin-top: -7px;
     }
 }

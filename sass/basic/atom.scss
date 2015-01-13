@@ -20,7 +20,7 @@
 
 /* 1px hack */
 
-$bordercolor : #dedfe0;
+$bordercolor : #e0e0e0;
 
 .ui-border-t {border-top: 1px solid $bordercolor;}
 .ui-border-b {border-bottom: 1px solid $bordercolor}
@@ -197,8 +197,18 @@ $bordercolor : #dedfe0;
  /* 带白边的 */
 .ui-reddot-border{
     @extend .ui-reddot;
-    &:after{
-        border: 1px #fff solid;
+    &:before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 5px;
+        right: -4px;
+        top: -4px;
+        background-clip: padding-box;
+        padding: 1px;
     }
 }
  /* 小号的 */

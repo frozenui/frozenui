@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* 三等分 */
 .ui-grid-trisect {
-  margin-left: 10px;
-  margin-right: 3px;
+  padding-left: 10px;
+  padding-right: 3px;
   overflow: hidden; }
 
 .ui-grid-trisect > li {
@@ -34,7 +34,7 @@
 .ui-grid-trisect h4 {
   font-size: 12px;
   position: relative;
-  margin: 7px 0 5px; }
+  margin: 7px 0 3px; }
 
 .ui-grid-trisect h4 span {
   display: inline-block;
@@ -44,7 +44,7 @@
 /* 二等分 */
 .ui-grid-halve {
   overflow: hidden;
-  margin: 10px 0 0 10px; }
+  padding: 10px 0 0 10px; }
 
 .ui-grid-halve > li {
   width: 50%;
