@@ -11,7 +11,7 @@
   float: left; }
 
 .ui-selector-content {
-  background: white; }
+  background: #fff; }
 
 .ui-selector .ui-selector-item p {
   margin-left: 10px;
@@ -24,7 +24,7 @@
 
 .ui-selector .ui-selector-item .ui-txt-info {
   margin: 0 10px;
-  color: #777777; }
+  color: #777; }
 
 .ui-selector .ui-selector-item .ui-list-link li:after {
   display: none; }

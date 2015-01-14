@@ -465,7 +465,7 @@ em {
   color: #0079ff;
   font-size: 15px;
   background-color: #fdfdfd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;
@@ -931,7 +931,8 @@ em {
   color: #000;
   line-height: 44px;
   height: 44px;
-  font-size: 0; }
+  display: table;
+  width: 100%; }
 
 .ui-tooltips-vip .ui-tooltips-cnt span {
   font-size: 14px; }
@@ -1801,18 +1802,15 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 @-webkit-keyframes rotate {
   from {
     background-position: 0 0; }
-
   to {
     background-position: -240px 0; } }
 @-webkit-keyframes rotate2 {
   from {
     background-position: 0 0; }
-
   to {
     background-position: -444px 0; } }
 @-webkit-keyframes rotate3 {
   0% {
     -webkit-transform: rotate(0); }
-
   100% {
     -webkit-transform: rotate(360deg); } }

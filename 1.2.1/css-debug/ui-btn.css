@@ -14,7 +14,7 @@
   color: #0079ff;
   font-size: 15px;
   background-color: #fdfdfd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;

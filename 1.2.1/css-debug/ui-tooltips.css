@@ -69,7 +69,8 @@
   color: #000;
   line-height: 44px;
   height: 44px;
-  font-size: 0; }
+  display: table;
+  width: 100%; }
 
 .ui-tooltips-vip .ui-tooltips-cnt span {
   font-size: 14px; }
