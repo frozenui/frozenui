@@ -37,18 +37,18 @@ figcaption,
 menu,
 button {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  outline: 0; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   line-height: 1.5;
   font-size: 14px;
   color: #000;
-  background-color: #f8f9fa;
-  -webkit-user-select: none;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  outline: 0; }
+  background-color: #f8f9fa; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
@@ -77,9 +77,9 @@ select {
   -webkit-appearance: none;
   outline: none; }
 
-button:focus, input:focus, select:focus, textarea:focus {
+button:focus, input:focus, select:focus, textarea:focus, [onclick] {
   outline: none;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
 a {
   -webkit-touch-callout: none;
@@ -202,107 +202,6 @@ em {
   /* 需要重置 */ }
 
 /**
- * 圆角头像，列表场景，默认用100px的
- */
-.ui-avatar {
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  -webkit-border-radius: 200px;
-  display: block;
-  -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
-  .ui-avatar span {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    -webkit-border-radius: 200px;
-    display: block;
-    -webkit-background-size: 100% 100%; }
-  .ui-avatar img {
-    width: 100%;
-    height: 100%; }
-
-.ui-avatar-lg {
-  width: 54px;
-  height: 54px;
-  overflow: hidden;
-  -webkit-border-radius: 200px;
-  display: block;
-  -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
-  .ui-avatar-lg span {
-    width: 54px;
-    height: 54px;
-    overflow: hidden;
-    -webkit-border-radius: 200px;
-    display: block;
-    -webkit-background-size: 100% 100%; }
-  .ui-avatar-lg img {
-    width: 100%;
-    height: 100%; }
-
-.ui-avatar-s {
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  -webkit-border-radius: 200px;
-  display: block;
-  -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
-  .ui-avatar-s span {
-    width: 40px;
-    height: 40px;
-    overflow: hidden;
-    -webkit-border-radius: 200px;
-    display: block;
-    -webkit-background-size: 100% 100%; }
-  .ui-avatar-s img {
-    width: 100%;
-    height: 100%; }
-
-/* 资料场景 */
-.ui-avatar-one {
-  width: 64px;
-  height: 64px;
-  overflow: hidden;
-  -webkit-border-radius: 200px;
-  display: block;
-  -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
-  .ui-avatar-one span {
-    width: 64px;
-    height: 64px;
-    overflow: hidden;
-    -webkit-border-radius: 200px;
-    display: block;
-    -webkit-background-size: 100% 100%; }
-  .ui-avatar-one img {
-    width: 100%;
-    height: 100%; }
-
-/* 平铺场景 */
-.ui-avatar-tiled {
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  -webkit-border-radius: 200px;
-  display: block;
-  -webkit-background-size: 100% 100%;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
-  display: inline-block; }
-  .ui-avatar-tiled span {
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-    -webkit-border-radius: 200px;
-    display: block;
-    -webkit-background-size: 100% 100%; }
-  .ui-avatar-tiled img {
-    width: 100%;
-    height: 100%; }
-
-/**
 * 红点提醒
 */
 .ui-reddot, .ui-reddot-border, .ui-reddot-s {
@@ -404,6 +303,59 @@ em {
     top: 50%;
     margin-top: -7px; }
 
+.ui-nowrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.ui-nowrap-multi {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; }
+
+/**
+ * 圆角头像，列表场景，默认用100px的
+ */
+.ui-avatar, .ui-avatar-lg, .ui-avatar-s, .ui-avatar-one, .ui-avatar-tiled {
+  overflow: hidden;
+  -webkit-border-radius: 200px;
+  display: block;
+  -webkit-background-size: 100% 100%;
+  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
+
+.ui-avatar-lg {
+  width: 54px;
+  height: 54px; }
+
+.ui-avatar-s {
+  width: 40px;
+  height: 40px; }
+
+/* 资料场景 */
+.ui-avatar-one {
+  width: 64px;
+  height: 64px; }
+
+/* 平铺场景 */
+.ui-avatar-tiled {
+  width: 30px;
+  height: 30px;
+  display: inline-block; }
+
+.ui-avatar span, .ui-avatar-lg span, .ui-avatar-s span, .ui-avatar-one span, .ui-avatar-tiled span {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-border-radius: 200px;
+  display: block;
+  -webkit-background-size: 100% 100%; }
+
+.ui-avatar img, .ui-avatar-lg img, .ui-avatar-s img, .ui-avatar-one img, .ui-avatar-tiled img {
+  width: 100%;
+  height: 100%; }
+
 .ui-icon, .ui-icon-refresh, .ui-icon-close, .ui-icon-search {
   display: inline-block;
   height: 0px;
@@ -461,11 +413,10 @@ em {
   display: inline-block;
   position: relative;
   text-align: center;
-  border: none;
   color: #0079ff;
   font-size: 15px;
   background-color: #fdfdfd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;
@@ -475,7 +426,7 @@ em {
           background-clip: padding-box; }
 
 .ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
@@ -595,7 +546,7 @@ em {
 .ui-btn-vip {
   height: 26px;
   line-height: 26px;
-  width: 51px;
+  padding: 0 12px;
   display: inline-block;
   position: relative;
   text-align: center;
@@ -944,40 +895,6 @@ em {
   margin-top: -13px; }
 
 /**
- * 页面消息提示
- */
-.ui-tips-news-wrap {
-  padding: 15px 5px;
-  text-align: center; }
-
-.ui-tips-news {
-  background: rgba(0, 0, 0, 0.5);
-  position: relative;
-  height: 36px;
-  line-height: 36px;
-  display: inline-block;
-  padding: 0 25px 0px 50px;
-  border-radius: 3px;
-  font-size: 14px;
-  color: #fff; }
-
-.ui-tips-news:before {
-  content: "";
-  width: 20px;
-  height: 18px;
-  overflow: hidden;
-  display: block;
-  position: absolute;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon.png?_bid=306) no-repeat -100px -50px;
-  -webkit-background-size: 150px auto;
-  left: 25px;
-  top: 9px;
-  z-index: 1; }
-
-.ui-tips-news:active {
-  opacity: .7; }
-
-/**
  * 选项卡
  */
 .ui-tab {
@@ -1100,12 +1017,6 @@ em {
   padding: 12px 25px 12px 0;
   font-size: 16px; }
 
-.ui-list-text > li > p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%; }
-
 .ui-list > li.ui-border-t:first-child {
   border: none;
   background-image: none; }
@@ -1166,21 +1077,11 @@ em {
 
 .ui-list-info > h4 {
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  height: 24px; }
+  line-height: 24px; }
 
 .ui-list-info > p {
   font-size: 13px;
   line-height: 22px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
   color: #808080; }
 
 /* 列表按钮 */
@@ -1200,6 +1101,21 @@ em {
 .ui-list-checkbox > li {
   padding-left: 40px; }
 
+/*列表按压态*/
+.ui-list-active > li:active, .ui-list-link > li:active, li.ui-list-item-link:active {
+  background-color: #e5e6e7;
+  padding-left: 15px;
+  margin-left: 0px; }
+
+.ui-list-active > li:active, .ui-list-link > li:active, .ui-list-active > li:active .ui-border-t, .ui-list-link > li:active .ui-border-t, .ui-list-active > li:active + li.ui-border-t, .ui-list-link > li:active + li.ui-border-t, .ui-list-active > li:active + .ui-border-t, .ui-list-link > li:active + .ui-border-t,
+li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
+  background-image: none;
+  border-top-color: #e5e6e7; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-list-active > li:active, .ui-list-link > li:active, .ui-list-active > li:active .ui-border-t, .ui-list-link > li:active .ui-border-t, .ui-list-active > li:active + li.ui-border-t, .ui-list-link > li:active + li.ui-border-t, .ui-list-active > li:active + .ui-border-t, .ui-list-link > li:active + .ui-border-t,
+  li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
+    background-image: none; } }
 /* 列表未读数 */
 .ui-list .ui-badge, .ui-list .ui-badge-muted, .ui-list-action {
   position: absolute;
@@ -1210,23 +1126,6 @@ em {
 .ui-list-link .ui-badge, .ui-list-link .ui-badge-muted, li.ui-list-item-link .ui-badge, li.ui-list-item-link .ui-badge-muted, .ui-list-link .ui-list-action, li.ui-list-item-link .ui-list-action {
   right: 35px; }
 
-/*列表按压态*/
-.ui-list-active > li:active, .ui-list-link > li:active, li.ui-list-item-link:active {
-  background-color: #e5e6e7;
-  padding-left: 15px;
-  margin-left: 0px; }
-
-.ui-list-active > li:active, .ui-list-active > li:active .ui-border-t, .ui-list-active > li:active + li.ui-border-t, .ui-list-active > li:active + .ui-border-t,
-.ui-list-link > li:active, .ui-list-link > li:active .ui-border-t, .ui-list-link > li:active + li.ui-border-t, .ui-list-link > li:active + .ui-border-t,
-li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
-  background-image: none;
-  border-top-color: #e5e6e7; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-list-active > li:active, .ui-list-active > li:active .ui-border-t, .ui-list-active > li:active + li.ui-border-t, .ui-list-active > li:active + .ui-border-t,
-  .ui-list-link > li:active, .ui-list-link > li:active .ui-border-t, .ui-list-link > li:active + li.ui-border-t, .ui-list-link > li:active + .ui-border-t,
-  li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
-    background-image: none; } }
 /*功能列表*/
 .ui-list-function .ui-list-info {
   padding-right: 70px; }
@@ -1731,23 +1630,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   -webkit-box-sizing: border-box; }
 
 .ui-grid-trisect-img {
-  width: 100%;
-  padding-top: 149.47%;
-  position: relative; }
-  .ui-grid-trisect-img span {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100% 100%; }
-  .ui-grid-trisect-img img {
-    width: 100%;
-    height: 100%; }
-  .ui-grid-trisect-img:active {
-    opacity: .7; }
+  padding-top: 149.47%; }
 
 .ui-grid-trisect h4 {
   font-size: 12px;
@@ -1772,10 +1655,17 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   -webkit-box-sizing: border-box; }
 
 .ui-grid-halve-img {
+  padding-top: 55.17%; }
+
+.ui-grid-trisect-img, .ui-grid-halve-img {
   width: 100%;
-  padding-top: 55.17%;
   position: relative; }
-  .ui-grid-halve-img span {
+  .ui-grid-trisect-img img, .ui-grid-halve-img img {
+    width: 100%;
+    height: 100%; }
+  .ui-grid-trisect-img:active, .ui-grid-halve-img:active {
+    opacity: .7; }
+  .ui-grid-trisect-img span, .ui-grid-halve-img span {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1784,11 +1674,6 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
     z-index: 2;
     background-repeat: no-repeat;
     -webkit-background-size: 100% 100%; }
-  .ui-grid-halve-img img {
-    width: 100%;
-    height: 100%; }
-  .ui-grid-halve-img:active {
-    opacity: .7; }
 
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }
@@ -1802,15 +1687,18 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 @-webkit-keyframes rotate {
   from {
     background-position: 0 0; }
+
   to {
     background-position: -240px 0; } }
 @-webkit-keyframes rotate2 {
   from {
     background-position: 0 0; }
+
   to {
     background-position: -444px 0; } }
 @-webkit-keyframes rotate3 {
   0% {
     -webkit-transform: rotate(0); }
+
   100% {
     -webkit-transform: rotate(360deg); } }

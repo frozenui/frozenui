@@ -14,12 +14,6 @@
   padding: 12px 25px 12px 0;
   font-size: 16px; }
 
-.ui-list-text > li > p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%; }
-
 .ui-list > li.ui-border-t:first-child {
   border: none;
   background-image: none; }
@@ -80,21 +74,11 @@
 
 .ui-list-info > h4 {
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  height: 24px; }
+  line-height: 24px; }
 
 .ui-list-info > p {
   font-size: 13px;
   line-height: 22px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 100%;
   color: #808080; }
 
 /* 列表按钮 */
@@ -114,6 +98,21 @@
 .ui-list-checkbox > li {
   padding-left: 40px; }
 
+/*列表按压态*/
+.ui-list-active > li:active, .ui-list-link > li:active, li.ui-list-item-link:active {
+  background-color: #e5e6e7;
+  padding-left: 15px;
+  margin-left: 0px; }
+
+.ui-list-active > li:active, .ui-list-link > li:active, .ui-list-active > li:active .ui-border-t, .ui-list-link > li:active .ui-border-t, .ui-list-active > li:active + li.ui-border-t, .ui-list-link > li:active + li.ui-border-t, .ui-list-active > li:active + .ui-border-t, .ui-list-link > li:active + .ui-border-t,
+li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
+  background-image: none;
+  border-top-color: #e5e6e7; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-list-active > li:active, .ui-list-link > li:active, .ui-list-active > li:active .ui-border-t, .ui-list-link > li:active .ui-border-t, .ui-list-active > li:active + li.ui-border-t, .ui-list-link > li:active + li.ui-border-t, .ui-list-active > li:active + .ui-border-t, .ui-list-link > li:active + .ui-border-t,
+  li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
+    background-image: none; } }
 /* 列表未读数 */
 .ui-list .ui-badge, .ui-list-action {
   position: absolute;
@@ -124,23 +123,6 @@
 .ui-list-link .ui-badge, li.ui-list-item-link .ui-badge, .ui-list-link .ui-list-action, li.ui-list-item-link .ui-list-action {
   right: 35px; }
 
-/*列表按压态*/
-.ui-list-active > li:active, .ui-list-link > li:active, li.ui-list-item-link:active {
-  background-color: #e5e6e7;
-  padding-left: 15px;
-  margin-left: 0px; }
-
-.ui-list-active > li:active, .ui-list-active > li:active .ui-border-t, .ui-list-active > li:active + li.ui-border-t, .ui-list-active > li:active + .ui-border-t,
-.ui-list-link > li:active, .ui-list-link > li:active .ui-border-t, .ui-list-link > li:active + li.ui-border-t, .ui-list-link > li:active + .ui-border-t,
-li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
-  background-image: none;
-  border-top-color: #e5e6e7; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-list-active > li:active, .ui-list-active > li:active .ui-border-t, .ui-list-active > li:active + li.ui-border-t, .ui-list-active > li:active + .ui-border-t,
-  .ui-list-link > li:active, .ui-list-link > li:active .ui-border-t, .ui-list-link > li:active + li.ui-border-t, .ui-list-link > li:active + .ui-border-t,
-  li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-list-item-link:active + li.ui-border-t, li.ui-list-item-link:active + .ui-border-t {
-    background-image: none; } }
 /*功能列表*/
 .ui-list-function .ui-list-info {
   padding-right: 70px; }

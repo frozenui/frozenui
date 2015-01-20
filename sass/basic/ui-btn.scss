@@ -10,7 +10,6 @@
     display: inline-block;
     position: relative;
     text-align: center;
-    border: none;
     color: #0079ff;
     font-size: 15px;
     background-color: #fdfdfd;
@@ -23,7 +22,7 @@
     background-clip: padding-box;
 }
 .ui-btn:not(.disabled):not(:disabled):active,.ui-btn.active{
-    background: #f2f2f2;
+    background-color: #f2f2f2;
     color: rgba(0,165,224,.5);
     background-clip: padding-box;
 }
@@ -141,7 +140,7 @@
 .ui-btn-vip{
     height: 26px;
     line-height: 26px;
-    width: 51px;
+    padding: 0 12px;
     display: inline-block;
     position: relative;
     text-align: center;

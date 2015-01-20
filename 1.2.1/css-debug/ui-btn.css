@@ -10,11 +10,10 @@
   display: inline-block;
   position: relative;
   text-align: center;
-  border: none;
   color: #0079ff;
   font-size: 15px;
   background-color: #fdfdfd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   border-radius: 3px;
   vertical-align: top;
   color: #00a5e0;
@@ -24,7 +23,7 @@
           background-clip: padding-box; }
 
 .ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
@@ -144,7 +143,7 @@
 .ui-btn-vip {
   height: 26px;
   line-height: 26px;
-  width: 51px;
+  padding: 0 12px;
   display: inline-block;
   position: relative;
   text-align: center;

@@ -69,7 +69,15 @@
 <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
 <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
  ````
- 
 
+ ###文字超出长度省略
 
+````html
+<div class="ui-nowrap">
+    内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略
+</div>
+<div class="ui-nowrap-multi">
+    多行文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略
+</div>
+ ````
 

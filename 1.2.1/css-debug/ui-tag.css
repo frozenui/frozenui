@@ -11,7 +11,7 @@
   z-index: 9; }
 
 .ui-tag-svip:before, .ui-tag-vip:before, .ui-tag-hot:before, .ui-tag-new:before, .ui-tag-selected:after {
-  background: url(../img/icon_tag.png?_bid=306);
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.1/img/icon_tag.png?_bid=306);
   -webkit-background-size: 36px auto; }
 
 .ui-tag-vip:before {

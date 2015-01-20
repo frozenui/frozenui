@@ -99,80 +99,6 @@ $bordercolor : #e0e0e0;
 	height: 200px; /* 需要重置 */
 }
 
-/**
- * 圆角头像，列表场景，默认用100px的
- */
-@mixin avatar($size: 50) {
-    width: #{$size}px;
-    height: #{$size}px;
-    overflow: hidden;
-    -webkit-border-radius: 200px;
-    display: block;
-    -webkit-background-size: 100% 100%;
-}
-
-.ui-avatar {
-    @include avatar;
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
-    span {
-        @include avatar;
-    }
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.ui-avatar-lg{
-    @include avatar(54);
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
-    span {
-        @include avatar(54);
-    }
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.ui-avatar-s{
-    @include avatar(40);
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
-    span {
-        @include avatar(40);
-    }
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-/* 资料场景 */
-.ui-avatar-one{
-    @include avatar(64);
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
-    span {
-        @include avatar(64);
-    }
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-/* 平铺场景 */
-.ui-avatar-tiled{
-    @include avatar(30);
-    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
-    span {
-        @include avatar(30);
-    }
-    img{
-        width: 100%;
-        height: 100%;
-    }
-    display: inline-block;
-}
 
  /**
  * 红点提醒
@@ -289,4 +215,15 @@ $bordercolor : #e0e0e0;
         margin-top: -7px;
     }
 }
-
+.ui-nowrap{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.ui-nowrap-multi{
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

@@ -49,11 +49,11 @@ module.exports =function(grunt) {
                 dest: '_themes/one/static/'
             },
             
-            downloadcss:{
-                src: ['<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css',
-                    '<%=pkg.version%>/css-debug/frozen.css','<%=pkg.version%>/img/**'],
-                dest: '../frozenui.github.io/demo/frozenui/'
-            }
+            // downloadcss:{
+            //     src: ['<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css',
+            //         '<%=pkg.version%>/css-debug/frozen.css','<%=pkg.version%>/img/**'],
+            //     dest: '../frozenui.github.io/demo/frozenui/'
+            // }
         },
         compress: {
             main: {

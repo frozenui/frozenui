@@ -1,0 +1,44 @@
+/**
+ * 圆角头像，列表场景，默认用100px的
+ */
+@mixin avatar($size: 50) {
+    width: #{$size}px;
+    height: #{$size}px;
+}
+.ui-avatar,.ui-avatar-lg,.ui-avatar-s,.ui-avatar-one,.ui-avatar-tiled{
+    overflow: hidden;
+    -webkit-border-radius: 200px;
+    display: block;
+    -webkit-background-size: 100% 100%;
+    background-image:url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306);
+}
+.ui-avatar-lg{
+    @include avatar(54);
+}
+
+.ui-avatar-s{
+    @include avatar(40);
+}
+
+/* 资料场景 */
+.ui-avatar-one{
+    @include avatar(64);
+}
+
+/* 平铺场景 */
+.ui-avatar-tiled{
+    @include avatar(30);
+    display: inline-block;
+}
+.ui-avatar span,.ui-avatar-lg span,.ui-avatar-s span,.ui-avatar-one span,.ui-avatar-tiled span{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-border-radius: 200px;
+    display: block;
+    -webkit-background-size: 100% 100%;
+}
+.ui-avatar img,.ui-avatar-lg img,.ui-avatar-s img,.ui-avatar-one img,.ui-avatar-tiled img{
+    width: 100%;
+    height: 100%;
+}
