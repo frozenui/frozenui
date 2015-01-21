@@ -258,8 +258,7 @@ em {
   -webkit-border-radius: 8px;
   padding: 0 6px;
   -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  -webkit-box-sizing: border-box; }
+          background-clip: padding-box; }
 
 /* 浅色的 */
 .ui-badge-muted {
@@ -426,7 +425,7 @@ em {
           background-clip: padding-box; }
 
 .ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
@@ -1665,7 +1664,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
     height: 100%; }
   .ui-grid-trisect-img:active, .ui-grid-halve-img:active {
     opacity: .7; }
-  .ui-grid-trisect-img span, .ui-grid-halve-img span {
+  .ui-grid-trisect-img > span, .ui-grid-halve-img > span {
     width: 100%;
     height: 100%;
     position: absolute;

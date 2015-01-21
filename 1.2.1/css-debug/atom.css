@@ -161,8 +161,7 @@
   -webkit-border-radius: 8px;
   padding: 0 6px;
   -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  -webkit-box-sizing: border-box; }
+          background-clip: padding-box; }
 
 /* 浅色的 */
 .ui-badge-muted {

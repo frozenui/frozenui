@@ -19,7 +19,9 @@
     <li>
         <div class="ui-grid-halve-img ui-tag-vip">
             <span style="background-image:url(http://placehold.sinaapp.com//?290*160)"></span>
+            <i class="ui-loading" style="position: absolute;z-index: 9;right: -5px;top: -5px;"></i>
         </div>
+
     </li>
     <li>
         <div class="ui-grid-halve-img ui-tag-free">

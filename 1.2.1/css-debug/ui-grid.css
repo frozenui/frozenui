@@ -48,7 +48,7 @@
     height: 100%; }
   .ui-grid-trisect-img:active, .ui-grid-halve-img:active {
     opacity: .7; }
-  .ui-grid-trisect-img span, .ui-grid-halve-img span {
+  .ui-grid-trisect-img > span, .ui-grid-halve-img > span {
     width: 100%;
     height: 100%;
     position: absolute;

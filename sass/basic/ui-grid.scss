@@ -47,7 +47,7 @@
     &:active{
         opacity: .7;
     }
-    span{
+    & > span{
         width: 100%;
         height: 100%;
         position: absolute;

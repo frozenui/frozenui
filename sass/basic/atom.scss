@@ -163,7 +163,6 @@ $bordercolor : #e0e0e0;
     -webkit-border-radius: 8px;
     padding: 0 6px;
     background-clip: padding-box;
-    -webkit-box-sizing: border-box;
 }
 .ui-badge{  
     @extend %badge;
