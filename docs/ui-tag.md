@@ -10,7 +10,11 @@
     <li>
         <div class="ui-grid-halve-img ui-tag-svip">
             <span style="background-image:url(http://placehold.sinaapp.com//?290*160)"></span>
+            <div class="ui-progress">
+                <span style="width:50%"></span>
+            </div>
         </div>
+
     </li>
     <li>
         <div class="ui-grid-halve-img ui-tag-vip">

@@ -245,6 +245,10 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
                     title: "网格 grid"
                 },
                 {
+                    name:"ui-progress",
+                    title: "进度条 progress"
+                },
+                {
                     name:"ui-tag",
                     title: "会员业务 icon角标等",
                     child: [
