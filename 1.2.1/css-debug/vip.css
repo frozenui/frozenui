@@ -233,3 +233,55 @@
   .ui-tag-wrap .ui-tag-svip:before, .ui-tag-wrap .ui-tag-vip:before, .ui-tag-wrap .ui-tag-freelimit:before, .ui-tag-wrap .ui-tag-free:before {
     top: 50%;
     margin-top: -7px; }
+
+/**
+ * 开通会员按钮
+ */
+.ui-btn-vip {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 12px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 13px;
+  background-color: #1fbaf3;
+  border-radius: 3px;
+  vertical-align: top;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+
+.ui-btn-vip:not(.disabled):not(:disabled):active, .ui-btn-vip.active {
+  background-color: #1ba6d9;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+
+.ui-tooltips-vip {
+  width: 100%;
+  position: relative;
+  z-index: 10; }
+
+.ui-tooltips-vip .ui-tooltips-cnt {
+  background-color: rgba(248, 248, 248, 0.95);
+  color: #000;
+  line-height: 44px;
+  height: 44px;
+  padding-left: 10px;
+  font-size: 14px;
+  display: table;
+  width: 100%; }
+
+.ui-tooltips-vip .ui-tooltips-cnt span {
+  font-size: 14px; }
+
+.ui-tooltips-vip .ui-tooltips-cnt i {
+  margin-right: 6px; }
+
+.ui-tooltips-vip .ui-btn-vip {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -13px; }

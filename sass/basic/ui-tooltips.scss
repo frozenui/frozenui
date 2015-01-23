@@ -4,14 +4,11 @@
     z-index: 10;
 }
 .ui-tooltips-cnt{
-    margin: 0;
     color: #00a5e0;
     line-height: 45px;
     height: 45px;
-    text-align: left;
     padding-left: 10px;
     font-size: 14px;
-    overflow:hidden;
 
 }
 .ui-tooltips-warn .ui-tooltips-cnt{
@@ -57,7 +54,7 @@
     top: -14px;
 
 }
-.ui-tooltips .ui-btn,.ui-tooltips .ui-btn-vip{
+.ui-tooltips .ui-btn{
     position: absolute;
     top: 50%;
     right: 10px;
@@ -66,21 +63,3 @@
 .ui-tooltips-state .ui-tooltips-cnt-link:after{
     background-position: -125px 0;
 }
-.ui-tooltips-vip .ui-tooltips-cnt {
-    background-color: rgba(248,248,248,.95);
-    color: #000;
-    line-height: 44px;
-    height: 44px;
-    display: table;
-    width: 100%;
-}
-.ui-tooltips-vip .ui-tooltips-cnt span{
-    font-size: 14px;
-}
-.ui-tooltips-vip .ui-tooltips-cnt i{
-    margin-right: 6px;
-}
-.ui-tooltips .ui-btn-vip{
-    margin-top: -13px;
-}
-

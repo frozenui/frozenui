@@ -3,7 +3,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 10; }
+  z-index: 99; }
 
 .ui-poptips .ui-poptips-cnt {
   margin: 0px 10px;

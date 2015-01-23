@@ -540,29 +540,8 @@ em {
   padding: 0;
   width: 55px;
   height: 25px;
-  line-height: 25px; }
-
-.ui-btn-vip {
-  height: 26px;
-  line-height: 26px;
-  padding: 0 12px;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  font-size: 13px;
-  background-color: #1fbaf3;
-  border-radius: 3px;
-  vertical-align: top;
-  color: #fff;
-  -webkit-box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
-
-.ui-btn-vip:not(.disabled):not(:disabled):active, .ui-btn-vip.active {
-  background-color: #1ba6d9;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  line-height: 25px;
+  font-size: 13px; }
 
 /**
  * 底部操作区
@@ -645,7 +624,7 @@ em {
   left: 0px;
   width: 100%;
   height: 100%;
-  z-index: 99999;
+  z-index: 999;
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: center;
@@ -765,7 +744,7 @@ em {
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 10; }
+  z-index: 99; }
 
 .ui-poptips .ui-poptips-cnt {
   margin: 0px 10px;
@@ -816,14 +795,11 @@ em {
   z-index: 10; }
 
 .ui-tooltips-cnt {
-  margin: 0;
   color: #00a5e0;
   line-height: 45px;
   height: 45px;
-  text-align: left;
   padding-left: 10px;
-  font-size: 14px;
-  overflow: hidden; }
+  font-size: 14px; }
 
 .ui-tooltips-warn .ui-tooltips-cnt {
   background-color: rgba(255, 242, 183, 0.95);
@@ -867,7 +843,7 @@ em {
   left: 0px;
   top: -14px; }
 
-.ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg, .ui-tooltips .ui-btn-s, .ui-tooltips .ui-btn-vip {
+.ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg, .ui-tooltips .ui-btn-s {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -875,23 +851,6 @@ em {
 
 .ui-tooltips-state .ui-tooltips-cnt-link:after {
   background-position: -125px 0; }
-
-.ui-tooltips-vip .ui-tooltips-cnt {
-  background-color: rgba(248, 248, 248, 0.95);
-  color: #000;
-  line-height: 44px;
-  height: 44px;
-  display: table;
-  width: 100%; }
-
-.ui-tooltips-vip .ui-tooltips-cnt span {
-  font-size: 14px; }
-
-.ui-tooltips-vip .ui-tooltips-cnt i {
-  margin-right: 6px; }
-
-.ui-tooltips .ui-btn-vip {
-  margin-top: -13px; }
 
 /**
  * 选项卡
@@ -906,7 +865,7 @@ em {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
   display: box;
   display: -webkit-box;
   font-size: 16px;
@@ -1053,7 +1012,7 @@ em {
 .ui-list-thumb span, .ui-list-thumb-s span, .ui-list-img span {
   width: 100%;
   height: 100%;
-  -webkit-background-size: 100% auto;
+  -webkit-background-size: 100% 100%;
   display: block;
   position: absolute;
   left: 0px;
@@ -1957,3 +1916,55 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   .ui-tag-wrap .ui-tag-svip:before, .ui-tag-wrap .ui-tag-vip:before, .ui-tag-wrap .ui-tag-freelimit:before, .ui-tag-wrap .ui-tag-free:before {
     top: 50%;
     margin-top: -7px; }
+
+/**
+ * 开通会员按钮
+ */
+.ui-btn-vip {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 12px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 13px;
+  background-color: #1fbaf3;
+  border-radius: 3px;
+  vertical-align: top;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+
+.ui-btn-vip:not(.disabled):not(:disabled):active, .ui-btn-vip.active {
+  background-color: #1ba6d9;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
+
+.ui-tooltips-vip {
+  width: 100%;
+  position: relative;
+  z-index: 10; }
+
+.ui-tooltips-vip .ui-tooltips-cnt {
+  background-color: rgba(248, 248, 248, 0.95);
+  color: #000;
+  line-height: 44px;
+  height: 44px;
+  padding-left: 10px;
+  font-size: 14px;
+  display: table;
+  width: 100%; }
+
+.ui-tooltips-vip .ui-tooltips-cnt span {
+  font-size: 14px; }
+
+.ui-tooltips-vip .ui-tooltips-cnt i {
+  margin-right: 6px; }
+
+.ui-tooltips-vip .ui-btn-vip {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -13px; }
