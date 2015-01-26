@@ -324,6 +324,10 @@ em {
   -webkit-background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
 
+.ui-avatar {
+  width: 50px;
+  height: 50px; }
+
 .ui-avatar-lg {
   width: 54px;
   height: 54px; }
@@ -1551,6 +1555,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 0;
   width: 7px;
   height: 7px;
   background-color: rgba(0, 0, 0, 0.3);
