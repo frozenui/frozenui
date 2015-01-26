@@ -9,6 +9,10 @@
   -webkit-background-size: 100% 100%;
   background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/default.png?_bid=306); }
 
+.ui-avatar {
+  width: 50px;
+  height: 50px; }
+
 .ui-avatar-lg {
   width: 54px;
   height: 54px; }

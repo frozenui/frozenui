@@ -168,9 +168,8 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-ftpush');
     grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
-    grunt.registerTask('default', ['sass','autoprefixer','cssmin','imagemin','copy','compress','ftpush']);
-    grunt.registerTask('docs',['sass','autoprefixer','cssmin','copy','compress','shell:build','shell:server']);
-    grunt.registerTask('commit',['sass','autoprefixer','cssmin','imagemin','copy','compress','ftpush','shell:build','shell:git','shell:gitsite']);
+    grunt.registerTask('build', ['sass','autoprefixer','cssmin','imagemin','copy','compress']);
+    grunt.registerTask('default',['sass','autoprefixer','cssmin','imagemin','copy','compress','ftpush']);
     
 
 };
