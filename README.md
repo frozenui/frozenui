@@ -28,9 +28,9 @@ android 2.3 +，ios 4.0 + 。
 首先使用`npm install`下载所有需要的grunt插件，（腾讯内部网络需要特殊配置以及设置代理），推荐使用淘宝的代理
 `registry = http://registry.npm.taobao.org `
 
-使用`grunt docs`会编译代码以及开启nico测试，访问[127.0.0.1:8000](127.0.0.1:8000)调试页面
+使用`grunt`会编译代码，然后使用`nico server`开启nico测试，访问[127.0.0.1:8000](127.0.0.1:8000)调试页面
 
-使用`grunt commit --log=logtest` 命令会做好打包压缩部署ftp等操作, 以及生成_site站点,git 提交
+使用`grunt commit --log=logtest` 命令会做好打包压缩部署ftp等操作
 
 也可以使用`grunt`命令打包压缩部署ftp，然后使用nico命令生成站点和git命令提交，需要配置一个.ftppass文件：
 {
