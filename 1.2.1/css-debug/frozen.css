@@ -1053,14 +1053,14 @@ em {
   right: 15px;
   margin-top: -15px; }
 
-/* 列表checkbox */
-.ui-list-checkbox .ui-checkbox {
+/* 列表checkbox和radio */
+.ui-list-checkbox .ui-checkbox, .ui-list-radio .ui-radio {
   position: absolute;
   top: 50%;
   left: 0;
   margin-top: -13px; }
 
-.ui-list-checkbox > li {
+.ui-list-checkbox > li, .ui-list-radio > li {
   padding-left: 40px; }
 
 /*列表按压态*/
