@@ -175,6 +175,7 @@
   position: absolute;
   border: 2px #fff solid;
   height: 20px;
+  line-height: 20px;
   top: -4px;
   right: -9px; }
 
@@ -206,6 +207,7 @@
     margin-top: -7px; }
 
 .ui-nowrap {
+  max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
