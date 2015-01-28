@@ -1530,8 +1530,8 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   height: 100%; }
 
 .ui-slider-content > li img {
-  width: 100%;
-  height: 100%; }
+  display: block;
+  width: 100%; }
 
 .ui-slider-content > li span {
   display: block;
