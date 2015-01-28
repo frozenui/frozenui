@@ -272,6 +272,7 @@ em {
   position: absolute;
   border: 2px #fff solid;
   height: 20px;
+  line-height: 20px;
   top: -4px;
   right: -9px; }
 
@@ -303,6 +304,7 @@ em {
     margin-top: -7px; }
 
 .ui-nowrap {
+  max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
@@ -1528,8 +1530,8 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   height: 100%; }
 
 .ui-slider-content > li img {
-  width: 100%;
-  height: 100%; }
+  display: block;
+  width: 100%; }
 
 .ui-slider-content > li span {
   display: block;
