@@ -13,6 +13,11 @@
  <div  class="ui-tips ui-tips-success">
 	<i></i>提示操作成功或流程成功
 </div>
+<div class="ui-tips-news-wrap">
+    <div  class="ui-tips-news">
+        新消息
+    </div>
+</div>
 ````
 
 
