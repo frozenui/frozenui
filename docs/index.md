@@ -98,20 +98,20 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
 
 1.可以直接使用下面的 css 文件，注意1.2.0之后的bid改为_306_:
 ````
- <link media="all" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306" rel="stylesheet">
-  <link media="all" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306" rel="stylesheet">
+ <link media="all" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.1/css/frozen.css?_bid=306" rel="stylesheet">
+  <link media="all" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.1/css/vip.css?_bid=306" rel="stylesheet">
 ````
 前者是打包了除了会员相关的基础css文件，后者包括vip等级图标 ，qq等级图标，角标，好友选择器等会员相关的css组件，使用手Q离线包需要加上bid的参数。
-将两个css打包到一起的css地址是http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/global.css， 手Q中不提供离线包。
-调试时可使用未压缩版，把css目录换成css-debug，如http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css
+将两个css打包到一起的css地址是http://i.gtimg.cn/vipstyle/frozenui/1.2.1/css/global.css， 手Q中不提供离线包。
+调试时可使用未压缩版，把css目录换成css-debug，如http://i.gtimg.cn/vipstyle/frozenui/1.2.1/css-debug/frozen.css
 
 2.针对非手Q用户可以使用cdn 和 combo 服务按需加载
 ````
- <link media="all" href="http://i.gtimg.cn/c/=/vipstyle/frozenui/1.2.0/css/reset.css,/vipstyle/frozenui/1.2.0/css/ui-notice.css" rel="stylesheet">
+ <link media="all" href="http://i.gtimg.cn/c/=/vipstyle/frozenui/1.2.1/css/reset.css,/vipstyle/frozenui/1.2.1/css/ui-notice.css" rel="stylesheet">
 ````
 3.直接下载
 
-另外提供下载地址：[http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip](http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip)
+另外提供下载地址：[http://frozenui.github.io/frozenui.zip](http://frozenui.github.io/frozenui.zip)
 
 4.访问我们的github仓库
 [https://github.com/frozenui/frozenui](https://github.com/frozenui/frozenui)，自行 clone 到本地。 
