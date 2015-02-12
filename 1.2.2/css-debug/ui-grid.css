@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* 三等分 */
 .ui-grid-trisect {
-  padding-left: 10px;
-  padding-right: 3px;
+  padding: 10px 3px 0 10px;
   overflow: hidden; }
 
 .ui-grid-trisect > li {
