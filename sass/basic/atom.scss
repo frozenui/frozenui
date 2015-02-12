@@ -173,6 +173,14 @@ $bordercolor : #e0e0e0;
     @extend .ui-badge;
     background: #b6cae0;
 }
+.ui-badge-num{
+    @extend .ui-badge;
+    height: 19px;
+    line-height: 19px;
+    font-size: 12px;
+    min-width: 19px;
+    -webkit-border-radius: 10px;
+}
 .ui-badge-wrap{
     position: relative;
     text-align: center;
