@@ -1,7 +1,7 @@
+@charset "utf-8";
 /* 三等分 */
 .ui-grid-trisect{
-    margin-left: 10px;
-    margin-right: 3px;
+    padding: 10px 3px 0 10px;
     overflow: hidden;
 }
 .ui-grid-trisect>li{
@@ -12,28 +12,12 @@
     -webkit-box-sizing: border-box; 
 }
 .ui-grid-trisect-img{
-    width: 100%;
     padding-top: 149.47%;
-    position: relative;
-    span{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        background-repeat: no-repeat;
-        -webkit-background-size: 100% 100%;
-    }
-    img{width: 100%;height: 100%}
-    &:active{
-        opacity: .7;
-    }
 }
 .ui-grid-trisect h4{
     font-size: 12px;
     position: relative;
-    margin: 7px 0 5px
+    margin: 7px 0 3px;
 }
 .ui-grid-trisect h4 span{
     display: inline-block;
@@ -43,7 +27,7 @@
 /* 二等分 */
 .ui-grid-halve{
     overflow: hidden;
-    margin: 10px 0 0 10px;
+    padding: 10px 0 0 10px;
 }
 .ui-grid-halve>li{
     width: 50%;
@@ -53,10 +37,16 @@
     -webkit-box-sizing: border-box; 
 }
 .ui-grid-halve-img{
-    width: 100%;
     padding-top: 55.17%;
+}
+.ui-grid-trisect-img,.ui-grid-halve-img{
+    width: 100%;
     position: relative;
-    span{
+    img{width: 100%;height: 100%}
+    &:active{
+        opacity: .7;
+    }
+    & > span{
         width: 100%;
         height: 100%;
         position: absolute;
@@ -65,9 +55,5 @@
         z-index: 2;
         background-repeat: no-repeat;
         -webkit-background-size: 100% 100%;
-    }
-    img{width: 100%;height: 100%}
-    &:active{
-        opacity: .7;
     }
 }

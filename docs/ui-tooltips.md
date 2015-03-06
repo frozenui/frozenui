@@ -46,7 +46,7 @@
 ### 个性装扮
 
 ````html
-<div class="ui-tooltips ui-tooltips-vip">
+<div class="ui-tooltips-vip">
     <div class="ui-tooltips-cnt">
         <i class="ui-icon-vip"></i>
         <span>QQ会员xxxx</span>

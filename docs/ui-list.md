@@ -65,20 +65,20 @@
 <ul class="ui-list ui-list-text ui-border-tb">
     <li class="ui-border-t ui-list-item-link">
         <div class="ui-list-info">
-            <h4>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断</h4>
+            <h4 class="ui-nowrap">标题标题标题标题标题标题题标题标题标题标题标题标题标题标题标题</h4>
             <p>内容内容内容内容内容内容内容内容内容内容内容</p>
         </div>
         <div class="ui-badge">123</div>
     </li>
     <li class="ui-border-t">
         <div class="ui-list-info">
-            <h4>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断</h4>
+            <h4>标题题标题标题标题标题标题标题标题标题标题</h4>
         </div>
         <div class="ui-badge-muted">123</div>
     </li>
     <li class="ui-border-t">
         <div class="ui-list-info">
-           <h4>标题标题标题标题标题标题标</h4>
+           <h4>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h4>
         </div>
         <div class="ui-list-action">使用中</div>
     </li>
@@ -94,8 +94,8 @@
            <span style="background-image:url(http://placehold.sinaapp.com//?100*100)"></span>
         </div>
         <div class="ui-list-info ui-border-t">
-            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+            <h4 >标题标题标题标题标题标题标题标题标题标题标题</h4>
+            <p class="ui-nowrap">内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
         </div>
     </li>
     <li>
@@ -104,7 +104,7 @@
         </div>
         <div class="ui-list-info ui-border-t">
             <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+            <p>内容内容内容内容内容内容内容内容内容</p>
       </div>
     </li>
 </ul>
@@ -143,7 +143,7 @@
         </div>
         <div class="ui-list-info">
             <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+            <p>内容内容内容内容内容内容内容内容</p>
         </div>
     </li>
     <li class="ui-border-t">
@@ -152,7 +152,7 @@
         </div>
         <div class="ui-list-info">
             <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+            <p>内容内容内容内容内容内容内容内容</p>
         </div>
     </li>
 </ul>    
@@ -167,8 +167,8 @@
             <span  style="background-image:url(http://placehold.sinaapp.com//?100*100)"></span>
         </div>
         <div class="ui-list-info">
-            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+            <h4>标题标题标题标题标题标题标题</h4>
+            <p>内容内容内容内容内容内容内容内容</p>
         </div>
     </li>
     <li class="ui-border-t">
@@ -176,8 +176,8 @@
            <span style="background-image:url(http://placehold.sinaapp.com//?100*100)"></span>
         </div>
         <div class="ui-list-info">
-            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+            <h4>标题标题标题标题标题标题标题</h4>
+            <p>内容内容内容内容内容内容内容</p>
         </div>
     </li>
 </ul>
@@ -192,8 +192,8 @@
             <span style="background-image:url(http://placehold.sinaapp.com/?200*136)"></span>
         </div>
         <div class="ui-list-info">
-            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
-            <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+            <h4>标题标题标题标题标题标题标题</h4>
+            <p>内容内容内容内容内容内容内容内容内容内容</p>
         </div>
     </li>
     <li class="ui-border-t">

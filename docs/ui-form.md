@@ -103,3 +103,21 @@
 	</form>
 </div>
 ````
+####表单展示项
+````html
+<div class="ui-form ui-border-t">
+	<form action="#" >
+		<div class="ui-form-item ui-border-b">
+			<label for="#">账号</label>
+			<div class="ui-select">
+				<select>
+					<option>Blue</option>
+					<option selected="">Green</option>
+					<option>Red</option>
+            	</select>
+        	</div>
+		</div>
+	</form>
+</div>
+
+````

@@ -1,13 +1,16 @@
 @import "basic/reset";
 @import "basic/atom";
+@import "basic/layout";
+@import "basic/ui-border";
+@import "basic/ui-avatar";
 @import "basic/ui-icon";
 @import "basic/ui-btn";
 @import "basic/ui-btn-group";
 @import "basic/ui-dialog";
 @import "basic/ui-tips";
+@import "basic/ui-tips-news";
 @import "basic/ui-poptips";
 @import "basic/ui-tooltips";
-@import "basic/ui-tips-news";
 @import "basic/ui-tab";
 @import "basic/ui-table";
 @import "basic/ui-list";
@@ -17,8 +20,11 @@
 @import "basic/ui-checkbox";
 @import "basic/ui-switch";
 @import "basic/ui-radio";
+@import "basic/ui-select";
 @import "basic/ui-searchbar";
 @import "basic/ui-slider";
 @import "basic/ui-grid";
+@import "basic/ui-progress";
+@import "basic/ui-panel";
 @import "basic/animation";
 

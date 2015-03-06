@@ -21,8 +21,8 @@
   height: 100%; }
 
 .ui-slider-content > li img {
-  width: 100%;
-  height: 100%; }
+  display: block;
+  width: 100%; }
 
 .ui-slider-content > li span {
   display: block;
@@ -40,13 +40,15 @@
   -webkit-box-pack: end;
   width: 100%;
   bottom: 10px;
-  right: 3px; }
+  right: 4px;
+  font-size: 0; }
 
 .ui-slider-indicators li {
   display: block;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 0;
   width: 7px;
   height: 7px;
   background-color: rgba(0, 0, 0, 0.3);

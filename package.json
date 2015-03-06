@@ -1,17 +1,17 @@
 {
   "name": "FrozenUI",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "title": "FrozenUI CSS",
-  "homepage": "https://github.com/frozenui/baseui",
+  "homepage": "https://github.com/frozenui/frozenui",
   "author": "fayching",
   "repository": {
     "type": "git",
-    "url": "https://github.com/frozenui/baseui.git"
+    "url": "https://github.com/frozenui/frozenui.git"
   },
   "licenses": "MIT",
   "description": "为移动端web而生",
   "bugs": {
-    "url": "https://github.com/frozenui/baseui/issues"
+    "url": "https://github.com/frozenui/frozenui/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.0",
