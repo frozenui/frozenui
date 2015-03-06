@@ -4,9 +4,11 @@
 
 .ui-list > li {
   position: relative;
-  display: -webkit-box;
-  display: box;
   margin-left: 15px; }
+
+.ui-list:not(.ui-list-text) > li {
+  display: -webkit-box;
+  display: box; }
 
 /*文字列表*/
 .ui-list-text > li {

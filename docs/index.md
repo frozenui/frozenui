@@ -3,6 +3,17 @@
 
 ---
 <style>
+.content-area h1{
+    padding: 0;
+    border-bottom: none;
+    font-size: inherit;
+
+}
+.content-area > h1 {
+    font-size: 24px;
+    border-bottom: 1px #eee solid;
+    padding: 20px 0;
+}
 .content-area h4{font-size: inherit;}
 .ui-avatar-tiled{display:inline-block;}
 .frozen-module {
@@ -85,6 +96,16 @@ h3.frozen-module-subtitle {
     border-radius: 2px;
     background: rgba(0, 0, 0, 0.55);
     color: #fff;
+}
+.frozen-module-dom{
+    position: relative;
+}
+.ui-container{
+    min-height: 200px;
+}
+.ui-header,
+.ui-footer{
+    position: absolute;
 }
 </style>  
 
@@ -176,6 +197,10 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
                     title: "辅助类 atom"
                 },
                 {
+                    name:"layout",
+                    title: "布局 layout"
+                },
+                {
                     name: "ui-searchbar",
                     title: "搜索框 searchbar"
                 },
@@ -208,6 +233,10 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
                             name: "ui-radio"
                         }
                     ]
+                },
+                {
+                    name:"ui-panel",
+                    title: "面板 panel"
                 },
                 {
                     name:"ui-table",

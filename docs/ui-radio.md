@@ -18,20 +18,20 @@
 	</label>
 </p>
 列表中
-<ul class="ui-list ui-list-text ui-list-radio ui-border-tb">  
-    <li class="ui-border-t">
-        <label class="ui-radio" name="radio1">
+<div class="ui-form ui-border-t">  
+    <div class="ui-form-item ui-form-item-radio ui-border-t">
+        <div class="ui-radio" name="radio1">
             <input type="radio" name="radio1">
-        </label>
+        </div>
         <p>用于一般单选或多选普通操作</p>
-    </li>
-    <li class="ui-border-t">
-        <label class="ui-radio" name="radio1">
+    </div>
+    <div class="ui-form-item ui-form-item-radio ui-border-t">
+        <div class="ui-radio" name="radio1">
             <input type="radio" name="radio1">
-        </label>
+        </div>
         <p>用于一般单选或多选普通操作</p>
-    </li>
-</ul>
+    </div>
+</div>
 
 ````
 

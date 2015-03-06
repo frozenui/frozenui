@@ -14,7 +14,9 @@ $bordercolor : #e0e0e0;
 .ui-border,.ui-border-radius{
     border: 1px solid $bordercolor;
 }
-
+.ui-border-radius{
+    border-radius: 3px;
+}
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .ui-border,.ui-border-radius {position: relative; border: 0;}
     .ui-border-t,.ui-border-b,.ui-border-l,.ui-border-r,.ui-border-tb{border: 0;}
@@ -95,5 +97,6 @@ $bordercolor : #e0e0e0;
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
+        border-radius: 6px;
     }
 }

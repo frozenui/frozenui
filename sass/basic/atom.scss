@@ -19,8 +19,6 @@
     color: #f28c48;
 }
 
-
-
 /**
  * 垂直上下居中
  */
@@ -33,7 +31,24 @@
 	text-align: center;
 	height: 200px; /* 需要重置 */
 }
-
+/**
+ * 平铺
+ */
+.ui-tiled{
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ui-tiled li{
+    -webkit-box-flex: 1;
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
 
  /**
  * 红点提醒

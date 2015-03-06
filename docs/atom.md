@@ -19,7 +19,8 @@
 ````html
 <ul class="border-list">
 	<li class="ui-border-t">上边框</li>
-	<li class="ui-border">边框</li>
+	<li class="ui-border-radius">圆角边框</li>
+  <li class="ui-border">边框</li>
 	<li class="ui-border-b">下边框</li>
 	<li class="ui-border-tb">上下边框</li>
 	<li class="ui-border-l">左边框</li>
@@ -32,6 +33,15 @@
 <div class="ui-center" style="height:100px;">
 	<p>居中</p>
 </div>
+````
+###平铺
+
+````html
+<ul class="ui-tiled">
+    <li>平铺</li>
+    <li>平铺</li>
+    <li>平铺</li>
+</ul>
   ````
 ###带箭头的链接
 

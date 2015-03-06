@@ -26,7 +26,7 @@
 	position: relative;
 	padding-left: 15px;
 
-	label:not(.ui-switch):not(.ui-checkout):not(.ui-radio){
+	label:not(.ui-switch){
 		width: 95px;
 		position: absolute;
 		text-align: left;
@@ -34,10 +34,13 @@
 	}
 
 	input:not([type="checkbox"]),
-	textarea {
+	textarea{
 		width: 100%;
 		padding-left: 95px;
 		box-sizing: border-box;
+	}
+	.ui-select{
+		margin-left: 95px;
 	}
 
 }
@@ -125,4 +128,13 @@
 	margin-top: -7px;
 }
 
-	
+/* 列表checkbox和radio */
+.ui-form-item-checkbox,.ui-form-item-radio{
+	padding-left: 55px;
+}
+.ui-form-item-checkbox .ui-checkbox,.ui-form-item-radio .ui-radio {
+	position:absolute;
+	top: -4px;
+	left: 15px;
+}
+

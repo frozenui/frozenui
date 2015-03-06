@@ -47,7 +47,7 @@ body {
   background-color: #f8f9fa;
   -webkit-user-select: none;
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
@@ -65,9 +65,7 @@ li {
   list-style: none; }
 
 input,
-button,
-textarea,
-select {
+button {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -78,7 +76,7 @@ select {
 
 a, button, input, select, textarea, a:focus, button:focus, input:focus, select:focus, textarea:focus, [onclick] {
   outline: 0;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 a {
   -webkit-touch-callout: none;

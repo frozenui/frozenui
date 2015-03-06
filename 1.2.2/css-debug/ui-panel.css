@@ -1,7 +1,6 @@
 .ui-panel {
   overflow: hidden;
-  background-color: #fff;
-  margin-top: 10px; }
+  margin-bottom: 10px; }
 
 .ui-panel h3 {
   font-size: 17px;
@@ -9,11 +8,19 @@
   position: relative;
   overflow: hidden; }
 
-.ui-panel-nocontent h3 {
+.ui-panel-card {
+  background-color: #fff; }
+
+.ui-panel-card h3 {
   padding: 10px 0 10px 10px; }
 
+.ui-panel-subtitle {
+  font-size: 14px;
+  color: #808080;
+  margin-left: 10px; }
+
 .ui-panel-title-tips {
-  font-size: 13px;
+  font-size: 14px;
   color: #808080;
   position: absolute;
   right: 24px;
