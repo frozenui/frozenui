@@ -30,7 +30,7 @@ android 2.3 +，ios 4.0 + 。
 
 使用`grunt build`会编译代码，然后使用`nico server`开启nico测试，访问[127.0.0.1:8000](127.0.0.1:8000)调试页面
 
-使用`grunt commit --log=logtest` 命令会做好打包压缩部署ftp等操作
+使用`grunt --log=logtest` 命令会做好打包压缩部署ftp等操作
 
 也可以使用`grunt`命令打包压缩部署ftp，然后使用nico命令生成站点和git命令提交，需要配置一个.ftppass文件：
 {
