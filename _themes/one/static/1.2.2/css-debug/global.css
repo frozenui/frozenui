@@ -312,7 +312,7 @@ em {
 .ui-header .ui-icon-return {
   position: relative; }
   .ui-header .ui-icon-return:before {
-    background: url(../img/icon.png?_bid=306) no-repeat -25px -75px;
+    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.2/img/icon.png?_bid=306) no-repeat -25px -75px;
     -webkit-background-size: 150px auto;
     content: "";
     display: block;
@@ -460,6 +460,19 @@ em {
 
   .ui-border-t, .ui-border-b, .ui-border-l, .ui-border-r, .ui-border-tb {
     border: 0; }
+
+  .ui-border:before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #e0e0e0;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    padding: 1px;
+    -webkit-box-sizing: border-box; }
 
   .ui-border-t {
     background-position: left top;
@@ -1935,15 +1948,27 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 
 .ui-panel h3 {
   font-size: 17px;
-  padding: 6px 0 6px 10px;
+  padding: 6px 10px;
   position: relative;
   overflow: hidden; }
 
-.ui-panel-card {
+.ui-panel-pure h3 {
+  font-size: 14px;
+  color: #808080;
+  padding: 6px 15px 6px 0;
+  margin-left: 15px; }
+
+.ui-panel-card, .ui-panel-simple {
   background-color: #fff; }
 
 .ui-panel-card h3 {
-  padding: 10px 0 10px 10px; }
+  padding: 10px;
+  font-size: 16px; }
+
+.ui-panel-simple h3 {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 10px; }
 
 .ui-panel-subtitle {
   font-size: 14px;
@@ -1963,6 +1988,9 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
 
 .ui-panel .ui-grid-halve, .ui-panel .ui-grid-trisect {
   margin-top: -10px; }
+
+.ui-panel-cnt {
+  padding: 10px; }
 
 .ui-loading {
   -webkit-animation: rotate 1s steps(12) infinite; }
