@@ -30,19 +30,6 @@
   .ui-border-t, .ui-border-b, .ui-border-l, .ui-border-r, .ui-border-tb {
     border: 0; }
 
-  .ui-border:before {
-    content: "";
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 1px solid #e0e0e0;
-    -webkit-transform: scale(0.5);
-    -webkit-transform-origin: 0 0;
-    padding: 1px;
-    -webkit-box-sizing: border-box; }
-
   .ui-border-t {
     background-position: left top;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)); }

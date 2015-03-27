@@ -20,19 +20,6 @@ $bordercolor : #e0e0e0;
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .ui-border,.ui-border-radius {position: relative; border: 0;}
     .ui-border-t,.ui-border-b,.ui-border-l,.ui-border-r,.ui-border-tb{border: 0;}
-    .ui-border:before{
-        content:"";
-        width: 200%;
-        height: 200%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 1px solid $bordercolor;
-        -webkit-transform:scale(.5);
-        -webkit-transform-origin: 0 0;
-        padding: 1px;
-        -webkit-box-sizing: border-box;
-    }
     .ui-border-t{
         background-position: left top; 
         background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor), to($bordercolor));
