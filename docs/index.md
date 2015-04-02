@@ -132,7 +132,7 @@ Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库�
 ````
 3.直接下载
 
-另外提供下载地址：[http://frozenui.github.io/frozenui.zip](http://frozenui.github.io/frozenui.zip)
+另外提供下载地址：[https://github.com/frozenui/demo/archive/gh-pages.zip](https://github.com/frozenui/demo/archive/gh-pages.zip)
 
 4.访问我们的github仓库
 [https://github.com/frozenui/frozenui](https://github.com/frozenui/frozenui)，自行 clone 到本地。 
