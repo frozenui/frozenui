@@ -1,30 +1,54 @@
-@import "basic/reset";
-@import "basic/atom";
-@import "basic/layout";
-@import "basic/ui-border";
-@import "basic/ui-avatar";
-@import "basic/ui-icon";
-@import "basic/ui-btn";
-@import "basic/ui-btn-group";
-@import "basic/ui-dialog";
-@import "basic/ui-tips";
-@import "basic/ui-tips-news";
-@import "basic/ui-poptips";
-@import "basic/ui-tooltips";
-@import "basic/ui-tab";
-@import "basic/ui-table";
-@import "basic/ui-list";
-@import "basic/ui-loading";
-@import "basic/ui-notice";
-@import "basic/ui-form";
-@import "basic/ui-checkbox";
-@import "basic/ui-switch";
-@import "basic/ui-radio";
-@import "basic/ui-select";
-@import "basic/ui-searchbar";
-@import "basic/ui-slider";
-@import "basic/ui-grid";
-@import "basic/ui-progress";
-@import "basic/ui-panel";
-@import "basic/animation";
+@charset "UTF-8";
+
+// 参考 https://github.com/fayching/ionic/blob/master/scss/ionic.scss
+
+@import
+
+// Variables
+    "base/mixin",
+    "base/variable",
+
+//  基础样式    
+    "base/reset",
+    "base/type",
+    "base/icon",
+
+// 辅助类    
+    "util/border",
+    "util/arrowlink",
+    "util/nowrap",
+    "util/placehold",
+    "util/grid",
+    "util/layout",
+
+// UI 组件
+    "component/badge",
+    "component/reddot",
+    "component/avatar",
+    "component/label",
+    "component/tag",
+    "component/btn",
+    "component/btn-group",
+    "component/tips", 
+    "component/tips-news",
+    "component/tooltips", 
+    "component/table",
+    "component/list",
+    "component/notice",
+    "component/form",
+    "component/checkbox",
+    "component/switch",
+    "component/radio",
+    "component/select",
+    "component/input",
+    "component/searchbar",
+    "component/slider", 
+    "component/panel",
+    "component/progress",
+    "component/tab",
+    "component/loading",
+    "component/poptips", 
+    "component/dialog",
+    "component/selector",
+    "component/actionsheet";
 

@@ -1,0 +1,19 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-btn-group{
+    display: -webkit-box;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+}
+.ui-btn-group button{
+    display: block;
+    -webkit-box-flex: 1;
+    margin-right: $button-group-margin;
+    &:first-child{
+        margin-left: $button-group-margin;
+    }
+}

@@ -1,0 +1,69 @@
+@@include('include/header.html',{"name": "layout","desc": "布局"})
+
+<section id="layout">
+    <div class="demo-item">
+        <p class="demo-desc">平铺</p>
+        <div class="demo-block">
+            <ul class="ui-tiled">
+                <li><div>菜单</div><i>1</i></li>
+                <li><div>菜单</div><i>2</i></li>
+                <li><div>菜单</div><i>3</i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="demo-item">
+        <p class="demo-desc">居中</p>
+        <div class="demo-block">
+            <div class="ui-center">
+                <p>垂直上下居中</p>
+                <p>垂直上下居中</p>
+            </div>
+            <div class="ui-center-hor">
+                <p>一行内垂直上下居中</p><p>一行内垂直上下居中</p>
+            </div>
+            
+        </div>
+    </div> 
+    <div class="demo-item">
+        <p class="demo-desc">布局1</p>
+        <div class="demo-block">
+            <header class="ui-header ui-header-stable ui-border-b">
+                <i class="ui-icon-return" onclick="history.back()"></i><h1>layout</h1><button class="ui-btn">回首页</button>
+            </header>
+            <footer class="ui-footer ui-footer-stable ui-border-t">
+                <ul class="ui-tiled">
+                    <li><div>菜单</div><i>1</i></li>
+                    <li><div>菜单</div><i>2</i></li>
+                    <li><div>菜单</div><i>3</i></li>
+                </ul>
+            </footer>
+            <section class="ui-container ui-center">
+                内容
+            </section>
+         </div>
+    </div>
+    <div class="demo-item">
+        <p class="demo-desc">布局2</p>
+        <div class="demo-block">
+            <header class="ui-header ui-header-positive ui-border-b">
+                <h1>标题</h1>
+            </header>
+            <div class="ui-footer ui-footer-stable ui-btn-group ui-border-t">
+                <button class="ui-btn-lg">
+                    拒绝
+                </button>
+                <button class="ui-btn-lg">
+                    拒绝
+                </button>
+                <button class="ui-btn-lg ui-btn-primary">
+                    同意
+                </button>
+            </div>
+            <section class="ui-container ui-center">
+                内容
+            </section>
+         </div>
+    </div> 
+</section>
+
+@@include('include/footer.html')

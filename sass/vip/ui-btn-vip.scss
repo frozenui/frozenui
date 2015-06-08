@@ -1,11 +1,15 @@
-@charset "utf-8";
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
 /**
  * 开通会员按钮
  */
 .ui-btn-vip{
-    height: 25px;
-    line-height: 25px;
-    padding: 0 12px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 13px;
     display: inline-block;
     position: relative;
     text-align: center;

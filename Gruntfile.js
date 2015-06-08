@@ -1,175 +1,157 @@
-module.exports =function(grunt) {
+module.exports = function(grunt) {
+    // 自动加载 grunt 任务
+    require('load-grunt-tasks')(grunt);
+
+    // 统计 grunt 任务耗时
+    require('time-grunt')(grunt);
 
     // 配置
     grunt.initConfig({
-
-        pkg : grunt.file.readJSON('package.json'),
-        
-        meta: {
-            zipPath:'i.gtimg.cn/vipstyle/frozenui'
-        }, 
-        cssmin: {
-            minify: {
-                expand: true,
-                cwd: '<%=pkg.version%>/css-debug/',
-                src: ['**/*.css'],       
-                dest:'<%=pkg.version%>/css/'
-            }
-        },
+        pkg: grunt.file.readJSON('package.json'),
         imagemin: {
-        /* 压缩图片大小 */
+            /* 压缩图片大小 */
             dist: {
                 options: {
                     optimizationLevel: 3 //定义 PNG 图片优化水平
                 },
                 files: [{
                     expand: true,
-                    cwd: 'img/<%=pkg.version%>/',
+                    cwd: 'img/',
                     src: ['**/*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
-                    dest: 'img/<%=pkg.version%>/' // 优化后的图片保存位置
+                    dest: 'img/' // 优化后的图片保存位置
                 }]
             }
         },
-        copy : {
-            //图片没修改的情况不用处理
-            img:{
-                expand: true,
-                cwd: 'img/<%=pkg.version%>/',
-                src: ['**/*'],
-                dest:'<%=pkg.version%>/img/'
-            },
-            frozencss:{
-                src: ['<%=pkg.version%>/css/global.css'],
-
-                dest: '<%=meta.zipPath%>/'
-            },
-            staticcss:{
-                src: ['<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css',
-                    '<%=pkg.version%>/css-debug/frozen.css','<%=pkg.version%>/img/**'],
-                dest: '_themes/one/static/'
-            },
-            
-            downloadcss:{
-                src: ['<%=pkg.version%>/css/frozen.css','<%=pkg.version%>/css/global.css','<%=pkg.version%>/css-debug/global.css',
-                    '<%=pkg.version%>/css-debug/frozen.css','<%=pkg.version%>/img/**'],
-                dest: '../frozenui.github.io/demo/frozenui/'
-            }
-        },
-        compress: {
-            main: {
-                options: {
-                    archive: 'i.gtimg.cn.zip'
-                },
-                expand: true,
-                src: ['i.gtimg.cn/**']
-            }
-        },
-        sass: {
-            dist: {
-                expand: true,
-                cwd : 'sass',
-                src: ['*.scss'],
-                dest:'<%=pkg.version%>/css-debug/',
-                ext:'.css'
-            },
-            dist2: {
-                expand: true,
-                cwd : 'sass/basic',
-                src: ['*.scss'],
-                dest:'<%=pkg.version%>/css-debug/',
-                ext:'.css'
-            },
-            dist3: {
-                expand: true,
-                cwd : 'sass/vip',
-                src: ['*.scss'],
-                dest:'<%=pkg.version%>/css-debug/',
-                ext:'.css'
-            }
-
-        },
         autoprefixer: {
-
             options: {
                 diff: false,
-                browsers: ['ios 5','android 2.3']
+                browsers: ['ios 5', 'android 2.3']
             },
 
             // prefix all files
             multiple_files: {
                 expand: true,
-                src: ['<%=pkg.version%>/css-debug/*.css','<%=pkg.version%>/css-debug/**/*.css']
+                src: ['css/*.css', 'css/**/*.css']
+            }
+        },
+        sass: {
+            dist: {
+                expand: true,
+                flatten: true,
+                cwd: 'sass',
+                src: ['**/*.scss'],
+                dest: 'css/',
+                ext: '.css'
+            }
+        },
+        cssmin: {
+            dist: {
+                expand: true,
+                cwd: 'css/',
+                src: ['**/*.css'],
+                dest: 'dist/css/'
+            }
+        },
+        uglify: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'js/',
+                    src: '**/*.js',
+                    dest: 'dist/js/'
+                }, {
+                    expand: true,
+                    cwd: 'lib/',
+                    src: 'zeptojs/zepto.min.js',
+                    dest: 'dist/lib/'
+                }]
+            }
+        },
+        jshint: {
+            files: ['Gruntfile.js', 'js/**/*.js', '!js/frozen.js'],
+            options: {
+                // 允许多行字符拼接, 在 *.tpl 中常用
+                "multistr": true,
+                // 允许使用类似这种表达式 $.isFunction( fn ) && fn();
+                "expr": true,
+                // 允许使用类似这种函数  new Function("obj","return 123")
+                "evil": true
+            }
+        },
+        concat: {
+            // TODO 这里的 zepto 来自 coupon/js/lib/zepto 含业务代码，应抽离
+            zepto: {
+                src: [
+                    'lib/zeptojs/zepto.js',
+                    'lib/zeptojs/event.js',
+                    'lib/zeptojs/extend/touch.js', // modify fix ios 误点击
+                    'lib/zeptojs/detect.js',
+                    'lib/zeptojs/extend/util.js',
+                    'lib/zeptojs/fx.js',
+                    'lib/zeptojs/data.js'
+                ],
+                dest: 'lib/zeptojs/zepto.min.js'
+            },
+            js: {
+                src: [
+                    'js/core/core.js',
+                    'js/core/tap.js',
+                    'js/component/*.js'
+                ],
+                dest: 'js/frozen.js'
+            }
+        },
+        includereplace: {
+            html: {
+                expand: true,
+                cwd: 'demo/src',
+                src: ['*.html'],
+                dest: 'demo/'
+
+            }
+        },
+        jsdoc: {
+            doc: {
+                src: ['js/**/*.js', '!js/baymax.js'],
+                options: {
+                    destination: 'jsdoc'
+                }
             }
         },
         watch: {
-            scripts: {
+            demo: {
+                files: [
+                    'demo/**/*.html'
+                ],
+                tasks: ['newer:includereplace']
+            },
+            css: {
                 files: [
                     'sass/**/*.scss'
                 ],
-                tasks: ['sass','cssmin','copy','compress']
-            }
-        },
-        ftpush: {
-            build: {
-                auth: {
-                    host: '119.147.200.113',
-                    port: 21000,
-                    authKey: 'key'
-                },
-                src: '<%=pkg.version%>',
-                dest: '/frozenui/<%=pkg.version%>',
-                exclusions: ['.DS_Store', 'node_modules','.sass-cache','.git','.grunt','.svn','_site'],
-                simple: true
-            }
-        },
-        shell: {
-            // svn:{
-            //    command: [
-            //         'svn up',
-            //         'svn add * --force',
-            //         'svn commit -m <%=grunt.option("log")%>'
-            //     ].join('&&') 
-            // },
-            git: {
-                command: [
-                    'git add -A',
-                    'git commit -m <%=grunt.option("log")%>',
-                    'git pull origin master',
-                    'git push origin master'
-                ].join('&&')
+                tasks: ['sass', 'cssmin']
             },
-            gitsite:{
-                command: [
-                    'cd _site',
-                    'git add -A',
-                    'git commit -m <%=grunt.option("log")%>',
-                    'git pull origin gh-pages',
-                    'git push origin gh-pages'
-                ].join('&&')
-            },
-            build:{
-              command: 'nico build'
-            },
-            server:{
-              command: 'nico server'  
+            js: {
+                files: ['js/**/*.js', '!js/frozen.js'],
+                tasks: ['concat:js', 'jsdoc']
             }
-            
         }
     });
 
-    // 载入concat和css插件，分别对于合并和压缩
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-compress');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-ftpush');
-    grunt.loadNpmTasks('grunt-shell');  
     // 默认任务
-    grunt.registerTask('build', ['sass','autoprefixer','cssmin','imagemin','copy','compress']);
-    grunt.registerTask('default',['sass','autoprefixer','cssmin','imagemin','copy','compress','ftpush']);
-    
+    grunt.registerTask('default', [
+        'sass',
+        'autoprefixer',
+        'cssmin',
+        'imagemin',
 
+        'concat:zepto',
+        'concat:js',
+        'uglify',
+        'includereplace',
+        'watch'
+    ]);
+
+    // 根据 docs 的代码片段生成 demo 到 demo/*.html
+    grunt.registerTask('demo', ['includereplace']);
 };

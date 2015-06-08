@@ -1,0 +1,162 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+/* 三等分 */
+.ui-grid-trisect{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    margin-right: -7px;
+}
+.ui-grid-trisect>li{
+    width: 33.3333%;
+    padding-right: 7px;
+    padding-bottom: 10px;
+    float: left;
+    position: relative;
+    -webkit-box-sizing: border-box; 
+}
+.ui-grid-trisect-img{
+    padding-top: 149.47%;
+}
+.ui-grid-trisect h4{
+    position: relative;
+    margin: 7px 0 3px;
+}
+.ui-grid-trisect h4 span{
+    display: inline-block;
+    margin-left: 12px;
+    color: $txt-info;
+}
+/* 二等分 */
+.ui-grid-halve{
+    overflow: hidden;
+    padding: 10px 0 0 10px;
+}
+.ui-grid-halve>li{
+    width: 50%;
+    padding: 0 10px 10px 0;
+    float: left;
+    position: relative;
+    -webkit-box-sizing: border-box; 
+}
+.ui-grid-halve-img{
+    padding-top: 55.17%;
+}
+.ui-grid-trisect-img,.ui-grid-halve-img{
+    @include placehold-img;
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    width: 100%;
+    &.active{
+        opacity: .5;
+    }
+    
+}
+.ui-row{
+    display: block;
+    overflow: hidden;
+}
+.ui-col {
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+}
+.ui-col-10 {
+    width: 10%;
+}
+.ui-col-20 {
+    width: 20%;
+}
+.ui-col-25 {
+    width: 25%;
+}
+.ui-col-33 {
+    width: 33.3333%;
+}
+.ui-col-50 {
+    width: 50%;
+}
+.ui-col-67 {
+    width: 66.6666%;
+}
+.ui-col-75 {
+    width: 75%;
+}
+.ui-col-80 {
+    width: 80%;
+}
+.ui-col-90 {
+    width: 90%;
+}
+.ui-row-flex{
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    .ui-col{
+        float: none;
+        -webkit-box-flex: 1;
+    }
+    .ui-col-10 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 10%;
+        max-width: 10%; 
+    }
+    .ui-col-20 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 20%;
+        max-width: 20%; 
+    }
+    .ui-col-25 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 25%;
+        max-width: 25%; 
+    }
+    .ui-col-33 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 33.3333%;
+        max-width: 33.3333%; 
+    }
+    .ui-col-50 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 50%;
+        max-width: 50%; 
+    }
+    .ui-col-67 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 66.6666%;
+        max-width: 66.6666%; 
+    }
+    .ui-col-75 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 75%;
+        max-width: 75%; 
+    }
+    .ui-col-80 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 80%;
+        max-width: 80%; 
+    }
+    .ui-col-90 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 90%;
+        max-width: 90%; 
+    }
+}
+.ui-row-flex-start {
+  -webkit-box-align: start; }
+
+.ui-row-flex-end {
+  -webkit-box-align: end; }
+
+.ui-row-flex-center {
+  -webkit-box-align: center; }
+

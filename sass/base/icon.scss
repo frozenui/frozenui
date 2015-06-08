@@ -1,0 +1,15 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+@font-face {font-family: "iconfont";
+    src: url('../font/iconfont.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+.ui-icon-close,.ui-icon-search,.ui-icon-return{
+    @include icon;
+}
+.ui-icon-close:before { content: $icon-close; color: $icon-color;}
+.ui-icon-search:before { content: $icon-search; color: $icon-color;}
+.ui-icon-return:before { content: $icon-return; }
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>FrozenUI Demo</title>
+        <link rel="stylesheet" href="../css/frozen.css">
+        <link rel="stylesheet" href="demo.css">
+        <script src="../lib/zeptojs/zepto.min.js"></script>
+        <script src="../js/frozen.js"></script>
+    </head>
+    
+    <body>
+        <header class="ui-header ui-header-positive ui-border-b">
+            <i class="ui-icon-return" onclick="history.back()"></i><h1>util</h1><button class="ui-btn">回首页</button>
+        </header>
+        <footer class="ui-footer ui-footer-btn">
+            <ul class="ui-tiled ui-border-t">
+                <li data-href="index.html" class="ui-border-r"><div>基础样式</div></li>
+                <li data-href="ui.html" class="ui-border-r"><div>UI组件</div></li>
+                <li data-href="js.html"><div>JS插件</div></li>
+            </ul>
+        </footer>
+        <section class="ui-container">
+
+
+
+
+<section id="util">
+    
+    <div class="demo-item">
+        <p class="demo-desc">1px解决方案</p>
+        <div class="demo-block">
+            <ul class="ui-list-text border-list">
+                <li class="ui-border-t">上边框</li>
+                <li class="ui-border">边框</li>
+                <li class="ui-border-b">下边框</li>
+                <li class="ui-border-tb">上下边框</li>
+                <li class="ui-border-l">左边框</li>
+                <li class="ui-border-r">右边框</li>
+                <li class="ui-border-radius">
+                    圆角边框
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="demo-item">
+        <p class="demo-desc">箭头链接</p>
+        <div class="demo-block">
+            <div class="ui-arrowlink">箭头链接</div>
+        </div>
+    </div>
+    <div class="demo-item">
+        <p class="demo-desc">文字截断</p>
+        <div class="demo-block">
+            <div class="ui-nowrap">
+                一行文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略
+            </div>
+            <div class="ui-nowrap-multi">
+                多行文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        </section><!-- /.ui-container-->
+        <script>
+        $('ul li').click(function(){
+            location.href= $(this).data('href');
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+    </body>
+</html>

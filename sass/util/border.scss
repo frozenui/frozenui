@@ -1,0 +1,75 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+/* 1px hack */
+
+.ui-border-t {border-top: 1px solid $bordercolor;}
+.ui-border-b {border-bottom: 1px solid $bordercolor}
+.ui-border-tb{
+    border-top: $bordercolor 1px solid;
+    border-bottom: $bordercolor 1px solid;
+    background-image:none;
+}
+.ui-border-l{border-left: 1px solid $bordercolor;}
+.ui-border-r{border-right: 1px solid $bordercolor;}
+.ui-border{
+    border: 1px solid $bordercolor;
+}
+.ui-border-radius{
+    @include border-radius;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-border{position: relative; border: 0;}
+    .ui-border-t,.ui-border-b,.ui-border-l,.ui-border-r,.ui-border-tb{border: 0;}
+    .ui-border-t{
+        background-position: left top; 
+        background-image: $border-t;
+    }
+    .ui-border-b{
+        background-position: left bottom;
+        background-image: $border-b;
+    }
+    .ui-border-t,
+    .ui-border-b,
+    .ui-border-tb{
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+    }
+    .ui-border-tb{
+        background-image: $border-t,$border-b;
+        background-position: top, bottom;
+    }
+    .ui-border-l{
+        background-position: left top; 
+        background-image: $border-l;
+    }
+    .ui-border-r{
+        background-position: right top;
+        background-image: $border-r;
+    }
+    .ui-border-l,
+    .ui-border-r{
+        background-repeat: repeat-y;
+        -webkit-background-size: 1px 100%;
+    }
+    .ui-border:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; 
+        background-image: $border-t,$border-r,$border-b,$border-l;
+        -webkit-background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+                background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+        background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+        background-repeat: no-repeat;
+        background-position: top, right, bottom, left;
+        padding: 1px;
+        -webkit-box-sizing: border-box;
+        z-index: $z-index-border;
+        pointer-events: none;
+    }
+}

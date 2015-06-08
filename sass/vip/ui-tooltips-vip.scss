@@ -1,20 +1,26 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
 .ui-tooltips-vip{
-    width:100%;
+    width: 100%;
     position: relative;
-    z-index: 10;
+    z-index: $z-index-tooltips;
 }
 .ui-tooltips-vip .ui-tooltips-cnt {
     background-color: rgba(248,248,248,.95);
     color: #000;
-    line-height: 44px;
-    height: 44px;
+    line-height: $line-height-bar;
+    height: $line-height-bar;
     padding-left: 10px;
-    font-size: 14px;
-    display: table;
+    font-size: 0;
+    display: -webkit-box;
     width: 100%;
 }
 .ui-tooltips-vip .ui-tooltips-cnt span{
     font-size: 14px;
+    display: block;
 }
 .ui-tooltips-vip .ui-tooltips-cnt i{
     margin-right: 6px;
