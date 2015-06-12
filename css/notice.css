@@ -40,7 +40,7 @@
 .ui-notice-btn {
   width: 100%;
   -webkit-box-sizing: border-box;
-  padding: 50px 15px; }
+  padding: 50px 15px 15px; }
 
 .ui-notice-btn button {
   margin: 10px 0px; }

@@ -15,7 +15,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
-  .ui-tooltips-cnt .ui-icon-close {
+  .ui-tooltips-cnt .ui-icon-close:before {
     font-size: 40px;
     color: rgba(0, 0, 0, 0.2);
     margin-left: -10px;
@@ -33,7 +33,7 @@
 .ui-tooltips-guide .ui-tooltips-cnt {
   color: #00a5e0;
   background-color: rgba(205, 242, 255, 0.95); }
-  .ui-tooltips-guide .ui-tooltips-cnt .ui-icon-close {
+  .ui-tooltips-guide .ui-tooltips-cnt .ui-icon-close:before {
     color: rgba(0, 165, 224, 0.2); }
 
 .ui-tooltips-guide:active .ui-tooltips-cnt {

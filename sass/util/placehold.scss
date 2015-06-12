@@ -2,8 +2,11 @@
 
     "../base/mixin",
     "../base/variable";
-
 .ui-placehold{
+    padding-top: 31.25%;
+    position: relative;
+}
+.ui-placehold-cnt{
     color: $txt-muted;
     position: absolute;
     top: 0;
@@ -17,12 +20,8 @@
     height: 100%;
     z-index: $z-index-placehold;
 }
-.ui-placehold-wrap{
-    padding-top: 31.25%;
-    position: relative;
-}
+
 .ui-placehold-img{
-    padding-top: 31.25%;
     @include placehold-img;
     img{
         width: 100%;

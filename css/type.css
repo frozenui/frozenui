@@ -47,11 +47,3 @@ h6, .ui-txt-tips {
 /* 同em */
 .ui-txt-highlight {
   color: #ff8444; }
-
-.ui-txt-padding {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-.ui-txt-padding-lg {
-  padding-left: 15px;
-  padding-right: 15px; }

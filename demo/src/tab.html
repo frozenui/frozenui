@@ -16,25 +16,20 @@
 			        <li>内容3</li>
 			    </ul>
 			</div>
-			<script class="demo-script">
-			(function (){
-	            var tab = new fz.Scroll('.ui-tab', {
-			        role: 'tab',
-			        autoplay: true,
-			        interval: 3000
-			    });
-			    /* 滑动开始前 */
-			    tab.on('beforeScrollStart', function(fromIndex, toIndex) {
-			        console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
-			    })
-
-			    /* 滑动结束 */
-			    tab.on('scrollEnd', function(curPage) {
-			        console.log(curPage);// curPage 当前页
-			    });
-			})();
-	        </script>
 		</div>
+		<script class="demo-script">
+		(function (){
+            var tab = new fz.Scroll('.ui-tab', {
+		        role: 'tab',
+		        autoplay: true,
+		        interval: 3000
+		    });
+		    /* 滑动开始前 */
+		    tab.on('beforeScrollStart', function(fromIndex, toIndex) {
+		        console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
+		    })
+		})();
+        </script>
 	</div>
 </section>
 @@include('include/footer.html')

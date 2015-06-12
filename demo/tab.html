@@ -5,6 +5,7 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="format-detection" content="telephone=no">
         <title>FrozenUI Demo</title>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
         <link rel="stylesheet" href="../css/frozen.css">
         <link rel="stylesheet" href="demo.css">
         <script src="../lib/zeptojs/zepto.min.js"></script>
@@ -43,25 +44,20 @@
 			        <li>内容3</li>
 			    </ul>
 			</div>
-			<script class="demo-script">
-			(function (){
-	            var tab = new fz.Scroll('.ui-tab', {
-			        role: 'tab',
-			        autoplay: true,
-			        interval: 3000
-			    });
-			    /* 滑动开始前 */
-			    tab.on('beforeScrollStart', function(fromIndex, toIndex) {
-			        console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
-			    })
-
-			    /* 滑动结束 */
-			    tab.on('scrollEnd', function(curPage) {
-			        console.log(curPage);// curPage 当前页
-			    });
-			})();
-	        </script>
 		</div>
+		<script class="demo-script">
+		(function (){
+            var tab = new fz.Scroll('.ui-tab', {
+		        role: 'tab',
+		        autoplay: true,
+		        interval: 3000
+		    });
+		    /* 滑动开始前 */
+		    tab.on('beforeScrollStart', function(fromIndex, toIndex) {
+		        console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
+		    })
+		})();
+        </script>
 	</div>
 </section>
 

@@ -5,6 +5,7 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="format-detection" content="telephone=no">
         <title>FrozenUI Demo</title>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
         <link rel="stylesheet" href="../css/frozen.css">
         <link rel="stylesheet" href="demo.css">
         <script src="../lib/zeptojs/zepto.min.js"></script>
@@ -47,31 +48,34 @@
 			        </div>
 			    </div>        
 			</div>
-			<div class="ui-btn" id="btn1">模板创建弹窗</div>
-    		<div class="ui-btn" id="btn2">DOM创建弹窗</div>
 			<script class="demo-script">
-			(function (){
-	            $("#btn1").tap(function(){
-				    var dia=$.dialog({
-				        title:'温馨提示',
-				        content:'温馨提示内容',
-				        button:["确认","取消"]
-				    });
-
-				    dia.on("dialog:action",function(e){
-				        console.log(e.index)
-				    });
-				    dia.on("dialog:hide",function(e){
-				        console.log("dialog hide")
-				    });
-				})
-				$("#btn2").tap(function(){
-				    $(".ui-dialog").dialog("show");
-				})
-			})();
-	        </script>
+			$(".ui-dialog").dialog("show");
+			</script>
+			
 		</div>
-		
+		<div class="ui-btn" id="btn1">模板创建弹窗</div>
+    	<div class="ui-btn" id="btn2">DOM创建弹窗</div>
+    	<script class="demo-script">
+		(function (){
+            $("#btn1").click(function(){
+			    var dia=$.dialog({
+			        title:'温馨提示',
+			        content:'温馨提示内容',
+			        button:["确认","取消"]
+			    });
+
+			    dia.on("dialog:action",function(e){
+			        console.log(e.index)
+			    });
+			    dia.on("dialog:hide",function(e){
+			        console.log("dialog hide")
+			    });
+			})
+			$("#btn2").click(function(){
+			    $(".ui-dialog").dialog("show");
+			})
+		})();
+        </script>
 	</div>
 </section>
 

@@ -14,13 +14,17 @@
     top: 0;
     height: $header-height;
     line-height: $header-height;
+    
+}
+.ui-header-stable,
+.ui-header-positive{
     padding: 0 10px;
     box-sizing: border-box;
 }
-
 .ui-header-stable,
 .ui-footer-stable{
     background-color: $stable-bg;
+
 }
 .ui-header-positive,
 .ui-footer-positive{
@@ -72,16 +76,14 @@
     height: 150px;
 }
 /**
- * 一行内垂直上下居中
+ * 一行内上下居中
  */
 .ui-center-hor{
     width: 100%;
     display: -webkit-box;
-    -webkit-box-orient: vertical;
     -webkit-box-pack: center;
     -webkit-box-align: center;
     text-align: center;
-    -webkit-box-orient: horizontal;
 }
 /**
  * 平铺

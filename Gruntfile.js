@@ -56,13 +56,15 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: 'js/',
+                    flatten: true,
+                    cwd: 'js',
                     src: '**/*.js',
-                    dest: 'dist/js/'
+                    dest: 'dist/js/',
+                    ext: '.js'
                 }, {
                     expand: true,
                     cwd: 'lib/',
-                    src: 'zeptojs/zepto.min.js',
+                    src: 'zeptojs/**/*.js',
                     dest: 'dist/lib/'
                 }]
             }
@@ -79,23 +81,20 @@ module.exports = function(grunt) {
             }
         },
         concat: {
-            // TODO 这里的 zepto 来自 coupon/js/lib/zepto 含业务代码，应抽离
             zepto: {
                 src: [
                     'lib/zeptojs/zepto.js',
                     'lib/zeptojs/event.js',
-                    'lib/zeptojs/extend/touch.js', // modify fix ios 误点击
-                    'lib/zeptojs/detect.js',
-                    'lib/zeptojs/extend/util.js',
-                    'lib/zeptojs/fx.js',
-                    'lib/zeptojs/data.js'
+                    'lib/zeptojs/touch.js', 
+                    'lib/zeptojs/ajax.js',
+                    'lib/zeptojs/ie.js',
+                    'lib/zeptojs/form.js'
                 ],
                 dest: 'lib/zeptojs/zepto.min.js'
             },
             js: {
                 src: [
                     'js/core/core.js',
-                    'js/core/tap.js',
                     'js/component/*.js'
                 ],
                 dest: 'js/frozen.js'

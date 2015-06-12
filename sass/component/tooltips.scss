@@ -17,7 +17,7 @@
     padding-left: 10px;
     padding-right: 30px;
     @include nowrap;
-    .ui-icon-close{
+    .ui-icon-close:before{
         font-size: 40px;
         color: rgba(0,0,0,.2); 
         margin-left: -10px;
@@ -37,7 +37,7 @@
 .ui-tooltips-guide .ui-tooltips-cnt{
     color: $txt-link;
     background-color: rgba( 205, 242, 255 ,.95);
-    .ui-icon-close{
+    .ui-icon-close:before{
         color: rgba(0,165,224,.2);
     }
 }

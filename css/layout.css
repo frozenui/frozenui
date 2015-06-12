@@ -9,7 +9,10 @@
 .ui-header {
   top: 0;
   height: 45px;
-  line-height: 45px;
+  line-height: 45px; }
+
+.ui-header-stable,
+.ui-header-positive {
   padding: 0 10px;
   box-sizing: border-box; }
 
@@ -69,16 +72,14 @@
   height: 150px; }
 
 /**
- * 一行内垂直上下居中
+ * 一行内上下居中
  */
 .ui-center-hor {
   width: 100%;
   display: -webkit-box;
-  -webkit-box-orient: vertical;
   -webkit-box-pack: center;
   -webkit-box-align: center;
-  text-align: center;
-  -webkit-box-orient: horizontal; }
+  text-align: center; }
 
 /**
  * 平铺
