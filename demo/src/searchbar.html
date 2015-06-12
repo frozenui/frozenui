@@ -1,0 +1,31 @@
+@@include('include/header.html',{"name": "searchbar","desc": "搜索框"})
+
+<section id="searchbar">
+    <div class="demo-item">
+        <p class="demo-desc">搜索框</p>
+        <div class="demo-block">
+            <div  class="ui-searchbar-wrap ui-border-b">
+                <div class="ui-searchbar ui-border-radius">
+                    <i class="ui-icon-search"></i>
+                    <div class="ui-searchbar-text">搜索号码（2-10位）</div>
+                    <div class="ui-searchbar-input"><input value="" type="tel" placeholder="搜索号码（2-10位）" autocapitalize="off"></div>
+                    <i class="ui-icon-close"></i>
+                </div>
+                <button class="ui-searchbar-cancel">取消</button>
+            </div>
+            <!-- <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.1/frozen.js?_bid=304"></script> -->
+            <script src="js/frozen.js"></script>
+            <script type="text/javascript">
+                $('.ui-searchbar').tap(function(){
+                    $('.ui-searchbar-wrap').addClass('focus');
+                    $('.ui-searchbar-input input').focus();
+                });
+                $('.ui-searchbar-cancel').tap(function(){
+                    $('.ui-searchbar-wrap').removeClass('focus');
+                });
+            </script>
+        </div>
+    </div>
+</section>
+
+@@include('include/footer.html')

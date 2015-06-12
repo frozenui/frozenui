@@ -1,0 +1,34 @@
+@@include('include/header.html',{"name": "scroller","desc": "模拟滚动"})
+
+<section id="scroller">
+    <div class="demo-item">
+        <p class="demo-desc">模拟滚动</p>
+        <div class="demo-block">
+            <div class="ui-scroller ui-border">
+                <ul>
+                    <li>1、活动时间：2014.09.25 - 2014.10.31</li>
+                    <li>2、活动面向“预付费（Q点Q币、QQ卡、财付通/银行卡）开通超级QQ”的用户。以下支付方式的用户不 在本次活动范围内，“同时开通预付费超级QQ和短信版超级QQ”、“同时开通预付费超级QQ与短信版 会员”、“同时开通预付费超级QQ与iOS会员”、“开通短信版超级QQ”及“宽带/固定电话/超级/”（相关活动可留意超级QQ官网消息）。</li>
+                    <li>3、活动中，成长值的转移规则：① QQ会员成长值 = 超级QQ成长值 -（超级QQ成长值/超级QQ成长速度）*（超级QQ成长速度 - 同条件下会员成长速度）② 若您在转移前同时开通了超级QQ和QQ会员，转移后会员成长值在上述成长值（超Q转换而来）与原会员成长值间取较高者。较低部分，转换成等值的QQ会员加倍成长卡赠送给您。</li>
+                    <li>4、活动时间：2014.09.25 - 2014.10.311、活动间2014.09.25 - 2014.10.31、活动时间：  2014.09.25 -  活动时间活动时间活动时间  </li>
+                    <li>5、活动时间：2014.09.25 - 2014.10.31</li>
+                    <li>6、活动面向“预付费（Q点Q币、QQ卡、财付通/银行卡）开通超级QQ”的用户。以下支付方式的用户不 在本次活动范围内，“同时开通预付费超级QQ和短信版超级QQ”、“同时开通预付费超级QQ与短信版 会员”、“同时开通预付费超级QQ与iOS会员”、“开通短信版超级QQ”及“宽带/固定电话/超级/”（相关活动可留意超级QQ官网消息）。</li>
+                    <li>7、活动中，成长值的转移规则：① QQ会员成长值 = 超级QQ成长值 -（超级QQ成长值/超级QQ成长速度）*（超级QQ成长速度 - 同条件下会员成长速度）② 若您在转移前同时开通了超级QQ和QQ会员，转移后会员成长值在上述成长值（超Q转换而来）与原会员成长值间取较高者。较低部分，转换成等值的QQ会员加倍成长卡赠送给您。</li>
+                    <li>8、活动时间：2014.09.25 - 2014.10.311、活动间2014.09.25 - 2014.10.31、活动时间：  2014.09.25 -  活动时间活动时间活动时间  </li>
+                </ul>
+            </div>
+
+            <!-- <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.1/frozen.js?_bid=304"></script> -->
+            <script src="frozenjs/1.0.1/frozen.js"></script>
+            <script>
+                window.addEventListener('load', function(){
+
+                    var myScroll = new fz.Scroll('.ui-scroller', {
+                        scrollY: true
+                    });
+                })
+            </script>
+        </div>
+    </div>
+</section>
+
+@@include('include/footer.html')

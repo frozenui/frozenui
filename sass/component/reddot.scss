@@ -1,0 +1,65 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+    
+ /**
+ * 红点提醒
+ */
+.ui-reddot{
+     position: relative;
+     display: inline-block;
+     line-height: 22px;
+     padding: 0 6px;
+     &:after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: $reddot-bg;
+        border-radius: 5px;
+        right: -3px;
+        top: -3px;
+        background-clip: padding-box;
+    }
+}
+.ui-reddot-static{
+    display: block;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    &:after{
+        top: 0;
+        right: 0;
+    }
+}
+ /* 带白边的 */
+.ui-reddot-border{
+    @extend .ui-reddot;
+    &:before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 5px;
+        right: -4px;
+        top: -4px;
+        background-clip: padding-box;
+        padding: 1px;
+    }
+}
+ /* 小号的 */
+
+.ui-reddot-s{
+    @extend .ui-reddot;
+    &:after{
+        width: 6px;
+        height: 6px;
+        top: -5px;
+        right: -5px;
+    }
+}
+

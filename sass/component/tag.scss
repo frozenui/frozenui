@@ -1,0 +1,192 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-tag-t{
+    position: relative;
+}
+.ui-tag-t:before,
+.ui-tag-t:after{
+    height: 20px;
+    left: 0;
+    top: 0;
+    z-index: $z-index-tag;
+    display: block;
+}
+
+.ui-tag-t:before,
+.ui-tag-vip:before,
+.ui-tag-svip:before,
+.ui-tag-selected:after{
+    @include icon;
+    position: absolute;
+}
+.ui-tag-t:before{   
+    content: $icon-tag;
+    line-height: 20px;
+    color: #ff0000;
+}
+
+.ui-tag-t:after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    text-align: right;
+    line-height: 20px;
+    font-size: 12px;
+    color: #fff;
+    padding-right: 14px;
+}
+.ui-tag-b{
+    position: relative;
+}
+.ui-tag-b:before{
+    position: absolute;
+    font-size: 10px;
+    width: 28px;
+    height: 13px;
+    line-height: 13px;
+    bottom: 0;
+    right: 0;
+    z-index: $z-index-tag;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+}
+.ui-tag-freelimit,
+.ui-tag-free,
+.ui-tag-last,
+.ui-tag-limit,
+.ui-tag-act,
+.ui-tag-xy,
+.ui-tag-vip,
+.ui-tag-svip{
+    @extend .ui-tag-b;
+}
+.ui-tag-vip:before,
+.ui-tag-svip:before{
+    font-size: 32px;
+    text-indent: -2px;
+    border-radius: 2px;
+}
+.ui-tag-vip:before{
+    background-color: #ff0000;
+    color: #fffadf;
+    content:  $icon-vip;
+    
+}
+.ui-tag-svip:before{
+    background-color: #ffd400;
+    color: #b7440e;
+    content: $icon-svip;
+}
+.ui-tag-freelimit:before{
+    background-color: #18b4ed;
+    content: '限免';
+}
+.ui-tag-free:before{
+    background-color: #5fb336;
+    content: '免费';
+}
+.ui-tag-last:before{
+    background-color: #8f6adb;
+    content: '绝版';
+}
+.ui-tag-limit:before{
+    background-color: #3385e6;
+    content: '限量';
+}
+.ui-tag-act:before{
+    background-color: #00c795;
+    content: '活动';
+}
+.ui-tag-xy:before{
+    background-color: #d7ba42;
+    content: '星影';
+}
+.ui-tag-freemonthly:before {
+    background-color: #ff7f0d;
+    content: '包月';
+}
+.ui-tag-onsale:before{
+    background-color: #00c795;
+    content: '特价';
+}
+
+.ui-tag-hot,
+.ui-tag-new,
+.ui-tag-s-hot,
+.ui-tag-s-new,
+.ui-tag-pop-hot,
+.ui-tag-pop-new{
+    @extend .ui-tag-t;
+}
+
+.ui-tag-hot:after,
+.ui-tag-s-hot:after,
+.ui-tag-pop-hot:after{
+    content: '热';
+}
+.ui-tag-new:after,
+.ui-tag-s-new:after,
+.ui-tag-pop-new:after{
+    content: '新';
+}
+.ui-tag-hot:before,
+.ui-tag-s-hot:before,
+.ui-tag-pop-hot:before{
+    color: #ff7200;
+}
+.ui-tag-s-hot:before,
+.ui-tag-s-new:before{
+    content: $icon-tag-s;
+    left: -2px;
+}
+.ui-tag-s-hot:after,
+.ui-tag-s-new:after{
+    width: 16px;
+    padding-right: 12px;
+}
+
+.ui-tag-selected:after{
+    content: $icon-checked; 
+    color: $positive-bg;
+    right: -5px;
+    top: -5px;
+    z-index: $z-index-tag;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 13px;
+    line-height: 26px;
+    text-indent: -3px;
+}
+.ui-tag-wrap{
+    display: inline-block;
+    position: relative;
+    padding-right: 32px;
+    .ui-tag-vip,
+    .ui-tag-svip{
+        position: static;
+    }
+    .ui-tag-vip:before,
+    .ui-tag-svip:before{
+        top: 50%;
+        margin-top: -7px;
+    }
+}
+.ui-tag-pop-hot:before,
+.ui-tag-pop-new:before{
+    content: $icon-tag-pop;
+    left: -10px;
+    top: 1px;
+}
+.ui-tag-pop-hot:after,
+.ui-tag-pop-new:after{
+    font-size: 11px;
+    padding-right: 0;
+    text-align: center;
+    left: -5px;
+}
+

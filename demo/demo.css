@@ -1,0 +1,82 @@
+body{
+  -webkit-user-select:initial;
+}
+body>a{display: none;}
+.demo-desc{
+    padding: 10px;
+    font-size: 16px;
+    color: #7CAE23;
+}
+.demo-block{
+    position: relative;
+}
+.demo-block .ui-header,
+.demo-block .ui-footer{
+    position: absolute;
+}
+.ui-tab-nav{
+    top: 45px;
+}
+.ui-tab-content{
+    margin-top: 45px;
+}
+.demo-block > .ui-list,.demo-block >.ui-form,.demo-block >.ui-tooltips{margin-bottom: 20px;}
+.content h3{
+    padding: 0 15px;
+    line-height: 44px;
+    font-size: 15px;  
+}
+.border-list{
+    background-color: #fff;
+}
+.border-list li{
+    width: 100px;
+    margin: 10px auto;
+    -webkit-box-pack: center;
+    text-align: center;
+}
+.ui-btn-group-bottom{bottom: 56px;}
+.ui-table{
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+.ui-scroller {width:auto;height:300px;margin:20px;padding:10px;overflow:hidden;}
+.ui-scroller li {margin-bottom:10px;}
+.ui-notice{
+    top: 0;
+    z-index: -1;
+    height: 400px;
+}
+
+
+.icon-lists li{
+  float:left;
+  height: 100px;
+  text-align: center;
+  margin: 10px;
+  
+}
+.icon-lists li i{
+    font-size: 32px;
+    line-height: 44px;
+}
+.icon-lists .ui-icon{
+  margin: 10px 0;
+  color: #000;
+}
+.ui-col{
+    padding: 5px;
+    border: 1px solid #ddd;
+    background: #777;
+    text-align: center;
+    box-sizing: border-box;
+}
+.ui-row-flex-ver{
+  min-height: 100px;
+}
+.test-img {
+    width: 50px;
+    height: 50px;
+    background: #777;
+}

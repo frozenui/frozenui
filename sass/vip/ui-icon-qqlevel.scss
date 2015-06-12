@@ -1,4 +1,8 @@
-﻿@charset "utf-8";
+﻿@import
+
+    "../base/mixin",
+    "../base/variable";
+
 /*QQ等级图标*/
 .ui-icon-qqlevel{
     display: inline-block;
