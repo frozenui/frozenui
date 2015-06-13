@@ -1,0 +1,22 @@
+{
+  "name": "zepto",
+  "description": "Shim repository for the Zepto.js JavaScript library.",
+  "version": "1.1.6",
+  "main": "./zepto.js",
+  "ignore": [
+    "*.md",
+    ".gitignore",
+    "Makefile"
+  ],
+  "homepage": "https://github.com/components/zepto",
+  "_release": "1.1.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.6",
+    "commit": "508d1a05bde2454251a86273ccef7a3368857719"
+  },
+  "_source": "git://github.com/components/zepto.git",
+  "_target": "~1.1.6",
+  "_originalSource": "zepto",
+  "_direct": true
+}
