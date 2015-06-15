@@ -5,7 +5,10 @@
   "authors": [
     "chinakids <494063570@qq.com>"
   ],
-  "main": "dist/css/frozen.css,dist/js/frozen.js",
+  "main": [
+    "dist/css/frozen.css",
+    "dist/js/frozen.js"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
