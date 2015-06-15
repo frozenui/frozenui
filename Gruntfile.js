@@ -39,7 +39,7 @@ module.exports = function(grunt) {
                 expand: true,
                 flatten: true,
                 cwd: 'sass',
-                src: ['**/*.scss'],
+                src: ['frozen.scss'],
                 dest: 'css/',
                 ext: '.css'
             }
@@ -61,11 +61,6 @@ module.exports = function(grunt) {
                     src: '**/*.js',
                     dest: 'dist/js/',
                     ext: '.js'
-                }, {
-                    expand: true,
-                    cwd: 'lib/',
-                    src: 'zeptojs/**/*.js',
-                    dest: 'dist/lib/'
                 }]
             }
         },
@@ -81,17 +76,6 @@ module.exports = function(grunt) {
             }
         },
         concat: {
-            zepto: {
-                src: [
-                    'lib/zeptojs/zepto.js',
-                    'lib/zeptojs/event.js',
-                    'lib/zeptojs/touch.js', 
-                    'lib/zeptojs/ajax.js',
-                    'lib/zeptojs/ie.js',
-                    'lib/zeptojs/form.js'
-                ],
-                dest: 'lib/zeptojs/zepto.min.js'
-            },
             js: {
                 src: [
                     'js/core/core.js',
@@ -115,6 +99,13 @@ module.exports = function(grunt) {
                 options: {
                     destination: 'jsdoc'
                 }
+            }
+        },
+        copy:{
+            lib:{
+                files: [
+                    {expand: true, src: ['lib/**'], dest: 'dist/'}
+                ]
             }
         },
         watch: {
@@ -143,11 +134,10 @@ module.exports = function(grunt) {
         'autoprefixer',
         'cssmin',
         'imagemin',
-
-        'concat:zepto',
         'concat:js',
         'uglify',
         'includereplace',
+        'copy',
         'watch'
     ]);
 
