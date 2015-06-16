@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
-// 参考 https://github.com/fayching/ionic/blob/master/scss/ionic.scss
-
 @import
 
 // Variables
     "base/mixin",
     "base/variable",
 
-//  基础样式    
+//  基础样式   
+    "base/rem", 
     "base/reset",
-    "base/type",
     "base/icon",
+    "base/icon-full",
+    "base/type",
 
 // 辅助类    
     "util/border",

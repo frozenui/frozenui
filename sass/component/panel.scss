@@ -5,7 +5,7 @@
 
 .ui-panel{
     overflow: hidden;
-    margin-bottom: 10px;
+    padding-top: 10px;
     .ui-grid-halve,.ui-grid-trisect{
         padding-top: 0;
     }
@@ -28,8 +28,14 @@
 .ui-panel-pure h2,h3{
     color: $txt-info;
 }
+.ui-panel-card{
+    margin-bottom: 10px;
+}
 .ui-panel-card,.ui-panel-simple{
     background-color: $default-bg;
+}
+.ui-panel-simple{
+    padding-top: 0;
 }
 .ui-panel-subtitle{
     font-size: $font-size-sub;

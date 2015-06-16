@@ -17,6 +17,13 @@
     height: #{$size}px;
     -webkit-border-radius: $border-radius-max;
     overflow: hidden;
+    & > span{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+    }
     
 }
 @mixin icon{
