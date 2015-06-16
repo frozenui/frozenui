@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'img/',
                     src: ['*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
-                    dest: '<%=pkg.version%>/img' // 优化后的图片保存位置
+                    dest: '_dist/img' // 优化后的图片保存位置
                 }]
             }
         },
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'css/',
                 src: ['**/*.css'],
-                dest: '<%=pkg.version%>/css/'
+                dest: '_dist/css/'
             }
         },
         uglify: {
@@ -60,13 +60,13 @@ module.exports = function(grunt) {
                     flatten: true,
                     cwd: 'js',
                     src: '**/*.js',
-                    dest: '<%=pkg.version%>/js/',
+                    dest: '_dist/js/',
                     ext: '.js'
                 }, {
                     expand: true,
                     cwd: 'lib/',
                     src: '**/*.js',
-                    dest: '<%=pkg.version%>/lib/'
+                    dest: '_dist/lib/'
                 }]
             }
         },
@@ -102,6 +102,11 @@ module.exports = function(grunt) {
             }
         },
         copy: {
+            main: {
+                expand: true,
+                src: '_dist',
+                dest: '<%=pkg.version%>'
+            },
             dist: {
                 expand: true,
                 src: ['font/**/*','img/**/*',
@@ -109,6 +114,7 @@ module.exports = function(grunt) {
                 'js/frozen.js','lib/zepto.min.js'],
                 dest: 'dist'
             }
+
         },
         includereplace: {
             html: {

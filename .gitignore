@@ -23,6 +23,7 @@ node_modules/
 .cache
 .sass-cache
 _site/
+_dist/
 *.build
 *.grunt
 .ftppass
