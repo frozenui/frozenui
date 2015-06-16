@@ -650,8 +650,10 @@ h6, .ui-txt-tips {
     width: 100%;
     height: 100%;
     display: block;
+    overflow: hidden;
     background-repeat: no-repeat;
-    -webkit-background-size: cover; }
+    -webkit-background-size: cover;
+    -webkit-border-radius: 200px; }
 
 .ui-avatar-lg,
 .ui-avatar-one {
@@ -664,8 +666,10 @@ h6, .ui-txt-tips {
     width: 100%;
     height: 100%;
     display: block;
+    overflow: hidden;
     background-repeat: no-repeat;
-    -webkit-background-size: cover; }
+    -webkit-background-size: cover;
+    -webkit-border-radius: 200px; }
 
 .ui-avatar-s {
   width: 40px;
@@ -676,8 +680,10 @@ h6, .ui-txt-tips {
     width: 100%;
     height: 100%;
     display: block;
+    overflow: hidden;
     background-repeat: no-repeat;
-    -webkit-background-size: cover; }
+    -webkit-background-size: cover;
+    -webkit-border-radius: 200px; }
 
 /* 平铺场景 */
 .ui-avatar-tiled {
@@ -690,8 +696,10 @@ h6, .ui-txt-tips {
     width: 100%;
     height: 100%;
     display: block;
+    overflow: hidden;
     background-repeat: no-repeat;
-    -webkit-background-size: cover; }
+    -webkit-background-size: cover;
+    -webkit-border-radius: 200px; }
 
 /**
  * 按钮
