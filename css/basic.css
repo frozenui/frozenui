@@ -802,33 +802,6 @@ h6, .ui-txt-tips {
 .ui-btn-wrap {
   padding: 15px 10px; }
 
-.ui-btn-progress {
-  width: 55px;
-  padding: 0;
-  overflow: hidden; }
-  .ui-btn-progress .ui-btn-inner {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    overflow: hidden;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px; }
-    .ui-btn-progress .ui-btn-inner span {
-      display: inline-block;
-      color: white;
-      position: absolute;
-      width: 55px;
-      left: 0; }
-  .ui-btn-progress.disabled, .ui-btn-progress:disabled {
-    background-color: #fefefe;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
-    color: #cccccc;
-    border: 1px solid #cacccd;
-    -webkit-background-clip: padding-box;
-            background-clip: padding-box; }
-
 .ui-btn-s {
   padding: 0;
   width: 55px;

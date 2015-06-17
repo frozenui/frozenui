@@ -1415,6 +1415,28 @@ h6, .ui-txt-tips {
 .ui-btn-wrap {
   padding: 15px 10px; }
 
+.ui-btn-s {
+  padding: 0;
+  width: 55px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-btn, .ui-btn-lg, .ui-btn-s, .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
+    border: 0; }
+
+  .ui-btn-lg:before {
+    border-radius: 10px; }
+
+  .ui-btn-primary:before {
+    border: 1px solid #0baae4; }
+
+  .ui-btn-danger:before {
+    border: 1px solid #f43d30; }
+
+  .ui-btn-progress.disabled:before, .ui-btn-progress:disabled:before {
+    border: 1px solid #cacccd; } }
 .ui-btn-progress {
   width: 55px;
   padding: 0;
@@ -1442,28 +1464,6 @@ h6, .ui-txt-tips {
     -webkit-background-clip: padding-box;
             background-clip: padding-box; }
 
-.ui-btn-s {
-  padding: 0;
-  width: 55px;
-  height: 25px;
-  line-height: 25px;
-  font-size: 13px; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-btn, .ui-btn-lg, .ui-btn-s, .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
-    border: 0; }
-
-  .ui-btn-lg:before {
-    border-radius: 10px; }
-
-  .ui-btn-primary:before {
-    border: 1px solid #0baae4; }
-
-  .ui-btn-danger:before {
-    border: 1px solid #f43d30; }
-
-  .ui-btn-progress.disabled:before, .ui-btn-progress:disabled:before {
-    border: 1px solid #cacccd; } }
 .ui-btn-group {
   display: -webkit-box;
   width: 100%;
