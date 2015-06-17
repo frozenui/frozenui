@@ -110,6 +110,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 expand: true,
+                cwd: '_dist',
                 src: ['font/**/*','img/**/*',
                 'css/basic.css','css/frozen.css',
                 'js/frozen.js','lib/zepto.min.js'],
