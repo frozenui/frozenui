@@ -1,14 +1,14 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
 
 @font-face {font-family: "iconfont";
-  src: url('../font/iconfont-full.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  src: url('../font/iconfont-full.ttf') format('truetype');
  
 }
-.ui-icon {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
+.ui-icon,[class^="ui-icon-"] {
+    @include icon;
 }
 .ui-icon-add:before { content: "\e615"; }
 .ui-icon-more:before { content: "\e616"; }

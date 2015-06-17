@@ -17,8 +17,8 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'img/',
-                    src: ['**/*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
-                    dest: 'img/' // 优化后的图片保存位置
+                    src: ['*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
+                    dest: '_dist/img' // 优化后的图片保存位置
                 }]
             }
         },
@@ -43,13 +43,14 @@ module.exports = function(grunt) {
                 dest: 'css/',
                 ext: '.css'
             }
+            
         },
         cssmin: {
             dist: {
                 expand: true,
                 cwd: 'css/',
                 src: ['**/*.css'],
-                dest: 'dist/css/'
+                dest: '_dist/css/'
             }
         },
         uglify: {
@@ -59,13 +60,13 @@ module.exports = function(grunt) {
                     flatten: true,
                     cwd: 'js',
                     src: '**/*.js',
-                    dest: 'dist/js/',
+                    dest: '_dist/js/',
                     ext: '.js'
                 }, {
                     expand: true,
                     cwd: 'lib/',
-                    src: 'zeptojs/**/*.js',
-                    dest: 'dist/lib/'
+                    src: '**/*.js',
+                    dest: '_dist/lib/'
                 }]
             }
         },
@@ -90,7 +91,7 @@ module.exports = function(grunt) {
                     'lib/zeptojs/ie.js',
                     'lib/zeptojs/form.js'
                 ],
-                dest: 'lib/zeptojs/zepto.min.js'
+                dest: 'lib/zepto.min.js'
             },
             js: {
                 src: [
@@ -99,6 +100,21 @@ module.exports = function(grunt) {
                 ],
                 dest: 'js/frozen.js'
             }
+        },
+        copy: {
+            main: {
+                expand: true,
+                src: '_dist',
+                dest: '<%=pkg.version%>'
+            },
+            dist: {
+                expand: true,
+                src: ['font/**/*','img/**/*',
+                'css/basic.css','css/frozen.css',
+                'js/frozen.js','lib/zepto.min.js'],
+                dest: 'dist'
+            }
+
         },
         includereplace: {
             html: {
@@ -122,7 +138,7 @@ module.exports = function(grunt) {
                 files: [
                     'demo/**/*.html'
                 ],
-                tasks: ['newer:includereplace']
+                tasks: ['includereplace']
             },
             css: {
                 files: [
@@ -147,6 +163,7 @@ module.exports = function(grunt) {
         'concat:zepto',
         'concat:js',
         'uglify',
+        'copy',
         'includereplace',
         'watch'
     ]);
