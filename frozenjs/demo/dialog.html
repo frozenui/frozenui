@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link media="all" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.1/css/global.css?_bid=306" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <div class="ui-center">
+
+        <div class="ui-btn" id="btn1">模板创建弹窗</div>
+        <div class="ui-btn" id="btn2">DOM创建弹窗</div>
+    </div>
+    <div class="ui-dialog">
+        <div class="ui-dialog-cnt">
+            <div class="ui-dialog-bd">
+                <div>
+                    <h4>标题</h4>
+                    <div>内容</div></div>
+            </div>
+            <div class="ui-dialog-ft ui-btn-group">
+                <button type="button" data-role="button"  class="select" id="dialogButton">关闭</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/lib/sea.js"></script>
+    <script>
+        seajs.config({
+            base: "./js",
+            alias: {
+                "$": "lib/zepto.min.js"
+            }
+        })
+
+        // 加载入口模块
+        seajs.use(['./js/main']);
+    </script>
+</body>
+</html>

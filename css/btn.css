@@ -16,8 +16,7 @@
   vertical-align: top;
   color: #00a5e0;
   -webkit-box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px solid #cacccd;
   border-radius: 3px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -41,8 +40,7 @@
 .ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
   background: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn:after, .ui-btn-lg:after, .ui-btn-s:after {
   content: "";
@@ -57,37 +55,32 @@
   border-color: #0baae4;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
   color: white;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-primary:not(.disabled):not(:disabled):active, .ui-btn-primary.active {
   background: #1ca7da;
   border-color: #1ca7da;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-danger {
   background-color: #f75549;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fc6156), to(#f75549));
   color: white;
   border-color: #f43d30;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-danger:not(.disabled):not(:disabled):active, .ui-btn-danger.active {
   background: #e2574d;
   border-color: #e2574d;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
   border: 0;
   color: #cccccc;
   background: #e9ebec;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-lg {
   font-size: 18px;
@@ -99,33 +92,6 @@
 
 .ui-btn-wrap {
   padding: 15px 10px; }
-
-.ui-btn-progress {
-  width: 55px;
-  padding: 0;
-  overflow: hidden; }
-  .ui-btn-progress .ui-btn-inner {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    overflow: hidden;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px; }
-    .ui-btn-progress .ui-btn-inner span {
-      display: inline-block;
-      color: white;
-      position: absolute;
-      width: 55px;
-      left: 0; }
-  .ui-btn-progress.disabled, .ui-btn-progress:disabled {
-    background-color: #fefefe;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
-    color: #cccccc;
-    border: 1px solid #cacccd;
-    -webkit-background-clip: padding-box;
-            background-clip: padding-box; }
 
 .ui-btn-s {
   padding: 0;

@@ -11,9 +11,6 @@
 		margin-left: $wrap-padding;
 		line-height: $line-height-txt;
 		display: -webkit-box;
-		@media (max-width: 320px) {
-	        margin-left: $wrap-padding-s;
-	    }
 	}
 }
 .ui-list-pure > li{
@@ -26,9 +23,6 @@
 	padding-top: $txt-padding-top;
 	padding-bottom: $txt-padding-bottom;
 	padding-right: $wrap-padding;
-	@media (max-width: 320px) {
-        padding-right: $wrap-padding-s;
-    }
 	font-size: $font-size-info;
 	-webkit-box-align: center;
 }
@@ -40,9 +34,6 @@
 .ui-list-cover > li{
 	padding-left: $wrap-padding;
 	margin-left: 0px;
-	@media (max-width: 320px) {
-        padding-left: $wrap-padding-s;
-    }
 }
 .ui-list > li.ui-border-t:first-child,
 .ui-list > li:first-child > .ui-border-t {
@@ -90,9 +81,6 @@
 	-webkit-box-orient:vertical;
 	-webkit-box-pack:center;
 	padding-right: $wrap-padding;
-	@media (max-width: 320px) {
-        padding-right: $wrap-padding-s;
-    }
 }
 .ui-list-text .ui-list-info{
 	padding-top: 0;
@@ -115,9 +103,6 @@
 	background-color: $active-bg;
 	padding-left: $wrap-padding;
 	margin-left: 0px;
-	@media (max-width: 320px) {
-        padding-left: $wrap-padding-s;
-    }
 }
 .ui-list-active > li:active,
 .ui-list > li.active,
@@ -134,12 +119,57 @@
 }
 
 .ui-list-link > li{
-	padding-right: $wrap-link-padding;
-	@media (max-width: 320px) {
-        padding-right: $wrap-link-padding-s;
-    }
+	padding-right: $wrap-link-padding;    
+}
+.ui-list-link .ui-list-info{
+	padding-right: 0;
 }
 /*  功能类 */
-.ui-list-function > li{
-	-webkit-box-align: center;
+.ui-list-function .ui-list-info{
+	padding-right: 75px;
+}
+.ui-list-function .ui-btn{
+	position: absolute;
+	top: 50%;
+	right: $wrap-padding;
+	margin-top: -15px;
+}
+.ui-list-function .ui-btn-s{
+	margin-top: -12px;
+}
+.ui-list-function.ui-list-link .ui-list-info{
+	padding-right: 60px;
+}
+.ui-list-function.ui-list-link .ui-btn{
+	right: $wrap-link-padding;
+}
+@media (max-width: 320px) {
+	.ui-list > li{
+		margin-left: $wrap-padding-s;
+	}
+	.ui-list-text > li,
+	.ui-list-pure > li,
+	.ui-list-info{
+		padding-right: $wrap-padding-s;
+	}
+	.ui-list-cover > li,
+	.ui-list-active > li:active,
+	.ui-list li.active{
+		padding-left: $wrap-padding-s;
+	}
+	.ui-list-link > li{
+		padding-right: $wrap-link-padding-s;
+	}
+	.ui-list-function .ui-list-info{
+		padding-right: 70px;
+	}
+	.ui-list-function .ui-btn{
+		right: $wrap-padding-s;
+	}
+	.ui-list-function.ui-list-link .ui-list-info{
+		padding-right: 55px;
+	}
+	.ui-list-function.ui-list-link .ui-btn{
+		right: $wrap-link-padding-s;
+	}
 }

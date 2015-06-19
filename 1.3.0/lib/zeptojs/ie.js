@@ -1,1 +1,0 @@
-!function(){try{getComputedStyle(void 0)}catch(a){var b=getComputedStyle;window.getComputedStyle=function(a){try{return b(a)}catch(c){return null}}}}();
