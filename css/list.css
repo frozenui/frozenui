@@ -7,9 +7,6 @@
     margin-left: 15px;
     line-height: 24px;
     display: -webkit-box; }
-    @media (max-width: 320px) {
-      .ui-list > li {
-        margin-left: 10px; } }
 
 .ui-list-pure > li {
   display: block; }
@@ -23,10 +20,6 @@
   padding-right: 15px;
   font-size: 16px;
   -webkit-box-align: center; }
-  @media (max-width: 320px) {
-    .ui-list-text > li,
-    .ui-list-pure > li {
-      padding-right: 10px; } }
 
 .ui-list-text h4,
 .ui-list-text p {
@@ -36,9 +29,6 @@
 .ui-list-cover > li {
   padding-left: 15px;
   margin-left: 0px; }
-  @media (max-width: 320px) {
-    .ui-list-cover > li {
-      padding-left: 10px; } }
 
 .ui-list > li.ui-border-t:first-child,
 .ui-list > li:first-child > .ui-border-t {
@@ -97,9 +87,6 @@
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
   padding-right: 15px; }
-  @media (max-width: 320px) {
-    .ui-list-info {
-      padding-right: 10px; } }
 
 .ui-list-text .ui-list-info {
   padding-top: 0;
@@ -119,10 +106,6 @@
   background-color: #e5e6e7;
   padding-left: 15px;
   margin-left: 0px; }
-  @media (max-width: 320px) {
-    .ui-list-active > li:active,
-    .ui-list li.active {
-      padding-left: 10px; } }
 
 .ui-list-active > li:active,
 .ui-list > li.active,
@@ -154,11 +137,55 @@
       right: 10px; } }
 
 .ui-list-link > li {
-  padding-right: 30px; }
-  @media (max-width: 320px) {
-    .ui-list-link > li {
-      padding-right: 25px; } }
+  padding-right: 35px; }
+
+.ui-list-link .ui-list-info {
+  padding-right: 0; }
 
 /*  功能类 */
-.ui-list-function > li {
-  -webkit-box-align: center; }
+.ui-list-function .ui-list-info {
+  padding-right: 75px; }
+
+.ui-list-function .ui-btn {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -15px; }
+
+.ui-list-function .ui-btn-s {
+  margin-top: -12px; }
+
+.ui-list-function.ui-list-link .ui-list-info {
+  padding-right: 60px; }
+
+.ui-list-function.ui-list-link .ui-btn {
+  right: 35px; }
+
+@media (max-width: 320px) {
+  .ui-list > li {
+    margin-left: 10px; }
+
+  .ui-list-text > li,
+  .ui-list-pure > li,
+  .ui-list-info {
+    padding-right: 10px; }
+
+  .ui-list-cover > li,
+  .ui-list-active > li:active,
+  .ui-list li.active {
+    padding-left: 10px; }
+
+  .ui-list-link > li {
+    padding-right: 30px; }
+
+  .ui-list-function .ui-list-info {
+    padding-right: 70px; }
+
+  .ui-list-function .ui-btn {
+    right: 10px; }
+
+  .ui-list-function.ui-list-link .ui-list-info {
+    padding-right: 55px; }
+
+  .ui-list-function.ui-list-link .ui-btn {
+    right: 30px; } }

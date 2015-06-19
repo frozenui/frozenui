@@ -3,7 +3,7 @@
  * 未读数通知
  */
 .ui-badge, .ui-badge-muted, .ui-badge-num, .ui-badge-corner, .ui-badge-cornernum {
-  display: inline-block;
+  display: block;
   text-align: center;
   background: #f74c31;
   color: #fff;
@@ -12,8 +12,7 @@
   line-height: 16px;
   -webkit-border-radius: 8px;
   padding: 0 6px;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 /* 浅色的 */
 .ui-badge-muted {

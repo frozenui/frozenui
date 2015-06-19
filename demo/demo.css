@@ -67,13 +67,24 @@ body>a{display: none;}
 }
 .ui-col{
     padding: 5px;
-    border: 1px solid #ddd;
     background: #777;
     text-align: center;
     box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+.ui-flex{
+    border: 1px solid #ddd;
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+.ui-flex-ver{
+    border: 1px solid #ddd;
+    min-height: 80px;
+    margin-bottom: 10px;
 }
 .ui-row-flex-ver{
-  min-height: 100px;
+    border: 1px solid #ddd;
+    min-height: 100px;
 }
 .test-img {
     width: 50px;
