@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'img/',
-                    src: ['*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
+                    src: ['**/*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
                     dest: '_dist/img' // 优化后的图片保存位置
                 }]
             }
@@ -111,10 +111,17 @@ module.exports = function(grunt) {
             dist: {
                 expand: true,
                 cwd: '_dist',
-                src: ['font/**/*','img/**/*',
+                src: ['font/**/*','img/*.{png,jpg,jpeg}',
                 'css/basic.css','css/frozen.css',
                 'js/frozen.js','lib/zepto.min.js'],
                 dest: 'dist'
+            },
+            zip:{
+                expand: true,
+                cwd: '<%=pkg.version%>',
+                src: ['font/iconfont.ttf','img/**/*',
+                'css/basic.css','css/global.css'],
+                dest: 'i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
             }
 
         },
@@ -133,6 +140,15 @@ module.exports = function(grunt) {
                 options: {
                     destination: 'jsdoc'
                 }
+            }
+        },
+        compress: {
+            main: {
+                options: {
+                    archive: 'i.gtimg.cn.zip'
+                },
+                expand: true,
+                src: ['i.gtimg.cn/**']
             }
         },
         watch: {
@@ -169,7 +185,19 @@ module.exports = function(grunt) {
         'includereplace',
         'watch'
     ]);
+    grunt.registerTask('deploy', [
+        'sass',
+        'autoprefixer',
+        'cssmin',
+        'imagemin',
 
+        'concat:zepto',
+        'concat:js',
+        'uglify',
+        'copy',
+        'includereplace',
+        'compress'
+    ]);
     // 根据 docs 的代码片段生成 demo 到 demo/*.html
     grunt.registerTask('demo', ['includereplace']);
 };

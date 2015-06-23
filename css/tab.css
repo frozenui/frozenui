@@ -13,7 +13,8 @@
   display: -webkit-box;
   font-size: 16px;
   height: 45px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .ui-tab-content {
   margin-top: 45px;
@@ -31,7 +32,8 @@
   -webkit-box-flex: 1;
   text-align: center;
   color: #777777;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-bottom: 2px solid transparent;
   width: 100%; }
 

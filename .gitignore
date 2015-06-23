@@ -19,7 +19,7 @@ Thumbs.db
 build
 _site
 sea-modules
-node_modules/
+node_modules
 .cache
 .sass-cache
 _site/
@@ -27,3 +27,6 @@ _dist/
 *.build
 *.grunt
 .ftppass
+1.*
+i.gtimg.cn.zip
+i.gtimg.cn
