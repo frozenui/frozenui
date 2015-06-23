@@ -53,8 +53,8 @@ body>a{display: none;}
 .icon-lists li{
   float:left;
   height: 100px;
+  width: 106px;
   text-align: center;
-  margin: 10px;
   
 }
 .icon-lists li i{
@@ -64,6 +64,9 @@ body>a{display: none;}
 .icon-lists .ui-icon{
   margin: 10px 0;
   color: #000;
+}
+.code,.fontclass{
+    font-size: 12px;
 }
 .ui-col{
     padding: 5px;
