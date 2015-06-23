@@ -81,6 +81,10 @@
 	-webkit-box-orient:vertical;
 	-webkit-box-pack:center;
 	padding-right: $wrap-padding;
+	p{
+		color: $txt-info;
+		font-size: $font-size-sub;
+	}
 }
 .ui-list-text .ui-list-info{
 	padding-top: 0;

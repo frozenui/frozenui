@@ -87,6 +87,9 @@
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
   padding-right: 15px; }
+  .ui-list-info p {
+    color: #777777;
+    font-size: 14px; }
 
 .ui-list-text .ui-list-info {
   padding-top: 0;

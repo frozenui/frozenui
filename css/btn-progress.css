@@ -22,4 +22,5 @@
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
     color: #cccccc;
     border: 1px solid #cacccd;
-    background-clip: padding-box; }
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box; }

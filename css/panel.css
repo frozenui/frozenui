@@ -17,13 +17,15 @@
     .ui-panel h1 span, .ui-panel h2 span, .ui-panel h3 span {
       display: block; }
 
-.ui-panel-pure h2, h3 {
+.ui-panel-pure h2,
+.ui-panel-pure h3 {
   color: #777777; }
 
 .ui-panel-card {
   margin-bottom: 10px; }
 
-.ui-panel-card, .ui-panel-simple {
+.ui-panel-card,
+.ui-panel-simple {
   background-color: white; }
 
 .ui-panel-simple {

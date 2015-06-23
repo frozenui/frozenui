@@ -25,13 +25,15 @@
         } 
     }
 }
-.ui-panel-pure h2,h3{
+.ui-panel-pure h2,
+.ui-panel-pure h3{
     color: $txt-info;
 }
 .ui-panel-card{
     margin-bottom: 10px;
 }
-.ui-panel-card,.ui-panel-simple{
+.ui-panel-card,
+.ui-panel-simple{
     background-color: $default-bg;
 }
 .ui-panel-simple{
