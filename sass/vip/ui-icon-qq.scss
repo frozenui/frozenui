@@ -15,13 +15,16 @@
     display: block;
     width: 24px;
     height: 24px;
-    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_vip.png?_bid=306) -2px 0;
+    background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/vip/icon_vip.png) -2px 0;
     -webkit-background-size: 24px auto;
     position: absolute;
     line-height: 100px;
     top: -13px;
 }
-.ui-icon-vip,.ui-icon-svip,.ui-icon-yearsvip,.ui-icon-yearvip{
+.ui-icon-vip,
+.ui-icon-svip,
+.ui-icon-yearsvip,
+.ui-icon-yearvip{
     @extend .ui-icon-qq;
 }
 .ui-icon-vip:after{

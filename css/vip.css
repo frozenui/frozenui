@@ -1,17 +1,23 @@
 @charset "UTF-8";
-.ui-icon-qq, .ui-icon-vip, .ui-icon-svip, .ui-icon-yearsvip, .ui-icon-yearvip {
+.ui-icon-qq, .ui-icon-vip,
+.ui-icon-svip,
+.ui-icon-yearsvip,
+.ui-icon-yearvip {
   display: inline-block;
   width: 24px;
   height: 1px;
   position: relative;
   vertical-align: middle; }
 
-.ui-icon-qq:after, .ui-icon-vip:after, .ui-icon-svip:after, .ui-icon-yearsvip:after, .ui-icon-yearvip:after {
+.ui-icon-qq:after, .ui-icon-vip:after,
+.ui-icon-svip:after,
+.ui-icon-yearsvip:after,
+.ui-icon-yearvip:after {
   content: "";
   display: block;
   width: 24px;
   height: 24px;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_vip.png?_bid=306) -2px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/vip/icon_vip.png) -2px 0;
   -webkit-background-size: 24px auto;
   position: absolute;
   line-height: 100px;
@@ -41,7 +47,7 @@
   content: "";
   display: block;
   width: 16px;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_qqlevel_sprite.png?_bid=306) no-repeat;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/vip/icon_qqlevel_sprite.png?_bid=2134) no-repeat;
   background-repeat: no-repeat;
   position: absolute;
   line-height: 100px;
@@ -156,14 +162,12 @@
   vertical-align: top;
   color: #fff;
   -webkit-box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-vip:not(.disabled):not(:disabled):active, .ui-btn-vip.active {
   background-color: #1ba6d9;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-tooltips-vip {
   width: 100%;
@@ -177,8 +181,7 @@
   height: 44px;
   padding-left: 10px;
   font-size: 0;
-  display: -webkit-box;
-  width: 100%; }
+  display: -webkit-box; }
 
 .ui-tooltips-vip .ui-tooltips-cnt span {
   font-size: 14px;

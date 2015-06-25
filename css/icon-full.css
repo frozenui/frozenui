@@ -176,10 +176,10 @@
 .ui-icon-scan:before {
   content: "\e638"; }
 
-.ui-icon-svip:before {
+.ui-icon-tag-svip:before {
   content: "\e613"; }
 
-.ui-icon-vip:before {
+.ui-icon-tag-vip:before {
   content: "\e612"; }
 
 .ui-icon-male:before {

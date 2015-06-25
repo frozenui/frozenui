@@ -10,8 +10,7 @@
   height: 44px;
   padding-left: 10px;
   font-size: 0;
-  display: -webkit-box;
-  width: 100%; }
+  display: -webkit-box; }
 
 .ui-tooltips-vip .ui-tooltips-cnt span {
   font-size: 14px;

@@ -367,13 +367,13 @@
                 <li>
                 <i class="icon ui-icon">&#xe613;</i>
                     <div class="code">&amp;#xe613;</div>
-                    <div class="fontclass">.ui-icon-svip</div>
+                    <div class="fontclass">.ui-icon-tag-svip</div>
                 </li>
             
                 <li>
                 <i class="icon ui-icon">&#xe612;</i>
                     <div class="code">&amp;#xe612;</div>
-                    <div class="fontclass">.ui-icon-vip</div>
+                    <div class="fontclass">.ui-icon-tag-vip</div>
                 </li>
             
                 <li>
@@ -432,8 +432,10 @@
 
         </section><!-- /.ui-container-->
         <script>
-        $('ul li').click(function(){
-            location.href= $(this).data('href');
+        $('.ui-list li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
         });
         $('.ui-header .ui-btn').click(function(){
             location.href= 'index.html';

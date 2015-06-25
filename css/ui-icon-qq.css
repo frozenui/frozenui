@@ -1,16 +1,22 @@
-.ui-icon-qq, .ui-icon-vip, .ui-icon-svip, .ui-icon-yearsvip, .ui-icon-yearvip {
+.ui-icon-qq, .ui-icon-vip,
+.ui-icon-svip,
+.ui-icon-yearsvip,
+.ui-icon-yearvip {
   display: inline-block;
   width: 24px;
   height: 1px;
   position: relative;
   vertical-align: middle; }
 
-.ui-icon-qq:after, .ui-icon-vip:after, .ui-icon-svip:after, .ui-icon-yearsvip:after, .ui-icon-yearvip:after {
+.ui-icon-qq:after, .ui-icon-vip:after,
+.ui-icon-svip:after,
+.ui-icon-yearsvip:after,
+.ui-icon-yearvip:after {
   content: "";
   display: block;
   width: 24px;
   height: 24px;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.2.0/img/icon_vip.png?_bid=306) -2px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/vip/icon_vip.png) -2px 0;
   -webkit-background-size: 24px auto;
   position: absolute;
   line-height: 100px;
