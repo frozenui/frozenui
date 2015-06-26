@@ -60,7 +60,8 @@
   border-bottom-right-radius: 6px;
   display: -webkit-box;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-align: center;
   border-top: 1px solid #e0e0e0;
   height: 42px;
