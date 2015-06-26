@@ -30,7 +30,7 @@
     .ui-newstips-thumb{
         width: 30px;
         height: 30px;
-        @include placehold-img;
+        @include img;
     }
     div{
         display: -webkit-box;

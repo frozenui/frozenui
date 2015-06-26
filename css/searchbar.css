@@ -38,7 +38,8 @@
     border: none;
     background: none;
     color: black;
-    width: 100%; }
+    width: 100%;
+    padding: 4px 0; }
   .ui-searchbar.ui-border-radius {
     border-radius: 5px; }
   .ui-searchbar .ui-icon-search {

@@ -45,7 +45,7 @@
 .ui-list-thumb-s,
 .ui-list-img,
 .ui-list-icon{
-	@include placehold-img;
+	@include img;
 	margin: $list-img-margin;	
 }
 .ui-list-thumb {

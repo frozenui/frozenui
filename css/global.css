@@ -362,6 +362,7 @@ h6, .ui-txt-tips {
   z-index: -1; }
 
 .ui-placehold-img {
+  padding-top: 31.25%;
   position: relative; }
   .ui-placehold-img > span {
     width: 100%;
@@ -632,27 +633,6 @@ h6, .ui-txt-tips {
   -webkit-box-pack: center;
   -webkit-box-align: center; }
 
-.ui-justify {
-  text-align: justify;
-  font-size: 0; }
-  .ui-justify ul:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    height: 0;
-    overflow: hidden; }
-  .ui-justify li {
-    display: inline-block;
-    text-align: center; }
-  .ui-justify p {
-    font-size: 16px; }
-
-.ui-justify-flex {
-  width: 100%;
-  display: -webkit-box;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between; }
-
 /**
  * 圆角头像，列表场景
  */
@@ -901,11 +881,9 @@ h6, .ui-txt-tips {
   .ui-list-thumb-s > span,
   .ui-list-img > span,
   .ui-list-icon > span {
+    display: block;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 1;
     background-repeat: no-repeat;
     -webkit-background-size: cover; }
@@ -1412,11 +1390,9 @@ h6, .ui-txt-tips {
     height: 30px;
     position: relative; }
     .ui-newstips .ui-newstips-thumb > span {
+      display: block;
       width: 100%;
       height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
       z-index: 1;
       background-repeat: no-repeat;
       -webkit-background-size: cover; }
@@ -1615,7 +1591,8 @@ h6, .ui-txt-tips {
     border: none;
     background: none;
     color: black;
-    width: 100%; }
+    width: 100%;
+    padding: 4px 0; }
   .ui-searchbar.ui-border-radius {
     border-radius: 5px; }
   .ui-searchbar .ui-icon-search {

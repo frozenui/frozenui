@@ -17,6 +17,7 @@
   z-index: -1; }
 
 .ui-placehold-img {
+  padding-top: 31.25%;
   position: relative; }
   .ui-placehold-img > span {
     width: 100%;

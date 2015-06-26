@@ -46,11 +46,9 @@
   .ui-list-thumb-s > span,
   .ui-list-img > span,
   .ui-list-icon > span {
+    display: block;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 1;
     background-repeat: no-repeat;
     -webkit-background-size: cover; }

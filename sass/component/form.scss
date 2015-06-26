@@ -120,7 +120,6 @@
 .ui-form-item-pure textarea {
 	padding-left: 0;
 }
-
 /* 表单展示项 */
 .ui-form-item-show label {
 	color: $txt-info;
@@ -129,7 +128,6 @@
 .ui-form-item-link:after {
 	@include arrowlink;
 }
-.ui-form-item-pure,
 .ui-form-item-checkbox,
 .ui-form-item-radio,
 .ui-form-item-switch{
