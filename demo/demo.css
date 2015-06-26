@@ -48,8 +48,6 @@ body>a{display: none;}
     z-index: -1;
     height: 400px;
 }
-
-
 .icon-lists li{
   float:left;
   height: 100px;
@@ -61,7 +59,7 @@ body>a{display: none;}
     font-size: 32px;
     line-height: 44px;
 }
-.icon-lists .ui-icon{
+.icon-lists .ui-icon,.icon-lists [class^="ui-icon-"]{
   margin: 10px 0;
   color: #000;
 }

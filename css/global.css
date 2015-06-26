@@ -137,15 +137,17 @@ em, i {
   color: rgba(0, 0, 0, 0.5); }
 
 .ui-icon-close:before {
-  content: "\e60a";
-  color: #8e8e93; }
+  content: "\e60a"; }
 
 .ui-icon-search:before {
-  content: "\e60c";
-  color: #8e8e93; }
+  content: "\e60c"; }
 
 .ui-icon-return:before {
   content: "\e614"; }
+
+.ui-icon-close,
+.ui-icon-search {
+  color: #8e8e93; }
 
 a {
   color: #00a5e0; }
