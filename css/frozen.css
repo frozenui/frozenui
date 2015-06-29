@@ -1735,23 +1735,22 @@ h6, .ui-txt-tips {
     position: relative;
     margin-left: 15px;
     line-height: 24px;
-    display: -webkit-box;
-    -webkit-box-align: center; }
+    display: -webkit-box; }
 
 .ui-list-pure > li {
   display: block; }
 
 /*文字列表*/
-.ui-list-text > li, .ui-list-one > li,
+.ui-list-text > li,
 .ui-list-pure > li {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  -webkit-box-align: center; }
 
-.ui-list-text h4, .ui-list-one h4,
-.ui-list-text p,
-.ui-list-one p {
+.ui-list-text h4,
+.ui-list-text p {
   -webkit-box-flex: 1; }
 
 /*通栏列表*/
@@ -1818,7 +1817,7 @@ h6, .ui-txt-tips {
     color: #777777;
     font-size: 14px; }
 
-.ui-list-text .ui-list-info, .ui-list-one .ui-list-info {
+.ui-list-text .ui-list-info {
   padding-top: 0;
   padding-bottom: 0; }
 
@@ -1866,11 +1865,11 @@ h6, .ui-txt-tips {
     .ui-list-link > li:after {
       right: 10px; } }
 
-.ui-list-link > li {
-  padding-right: 35px; }
+.ui-list-text.ui-list-link > li {
+  padding-right: 30px; }
 
 .ui-list-link .ui-list-info {
-  padding-right: 0; }
+  padding-right: 30px; }
 
 /*  功能类 */
 .ui-list-function .ui-list-info {
@@ -1886,10 +1885,10 @@ h6, .ui-txt-tips {
   margin-top: -12px; }
 
 .ui-list-function.ui-list-link .ui-list-info {
-  padding-right: 60px; }
+  padding-right: 90px; }
 
 .ui-list-function.ui-list-link .ui-btn, .ui-list-function.ui-list-link .ui-btn-lg, .ui-list-function.ui-list-link .ui-btn-s {
-  right: 35px; }
+  right: 30px; }
 
 .ui-list-function li {
   -webkit-box-align: inherit; }
@@ -1898,12 +1897,17 @@ h6, .ui-txt-tips {
   padding-top: 0;
   padding-bottom: 0;
   line-height: 44px; }
+.ui-list-one .ui-list-info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center; }
+.ui-list-one h4 {
+  -webkit-box-flex: 1; }
 
 @media (max-width: 320px) {
   .ui-list > li {
     margin-left: 10px; }
 
-  .ui-list-text > li, .ui-list-one > li,
+  .ui-list-text > li,
   .ui-list-pure > li,
   .ui-list-info {
     padding-right: 10px; }
@@ -1913,8 +1917,8 @@ h6, .ui-txt-tips {
   .ui-list li.active {
     padding-left: 10px; }
 
-  .ui-list-link > li {
-    padding-right: 30px; }
+  .ui-list-text.ui-list-link > li {
+    padding-right: 25px; }
 
   .ui-list-function .ui-list-info {
     padding-right: 70px; }
@@ -1923,10 +1927,10 @@ h6, .ui-txt-tips {
     right: 10px; }
 
   .ui-list-function.ui-list-link .ui-list-info {
-    padding-right: 55px; }
+    padding-right: 85px; }
 
   .ui-list-function.ui-list-link .ui-btn, .ui-list-function.ui-list-link .ui-btn-lg, .ui-list-function.ui-list-link .ui-btn-s {
-    right: 30px; } }
+    right: 25px; } }
 /**
  * 出错页面
  */
@@ -2499,10 +2503,10 @@ h6, .ui-txt-tips {
       right: 10px; } }
 
 .ui-arrowlink .ui-panel-title-tips {
-  right: 35px; }
+  right: 30px; }
   @media (max-width: 320px) {
     .ui-arrowlink .ui-panel-title-tips {
-      right: 30px; } }
+      right: 25px; } }
 
 .ui-progress {
   overflow: hidden;

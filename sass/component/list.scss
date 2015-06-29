@@ -11,7 +11,6 @@
 		margin-left: $wrap-padding;
 		line-height: $line-height-txt;
 		display: -webkit-box;
-		-webkit-box-align: center;
 	}
 }
 .ui-list-pure > li{
@@ -24,6 +23,7 @@
 	padding-top: $txt-padding-top;
 	padding-bottom: $txt-padding-bottom;
 	padding-right: $wrap-padding;
+	-webkit-box-align: center;
 }
 .ui-list-text h4,
 .ui-list-text p{
@@ -121,11 +121,11 @@
 	@include arrowlink;
 }
 
-.ui-list-link > li{
+.ui-list-text.ui-list-link > li{
 	padding-right: $wrap-link-padding;    
 }
 .ui-list-link .ui-list-info{
-	padding-right: 0;
+	padding-right: $wrap-link-padding;
 }
 /*  功能类 */
 .ui-list-function .ui-list-info{
@@ -141,7 +141,7 @@
 	margin-top: -12px;
 }
 .ui-list-function.ui-list-link .ui-list-info{
-	padding-right: 60px;
+	padding-right: 90px;
 }
 .ui-list-function.ui-list-link .ui-btn{
 	right: $wrap-link-padding;
@@ -151,12 +151,18 @@
 	-webkit-box-align: inherit;
 }
 .ui-list-one{
-	@extend .ui-list-text;
 	>li{
 		padding-top: 0;
 		padding-bottom: 0;
 		line-height: $line-height-bar;
+	}
+	.ui-list-info{
+		-webkit-box-orient: horizontal;
+		-webkit-box-align: center;
 	}	
+	h4{
+		-webkit-box-flex: 1;
+	}
 }
 @media (max-width: 320px) {
 	.ui-list > li{
@@ -172,7 +178,7 @@
 	.ui-list li.active{
 		padding-left: $wrap-padding-s;
 	}
-	.ui-list-link > li{
+	.ui-list-text.ui-list-link > li{
 		padding-right: $wrap-link-padding-s;
 	}
 	.ui-list-function .ui-list-info{
@@ -182,7 +188,7 @@
 		right: $wrap-padding-s;
 	}
 	.ui-list-function.ui-list-link .ui-list-info{
-		padding-right: 55px;
+		padding-right: 85px;
 	}
 	.ui-list-function.ui-list-link .ui-btn{
 		right: $wrap-link-padding-s;
