@@ -6,7 +6,10 @@
 .ui-switch {
     position: absolute;
     font-size: $font-size-info;
-    right: 15px; 
+    right: $wrap-padding;
+    @media (max-width: 320px) {
+        right: $wrap-padding-s;
+    } 
     top: 50%;
     margin-top: -16px;
     width: 52px;

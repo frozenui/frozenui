@@ -11,6 +11,7 @@
 		margin-left: $wrap-padding;
 		line-height: $line-height-txt;
 		display: -webkit-box;
+		-webkit-box-align: center;
 	}
 }
 .ui-list-pure > li{
@@ -23,8 +24,6 @@
 	padding-top: $txt-padding-top;
 	padding-bottom: $txt-padding-bottom;
 	padding-right: $wrap-padding;
-	font-size: $font-size-info;
-	-webkit-box-align: center;
 }
 .ui-list-text h4,
 .ui-list-text p{
@@ -146,6 +145,18 @@
 }
 .ui-list-function.ui-list-link .ui-btn{
 	right: $wrap-link-padding;
+}
+
+.ui-list-function li{
+	-webkit-box-align: inherit;
+}
+.ui-list-one{
+	@extend .ui-list-text;
+	>li{
+		padding-top: 0;
+		padding-bottom: 0;
+		line-height: $line-height-bar;
+	}	
 }
 @media (max-width: 320px) {
 	.ui-list > li{

@@ -14,8 +14,7 @@
 .ui-header-stable,
 .ui-header-positive {
   padding: 0 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .ui-header-stable,
 .ui-footer-stable {

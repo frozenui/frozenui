@@ -6,23 +6,23 @@
     position: relative;
     margin-left: 15px;
     line-height: 24px;
-    display: -webkit-box; }
+    display: -webkit-box;
+    -webkit-box-align: center; }
 
 .ui-list-pure > li {
   display: block; }
 
 /*文字列表*/
-.ui-list-text > li,
+.ui-list-text > li, .ui-list-one > li,
 .ui-list-pure > li {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 15px;
-  font-size: 16px;
-  -webkit-box-align: center; }
+  padding-right: 15px; }
 
-.ui-list-text h4,
-.ui-list-text p {
+.ui-list-text h4, .ui-list-one h4,
+.ui-list-text p,
+.ui-list-one p {
   -webkit-box-flex: 1; }
 
 /*通栏列表*/
@@ -89,7 +89,7 @@
     color: #777777;
     font-size: 14px; }
 
-.ui-list-text .ui-list-info {
+.ui-list-text .ui-list-info, .ui-list-one .ui-list-info {
   padding-top: 0;
   padding-bottom: 0; }
 
@@ -162,11 +162,19 @@
 .ui-list-function.ui-list-link .ui-btn {
   right: 35px; }
 
+.ui-list-function li {
+  -webkit-box-align: inherit; }
+
+.ui-list-one > li {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 44px; }
+
 @media (max-width: 320px) {
   .ui-list > li {
     margin-left: 10px; }
 
-  .ui-list-text > li,
+  .ui-list-text > li, .ui-list-one > li,
   .ui-list-pure > li,
   .ui-list-info {
     padding-right: 10px; }
