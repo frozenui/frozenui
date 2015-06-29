@@ -36,7 +36,8 @@
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 6px; } }
+        border-radius: 6px;
+        pointer-events: none; } }
 
 .ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
   background: #f2f2f2;

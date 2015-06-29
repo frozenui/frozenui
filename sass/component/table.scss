@@ -33,6 +33,7 @@
         background-size: 1px 100% ,100% 1px;
         background-repeat: no-repeat;
         background-position: right, bottom;
+        pointer-events: none;
     }
     .ui-table tr td:last-child:after,.ui-table tr th:last-child:after{
         background-image: $border-b;

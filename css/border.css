@@ -38,7 +38,8 @@
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 8px; } }
+        border-radius: 8px;
+        pointer-events: none; } }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .ui-border {
