@@ -7,6 +7,9 @@
   width: 52px;
   height: 32px;
   line-height: 32px; }
+  @media (max-width: 320px) {
+    .ui-switch {
+      right: 10px; } }
   .ui-switch input {
     width: 52px;
     height: 32px;
@@ -30,19 +33,17 @@
       -webkit-box-sizing: content-box;
       box-sizing: content-box;
       border-color: #dfdfdf;
-      -webkit-box-shadow: #dfdfdf 0px 0px 0px 0px inset;
-              box-shadow: #dfdfdf 0px 0px 0px 0px inset;
-      -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s;
+      box-shadow: #dfdfdf 0px 0px 0px 0px inset;
+      -webkit-transition: border 0.4s, box-shadow 0.4s;
       transition: border 0.4s, box-shadow 0.4s;
       -webkit-background-clip: content-box;
       background-clip: content-box; }
     .ui-switch input:checked:before {
       border-color: #64bd63;
-      -webkit-box-shadow: #64bd63 0px 0px 0px 16px inset;
-              box-shadow: #64bd63 0px 0px 0px 16px inset;
+      box-shadow: #64bd63 0px 0px 0px 16px inset;
       background-color: #64bd63;
       transition: border 0.4s, box-shadow 0.4s,  background-color 1.2s;
-      -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s, background-color 1.2s;
+      -webkit-transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
       background-color: #64bd63; }
     .ui-switch input:checked:after {
       left: 21px; }
@@ -55,7 +56,6 @@
       left: 0;
       border-radius: 100%;
       background-color: #fff;
-      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
       -webkit-transition: left 0.2s;
       transition: left 0.2s; }

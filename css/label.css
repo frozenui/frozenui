@@ -22,7 +22,8 @@
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 30px; } }
+        border-radius: 30px;
+        pointer-events: none; } }
   .ui-label:active {
     background-color: #f3f2f2; }
 
@@ -56,7 +57,8 @@
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 4px; } }
+        border-radius: 4px;
+        pointer-events: none; } }
   .ui-label-s:active {
     background-color: #f3f2f2; }
   .ui-label-s:after {

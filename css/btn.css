@@ -16,8 +16,7 @@
   vertical-align: top;
   color: #00a5e0;
   -webkit-box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px solid #cacccd;
   border-radius: 3px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -36,13 +35,13 @@
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 6px; } }
+        border-radius: 6px;
+        pointer-events: none; } }
 
 .ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
   background: #f2f2f2;
   color: rgba(0, 165, 224, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn:after, .ui-btn-lg:after, .ui-btn-s:after {
   content: "";
@@ -57,37 +56,32 @@
   border-color: #0baae4;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
   color: white;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-primary:not(.disabled):not(:disabled):active, .ui-btn-primary.active {
   background: #1ca7da;
   border-color: #1ca7da;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-danger {
   background-color: #f75549;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fc6156), to(#f75549));
   color: white;
   border-color: #f43d30;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-danger:not(.disabled):not(:disabled):active, .ui-btn-danger.active {
   background: #e2574d;
   border-color: #e2574d;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
   border: 0;
   color: #cccccc;
   background: #e9ebec;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-lg {
   font-size: 18px;
@@ -108,17 +102,26 @@
   font-size: 13px; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-btn, .ui-btn-lg, .ui-btn-s, .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
-    border: 0; }
-
-  .ui-btn-lg:before {
-    border-radius: 10px; }
-
   .ui-btn-primary:before {
     border: 1px solid #0baae4; }
 
   .ui-btn-danger:before {
     border: 1px solid #f43d30; }
 
-  .ui-btn-progress.disabled:before, .ui-btn-progress:disabled:before {
-    border: 1px solid #cacccd; } }
+  .ui-btn, .ui-btn-lg, .ui-btn-s {
+    border: 0; }
+
+  .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s,
+  .ui-btn:disabled,
+  .ui-btn-lg:disabled,
+  .ui-btn-s:disabled,
+  .ui-btn.disabled:before,
+  .disabled.ui-btn-lg:before,
+  .disabled.ui-btn-s:before,
+  .ui-btn:disabled:before,
+  .ui-btn-lg:disabled:before,
+  .ui-btn-s:disabled:before {
+    border: 1px solid #e9ebec; }
+
+  .ui-btn-lg:before {
+    border-radius: 10px; } }
