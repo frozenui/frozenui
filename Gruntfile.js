@@ -102,11 +102,10 @@ module.exports = function(grunt) {
             }
         },
         copy: {
-            main: {
+            font:{
                 expand: true,
-                cwd: '_dist',
-                src: '**/*',
-                dest: '<%=pkg.version%>'
+                src: 'font/**/*',
+                dest: '_dist'
             },
             dist: {
                 expand: true,
@@ -115,6 +114,17 @@ module.exports = function(grunt) {
                 'css/basic.css','css/frozen.css',
                 'js/frozen.js','lib/zepto.min.js'],
                 dest: 'dist'
+            },
+            sass: {
+                expand: true,
+                src: 'sass/**/*',
+                dest: '<%=pkg.version%>'
+            },
+            main: {
+                expand: true,
+                cwd: '_dist',
+                src: '**/*',
+                dest: '<%=pkg.version%>'
             },
             zip:{
                 expand: true,
