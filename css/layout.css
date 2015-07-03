@@ -14,7 +14,8 @@
 .ui-header-stable,
 .ui-header-positive {
   padding: 0 10px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .ui-header-stable,
 .ui-footer-stable {
@@ -78,7 +79,6 @@
 .ui-tiled {
   display: -webkit-box;
   width: 100%;
-  height: 100%;
   -webkit-box-sizing: border-box; }
 
 .ui-flex-ver {

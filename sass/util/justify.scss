@@ -6,7 +6,7 @@
 .ui-justify {
     text-align: justify;
     font-size: 0;
-    ul:after {
+    &:after {
         content: '';
         display: inline-block;
         width: 100%;

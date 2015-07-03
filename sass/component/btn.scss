@@ -80,6 +80,9 @@
 
 .ui-btn-wrap{
     padding: $button-wrap-padding;
+    @media (max-width: 320px) {
+        padding: $button-wrap-padding-s;
+    }
 }
 
 .ui-btn-s{

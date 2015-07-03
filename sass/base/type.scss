@@ -53,7 +53,21 @@ h6,.ui-txt-tips{
 .ui-txt-highlight{
     color: $txt-highlight;
 }
-
+.ui-txt-justify{
+    text-align: justify;   
+}
+.ui-txt-justify-one{
+    text-align: justify;
+    overflow: hidden;
+    height: 24px;
+}
+.ui-txt-justify-one:after{
+    display:inline-block;
+    content:'';
+    overflow:hidden;
+    width:100%;
+    height:0;
+}
 
 
 
