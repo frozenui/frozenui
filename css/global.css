@@ -198,6 +198,21 @@ h6, .ui-txt-tips {
 .ui-txt-highlight {
   color: #ff8444; }
 
+.ui-txt-justify {
+  text-align: justify; }
+
+.ui-txt-justify-one {
+  text-align: justify;
+  overflow: hidden;
+  height: 24px; }
+
+.ui-txt-justify-one:after {
+  display: inline-block;
+  content: '';
+  overflow: hidden;
+  width: 100%;
+  height: 0; }
+
 /* 1px hack */
 .ui-border-t {
   border-top: 1px solid #e0e0e0; }
@@ -485,8 +500,7 @@ h6, .ui-txt-tips {
   .ui-row-flex .ui-col {
     float: none;
     -webkit-box-flex: 1;
-    width: 0;
-    height: 100%; }
+    width: 0; }
   .ui-row-flex .ui-col-2 {
     -webkit-box-flex: 2; }
   .ui-row-flex .ui-col-3 {
@@ -529,7 +543,7 @@ h6, .ui-txt-tips {
 .ui-justify {
   text-align: justify;
   font-size: 0; }
-  .ui-justify ul:after {
+  .ui-justify:after {
     content: '';
     display: inline-block;
     width: 100%;
@@ -627,7 +641,6 @@ h6, .ui-txt-tips {
 .ui-tiled {
   display: -webkit-box;
   width: 100%;
-  height: 100%;
   -webkit-box-sizing: border-box; }
 
 .ui-flex-ver {
@@ -836,6 +849,9 @@ h6, .ui-txt-tips {
 
 .ui-btn-wrap {
   padding: 15px 10px; }
+  @media (max-width: 320px) {
+    .ui-btn-wrap {
+      padding: 10px; } }
 
 .ui-btn-s {
   padding: 0;
@@ -1271,7 +1287,7 @@ h6, .ui-txt-tips {
   width: 20px;
   height: 20px;
   display: block;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/loading_sprite.png?_bid=2134);
+  background: url(../img/loading_sprite.png);
   -webkit-background-size: auto 20px;
   -webkit-animation: am-rotate 1s steps(12) infinite; }
 
@@ -1279,7 +1295,7 @@ h6, .ui-txt-tips {
   width: 37px;
   height: 37px;
   display: block;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/loading_sprite_white.png?_bid=2134);
+  background-image: url(../img/loading_sprite_white.png);
   -webkit-background-size: auto 37px;
   -webkit-animation: am-rotate2 1s steps(12) infinite; }
 
@@ -1690,7 +1706,7 @@ h6, .ui-txt-tips {
   display: block;
   width: 24px;
   height: 24px;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/vip/icon_vip.png) -2px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/vip/icon_vip.png?_bid=2134) -2px 0;
   -webkit-background-size: 24px auto;
   position: absolute;
   line-height: 100px;

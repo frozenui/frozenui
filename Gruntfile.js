@@ -132,8 +132,36 @@ module.exports = function(grunt) {
                 src: ['font/iconfont.ttf','img/**/*',
                 'css/basic.css','css/global.css'],
                 dest: 'i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
+            },
+            vipstyle:{
+                expand: true,
+                src: '<%=pkg.version%>/**/*',
+                dest: '../../vipstyle/frozenui'
             }
 
+        },
+        replace:{
+            img: {
+                src: ['<%=pkg.version%>/css/**/*.css','<%=pkg.version%>/sass/**/*.scss'] ,
+                overwrite: true,
+                replacements: [{
+                    from: /\.*\.\/img/g, 
+                    to: function () {
+                        return 'http://i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>/img';
+                    }
+                }]
+
+            },
+            font:{
+                src: ['<%=pkg.version%>/css/**/*.css','<%=pkg.version%>/sass/**/*.scss'] ,
+                overwrite: true,
+                replacements: [{
+                    from: /\.*\.\/font/g, 
+                    to: function () {
+                        return 'http://i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>/font';
+                    }
+                }]
+            }
         },
         includereplace: {
             html: {
@@ -155,7 +183,7 @@ module.exports = function(grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'i.gtimg.cn.zip'
+                    archive: '<%=pkg.version%>/i.gtimg.cn.zip'
                 },
                 expand: true,
                 src: ['i.gtimg.cn/**']
@@ -187,7 +215,6 @@ module.exports = function(grunt) {
         'autoprefixer',
         'cssmin',
         'imagemin',
-
         'concat:zepto',
         'concat:js',
         'uglify',
@@ -196,17 +223,10 @@ module.exports = function(grunt) {
         'watch'
     ]);
     grunt.registerTask('deploy', [
-        'sass',
-        'autoprefixer',
-        'cssmin',
-        'imagemin',
-
-        'concat:zepto',
-        'concat:js',
-        'uglify',
-        'copy',
-        'includereplace',
-        'compress'
+        'replace',
+        'compress',
+        'copy:zip',
+        'copy:vipstyle'      
     ]);
     // 根据 docs 的代码片段生成 demo 到 demo/*.html
     grunt.registerTask('demo', ['includereplace']);

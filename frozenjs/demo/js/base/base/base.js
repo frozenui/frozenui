@@ -1,8 +1,6 @@
 define(function(require, exports, module) {
-    var $=require('$');
-
-    require('../core/fz');
-    Frozen.add('fz.Base',function(){
+    require('../core/core');
+    Frozen.pkg('fz.base', function() {
         /**
          * public 作用域
          * @alias fz.Base#
@@ -25,17 +23,12 @@ define(function(require, exports, module) {
          * 构造函数
          */
         _public.constructor = function() {
-            // private作用域
-            var _private = {};
+
         };
-
-
-        /**
-         * 绑定事件
-         */
 
         _public.on = function(name, fn) {
             box = $(this);
+
             return box.on.apply(box, arguments);
         };
 
@@ -53,9 +46,10 @@ define(function(require, exports, module) {
          */
         _public.trigger = function(name, data) {
             var box = $(this);
+
+
             return box.triggerHandler.apply(box, arguments);
         };
-
     })
 
 })
