@@ -17,8 +17,7 @@
     border-radius: 5px;
     right: -3px;
     top: -3px;
-    -webkit-background-clip: padding-box;
-            background-clip: padding-box; }
+    background-clip: padding-box; }
 
 .ui-reddot-static {
   display: block;
@@ -40,8 +39,7 @@
   border-radius: 5px;
   right: -4px;
   top: -4px;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   padding: 1px; }
 
 /* 小号的 */

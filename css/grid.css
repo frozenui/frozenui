@@ -65,8 +65,7 @@
 
 .ui-col {
   float: left;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%; }
 
 .ui-col-10 {

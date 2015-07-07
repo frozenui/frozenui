@@ -14,8 +14,7 @@
 .ui-header-stable,
 .ui-header-positive {
   padding: 0 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .ui-header-stable,
 .ui-footer-stable {
@@ -34,6 +33,8 @@
 .ui-footer-btn {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0));
   color: #00a5e0; }
+  .ui-footer-btn .ui-tiled {
+    height: 100%; }
 
 .ui-footer {
   bottom: 0;
