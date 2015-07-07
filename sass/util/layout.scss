@@ -37,6 +37,9 @@
 .ui-footer-btn{
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0));
     color: $txt-link;
+    .ui-tiled{
+        height: 100%;
+    }
 }
 .ui-footer {
     bottom: 0;

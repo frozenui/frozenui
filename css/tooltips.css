@@ -3,8 +3,7 @@
   position: relative;
   z-index: 99;
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .ui-tooltips-cnt {
   background-color: white;
