@@ -406,6 +406,21 @@ h6, .ui-txt-tips {
 .ui-txt-highlight {
   color: #ff8444; }
 
+.ui-txt-justify {
+  text-align: justify; }
+
+.ui-txt-justify-one {
+  text-align: justify;
+  overflow: hidden;
+  height: 24px; }
+
+.ui-txt-justify-one:after {
+  display: inline-block;
+  content: '';
+  overflow: hidden;
+  width: 100%;
+  height: 0; }
+
 /* 1px hack */
 .ui-border-t {
   border-top: 1px solid #e0e0e0; }
@@ -446,7 +461,8 @@ h6, .ui-txt-tips {
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 8px; } }
+        border-radius: 8px;
+        pointer-events: none; } }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .ui-border {
@@ -692,8 +708,7 @@ h6, .ui-txt-tips {
   .ui-row-flex .ui-col {
     float: none;
     -webkit-box-flex: 1;
-    width: 0;
-    height: 100%; }
+    width: 0; }
   .ui-row-flex .ui-col-2 {
     -webkit-box-flex: 2; }
   .ui-row-flex .ui-col-3 {
@@ -736,7 +751,7 @@ h6, .ui-txt-tips {
 .ui-justify {
   text-align: justify;
   font-size: 0; }
-  .ui-justify ul:after {
+  .ui-justify:after {
     content: '';
     display: inline-block;
     width: 100%;
@@ -789,6 +804,8 @@ h6, .ui-txt-tips {
 .ui-footer-btn {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0));
   color: #00a5e0; }
+  .ui-footer-btn .ui-tiled {
+    height: 100%; }
 
 .ui-footer {
   bottom: 0;
@@ -834,7 +851,6 @@ h6, .ui-txt-tips {
 .ui-tiled {
   display: -webkit-box;
   width: 100%;
-  height: 100%;
   -webkit-box-sizing: border-box; }
 
 .ui-flex-ver {
@@ -1069,7 +1085,8 @@ h6, .ui-txt-tips {
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 30px; } }
+        border-radius: 30px;
+        pointer-events: none; } }
   .ui-label:active {
     background-color: #f3f2f2; }
 
@@ -1103,7 +1120,8 @@ h6, .ui-txt-tips {
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 4px; } }
+        border-radius: 4px;
+        pointer-events: none; } }
   .ui-label-s:active {
     background-color: #f3f2f2; }
   .ui-label-s:after {
@@ -1363,7 +1381,8 @@ h6, .ui-txt-tips {
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 6px; } }
+        border-radius: 6px;
+        pointer-events: none; } }
 
 .ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
   background: #f2f2f2;
@@ -1426,6 +1445,9 @@ h6, .ui-txt-tips {
 
 .ui-btn-wrap {
   padding: 15px 10px; }
+  @media (max-width: 320px) {
+    .ui-btn-wrap {
+      padding: 10px; } }
 
 .ui-btn-s {
   padding: 0;
@@ -1435,20 +1457,29 @@ h6, .ui-txt-tips {
   font-size: 13px; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-btn, .ui-btn-lg, .ui-btn-s, .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
-    border: 0; }
-
-  .ui-btn-lg:before {
-    border-radius: 10px; }
-
   .ui-btn-primary:before {
     border: 1px solid #0baae4; }
 
   .ui-btn-danger:before {
     border: 1px solid #f43d30; }
 
-  .ui-btn-progress.disabled:before, .ui-btn-progress:disabled:before {
-    border: 1px solid #cacccd; } }
+  .ui-btn, .ui-btn-lg, .ui-btn-s {
+    border: 0; }
+
+  .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s,
+  .ui-btn:disabled,
+  .ui-btn-lg:disabled,
+  .ui-btn-s:disabled,
+  .ui-btn.disabled:before,
+  .disabled.ui-btn-lg:before,
+  .disabled.ui-btn-s:before,
+  .ui-btn:disabled:before,
+  .ui-btn-lg:disabled:before,
+  .ui-btn-s:disabled:before {
+    border: 1px solid #e9ebec; }
+
+  .ui-btn-lg:before {
+    border-radius: 10px; } }
 .ui-btn-progress {
   width: 55px;
   padding: 0;
@@ -1476,6 +1507,14 @@ h6, .ui-txt-tips {
     -webkit-background-clip: padding-box;
             background-clip: padding-box; }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-btn-progress.disabled,
+  .ui-btn-progress:disabled {
+    border: 0; }
+
+  .ui-btn-progress.disabled:before,
+  .ui-btn-progress:disabled:before {
+    border: 1px solid #cacccd; } }
 .ui-btn-group {
   display: -webkit-box;
   width: 100%;
@@ -1707,7 +1746,8 @@ h6, .ui-txt-tips {
     -webkit-background-size: 1px 100% ,100% 1px;
             background-size: 1px 100% ,100% 1px;
     background-repeat: no-repeat;
-    background-position: right, bottom; }
+    background-position: right, bottom;
+    pointer-events: none; }
 
   .ui-table tr td:last-child:after, .ui-table tr th:last-child:after {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
@@ -1747,7 +1787,6 @@ h6, .ui-txt-tips {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 15px;
-  font-size: 16px;
   -webkit-box-align: center; }
 
 .ui-list-text h4,
@@ -1866,11 +1905,11 @@ h6, .ui-txt-tips {
     .ui-list-link > li:after {
       right: 10px; } }
 
-.ui-list-link > li {
-  padding-right: 35px; }
+.ui-list-text.ui-list-link > li {
+  padding-right: 30px; }
 
 .ui-list-link .ui-list-info {
-  padding-right: 0; }
+  padding-right: 30px; }
 
 /*  功能类 */
 .ui-list-function .ui-list-info {
@@ -1886,10 +1925,23 @@ h6, .ui-txt-tips {
   margin-top: -12px; }
 
 .ui-list-function.ui-list-link .ui-list-info {
-  padding-right: 60px; }
+  padding-right: 90px; }
 
 .ui-list-function.ui-list-link .ui-btn, .ui-list-function.ui-list-link .ui-btn-lg, .ui-list-function.ui-list-link .ui-btn-s {
-  right: 35px; }
+  right: 30px; }
+
+.ui-list-function li {
+  -webkit-box-align: inherit; }
+
+.ui-list-one > li {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 44px; }
+.ui-list-one .ui-list-info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center; }
+.ui-list-one h4 {
+  -webkit-box-flex: 1; }
 
 @media (max-width: 320px) {
   .ui-list > li {
@@ -1905,8 +1957,8 @@ h6, .ui-txt-tips {
   .ui-list li.active {
     padding-left: 10px; }
 
-  .ui-list-link > li {
-    padding-right: 30px; }
+  .ui-list-text.ui-list-link > li {
+    padding-right: 25px; }
 
   .ui-list-function .ui-list-info {
     padding-right: 70px; }
@@ -1915,10 +1967,10 @@ h6, .ui-txt-tips {
     right: 10px; }
 
   .ui-list-function.ui-list-link .ui-list-info {
-    padding-right: 55px; }
+    padding-right: 85px; }
 
   .ui-list-function.ui-list-link .ui-btn, .ui-list-function.ui-list-link .ui-btn-lg, .ui-list-function.ui-list-link .ui-btn-s {
-    right: 30px; } }
+    right: 25px; } }
 /**
  * 出错页面
  */
@@ -2164,6 +2216,9 @@ h6, .ui-txt-tips {
   width: 52px;
   height: 32px;
   line-height: 32px; }
+  @media (max-width: 320px) {
+    .ui-switch {
+      right: 10px; } }
   .ui-switch input {
     width: 52px;
     height: 32px;
@@ -2496,10 +2551,10 @@ h6, .ui-txt-tips {
       right: 10px; } }
 
 .ui-arrowlink .ui-panel-title-tips {
-  right: 35px; }
+  right: 30px; }
   @media (max-width: 320px) {
     .ui-arrowlink .ui-panel-title-tips {
-      right: 30px; } }
+      right: 25px; } }
 
 .ui-progress {
   overflow: hidden;
@@ -2584,7 +2639,7 @@ h6, .ui-txt-tips {
   width: 20px;
   height: 20px;
   display: block;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/loading_sprite.png?_bid=2134);
+  background: url(../img/loading_sprite.png);
   -webkit-background-size: auto 20px;
   -webkit-animation: am-rotate 1s steps(12) infinite; }
 
@@ -2592,7 +2647,7 @@ h6, .ui-txt-tips {
   width: 37px;
   height: 37px;
   display: block;
-  background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/loading_sprite_white.png?_bid=2134);
+  background-image: url(../img/loading_sprite_white.png);
   -webkit-background-size: auto 37px;
   -webkit-animation: am-rotate2 1s steps(12) infinite; }
 
@@ -2979,7 +3034,7 @@ h6, .ui-txt-tips {
   display: block;
   width: 24px;
   height: 24px;
-  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/vip/icon_vip.png) -2px 0;
+  background: url(http://i.gtimg.cn/vipstyle/frozenui/1.3.0/img/vip/icon_vip.png?_bid=2134) -2px 0;
   -webkit-background-size: 24px auto;
   position: absolute;
   line-height: 100px;

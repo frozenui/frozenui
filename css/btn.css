@@ -36,7 +36,8 @@
         -webkit-transform-origin: 0 0;
         padding: 1px;
         -webkit-box-sizing: border-box;
-        border-radius: 6px; } }
+        border-radius: 6px;
+        pointer-events: none; } }
 
 .ui-btn:not(.disabled):not(:disabled):active, .ui-btn-lg:not(.disabled):not(:disabled):active, .ui-btn-s:not(.disabled):not(:disabled):active, .ui-btn.active, .active.ui-btn-lg, .active.ui-btn-s {
   background: #f2f2f2;
@@ -99,6 +100,9 @@
 
 .ui-btn-wrap {
   padding: 15px 10px; }
+  @media (max-width: 320px) {
+    .ui-btn-wrap {
+      padding: 10px; } }
 
 .ui-btn-s {
   padding: 0;
@@ -108,17 +112,26 @@
   font-size: 13px; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  .ui-btn, .ui-btn-lg, .ui-btn-s, .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
-    border: 0; }
-
-  .ui-btn-lg:before {
-    border-radius: 10px; }
-
   .ui-btn-primary:before {
     border: 1px solid #0baae4; }
 
   .ui-btn-danger:before {
     border: 1px solid #f43d30; }
 
-  .ui-btn-progress.disabled:before, .ui-btn-progress:disabled:before {
-    border: 1px solid #cacccd; } }
+  .ui-btn, .ui-btn-lg, .ui-btn-s {
+    border: 0; }
+
+  .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s,
+  .ui-btn:disabled,
+  .ui-btn-lg:disabled,
+  .ui-btn-s:disabled,
+  .ui-btn.disabled:before,
+  .disabled.ui-btn-lg:before,
+  .disabled.ui-btn-s:before,
+  .ui-btn:disabled:before,
+  .ui-btn-lg:disabled:before,
+  .ui-btn-s:disabled:before {
+    border: 1px solid #e9ebec; }
+
+  .ui-btn-lg:before {
+    border-radius: 10px; } }

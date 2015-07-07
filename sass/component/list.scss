@@ -23,7 +23,6 @@
 	padding-top: $txt-padding-top;
 	padding-bottom: $txt-padding-bottom;
 	padding-right: $wrap-padding;
-	font-size: $font-size-info;
 	-webkit-box-align: center;
 }
 .ui-list-text h4,
@@ -122,11 +121,11 @@
 	@include arrowlink;
 }
 
-.ui-list-link > li{
+.ui-list-text.ui-list-link > li{
 	padding-right: $wrap-link-padding;    
 }
 .ui-list-link .ui-list-info{
-	padding-right: 0;
+	padding-right: $wrap-link-padding;
 }
 /*  功能类 */
 .ui-list-function .ui-list-info{
@@ -142,10 +141,28 @@
 	margin-top: -12px;
 }
 .ui-list-function.ui-list-link .ui-list-info{
-	padding-right: 60px;
+	padding-right: 90px;
 }
 .ui-list-function.ui-list-link .ui-btn{
 	right: $wrap-link-padding;
+}
+
+.ui-list-function li{
+	-webkit-box-align: inherit;
+}
+.ui-list-one{
+	>li{
+		padding-top: 0;
+		padding-bottom: 0;
+		line-height: $line-height-bar;
+	}
+	.ui-list-info{
+		-webkit-box-orient: horizontal;
+		-webkit-box-align: center;
+	}	
+	h4{
+		-webkit-box-flex: 1;
+	}
 }
 @media (max-width: 320px) {
 	.ui-list > li{
@@ -161,7 +178,7 @@
 	.ui-list li.active{
 		padding-left: $wrap-padding-s;
 	}
-	.ui-list-link > li{
+	.ui-list-text.ui-list-link > li{
 		padding-right: $wrap-link-padding-s;
 	}
 	.ui-list-function .ui-list-info{
@@ -171,7 +188,7 @@
 		right: $wrap-padding-s;
 	}
 	.ui-list-function.ui-list-link .ui-list-info{
-		padding-right: 55px;
+		padding-right: 85px;
 	}
 	.ui-list-function.ui-list-link .ui-btn{
 		right: $wrap-link-padding-s;

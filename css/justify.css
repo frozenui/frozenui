@@ -1,7 +1,7 @@
 .ui-justify {
   text-align: justify;
   font-size: 0; }
-  .ui-justify ul:after {
+  .ui-justify:after {
     content: '';
     display: inline-block;
     width: 100%;

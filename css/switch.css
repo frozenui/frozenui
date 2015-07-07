@@ -7,6 +7,9 @@
   width: 52px;
   height: 32px;
   line-height: 32px; }
+  @media (max-width: 320px) {
+    .ui-switch {
+      right: 10px; } }
   .ui-switch input {
     width: 52px;
     height: 32px;

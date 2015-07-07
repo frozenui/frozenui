@@ -24,3 +24,12 @@
     border: 1px solid #cacccd;
     -webkit-background-clip: padding-box;
             background-clip: padding-box; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-btn-progress.disabled,
+  .ui-btn-progress:disabled {
+    border: 0; }
+
+  .ui-btn-progress.disabled:before,
+  .ui-btn-progress:disabled:before {
+    border: 1px solid #cacccd; } }

@@ -18,7 +18,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 15px;
-  font-size: 16px;
   -webkit-box-align: center; }
 
 .ui-list-text h4,
@@ -137,11 +136,11 @@
     .ui-list-link > li:after {
       right: 10px; } }
 
-.ui-list-link > li {
-  padding-right: 35px; }
+.ui-list-text.ui-list-link > li {
+  padding-right: 30px; }
 
 .ui-list-link .ui-list-info {
-  padding-right: 0; }
+  padding-right: 30px; }
 
 /*  功能类 */
 .ui-list-function .ui-list-info {
@@ -157,10 +156,23 @@
   margin-top: -12px; }
 
 .ui-list-function.ui-list-link .ui-list-info {
-  padding-right: 60px; }
+  padding-right: 90px; }
 
 .ui-list-function.ui-list-link .ui-btn {
-  right: 35px; }
+  right: 30px; }
+
+.ui-list-function li {
+  -webkit-box-align: inherit; }
+
+.ui-list-one > li {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 44px; }
+.ui-list-one .ui-list-info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center; }
+.ui-list-one h4 {
+  -webkit-box-flex: 1; }
 
 @media (max-width: 320px) {
   .ui-list > li {
@@ -176,8 +188,8 @@
   .ui-list li.active {
     padding-left: 10px; }
 
-  .ui-list-link > li {
-    padding-right: 30px; }
+  .ui-list-text.ui-list-link > li {
+    padding-right: 25px; }
 
   .ui-list-function .ui-list-info {
     padding-right: 70px; }
@@ -186,7 +198,7 @@
     right: 10px; }
 
   .ui-list-function.ui-list-link .ui-list-info {
-    padding-right: 55px; }
+    padding-right: 85px; }
 
   .ui-list-function.ui-list-link .ui-btn {
-    right: 30px; } }
+    right: 25px; } }

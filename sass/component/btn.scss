@@ -80,6 +80,9 @@
 
 .ui-btn-wrap{
     padding: $button-wrap-padding;
+    @media (max-width: 320px) {
+        padding: $button-wrap-padding-s;
+    }
 }
 
 .ui-btn-s{
@@ -92,16 +95,24 @@
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .ui-btn,.ui-btn.disabled,.ui-btn:disabled{border: 0;}
-    .ui-btn-lg:before{border-radius: $button-lg-before-border-radius;}
     .ui-btn-primary:before{
         border: 1px solid $button-primary-border-color;
     }
     .ui-btn-danger:before{
         border: 1px solid $button-danger-border-color;
     }
-    .ui-btn-progress.disabled:before,.ui-btn-progress:disabled:before{
-        border: 1px solid $button-progress-disabled-border-color;
+    .ui-btn{
+        border: 0;
     }
+    .ui-btn.disabled,
+    .ui-btn:disabled,
+    .ui-btn.disabled:before,
+    .ui-btn:disabled:before{
+        border: 1px solid $button-disabled-bg-color;
+    }
+    .ui-btn-lg:before{
+        border-radius: $button-lg-before-border-radius;
+    }
+    
 }
 
