@@ -2,11 +2,11 @@
 
     "../base/mixin",
     "../base/variable";
-.ui-placehold{
+.ui-placehold-wrap{
     padding-top: 31.25%;
     position: relative;
 }
-.ui-placehold-cnt{
+.ui-placehold{
     color: $txt-muted;
     position: absolute;
     top: 0;

@@ -362,11 +362,11 @@ h6, .ui-txt-tips {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2; }
 
-.ui-placehold {
+.ui-placehold-wrap {
   padding-top: 31.25%;
   position: relative; }
 
-.ui-placehold-cnt {
+.ui-placehold {
   color: #bbbbbb;
   position: absolute;
   top: 0;
@@ -906,7 +906,6 @@ h6, .ui-txt-tips {
   .ui-list > li {
     position: relative;
     margin-left: 15px;
-    line-height: 24px;
     display: -webkit-box; }
 
 .ui-list-pure > li {

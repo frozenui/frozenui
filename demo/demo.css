@@ -1,5 +1,6 @@
 body{
   -webkit-user-select:initial;
+  background-color: #fff;
 }
 body>a{display: none;}
 .demo-desc{
