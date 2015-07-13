@@ -17,13 +17,11 @@
     width: 95px;
     position: absolute;
     text-align: left;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+    box-sizing: border-box; }
   .ui-form-item input,
   .ui-form-item textarea {
     width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     -webkit-appearance: none;
     border: 0;
     background: none;
@@ -65,7 +63,7 @@
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\e600";
+  content: "\f600";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -128,7 +126,7 @@
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\e600";
+  content: "\f600";
   position: absolute;
   right: 15px;
   top: 50%;

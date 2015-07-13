@@ -23,7 +23,7 @@
   -webkit-text-stroke-width: 0.2px;
   display: block;
   color: rgba(0, 0, 0, 0.5);
-  content: "\e610";
+  content: "\f610";
   color: #18b4ed;
   position: absolute;
   top: -22px;
@@ -31,14 +31,14 @@
   color: #dedfe0; }
 
 .ui-checkbox input:checked:before, .ui-checkbox-s input:checked:before {
-  content: "\e601";
+  content: "\f601";
   color: #18b4ed; }
 
 .ui-checkbox-s {
   width: 19px; }
 
 .ui-checkbox-s input:before {
-  content: "\e611"; }
+  content: "\f611"; }
 
 .ui-checkbox-s input:checked:before {
-  content: "\e602"; }
+  content: "\f602"; }

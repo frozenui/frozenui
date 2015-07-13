@@ -3,8 +3,7 @@
   position: relative;
   z-index: 99;
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .ui-tooltips-cnt {
   background-color: white;
@@ -50,7 +49,7 @@
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\e600";
+  content: "\f600";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -81,5 +80,5 @@
   -webkit-text-stroke-width: 0.2px;
   display: block;
   color: rgba(0, 0, 0, 0.5);
-  content: "\e608";
+  content: "\f608";
   color: #f76249; }

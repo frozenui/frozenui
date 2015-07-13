@@ -28,23 +28,20 @@
     left: 0;
     top: 0;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
-    -webkit-background-size: 1px 100% ,100% 1px;
-            background-size: 1px 100% ,100% 1px;
+    background-size: 1px 100% ,100% 1px;
     background-repeat: no-repeat;
     background-position: right, bottom;
     pointer-events: none; }
 
   .ui-table tr td:last-child:after, .ui-table tr th:last-child:after {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
-    -webkit-background-size: 100% 1px;
-            background-size: 100% 1px;
+    background-size: 100% 1px;
     background-repeat: no-repeat;
     background-position: bottom; }
 
   .ui-table tr:last-child td:not(:last-child):after {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
-    -webkit-background-size: 1px 100%;
-            background-size: 1px 100%;
+    background-size: 1px 100%;
     background-repeat: no-repeat;
     background-position: right; } }
 .ui-table tr td:last-child, .ui-table tr th:last-child {

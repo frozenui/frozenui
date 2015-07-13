@@ -5,8 +5,7 @@
   left: 0px;
   z-index: 999;
   padding: 0px 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .ui-poptips-cnt {
   background-color: rgba(0, 0, 0, 0.6);
@@ -41,10 +40,10 @@
       line-height: 40px; }
 
 .ui-poptips-info i:before {
-  content: "\e603"; }
+  content: "\f603"; }
 
 .ui-poptips-success i:before {
-  content: "\e604"; }
+  content: "\f604"; }
 
 .ui-poptips-warn i:before {
-  content: "\e605"; }
+  content: "\f605"; }
