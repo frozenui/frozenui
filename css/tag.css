@@ -51,7 +51,7 @@
 .ui-tag-s-new:before,
 .ui-tag-pop-hot:before,
 .ui-tag-pop-new:before {
-  content: "\e60d";
+  content: "\f60d";
   line-height: 20px;
   color: #ff0000; }
 
@@ -109,12 +109,12 @@
 .ui-tag-vip:before {
   background-color: #ff0000;
   color: #fffadf;
-  content: "\e612"; }
+  content: "\f612"; }
 
 .ui-tag-svip:before {
   background-color: #ffd400;
   color: #b7440e;
-  content: "\e613"; }
+  content: "\f613"; }
 
 .ui-tag-freelimit:before {
   background-color: #18b4ed;
@@ -165,7 +165,7 @@
 
 .ui-tag-s-hot:before,
 .ui-tag-s-new:before {
-  content: "\e60e";
+  content: "\f60e";
   left: -2px; }
 
 .ui-tag-s-hot:after,
@@ -174,7 +174,7 @@
   padding-right: 12px; }
 
 .ui-tag-selected:after {
-  content: "\e601";
+  content: "\f601";
   color: #18b4ed;
   right: -5px;
   top: -5px;
@@ -200,7 +200,7 @@
 
 .ui-tag-pop-hot:before,
 .ui-tag-pop-new:before {
-  content: "\e60f";
+  content: "\f60f";
   left: -10px;
   top: 1px; }
 

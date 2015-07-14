@@ -225,8 +225,7 @@ module.exports = function(grunt) {
     grunt.registerTask('deploy', [
         'replace',
         'compress',
-        'copy:zip',
-        'copy:vipstyle'      
+        'copy'      
     ]);
     // 根据 docs 的代码片段生成 demo 到 demo/*.html
     grunt.registerTask('demo', ['includereplace']);

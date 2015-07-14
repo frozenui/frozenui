@@ -137,13 +137,13 @@ em, i {
   color: rgba(0, 0, 0, 0.5); }
 
 .ui-icon-close:before {
-  content: "\e60a"; }
+  content: "\f60a"; }
 
 .ui-icon-search:before {
-  content: "\e60c"; }
+  content: "\f60c"; }
 
 .ui-icon-return:before {
-  content: "\e614"; }
+  content: "\f614"; }
 
 .ui-icon-close,
 .ui-icon-search {
@@ -326,7 +326,7 @@ h6, .ui-txt-tips {
     display: block;
     color: rgba(0, 0, 0, 0.5);
     color: #c7c7c7;
-    content: "\e600";
+    content: "\f600";
     position: absolute;
     right: 15px;
     top: 50%;
@@ -362,11 +362,11 @@ h6, .ui-txt-tips {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2; }
 
-.ui-placehold {
+.ui-placehold-wrap {
   padding-top: 31.25%;
   position: relative; }
 
-.ui-placehold-cnt {
+.ui-placehold {
   color: #bbbbbb;
   position: absolute;
   top: 0;
@@ -906,7 +906,6 @@ h6, .ui-txt-tips {
   .ui-list > li {
     position: relative;
     margin-left: 15px;
-    line-height: 24px;
     display: -webkit-box; }
 
 .ui-list-pure > li {
@@ -1027,7 +1026,7 @@ h6, .ui-txt-tips {
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\e600";
+  content: "\f600";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -1374,7 +1373,7 @@ h6, .ui-txt-tips {
     -webkit-text-stroke-width: 0.2px;
     display: block;
     color: rgba(0, 0, 0, 0.5);
-    content: "\e609";
+    content: "\f609";
     font-size: 100px;
     line-height: 100px;
     color: rgba(0, 0, 0, 0.3); }
@@ -1437,13 +1436,13 @@ h6, .ui-txt-tips {
       line-height: 40px; }
 
 .ui-poptips-info i:before {
-  content: "\e603"; }
+  content: "\f603"; }
 
 .ui-poptips-success i:before {
-  content: "\e604"; }
+  content: "\f604"; }
 
 .ui-poptips-warn i:before {
-  content: "\e605"; }
+  content: "\f605"; }
 
 /**
  * 页面消息提示
@@ -1498,7 +1497,7 @@ h6, .ui-txt-tips {
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\e600";
+  content: "\f600";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -1589,7 +1588,7 @@ h6, .ui-txt-tips {
   -webkit-text-stroke-width: 0.2px;
   display: block;
   color: rgba(0, 0, 0, 0.5);
-  content: "\e60b";
+  content: "\f60b";
   color: #828282;
   display: block;
   line-height: 32px;
@@ -1669,6 +1668,7 @@ h6, .ui-txt-tips {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   color: #bbbbbb;
+  font-size: 14px;
   width: 100%; }
   .ui-searchbar input {
     -webkit-appearance: none;
@@ -1677,8 +1677,6 @@ h6, .ui-txt-tips {
     color: black;
     width: 100%;
     padding: 4px 0; }
-  .ui-searchbar.ui-border-radius {
-    border-radius: 5px; }
   .ui-searchbar .ui-icon-search {
     line-height: 30px; }
   .ui-searchbar .ui-icon-close {

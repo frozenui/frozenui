@@ -41,10 +41,10 @@
       line-height: 40px; }
 
 .ui-poptips-info i:before {
-  content: "\e603"; }
+  content: "\f603"; }
 
 .ui-poptips-success i:before {
-  content: "\e604"; }
+  content: "\f604"; }
 
 .ui-poptips-warn i:before {
-  content: "\e605"; }
+  content: "\f605"; }

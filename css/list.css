@@ -5,7 +5,6 @@
   .ui-list > li {
     position: relative;
     margin-left: 15px;
-    line-height: 24px;
     display: -webkit-box; }
 
 .ui-list-pure > li {
@@ -126,7 +125,7 @@
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\e600";
+  content: "\f600";
   position: absolute;
   right: 15px;
   top: 50%;

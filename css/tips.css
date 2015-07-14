@@ -18,14 +18,14 @@
   -webkit-text-stroke-width: 0.2px;
   display: block;
   color: rgba(0, 0, 0, 0.5);
-  content: "\e606";
+  content: "\f606";
   color: #0090ff;
   line-height: 21px; }
 
 .ui-tips-success i:before {
-  content: "\e607";
+  content: "\f607";
   color: #65d521; }
 
 .ui-tips-warn i:before {
-  content: "\e608";
+  content: "\f608";
   color: #f76249; }
