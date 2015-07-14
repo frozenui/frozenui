@@ -35,7 +35,6 @@
 }
 .ui-checkbox-s{
     @extend .ui-checkbox;
-	width: 19px;
 }
 .ui-checkbox-s input:before{
 	content: $icon-unchecked-s;

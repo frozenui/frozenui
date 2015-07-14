@@ -44,6 +44,7 @@
     -webkit-box-pack: center;
     -webkit-box-align: center;
     color: $txt-muted;
+    font-size: $font-size-sub;
     width: 100%;
     input{
         -webkit-appearance: none;
@@ -52,9 +53,6 @@
         color: $txt-default;
         width: 100%;
         padding: 4px 0;
-    }
-    &.ui-border-radius{
-          border-radius: $searchbar-border;
     }
     .ui-icon-search{
         line-height: $searchbar-height;

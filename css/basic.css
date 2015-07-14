@@ -1648,6 +1648,7 @@ h6, .ui-txt-tips {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   color: #bbbbbb;
+  font-size: 14px;
   width: 100%; }
   .ui-searchbar input {
     -webkit-appearance: none;
