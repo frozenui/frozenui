@@ -1,0 +1,26 @@
+{
+  "name": "frozenui",
+  "version": "1.3.0",
+  "homepage": "https://github.com/windsdeng/frozenui",
+  "authors": [
+    "windsdeng <windsdeng@hotmail.com>"
+  ],
+  "description": "FrozenUI的CSS组件库,基于腾讯手Q样式规范",
+  "main": [
+    "dist/css/frozen.css",	
+    "dist/js/frozen.js"
+  ],
+  "keywords": [
+    "frozen",
+    "ui",
+    "frozenui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
