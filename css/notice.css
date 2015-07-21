@@ -25,7 +25,7 @@
     -webkit-text-stroke-width: 0.2px;
     display: block;
     color: rgba(0, 0, 0, 0.5);
-    content: "\f609";
+    content: "";
     font-size: 100px;
     line-height: 100px;
     color: rgba(0, 0, 0, 0.3); }
@@ -33,7 +33,7 @@
 .ui-notice p {
   font-size: 16px;
   line-height: 20px;
-  color: #bbbbbb;
+  color: #bbb;
   text-align: center;
   padding: 0 15px; }
 

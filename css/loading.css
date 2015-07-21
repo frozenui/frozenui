@@ -59,12 +59,10 @@
 @-webkit-keyframes am-rotate {
   from {
     background-position: 0 0; }
-
   to {
     background-position: -240px 0; } }
 @-webkit-keyframes am-rotate2 {
   from {
     background-position: 0 0; }
-
   to {
     background-position: -444px 0; } }

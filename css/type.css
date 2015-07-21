@@ -6,7 +6,7 @@ em {
   color: #ff8444; }
 
 ::-webkit-input-placeholder {
-  color: #bbbbbb; }
+  color: #bbb; }
 
 /**
  * 文字
@@ -27,16 +27,16 @@ h6, .ui-txt-tips {
   font-size: 12px; }
 
 .ui-txt-default {
-  color: black; }
+  color: #000; }
 
 .ui-txt-white {
   color: white; }
 
 .ui-txt-info {
-  color: #777777; }
+  color: #777; }
 
 .ui-txt-muted {
-  color: #bbbbbb; }
+  color: #bbb; }
 
 .ui-txt-warning, .ui-txt-red {
   color: #ff4222; }

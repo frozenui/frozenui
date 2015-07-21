@@ -84,7 +84,7 @@
   -webkit-box-pack: center;
   padding-right: 15px; }
   .ui-list-info p {
-    color: #777777;
+    color: #777;
     font-size: 14px; }
 
 .ui-list-text .ui-list-info {
@@ -97,7 +97,7 @@
 .ui-list:not(.ui-list-text) li > p,
 .ui-list li > h5 {
   font-size: 14px;
-  color: #777777; }
+  color: #777; }
 
 /*列表按压态*/
 .ui-list-active > li:active,
@@ -125,7 +125,7 @@
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\f600";
+  content: "";
   position: absolute;
   right: 15px;
   top: 50%;

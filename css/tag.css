@@ -51,7 +51,7 @@
 .ui-tag-s-new:before,
 .ui-tag-pop-hot:before,
 .ui-tag-pop-new:before {
-  content: "\f60d";
+  content: "";
   line-height: 20px;
   color: #ff0000; }
 
@@ -109,12 +109,12 @@
 .ui-tag-vip:before {
   background-color: #ff0000;
   color: #fffadf;
-  content: "\f612"; }
+  content: ""; }
 
 .ui-tag-svip:before {
   background-color: #ffd400;
   color: #b7440e;
-  content: "\f613"; }
+  content: ""; }
 
 .ui-tag-freelimit:before {
   background-color: #18b4ed;
@@ -165,7 +165,7 @@
 
 .ui-tag-s-hot:before,
 .ui-tag-s-new:before {
-  content: "\f60e";
+  content: "";
   left: -2px; }
 
 .ui-tag-s-hot:after,
@@ -174,7 +174,7 @@
   padding-right: 12px; }
 
 .ui-tag-selected:after {
-  content: "\f601";
+  content: "";
   color: #18b4ed;
   right: -5px;
   top: -5px;
@@ -200,7 +200,7 @@
 
 .ui-tag-pop-hot:before,
 .ui-tag-pop-new:before {
-  content: "\f60f";
+  content: "";
   left: -10px;
   top: 1px; }
 

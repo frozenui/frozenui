@@ -4,7 +4,7 @@
     "../base/variable";
 
 @font-face {font-family: "iconfont";
-    src: url('../font/iconfont.ttf') format('truetype'); 
+    src: url(../font/iconfont.ttf) format('truetype'); 
 }
 .ui-icon,[class^="ui-icon-"] {
     @include icon;

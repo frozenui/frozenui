@@ -12,7 +12,7 @@
   text-align: center;
   font-size: 15px;
   background-color: #fdfdfd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
   vertical-align: top;
   color: #00a5e0;
   -webkit-box-sizing: border-box;
@@ -85,7 +85,7 @@
 
 .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
   border: 0;
-  color: #cccccc;
+  color: #ccc;
   background: #e9ebec;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }

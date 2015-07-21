@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont";
-  src: url("../font/iconfont-full.ttf") format("truetype"); }
+  src: url(../font/iconfont-full.ttf) format("truetype"); }
 .ui-icon, [class^="ui-icon-"] {
   font-family: "iconfont" !important;
   font-size: 32px;

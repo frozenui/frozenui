@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ui-poptips {
   width: 100%;
   position: fixed;
@@ -41,10 +42,10 @@
       line-height: 40px; }
 
 .ui-poptips-info i:before {
-  content: "\f603"; }
+  content: ""; }
 
 .ui-poptips-success i:before {
-  content: "\f604"; }
+  content: ""; }
 
 .ui-poptips-warn i:before {
-  content: "\f605"; }
+  content: ""; }

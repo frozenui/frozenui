@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ui-checkbox, .ui-checkbox-s {
   display: inline-block; }
 
@@ -23,7 +24,7 @@
   -webkit-text-stroke-width: 0.2px;
   display: block;
   color: rgba(0, 0, 0, 0.5);
-  content: "\f610";
+  content: "";
   color: #18b4ed;
   position: absolute;
   top: -22px;
@@ -31,11 +32,11 @@
   color: #dedfe0; }
 
 .ui-checkbox input:checked:before, .ui-checkbox-s input:checked:before {
-  content: "\f601";
+  content: "";
   color: #18b4ed; }
 
 .ui-checkbox-s input:before {
-  content: "\f611"; }
+  content: ""; }
 
 .ui-checkbox-s input:checked:before {
-  content: "\f602"; }
+  content: ""; }

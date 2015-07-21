@@ -1,8 +1,9 @@
+@charset "UTF-8";
 .ui-tips {
   padding: 20px 15px;
   text-align: center;
   font-size: 16px;
-  color: black; }
+  color: #000; }
   .ui-tips i {
     display: inline-block;
     width: 32px;
@@ -18,14 +19,14 @@
   -webkit-text-stroke-width: 0.2px;
   display: block;
   color: rgba(0, 0, 0, 0.5);
-  content: "\f606";
+  content: "";
   color: #0090ff;
   line-height: 21px; }
 
 .ui-tips-success i:before {
-  content: "\f607";
+  content: "";
   color: #65d521; }
 
 .ui-tips-warn i:before {
-  content: "\f608";
+  content: "";
   color: #f76249; }
