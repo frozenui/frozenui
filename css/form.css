@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .ui-form {
-  background-color: white; }
+  background-color: #fff; }
 
 .ui-form-item-order.active {
   background-color: #e5e6e7; }
@@ -65,7 +65,7 @@
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\f600";
+  content: "";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -105,7 +105,7 @@
   right: 0; }
 
 .ui-form-item-r button.disabled {
-  color: #bbbbbb; }
+  color: #bbb; }
 
 .ui-form-item-r button:not(.disabled):active {
   background-color: #e5e6e7; }
@@ -116,7 +116,7 @@
 
 /* 表单展示项 */
 .ui-form-item-show label {
-  color: #777777; }
+  color: #777; }
 
 .ui-form-item-link:after {
   font-family: "iconfont" !important;
@@ -128,7 +128,7 @@
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\f600";
+  content: "";
   position: absolute;
   right: 15px;
   top: 50%;

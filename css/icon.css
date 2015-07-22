@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @font-face {
   font-family: "iconfont";
-  src: url("../font/iconfont.ttf") format("truetype"); }
+  src: url(../font/iconfont.ttf) format("truetype"); }
 .ui-icon, [class^="ui-icon-"] {
   font-family: "iconfont" !important;
   font-size: 32px;
@@ -12,13 +13,13 @@
   color: rgba(0, 0, 0, 0.5); }
 
 .ui-icon-close:before {
-  content: "\f60a"; }
+  content: ""; }
 
 .ui-icon-search:before {
-  content: "\f60c"; }
+  content: ""; }
 
 .ui-icon-return:before {
-  content: "\f614"; }
+  content: ""; }
 
 .ui-icon-close,
 .ui-icon-search {

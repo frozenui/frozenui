@@ -20,7 +20,7 @@
   .ui-btn-progress.disabled, .ui-btn-progress:disabled {
     background-color: #fefefe;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
-    color: #cccccc;
+    color: #ccc;
     border: 1px solid #cacccd;
     -webkit-background-clip: padding-box;
             background-clip: padding-box; }

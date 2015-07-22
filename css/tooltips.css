@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ui-tooltips {
   width: 100%;
   position: relative;
@@ -7,7 +8,7 @@
           box-sizing: border-box; }
 
 .ui-tooltips-cnt {
-  background-color: white;
+  background-color: #fff;
   line-height: 44px;
   height: 44px;
   padding-left: 10px;
@@ -50,7 +51,7 @@
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\f600";
+  content: "";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -81,5 +82,5 @@
   -webkit-text-stroke-width: 0.2px;
   display: block;
   color: rgba(0, 0, 0, 0.5);
-  content: "\f608";
+  content: "";
   color: #f76249; }

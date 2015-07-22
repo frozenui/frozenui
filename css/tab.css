@@ -8,7 +8,7 @@
 
 .ui-tab-nav {
   width: 100%;
-  background-color: white;
+  background-color: #fff;
   display: box;
   display: -webkit-box;
   font-size: 16px;
@@ -31,7 +31,7 @@
   box-flex: 1;
   -webkit-box-flex: 1;
   text-align: center;
-  color: #777777;
+  color: #777;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 2px solid transparent;

@@ -21,7 +21,8 @@
     -webkit-box-sizing: border-box;
     background-clip: padding-box;
 }
-.ui-btn-vip:not(.disabled):not(:disabled):active,.ui-btn-vip.active{
+.ui-btn-vip:not(.disabled):not(:disabled):active,
+.ui-btn-vip.active{
     background-color: #1ba6d9;
     color: rgba(255,255,255,.5);
     background-clip: padding-box;

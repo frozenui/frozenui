@@ -64,7 +64,7 @@ body {
   font-family: "Helvetica Neue",Helvetica,STHeiTi,sans-serif;
   line-height: 1.5;
   font-size: 16px;
-  color: black;
+  color: #000;
   background-color: #f8f8f8;
   -webkit-user-select: none;
   -webkit-text-size-adjust: 100%;
@@ -125,7 +125,7 @@ em, i {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../font/iconfont.ttf") format("truetype"); }
+  src: url(../font/iconfont.ttf) format("truetype"); }
 .ui-icon, [class^="ui-icon-"] {
   font-family: "iconfont" !important;
   font-size: 32px;
@@ -137,13 +137,13 @@ em, i {
   color: rgba(0, 0, 0, 0.5); }
 
 .ui-icon-close:before {
-  content: "\f60a"; }
+  content: ""; }
 
 .ui-icon-search:before {
-  content: "\f60c"; }
+  content: ""; }
 
 .ui-icon-return:before {
-  content: "\f614"; }
+  content: ""; }
 
 .ui-icon-close,
 .ui-icon-search {
@@ -156,7 +156,7 @@ em {
   color: #ff8444; }
 
 ::-webkit-input-placeholder {
-  color: #bbbbbb; }
+  color: #bbb; }
 
 /**
  * 文字
@@ -177,16 +177,16 @@ h6, .ui-txt-tips {
   font-size: 12px; }
 
 .ui-txt-default {
-  color: black; }
+  color: #000; }
 
 .ui-txt-white {
   color: white; }
 
 .ui-txt-info {
-  color: #777777; }
+  color: #777; }
 
 .ui-txt-muted {
-  color: #bbbbbb; }
+  color: #bbb; }
 
 .ui-txt-warning, .ui-txt-red {
   color: #ff4222; }
@@ -326,7 +326,7 @@ h6, .ui-txt-tips {
     display: block;
     color: rgba(0, 0, 0, 0.5);
     color: #c7c7c7;
-    content: "\f600";
+    content: "";
     position: absolute;
     right: 15px;
     top: 50%;
@@ -367,7 +367,7 @@ h6, .ui-txt-tips {
   position: relative; }
 
 .ui-placehold {
-  color: #bbbbbb;
+  color: #bbb;
   position: absolute;
   top: 0;
   width: 100%;
@@ -426,7 +426,7 @@ h6, .ui-txt-tips {
 .ui-grid-trisect h4 span {
   display: inline-block;
   margin-left: 12px;
-  color: #777777; }
+  color: #777; }
 
 /* 二等分 */
 .ui-grid-halve > li {
@@ -763,7 +763,7 @@ h6, .ui-txt-tips {
   text-align: center;
   font-size: 15px;
   background-color: #fdfdfd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
   vertical-align: top;
   color: #00a5e0;
   -webkit-box-sizing: border-box;
@@ -836,7 +836,7 @@ h6, .ui-txt-tips {
 
 .ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
   border: 0;
-  color: #cccccc;
+  color: #ccc;
   background: #e9ebec;
   -webkit-background-clip: padding-box;
           background-clip: padding-box; }
@@ -900,6 +900,41 @@ h6, .ui-txt-tips {
   .ui-btn-group button:first-child {
     margin-left: 10px; }
 
+.ui-btn-progress {
+  width: 55px;
+  padding: 0;
+  overflow: hidden; }
+  .ui-btn-progress .ui-btn-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
+    .ui-btn-progress .ui-btn-inner span {
+      display: inline-block;
+      color: white;
+      position: absolute;
+      width: 55px;
+      left: 0; }
+  .ui-btn-progress.disabled, .ui-btn-progress:disabled {
+    background-color: #fefefe;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
+    color: #ccc;
+    border: 1px solid #cacccd;
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-btn-progress.disabled,
+  .ui-btn-progress:disabled {
+    border: 0; }
+
+  .ui-btn-progress.disabled:before,
+  .ui-btn-progress:disabled:before {
+    border: 1px solid #cacccd; } }
 .ui-list {
   background-color: #fff;
   width: 100%; }
@@ -985,7 +1020,7 @@ h6, .ui-txt-tips {
   -webkit-box-pack: center;
   padding-right: 15px; }
   .ui-list-info p {
-    color: #777777;
+    color: #777;
     font-size: 14px; }
 
 .ui-list-text .ui-list-info {
@@ -998,7 +1033,7 @@ h6, .ui-txt-tips {
 .ui-list:not(.ui-list-text) li > p,
 .ui-list li > h5 {
   font-size: 14px;
-  color: #777777; }
+  color: #777; }
 
 /*列表按压态*/
 .ui-list-active > li:active,
@@ -1026,7 +1061,7 @@ h6, .ui-txt-tips {
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\f600";
+  content: "";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -1181,7 +1216,7 @@ h6, .ui-txt-tips {
 
 .ui-panel {
   overflow: hidden;
-  padding-top: 10px; }
+  margin-bottom: 10px; }
   .ui-panel .ui-grid-halve, .ui-panel .ui-grid-trisect {
     padding-top: 0; }
   .ui-panel h1, .ui-panel h2, .ui-panel h3 {
@@ -1198,28 +1233,25 @@ h6, .ui-txt-tips {
     .ui-panel h1 span, .ui-panel h2 span, .ui-panel h3 span {
       display: block; }
 
-.ui-panel-pure h2,
-.ui-panel-pure h3 {
-  color: #777777; }
-
-.ui-panel-card {
-  margin-bottom: 10px; }
-
 .ui-panel-card,
 .ui-panel-simple {
-  background-color: white; }
+  background-color: #fff; }
+
+.ui-panel-pure h2,
+.ui-panel-pure h3 {
+  color: #777; }
 
 .ui-panel-simple {
-  padding-top: 0; }
+  margin-bottom: 0; }
 
 .ui-panel-subtitle {
   font-size: 14px;
-  color: #777777;
+  color: #777;
   margin-left: 10px; }
 
 .ui-panel-title-tips {
   font-size: 12px;
-  color: #777777;
+  color: #777;
   position: absolute;
   right: 15px; }
   @media (max-width: 320px) {
@@ -1241,7 +1273,7 @@ h6, .ui-txt-tips {
 
 .ui-tab-nav {
   width: 100%;
-  background-color: white;
+  background-color: #fff;
   display: box;
   display: -webkit-box;
   font-size: 16px;
@@ -1264,7 +1296,7 @@ h6, .ui-txt-tips {
   box-flex: 1;
   -webkit-box-flex: 1;
   text-align: center;
-  color: #777777;
+  color: #777;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 2px solid transparent;
@@ -1338,13 +1370,11 @@ h6, .ui-txt-tips {
 @-webkit-keyframes am-rotate {
   from {
     background-position: 0 0; }
-
   to {
     background-position: -240px 0; } }
 @-webkit-keyframes am-rotate2 {
   from {
     background-position: 0 0; }
-
   to {
     background-position: -444px 0; } }
 /**
@@ -1373,7 +1403,7 @@ h6, .ui-txt-tips {
     -webkit-text-stroke-width: 0.2px;
     display: block;
     color: rgba(0, 0, 0, 0.5);
-    content: "\f609";
+    content: "";
     font-size: 100px;
     line-height: 100px;
     color: rgba(0, 0, 0, 0.3); }
@@ -1381,7 +1411,7 @@ h6, .ui-txt-tips {
 .ui-notice p {
   font-size: 16px;
   line-height: 20px;
-  color: #bbbbbb;
+  color: #bbb;
   text-align: center;
   padding: 0 15px; }
 
@@ -1436,13 +1466,13 @@ h6, .ui-txt-tips {
       line-height: 40px; }
 
 .ui-poptips-info i:before {
-  content: "\f603"; }
+  content: ""; }
 
 .ui-poptips-success i:before {
-  content: "\f604"; }
+  content: ""; }
 
 .ui-poptips-warn i:before {
-  content: "\f605"; }
+  content: ""; }
 
 /**
  * 页面消息提示
@@ -1497,7 +1527,7 @@ h6, .ui-txt-tips {
   display: block;
   color: rgba(0, 0, 0, 0.5);
   color: #c7c7c7;
-  content: "\f600";
+  content: "";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -1588,7 +1618,7 @@ h6, .ui-txt-tips {
   -webkit-text-stroke-width: 0.2px;
   display: block;
   color: rgba(0, 0, 0, 0.5);
-  content: "\f60b";
+  content: "";
   color: #828282;
   display: block;
   line-height: 32px;
@@ -1634,6 +1664,33 @@ h6, .ui-txt-tips {
     -webkit-background-size: 1px 100%; }
     .ui-dialog-ft button:last-child {
       background: none; } }
+.ui-progress {
+  overflow: hidden;
+  width: 100%;
+  height: 2px;
+  font-size: 0px;
+  background-color: #e2e2e2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.ui-progress span {
+  display: block;
+  width: 0%;
+  background: #65d521;
+  height: 100%;
+  font-size: 0; }
+
+.ui-grid-trisect li .ui-progress,
+.ui-grid-halve li .ui-progress {
+  position: absolute;
+  height: 13px;
+  bottom: 0px;
+  z-index: 9;
+  border: 5px solid rgba(248, 248, 248, 0.9); }
+  .ui-grid-trisect li .ui-progress span,
+  .ui-grid-halve li .ui-progress span {
+    border-radius: 3px; }
+
 .ui-searchbar-wrap {
   display: -webkit-box;
   -webkit-box-pack: center;
@@ -1658,7 +1715,7 @@ h6, .ui-txt-tips {
 .ui-searchbar {
   border-radius: 5px;
   margin: 0 10px;
-  background: white;
+  background: #fff;
   height: 30px;
   line-height: 30px;
   position: relative;
@@ -1667,14 +1724,14 @@ h6, .ui-txt-tips {
   display: -webkit-box;
   -webkit-box-pack: center;
   -webkit-box-align: center;
-  color: #bbbbbb;
+  color: #bbb;
   font-size: 14px;
   width: 100%; }
   .ui-searchbar input {
     -webkit-appearance: none;
     border: none;
     background: none;
-    color: black;
+    color: #000;
     width: 100%;
     padding: 4px 0; }
   .ui-searchbar .ui-icon-search {

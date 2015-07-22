@@ -107,6 +107,11 @@ module.exports = function(grunt) {
                 src: 'font/**/*',
                 dest: '_dist'
             },
+            sass: {
+                expand: true,
+                src: 'sass/**/*',
+                dest: '<%=pkg.version%>'
+            },
             dist: {
                 expand: true,
                 cwd: '_dist',
@@ -115,30 +120,24 @@ module.exports = function(grunt) {
                 'js/frozen.js','lib/zepto.min.js'],
                 dest: 'dist'
             },
-            sass: {
-                expand: true,
-                src: 'sass/**/*',
-                dest: '<%=pkg.version%>'
-            },
             main: {
                 expand: true,
                 cwd: '_dist',
                 src: '**/*',
                 dest: '<%=pkg.version%>'
             },
-            zip:{
-                expand: true,
-                cwd: '<%=pkg.version%>',
-                src: ['font/iconfont.ttf','img/**/*',
-                'css/basic.css','css/global.css'],
-                dest: 'i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
-            },
             vipstyle:{
                 expand: true,
                 src: '<%=pkg.version%>/**/*',
                 dest: '../../vipstyle/frozenui'
+            },
+            zip:{
+                expand: true,
+                cwd: '../../vipstyle/frozenui/<%=pkg.version%>',
+                src: ['font/iconfont.ttf','img/**/*',
+                'css/basic.css','css/global.css'],
+                dest: '../../vipstyle/frozenui/<%=pkg.version%>/i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
             }
-
         },
         replace:{
             img: {
@@ -149,18 +148,26 @@ module.exports = function(grunt) {
                     to: function () {
                         return 'http://i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>/img';
                     }
-                }]
-
-            },
-            font:{
-                src: ['<%=pkg.version%>/css/**/*.css','<%=pkg.version%>/sass/**/*.scss'] ,
-                overwrite: true,
-                replacements: [{
+                },
+                {
+                    from: /png\)/g, 
+                    to: function () {
+                        return 'png?_bid=2134&max_age=31536000)';
+                    }
+                },
+                {
                     from: /\.*\.\/font/g, 
                     to: function () {
                         return 'http://i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>/font';
                     }
+                },
+                {
+                    from: /ttf\)/g, 
+                    to: function () {
+                        return 'ttf?_bid=2134&max_age=31536000)';
+                    }
                 }]
+
             }
         },
         includereplace: {
@@ -182,8 +189,9 @@ module.exports = function(grunt) {
         },
         compress: {
             main: {
+                cwd: '../../vipstyle/frozenui/<%=pkg.version%>',
                 options: {
-                    archive: '<%=pkg.version%>/i.gtimg.cn.zip'
+                    archive: '../../vipstyle/frozenui/<%=pkg.version%>/i.gtimg.cn.zip'
                 },
                 expand: true,
                 src: ['i.gtimg.cn/**']
@@ -208,7 +216,7 @@ module.exports = function(grunt) {
             }
         }
     });
-
+    grunt.registerTask('copystatic',['copy:font','copy:sass','copy:dist','copy:main']);
     // 默认任务
     grunt.registerTask('default', [
         'sass',
@@ -218,14 +226,16 @@ module.exports = function(grunt) {
         'concat:zepto',
         'concat:js',
         'uglify',
-        'copy',
+        'copystatic',
         'includereplace',
         'watch'
     ]);
     grunt.registerTask('deploy', [
         'replace',
-        'compress',
-        'copy'      
+        'copy:vipstyle',
+        'copy:zip', 
+        'compress'
+             
     ]);
     // 根据 docs 的代码片段生成 demo 到 demo/*.html
     grunt.registerTask('demo', ['includereplace']);

@@ -22,7 +22,7 @@
 .ui-searchbar {
   border-radius: 5px;
   margin: 0 10px;
-  background: white;
+  background: #fff;
   height: 30px;
   line-height: 30px;
   position: relative;
@@ -31,14 +31,14 @@
   display: -webkit-box;
   -webkit-box-pack: center;
   -webkit-box-align: center;
-  color: #bbbbbb;
+  color: #bbb;
   font-size: 14px;
   width: 100%; }
   .ui-searchbar input {
     -webkit-appearance: none;
     border: none;
     background: none;
-    color: black;
+    color: #000;
     width: 100%;
     padding: 4px 0; }
   .ui-searchbar .ui-icon-search {

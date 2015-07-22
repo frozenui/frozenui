@@ -38,7 +38,6 @@
     + grunt 配置文件
 
 
-
 ### 版本管理
 
 版本格式：主版本号.次版本号.修订号，版本号递增规则：
@@ -59,8 +58,13 @@ _业务上使用时升级版本需要通知到开发，以及是否有dom修改�
 
 ###版本修改记录
 
-查看[http://frozenui.github.io/frozenui/history.html](http://frozenui.github.io/frozenui/history.html)
+查看[https://github.com/frozenui/frozenui/wiki/History-1.3.0](https://github.com/frozenui/frozenui/wiki/History-1.3.0)
 
+###more
+
+屏幕适配： https://github.com/frozenui/frozenui/wiki/%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D
+
+iconfont使用： https://github.com/frozenui/frozenui/wiki/iconfont%E4%BD%BF%E7%94%A8
 
 ###License
 
