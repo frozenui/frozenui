@@ -110,6 +110,12 @@ module.exports = function(grunt) {
                 src: 'font/**/*',
                 dest: '_dist'
             },
+            cssdebug:{
+                expand: true,
+                cwd: 'css',
+                src: '*.css',
+                dest: '_dist/css-debug'
+            },
             demo:{
                 expand: true,
                 src: 'demo/*.html',
@@ -230,7 +236,7 @@ module.exports = function(grunt) {
             }
         }
     });
-    grunt.registerTask('copystatic',['copy:font','copy:sass','copy:demo','copy:dist','copy:main']);
+    grunt.registerTask('copystatic',['copy:font','copy:cssdebug','copy:sass','copy:demo','copy:dist','copy:main']);
     // 默认任务
     grunt.registerTask('default', [
         'sass',

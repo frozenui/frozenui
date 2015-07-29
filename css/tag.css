@@ -156,7 +156,7 @@
 .ui-tag-new:after,
 .ui-tag-s-new:after,
 .ui-tag-pop-new:after {
-  content: '新'; }
+  content: '\u65b0'; }
 
 .ui-tag-hot:before,
 .ui-tag-s-hot:before,
@@ -210,3 +210,5 @@
   padding-right: 0;
   text-align: center;
   left: -5px; }
+
+/*# sourceMappingURL=tag.css.map */
