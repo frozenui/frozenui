@@ -44,7 +44,8 @@ module.exports = function(grunt) {
                 cwd: 'sass',
                 src: ['**/*.scss'],
                 dest: 'css/',
-                ext: '.css'
+                ext: '.css',
+                sourcemap: false
             }
             
         },
