@@ -16,12 +16,11 @@
     display: box;
     display: -webkit-box;
     font-size: $font-size-info;
-    height: $header-height;
+    height: $tab-height;
     box-sizing: border-box;
 
  }
 .ui-tab-content{
-    margin-top: $header-height;
     display: -webkit-box;
 }
 .ui-tab-content > li {
@@ -29,8 +28,8 @@
     width: 100%;
 }
 .ui-tab-nav li{
-    height: $header-height;
-    line-height: $header-height;
+    height: $tab-height;
+    line-height: $tab-height;
     min-width: 70px;
 	box-flex: 1;
 	-webkit-box-flex: 1;
@@ -41,8 +40,8 @@
     width: 100%;
 }
 .ui-tab-nav li.current{
-    color: $txt-link;
-    border-bottom: 2px $txt-link solid;
+    color: $tab-current-color;
+    border-bottom: 2px $tab-current-border solid;
 }
 .ui-tab-nav li:active{
     opacity: .8;

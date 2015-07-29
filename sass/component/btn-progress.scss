@@ -4,6 +4,7 @@
     "../base/variable";
 
 .ui-btn-progress{
+
     width: $button-min-width;
     padding: 0;
     overflow: hidden;
@@ -13,7 +14,7 @@
         top: 0;
         height: 100%;
         overflow: hidden;
-        background-image: $button-primary-bg-image;
+        background-image: $button-progress-inner-bg-image;
         border-bottom-left-radius: $button-border-radius;
         border-top-left-radius: $button-border-radius;
         span{

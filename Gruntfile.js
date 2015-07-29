@@ -1,3 +1,6 @@
+var publicDir = '../../vipstyle/frozenui'; //发布目录
+var pubCode = '../../frozenui'; //共用组件平台
+
 module.exports = function(grunt) {
     // 自动加载 grunt 任务
     require('load-grunt-tasks')(grunt);
@@ -41,7 +44,8 @@ module.exports = function(grunt) {
                 cwd: 'sass',
                 src: ['**/*.scss'],
                 dest: 'css/',
-                ext: '.css'
+                ext: '.css',
+                sourcemap: false
             }
             
         },
@@ -107,6 +111,17 @@ module.exports = function(grunt) {
                 src: 'font/**/*',
                 dest: '_dist'
             },
+            cssdebug:{
+                expand: true,
+                cwd: 'css',
+                src: '*.css',
+                dest: '_dist/css-debug'
+            },
+            demo:{
+                expand: true,
+                src: 'demo/*.html',
+                dest: '<%=pkg.version%>'
+            },
             sass: {
                 expand: true,
                 src: 'sass/**/*',
@@ -129,14 +144,20 @@ module.exports = function(grunt) {
             vipstyle:{
                 expand: true,
                 src: '<%=pkg.version%>/**/*',
-                dest: '../../vipstyle/frozenui'
+                dest: publicDir
             },
             zip:{
                 expand: true,
-                cwd: '../../vipstyle/frozenui/<%=pkg.version%>',
+                cwd: publicDir + '/<%=pkg.version%>',
                 src: ['font/iconfont.ttf','img/**/*',
                 'css/basic.css','css/global.css'],
-                dest: '../../vipstyle/frozenui/<%=pkg.version%>/i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
+                dest: publicDir + '/<%=pkg.version%>/i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
+            },
+            pub: {
+                expand: true,
+                cwd: publicDir + '/<%=pkg.version%>',
+                src: '**/*',
+                dest: pubCode + '/<%=pkg.version%>'
             }
         },
         replace:{
@@ -189,9 +210,9 @@ module.exports = function(grunt) {
         },
         compress: {
             main: {
-                cwd: '../../vipstyle/frozenui/<%=pkg.version%>',
+                cwd: publicDir + '/<%=pkg.version%>',
                 options: {
-                    archive: '../../vipstyle/frozenui/<%=pkg.version%>/i.gtimg.cn.zip'
+                    archive: publicDir + '/<%=pkg.version%>/i.gtimg.cn.zip'
                 },
                 expand: true,
                 src: ['i.gtimg.cn/**']
@@ -216,7 +237,7 @@ module.exports = function(grunt) {
             }
         }
     });
-    grunt.registerTask('copystatic',['copy:font','copy:sass','copy:dist','copy:main']);
+    grunt.registerTask('copystatic',['copy:font','copy:cssdebug','copy:sass','copy:demo','copy:dist','copy:main']);
     // 默认任务
     grunt.registerTask('default', [
         'sass',
@@ -234,7 +255,8 @@ module.exports = function(grunt) {
         'replace',
         'copy:vipstyle',
         'copy:zip', 
-        'compress'
+        'compress',
+        'copy:pub'
              
     ]);
     // 根据 docs 的代码片段生成 demo 到 demo/*.html

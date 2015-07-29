@@ -55,8 +55,7 @@
   border-radius: 10px;
   margin-right: 6px;
   -webkit-box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   position: relative; }
 
 .ui-slider-indicators li.current:before {
@@ -69,9 +68,10 @@
   height: 5px;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-slider-indicators-center {
   -webkit-box-pack: center;
   right: 0; }
+
+/*# sourceMappingURL=slider.css.map */
