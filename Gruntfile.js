@@ -45,7 +45,7 @@ module.exports = function(grunt) {
                 src: ['**/*.scss'],
                 dest: 'css/',
                 ext: '.css',
-                sourcemap: false
+                "sourcemap=none": ''
             }
             
         },

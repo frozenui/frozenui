@@ -14,7 +14,8 @@
 .ui-header-stable,
 .ui-header-positive {
   padding: 0 10px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .ui-header-stable,
 .ui-footer-stable {
@@ -114,5 +115,3 @@
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
   -webkit-box-align: center; }
-
-/*# sourceMappingURL=layout.css.map */

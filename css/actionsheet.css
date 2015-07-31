@@ -25,7 +25,8 @@
   bottom: 0;
   padding: 0 8px;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
   -webkit-transform: translateY(100%);
   -webkit-transition-property: all;
@@ -37,7 +38,8 @@
   display: block;
   width: 100%;
   color: #0079ff;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .ui-actionsheet button {
   line-height: 44px;
@@ -80,5 +82,3 @@
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
     background-repeat: repeat-x;
     -webkit-background-size: 100% 1px; } }
-
-/*# sourceMappingURL=actionsheet.css.map */

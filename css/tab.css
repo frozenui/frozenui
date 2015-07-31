@@ -13,7 +13,8 @@
   display: -webkit-box;
   font-size: 16px;
   height: 45px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .ui-tab-content {
   display: -webkit-box; }
@@ -30,7 +31,8 @@
   -webkit-box-flex: 1;
   text-align: center;
   color: #777;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-bottom: 2px solid transparent;
   width: 100%; }
 
@@ -40,5 +42,3 @@
 
 .ui-tab-nav li:active {
   opacity: .8; }
-
-/*# sourceMappingURL=tab.css.map */

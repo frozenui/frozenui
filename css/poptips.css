@@ -6,7 +6,8 @@
   left: 0px;
   z-index: 999;
   padding: 0px 10px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .ui-poptips-cnt {
   background-color: rgba(0, 0, 0, 0.6);
@@ -48,5 +49,3 @@
 
 .ui-poptips-warn i:before {
   content: ""; }
-
-/*# sourceMappingURL=poptips.css.map */

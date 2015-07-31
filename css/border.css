@@ -90,12 +90,11 @@
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
     -webkit-background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
     background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
-    background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+    -webkit-background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+            background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
     background-repeat: no-repeat;
     background-position: top, right, bottom, left;
     padding: 1px;
     -webkit-box-sizing: border-box;
     z-index: 10;
     pointer-events: none; } }
-
-/*# sourceMappingURL=border.css.map */

@@ -1,7 +1,8 @@
 .ui-btn-group {
   display: -webkit-box;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-align: center; }
 
 .ui-btn-group button {
@@ -10,5 +11,3 @@
   margin-right: 10px; }
   .ui-btn-group button:first-child {
     margin-left: 10px; }
-
-/*# sourceMappingURL=btn-group.css.map */

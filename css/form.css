@@ -17,11 +17,13 @@
     width: 95px;
     position: absolute;
     text-align: left;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .ui-form-item input,
   .ui-form-item textarea {
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-appearance: none;
     border: 0;
     background: none;
@@ -141,5 +143,3 @@
 .ui-form-item-switch {
   display: -webkit-box;
   -webkit-box-align: center; }
-
-/*# sourceMappingURL=form.css.map */

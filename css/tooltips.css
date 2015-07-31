@@ -4,7 +4,8 @@
   position: relative;
   z-index: 99;
   overflow: hidden;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .ui-tooltips-cnt {
   background-color: #fff;
@@ -83,5 +84,3 @@
   color: rgba(0, 0, 0, 0.5);
   content: "";
   color: #f76249; }
-
-/*# sourceMappingURL=tooltips.css.map */
