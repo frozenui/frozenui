@@ -4,8 +4,7 @@
   height: 2px;
   font-size: 0px;
   background-color: #e2e2e2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .ui-progress span {
   display: block;
@@ -24,3 +23,5 @@
   .ui-grid-trisect li .ui-progress span,
   .ui-grid-halve li .ui-progress span {
     border-radius: 3px; }
+
+/*# sourceMappingURL=progress.css.map */

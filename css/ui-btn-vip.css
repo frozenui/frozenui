@@ -1,7 +1,3 @@
-@charset "UTF-8";
-/**
- * 开通会员按钮
- */
 .ui-btn-vip {
   height: 26px;
   line-height: 26px;
@@ -15,12 +11,12 @@
   vertical-align: top;
   color: #fff;
   -webkit-box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
 
 .ui-btn-vip:not(.disabled):not(:disabled):active,
 .ui-btn-vip.active {
   background-color: #1ba6d9;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box; }
+  background-clip: padding-box; }
+
+/*# sourceMappingURL=ui-btn-vip.css.map */

@@ -1,0 +1,40 @@
+/*
+Error: Invalid GBK character "\xE9"
+        on line 86 of C:\Users\zyhua\Documents\GitHub\frozenui\sass\component\tag.scss
+
+81:     color: #b7440e;
+82:     content: $icon-svip;
+83: }
+84: .ui-tag-freelimit:before{
+85:     background-color: #18b4ed;
+86:     content: '限免';
+87: }
+88: .ui-tag-free:before{
+89:     background-color: #5fb336;
+90:     content: '免费';
+91: }
+
+Backtrace:
+C:\Users\zyhua\Documents\GitHub\frozenui\sass\component\tag.scss:86
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each_with_index'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:896:in `check_sass_encoding'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:423:in `check_encoding!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:379:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE9\"\A         on line 86 of C:\Users\zyhua\Documents\GitHub\frozenui\sass\component\tag.scss\A \A 81:     color: #b7440e;\A 82:     content: $icon-svip;\A 83: }\A 84: .ui-tag-freelimit:before{\A 85:     background-color: #18b4ed;\A 86:     content: '限免';\A 87: }\A 88: .ui-tag-free:before{\A 89:     background-color: #5fb336;\A 90:     content: '免费';\A 91: }"; }
