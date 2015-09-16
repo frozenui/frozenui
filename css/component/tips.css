@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.ui-tips {
+  padding: 20px 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #000; }
+  .ui-tips i {
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    vertical-align: top; }
+
+.ui-tips i:before {
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  line-height: 44px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  content: "";
+  color: #0090ff;
+  line-height: 21px; }
+
+.ui-tips-success i:before {
+  content: "";
+  color: #65d521; }
+
+.ui-tips-warn i:before {
+  content: "";
+  color: #f76249; }

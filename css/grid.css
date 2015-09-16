@@ -65,8 +65,7 @@
 
 .ui-col {
   float: left;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%; }
 
 .ui-col-10 {
@@ -116,3 +115,5 @@
   .ui-row-flex-ver .ui-col {
     width: 100%;
     height: 0; }
+
+/*# sourceMappingURL=grid.css.map */

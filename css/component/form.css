@@ -1,0 +1,40 @@
+/*
+Error: Invalid GBK character "\xE8"
+        on line 15 of C:\Users\zyhua\Documents\GitHub\frozenui\sass\component\form.scss
+
+10: 
+11: .ui-form-item-order.active {
+12: 	background-color: $active-bg;
+13: }
+14: 
+15: /* 表单输入项 *\/
+16: .ui-form-item {
+17: 	position: relative;
+18: 	font-size: $font-size-info;
+19: 	height: $line-height-bar;
+20: 	line-height: $line-height-bar;
+
+Backtrace:
+C:\Users\zyhua\Documents\GitHub\frozenui\sass\component\form.scss:15
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each_with_index'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:896:in `check_sass_encoding'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:423:in `check_encoding!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:379:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE8\"\A         on line 15 of C:\Users\zyhua\Documents\GitHub\frozenui\sass\component\form.scss\A \A 10: \A 11: .ui-form-item-order.active {\A 12: 	background-color: $active-bg;\A 13: }\A 14: \A 15: /* 表单输入项 */\A 16: .ui-form-item {\A 17: 	position: relative;\A 18: 	font-size: $font-size-info;\A 19: 	height: $line-height-bar;\A 20: 	line-height: $line-height-bar;"; }
