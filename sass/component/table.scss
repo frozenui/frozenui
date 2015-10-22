@@ -35,20 +35,25 @@
         background-position: right, bottom;
         pointer-events: none;
     }
-    .ui-table tr td:last-child:after,.ui-table tr th:last-child:after{
+    .ui-table tr td:last-child:after,
+    .ui-table tr th:last-child:after{
         background-image: $border-b;
         background-size: 100% 1px;
         background-repeat: no-repeat;
         background-position: bottom;
     }
-    .ui-table tr:last-child td:not(:last-child):after{
+    .ui-table tr:last-child td:after{
         background-image: $border-r;
         background-size: 1px 100%;
         background-repeat: no-repeat;
         background-position: right;
     }
+    .ui-table tr:last-child td:last-child:after{
+        background-image: none;
+    }
 }
-.ui-table tr td:last-child,.ui-table tr th:last-child{
+.ui-table tr td:last-child,
+.ui-table tr th:last-child{
     border-right: 0;
 }
 .ui-table tr:last-child td{

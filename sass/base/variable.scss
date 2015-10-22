@@ -1,8 +1,10 @@
 $bordercolor:           #e0e0e0;
-$border-t:              -webkit-gradient(linear, left bottom, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor), to($bordercolor));
-$border-b:              -webkit-gradient(linear, left top, left bottom, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor), to($bordercolor));
-$border-l:              -webkit-gradient(linear, right top, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor), to($bordercolor));
-$border-r:              -webkit-gradient(linear, left top, right top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor), to($bordercolor));
+$border-t:              -webkit-gradient(linear, left bottom, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+$border-b:              -webkit-gradient(linear, left top, left bottom, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+$border-l:              -webkit-gradient(linear, right top, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+$border-r:              -webkit-gradient(linear, left top, right top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+
+
 
 $stable-bg:             #f8f8f8;
 $default-bg:            #fff;
@@ -62,7 +64,7 @@ $button-size:           15px;
 $button-border-radius:  3px;
 $button-hot-area:       7px;
 $button-bg-color:       #fdfdfd;
-$button-bg-image:       -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
+$button-bg-image:       -webkit-gradient(linear,left top, left bottom, color-stop(.5, #fff), to(#fafafa));
 $button-text:           rgb(0,165,224);
 $button-border-color:   #cacccd;
 $button-active-bg:      #f2f2f2;
@@ -84,7 +86,7 @@ $button-wrap-padding-s:                 10px;
 $button-group-margin:                   10px;
 
 $button-primary-bg-color:               #18b4ed;
-$button-primary-bg-image:               -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
+$button-primary-bg-image:               -webkit-gradient(linear,left top, left bottom, color-stop(.5, #1fbaf3), to(#18b4ed));
 $button-primary-text:                   rgb(255,255,255);
 $button-primary-border-color:           #0baae4;
 $button-primary-active-bg:              #1ca7da;
@@ -92,7 +94,7 @@ $button-primary-active-text:            rgba(255,255,255,.5);
 
 
 $button-danger-bg-color:                #f75549;
-$button-danger-bg-image:                -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #fc6156), to(#f75549));
+$button-danger-bg-image:                -webkit-gradient(linear,left top, left bottom, color-stop(.5, #fc6156), to(#f75549));
 $button-danger-text:                    rgb(255,255,255);
 $button-danger-border-color:            #f43d30;
 $button-danger-active-bg:               #e2574d;
@@ -102,7 +104,7 @@ $button-disabled-bg-color:              #e9ebec;
 $button-disabled-text:                  #ccc;
 
 $button-progress-bg-color:              #fefefe;
-$button-progress-bg-image:              -webkit-gradient(linear,left top, left bottom, color-stop(0.5, rgb(255,255,255)), to(rgb(250,250,250)));
+$button-progress-bg-image:              -webkit-gradient(linear,left top, left bottom, color-stop(.5, rgb(255,255,255)), to(rgb(250,250,250)));
 $button-progress-text:                  #ccc;
 $button-progress-disabled-border-color: #cacccd;
 $button-progress-inner-bg-image:         -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));

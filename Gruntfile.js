@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         autoprefixer: {
             options: {
                 diff: false,
-                browsers: ['ios 5', 'android 2.3']
+                browsers: ['last 2 versions','ios 5','android 2.3']
             },
 
             // prefix all files
@@ -92,7 +92,6 @@ module.exports = function(grunt) {
                     'lib/zeptojs/event.js',
                     'lib/zeptojs/touch.js', 
                     'lib/zeptojs/ajax.js',
-                    'lib/zeptojs/ie.js',
                     'lib/zeptojs/form.js'
                 ],
                 dest: 'lib/zepto.min.js'
@@ -149,7 +148,7 @@ module.exports = function(grunt) {
             zip:{
                 expand: true,
                 cwd: publicDir + '/<%=pkg.version%>',
-                src: ['font/iconfont.ttf','img/**/*',
+                src: ['img/**/*',
                 'css/basic.css','css/global.css'],
                 dest: publicDir + '/<%=pkg.version%>/i.gtimg.cn/vipstyle/frozenui/<%=pkg.version%>'
             },

@@ -20,7 +20,7 @@
 .ui-border-radius{
     @include border-radius;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (-webkit-min-device-pixel-ratio : 2) {
     .ui-border{position: relative; border: 0;}
     .ui-border-t,.ui-border-b,.ui-border-l,.ui-border-r,.ui-border-tb{border: 0;}
     .ui-border-t{
