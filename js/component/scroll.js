@@ -314,7 +314,7 @@ function Scroll(el, options) {
 		this.options.scrollY = false;
 		this.options.momentum = false;
 
-		this.scroller = $('.ui-slider-content')[0];
+		this.scroller = $('.ui-slider-content',this.wrapper)[0];
 		$(this.scroller.children[0]).addClass('current');
 
 		this.currentPage = 0;
@@ -340,7 +340,7 @@ function Scroll(el, options) {
 			}
 			temp += '</ul>';
 			$(this.wrapper).append(temp);
-			this.indicator = $('.ui-slider-indicators')[0];
+			this.indicator = $('.ui-slider-indicators',this.wrapper)[0];
 		}
 	}
 
@@ -354,8 +354,8 @@ function Scroll(el, options) {
 		this.options.scrollY = false;
 		this.options.momentum = false;
 
-		this.scroller = $('.ui-tab-content')[0];
-		this.nav = $('.ui-tab-nav')[0];
+		this.scroller = $('.ui-tab-content',this.wrapper)[0];
+		this.nav = $('.ui-tab-nav',this.wrapper)[0];
 
 		$(this.scroller.children[0]).addClass('current');
 		$(this.nav.children[0]).addClass('current');

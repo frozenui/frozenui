@@ -6,7 +6,7 @@
         <meta name="format-detection" content="telephone=no">
         <title>FrozenUI Demo</title>
         <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
-        <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.3.0/css/frozen.css">
+        <link rel="stylesheet" href="http://frozenui.github.io/frozenui/css/frozen.css">
         <link rel="stylesheet" href="demo.css">
         <script src="../lib/zepto.min.js"></script>
         <script src="../js/frozen.js"></script>
@@ -32,7 +32,7 @@
     <div class="demo-item">
         <p class="demo-desc">轮播组件</p>
         <div class="demo-block">
-            <div class="ui-slider">
+            <div class="ui-slider" id="slider1">
                 <ul class="ui-slider-content" style="width: 300%">
                     <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
                     <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
@@ -40,12 +40,24 @@
                 </ul>
             </div>
             内容
-
+            <div class="ui-slider"  id="slider2">
+                <ul class="ui-slider-content" style="width: 300%">
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                </ul>
+            </div>
             
         </div>
         <script class="demo-script">
         (function (){
-            var slider = new fz.Scroll('.ui-slider', {
+            var slider = new fz.Scroll('#slider1', {
+                role: 'slider',
+                indicator: true,
+                autoplay: true,
+                interval: 3000
+            });
+            var slider2 = new fz.Scroll('#slider2', {
                 role: 'slider',
                 indicator: true,
                 autoplay: true,

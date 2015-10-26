@@ -1358,7 +1358,6 @@ h6, .ui-txt-tips {
   color: #00a5e0;
   -webkit-box-sizing: border-box;
   -webkit-background-clip: padding-box;
-          background-clip: padding-box;
   border: 1px solid #cacccd;
   border-radius: 3px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -1390,8 +1389,7 @@ h6, .ui-txt-tips {
   .ui-btn-s.active {
     background: #f2f2f2;
     color: rgba(0, 165, 224, 0.5);
-    -webkit-background-clip: padding-box;
-            background-clip: padding-box; }
+    -webkit-background-clip: padding-box; }
   .ui-btn:after,
   .ui-btn-lg:after,
   .ui-btn-s:after {
