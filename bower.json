@@ -4,7 +4,7 @@
   "description": "FrozenUI的CSS组件库,基于腾讯手Q样式规范",
   "main":  [
     "./dist/js/frozen.js",
-    "./dist/css/frozen-min.css"
+    "./dist/css/frozen.css"
   ],
    "ignore": [
     "**/.*",
