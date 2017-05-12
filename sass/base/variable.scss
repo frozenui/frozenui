@@ -1,0 +1,206 @@
+$bordercolor:           #e0e0e0;
+$border-t:              -webkit-gradient(linear, left bottom, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+$border-b:              -webkit-gradient(linear, left top, left bottom, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+$border-l:              -webkit-gradient(linear, right top, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+$border-r:              -webkit-gradient(linear, left top, right top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+
+
+
+$stable-bg:             #f8f8f8;
+$default-bg:            #fff;
+$positive-bg:           #18b4ed;
+$header-height:         45px;
+$mask-bg:               rgba(0,0,0,.4);
+$input-wrap-bg:         #ebeced;
+
+$txt-default:           #000;
+$txt-info:              #777;
+$txt-muted:             #bbb;
+$txt-warning:           #ff4222;
+$txt-highlight:         #ff8444;
+$txt-link:              #00a5e0;
+$txt-feeds:             #314c83;
+
+$line-height-base:      1.5; 
+$line-height-s:         1.3; 
+$line-height-txt:       24px;
+$line-height-bar:       44px; 
+$txt-padding-top:       10px;
+$txt-padding-bottom:    10px;
+
+$font-size-base:        16px;
+$font-size-title:       16px;
+$font-size-h1:          18px;
+$font-size-title-lg:    17px;
+$font-size-info:        16px;
+$font-size-sub:         14px;
+$font-size-tips:        12px;
+
+$wrap-padding:          15px;
+$wrap-padding-s:        10px;
+
+$wrap-link-padding:     30px;
+$wrap-link-padding-s:   25px;
+
+$border-radius-base:    4px;
+$border-radius-lg:      8px;
+$border-radius-max:     200px;
+
+$active-bg:             #e5e6e7;
+$active-opacity:        .5;
+
+$avatar-width:          50;
+$avatar-width-lg:       70;
+$avatar-width-s:        40;
+$avatar-width-tiled:    30;
+
+$reddot-bg:             #f74c31;
+$reddot-bg-muted:       #b6cae0;
+
+$button-height:         30px;
+$button-padding:        0 11px;
+$button-min-width:      55px;
+$button-size:           15px;
+$button-border-radius:  3px;
+$button-hot-area:       7px;
+$button-bg-color:       #fdfdfd;
+$button-bg-image:       -webkit-gradient(linear,left top, left bottom, color-stop(.5, #fff), to(#fafafa));
+$button-text:           rgb(0,165,224);
+$button-border-color:   #cacccd;
+$button-active-bg:      #f2f2f2;
+$button-active-text:    rgba(0,165,224,.5);
+
+$button-lg-height:                      44px;
+$button-lg-size:                        18px;
+$button-lg-border-radius:               5px; 
+
+$button-s-width:                        55px;
+$button-s-height:                       25px;
+$button-s-size:                         13px;
+
+$button-before-border-radius:           6px;
+$button-lg-before-border-radius:        10px;
+$button-wrap-padding:                   15px 10px;
+$button-wrap-padding-s:                 10px;
+
+$button-group-margin:                   10px;
+
+$button-primary-bg-color:               #18b4ed;
+$button-primary-bg-image:               -webkit-gradient(linear,left top, left bottom, color-stop(.5, #1fbaf3), to(#18b4ed));
+$button-primary-text:                   rgb(255,255,255);
+$button-primary-border-color:           #0baae4;
+$button-primary-active-bg:              #1ca7da;
+$button-primary-active-text:            rgba(255,255,255,.5);
+
+
+$button-danger-bg-color:                #f75549;
+$button-danger-bg-image:                -webkit-gradient(linear,left top, left bottom, color-stop(.5, #fc6156), to(#f75549));
+$button-danger-text:                    rgb(255,255,255);
+$button-danger-border-color:            #f43d30;
+$button-danger-active-bg:               #e2574d;
+$button-danger-active-text:             rgba(255,255,255,.5);
+
+$button-disabled-bg-color:              #e9ebec;
+$button-disabled-text:                  #ccc;
+
+$button-progress-bg-color:              #fefefe;
+$button-progress-bg-image:              -webkit-gradient(linear,left top, left bottom, color-stop(.5, rgb(255,255,255)), to(rgb(250,250,250)));
+$button-progress-text:                  #ccc;
+$button-progress-disabled-border-color: #cacccd;
+$button-progress-inner-bg-image:         -webkit-gradient(linear,left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
+
+
+$list-thumb-width:                      50px;
+$list-thumb-height:                     50px;
+$list-thumb-width-s:                    28px;
+$list-thumb-height-s:                   28px;
+$list-img-width:                        100px;
+$list-img-height:                       68px;
+$list-icon-width:                       40px;
+$list-icon-height:                      40px;
+$list-img-margin:                       10px 10px 10px 0px;
+
+$actionsheet-bg:                        rgba(255,255,255,.84);
+$actionsheet-border:                    3px;
+$actionsheet-size:                      21px;
+$actionsheet-title-size:                13px;
+$actionsheet-title-line-height:         20px;
+$actionsheet-title-color:               #8a8a8a;
+$actionsheet-title-padding:             20px;
+$actionsheet-btn-last-margin:           8px 0;
+$actionsheet-del-color:                 #fd472b;
+$actionsheet-color:                     #0079ff;
+$actionsheet-active:                    .84;
+
+$dialog-cnt-bg:                         rgba(253,253,253,0.95);
+$dialog-cnt-width:                      270px;
+$dialog-bd-height-min:                  71px;
+$dialog-bd-padding:                     18px;
+$dialog-border-radius:                  6px;
+$dialog-hd-margin-bottom:               4px;
+$dialog-ft-height:                      42px;
+$dialog-btn-active:                     rgba(0,0,0,.1);
+$dialog-close-color:                    #828282;
+
+ 
+$form-label-width:                      95px;
+$form-textarea-height:                  65px;
+$form-textarea-margin-top:              15px;
+$form-right-close-right:                125px;
+$form-left-input-padding-left:          115px;
+$form-right-input-padding-right:        150px;
+
+$searchbar-height:                      30px;
+$searchbar-padding:                     10px;
+$searchbar-border:                      5px;
+$searchbar-border-lg:                   10px;
+
+$icon-arrow:                            "\f600"; 
+$icon-checked:                          "\f601";
+$icon-checked-s:                        "\f602"; 
+$icon-info-block:                       "\f603";
+$icon-success-block:                    "\f604";
+$icon-warn-block:                       "\f605"; 
+$icon-info:                             "\f606"; 
+$icon-success:                          "\f607";
+$icon-warn:                             "\f608";
+$icon-warn-lg:                          "\f609";
+$icon-unchecked:                        "\f610";
+$icon-unchecked-s:                      "\f611"; 
+$icon-vip:                              "\f612";
+$icon-svip:                             "\f613";
+$icon-return:                           "\f614"; 
+$icon-close:                            "\f60a";
+$icon-close-page:                       "\f60b";
+$icon-search:                           "\f60c";
+$icon-tag:                              "\f60d"; 
+$icon-tag-s:                            "\f60e";
+$icon-tag-pop:                          "\f60f"; 
+$icon-color:                            #8e8e93;                         
+
+$tips-padding:                          20px 15px;
+$tips-info:                             #0090ff;
+$tips-success:                          #65d521;
+$tips-warn:                             #f76249;
+
+$poptips-height:                        40px;
+$poptips-bg:                            rgba(0,0,0,.6);
+$poptips-border:                        3px;
+
+$tab-height:                            45px;
+$tab-current-color:                     #00a5e0;
+$tab-current-border:                    #00a5e0;
+
+// Z-Indexes
+// -------------------------------
+$z-index-placehold:                     -1;
+$z-index-img:                           1;
+$z-index-switch:                        2; 
+$z-index-progress:                      9; 
+$z-index-tag:                           9;
+$z-index-border:                        10;
+$z-index-notice:                        99;
+$z-index-tooltips:                      99;
+$z-index-head:                          100;
+$z-index-poptips:                       999;
+$z-index-overlay:                       9999;

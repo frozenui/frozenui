@@ -1,0 +1,123 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+    
+.ui-header,
+.ui-footer {
+    position: fixed;
+    width: 100%;
+    z-index: $z-index-head;
+    left: 0;
+}
+.ui-header {
+    top: 0;
+    height: $header-height;
+    line-height: $header-height;
+    
+}
+.ui-header-stable,
+.ui-header-positive{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.ui-header-stable,
+.ui-footer-stable{
+    background-color: $stable-bg;
+
+}
+.ui-header-positive,
+.ui-footer-positive{
+    background-color: $positive-bg;
+    color: #fff;
+    a,a:active,i{
+        color: #fff;
+    }
+}
+.ui-footer-btn{
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0));
+    color: $txt-link;
+    .ui-tiled{
+        height: 100%;
+    }
+}
+.ui-footer {
+    bottom: 0;
+    height: 56px;
+}
+.ui-header ~ .ui-container {
+  border-top: $header-height solid transparent;
+}
+.ui-footer ~ .ui-container {
+  border-bottom: 56px solid transparent;
+}
+.ui-header h1{
+    text-align: center;
+    font-size: 18px;
+}
+.ui-header .ui-icon-return{
+    position: absolute;
+    left: 0;
+}
+.ui-header .ui-btn{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -15px;
+}
+/**
+ * 垂直上下居中
+ */
+.ui-center {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    text-align: center;
+    height: 150px;
+}
+/**
+ * 排版
+ */
+ .ui-flex,
+ .ui-tiled{
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+}
+.ui-flex-ver{
+    -webkit-box-orient: vertical;
+}
+.ui-flex-pack-start {
+    -webkit-box-pack: start;
+}
+.ui-flex-pack-end {
+    -webkit-box-pack: end;  
+}
+.ui-flex-pack-center {
+    -webkit-box-pack: center;
+}
+.ui-flex-align-start {
+    -webkit-box-align: start; 
+}
+.ui-flex-align-end {
+    -webkit-box-align: end;
+}
+.ui-flex-align-center {
+    -webkit-box-align: center;
+}
+/**
+ * 平铺
+ */
+.ui-tiled li {
+    -webkit-box-flex: 1;
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center; 
+}
+

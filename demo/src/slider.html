@@ -1,0 +1,51 @@
+@@include('include/header.html',{"name": "slider","desc": "轮播组件"})
+
+<section id="slider">
+    <div class="demo-item">
+        <p class="demo-desc">轮播组件</p>
+        <div class="demo-block">
+            <div class="ui-slider" id="slider1">
+                <ul class="ui-slider-content" style="width: 300%">
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                </ul>
+            </div>
+            内容
+            <div class="ui-slider"  id="slider2">
+                <ul class="ui-slider-content" style="width: 300%">
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                </ul>
+            </div>
+            
+        </div>
+        <script class="demo-script">
+        (function (){
+            var slider = new fz.Scroll('#slider1', {
+                role: 'slider',
+                indicator: true,
+                autoplay: true,
+                interval: 3000
+            });
+            var slider2 = new fz.Scroll('#slider2', {
+                role: 'slider',
+                indicator: true,
+                autoplay: true,
+                interval: 3000
+            });
+
+            slider.on('beforeScrollStart', function(fromIndex, toIndex) {
+                console.log(fromIndex,toIndex)
+            });
+
+            slider.on('scrollEnd', function(cruPage) {
+                console.log(cruPage)
+            });
+        })();
+        </script>
+    </div>
+</section>
+
+@@include('include/footer.html')

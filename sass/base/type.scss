@@ -1,0 +1,73 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+    
+a{
+    color: $txt-link;  
+}
+em{
+    color: $txt-highlight;
+}
+::-webkit-input-placeholder {
+    color: $txt-muted;
+}
+
+/**
+ * 文字
+ */
+h1{
+    font-size: $font-size-h1;
+}
+h2{
+    font-size: $font-size-title-lg;
+}
+h3,h4{
+    font-size: $font-size-title;
+}
+h5,.ui-txt-sub{
+    font-size: $font-size-sub;
+}
+h6,.ui-txt-tips{
+    font-size: $font-size-tips;
+}
+.ui-txt-default{
+    color: $txt-default;
+}
+.ui-txt-white{
+    color: white;
+}
+.ui-txt-info{
+    color: $txt-info;
+}
+.ui-txt-muted{
+    color: $txt-muted;
+}
+.ui-txt-warning,.ui-txt-red{
+    color: $txt-warning;
+}
+.ui-txt-feeds{
+    color: $txt-feeds;
+}
+/* 同em */
+.ui-txt-highlight{
+    color: $txt-highlight;
+}
+.ui-txt-justify{
+    text-align: justify;   
+}
+.ui-txt-justify-one{
+    text-align: justify;
+    overflow: hidden;
+    height: 24px;
+}
+.ui-txt-justify-one:after{
+    display:inline-block;
+    content:'';
+    overflow:hidden;
+    width:100%;
+    height:0;
+}
+
+
+

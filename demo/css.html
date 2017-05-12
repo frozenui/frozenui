@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>FrozenUI Demo</title>
+        <link rel="stylesheet" href="../css/frozen.css">
+        <link rel="stylesheet" href="demo.css">
+        <script src="../lib/zeptojs/zepto.min.js"></script>
+        <script src="../js/frozen.js"></script>
+    </head>
+    
+    <body>
+        <header class="ui-header ui-header-positive ui-border-b">
+            <i class="ui-icon-return" onclick="history.back()"></i><h1>index</h1><button class="ui-btn">回首页</button>
+        </header>
+        <section class="ui-container">
+
+
+
+<section id="list">
+    <div class="demo-item">
+        <div class="demo-block">
+            <ul class="ui-list ui-list-pure ui-border-b">
+                <li class="ui-border-t" data-href="type.html">
+                  文本
+                </li>
+                <li class="ui-border-t" data-href="icon.html">
+                  图标
+                </li>
+                <li class="ui-border-t" data-href="layout.html">
+                  布局
+                </li>
+                <li class="ui-border-t" data-href="grid.html">
+                  网格
+                </li>
+                <li class="ui-border-t" data-href="util.html">
+                  辅助类
+                </li>
+                <li class="ui-border-t" data-href="panel.html">
+                  面板
+                </li>
+                
+                <li class="ui-border-t" data-href="avatar.html">
+                  圆角头像
+                </li>
+                <li class="ui-border-t" data-href="badge.html">
+                  徽章
+                </li>
+                <li class="ui-border-t" data-href="reddot.html">
+                  红点
+                </li>
+                <li class="ui-border-t" data-href="tag.html">
+                  角标
+                </li>
+                <li class="ui-border-t" data-href="label.html">
+                  标签
+                </li>
+                <li class="ui-border-t" data-href="btn.html">
+                  按钮
+                </li>
+                <li class="ui-border-t" data-href="form.html">
+                  表单
+                </li>
+                <li class="ui-border-t" data-href="list.html">
+                  列表
+                </li>
+                <li class="ui-border-t" data-href="searchbar.html">
+                  搜索框
+                </li>
+                <li class="ui-border-t" data-href="table.html">
+                  表格
+                </li>
+                <li class="ui-border-t" data-href="loading.html">
+                  加载中
+                </li> 
+                <li class="ui-border-t" data-href="notice.html">
+                  通知
+                </li>
+                <li class="ui-border-t" data-href="tips.html">
+                  提示条
+                </li>
+                <li class="ui-border-t" data-href="tab.html">
+                  选项卡
+                </li>
+                <li class="ui-border-t" data-href="slider.html">
+                  轮播
+                </li>
+                <li class="ui-border-t" data-href="dialog.html">
+                  弹窗
+                </li>
+                <li class="ui-border-t" data-href="actionsheet.html">
+                  菜单
+                </li>
+                <li class="ui-border-t" data-href="progress.html">
+                  进度条
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+ 
+        </section><!-- /.ui-container-->
+        <script>
+        $('.ui-list-pure li').click(function(){
+            location.href= $(this).data('href');
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+    </body>
+</html>

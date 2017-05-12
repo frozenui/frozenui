@@ -1,0 +1,35 @@
+@@include('include/header.html',{"name": "loading","desc": "加载中"})
+
+<section id="loading">
+    <div class="demo-item">
+        <p class="demo-desc">局部加载中</p>
+        <div class="demo-block">
+            <div class="ui-loading-wrap">
+                <p>正在加载中...</p>
+                <i class="ui-loading"></i>
+            </div>
+        </div>
+    </div>
+    <div class="demo-item">
+        <p class="demo-desc">页面加载中</p>
+        <div class="demo-block">
+            <div class="ui-loading-block show">
+                <div class="ui-loading-cnt">
+                    <i class="ui-loading-bright"></i>
+                    <p>正在加载中...</p>
+                </div>
+            </div>
+            <script type="text/javascript" class="demo-script">
+                // var el = $.loading({content:'加载中...'});
+                // el.on("loading:hide",function(){
+                //     console.log("loading hide");
+                // });
+            </script>
+        </div>
+            
+            
+    </div>
+
+</section>
+
+@@include('include/footer.html')

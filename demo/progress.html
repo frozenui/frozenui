@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>FrozenUI Demo</title>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <link rel="stylesheet" href="http://frozenui.github.io/frozenui/css/frozen.css">
+        <link rel="stylesheet" href="demo.css">
+        <script src="../lib/zepto.min.js"></script>
+        <script src="../js/frozen.js"></script>
+    </head>
+    
+    <body ontouchstart>
+        <header class="ui-header ui-header-positive ui-border-b">
+            <i class="ui-icon-return" onclick="history.back()"></i><h1>进度条 progress</h1><button class="ui-btn">回首页</button>
+        </header>
+        <footer class="ui-footer ui-footer-btn">
+            <ul class="ui-tiled ui-border-t">
+                <li data-href="index.html" class="ui-border-r"><div>基础样式</div></li>
+                <li data-href="ui.html" class="ui-border-r"><div>UI组件</div></li>
+                <li data-href="js.html"><div>JS插件</div></li>
+            </ul>
+        </footer>
+        <section class="ui-container">
+
+
+
+
+<section id="progress">
+    <div class="demo-item">
+        <p class="demo-desc">进度条</p>
+        <div class="demo-block">
+            <div class="ui-progress">
+                <span style="width:50%"></span>
+            </div>
+        </div>
+    </div>
+    <div class="demo-item">
+        <p class="demo-desc">图片上进度条</p>
+        <div class="demo-block">
+            <ul class="ui-grid-halve">
+                <li>
+                    <div class="ui-grid-halve-img">
+                        <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+                        <div class="ui-progress">
+                            <span style="width:50%"></span>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="ui-grid-halve-img">
+                        <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+        </section><!-- /.ui-container-->
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+@@include('include/header.html', {"name": "actionsheet","desc": "菜单"})
+
+<section id="actionsheet">
+	<div class="demo-item">
+		<p class="demo-desc">菜单</p>
+		<div class="demo-block">
+			<div class="ui-actionsheet">  
+				<div class="ui-actionsheet-cnt">
+					<h4>同时会将我从对方的列表中删除</h4> 
+					<button>分享</button>  
+					<button class="ui-actionsheet-del">删除</button>
+					<button>取消</button> 
+				</div>         
+			</div>
+			<script type="text/javascript">
+				$('.ui-actionsheet').addClass('show');
+			</script>
+		</div>
+	</div>
+</section>
+
+@@include('include/footer.html')

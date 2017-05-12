@@ -1,0 +1,128 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+    
+/**
+ * 弹窗类
+ */
+.ui-dialog{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: $z-index-overlay;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	background: $mask-bg;
+	display: none;
+}
+.ui-dialog.show{
+	display: -webkit-box;
+	display: box;
+}
+.ui-dialog-hd{
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+}
+.ui-dialog-cnt{
+	border-radius: $dialog-border-radius;
+	width: $dialog-cnt-width;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	pointer-events: auto;
+	background-color: $dialog-cnt-bg;
+	position: relative;
+    font-size: $font-size-info;
+}
+.ui-dialog-bd{
+	min-height: $dialog-bd-height-min;
+	border-top-left-radius: $dialog-border-radius;
+	border-top-right-radius: $dialog-border-radius;
+	padding: $dialog-bd-padding;
+	display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-box-orient: vertical;
+}
+.ui-dialog-bd > h4{
+	margin-bottom: 4px;
+	width: 100%;
+	text-align: center;
+}
+.ui-dialog-bd > div,.ui-dialog-bd > ul{
+    width: 100%;
+}
+.ui-dialog-ft{
+    border-bottom-left-radius: $dialog-border-radius;
+	border-bottom-right-radius: $dialog-border-radius;
+    display: -webkit-box;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    border-top: 1px solid $bordercolor;
+    height: $dialog-ft-height;
+    line-height: $dialog-ft-height;
+}
+.ui-dialog-close:before{
+    @include icon;
+    content: $icon-close-page;
+    color: $dialog-close-color;
+    display: block;
+    line-height: 32px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+.ui-dialog-close:active{
+    opacity: $active-opacity;
+}
+.ui-dialog-ft button{
+    color: $txt-link;
+    text-align: center;
+    border-right: 1px $bordercolor solid;
+    width: 100%;
+    line-height: $dialog-ft-height;
+    background: transparent;
+    display: block;
+    margin: 0 !important;
+    -webkit-box-flex: 1;
+    &:active {
+        background-color: $dialog-btn-active !important;
+    }
+    &:first-child{
+        border-bottom-left-radius: $dialog-border-radius;
+    }
+    &:last-child{
+        border-right: 0;
+        border-bottom-right-radius:$dialog-border-radius;
+    }     
+}
+@media screen and (-webkit-min-device-pixel-ratio:2.0){
+    .ui-dialog-ft{
+        position: relative;
+        border: 0;
+        background-position: left top; 
+        background-image: $border-t;
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+    }
+    .ui-dialog-ft button{
+        border-right: 0;
+        background-position: right top;
+        background-image: $border-r;
+        background-repeat: repeat-y;
+        -webkit-background-size: 1px 100%;
+        &:last-child{
+            background: none;
+        } 
+    }
+}
+
+

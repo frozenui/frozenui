@@ -1,0 +1,72 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-searchbar-wrap{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background-color: $input-wrap-bg;
+    height: $line-height-bar;
+    button {
+        margin-right: $searchbar-padding;
+        
+    }
+    .ui-searchbar-cancel{
+        color: $txt-link;
+        font-size: $font-size-info;
+        padding: 4px 8px;
+    }
+    .ui-searchbar-input,button,.ui-icon-close{
+        display: none;
+    }
+    &.focus{
+        -webkit-box-pack: start;
+        .ui-searchbar-input,button,.ui-icon-close{
+            display: block;
+        }
+        .ui-searchbar-text{
+            display: none;
+        }
+    }
+}
+.ui-searchbar{
+    border-radius: $searchbar-border;
+    margin: 0 $searchbar-padding;
+    background: $default-bg;
+    height: $searchbar-height;
+    line-height: $searchbar-height;
+    position: relative;
+    padding-left: 4px;
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    color: $txt-muted;
+    font-size: $font-size-sub;
+    width: 100%;
+    input{
+        -webkit-appearance: none;
+        border: none;
+        background: none;
+        color: $txt-default;
+        width: 100%;
+        padding: 4px 0;
+    }
+    .ui-icon-search{
+        line-height: $searchbar-height;
+    }
+    .ui-icon-close{
+        line-height: $searchbar-height;
+    }   
+}
+.ui-searchbar-input{
+    -webkit-box-flex: 1;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-searchbar.ui-border-radius:before{
+          border-radius: $searchbar-border-lg;
+    }
+}

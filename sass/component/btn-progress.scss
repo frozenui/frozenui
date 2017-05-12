@@ -1,0 +1,46 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-btn-progress{
+
+    width: $button-min-width;
+    padding: 0;
+    overflow: hidden;
+    .ui-btn-inner{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+        background-image: $button-progress-inner-bg-image;
+        border-bottom-left-radius: $button-border-radius;
+        border-top-left-radius: $button-border-radius;
+        span{
+            display: inline-block;
+            color: $button-primary-text;
+            position: absolute;
+            width: $button-min-width;
+            left: 0;
+        }
+    }
+    &.disabled,&:disabled{
+        background-color: $button-progress-bg-color;
+        background-image: $button-progress-bg-image;
+        color: $button-progress-text;
+        border: 1px solid $button-progress-disabled-border-color;
+        background-clip: padding-box;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-btn-progress.disabled,
+    .ui-btn-progress:disabled{
+        border: 0;
+    }
+    .ui-btn-progress.disabled:before,
+    .ui-btn-progress:disabled:before{
+        border: 1px solid $button-progress-disabled-border-color;
+    }
+}

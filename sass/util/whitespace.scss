@@ -1,0 +1,30 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-whitespace{
+    padding-left: $wrap-padding;
+    padding-right: $wrap-padding;
+    box-sizing: border-box;
+}
+.ui-whitespace-left{
+    padding-left: $wrap-padding;
+    box-sizing: border-box;
+}
+.ui-whitespace-right{
+    padding-right: $wrap-padding;
+    box-sizing: border-box;
+}
+@media (max-width: 320px) {
+    .ui-whitespace{
+        padding-left: $wrap-padding-s;
+        padding-right: $wrap-padding-s;
+    }
+    .ui-whitespace-left{
+        padding-left: $wrap-padding-s;
+    }
+    .ui-whitespace-right{
+        padding-right: $wrap-padding-s;
+    }
+}

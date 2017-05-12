@@ -1,0 +1,44 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-checkbox{
+  	display: inline-block;
+}
+.ui-checkbox input{
+    display: inline-block;
+	width: 25px;
+	height: 1px;
+	position: relative;
+	overflow: visible;
+	border: 0;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+    margin-right: 8px;
+    vertical-align: middle;
+
+}
+.ui-checkbox input:before{
+    @include icon;
+	content: $icon-unchecked;
+    color: $positive-bg;
+    position: absolute;
+    top: -22px;
+    left: -4px;
+    color: #dedfe0;
+}
+.ui-checkbox input:checked:before{
+    content: $icon-checked;
+    color: $positive-bg;
+}
+.ui-checkbox-s{
+    @extend .ui-checkbox;
+}
+.ui-checkbox-s input:before{
+	content: $icon-unchecked-s;
+}
+.ui-checkbox-s input:checked:before{
+    content: $icon-checked-s;
+}

@@ -1,0 +1,127 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+    
+/**
+ * 按钮
+ */
+ .ui-btn,
+ .ui-btn-lg,
+ .ui-btn-s{
+    position: relative;
+    text-align: center;
+    background-color: $button-bg-color;
+    background-image: $button-bg-image;
+    vertical-align: top;
+    color: $button-text;
+    -webkit-box-sizing: border-box;
+    -webkit-background-clip: padding-box;
+    @include border-radius($button-border-color,$button-border-radius,$button-before-border-radius);
+    &:not(.disabled):not(:disabled):active,
+    &.active{
+        background: $button-active-bg;
+        color: $button-active-text;
+        -webkit-background-clip: padding-box;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        top: -$button-hot-area;
+        bottom: -$button-hot-area;
+        left: 0;
+        right: 0;
+    }
+    &.disabled,
+    &:disabled{
+        border: 0;
+        color: $button-disabled-text;
+        background: $button-disabled-bg-color;
+        background-clip: padding-box;
+    }
+}
+.ui-btn-s{
+    width: $button-s-width;
+    height: $button-s-height;
+    line-height: $button-s-height;
+    font-size: $button-s-size;
+}
+.ui-btn{
+    height: $button-height;
+    line-height: $button-height;
+    padding: $button-padding;
+    min-width: $button-min-width;
+    display: inline-block;
+    font-size: $button-size;
+}
+.ui-btn-lg{
+    font-size: $button-lg-size;
+    height: $button-lg-height;
+    line-height: $button-lg-height;
+    display: block;
+    width: 100%; 
+    border-radius: $button-lg-border-radius;
+}
+
+.ui-btn-primary{
+    background-color: $button-primary-bg-color;
+    border-color: $button-primary-border-color;
+    background-image: $button-primary-bg-image;
+    color: $button-primary-text;
+    background-clip: padding-box;
+    &:not(.disabled):not(:disabled):active,
+    &.active{
+        background: $button-primary-active-bg;
+        border-color: $button-primary-active-bg;
+        color: $button-primary-active-text;
+        background-clip: padding-box;
+    }
+}
+
+.ui-btn-danger{
+    background-color: $button-danger-bg-color;
+    background-image: $button-danger-bg-image;
+    color: $button-danger-text;
+    border-color: $button-danger-border-color;
+    background-clip: padding-box;
+    &:not(.disabled):not(:disabled):active,
+    &.active{
+        background: $button-danger-active-bg;
+        border-color: $button-danger-active-bg;
+        color: $button-danger-active-text;
+        background-clip: padding-box;
+    }
+}
+
+.ui-btn-wrap{
+    padding: $button-wrap-padding;
+    @media (max-width: 320px) {
+        padding: $button-wrap-padding-s;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-btn-primary:before{
+        border: 1px solid $button-primary-border-color;
+    }
+    .ui-btn-danger:before{
+        border: 1px solid $button-danger-border-color;
+    }
+    .ui-btn,
+    .ui-btn-lg,
+    .ui-btn-s{
+        border: 0;
+        &.disabled,
+        &:disabled,
+        &.disabled:before,
+        &:disabled:before{
+            border: 1px solid $button-disabled-bg-color;
+        }
+    }
+    
+    .ui-btn-lg:before{
+        border-radius: $button-lg-before-border-radius;
+    }
+    
+}
+

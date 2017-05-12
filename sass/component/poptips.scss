@@ -1,0 +1,50 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-poptips{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: $z-index-poptips;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.ui-poptips-cnt{
+    background-color: $poptips-bg;
+    line-height: $poptips-height;
+    height: $poptips-height; 
+    color:#fff;
+    font-size: $font-size-info;
+    text-align: center;
+    border-bottom-left-radius: $poptips-border;
+    border-bottom-right-radius: $poptips-border;
+    i{
+        display: inline-block;
+        width: 32px;
+        height: 1px;
+        vertical-align: top;
+        &:before{
+            @include icon;
+            margin-right: 2px;
+            margin-left: 4px;
+            color: #fff;
+            line-height: $poptips-height;
+        }
+    }
+    @include nowrap;
+}
+.ui-poptips-info i:before{
+    content: $icon-info-block;
+    
+}
+.ui-poptips-success i:before{
+    content: $icon-success-block;
+}
+.ui-poptips-warn i:before{
+    content: $icon-warn-block;
+}
+

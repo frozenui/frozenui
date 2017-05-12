@@ -1,0 +1,58 @@
+@@include('include/header.html',{"name": "poptips","desc": "浮层提示条"})
+
+<section id="poptips">
+    <div class="demo-item">
+        <p class="demo-desc">浮层提示条</p>
+        <div class="demo-block">
+            <div class="ui-poptips ui-poptips-success">
+                <div class="ui-poptips-cnt"><i></i>温馨提示内容</div>
+            </div>
+            <div class="ui-poptips ui-poptips-info">
+                <div class="ui-poptips-cnt"><i></i>温馨提示内容</div>
+            </div>
+            <div class="ui-poptips ui-poptips-warn">
+                <div class="ui-poptips-cnt"><i></i>温馨提示内容</div>
+            </div>
+        </div>
+    </div>
+    <div class="ui-btn" id="btn1">弹出普通提示条</div>
+    <div class="ui-btn" id="btn2">弹出警示提示条</div>
+    <div class="ui-btn" id="btn3">弹出成功提示条</div>
+    <script type="text/javascript">
+        var el,el2,el3;
+        $("#btn1").click(function(){
+            el=$.tips({
+                content:'温馨提示内容',
+                stayTime:2000,
+                type:"success"
+            })
+            el.on("tips:hide",function(){
+                console.log("tips hide");
+            })
+
+        });
+        $("#btn2").click(function(){
+            el2=$.tips({
+                content:'温馨提示内容',
+                stayTime:2000,
+                type:"info"
+            })
+            el2.on("tips:hide",function(){
+                console.log("tips hide");
+            })
+        });
+        $("#btn3").click(function(){
+            el3=$.tips({
+                content:'温馨提示内容',
+                stayTime:2000,
+                type:"warn"
+            })
+            el3.on("tips:hide",function(){
+                console.log("tips hide");
+            })
+        });
+    </script>
+    
+</section>
+
+@@include('include/footer.html')

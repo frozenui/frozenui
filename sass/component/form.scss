@@ -1,0 +1,138 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-form {
+	background-color: $default-bg;
+	
+}
+
+.ui-form-item-order.active {
+	background-color: $active-bg;
+}
+
+/* 表单输入项 */
+.ui-form-item {
+	position: relative;
+	font-size: $font-size-info;
+	height: $line-height-bar;
+	line-height: $line-height-bar;
+	padding-right: $wrap-padding;
+	padding-left: $wrap-padding;
+
+	label:not(.ui-switch):not(.ui-checkbox):not(.ui-radio){
+		width: $form-label-width;
+		position: absolute;
+		text-align: left;
+		box-sizing: border-box;
+	}
+
+	input,
+	textarea{
+		width: 100%;
+		box-sizing: border-box;
+		-webkit-appearance: none;
+		border: 0;
+		background: none;
+		padding-left: $form-label-width;
+	}
+	input[type="checkbox"],input[type="radio"]{
+		padding-left: 0;
+	}
+	.ui-icon-close{
+		position: absolute;
+    	top: 0;
+    	right: 6px;
+    	@media (max-width: 320px) {
+	    	right: 1px;
+		}
+	}
+	@media (max-width: 320px) {
+	    padding-left: $wrap-padding-s;
+	    padding-right: $wrap-padding-s;
+	}
+}
+
+.ui-form-item-textarea {
+	height: $form-textarea-height;
+}
+
+.ui-form-item-textarea label {
+	vertical-align: top;
+}
+
+.ui-form-item-textarea textarea {
+	margin-top: $form-textarea-margin-top;
+	border: none;
+}
+
+.ui-form-item-textarea textarea:focus {
+	outline: none;
+}
+.ui-form-item-link > li:after{
+	@include arrowlink;
+}
+.ui-form-item-l label,
+.ui-form-item-r button {
+	color: $txt-link;
+	text-align: center;
+}
+
+.ui-form-item-r .ui-icon-close {
+	right: $form-right-close-right;
+}
+
+.ui-form-item-l input:not([type="checkbox"]):not([type="radio"]) {
+	padding-left: $form-left-input-padding-left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ui-form-item-r {
+	padding-right: 0;
+}
+
+.ui-form-item-r input:not([type="checkbox"]):not([type="radio"]) {
+	padding-left: 0;
+	padding-right: $form-right-input-padding-right;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ui-form-item-r button {
+	width: 110px;
+	height: $line-height-bar;
+	position: absolute;
+	top: 0; 
+	right: 0;
+}
+
+.ui-form-item-r button.disabled {
+	color: $txt-muted;
+}
+
+.ui-form-item-r button:not(.disabled):active {
+	background-color: $active-bg;
+}
+
+.ui-form-item-pure input,
+.ui-form-item-pure textarea {
+	padding-left: 0;
+}
+/* 表单展示项 */
+.ui-form-item-show label {
+	color: $txt-info;
+}
+
+.ui-form-item-link:after {
+	@include arrowlink;
+}
+.ui-form-item-checkbox,
+.ui-form-item-radio,
+.ui-form-item-switch{
+	display: -webkit-box;
+	-webkit-box-align: center;
+}
+
+

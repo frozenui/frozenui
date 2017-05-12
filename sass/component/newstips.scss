@@ -1,0 +1,52 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+    
+/**
+ * 页面消息提示
+ */
+.ui-newstips-wrap{
+    margin: 20px 15px;
+    text-align: center;
+}
+.ui-newstips{
+    background: #383939;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    display: -webkit-inline-box;
+    -webkit-box-align: center;
+    padding-right: 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    color:#fff;
+    padding-left: 15px;
+    .ui-avatar-tiled,.ui-newstips-thumb,i{
+        display: block;
+        margin-left: -5px;
+        margin-right: 10px;
+    }
+    .ui-newstips-thumb{
+        width: 30px;
+        height: 30px;
+        @include img;
+    }
+    div{
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        -webkit-box-flex: 1;
+        height: inherit;
+    }
+}
+.ui-newstips:after{
+    @include arrowlink;
+}
+
+.ui-newstips .ui-reddot,.ui-newstips .ui-badge-num{
+    margin-left: 10px;
+    margin-right: 5px;
+}

@@ -1,0 +1,94 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-actionsheet {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: $z-index-overlay;
+    opacity: 0;
+    pointer-events: none;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: end;
+    background: $mask-bg;
+    &.show {
+        pointer-events: inherit;
+        opacity: 1;
+        .ui-actionsheet-cnt{
+            -webkit-transform: translateY(0); 
+            -webkit-transition-delay: 0.3s;
+        }
+    }  
+}
+
+.ui-actionsheet-cnt{
+    font-size: $actionsheet-size;
+    position: fixed;
+    bottom: 0;
+    padding: 0 8px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-transform: translateY(100%);
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.3s;
+    
+}
+
+.ui-actionsheet button,.ui-actionsheet h4{
+    background: $actionsheet-bg;
+    display: block;
+    width: 100%;
+    color: $actionsheet-color;
+    box-sizing: border-box;
+}
+.ui-actionsheet button{
+    line-height: $line-height-bar;
+    height: $line-height-bar;
+}
+.ui-actionsheet h4{
+    line-height: $line-height-txt;
+    padding-left: $actionsheet-title-padding;
+    padding-right: $actionsheet-title-padding;
+    padding-top: $txt-padding-top;
+    padding-bottom: $txt-padding-bottom;
+    border-top-left-radius: $actionsheet-border;
+    border-top-right-radius: $actionsheet-border;
+}
+.ui-actionsheet button:not(:last-child){
+    border-top: 1px $bordercolor solid;
+}
+.ui-actionsheet button:last-child{
+    margin: $actionsheet-btn-last-margin;
+    border-radius: $actionsheet-border;
+}
+.ui-actionsheet button:nth-last-child(2){
+    border-bottom-left-radius: $actionsheet-border;
+    border-bottom-right-radius: $actionsheet-border;
+}
+.ui-actionsheet button:active {
+    opacity: $actionsheet-active;
+}
+.ui-actionsheet h4{
+    font-size: $actionsheet-title-size;
+    color: $actionsheet-title-color;
+}
+.ui-actionsheet .ui-actionsheet-del {
+    color: $actionsheet-del-color;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-actionsheet button:not(:last-child){
+        border: 0;
+        background-position: left top; 
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor), to($bordercolor));
+        background-repeat: repeat-x;
+        -webkit-background-size: 100% 1px;
+      }
+}

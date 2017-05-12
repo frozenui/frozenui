@@ -1,0 +1,59 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-panel{
+    overflow: hidden;
+    margin-bottom: 10px;
+    .ui-grid-halve,.ui-grid-trisect{
+        padding-top: 0;
+    }
+    h1,h2,h3{
+        padding-left: $wrap-padding;
+        padding-right: $wrap-padding;
+        @media (max-width: 320px) {
+            padding-left: $wrap-padding-s;
+            padding-right: $wrap-padding-s;
+        }
+        line-height: $line-height-bar;
+        position: relative;
+        overflow: hidden;
+        display: -webkit-box;
+        span{
+            display: block;
+        } 
+    }
+}
+.ui-panel-card,
+.ui-panel-simple{
+    background-color: $default-bg;
+}
+.ui-panel-pure h2,
+.ui-panel-pure h3{
+    color: $txt-info;
+}
+.ui-panel-simple{
+    margin-bottom: 0;
+}
+.ui-panel-subtitle{
+    font-size: $font-size-sub;
+    color: $txt-info;
+    margin-left: 10px;
+}
+.ui-panel-title-tips{
+    font-size: $font-size-tips;
+    color: $txt-info;
+    position: absolute;
+    right: $wrap-padding;
+    @media (max-width: 320px) {
+        right: $wrap-padding-s;
+    }
+}
+.ui-arrowlink .ui-panel-title-tips{
+    right: $wrap-link-padding;
+    @media (max-width: 320px) {
+        right: $wrap-link-padding-s;
+    }
+}
+

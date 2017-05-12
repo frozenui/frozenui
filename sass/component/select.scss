@@ -1,0 +1,40 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-select{
+	position: relative;
+	margin-right: 6px;
+}
+.ui-select select{
+	-webkit-appearance: none;
+	border: 0;
+	background: none;
+	width: 100%;
+	padding-right: 14px;
+}
+.ui-select:after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -4px;
+	width: 0;
+	height: 0;
+	border-top: 6px solid;
+	border-right: 5px solid rgba(0, 0, 0, 0);
+	border-left: 5px solid rgba(0, 0, 0, 0);
+	color: #a6a6a6;
+	content: "";
+	pointer-events: none;
+}
+.ui-select-group{
+	margin-left: 95px;
+	overflow: hidden;
+	.ui-select{
+		float: left;
+	}
+}
+.ui-form-item > .ui-select{
+	margin-left: 95px;
+}

@@ -1,0 +1,54 @@
+@@include('include/header.html', {"name": "dialog","desc": "对话框"})
+
+<section id="dialog">
+	<div class="demo-item">
+		<p class="demo-desc">对话框</p>
+		<div class="demo-block">
+			<div class="ui-dialog">
+			    <div class="ui-dialog-cnt">
+				    <header class="ui-dialog-hd ui-border-b">
+	                    <h3>新手任务</h3>
+	                    <i class="ui-dialog-close" data-role="button"></i>
+	                </header>
+			        <div class="ui-dialog-bd">
+			            <h4>标题标题</h4>
+			            <div>开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！</div>
+			        </div>
+			        <div class="ui-dialog-ft">
+			            <button type="button" data-role="button">取消</button>
+			            <button type="button" data-role="button">开通</button>
+			        </div>
+			    </div>        
+			</div>
+			<script class="demo-script">
+			$(".ui-dialog").dialog("show");
+			</script>
+			
+		</div>
+		<div class="ui-btn" id="btn1">模板创建弹窗</div>
+    	<div class="ui-btn" id="btn2">DOM创建弹窗</div>
+    	<script class="demo-script">
+		(function (){
+            $("#btn1").tap(function(){
+			    var dia=$.dialog({
+			        title:'温馨提示',
+			        content:'温馨提示内容',
+			        button:["确认","取消"]
+			    });
+
+			    dia.on("dialog:action",function(e){
+			        console.log(e.index)
+			    });
+			    dia.on("dialog:hide",function(e){
+			        console.log("dialog hide")
+			    });
+			})
+			$("#btn2").click(function(){
+			    $(".ui-dialog").dialog("show");
+			})
+		})();
+        </script>
+	</div>
+</section>
+
+@@include('include/footer.html')

@@ -1,0 +1,39 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+/**
+ * 出错页面
+ */
+.ui-notice{
+	width: 100%;
+	height: 100%;
+	z-index: $z-index-notice;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	position: absolute;
+	text-align: center;
+}
+.ui-notice > i{
+    display: block;
+	margin-bottom: 20px;
+    &:before{
+        @include icon;
+        content: $icon-warn-lg;
+        font-size: 100px;
+        line-height: 100px;
+        color: rgba(0,0,0,.3);
+    }
+}
+.ui-notice p{
+	font-size: $font-size-info;
+	line-height: 20px;
+	color: $txt-muted;
+	text-align: center;
+	padding: 0 15px;
+}
+.ui-notice-btn {width: 100%; -webkit-box-sizing:border-box; padding:50px 15px 15px;}
+.ui-notice-btn button {margin: 10px 0px;}

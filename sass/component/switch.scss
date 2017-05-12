@@ -1,0 +1,75 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.ui-switch {
+    position: absolute;
+    font-size: $font-size-info;
+    right: $wrap-padding;
+    @media (max-width: 320px) {
+        right: $wrap-padding-s;
+    } 
+    top: 50%;
+    margin-top: -16px;
+    width: 52px;
+    height: 32px;
+    line-height: 32px;
+    input {
+        width: 52px;
+        height: 32px;
+        position: absolute;
+        z-index: $z-index-switch;
+        border: none;
+        background: none;
+        -webkit-appearance: none;
+        outline: none;
+        &:before {
+            content:'';
+            width: 50px;
+            height: 30px;
+            border: 1px solid #dfdfdf;
+            background-color: #fdfdfd;
+            border-radius: 20px;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            -webkit-box-sizing: content-box;
+            border-color: rgb(223, 223, 223);
+            -webkit-box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset;
+            -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s;
+            -webkit-background-clip: content-box;
+            
+        }
+        &:checked {
+
+            &:before {
+                border-color: rgb(100, 189, 99);
+                -webkit-box-shadow: rgb(100, 189, 99) 0px 0px 0px 16px inset;
+                background-color: #64bd63;
+                -webkit-transition: border 0.4s,
+                                    -webkit-box-shadow 0.4s,
+                                    background-color 1.2s;
+                                    background-color: rgb(100, 189, 99);
+            }
+            &:after{
+                left: 21px;
+            }
+                 
+        } 
+        &:after {
+            content:'';
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 1px;
+            left: 0;
+            border-radius: 100%;
+            background-color: #fff;
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+            -webkit-transition: left 0.2s;
+            
+        }
+    }
+}
