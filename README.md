@@ -57,11 +57,12 @@ _业务上使用时升级版本需要通知到开发，以及是否有dom修改�
 
 原则是有问题提issue，代码修改提pr，由faycheng合并以及内部发布
 
-###版本修改记录
+#### 版本修改记录
 
 查看[https://github.com/frozenui/frozenui/wiki/History-1.3.0](https://github.com/frozenui/frozenui/wiki/History-1.3.0)
 
-###More
+
+### More
 
 Npm安装: npm install frozenui
 
@@ -71,7 +72,8 @@ Bower安装: bower install frozenui
 
 iconfont使用： https://github.com/frozenui/frozenui/wiki/iconfont%E4%BD%BF%E7%94%A8
 
-###License
+
+### License
 
 The MIT License(http://opensource.org/licenses/MIT)
 
