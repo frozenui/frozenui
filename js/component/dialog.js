@@ -19,7 +19,7 @@
 				'<% if (i == select) { %>' +
 				'<button type="button" data-role="button"  class="select" id="dialogButton<%=i%>"><%=button[i]%></button>' +
 				'<% } else { %>' +
-				'<button type="button" data-role="button" id="dialogButton<%=i%>"><%=button[i]%></div>' +
+				'<button type="button" data-role="button" id="dialogButton<%=i%>"><%=button[i]%></button>' +
 				'<% } %>' +
 				'<% } %>' +
             '</div>'+
