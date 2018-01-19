@@ -624,17 +624,18 @@ function Scroll(el, options) {
 		this.options.scrollY = false;
 		this.options.momentum = false;
 
-		this.scroller = $('.ui-slider-content',this.wrapper)[0];
-		$(this.scroller.children[0]).addClass('current');
-
-		this.currentPage = 0;
+		this.currentPage = this.options.currentPage;
+    		$(this.nav).children().removeClass('current');
+		$(this.scroller.children[this.currentPage]).addClass('current');
+		$(this.nav.children[this.currentPage]).addClass('current');
+		
 		this.count = this.scroller.children.length;
 
 		this.scroller.style.width = this.count+"00%";
 
 		this.itemWidth = this.scroller.children[0].clientWidth;
 		this.scrollWidth = this.itemWidth * this.count;
-
+		this.options.startX = - this.itemWidth * this.currentPage;
 		
 
 		if (this.options.indicator) {
