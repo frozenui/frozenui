@@ -13,17 +13,15 @@ FrozenUI 是一套基于移动端的UI库，轻量、精美、遵从手机 QQ �
 
 ## 手机预览
 
-![http://ccjun.github.io/components/components/](http://119.29.8.64/vipstyle/frozenui/frozenui_demo.png)
-
-[http://119.29.8.64/vipstyle/frozenui/demo/html/index.html](http://119.29.8.64/vipstyle/frozenui/demo/html/index.html)
+[http://111.231.236.41/vipstyle/qui/2.0.0/demo/html/index.html](http://111.231.236.41/vipstyle/qui/2.0.0/demo/html/index.html)
 
 老版本: [http://frozenui.github.io/frozenui/demo/index.html](http://frozenui.github.io/frozenui/demo/index.html)
 
 ## 快速开始
-说明文档参考 [http://ccjun.github.io/getting-started](http://ccjun.github.io/getting-started)
+说明文档参考 [http://frozenui.github.io/getting-started](http://frozenui.github.io/getting-started)
 
 ## 开发文档
-说明文档参考 [http://ccjun.github.io/components/components/](http://ccjun.github.io/components/components/)
+说明文档参考 [http://frozenui.github.io/components/components/](http://frozenui.github.io/components/components/)
 
 ## 适配规则
 详细规则查看：
