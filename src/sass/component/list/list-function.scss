@@ -1,0 +1,102 @@
+@import  "../../base/fn";
+
+.ui-list {
+	background-color: #fff;
+	width: 100%;
+	> li{
+		position: relative;
+		margin-left: $wrap-padding;
+		display: -webkit-box;
+	}
+	li.ui-arrowlink{
+		padding-right: $wrap-padding;
+	}
+}
+
+
+/*列表普通图片*/
+.ui-list-img,
+.ui-list-img-square,
+.ui-list-img-vertical,
+.ui-list-img-horizontal {
+	@include img;
+	margin: 8px 12px 8px 0;
+	overflow: hidden;
+}
+.ui-list-nospace{
+	>li{
+		margin-left: 0;
+	}
+	.ui-list-img,
+	.ui-list-img-square,
+	.ui-list-img-vertical,
+	.ui-list-img-horizontal {
+		margin: 1px 0 1px;
+	}
+	li:first-child{
+		.ui-list-img,
+		.ui-list-img-square,
+		.ui-list-img-vertical,
+		.ui-list-img-horizontal {
+			margin-top: 0;
+		}
+	}
+	li:last-child{
+		.ui-list-img,
+		.ui-list-img-square,
+		.ui-list-img-vertical,
+		.ui-list-img-horizontal {
+			margin-bottom: 0;
+		}
+	}
+	.ui-list-info{
+		padding-left: 12px;
+	}
+}
+
+.ui-list-img{
+	width: 33.33%;
+	height: auto;
+	padding-right: 1px;
+	box-sizing: border-box;
+}
+
+.ui-list-img-square{
+	width: $list-img-width;
+	height: $list-img-height;
+}
+.ui-list-img-vertical{
+	width: $list-img-vertical-width;
+	height: $list-img-vertical-height;
+}
+.ui-list-img-horizontal{
+	width: $list-img-horizontal-width;
+	height: $list-img-horizontal-height;
+} 
+
+
+
+/*  功能类 */
+.ui-list-function {
+	.ui-list-info{
+		padding-right: 75px;
+	}
+	.ui-btn,
+	.ui-btn-s{
+		position: absolute;
+		top: 50%;
+		right: $wrap-padding;
+		margin-top: -15px;
+	}
+	&.ui-list-link,&.ui-list-link-iconfont {
+		.ui-list-info{
+			padding-right: 90px;
+		}
+		.ui-btn{
+			right: $wrap-link-padding;
+		}
+	}
+	li{
+		-webkit-box-align: inherit;
+	}
+}

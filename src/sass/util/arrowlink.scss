@@ -1,0 +1,11 @@
+@import  "../base/fn";
+/* 箭头链接 */
+.ui-arrowlink{
+    position: relative;
+    &:after{
+    	@include arrowlink;
+    }
+}
+.ui-arrowlink.active{
+    background: $active-bg;
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAGC,CAHW,WAAW,CAAE,aAAa,CAClC,GAAG,CAAE,mmEAAmmE",
+"sources": ["../../../sass/base/icons/icon-notice.scss"],
+"names": [],
+"file": "icon-notice.css"
+}

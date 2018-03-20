@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAEC,CAFW,WAAW,CAAE,WAAW,CACnC,GAAG,CAAE,2sEAA2sE",
+"sources": ["../../../sass/base/icons/icon-tips.scss"],
+"names": [],
+"file": "icon-tips.css"
+}

@@ -1,0 +1,12 @@
+@import  "../base/fn";
+@import "../base/icons/icon";
+/* 箭头链接 */
+.ui-arrowlink-iconfont{
+    position: relative;
+    &:after{
+        @include arrowlink_iconfont;
+    }
+}
+.ui-arrowlink.active{
+    background: $active-bg;
+}

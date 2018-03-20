@@ -1,0 +1,132 @@
+@import  "../../base/fn";
+
+@mixin n-items($n){
+ 	&:first-child:nth-last-child(#{$n}),
+ 	&:first-child:nth-last-child(#{$n}) ~ li{
+ 		@content;
+ 	}
+}
+
+.ui-tab{
+    width: 100%;
+    overflow: hidden;
+}
+
+.ui-tab-nav{
+    position:relative;
+    top: 0px;
+    width: 100%;
+    background-color: $default-bg;
+    display: box;
+    display: -webkit-box;
+    height: $tab-height;
+    box-sizing: border-box;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    li{
+      text-align: center;
+      box-sizing: border-box;
+      width: 100%;
+      font-size: 14px;
+      -webkit-box-flex: 1;
+      position: relative;
+      > p, > span{
+        position: relative;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        width: auto;
+        padding: 0px 5px;
+      }
+    }
+    li.current{
+        color: $tab-current-color;
+        > p:before,> span:before{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 4px;
+          background-color: $tab-current-border;
+        }
+    }
+    li:active{
+        opacity: .7;
+    }
+}
+
+/* 2tab情况，5字以下等分容器宽度为109px */
+.ui-tab-nav li{
+ @include n-items(2){
+     width:109px;
+     display:inline-block;
+ }
+}
+
+/* 2tab情况，5字以上等分容器宽度为125px */
+.ui-tab-nav-bisect-lg li{
+  @include n-items(2){
+      width:125px;
+      display:inline-block;
+  }
+}
+
+/* tab可左右滚动情况 */
+.ui-tab-nav-multi>li{
+    margin: 0px 16px;
+}
+.ui-tab-nav-wrap{
+    width: auto;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.ui-tab-nav-wrap::-webkit-scrollbar {
+    display: none
+}
+
+/* tab置顶情况 */
+.ui-tab-fixed{
+    .ui-tab-nav{
+        position: fixed;
+        top: 0;
+        z-index: 99;
+    }
+    .ui-tab-content{
+        margin-top: $tab-height;
+    }
+}
+
+/* 大屏幕下tab大小调整 */
+@media screen and(min-width:414px){
+    .ui-tab-nav{
+      height: 44px;
+      li{
+        font-size: 15px;
+           >p,>span{
+            height: 44px;
+            line-height: 44px;
+            padding: 0 6px;
+          &.current{
+            p:before,span:before{
+              height: 4px;
+            }
+          }
+        }
+      }
+    }
+    .ui-tab-fixed .ui-tab-content{
+        margin-top: 44px;
+    }
+}
+
+.ui-tab-content{
+    height: auto;
+    display: -webkit-box;
+    & > li{
+      -webkit-box-flex: 1;
+      width: 100%;
+      height: auto;
+    }
+}

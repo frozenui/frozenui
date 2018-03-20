@@ -1,0 +1,24 @@
+{% set data = {'page': 'util'} %}
+{% extends "template/base.html"%}
+
+{% block content %}
+<section id="border">
+    <h1 class="title">1PX BORDER</h1>
+    <div class="demo-item">
+        <p class="demo-desc">1px解决方案</p>
+        <div class="demo-block">
+            <ul class="ui-list-text border-list">
+                <li class="ui-border-t">上边框</li>
+                <li class="ui-border">边框</li>
+                <li class="ui-border-b">下边框</li>
+                <li class="ui-border-tb">上下边框</li>
+                <li class="ui-border-l">左边框</li>
+                <li class="ui-border-r">右边框</li>
+                <li class="ui-border-radius">
+                    圆角边框
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock%}

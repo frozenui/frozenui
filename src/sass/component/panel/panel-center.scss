@@ -1,0 +1,42 @@
+@import "../../base/fn";
+@import "panel";
+
+.ui-panel-center,
+.ui-panel-center-multi {
+    h2,
+    > h3 {
+        -webkit-box-orient: vertical;
+        -webkit-box-pack: center;
+        text-align: center;
+        letter-spacing: 4px;
+        span {
+            display: -webkit-box;
+        }
+    }
+}
+.ui-panel-center {
+    h2, > h3{
+        height: $line-height-title;
+        line-height: $line-height-title;
+    }
+}
+.ui-panel-center-multi {
+    h2, > h3{
+        height: 75px;
+        line-height: 1.5;
+    }
+    >h2 span:nth-child(1) {
+        font-size: 18px;
+        line-height: 1;
+        margin-bottom: 5px;
+        letter-spacing: 4px;
+        margin-right: -4px;
+    }
+    .ui-panel-subtitle {
+        font-size: 14px;
+        color: #777;
+        line-height: 1;
+        letter-spacing: 2px;
+        margin-right: -2px;
+    }
+}

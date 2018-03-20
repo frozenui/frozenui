@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAEC,CAFW,WAAW,CAAE,eAAe,CACpC,GAAG,CAAE,2zEAA2zE",
+"sources": ["../../../sass/base/icons/icon-checkbox.scss"],
+"names": [],
+"file": "icon-checkbox.css"
+}

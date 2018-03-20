@@ -1,0 +1,108 @@
+@import  "../../base/fn";
+
+.ui-label,
+.ui-label-list li{
+    display: inline-block;
+    position: relative;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid #cacccd;
+    border-radius: 15px;
+
+    &:active{
+      opacity: 0.5;
+    }
+}
+.ui-label-list{
+    margin: 0 10px;
+    .ui-label{
+        margin: 0 10px 10px 0;
+    }
+}
+.ui-label-s{
+    font-size: 11px;
+    line-height: 11px;
+    display: inline-block;
+    position: relative;
+    padding: 2px 3px;
+    color: #ff7f0d;
+    vertical-align: middle;
+    border: 1px solid #ff7f0d;
+    border-radius: 2px;
+    &:active{
+        background-color: #f3f2f2;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: -5px;
+        right: -5px;
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-label-s {
+        border: 0
+    }
+
+    .ui-label-s:before {
+        content: "";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid #ff7f0d;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        padding: 1px;
+        -webkit-box-sizing: border-box;
+        border-radius: 4px;
+        pointer-events: none
+    }
+
+    .ui-label,
+    .ui-label-list li{
+        border: 0;
+        &:after{
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid #cacccd;
+            -webkit-transform-origin: 0 0;
+            padding: 1px;
+            -webkit-box-sizing: border-box;
+            pointer-events: none;
+            z-index: $z-index-border;
+            width: 200%;
+            height: 200%;
+            -webkit-transform:scale(.5);
+            border-radius: 30px;
+        }
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ui-label,
+    .ui-label-list li{
+        border: 0;
+        &:after{
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid #cacccd;
+            -webkit-transform-origin: 0 0;
+            padding: 1px;
+            -webkit-box-sizing: border-box;
+            pointer-events: none;
+            z-index: $z-index-border;
+            width: 300%;
+            height: 300%;
+            -webkit-transform:scale(.3333);
+            border-radius: 45px;
+       }
+    }
+}

@@ -1,0 +1,174 @@
+@import  "../../base/fn";
+@import "../../base/icons/icon-tag";
+.ui-tag-b-default {
+    position: absolute;
+    z-index: 9;
+    min-width: 20px;
+    height: 13px;
+    line-height: 13px;
+    right: 0;
+    bottom: 0;
+    padding: 0 4px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+}
+.ui-tag {
+    @extend .ui-tag-b-default;
+    background-color: #f74c32;
+}
+.ui-tag-b{
+    position: relative;
+    &:before{
+        position: absolute;
+        font-size: 10px;
+        width: 28px;
+        height: 13px;
+        line-height: 13px;
+        bottom: 0;
+        right: 0;
+        z-index: $z-index-tag;
+        color: #fff;
+        border-radius: 2px;
+        text-align: center;
+    }
+}
+
+.ui-tag-freelimit,
+.ui-tag-free,
+.ui-tag-last,
+.ui-tag-limit,
+.ui-tag-act,
+.ui-tag-xy {
+    @extend .ui-tag-b;
+}
+
+.ui-tag-vip,
+.ui-tag-svip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &:before{
+        font-size: 32px;
+        text-indent: -2px;
+        border-radius: 2px;
+        width: 28px;
+        height: 13px;
+        line-height: 13px;
+        right: 0;
+        bottom: 0;
+        z-index: $z-index-tag;
+    }
+}
+
+.ui-tag-vip:before,
+.ui-tag-svip:before,
+.ui-tag-selected:after{
+    @include tag;
+    position: absolute;
+}
+
+.ui-tag-vip:before{
+    background-color: #ff0000;
+    color: #fffadf;
+    content:  $icon-tag-vip;
+}
+
+.ui-tag-svip:before{
+    background-color: #ffd400;
+    color: #b7440e;
+    content: $icon-tag-svip;
+}
+.ui-tag-selected:after{
+    content: $icon-tag-checkbox;
+    color: $positive-bg;
+    right: 5px;
+    top: 5px;
+    z-index: $z-index-tag;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 13px;
+    line-height: 26px;
+    text-indent: -3px;
+}
+.ui-tag-wrap{
+    display: inline-block;
+    position: relative;
+    padding-right: 32px;
+    .ui-tag-vip,
+    .ui-tag-svip{
+        position: static;
+    }
+    .ui-tag-vip:before,
+    .ui-tag-svip:before{
+        top: 50%;
+        margin-top: -7px;
+    }
+}
+
+.ui-tag-svip:before{
+    background-color: #ffd400;
+    color: #b7440e;
+    content: $icon-tag-svip;
+}
+.ui-tag-freelimit:before{
+    background-color: #18b4ed;
+    content: '限免';
+}
+.ui-tag-free:before{
+    background-color: #4b972d;
+    content: '免费';
+}
+.ui-tag-last:before{
+    background-color: #8f6adb;
+    content: '绝版';
+}
+.ui-tag-limit:before{
+    background-color: #3385e6;
+    content: '限量';
+}
+.ui-tag-act:before{
+    background-color: #00c795;
+    content: '活动';
+}
+.ui-tag-xy:before{
+    background-color: #d7ba42;
+    content: '星影';
+}
+.ui-tag-freemonthly:before {
+    background-color: #ff7f0d;
+    content: '包月';
+}
+.ui-tag-onsale:before{
+    background-color: #00c795;
+    content: '特价';
+}
+
+//
+.ui-grid-halve>li {
+    padding-right: 5px;
+    padding-bottom: 10px;
+    float: left;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    width: 50%;
+}
+
+
+.ui-grid-halve-img {
+    width: 100%;
+    padding-top: 55.17%;
+    position: relative;
+    & >span {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+    }
+}

@@ -1,0 +1,53 @@
+@import  "../base/fn";
+.ui-flex-center {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    text-align: center;
+    height: 150px;
+}
+/**
+ * 排版
+ */
+.ui-flex,
+.ui-tiled{
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+}
+.ui-flex-ver{
+    -webkit-box-orient: vertical;
+}
+.ui-flex-pack-start {
+    -webkit-box-pack: start;
+}
+.ui-flex-pack-end {
+    -webkit-box-pack: end;
+}
+.ui-flex-pack-center {
+    -webkit-box-pack: center;
+}
+.ui-flex-align-start {
+    -webkit-box-align: start;
+}
+.ui-flex-align-end {
+    -webkit-box-align: end;
+}
+.ui-flex-align-center {
+    -webkit-box-align: center;
+}
+/**
+ * 平铺
+ */
+.ui-flex > li,
+.ui-tiled > li{
+    -webkit-box-flex: 1;
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}

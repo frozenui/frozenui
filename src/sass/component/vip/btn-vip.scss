@@ -1,0 +1,38 @@
+@import  "../../base/fn";
+
+.ui-btn-vip{
+    height: 26px;
+    line-height: 26px;
+    padding: 0 13px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    background-color: rgba(#FBD54E,1);
+    border-radius: 3px;
+    vertical-align: top;
+    color: rgba(#71400B,1);
+    -webkit-box-sizing: border-box;
+    background-clip: padding-box;
+}
+.ui-btn-lg-vip{
+    font-size: 18px;
+    height: 40px;
+    line-height:normal;
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-radius: 3px;
+    background-color: rgba(#FBD54E,1);
+    color: rgba(#71400B,1);
+    -webkit-box-sizing: border-box;
+    background-clip: padding-box;
+}
+.ui-btn-vip:not(.disabled):not(:disabled):active,
+.ui-btn-lg-vip:not(.disabled):not(:disabled):active,
+.ui-btn-vip.active,
+.ui-btn-lg-vip.active{
+    background-color: rgba(#FBD54E,.8);
+    color: rgba(#71400B,1);
+    background-clip: padding-box;
+}

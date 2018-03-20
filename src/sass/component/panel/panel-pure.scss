@@ -1,0 +1,21 @@
+@import "../../base/fn";
+@import "panel";
+
+.ui-panel-pure {
+    h2,> h3,> h4{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 15px 12px 5px;
+        color: $txt-info;
+    }
+
+
+}
+.ui-list-pure  >li{
+	position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 12px;
+    -webkit-box-align: center;
+    display: block;
+}

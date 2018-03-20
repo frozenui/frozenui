@@ -1,0 +1,31 @@
+{% extends "template/base.html"%}
+
+<!-- feeds -->
+{% macro feeds(number) %}
+<div class="ui-feeds">
+    <ul>
+      {% for i in range(number) %}
+      {% if number == 1%}
+      <li>
+        <img src="http://119.29.8.64/vipstyle/mobile/client/cartoon/v2/pic/community/item1.jpg" alt="">
+      </li>
+      {% else %}
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      {% endif %}
+      {% endfor %} 
+    </ul>
+</div>
+{% endmacro %}
+
+{% block content %}
+{% for j in range(10) %}
+  {% if j!= 0 %}
+      <section class="feeds-wrap-demo">
+        {{ feeds(j) }}
+      </section>
+  {% endif %}
+
+{% endfor %}
+{% endblock%}

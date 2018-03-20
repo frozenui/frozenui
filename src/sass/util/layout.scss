@@ -1,0 +1,61 @@
+@import  "../base/fn";
+.ui-header,
+.ui-footer {
+    position: fixed;
+    width: 100%;
+    z-index: $z-index-head;
+    left: 0;
+}
+.ui-header {
+    top: 0;
+    height: $header-height;
+    line-height: $header-height;
+
+}
+.ui-header-stable,
+.ui-header-positive{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.ui-header-stable,
+.ui-footer-stable{
+    background-color: $stable-bg;
+
+}
+.ui-header-positive,
+.ui-footer-positive{
+    background-color: $positive-bg;
+    color: #fff;
+    a,a:active,i{
+        color: #fff;
+    }
+}
+.ui-footer-btn{
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0));
+    color: $txt-link;
+    .ui-tiled{
+        height: 100%;
+    }
+}
+.ui-footer {
+    bottom: 0;
+    height: 55px;
+}
+.ui-header ~ .ui-container {
+  border-top: $header-height solid transparent;
+}
+.ui-footer ~ .ui-container {
+  border-bottom: 55px solid transparent;
+}
+.ui-header h1{
+    text-align: center;
+    font-size: 18px;
+}
+
+.ui-header .ui-btn{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -15px;
+}

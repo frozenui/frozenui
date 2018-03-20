@@ -1,0 +1,80 @@
+@import "../../base/fn";
+.ui-actionsheet {
+    position: fixed;
+    z-index: $z-index-overlay;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    background: $mask-bg;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: end;
+    &:active {
+        opacity: $actionsheet-active;
+    }
+    .ui-actionsheet-cnt {
+        position: fixed;
+        bottom: 0;
+        box-sizing: border-box;
+        width: 100%;
+        -webkit-transition: all 0.2s linear;
+        -webkit-transform: translate3d(0,100%,0);
+        text-align: center;
+        font-size: $actionsheet-size;
+        button {
+            font-size: 18px;
+        }
+    }
+    button,h4 {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        background: $actionsheet-bg;
+        font-size: $actionsheet-title-size;
+    }
+    h4{
+        color: $actionsheet-title-color;
+
+    }
+    button {
+        color: $actionsheet-color;
+        height: $actionsheet-title-line-height;
+        line-height: $actionsheet-title-line-height;
+        &:not(:last-child) {
+            border-top: 1px $bordercolor solid;
+        }
+    }
+    h4 {
+        padding:13px $actionsheet-title-padding;
+        line-height: $line-height-txt;
+    }
+    &.show {
+        pointer-events: inherit;
+        opacity: 1;
+        .ui-actionsheet-cnt {
+            -webkit-transition: all 0.2s linear;
+            -webkit-transform: translate3d(0,0,0);
+        }
+    }
+}
+
+.ui-actionsheet-split-line {
+    height: 10px;
+    background-color: rgba(255,255,255,0.7);
+}
+.ui-actionsheet .ui-actionsheet-del {
+    color: $actionsheet-del-color;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-actionsheet button:not(:last-child) {
+        border: 0;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor), to($bordercolor));
+        background-repeat: repeat-x;
+        background-position: left top;
+        -webkit-background-size: 100% 1px;
+    }
+}
