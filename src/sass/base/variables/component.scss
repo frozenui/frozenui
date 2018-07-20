@@ -1,0 +1,195 @@
+//border
+//----------------------------------------
+$bordercolor:           #e9e9e9;
+$border-t:              -webkit-gradient(linear, left bottom, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+$border-b:              -webkit-gradient(linear, left top, left bottom, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+$border-l:              -webkit-gradient(linear, right top, left top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+$border-r:              -webkit-gradient(linear, left top, right top, color-stop(.5, rgba(0, 0, 0, 0)), color-stop(.5, $bordercolor));
+
+
+
+$border-radius-base:    4px;
+$border-radius-lg:      8px;
+$border-radius-max:     200px;
+
+//list
+//------------------------------------
+$list-thumb-width:                      40px;
+$list-thumb-height:                     40px;
+$list-thumb-width-s:                    34px;
+$list-thumb-height-s:                   34px;
+
+$list-img-width:                        94px;
+$list-img-height:                       94px;
+
+$list-img-vertical-width:               108px;
+$list-img-vertical-height:              154px;
+
+$list-img-horizontal-width:             134px;
+$list-img-horizontal-height:            94px;
+
+$list-icon-width:                       50px;
+$list-icon-height:                      50px;
+
+$list-icon-width-s:                     34px;
+$list-icon-height-s:                    34px;
+
+$list-img-margin:                       8px 12px 8px 0px;
+
+
+//button
+//------------------------------------
+$button-height:         30px;
+$button-width:			60px;
+$button-padding:        0 16px;
+$button-padding-s:      0 10px;
+$button-min-width:      56px;
+$button-size:           14px;
+$button-border-radius:  3px;
+$button-border-radius-s:  2px;
+$button-border-radius-b: 6px;
+
+$button-hot-area:       7px;
+$button-bg-color:       #fff;
+$button-text:           rgb(0,0,0);
+$button-border-color:   rgb(195,200,204);
+$button-active-text:    rgba(18,184,246,.5);
+$button-active-bg-color:    #f0f0f0;
+$button-active-border-color:    #D0D1D2;
+
+
+
+
+//长按钮
+$button-lg-height:                      40px;
+$button-lg-size:                        17px;
+$button-lg-border-radius:               3px;
+
+
+// 小按钮
+$button-s-width:                        60px;
+$button-s-height:                       30px;
+$button-s-size:                         14px;
+
+$button-before-border-radius:           6px;
+$button-lg-before-border-radius:        10px;
+$button-wrap-padding:                   10px 12px;
+
+$button-group-margin:                   10px;
+
+//2/3按钮
+$button-lg-nowhole-width:				220px;
+$button-lg-nowhole-height:				40px;
+
+
+
+//蓝色按钮
+$button-primary-bg-color:               #12B7F5;
+$button-primary-text:                   rgb(255,255,255);
+$button-primary-border-color:           #12B7F5;
+$button-primary-active-bg:              #0E98CB;
+$button-primary-active-text:            rgba(255,255,255,1);
+
+
+//红色按钮
+$button-danger-bg-color:                #FB6155;
+$button-danger-text:                    rgb(255,255,255);
+$button-danger-border-color:            #FB6155;
+$button-danger-active-bg:               #CC3428;
+$button-danger-active-text:             rgba(255,255,255,1);
+
+$button-disabled-bg-color:              #e9ebec;
+$button-disabled-text:                  #BBBBBB;
+
+$button-progress-bg-color:              #18b4ed;
+$button-progress-text:                  #000;
+$button-progress-disabled-border-color: #18b4ed;
+
+//新增圆形按钮
+//---------------------------------------------
+$button-circle-s-radius:				60px;
+$button-circle-b-radius:				100px;
+
+
+$square-width:          50;
+
+$avatar-width:          50;
+$avatar-width-lg:       70;
+$avatar-width-s:        34;
+$avatar-width-tiled:    30;
+
+
+$actionsheet-bg:                        rgba(255,255,255,1);
+$actionsheet-border:                    3px;
+$actionsheet-size:                      21px;
+$actionsheet-title-size:                14px;
+$actionsheet-title-line-height:         50px;
+$actionsheet-title-color:               #777;
+$actionsheet-title-padding:             20px;
+$actionsheet-btn-last-margin:           10px 0 0 0;
+$actionsheet-del-color:                 #fd472b;
+$actionsheet-color:                     #000000;
+$actionsheet-active:                    .84;
+
+//dialog
+//----------------------------------------------
+
+$dialog-color:                          #000000;
+$dialog-top-bg:                         #12B7F5;
+$dialog-cnt-bg:                         #fff;
+$dialog-cnt-width:                      296px;
+$dialog-bd-height-min:                  83px;
+$dialog-bd-padding:                     24px 28px;
+$dialog-border-radius:                  3px;
+// $dialog-hd-margin-bottom:               4px;
+$dialog-ft-height:                      45px;
+$dialog-btn-active:                     rgba(0,0,0,.1);
+// $dialog-close-color:                    #828282;
+
+//form
+//------------------------------------------------
+
+$form-label-width:                      95px;
+$form-textarea-height:                  65px;
+$form-textarea-margin-top:              15px;
+$form-right-close-right:                125px;
+$form-left-input-padding-left:          115px;
+$form-right-input-padding-right:        150px;
+
+//search
+//----------------------------------------------
+
+$searchbar-bg:                          #f3f3f3;
+$searchbar-height:                      30px;
+$searchbar-padding:                     10px;
+$searchbar-border:                      5px;
+$searchbar-border-lg:                   10px;
+
+// poptips
+//------------------------------------------
+
+$poptips-height:                        40px;
+$poptips-bg:                            rgba(0,0,0,.6);
+$poptips-border:                        3px;
+
+//tab
+//------------------------------------------
+$tab-height:                            40px;
+$tab-current-color:                     #00a5e0;
+$tab-current-border:                    #00a5e0;
+
+//tips
+//-------------------------------------------
+$tips-padding:                          20px 15px;
+$tips-info:                             #fff;
+$tips-success:                          #65d521;
+$tips-warn:                             #f76249;
+
+$poptips-height:                        40px;
+$poptips-bg:                            rgba(0,0,0,.6);
+$poptips-border:                        3px;
+
+
+//正方形图像
+$square-width:             72;
+$square-width-lg:          92;

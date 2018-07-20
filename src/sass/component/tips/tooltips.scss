@@ -1,0 +1,113 @@
+@import  "../../base/fn";
+//@class .ui-tooltips
+
+.ui-tooltips{
+    width:100%;
+    position: relative;
+    z-index: $z-index-tooltips;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: $font-size-info;
+    i{
+        display: inline-block;
+        margin-right: 6px;
+        width: 20px;
+        height: 1px;
+
+    }
+    &:active .ui-tooltips-cnt{
+        opacity: .5;
+    }
+    .ui-btn-s{
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      width: auto;
+      height: 25px;
+      line-height: 25px;
+      padding: 0 10px;
+      margin-top: -12px;
+    }
+}
+
+//@class .ui-tooltips-cnt
+.ui-tooltips-cnt{
+    line-height: $line-height-bar;
+    height: $line-height-bar;
+    padding-left: 12px;
+    padding-right: 32px;
+    background-color: #fff;
+    color: #000;
+    @include nowrap;
+    .ui-icon-close:before{
+        color: #938F87;
+        margin-left: -10px;
+        position: absolute;
+        right: 12px;
+        top: 0;
+    }
+}
+
+//@class .ui-tooltips-warn
+.ui-tooltips-warn{
+    .ui-tooltips-cnt{
+        background-color: rgba(#FFDADA,.95);
+    }
+    i:before{
+        @include icon;
+        content: $icon-warn;
+        font-size: 20px;
+        color: #FE6C6C;
+    }
+
+}
+
+//@class .ui-tooltips-guide
+.ui-tooltips-guide{
+    .ui-tooltips-cnt{
+        background-color: rgba(#fff,.95);
+    }
+    i:before{
+        @include icon;
+        content: $icon-info;
+        font-size: 20px;
+        color: #12B7F5;
+    }
+
+}
+
+//@class .ui-tooltips-link
+.ui-tooltips-cnt-link:after{
+    @include arrowlink;
+    color: $icon-color;
+}
+
+//@class .ui-tooltips-hignlight
+.ui-tooltips-hignlight{
+    position: absolute;
+    top: 0;
+    .ui-tooltips-cnt{
+        color: #fff;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .ui-tooltips-cnt-link:after{
+        color: #fff;
+    }
+}
+
+//@class .ui-tooltips-cnt
+.ui-tooltips-function .ui-tooltips-cnt{
+    padding-right: 60px;
+}
+
+//@class .ui-tooltips-action
+.ui-tooltips-action{
+    position: fixed;
+    bottom: 0;
+    .ui-tooltips-cnt{
+        padding-right: 90px;
+    }
+    .ui-btn-s{
+      right: 40px;
+    }
+}

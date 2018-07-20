@@ -1,0 +1,41 @@
+@import  "../../base/fn";
+.ui-subscript{
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9;
+  height:16px;
+  line-height:16px;
+  font-size:11px;
+  background-color:#FB5050;
+  white-space: nowrap;
+  color:#fff;
+  padding: 0px 50px;
+  transform: rotate(-45deg) translate(-31%, -205%);
+
+  //“最新”“最热”“更新” 强运营相关类型
+  &.ui-subscript-red{
+    background-color:#FB5050;
+  }
+
+  //“活动”“专题”“节日” 活动运营相关类型
+  &.ui-subscript-orange{
+    background-color:#FF9137;
+  }
+
+  //“限免”“限时” 限时运营相关类型
+  &.ui-subscript-green{
+    background-color:#6AC63D;
+  }
+
+  //“免费”“包月” 付费类相关类型
+  &.ui-subscript-blue{
+    background-color:#12B7F5;
+  }
+
+  //三个字的情况
+  &.ui-subscript-trisection{
+    transform: rotate(-45deg) translate(-32%, -180%);
+  }
+
+}

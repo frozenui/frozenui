@@ -1,0 +1,93 @@
+@import  "../../base/fn";
+
+.ui-panel{
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    h2,> h3{
+        line-height: $line-height-title;
+        font-size: 18px;
+        position: relative;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        padding-left: $wrap-padding;
+        padding-right: $wrap-padding;
+
+        span{
+            display: -webkit-box;
+        }
+    }
+    > h4{
+        font-size: 14px;
+        color: #777;
+        position: relative;
+        line-height: 30px;
+        padding-left: $wrap-padding;
+        padding-right: $wrap-padding;
+    }
+    // .ui-arrowlink:after {
+    //     line-height: $line-height-title;
+    //     margin-top: -$line-height-title/2 + 0.5;
+    // }
+}
+
+.ui-panel-subtitle {
+    font-size: 14px;
+    color: #777;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+.ui-panel-title-tips{
+    font-size: $font-size-tips;
+    color: $txt-info;
+    position: absolute;
+    right: $wrap-padding;
+    top: 0;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    letter-spacing: 0;
+    font-weight: 400;
+    text-indent: 0;
+}
+.ui-arrowlink .ui-panel-title-tips {
+    right: 26px;
+}
+.ui-panel-more {
+    height: $line-height-bar;
+    line-height: $line-height-bar;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #777;
+    background-color: #fff;
+    .ui-arrowlink {
+        margin: 0;
+        padding: 0;
+        padding-right: 12px;
+        &:after {
+            width: 6px;
+            height: 11px;
+            background: url(http://i.gtimg.cn/vipstyle/qui/2.0.0/img/icon_arrowlink_black.png) no-repeat;
+            background-size: 100% auto;
+            margin-top: -6px;
+            right: 0;
+        }
+    }
+    .ui-arrowlink-iconfont{
+        margin: 0;
+        padding: 0;
+        padding-right: 12px;
+        &:after {
+            font-size: 11px;
+            width: 6px;
+            line-height: $line-height-bar;
+            right: 0;
+            margin-top: -$line-height-bar/2 + 0.5;
+            color: #777;
+        }
+    }
+}

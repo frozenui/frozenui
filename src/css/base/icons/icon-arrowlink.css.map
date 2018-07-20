@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAEC,CAFW,WAAW,CAAE,gBAAgB,CACzC,GAAG,CAAE,uyDAAuyD",
+"sources": ["../../../sass/base/icons/icon-arrowlink.scss"],
+"names": [],
+"file": "icon-arrowlink.css"
+}

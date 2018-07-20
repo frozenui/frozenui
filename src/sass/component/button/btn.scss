@@ -1,0 +1,171 @@
+@import  "../../base/fn";
+
+@mixin btn_center(){
+  display: block;
+  text-align: center;
+}
+
+ .ui-btn-s,
+ .ui-btn,
+ .ui-btn-lg,
+ .ui-btn-lg-nowhole
+ {
+    position: relative;
+    text-align: center;
+    background-color: $button-bg-color;
+    vertical-align: top;
+    color: $button-text;
+    -webkit-box-sizing: border-box;
+    background-clip: padding-box;
+    border: 1px solid $button-border-color;
+    @include border-radius($button-border-color,$button-border-radius,$button-before-border-radius);
+    &:not(.disabled):not(:disabled):active,
+    &.active{
+        background-color: $button-active-bg-color;
+        background-clip: padding-box;
+        border-color: $button-active-border-color;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        top: -$button-hot-area;
+        bottom: -$button-hot-area;
+        left: 0;
+        right: 0;
+    }
+    &.disabled,
+    &:disabled{
+        border: 0;
+        color: $button-disabled-text;
+        background: $button-disabled-bg-color;
+        background-clip: padding-box;
+    }
+}
+
+
+.ui-btn{
+    height: 30px;
+    line-height:30px;
+    padding: 0px 16px;
+    @include btn_center();
+    font-size: $button-size;
+    border-radius: $button-border-radius-s;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+.ui-btn-s{
+    width: $button-s-width;
+    height: $button-s-height;
+    line-height:$button-s-height;
+    @include btn_center();
+    font-size: $button-size;
+    border-radius: $button-border-radius-s;
+    padding: 0px ;
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+//灰色背景及彩色背景
+.ui-btn-highlight{
+    background-color:transparent;
+    color:#fff;
+    &:not(.disabled):not(:disabled):active,
+    &.active{
+        background-color: rgba(255,255,255,.3);
+        background-clip: padding-box;
+    }
+    &.disabled,
+    &:disabled{
+       /* 按钮: */
+        font-size: 14px;
+        color: #a9a9a9;
+        background-color: #8d8d8d;
+        letter-spacing: 0px;
+        line-height: 30px;
+        border:0;
+    }
+}
+
+//ui-btn
+//--------------------------------------
+
+.ui-btn-lg{
+    font-size: $button-lg-size;
+    height: $button-lg-height;
+    line-height:$button-lg-height;
+    @include btn_center();
+    width: 100%;
+    border-radius: $button-lg-border-radius;
+}
+
+//ui-btn-primary
+//--------------------------------------
+
+.ui-btn-primary{
+    border:0;
+    background-color: $button-primary-bg-color;
+    color: $button-primary-text;
+    background-clip: padding-box;
+    &:not(.disabled):not(:disabled):active,
+    &.active{
+        background: $button-primary-active-bg;
+        color: $button-primary-active-text;
+        background-clip: padding-box;
+    }
+}
+
+//ui-btn-danger
+//------------------------------------------
+.ui-btn-danger{
+    border:0;
+    background-color: $button-danger-bg-color;
+    color: $button-danger-text;
+    background-clip: padding-box;
+    &:not(.disabled):not(:disabled):active,
+    &.active{
+        background: $button-danger-active-bg;
+        color: $button-danger-active-text;
+        background-clip: padding-box;
+    }
+}
+
+//.ui-btn-highlight
+//----------------------------------------------
+.ui-btn-highlight{
+    background-color:transparent;
+}
+.ui-btn-lg-nowhole{
+    @include btn_center();
+    width: $button-lg-nowhole-width;
+    height: $button-lg-nowhole-height;
+    line-height: $button-lg-nowhole-height;
+    font-size: $button-lg-size;
+    border-radius: $button-lg-border-radius;
+    margin: auto;
+}
+
+//
+.ui-btn-wrap{
+    padding: $button-wrap-padding;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+
+    .ui-btn,
+    .ui-btn-lg,
+    .ui-btn-s,
+    .ui-btn-lg-nowhole{
+        border: 0;
+        &.disabled:before,
+        &:disabled:before{
+            content: none;
+        }
+    }
+    .ui-btn-primary:before,
+    .ui-btn-danger:before{
+        content: none;
+    }
+}

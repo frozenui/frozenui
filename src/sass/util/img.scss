@@ -1,0 +1,49 @@
+@import  "../base/fn";
+//图片占位
+.ui-img-vertical,
+.ui-img-horizontal,
+.ui-img,
+.ui-img-banner,
+.ui-img-cover,
+.ui-img-icon{
+    @include placehold-img;
+    >span{
+        box-sizing: border-box;
+        background-clip: content-box;
+    }
+    >img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+    }
+    width: 100%;
+    overflow: hidden;
+    &.active{
+        opacity: .5;
+    }
+
+}
+.ui-img{
+  width: 100%;
+  padding-top: 100%;
+}
+.ui-img-vertical{
+    width: 100%;
+    padding-top: $img-vertical;
+}
+.ui-img-horizontal{
+  width: 100%;
+  padding-top: $img-horizontal;
+}
+
+.ui-img-banner{
+  width: 100%;
+  padding-top: $img-banner;
+}
+.ui-img-cover{
+  width: 100%;
+  padding-top: $img-cover;
+}

@@ -1,0 +1,36 @@
+{% extends "template/base.html"%}
+
+{% block content %}
+<section id="progress">
+    <h1 class="title">PROGRESS</h1>
+    <div class="demo-item">
+        <p class="demo-desc">进度条</p>
+        <div class="demo-block">
+            <div class="ui-progress">
+                <span style="width:50%"></span>
+            </div>
+        </div>
+    </div>
+    <div class="demo-item">
+        <p class="demo-desc">图片上进度条</p>
+        <div class="demo-block">
+            <ul class="ui-grid-halve">
+                <li>
+                    <div class="ui-grid-halve-img">
+                        <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+                        <div class="ui-progress">
+                            <span style="width:50%"></span>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="ui-grid-halve-img">
+                        <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock%}

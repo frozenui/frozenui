@@ -1,0 +1,27 @@
+@import  "../../base/fn";
+
+.ui-list {
+	background-color: #fff;
+	width: 100%;
+	> li{
+		position: relative;
+		margin-left: $wrap-padding;
+		display: -webkit-box;
+	}
+	li.ui-arrowlink{ 
+		padding-right: $wrap-padding;
+	}
+}
+
+
+.ui-list .ui-avatar,
+.ui-list .ui-avatar-s,
+.ui-list .ui-avatar-lg{
+  	margin: $list-img-margin;
+}
+
+.ui-list-single{
+	.ui-avatar,.ui-avatar-s,.ui-avatar-lg{
+		margin:6px 12px 6px 0px;
+	}
+}

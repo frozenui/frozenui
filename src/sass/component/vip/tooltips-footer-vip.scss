@@ -1,0 +1,19 @@
+@import  "../../base/fn";
+@import  "../../component/vip/btn-vip";
+
+.ui-tooltips-footer-vip {
+    position: fixed;
+    width: 100%;
+    z-index: $z-index-tooltips;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,.95);
+    .ui-tooltips-cnt {
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        margin: 7px 10px;
+        padding: 0;
+        line-height: normal;
+        height: auto;
+    }
+}

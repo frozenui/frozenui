@@ -1,0 +1,54 @@
+@import  "../../base/fn";
+
+.ui-grid-icon {
+    h4{
+        font-size: 16px;
+    }
+    h5{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+        color: #9B9B9B;
+    }
+    > ul{
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        li{
+          width: 100%;
+          -webkit-box-flex: 1;
+          display: -webkit-box;
+          -webkit-box-pack: center;
+          -webkit-box-align: center;
+          -webkit-box-orient: vertical;
+            >h4,>h5,>p{
+              text-align: center;
+              width: auto;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+        }
+    }
+    .ui-img-icon{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 6px;
+    }
+}
+.ui-grid-icon-horizontal {
+    > ul li{
+        -webkit-box-orient: horizontal;
+    }
+    .ui-img-icon{
+        width: 40px;
+        height: 40px;
+        margin-right: 6px;
+        margin-bottom: 0;
+    }
+    .ui-grid-info{
+        width: auto;
+        text-align: center;
+        padding: 0;
+    }
+}

@@ -1,0 +1,105 @@
+@import  "../../base/fn";
+@import "../../base/icons/icon-corner";
+.ui-corner-t{
+    position: absolute;
+    z-index: $z-index-tag;
+    top: -14px;
+    left: -17px;
+    width: 40px;
+    text-align: right;
+    line-height: 20px;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    &:before {
+        @include corner;
+        position: absolute;
+        height: 20px;
+        left: 0;
+        top: 0;
+        line-height: 20px;
+        color: #ff0000;
+        z-index: $z-index-placehold;
+    }
+}
+
+.ui-corner-pop,
+.ui-corner-pop-hot,
+.ui-corner-pop-new{
+    @extend .ui-corner-t;
+}
+
+.ui-corner-pop:before,
+.ui-corner-pop-hot:before,
+.ui-corner-pop-new:before{
+    content: $icon-corner-pop;
+    left: 3px;
+    top: 3px;
+}
+
+.ui-corner-pop:before {
+    color: #f74c32;
+}
+.ui-corner-pop-hot:before {
+    color: #ff7200;
+}
+.ui-corner-pop-new:before {
+    color: #f74c32;
+}
+
+.ui-corner-s,
+.ui-corner,
+.ui-corner-lg {
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: $z-index-tag;
+    transform: rotate(-45deg);
+    &:before {
+        @include corner;
+        position: absolute;
+        color: #f74c32;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%,-50%,0);
+        font-size: 72px;
+        z-index: $z-index-placehold;
+    }
+}
+.ui-corner-s {
+    width: 66px;
+    left: -21px;
+    top: 2px;
+    &:before {
+       content: $icon-angle-s;
+    }
+}
+.ui-corner {
+    width: 90px;
+    left: -30px;
+    top: 7px;
+    &:before {
+       content: $icon-angle;
+    }
+}
+.ui-corner-lg {
+    width: 100px;
+    left: -30px;
+    top: 10px;
+    &:before {
+       content: $icon-angle-lg;
+    }
+}
+
+.ui-corner-hot:before {
+    color: #ff7200;
+}
+
+.ui-corner-new:before {
+    color: #f74c32;
+}

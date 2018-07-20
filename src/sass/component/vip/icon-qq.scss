@@ -1,0 +1,63 @@
+@import  "../../base/fn";
+
+.ui-icon-qq,
+.ui-icon-qq-off{
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+}
+.ui-icon-qq:after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(http://i.gtimg.cn/vipstyle/frozenui/2.0.0/img/vip/icon_vip.png) center;
+    background-size: 24px auto;
+    background-position: 0 0;
+    position: absolute;
+    line-height: 100px;
+    top: -13px;
+}
+.ui-icon-qq-off:after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(http://i.gtimg.cn/vipstyle/frozenui/2.0.0/img/vip/icon_vip_grey.png) center;
+    background-size: 24px auto;
+    background-position: 0 0;
+    position: absolute;
+    line-height: 100px;
+    top: -13px;
+}
+.ui-icon-vip,
+.ui-icon-svip,
+.ui-icon-yearsvip,
+.ui-icon-yearvip{
+    @extend .ui-icon-qq;
+}
+.ui-icon-vip-off,
+.ui-icon-svip-off,
+.ui-icon-yearsvip-off,
+.ui-icon-yearvip-off{
+    @extend .ui-icon-qq-off;
+}
+
+.ui-icon-svip:after,
+.ui-icon-svip-off:after{
+    background-position: 0 -25px;
+}
+.ui-icon-vip:after,
+.ui-icon-vip-off:after{
+    background-position: 0 -50px;
+}
+.ui-icon-yearsvip:after,
+.ui-icon-yearsvip-off:after{
+    background-position: 0 -75px;
+}
+.ui-icon-yearvip:after,
+.ui-icon-yearvip-off:after{
+    background-position: 0 -100px;
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAEC,CAFW,WAAW,CAAE,kBAAkB,CAC1C,GAAG,CAAE,27DAA27D",
+"sources": ["../../../sass/base/icons/icon-dialogclose.scss"],
+"names": [],
+"file": "icon-dialogclose.css"
+}

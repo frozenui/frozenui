@@ -1,0 +1,41 @@
+@import  "../../base/fn";
+@import "../../base/icons/icon-checkbox";
+
+.ui-checkbox{
+  	display: inline-block;
+}
+.ui-checkbox input{
+    display: inline-block;
+	width: 25px;
+	height: 1px;
+	position: relative;
+	overflow: visible;
+	border: 0;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+    margin-right: 8px;
+    vertical-align: middle;
+    &:before{
+        @include checkbox;
+    	content: $icon-unchecked;
+        color: $positive-bg;
+        position: absolute;
+        top: -22px;
+        left: -4px;
+        color: #dedfe0;
+    }
+    &:checked:before{
+        content: $icon-checked;
+        color: $positive-bg;
+    }
+}
+.ui-checkbox-s{
+    @extend .ui-checkbox;
+    input:before{
+    	content: $icon-unchecked-s;
+    }
+    input:checked:before{
+        content: $icon-checked-s;
+    }
+}

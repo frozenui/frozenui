@@ -1,0 +1,37 @@
+@import "../../base/fn";
+@import "base";
+
+// 结构化消息
+
+.ui-dialog-function{
+    .ui-dialog-bd{
+        padding: 18px 20px 24px;
+        -webkit-box-align: inherit;
+    }
+    .ui-dialog-item {
+        margin-top: 6px;
+        background-color: #fff;
+        width: 100%;
+        display: -webkit-box;
+    }
+    .ui-img {
+        width: 70px;
+        height: 70px;
+        padding-top: 0;
+        margin-right: 10px;
+    }
+    .ui-dialog-info {
+        -webkit-box-flex: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-box-pack: center;
+        &>p{
+            color: #777;
+        }
+        &>span{
+            display: block;
+            font-size: 14px;
+            color: #777;
+        }
+    }
+}

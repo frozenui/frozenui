@@ -1,0 +1,31 @@
+@import  "../../base/fn";
+@import  "../../component/vip/btn-vip";
+
+.ui-tooltips-vip{
+    width: 100%;
+    position: relative;
+    z-index: $z-index-tooltips;
+}
+.ui-tooltips-vip .ui-tooltips-cnt {
+    background-color: rgba(248,248,248,.95);
+    color: #000;
+    line-height: $line-height-bar;
+    height: $line-height-bar;
+    padding-left: 10px;
+    font-size: 0;
+    display: -webkit-box;
+}
+.ui-tooltips-vip .ui-tooltips-cnt span{
+    font-size: 14px;
+    display: block;
+}
+.ui-tooltips-vip .ui-tooltips-cnt i{
+    margin-right: 6px;
+}
+.ui-tooltips-vip .ui-btn-vip,
+.ui-tooltips-vip .ui-btn-s{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -13px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>QUI Demo</title>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+
+    
+    <link rel="stylesheet" href="../../../../css/frozenui.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    
+
+    
+</head>
+
+<body ontouchstart>
+    <section class="ui-container">
+        
+<section id="dialog">
+    <h1 class="title">DIALOG</h1>
+	<div class="demo-item">
+		<p class="demo-desc">对话框</p>
+		<div class="demo-block">
+			<!-- 带标题文字消息 -->
+			<div class="ui-dialog" id="dialog1">
+			    <div class="ui-dialog-cnt">
+			        <div class="ui-dialog-bd">
+			            <h3>下线通知</h3>
+			            <p>你的账号于17:00在一台Android手机登录。如非本人操作，密码可能已泄露，建议立即冻结账号。</p>
+			        </div>
+			        <div class="ui-dialog-ft">
+			            <button type="button" data-role="button">退出</button>
+			            <button type="button" data-role="button" class="btn-recommand">重新登录</button>
+			        </div>
+			    </div>
+			</div>
+			<!-- 无标题文字消息 -->
+			<div class="ui-dialog" id="dialog2">
+			    <div class="ui-dialog-cnt">
+			        <div class="ui-dialog-bd">
+			            <p>将终止文件发送，确定返回？</p>
+			        </div>
+			        <div class="ui-dialog-ft">
+			            <button type="button" data-role="button">取消</button>
+			            <button type="button" data-role="button">确定</button>
+			        </div>
+			    </div>
+			</div>
+			<!-- 结构化消息 -->
+			<div class="ui-dialog ui-dialog-function" id="dialog3">
+				<div class="ui-dialog-cnt">
+					<div class="ui-dialog-bd">
+						<h3>发送到 seame芝麻</h3>
+						<div class="ui-dialog-item">
+							<div class="ui-img">
+								<span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span>
+							</div>
+							<div class="ui-dialog-info">
+					            <h5 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h5>
+					            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+					            <span class="ui-nowrap">应用 开眼</span>
+					        </div>
+						</div>
+					</div>
+					<div class="ui-dialog-ft">
+			            <button type="button" data-role="button">取消</button>
+			            <button type="button" data-role="button">确定</button>
+			        </div>
+				</div>
+			</div>
+			<!-- 通用运营对话框－运营图展示类 -->
+			<div class="ui-dialog ui-dialog-operate" id="dialog4">
+				<div class="ui-dialog-cnt">
+					<div class="ui-dialog-hd">
+						<div class="ui-img">
+							<span style="background-image:url(http://placeholder.qiniudn.com/640x300)"></span>
+						</div>
+					</div>
+					<div class="ui-dialog-bd">
+						<h3>使用QQ钱包优惠购</h3>
+						<p>参加天猫运动会，使用QQ钱包购买智能穿戴！分期0首付0手续费，放肆去浪！</p>
+					</div>
+					<div class="ui-dialog-ft">
+			            <button class="ui-btn-lg">立即查看</button>
+			        </div>
+			        <i class="ui-dialog-close" data-role="button"></i>
+				</div>
+			</div>
+			<div class="ui-dialog ui-dialog-operate" id="dialog5">
+				<div class="ui-dialog-cnt">
+					<div class="ui-dialog-hd">
+						<div class="ui-img">
+							<span style="background-image:url(http://placeholder.qiniudn.com/640x300)"></span>
+						</div>
+					</div>
+					<div class="ui-dialog-bd">
+						<p>按钮颜色根据运营氛围需要自行重置！</p>
+					</div>
+					<div class="ui-dialog-ft">
+			            <button type="button" data-role="button" class="ui-btn">查看详情</button>
+			            <button type="button" data-role="button" class="ui-btn">下个任务</button>
+			        </div>
+			        <i class="ui-dialog-close" data-role="button"></i>
+				</div>
+			</div>
+			<!-- 通用运营对话框－图标展示类 -->
+			<div class="ui-dialog ui-dialog-operate ui-dialog-operate-icon" id="dialog6">
+				<div class="ui-dialog-cnt">
+					<div class="ui-dialog-hd">
+						<div class="ui-img">
+							<span style="background-image:url(http://placeholder.qiniudn.com/420x220)"></span>
+						</div>
+					</div>
+					<div class="ui-dialog-bd">
+						<h3>恭喜你获得10个专属福袋！</h3>
+					</div>
+					<div class="ui-dialog-ft">
+			            <button class="ui-btn-lg">发福袋</button>
+			        </div>
+			        <i class="ui-dialog-close" data-role="button"></i>
+				</div>
+			</div>
+		</div>
+		<div class="ui-btn-wrap" id="btn1"><button class="ui-btn-lg">文字提示(带标题)</button></div>
+		<div class="ui-btn-wrap" id="btn2"><button class="ui-btn-lg">文字提示(不带标题)</button></div>
+		<div class="ui-btn-wrap" id="btn3"><button class="ui-btn-lg">结构化消息提示</button></div>
+		<div class="ui-btn-wrap" id="btn4"><button class="ui-btn-lg">运营提示(运营图展示类)(单按钮)</button></div>
+		<div class="ui-btn-wrap" id="btn5"><button class="ui-btn-lg">运营提示(运营图展示类)(双按钮)</button></div>
+		<div class="ui-btn-wrap" id="btn6"><button class="ui-btn-lg">运营提示(图标展示类)</button></div>
+	</div>
+</section>
+
+    </section>
+
+    <script src="http://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+    <script>
+    var _mtac = {};
+    (function() {
+        var mta = document.createElement("script");
+        mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+        mta.setAttribute("name", "MTAH5");
+        mta.setAttribute("sid", "500421336");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(mta, s);
+    })();
+    </script>
+
+    
+    <script src="../../../js/lib/zepto.min.js"></script>
+    <script src="../../../js/index.js"></script>
+    
+
+    
+<script type="text/javascript">
+	$("#btn1").click(function(){
+		$("#dialog1").addClass("show");
+	});
+	$("#btn2").click(function(){
+		$("#dialog2").addClass("show");
+	});
+	$("#btn3").click(function(){
+		$("#dialog3").addClass("show");
+	});
+	$("#btn4").click(function(){
+		$("#dialog4").addClass("show");
+	});
+	$("#btn5").click(function(){
+		$("#dialog5").addClass("show");
+	});
+	$("#btn6").click(function(){
+		$("#dialog6").addClass("show");
+	});
+	$(".ui-dialog button").click(function(){
+		$('.ui-dialog').removeClass("show");
+	});
+	$('.ui-dialog-close').click(function(){
+		$('.ui-dialog').removeClass("show");
+	})
+</script>
+
+</body>
+</html>

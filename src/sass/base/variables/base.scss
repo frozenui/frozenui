@@ -1,0 +1,127 @@
+//默认属性
+//----------------------------------
+
+$stable-bg:             #f2f2f2;
+$default-bg:            #fff;
+$positive-bg:           #18b4ed;
+$header-height:         45px;
+$mask-bg:               rgba(0,0,0,.4);
+$input-wrap-bg:         #ebeced;
+
+//txt
+//-----------------------------
+
+$txt-default:           #000;
+$txt-info:              #777;
+$txt-muted:             #bbb;
+$txt-warning:           #ff4222;
+$txt-highlight:         #ff8444;
+$txt-link:              #00a5e0;
+$txt-feeds:             #314c83;
+
+//lineheight
+// ---------------------------------
+$line-height-base:      1.5;
+$line-height-s:         1.3;
+$line-height-txt:       24px;
+$line-height-bar:       46px;
+$line-height-title:     55px;
+$txt-padding-top:       8px;
+$txt-padding-bottom:    8px;
+
+//fontsize
+// ---------------------------------
+$font-size-base:        16px;
+$font-size-title:       18px;
+$font-size-h1:          18px;
+// $font-size-title-lg:    18px;
+$font-size-info:        14px;
+$font-size-sub:         14px;
+$font-size-tips:        14px;
+
+// 颜色默认值
+//-----------------------------------
+$color-black:             #000000;
+$colot-blue:              #12B7F5;
+
+// Z-Indexes
+// -------------------------------
+$z-index-placehold:                     -1;
+$z-index-img:                           1;
+$z-index-switch:                        2;
+$z-index-progress:                      9;
+$z-index-tag:                           9;
+$z-index-border:                        10;
+$z-index-notice:                        99;
+$z-index-tooltips:                      99;
+$z-index-head:                          100;
+$z-index-poptips:                       999;
+$z-index-overlay:                       9999;
+
+//iconfont
+//----------------------------------
+$icon-arrow:                           "\f000";
+$icon-success:                         "\f001";
+$icon-info:                            "\f002";
+$icon-warn:                            "\f003";
+$icon-close:                           "\f004";
+$icon-search:                          "\f005";
+$icon-close-page:                      "\f006";
+
+$icon-checked:                          "\f100";
+$icon-checked-s:                        "\f101";
+$icon-unchecked:                        "\f102";
+$icon-unchecked-s:                      "\f103";
+
+$icon-corner-pop:                       "\f200";
+$icon-angle-s:                          "\f203";
+$icon-angle:                            "\f202";
+$icon-angle-lg:                         "\f201";
+
+$icon-tag-vip:                              "\f300";
+$icon-tag-svip:                             "\f301";
+$icon-tag-checkbox:                         "\f302";
+
+$icon-warn-lg:                              "\f400";
+// $icon-checked:                          "\f601";
+// $icon-checked-s:                        "\f602";
+// $icon-unchecked:                        "\f610";
+// $icon-unchecked-s:                      "\f611";
+//
+// $icon-warn-lg:                          "\f609";
+//
+//
+//
+// $icon-arrow:                            "\f600";
+// $icon-info:                             "\f606";
+// $icon-success:                          "\f607";
+// $icon-warn:                             "\f608";
+// $icon-close:                            "\f60a";
+// $icon-search:                           "\f60c";
+//
+//
+//
+// $icon-vip:                              "\f612";
+// $icon-svip:                             "\f613";
+//
+// $icon-corner-pop:                       "\f60f";
+// $icon-angle-s:                          "\f618";
+// $icon-angle:                            "\f616";
+// $icon-angle-lg:                         "\f619";
+
+$icon-color:                                #938F87;
+
+
+
+//active
+//---------------------------------------
+
+$active-bg:             #f2f2f2;
+$active-opacity:        .5;
+
+
+//reddot
+//---------------------------------------
+
+$reddot-bg:             #f74c31;
+$reddot-bg-muted:       #b6cae0;

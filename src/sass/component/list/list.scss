@@ -1,0 +1,114 @@
+@import  "../../base/fn";
+@import "list-thumb";
+@import "list-avatar";
+@import "list-function";
+
+.ui-list {
+	background-color: #fff;
+	width: 100%;
+	> li{
+		position: relative;
+		margin-left: $wrap-padding;
+		display: -webkit-box;
+	}
+	li.ui-arrowlink{
+		padding-right: $wrap-padding;
+	}
+
+	li h4 {
+		font-size: $font-size-title;
+		line-height: 24px;
+	}
+
+	&:not(.ui-list-text) li > p,
+	li > h5 {
+		font-size: $font-size-sub;
+		color: $txt-info;
+	}
+
+}
+
+/*列表主要信息*/
+.ui-list-info {
+	-webkit-box-flex: 1;
+	padding-top: $txt-padding-top;
+	padding-bottom: $txt-padding-bottom;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-pack:center;
+	padding-right: $wrap-padding;
+	p{
+		color: $txt-info;
+		font-size: $font-size-sub;
+	}
+}
+
+/*列表按压态*/
+.ui-list-active > li:active,
+.ui-list li.active{
+	background-color: $active-bg;
+	padding-left: $wrap-padding;
+	margin-left: 0px;
+	opacity: 1;
+}
+
+.ui-list > li.ui-border-t:first-child,
+.ui-list > li:first-child  .ui-border-t,
+.ui-list-active > li:active,
+.ui-list > li.active,
+.ui-list > li.active  .ui-border-t,
+.ui-list > li.active + li .ui-border-t,
+.ui-list > li.active + li.ui-border-t{
+	background-image: none;
+	border-top-color: $active-bg;
+}
+
+//
+.ui-list-nospace > li.active{
+	padding-left: 0;
+}
+
+/*链接列表*/
+.ui-list-link > li:after{
+	@include arrowlink;
+}
+
+.ui-list-link-iconfont>li:after{
+	@include arrowlink_iconfont;
+}
+
+.ui-list-link .ui-list-info,.ui-list-link-iconfont .ui-list-info{
+	padding-right: $wrap-link-padding;
+}
+
+
+.ui-list-single{
+	>li{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.ui-list-info{
+		-webkit-box-orient: horizontal;
+		-webkit-box-align: center;
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+	h4{
+		-webkit-box-flex: 1;
+	}
+}
+.ui-list-pure>li {
+    display: block
+}
+
+.ui-list-text>li,.ui-list-pure>li {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    -webkit-box-align: center
+}
+
+.ui-list-text h4,.ui-list-text p {
+    -webkit-box-flex: 1
+}

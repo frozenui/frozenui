@@ -1,0 +1,238 @@
+/// feed函数
+/// @name feeds
+/// @param {}
+///
+@mixin feeds($n) {
+    &:first-child:nth-last-child(#{$n}),
+    &:first-child:nth-last-child(#{$n}) ~ li {
+        @content;
+    }
+}
+
+@mixin single-feed($n) {
+    &:first-child:nth-last-child(#{$n}) {
+        @content;
+    }
+}
+
+@mixin feeds-after {
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        z-index: 99;
+    }
+}
+
+
+.ui-feeds {
+    width: 100%;
+    overflow: hidden;
+    > ul {
+        height: auto;
+        overflow: hidden;
+        margin: 0 -1px;
+    }
+}
+//多图共用样式
+.ui-feeds > ul > li {
+    & {
+        display: block;
+        height: auto;
+        float: left;
+        box-sizing: border-box;
+        padding: 0 1px;
+        position: relative;
+    }
+    > span {
+        display: block;
+        width: 100%;
+        padding-top: 100%;
+        background-position: center;
+        background-size: 100% auto;
+        background-color: #ccc;
+    }
+}
+//单图
+.ui-feeds > ul > li {
+    @include feeds(1) {
+      &{
+        width: 100%;
+        max-height: 3.75rem;
+        max-height: 100vw;
+      }
+    }
+    @include feeds(1) {
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+//两张图
+.ui-feeds > ul > li {
+    @include feeds(2) {
+        width: 50%;
+    }
+}
+//三张图
+.ui-feeds > ul > li {
+    @include feeds(3) {
+        width: 50%;
+    }
+    @include single-feed(3) {
+        width: 100%;
+        padding-bottom: 2px;
+        @include feeds-after();
+        > span {
+            padding-top: 50%;
+        }
+    }
+    &:first-child:nth-last-child(3) ~ li {
+        width: 50%;
+        > span {
+            padding-top: 100%;
+            position: relative;
+        }
+    }
+}
+// 四张图
+.ui-feeds > ul > li {
+    @include feeds(4) {
+        width: 50%;
+    }
+    @include single-feed(4) {
+        width: 100%;
+        padding-bottom: 2px;
+        @include feeds-after();
+        > span {
+            padding-top: 50%;
+        }
+    }
+    &:first-child:nth-last-child(4) ~ li {
+        width: 33.3%;
+        > span {
+            padding-top: 100%;
+        }
+    }
+}
+//5张图
+.ui-feeds > ul > li {
+    &:first-child:nth-last-child(5),
+    &:first-child:nth-last-child(5) ~ li:nth-child(2) {
+        width: 50%;
+        padding-bottom: 2px;
+        @include feeds-after();
+        > span {
+            padding-top: 100%;
+        }
+    }
+    &:first-child:nth-last-child(5) ~ li {
+        width: 33.3%;
+        > span {
+            padding-top: 100%;
+        }
+    }
+}
+//六张图
+.ui-feeds > ul > li {
+    &:first-child:nth-last-child(6) {
+        width: 66.666%;
+        padding-bottom: 1px;
+        @include feeds-after();
+        > span {
+            padding-top: 100.3%;
+        }
+    }
+    &:first-child:nth-last-child(6) ~ li {
+        width: 33.3%;
+        > span {
+            padding-top: 100%;
+        }
+    }
+    &:first-child:nth-last-child(6) ~ li:nth-child(2) {
+        padding-bottom: 2px;
+        width: 33.333%;
+        @include feeds-after();
+        > span {
+            padding-top: 100.15%;
+        }
+    }
+    &:first-child:nth-last-child(6) ~ li:nth-child(3) {
+        padding-bottom: 2px;
+        width: 33.333%;
+        @include feeds-after();
+        > span {
+            padding-top: 100.15%;
+        }
+    }
+    &:first-child:nth-last-child(6) ~ li:nth-child(4) {
+        clear: both;
+    }
+}
+//七张图
+.ui-feeds > ul > li {
+    &:first-child:nth-last-child(7) {
+        width: 100%;
+        padding-bottom: 2px;
+        @include feeds-after();
+        > span {
+            padding-top: 50%;
+        }
+    }
+    &:first-child:nth-last-child(7) ~ li:nth-child(2),
+    &:first-child:nth-last-child(7) ~ li:nth-child(3),
+    &:first-child:nth-last-child(7) ~ li:nth-child(4) {
+        padding-bottom: 2px;
+        @include feeds-after();
+    }
+    &:first-child:nth-last-child(7) ~ li {
+        width: 33.3%;
+        > span {
+            padding-top: 100%;
+        }
+    }
+}
+//8张图
+.ui-feeds > ul > li {
+    &:first-child:nth-last-child(8),
+    &:first-child:nth-last-child(8) ~ li:nth-child(2) {
+        width: 50%;
+        padding-bottom: 2px;
+        @include feeds-after();
+        span {
+            padding-top: 100%;
+        }
+    }
+    &:first-child:nth-last-child(8) ~ li:nth-child(3),
+    &:first-child:nth-last-child(8) ~ li:nth-child(4),
+    &:first-child:nth-last-child(8) ~ li:nth-child(5) {
+        padding-bottom: 2px;
+        @include feeds-after();
+    }
+    &:first-child:nth-last-child(8) ~ li {
+        width: 33.3%;
+        > span {
+            padding-top: 100%;
+        }
+    }
+}
+//9张图
+.ui-feeds > ul > li {
+    @include feeds(9) {
+        width: 33.333%;
+    }
+    &:first-child:nth-last-child(9),
+    &:first-child:nth-last-child(9) ~ li:nth-child(2),
+    &:first-child:nth-last-child(9) ~ li:nth-child(3),
+    &:first-child:nth-last-child(9) ~ li:nth-child(4),
+    &:first-child:nth-last-child(9) ~ li:nth-child(5),
+    &:first-child:nth-last-child(9) ~ li:nth-child(6) {
+        padding-bottom: 2px;
+        @include feeds-after();
+    }
+}

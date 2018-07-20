@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAEC,CAFW,WAAW,CAAE,aAAa,CAClC,GAAG,CAAE,u/DAAu/D",
+"sources": ["../../../sass/base/icons/icon-corner.scss"],
+"names": [],
+"file": "icon-corner.css"
+}

@@ -1,0 +1,30 @@
+@import  "../../base/fn";
+@import "../../base/icons/icon";
+
+.ui-tips{
+    padding: $tips-padding;
+    text-align: center;
+    font-size: $font-size-info;
+    color: $txt-default;
+    i{
+        display: inline-block;
+        width: 32px;
+        height: 1px;
+        vertical-align: top;
+        &:before{
+          @include icon;
+          content: $icon-info;
+          color: $tips-info;
+          line-height: 21px;
+        }
+    }
+}
+
+.ui-tips-success i:before{
+    content: $icon-success;
+    color: $tips-success;
+}
+.ui-tips-warn i:before{
+    content: $icon-warn;
+    color: $tips-warn;
+}

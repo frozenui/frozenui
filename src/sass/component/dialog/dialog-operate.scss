@@ -1,0 +1,156 @@
+@import "../../base/fn";
+@import "../../base/icons/icon";
+@import "base";
+
+// 通用运营对话框
+.ui-dialog-operate{
+    .ui-dialog-ft button:first-child:nth-last-child(2):after{
+        content: "";
+        position: absolute;
+        top: -7px;
+        bottom: -7px;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: auto;
+        border: 0;
+        background-image: none !important;
+    }
+    .ui-dialog-cnt{
+        width: 320px;
+        border-radius: 3px;
+        border: 0;
+        margin-top: -30px;
+    }
+    .ui-img{
+        width: 100%;
+        height: 150px;
+        padding-top: 0;
+    }
+    .ui-dialog-bd{
+        // padding: 24px 16px;
+        padding: 19px 16px;
+        min-height: 0;
+    }
+    h3{
+        margin: 0;
+        // margin-bottom: 16px;
+        // margin-bottom: 7px;
+        & + p {
+            margin-top: 7px;
+       }
+    }
+    p{
+        margin: 0 auto;
+    }
+    .ui-dialog-ft{
+        padding: 0 16px 16px 16px;
+        border: none;
+        height: auto;
+        line-height: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        button{
+            height: 40px;
+            line-height: 40px;
+        }
+        // button:last-child{
+        //     border-right: 1px solid #c3c8cc;
+        // }
+        .ui-btn:first-child{
+            margin-right: 5px;
+        }
+        .ui-btn:last-child{
+            margin-left: 5px;
+        }
+    }
+}
+.ui-dialog-operate-icon{
+    .ui-dialog-hd{
+        // padding: 30px 0;
+        padding: 30px 0 23px 0;
+    }
+    .ui-dialog-bd{
+        padding-top: 0;
+        min-height: 0;
+    }
+    .ui-img{
+        width: 210px;
+        height: 110px;
+
+        margin: 0 auto;
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+    .ui-dialog-operate .ui-dialog-ft{
+        background-image: none;
+    }
+}
+.ui-dialog-close{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+}
+.ui-dialog-close:before{
+    @include icon;
+    font-size: 38px;
+    content: $icon-close-page;
+    color: #fff;
+    display: block;
+    line-height: 40px;
+    position: absolute;
+    // bottom: -72px;
+    bottom: 0;
+    left: 0;
+}
+.ui-dialog-close.active,.ui-dialog-close:active{
+    opacity: $active-opacity;
+}
+@media screen and (max-width: 320px){
+    .ui-dialog-operate{
+        .ui-dialog-cnt{
+            width: 270px;
+            margin-top: -24px;
+        }
+        .ui-img{
+            height: 127px;
+        }
+        .ui-dialog-bd{
+            padding: 12px 16px;
+        }
+        h3{
+            font-size: 16px;
+           & + p {
+             margin-top: 5px;
+           }
+        }
+        p{
+            font-size: 14px;
+        }
+        .ui-dialog-ft{
+            button{
+                font-size: 16px;
+            }
+        }
+    }
+    .ui-dialog-close{
+        bottom: -48px;
+    }
+    .ui-dialog-operate-icon{
+        .ui-img{
+            height: 110px;
+            // margin: 18px auto 0 auto;
+        }
+        .ui-dialog-hd{
+            // padding: 18px 0;
+            padding: 18px 0 15px 0;
+        }
+        .ui-dialog-bd{
+            padding-top: 0;
+            padding-bottom: 16px;
+        }
+    }
+}

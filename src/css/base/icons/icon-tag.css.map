@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAGC,CAHW,WAAW,CAAE,UAAU,CAC/B,GAAG,CAAE,mzFAAmzF",
+"sources": ["../../../sass/base/icons/icon-tag.scss"],
+"names": [],
+"file": "icon-tag.css"
+}

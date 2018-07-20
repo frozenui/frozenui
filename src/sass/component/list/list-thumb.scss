@@ -1,0 +1,37 @@
+@import  "../../base/fn";
+
+.ui-list {
+	background-color: #fff;
+	width: 100%;
+	> li{
+		position: relative;
+		margin-left: $wrap-padding;
+		display: -webkit-box;
+	}
+	li.ui-arrowlink{ 
+		padding-right: $wrap-padding;
+	}
+}
+
+/*列表缩略图*/
+.ui-list-thumb,
+.ui-list-thumb-s, 
+.ui-list-icon,
+.ui-list-icon-s{  
+	@include img;
+	margin: $list-img-margin;
+}
+
+.ui-list-thumb {
+	width: $list-thumb-width;
+	height: $list-thumb-height;
+}
+
+.ui-list-thumb-s {
+	width: $list-thumb-width-s;
+	height: $list-thumb-height-s;
+}
+
+.ui-list-single .ui-list-thumb-s{
+	margin:6px 12px 6px 0px; 
+}

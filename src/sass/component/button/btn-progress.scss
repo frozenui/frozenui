@@ -1,0 +1,61 @@
+@import  "../../base/fn";
+.ui-btn-progress{
+
+    width: $button-width;
+    padding: 0;
+    .ui-btn-inner{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+        background-color: $button-progress-bg-color;
+        border-bottom-left-radius: $button-border-radius-s;
+        border-top-left-radius: $button-border-radius-s;
+        display: -webkit-box;
+        -webkit-box-pack:center;
+        -webkit-box-align:center;
+        span{
+            display: block;
+            color: #000;
+            width: $button-width;
+            line-height: normal; 
+        }
+    }
+    // &.active,
+    // &:active{
+    //     background-color: $button-progress-bg-color;
+    //     background-clip: padding-box;
+    //     border: 1px solid #c3c8cc;
+    // }
+
+    // &:not(.disabled):not(:disabled):active{
+    //     background-color: #fff;
+    //     background-clip: padding-box;
+    //     border: 1px solid #c3c8cc;
+    // }
+
+    &.disabled,
+    &:disabled{
+        color: $button-disabled-text;
+        background: $button-disabled-bg-color;
+        background-clip: padding-box;
+        .ui-btn-inner{
+            background-color: $button-disabled-bg-color;
+            span{
+                color: $button-disabled-text;
+            }
+        }
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-btn-progress.disabled,
+    .ui-btn-progress:disabled{
+        border: 0;
+    }
+    .ui-btn-progress.disabled:before,
+    .ui-btn-progress:disabled:before{
+        content: none;
+    }
+}
